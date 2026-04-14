@@ -1,0 +1,348 @@
+:root {
+	--lh-brand-lightest: #cbd3fd;
+	--lh-brand-dark: #2c365e;
+	--lh-text-light: rgba(255, 255, 255, 0.92);
+	--lh-text-muted: rgba(255, 255, 255, 0.82);
+}
+
+.lh-widget .lh-card {
+	padding: 16px 22px;
+	background: linear-gradient(130deg, var(--lh-brand-lightest), var(--lh-brand-dark));
+	border-radius: 20px;
+	box-shadow: 0 10px 24px rgba(44, 54, 94, 0.25);
+	color: #fff;
+	font-family: "Gilroy", "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.lh-widget {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+.lh-toast {
+	position: fixed;
+	right: 16px;
+	bottom: 16px;
+	z-index: 9999;
+	max-width: 340px;
+	padding: 10px 12px;
+	border-radius: 12px;
+	background: rgba(44, 54, 94, 0.95);
+	color: #fff;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+	font-size: 13px;
+	line-height: 1.35;
+	opacity: 0;
+	transform: translateY(8px);
+	transition: opacity 160ms ease, transform 160ms ease;
+	pointer-events: none;
+}
+
+.lh-toast[data-visible="Y"] {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.heading {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+
+.lh-heading-line {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.lh-heading-sub {
+	display: block;
+	text-align: center;
+}
+
+.lh-stars {
+	display: inline-flex;
+	gap: 2px;
+	vertical-align: middle;
+	/* 50% по box даёт >50% визуально из-за метрик глифа, поэтому чуть меньше */
+	--lh-star-half-fill-width: 45%;
+}
+
+.lh-star {
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	font-size: 22px;
+	line-height: 1;
+	font-family: "Segoe UI Symbol", "Noto Sans Symbols2", "Noto Sans Symbols", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+	color: rgba(255, 255, 255, 0.35);
+}
+
+.lh-star::before {
+	content: attr(data-star-filled);
+	color: #ffce57;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: var(--lh-star-fill-width, 0%);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.lh-star--full {
+	--lh-star-fill-width: 100%;
+}
+
+.lh-star--half {
+	--lh-star-fill-width: var(--lh-star-half-fill-width);
+}
+
+.lh-star--empty {
+	--lh-star-fill-width: 0%;
+}
+
+.lh-summary {
+	margin: 8px 0 0;
+	color: var(--lh-text-light);
+}
+
+.lh-divider {
+	border: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.35);
+	margin: 12px 0;
+}
+
+.side {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	color: var(--lh-text-light);
+}
+
+.middle {
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.right {
+	text-align: right;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.bar-container {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.25);
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.lh-bar {
+	height: 10px;
+	border-radius: 999px;
+}
+
+.lh-footer {
+	padding-top: 8px;
+}
+
+.title {
+	color: #fff;
+	font-weight: 600;
+}
+
+.lh-accent {
+	color: #bfc9ff;
+}
+
+.description {
+	margin: 8px 0 10px;
+	color: var(--lh-text-muted);
+}
+
+.lh-select-wrap {
+	position: relative;
+}
+
+.lh-select-wrap::after {
+	content: "▾";
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 16px;
+	pointer-events: none;
+}
+
+.lh-select {
+	width: 100%;
+	padding: 8px 34px 8px 12px;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 8px;
+	background: linear-gradient(130deg, rgba(44, 54, 94, 0.92), rgba(78, 92, 146, 0.92));
+	color: #ffd45f;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+}
+
+.lh-select:focus {
+	border-color: #ffd45f;
+	box-shadow: 0 0 0 2px rgba(255, 212, 95, 0.2);
+}
+
+.lh-select option {
+	background: #2c365e;
+	color: #ffd45f;
+}
+
+.actions {
+	margin-top: 8px;
+}
+
+.actions .accept {
+	display: block;
+	width: 100%;
+	padding: 8px 16px;
+	background-color: #2c365e;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: 0;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+
+.actions .accept:hover {
+	background-color: #263052;
+}
+
+.actions .accept + .accept {
+	margin-top: 8px;
+}
+
+@media (max-width: 400px) {
+	.side,
+	.middle {
+		width: 100%;
+	}
+
+	.right {
+		display: none;
+	}
+}
+
+.lh-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 10050;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.lh-modal[data-open="Y"] {
+	display: flex;
+}
+
+.lh-modal__backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(20, 24, 40, 0.55);
+	backdrop-filter: blur(2px);
+}
+
+.lh-modal__dialog {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 420px;
+	padding: 20px 22px;
+	border-radius: 20px;
+	background: linear-gradient(145deg, #3d4a7a, var(--lh-brand-dark));
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+	color: #fff;
+	font-family: "Gilroy", "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+	box-sizing: border-box;
+}
+
+.lh-modal__title {
+	margin: 0 0 8px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.lh-modal__hint {
+	margin: 0 0 12px;
+	font-size: 13px;
+	line-height: 1.45;
+	color: var(--lh-text-muted);
+}
+
+.lh-modal__label {
+	display: block;
+	margin: 0;
+}
+
+.lh-modal__textarea {
+	display: block;
+	width: 100%;
+	min-height: 100px;
+	padding: 10px 12px;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 10px;
+	background: rgba(30, 38, 70, 0.95);
+	color: var(--lh-text-light);
+	font-size: 14px;
+	line-height: 1.45;
+	resize: vertical;
+	box-sizing: border-box;
+	outline: none;
+	font-family: inherit;
+}
+
+.lh-modal__textarea:focus {
+	border-color: #ffd45f;
+	box-shadow: 0 0 0 2px rgba(255, 212, 95, 0.2);
+}
+
+.lh-modal__actions {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: 14px;
+}
+
+.lh-modal__btn--secondary {
+	background-color: rgba(255, 255, 255, 0.12) !important;
+	box-shadow: none !important;
+	text-transform: none;
+}
+
+.lh-modal__btn--secondary:hover {
+	background-color: rgba(255, 255, 255, 0.18) !important;
+}
