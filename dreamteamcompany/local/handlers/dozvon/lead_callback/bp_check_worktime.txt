@@ -1,0 +1,59 @@
+/**
+ * BP блок: Проверка рабочего времени с учётом часового пояса.
+ * Только то, что нельзя штатными блоками: DateTimeImmutable + timezone.
+ *
+ * Читает: CB_WORKTIME (строка "HH:MM-HH:MM"), CB_TIMEZONE (строка "+N")
+ * Записывает: CB_WORKTIME_OK (Y/N)
+ */
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+try {
+    $rawWindow = trim((string)$getVar('CB_WORKTIME'));
+    $rawTz     = trim((string)$getVar('CB_TIMEZONE'));
+
+    if ($rawWindow === '' || !preg_match('/(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})/', $rawWindow, $m)) {
+        $setVar('CB_WORKTIME_OK', 'Y');
+        $log('CB WORKTIME: no schedule defined, allow');
+        return;
+    }
+
+    $offset = 0;
+    if ($rawTz !== '' && preg_match('/([+-]?\d{1,2})/', $rawTz, $tzm)) {
+        $offset = (int)$tzm[1];
+    }
+
+    $nowUtc   = new \DateTimeImmutable('now', new \DateTimeZone('UTC'));
+    $localNow = $offset === 0 ? $nowUtc : $nowUtc->modify(($offset > 0 ? '+' : '') . $offset . ' hours');
+    $minutesNow = ((int)$localNow->format('H')) * 60 + (int)$localNow->format('i');
+
+    $fp = array_pad(explode(':', $m[1], 2), 2, '0');
+    $tp = array_pad(explode(':', $m[2], 2), 2, '0');
+    $fromMin = ((int)$fp[0]) * 60 + (int)$fp[1];
+    $toMin   = ((int)$tp[0]) * 60 + (int)$tp[1];
+
+    $inside = ($fromMin <= $toMin)
+        ? ($minutesNow >= $fromMin && $minutesNow <= $toMin)
+        : ($minutesNow >= $fromMin || $minutesNow <= $toMin);
+
+    $setVar('CB_WORKTIME_OK', $inside ? 'Y' : 'N');
+    $log('CB WORKTIME: ' . $m[1] . '-' . $m[2] . ' tz=' . $offset . ' now=' . $localNow->format('H:i') . ' -> ' . ($inside ? 'OK' : 'OUTSIDE'));
+
+} catch (\Throwable $e) {
+    $setVar('CB_WORKTIME_OK', 'Y');
+    $log('CB WORKTIME error: ' . $e->getMessage() . ' -> allow');
+}

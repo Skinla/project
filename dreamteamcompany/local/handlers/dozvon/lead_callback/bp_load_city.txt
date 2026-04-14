@@ -1,0 +1,112 @@
+/**
+ * BP блок: Чтение данных города из списка 22.
+ * PHP: CIBlockElement::GetList + свойства элемента.
+ * Штатный "Получить информацию об элементе списка" сложно сериализовать в .bpt,
+ * поэтому используем PHP.
+ *
+ * Читает: CB_CITY_ID, CB_ATTEMPT (текущее число попыток)
+ * Записывает: CB_SIP_LINE, CB_SIP_PASSWORD, CB_RULE_ID, CB_TIMEZONE, CB_WORKTIME,
+ *             CB_ATTEMPT (инкремент +1),
+ *             CB_CITY_RESULT (passed/error), CB_CITY_MESSAGE
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+$cityListId = 22;
+
+$firstPropValue = function ($props, $codes) {
+    foreach ($codes as $code) {
+        if (!array_key_exists($code, $props)) continue;
+        $v = $props[$code]['VALUE'] ?? $props[$code]['VALUE_ENUM'] ?? $props[$code]['VALUE_NUM'] ?? $props[$code]['~VALUE'] ?? null;
+        if (is_array($v)) $v = reset($v);
+        $v = trim((string)$v);
+        if ($v !== '') return $v;
+    }
+    return '';
+};
+
+try {
+    $cityId = (int)preg_replace('/\D+/', '', (string)$getVar('CB_CITY_ID'));
+    $log('CB CITY [1/3] cityId=' . $cityId);
+
+    if ($cityId <= 0) {
+        $setVar('CB_CITY_RESULT', 'error');
+        $setVar('CB_CITY_MESSAGE', 'cityId=0');
+        return;
+    }
+
+    if (!Loader::includeModule('iblock')) {
+        $setVar('CB_CITY_RESULT', 'error');
+        $setVar('CB_CITY_MESSAGE', 'iblock module not available');
+        return;
+    }
+
+    $res = \CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        ['IBLOCK_ID' => $cityListId, '=ID' => $cityId, 'CHECK_PERMISSIONS' => 'N'],
+        false,
+        ['nTopCount' => 1]
+    );
+
+    $sipLine = '';
+    $sipPassword = '';
+    $ruleId = '';
+    $timeZone = '';
+    $workTime = '';
+
+    if ($res && ($ob = $res->GetNextElement())) {
+        $props = $ob->GetProperties();
+        $raw = $firstPropValue($props, ['PROPERTY_613', '613']);
+        $raw = trim($raw);
+        if ($raw !== '' && stripos($raw, 'sip') !== 0) {
+            if (ctype_digit($raw) || ctype_digit(ltrim($raw, '-'))) $raw = 'sip' . ltrim($raw, '-');
+        }
+        $sipLine     = $raw;
+        $sipPassword = $firstPropValue($props, ['SIP_PAROL', 'PROPERTY_SIP_PAROL', 'PROPERTY_604', '604']);
+        $ruleId      = $firstPropValue($props, ['RULE_ID', 'PROPERTY_RULE_ID', 'PROPERTY_603', '603']);
+        $timeZone    = $firstPropValue($props, ['CHASOVOY_POYAS', 'PROPERTY_CHASOVOY_POYAS', 'PROPERTY_468', '468']);
+        $workTime    = $firstPropValue($props, ['NACHALO_RABOTY_KLINIKI_MSK__KHKH_', 'PROPERTY_400', '400']);
+    }
+
+    $log('CB CITY [2/3] sip=' . $sipLine . ' pwd=' . ($sipPassword !== '' ? '***' : '') . ' rule=' . $ruleId . ' tz=' . $timeZone . ' wt=' . $workTime);
+
+    if ($sipLine === '' || $sipPassword === '' || $ruleId === '') {
+        $setVar('CB_CITY_RESULT', 'error');
+        $setVar('CB_CITY_MESSAGE', 'Нет SIP/пароля/RULE_ID в списке 22');
+        return;
+    }
+
+    $setVar('CB_SIP_LINE',     $sipLine);
+    $setVar('CB_SIP_PASSWORD', $sipPassword);
+    $setVar('CB_RULE_ID',      $ruleId);
+    $setVar('CB_TIMEZONE',     $timeZone);
+    $setVar('CB_WORKTIME',     $workTime);
+    $attempt = (int)preg_replace('/\D+/', '', (string)$getVar('CB_ATTEMPT'));
+    $attempt++;
+    $setVar('CB_ATTEMPT', (string)$attempt);
+
+    $setVar('CB_CITY_RESULT',  'passed');
+    $setVar('CB_CITY_MESSAGE', 'Город OK');
+    $log('CB CITY [3/3] DONE passed, attempt=' . $attempt);
+
+} catch (\Throwable $e) {
+    $setVar('CB_CITY_RESULT', 'error');
+    $setVar('CB_CITY_MESSAGE', 'Exception: ' . $e->getMessage());
+    $log('CB CITY EXCEPTION: ' . $e->getMessage());
+}

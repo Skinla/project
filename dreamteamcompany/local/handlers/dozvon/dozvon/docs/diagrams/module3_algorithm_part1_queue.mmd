@@ -1,0 +1,17 @@
+flowchart TD
+  start([Старт запуска БП])
+  init["Инициализация: iblock, voximplant, im, enum 130/131"]
+  start --> init
+  buildReady["Сбор eligible: 131 ready + фильтры мастера 130"]
+  init --> buildReady
+  fork{eligible пуст?}
+  buildReady --> fork
+  fork -->|да| tz1["ТЗ1: planned по времени в ready"]
+  tz1 --> stopIdle[["Стоп: activated / no_attempts"]]
+  fork -->|нет| tz2["ТЗ2: сортировка и первая попытка"]
+  tz2 --> phoneGate{PHONE?}
+  phoneGate -->|нет| errPhone[["phone_empty"]]
+  phoneGate -->|да| tz3["ТЗ3: список 22 SIP, пароль, RULE_ID"]
+  tz3 --> cityGate{OK?}
+  cityGate -->|нет| errCity[["no_rule_id / no_sip / no_parol"]]
+  cityGate -->|да| nextPart[["далее: часть 2"]]

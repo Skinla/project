@@ -1,0 +1,37 @@
+{
+  "result": {
+    "products": [
+      {
+        "id": 18,
+        "iblockId": 14,
+        "name": "Жестянщик 2 (второго) разряда",
+        "code": "zhestyanshchik_2_vtorogo_razryada",
+        "iblockSectionId": 40,
+        "property112": { "value": "360" },
+        "property152": { "value": "5000|RUB" }
+      },
+      {
+        "id": 19,
+        "iblockId": 14,
+        "name": "Стропальщик 4 разряда",
+        "code": "stropalshchik_4_razryada",
+        "iblockSectionId": 40,
+        "property112": { "value": "144" },
+        "property152": { "value": "25544|RUB" }
+      },
+      {
+        "id": 20,
+        "iblockId": 14,
+        "name": "Охрана труда (базовый курс)",
+        "code": "okhrana_truda_basic",
+        "iblockSectionId": 68,
+        "property112": { "value": "-" },
+        "property152": { "value": "3500|RUB" }
+      }
+    ]
+  },
+  "total": 2004,
+  "next": 50,
+  "time": { "mock": true }
+}
+

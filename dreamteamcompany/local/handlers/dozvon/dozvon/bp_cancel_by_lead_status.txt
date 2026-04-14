@@ -1,0 +1,147 @@
+/**
+ * Часть 1: Отмена циклов при смене статуса лида.
+ * PHP-блок для конструктора БП «Выполнение произвольного PHP кода».
+ *
+ * Логика:
+ * 1. Обходит все элементы списка 130 (Автонедозвон - циклы).
+ * 2. Для каждого берёт LEAD_ID, получает STATUS_ID лида в CRM.
+ * 3. Если статус лида != НЕДОЗВОН — выставляет STATUS=cancelled в элементе 130.
+ * 4. Пишет в лог БП каждый шаг.
+ *
+ * Запуск: вручную. После — запустить bp_delete_cancelled_attempts.txt для удаления попыток.
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+
+$setVar = function (string $name, $value) use ($rootActivity): void {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+
+$log = function (string $message) {
+    $this->WriteToTrackingService($message);
+};
+
+$masterListId = 130;
+
+// Код STATUS_ID лида в CRM для статуса «Недозвон» (из config: LEAD_STATUS_NEDOZVON => 'PROCESSED')
+$leadStatusNedozvon = 'PROCESSED';
+
+$setVar('CANCEL_BY_LEAD_STATUS_PROCESSED', '0');
+$setVar('CANCEL_BY_LEAD_STATUS_CANCELLED', '0');
+$setVar('CANCEL_BY_LEAD_STATUS_ERROR', '');
+
+$log('CANCEL_BY_LEAD_STATUS: start, processing list ' . $masterListId);
+
+if (!Loader::includeModule('iblock')) {
+    $setVar('CANCEL_BY_LEAD_STATUS_ERROR', 'iblock module not available');
+    $log('CANCEL_BY_LEAD_STATUS: iblock module not available');
+    return;
+}
+
+if (!Loader::includeModule('crm')) {
+    $setVar('CANCEL_BY_LEAD_STATUS_ERROR', 'crm module not available');
+    $log('CANCEL_BY_LEAD_STATUS: crm module not available');
+    return;
+}
+
+$getListEnumId = function (int $iblockId, string $propertyCode, string $value): ?int {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $iblockId, 'CODE' => $propertyCode]);
+    $prop = $res ? $res->Fetch() : false;
+    if (!$prop || (string)($prop['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $propId = (int)$prop['ID'];
+    $enumRes = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $propId, 'VALUE' => $value]);
+    $enum = $enumRes ? $enumRes->Fetch() : false;
+    if ($enum) {
+        return (int)$enum['ID'];
+    }
+    $enumRes = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $propId, 'XML_ID' => $value]);
+    $enum = $enumRes ? $enumRes->Fetch() : false;
+    return $enum ? (int)$enum['ID'] : null;
+};
+
+$cancelledEnumId = $getListEnumId($masterListId, 'STATUS', 'cancelled');
+if ($cancelledEnumId === null) {
+    $setVar('CANCEL_BY_LEAD_STATUS_ERROR', 'STATUS enum cancelled not found in list ' . $masterListId);
+    $log('CANCEL_BY_LEAD_STATUS: STATUS enum cancelled not found');
+    return;
+}
+
+$getLeadStatus = function (int $leadId): ?string {
+    if ($leadId <= 0) {
+        return null;
+    }
+    if (class_exists('\Bitrix\Crm\LeadTable')) {
+        $row = \Bitrix\Crm\LeadTable::getById($leadId)->fetch();
+        return $row ? trim((string)($row['STATUS_ID'] ?? '')) : null;
+    }
+    if (class_exists('\CCrmLead')) {
+        $res = \CCrmLead::GetListEx([], ['ID' => $leadId], false, false, ['STATUS_ID']);
+        $row = $res ? $res->Fetch() : false;
+        return $row ? trim((string)($row['STATUS_ID'] ?? '')) : null;
+    }
+    return null;
+};
+
+$processed = 0;
+$cancelled = 0;
+
+$res = CIBlockElement::GetList(
+    ['ID' => 'ASC'],
+    ['IBLOCK_ID' => $masterListId, 'CHECK_PERMISSIONS' => 'N'],
+    false,
+    false,
+    ['ID', 'IBLOCK_ID', 'NAME']
+);
+
+if (!is_object($res) || !method_exists($res, 'GetNextElement')) {
+    $setVar('CANCEL_BY_LEAD_STATUS_ERROR', 'GetList failed for list ' . $masterListId);
+    $log('CANCEL_BY_LEAD_STATUS: GetList failed');
+    return;
+}
+
+while ($ob = $res->GetNextElement()) {
+    $fields = $ob->GetFields();
+    $props = $ob->GetProperties();
+
+    $masterElementId = (int)($fields['ID'] ?? 0);
+    $leadId = (int)($props['LEAD_ID']['VALUE'] ?? 0);
+    $currentStatus = trim((string)($props['STATUS']['VALUE_ENUM'] ?? $props['STATUS']['VALUE_XML_ID'] ?? $props['STATUS']['VALUE'] ?? ''));
+
+    $processed++;
+    $log('CANCEL_BY_LEAD_STATUS: element ' . $masterElementId . ', lead ' . $leadId . ', current STATUS=' . $currentStatus);
+
+    if ($leadId <= 0) {
+        $log('CANCEL_BY_LEAD_STATUS: element ' . $masterElementId . ' skipped, LEAD_ID empty');
+        continue;
+    }
+
+    $leadStatus = $getLeadStatus($leadId);
+    $log('CANCEL_BY_LEAD_STATUS: element ' . $masterElementId . ', lead ' . $leadId . ', CRM STATUS_ID=' . ($leadStatus ?? 'null'));
+
+    if ($leadStatus === null) {
+        $log('CANCEL_BY_LEAD_STATUS: element ' . $masterElementId . ' skipped, lead ' . $leadId . ' not found in CRM');
+        continue;
+    }
+
+    if (mb_strtoupper(trim($leadStatus)) === mb_strtoupper(trim($leadStatusNedozvon))) {
+        $log('CANCEL_BY_LEAD_STATUS: element ' . $masterElementId . ' skipped, lead status is NEDOZVON');
+        continue;
+    }
+
+    $log('CANCEL_BY_LEAD_STATUS: element ' . $masterElementId . ', setting STATUS=cancelled (lead ' . $leadId . ' status=' . $leadStatus . ')');
+
+    CIBlockElement::SetPropertyValuesEx($masterElementId, $masterListId, ['STATUS' => $cancelledEnumId]);
+    $cancelled++;
+}
+
+$setVar('CANCEL_BY_LEAD_STATUS_PROCESSED', (string)$processed);
+$setVar('CANCEL_BY_LEAD_STATUS_CANCELLED', (string)$cancelled);
+$setVar('CANCEL_BY_LEAD_STATUS_ERROR', '');
+
+$log('CANCEL_BY_LEAD_STATUS: done, processed=' . $processed . ', cancelled=' . $cancelled);

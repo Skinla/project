@@ -1,0 +1,3424 @@
+==== 2026-03-11 13:38:17 ====
+File: ct_20260311_133814_69b1461691de9.json
+EntityType=lead, EntityId=642276
+dialedNumber=73812699747
+callerPhone=+73812530396
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3731838
+    [changedFields] => null
+    [ctCallerId] => bb6fdf9a7d0f9abbab6248b10a97a360
+    [callerphone] => +73812530396
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 165
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 13:02:36
+    [timestamp] => 1773223356
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 45a71e46-97d4-123f-4582-005056be61dd
+    [callReferenceNumber] => 6e38834e-1d31-11f1-a27e-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNTQ5NCwiZXhwIjoyMDg4NTg1NDk0LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzE4Mzh9.tFWW22SXUCEfev9qg0PH8mch4lpKjcUEC3on1Zr3rOowuwCO25eIJxvH2157e51u6P7jAz11LQUHYSPKsN7BYw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773225494
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-11 13:57:16 ====
+File: ct_20260311_135714_69b14a8ac5bb8.json
+EntityType=lead, EntityId=642043
+dialedNumber=73812589287
+callerPhone=+79230321007
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3733234
+    [changedFields] => null
+    [ctCallerId] => 4c3f488305e75dda04cc7da38ec213af
+    [callerphone] => +79230321007
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 236
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 11:58:36
+    [timestamp] => 1773219516
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => prodoctorov.ru
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773219500310069135
+    [sessionId] => 258051191
+    [ctClientId] => 3000000000177890749
+    [ctGlobalId] => null
+    [hostname] => omskdental.ru
+    [url] => https://omskdental.ru/
+    [attrs] => {}
+    [ref] => https://prodoctorov.ru/
+    [city] => krasnodar
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 85.175.12.50
+    [sip_call_id] => 549fc608-97cb-123f-4582-005056be61dd
+    [callReferenceNumber] => 7d2d37cc-1d28-11f1-b37a-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNjYzNCwiZXhwIjoyMDg4NTg2NjM0LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzMyMzR9.s9DkwiSbzb5SIghmnXkyY7m_482jHDyRO4P8n6WeMYTXP4wEMAns5B6G8jiyHEHACjhVp83_PjM9DHSOYj-S7w
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1773226634
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-11 13:57:18 ====
+File: ct_20260311_135717_69b14a8d420c8.json
+EntityType=lead, EntityId=642309
+dialedNumber=73812678991
+callerPhone=+79507990083
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3733231
+    [changedFields] => null
+    [ctCallerId] => 978d4f0edf4969a57c9f99d960488fbd
+    [callerphone] => +79507990083
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 38
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 13:55:17
+    [timestamp] => 1773226517
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => a1850c7b-97db-123f-4582-005056be61dd
+    [callReferenceNumber] => ca11e8a2-1d38-11f1-8622-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNjYzNiwiZXhwIjoyMDg4NTg2NjM2LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzMyMzF9.pQ-pEpJJ4eLQSmEYjUIPCM_If3YIuTOLMoUUa_UIKUQ0yH54Kelqcsv_04v4oOD7n18b85gIrWWepCjMWqfQ3Q
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773226636
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-11 13:58:10 ====
+File: ct_20260311_135810_69b14ac211f78.json
+EntityType=lead, EntityId=642309
+dialedNumber=73812678991
+callerPhone=+79507990083
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3733256
+    [changedFields] => null
+    [ctCallerId] => 978d4f0edf4969a57c9f99d960488fbd
+    [callerphone] => +79507990083
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 24
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 13:56:03
+    [timestamp] => 1773226563
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => bcfd23e3-97db-123f-4582-005056be61dd
+    [callReferenceNumber] => e5872a16-1d38-11f1-91e4-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNjY4OSwiZXhwIjoyMDg4NTg2Njg5LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzMyNTZ9.mmtr3s__gnjWUX3S4w_5FDrN9CEb4yQVkM8PmNVw0-P4dfixvKv7329NIeyyZYDxQynVjU_d8i4Oq3Ob8mGkkg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773226689
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-11 14:01:13 ====
+File: ct_20260311_140113_69b14b7985832.json
+EntityType=lead, EntityId=642309
+dialedNumber=73812678991
+callerPhone=+79507990083
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3733365
+    [changedFields] => null
+    [ctCallerId] => 978d4f0edf4969a57c9f99d960488fbd
+    [callerphone] => +79507990083
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 20
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 13:58:55
+    [timestamp] => 1773226735
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 23af1971-97dc-123f-4582-005056be61dd
+    [callReferenceNumber] => 4c3fde10-1d39-11f1-bec4-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNjg3MywiZXhwIjoyMDg4NTg2ODczLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzMzNjV9._6ltXm_uGOaYfMVfBZogH-niYAPEP7D54mUMtYHdoiq96aVd_lPt2HKlUWzI7NBKghnYATP_9eqzp8sul4xPWQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773226873
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-11 15:33:09 ====
+File: ct_20260311_153307_69b16103d67ae.json
+EntityType=lead, EntityId=642486
+dialedNumber=73812432442
+callerPhone=+79059216681
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3734939
+    [changedFields] => null
+    [ctCallerId] => 8097d98943568998a29c01e5a1249eac
+    [callerphone] => +79059216681
+    [phonenumber] => 73812432442
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 182
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 15:27:51
+    [timestamp] => 1773232071
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => prot_omsk_rsya
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773231995117756269
+    [sessionId] => 258174725
+    [ctClientId] => 3000000000177974260
+    [ctGlobalId] => null
+    [hostname] => omsk-vse-zuby.ru
+    [url] => https://omsk-vse-zuby.ru/protez?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=prot_omsk_rsya&utm_term=---autotargeting&yclid=3471032705634533375&ybaip=1
+    [attrs] => {}
+    [ref] => https://rskrf.ru/
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 94.137.0.132
+    [sip_call_id] => 90388ec5-97e8-123f-4582-005056be61dd
+    [callReferenceNumber] => b8c95852-1d45-11f1-90da-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIzMjM4NywiZXhwIjoyMDg4NTkyMzg3LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzQ5Mzl9.weF_1UMTgCRTzMsKgaFB6RupNXHlAxM9LX_AkXLibYoAeyNqJilnOeN1cQM-c83cBnbe6ap4pOulzRE_azOZwA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773232387
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 06:13:03 ====
+File: ct_20260312_061302_69b22f3e0d0b7.json
+EntityType=lead, EntityId=643292
+dialedNumber=73812678991
+callerPhone=+79136829558
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3738584
+    [changedFields] => null
+    [ctCallerId] => b4b43bd0f6f013855356e87ab1d1ea2f
+    [callerphone] => +79136829558
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 47
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 06:10:51
+    [timestamp] => 1773285051
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => eaa0cb36-9863-123f-4582-005056be61dd
+    [callReferenceNumber] => 1330c138-1dc1-11f1-b1a6-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI4NTE4MiwiZXhwIjoyMDg4NjQ1MTgyLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3Mzg1ODR9.2ei2eL8ct8BwIL7cgb5RW3mbpzI8Mc7XoA6I6vlPXcPDgCaUlgVDc-KVG_kJw6xsIToz6JTnuwQ-SR4IsU-_Kg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773285182
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 07:50:03 ====
+File: ct_20260312_075002_69b245fa20a36.json
+EntityType=lead, EntityId=643593
+dialedNumber=73812699747
+callerPhone=+79106916840
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3738886
+    [changedFields] => null
+    [ctCallerId] => 8958d3f470b85996a3ccddf07f51202f
+    [callerphone] => +79106916840
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 57
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 07:47:19
+    [timestamp] => 1773290839
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 64e0c6d8-9871-123f-4582-005056be61dd
+    [callReferenceNumber] => 8d72dbd6-1dce-11f1-b259-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5MTAwMiwiZXhwIjoyMDg4NjUxMDAyLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3Mzg4ODZ9.ki0xpowTmAECH_atwkoeC2Yf9mZHH7wheWgHteJS75o9vit_OKnpJnwRstD44HmqaqdvPKmhcv5ZLWx94bYLOA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773291002
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 07:50:03 ====
+File: ct_20260312_075002_69b245fa209de.json
+EntityType=lead, EntityId=643593
+dialedNumber=73812699747
+callerPhone=+79106916840
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3738894
+    [changedFields] => null
+    [ctCallerId] => 8958d3f470b85996a3ccddf07f51202f
+    [callerphone] => +79106916840
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 34
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 07:48:25
+    [timestamp] => 1773290905
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 8bde998d-9871-123f-4582-005056be61dd
+    [callReferenceNumber] => b472dd6c-1dce-11f1-b8d2-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5MTAwMiwiZXhwIjoyMDg4NjUxMDAyLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3Mzg4OTR9.EuXWjS7cTmGsbT0VF-_-kPXgSr0HV5P0L4f0QPTuVraGZfXY1rN_rbO14yRX3Ipk9XCF3tzFy2FU3o64z66Fdg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773291002
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 07:51:03 ====
+File: ct_20260312_075101_69b246358b841.json
+EntityType=lead, EntityId=643606
+dialedNumber=73812589287
+callerPhone=+79095372424
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3738868
+    [changedFields] => null
+    [ctCallerId] => e54409c9548238a252e2406bd6fb1753
+    [callerphone] => +79095372424
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 503
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 07:41:05
+    [timestamp] => 1773290465
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => tk
+    [medium] => cpc
+    [utm_source] => tk
+    [utm_medium] => cpc
+    [utm_campaign] => {campaign_id}
+    [utm_content] => {ad_id}
+    [utm_term] => {keyword}
+    [yaClientId] => 1743150340227700429
+    [sessionId] => 252648597
+    [ctClientId] => 3000000000034682508
+    [ctGlobalId] => null
+    [hostname] => omsk-dental.ru
+    [url] => https://omsk-dental.ru/?utm_source=tk&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}&yclid=10750349982501175295&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.15.203.47
+    [sip_call_id] => 858493d1-9870-123f-4582-005056be61dd
+    [callReferenceNumber] => ae133f30-1dcd-11f1-8c72-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5MTA2MSwiZXhwIjoyMDg4NjUxMDYxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3Mzg4Njh9.hkXNAH-LrEe1VFnGRW_Vh6BXBL7XPaNlyiGjYkcyoG_WRASYz8yK8NjCpvRvsXUTliiYMZt1WsDs_Q17Eyqgxw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773291061
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 08:00:05 ====
+File: ct_20260312_080004_69b2485412c48.json
+EntityType=lead, EntityId=643629
+dialedNumber=73812589287
+callerPhone=+79836213512
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3738913
+    [changedFields] => null
+    [ctCallerId] => 250f3bb6500bad4c196ce6c45f757d4d
+    [callerphone] => +79836213512
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 154
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 07:56:12
+    [timestamp] => 1773291372
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => ao4_maski_omsk_tk
+    [utm_content] => <не заполнено>
+    [utm_term] => стоматолог
+    [yaClientId] => 1773291368345280971
+    [sessionId] => 258512117
+    [ctClientId] => 3000000000178214673
+    [ctGlobalId] => null
+    [hostname] => omsk-vse-zuby.ru
+    [url] => https://omsk-vse-zuby.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=ao4_maski_omsk_tk&utm_term=стоматолог&etext=2202.0C1BfXCqxdaNSp5lOIt75JsPrIof-_aKNIDyJMEsafmDY5A4Czi4Mjk_vpp7Ds2j4Tt_Qksjok4sOhIbyiU4RYscdDoQoFqzscFF2g8IFVVncmJ4cHZobnNzanRkZnpw.3b0207b3ddc6783e4b6fb5ac95a34c8926546001&yclid=3177357925397037055&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 91.79.226.221
+    [sip_call_id] => a225aed8-9872-123f-4582-005056be61dd
+    [callReferenceNumber] => cab99cf4-1dcf-11f1-a942-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5MTYwNCwiZXhwIjoyMDg4NjUxNjA0LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3Mzg5MTN9.2cm_-muiRXMEuSfPi46k6AYjcTe-hhE4acnYvqGfgmUN9lKdbvFmhyImu9SZuV4HWjLYMl-q6pvF2dPPvb7_Bw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 12; MIS-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.118 YaBrowser/25.12.5.118.00 Mobile Safari/537.36
+    [sendingTimestamp] => 1773291604
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 08:13:02 ====
+File: ct_20260312_081302_69b24b5e298be.json
+EntityType=lead, EntityId=613913
+dialedNumber=73812678991
+callerPhone=+79200906532
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3739042
+    [changedFields] => null
+    [ctCallerId] => a2acb6f85e4eb9365893f6bb3da44bc6
+    [callerphone] => +79200906532
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 08:11:45
+    [timestamp] => 1773292305
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ce9d9b39-9874-123f-4582-005056be61dd
+    [callReferenceNumber] => f730bc2a-1dd1-11f1-b157-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5MjM4MiwiZXhwIjoyMDg4NjUyMzgyLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzkwNDJ9.7yxhJIlYAqO08huqfKiHth_xxcXbRgv7dMmonkJ1tyIidbWs2EXiA2CBmBjDqQihj7Tii04cqKolGDU_Gg8uVQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773292382
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 08:38:04 ====
+File: ct_20260312_083802_69b2513a73591.json
+EntityType=lead, EntityId=643781
+dialedNumber=73812678991
+callerPhone=+73812957855
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3739253
+    [changedFields] => null
+    [ctCallerId] => 3e612c962995ea070394d250e0200b5d
+    [callerphone] => +73812957855
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 11
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 08:35:52
+    [timestamp] => 1773293752
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 258527064
+    [ctClientId] => 3000000000178224613
+    [ctGlobalId] => null
+    [hostname] => protez.omsk-dent.ru
+    [url] => https://protez.omsk-dent.ru/?yclid=4688165505526661119&ybaip=1
+    [attrs] => {}
+    [ref] => https://www.popcornnews.ru/
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 77.87.86.190
+    [sip_call_id] => 2d00d166-9878-123f-4582-005056be61dd
+    [callReferenceNumber] => 55929088-1dd5-11f1-8982-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5Mzg4MiwiZXhwIjoyMDg4NjUzODgyLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3MzkyNTN9.-sl7LmdiXlJZkVsFjYSRHDpruLLmLGn2LJr7GVm21KNuvJ0zTDZbYs5Dqqz4AeC4hisuOEvuPXvWi3daR9xtlw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773293882
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 09:31:08 ====
+File: ct_20260312_093106_69b25daabec28.json
+EntityType=lead, EntityId=644075
+dialedNumber=73812432484
+callerPhone=+79502151557
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3739968
+    [changedFields] => null
+    [ctCallerId] => 8905c94f7001bef9d659dda035e2394c
+    [callerphone] => +79502151557
+    [phonenumber] => 73812432484
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 42
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 09:28:44
+    [timestamp] => 1773296924
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => ao4_omsk_tg
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1772508640395617334
+    [sessionId] => 258558697
+    [ctClientId] => 3000000000174947367
+    [ctGlobalId] => null
+    [hostname] => omsk-vse-zuby.ru
+    [url] => https://omsk-vse-zuby.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=ao4_omsk_tg&utm_term=---autotargeting&yclid=4336660384451395583
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 81.23.196.122
+    [sip_call_id] => 8fbfc883-987f-123f-4582-005056be61dd
+    [callReferenceNumber] => b84dad82-1ddc-11f1-921c-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5NzA2NiwiZXhwIjoyMDg4NjU3MDY2LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3Mzk5Njh9.3P0NwCoLLVsU4IXh-yWMCUeXUD7YWId8J253hBhq1zLfGCuHFnX7VCSxa15utNFV_o0R8cbmKBUojaDiTAximA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.159 Mobile Safari/537.36
+    [sendingTimestamp] => 1773297066
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 09:47:13 ====
+File: ct_20260312_094711_69b2616fc8a91.json
+EntityType=lead, EntityId=644147
+dialedNumber=73812678991
+callerPhone=+79690804791
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3740243
+    [changedFields] => null
+    [ctCallerId] => 48bb958f7c8cfb4ebb8526d6bd5c5e39
+    [callerphone] => +79690804791
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 24
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 09:45:02
+    [timestamp] => 1773297902
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d6a7ba01-9881-123f-4582-005056be61dd
+    [callReferenceNumber] => ff3789c8-1dde-11f1-837b-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5ODAyOSwiZXhwIjoyMDg4NjU4MDI5LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDAyNDN9.nrruu94MbuIjEoFx_y_Xs7foT2pqqnegxVQ2Ue-ozBsPhpc3LX3uquoIV0ZDMBaiT9-XrIORsOdNn-L8BAWMUw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773298029
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 10:24:22 ====
+File: ct_20260312_102420_69b26a24d9352.json
+EntityType=lead, EntityId=601276
+dialedNumber=73812678991
+callerPhone=+79131477403
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3740943
+    [changedFields] => null
+    [ctCallerId] => e5d35d35d41e17eb45b222fdec633958
+    [callerphone] => +79131477403
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 121
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 10:20:02
+    [timestamp] => 1773300002
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ba31eee5-9886-123f-4582-005056be61dd
+    [callReferenceNumber] => e2c1a6ca-1de3-11f1-b200-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwMDI2MCwiZXhwIjoyMDg4NjYwMjYwLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDA5NDN9.OA-prBXww_LsWGdveJ4UB2AZU-hvjLgOx7PbvURUDvd2L747U5H8o_QcWLdoS1eixcD8B6StxThf5XLGy3jXwA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773300260
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 10:24:22 ====
+File: ct_20260312_102421_69b26a2526ed2.json
+EntityType=lead, EntityId=644260
+dialedNumber=73812678991
+callerPhone=+79136814768
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3740919
+    [changedFields] => null
+    [ctCallerId] => 8887d6d3071ef845daaac3b0c49f01a3
+    [callerphone] => +79136814768
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 193
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 10:18:43
+    [timestamp] => 1773299923
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 8b1a2925-9886-123f-4582-005056be61dd
+    [callReferenceNumber] => b3a90270-1de3-11f1-9b2b-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwMDI2MCwiZXhwIjoyMDg4NjYwMjYwLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDA5MTl9.i28gTAj1rglz50aqp1IiPO-tYyfx1SKBV_9mmVL7ejCpTzyxwM1W0ULnEpHhx3J_sE9AHOAOKSM7lWqA56RAFQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773300260
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 11:47:08 ====
+File: ct_20260312_114707_69b27d8b29026.json
+EntityType=lead, EntityId=644612
+dialedNumber=73812699747
+callerPhone=+79659706930
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3742623
+    [changedFields] => null
+    [ctCallerId] => 9076075c23c2ae1a413c6f1a1fa169c8
+    [callerphone] => +79659706930
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 38
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 11:44:25
+    [timestamp] => 1773305065
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 84274e27-9892-123f-4582-005056be61dd
+    [callReferenceNumber] => acb89618-1def-11f1-983c-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwNTIyNywiZXhwIjoyMDg4NjY1MjI3LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDI2MjN9.ty-gHSe0zl6uxEZx-OHjRn1SZ_HHrXKKBknWrstOHgFWn83uV1deoFxZ32HxDPxP8cG-gvzecRhn3DDU9xqzRQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773305227
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 12:29:09 ====
+File: ct_20260312_122907_69b2876339d41.json
+EntityType=lead, EntityId=644826
+dialedNumber=73812678991
+callerPhone=+79618817696
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3743418
+    [changedFields] => null
+    [ctCallerId] => 48fb1eaa9eb603ba3b393298d8a2ccdf
+    [callerphone] => +79618817696
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 79
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 12:26:24
+    [timestamp] => 1773307584
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 61a4f4f9-9898-123f-4582-005056be61dd
+    [callReferenceNumber] => 8a35efea-1df5-11f1-b24a-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwNzc0NiwiZXhwIjoyMDg4NjY3NzQ2LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDM0MTh9.ZKKjTfLJJ6NY7xdEGPAQDlYRZ8l9FgG2BW-p0FHEubsEQeSMZ57Rs0M7An93Wum-E6DwY6m37GJliA6c3K32KQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773307746
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 13:06:07 ====
+File: ct_20260312_130605_69b2900d49702.json
+EntityType=lead, EntityId=645015
+dialedNumber=73812699747
+callerPhone=+79509548038
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3744095
+    [changedFields] => null
+    [ctCallerId] => 6a12505e02fb9c30aa606b89548a57ec
+    [callerphone] => +79509548038
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 140
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 13:02:31
+    [timestamp] => 1773309751
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 6d45a501-989d-123f-4582-005056be61dd
+    [callReferenceNumber] => 95d29916-1dfa-11f1-9e7d-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwOTk2NCwiZXhwIjoyMDg4NjY5OTY0LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDQwOTV9.lLvM-EVi_FeABZZ90AqAUF8W0BGCvS8kMbroSf8DwweeziMlBkPJXh3j027NOkikmvuF2axDwmrm3pxh4oYDkw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773309964
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 13:14:13 ====
+File: ct_20260312_131413_69b291f522a45.json
+EntityType=lead, EntityId=645015
+dialedNumber=73812699747
+callerPhone=+79509548038
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3744247
+    [changedFields] => null
+    [ctCallerId] => 6a12505e02fb9c30aa606b89548a57ec
+    [callerphone] => +79509548038
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 61
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 13:11:07
+    [timestamp] => 1773310267
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 258685333
+    [ctClientId] => 3000000000177279950
+    [ctGlobalId] => null
+    [hostname] => all-on-4.omsk-dent.ru
+    [url] => https://all-on-4.omsk-dent.ru/?yclid=8884130360155439103
+    [attrs] => {}
+    [ref] => https://m.dzen.ru/news/story/65d70b8e-a747-53ee-ae25-6bc3d2fb5b03?from=main_portal&lang=ru&persistent_id=3324167546&story=02033159-6a4b-55fb-ad68-88bb2a92c848&t=7437799063979823104
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 91.78.223.203
+    [sip_call_id] => a075dbc3-989e-123f-4582-005056be61dd
+    [callReferenceNumber] => c9047c40-1dfb-11f1-a1f6-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMxMDQ0OSwiZXhwIjoyMDg4NjcwNDQ5LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDQyNDd9.0ww5RJok23Z7H1IIT8jOAVpbju221THORTZBcuzS0o9aA9e2jzJEaUNqiOgQUYOkym3Ti75wedz6cda45eTiGg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 11; SM-A505FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1773310449
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 16:50:09 ====
+File: ct_20260312_165008_69b2c4902b4cf.json
+EntityType=lead, EntityId=645821
+dialedNumber=73812678991
+callerPhone=+79236966600
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3747579
+    [changedFields] => null
+    [ctCallerId] => 643a7259f4fea30e773e88fac38b35ec
+    [callerphone] => +79236966600
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 86
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 16:46:36
+    [timestamp] => 1773323196
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => bb1c1267-98bc-123f-4582-005056be61dd
+    [callReferenceNumber] => e3a48608-1e19-11f1-9da4-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyMzQwNywiZXhwIjoyMDg4NjgzNDA3LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDc1Nzl9.9YEGoGknjAtjbJ-pe8eWzSp394aHGjoTijy3UyT4Hg-ZX20IQz9zVy3nQ0d-TtjqdVcXCsYWpH67rlPw-I5Srg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773323407
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-12 16:57:19 ====
+File: ct_20260312_165717_69b2c63ddc0db.json
+EntityType=lead, EntityId=645864
+dialedNumber=73812699747
+callerPhone=+79087962336
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3747697
+    [changedFields] => null
+    [ctCallerId] => d574a44ec67b2d0d23d828b46cb11ef8
+    [callerphone] => +79087962336
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 49
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 16:54:58
+    [timestamp] => 1773323698
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => e620705b-98bd-123f-4582-005056be61dd
+    [callReferenceNumber] => 0eaea44a-1e1b-11f1-8362-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyMzgzNywiZXhwIjoyMDg4NjgzODM3LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDc2OTd9.or0L4KR73z5rjbyKcPPErCkTRj4UQ5tHF5dvJt8pdeg9kiJKw0fnGAl56sQ3hJZZRHdCIKP4WXLcfrylOful9Q
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773323837
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 17:34:08 ====
+File: ct_20260312_173406_69b2cede7c124.json
+EntityType=lead, EntityId=646043
+dialedNumber=73812699747
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748168
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 17:32:30
+    [timestamp] => 1773325950
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 24ac49c0-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => 4d3cc052-1e20-11f1-be81-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjA0NSwiZXhwIjoyMDg4Njg2MDQ1LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgxNjh9.h3VFoPOC3B3-q7xWEuvkMtMHUrQF5B5usRSCTt52liTdV-louYmPMqEA6wRAiEzx18PQLzI-dlgL_VKMD4rEdg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773326045
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 17:34:08 ====
+File: ct_20260312_173406_69b2cede96a42.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812699747
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748162
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 0
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 17:31:39
+    [timestamp] => 1773325899
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 05cc802c-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => 2e5dfd90-1e20-11f1-b431-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjA0NSwiZXhwIjoyMDg4Njg2MDQ1LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgxNjJ9.nVB3yPZiDzbbPgNeyM_YKGDIkktx7YNGR6T7vjpOyG3lheHywlo873SuRDDsE_etiL9k70TrRqxuqvqY4nBLIA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773326045
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 17:35:06 ====
+File: ct_20260312_173505_69b2cf19d9f9d.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812699747
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748173
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 17:33:05
+    [timestamp] => 1773325985
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 3923263d-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => 61b3cce2-1e20-11f1-84d2-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjEwNSwiZXhwIjoyMDg4Njg2MTA1LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgxNzN9.XBa2up_VBIRQtK9zVZQS2VhyppePuM-pdPHL1Bpc9G-S4W59gbFAAk7h9tlS1HQS7GBXZpLhA-50xWjiafDHow
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773326105
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 17:37:05 ====
+File: ct_20260312_173704_69b2cf90e1031.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812699747
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748204
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 17:35:14
+    [timestamp] => 1773326114
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 8626aec5-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => aeb5cb3a-1e20-11f1-9cc9-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjIyNCwiZXhwIjoyMDg4Njg2MjI0LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyMDR9.y5udUvfs-9gvGh_Q6nNBXBGIMeM5gnK4ytV7Pc_S7j8tEfvXJ0zl9G3BcQQFM-p9BMAzkjDHMXb5Am40ZrFiSQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773326224
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-12 17:39:11 ====
+File: ct_20260312_173911_69b2d00f69ee6.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812589287
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748227
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 17:37:37
+    [timestamp] => 1773326257
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => prot_omsk_rsya
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773325937298166110
+    [sessionId] => 258847347
+    [ctClientId] => 3000000000178432953
+    [ctGlobalId] => null
+    [hostname] => omsk-vse-zuby.ru
+    [url] => https://omsk-vse-zuby.ru/protez?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=prot_omsk_rsya&utm_term=---autotargeting&yclid=3280421797227921407&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 92.124.162.164
+    [sip_call_id] => db65a37b-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => 03f2f0c8-1e21-11f1-b8f0-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjM1MSwiZXhwIjoyMDg4Njg2MzUxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyMjd9.sRXEE4TDfEAALGzltyNbajtzImmllqYyc-JoIhHYurmMxnMQv1L8L_vE0l2h26iCQqioexKBcRDQYC4G9JWIvQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 10; pro13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.895 YaSearchBrowser/26.31.1 BroPP/1.0 YaSearchApp/26.31.1 webOmni Mobile Safari/537.36
+    [sendingTimestamp] => 1773326351
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 17:40:03 ====
+File: ct_20260312_174003_69b2d0438fda4.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812589287
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748237
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 17:38:04
+    [timestamp] => 1773326284
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex.ru/maps
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773326166932336947
+    [sessionId] => 258849766
+    [ctClientId] => 3000000000178434455
+    [ctGlobalId] => null
+    [hostname] => omskdental.ru
+    [url] => https://omskdental.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/ulybka_sibiri/209322712198/?indoorLevel=1&ll=73.397156,54.987017&z=17
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 92.124.163.31
+    [sip_call_id] => eb33805f-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => 13c6c254-1e21-11f1-bdef-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjQwMywiZXhwIjoyMDg4Njg2NDAzLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyMzd9.axGI8m9CprIUGx_4Nq2iK5TJR5ztkwoo36wGVNEWc6NFH3bOVzRIu34d0fk1x1gMKa3RBaoVdSOULPJvaI6vVA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773326403
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 17:41:08 ====
+File: ct_20260312_174108_69b2d084642ac.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812589287
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748260
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 17:39:35
+    [timestamp] => 1773326375
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex.ru/maps
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773326166932336947
+    [sessionId] => 258849766
+    [ctClientId] => 3000000000178434455
+    [ctGlobalId] => null
+    [hostname] => omskdental.ru
+    [url] => https://omskdental.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/ulybka_sibiri/209322712198/?indoorLevel=1&ll=73.397156,54.987017&z=17
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 92.124.163.31
+    [sip_call_id] => 219f562c-98c4-123f-4582-005056be61dd
+    [callReferenceNumber] => 4a3165a6-1e21-11f1-8eab-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjQ2OCwiZXhwIjoyMDg4Njg2NDY4LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyNjB9.QFfmWkV36wFUMyZ8z9g6SFb39-kv-TZc_V-KJggTj2JjniZlBGB0l65hQxFXVaGNSLCRGE52QjrV4sZ2Ivu_eA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773326468
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 17:41:09 ====
+File: ct_20260312_174109_69b2d08593010.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812589287
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748251
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 17:38:53
+    [timestamp] => 1773326333
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex.ru/maps
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773326166932336947
+    [sessionId] => 258849766
+    [ctClientId] => 3000000000178434455
+    [ctGlobalId] => null
+    [hostname] => omskdental.ru
+    [url] => https://omskdental.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/ulybka_sibiri/209322712198/?indoorLevel=1&ll=73.397156,54.987017&z=17
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 92.124.163.31
+    [sip_call_id] => 08eb32ae-98c4-123f-4582-005056be61dd
+    [callReferenceNumber] => 31709d20-1e21-11f1-86d8-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjQ2OSwiZXhwIjoyMDg4Njg2NDY5LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyNTF9.nQln3HTBT1-W6Sl9OCAuIHb5gv7dymehJ7N_CW0nObw0ImXwKkkgI5CihPNGJ8zrnn4gWn3l49K6eYdKam0DrA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773326469
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 17:43:07 ====
+File: ct_20260312_174306_69b2d0fab7e36.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812589287
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748273
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 2
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 17:41:28
+    [timestamp] => 1773326488
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex.ru/maps
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773326166932336947
+    [sessionId] => 258849766
+    [ctClientId] => 3000000000178434455
+    [ctGlobalId] => null
+    [hostname] => omskdental.ru
+    [url] => https://omskdental.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/ulybka_sibiri/209322712198/?indoorLevel=1&ll=73.397156,54.987017&z=17
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 92.124.163.31
+    [sip_call_id] => 64d81321-98c4-123f-4582-005056be61dd
+    [callReferenceNumber] => 8d5dfd9e-1e21-11f1-a1c0-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjU4NiwiZXhwIjoyMDg4Njg2NTg2LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyNzN9.luLThqXseXQlqtr119zOMRIJuiCeU5FRLLVqlw5fMzSiPJjadhD7arvlnbMQizA1VF-93H0mQ_ve8_I1RAfVpA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773326586
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 17:44:04 ====
+File: ct_20260312_174404_69b2d13469f84.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812589287
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748289
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812589287
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 17:42:45
+    [timestamp] => 1773326565
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex.ru/maps
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773326166932336947
+    [sessionId] => 258849766
+    [ctClientId] => 3000000000178434455
+    [ctGlobalId] => null
+    [hostname] => omskdental.ru
+    [url] => https://omskdental.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/ulybka_sibiri/209322712198/?indoorLevel=1&ll=73.397156,54.987017&z=17
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 92.124.163.31
+    [sip_call_id] => 92de0809-98c4-123f-4582-005056be61dd
+    [callReferenceNumber] => bb6d9bd6-1e21-11f1-b104-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNjY0NCwiZXhwIjoyMDg4Njg2NjQ0LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgyODl9.WALKLZDW5ilFT6fhHMnRxo_4YvOu8uyF2_u7h4-I9ygxVXyZMsmuXBQYzaZ5cmkk8UQIriDcwqC4XtoP14UdoA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773326644
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-12 17:55:08 ====
+File: ct_20260312_175508_69b2d3cc3923c.json
+EntityType=lead, EntityId=646050
+dialedNumber=73812699747
+callerPhone=+73812564053
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3748189
+    [changedFields] => null
+    [ctCallerId] => ee86b96943e0a4a894047ab63e175769
+    [callerphone] => +73812564053
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-12 17:34:09
+    [timestamp] => 1773326049
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => prot_omsk_rsya
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773325937298166110
+    [sessionId] => 258847347
+    [ctClientId] => 3000000000178432953
+    [ctGlobalId] => null
+    [hostname] => omsk-vse-zuby.ru
+    [url] => https://omsk-vse-zuby.ru/protez?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=prot_omsk_rsya&utm_term=---autotargeting&yclid=3280421797227921407&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 92.124.162.164
+    [sip_call_id] => 5fa22599-98c3-123f-4582-005056be61dd
+    [callReferenceNumber] => 8820fc42-1e20-11f1-90a9-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMyNzMwNywiZXhwIjoyMDg4Njg3MzA3LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDgxODl9.xvNforWmh7_bD4_749gSiD-KztIcg75bhPZMJXc1shxexM2HbLvDkKUVWWN_-ZQqdkga3Yf--d4HNwVhtznkzA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 10; pro13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.895 YaSearchBrowser/26.31.1 BroPP/1.0 YaSearchApp/26.31.1 webOmni Mobile Safari/537.36
+    [sendingTimestamp] => 1773327307
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-13 06:03:01 ====
+File: ct_20260313_060301_69b37e6527998.json
+EntityType=lead, EntityId=622901
+dialedNumber=73812432442
+callerPhone=+79684037893
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3749970
+    [changedFields] => null
+    [ctCallerId] => 0d89e6c275a6c594958f8bab21b60598
+    [callerphone] => +79684037893
+    [phonenumber] => 73812432442
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 06:01:27
+    [timestamp] => 1773370887
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1773145894354805871
+    [sessionId] => 257901810
+    [ctClientId] => 3000000000177594609
+    [ctGlobalId] => null
+    [hostname] => protez.omsk-dent.ru
+    [url] => https://protez.omsk-dent.ru/?yclid=3743772578923151359&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => novosibirsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 46.241.80.30
+    [sip_call_id] => c4cd3e15-992b-123f-4582-005056be61dd
+    [callReferenceNumber] => ed5cbe26-1e88-11f1-ab33-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3MDk4MSwiZXhwIjoyMDg4NzMwOTgxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDk5NzB9.A72NoS-EvUYbKZ38ZaU0f6QL3oNjegfw1mRrdQ-LOtL5EdX5_SCm77QjHoTBOM-UkEkT99LHWND0xaVAGESq8Q
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; RMX3834) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.2068 YaSearchBrowser/26.30.1 BroPP/1.0 YaSearchApp/26.30.1 webOmni Mobile Safari/537.36
+    [sendingTimestamp] => 1773370981
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-13 06:07:02 ====
+File: ct_20260313_060701_69b37f55a357b.json
+EntityType=lead, EntityId=622901
+dialedNumber=73812432442
+callerPhone=+79684037893
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3749981
+    [changedFields] => null
+    [ctCallerId] => 0d89e6c275a6c594958f8bab21b60598
+    [callerphone] => +79684037893
+    [phonenumber] => 73812432442
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-13 06:05:28
+    [timestamp] => 1773371128
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => tk
+    [medium] => cpc
+    [utm_source] => tk
+    [utm_medium] => cpc
+    [utm_campaign] => {campaign_id}
+    [utm_content] => {ad_id}
+    [utm_term] => {keyword}
+    [yaClientId] => 177336175950138849
+    [sessionId] => 259062379
+    [ctClientId] => 3000000000178564488
+    [ctGlobalId] => null
+    [hostname] => omsk-dental.ru
+    [url] => https://omsk-dental.ru/?utm_source=tk&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}&yclid=2547297529612206079&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.120.57.143
+    [sip_call_id] => 54cc1abb-992c-123f-4582-005056be61dd
+    [callReferenceNumber] => 7d5d2628-1e89-11f1-bc89-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3MTIyMSwiZXhwIjoyMDg4NzMxMjIxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDk5ODF9.1G6Lzb0LaLK0guoWfUEJ3xytojzcptsSRGWtKd3kcFPyU92VOUfqfCfCrGIz5eDI-V4TfunVDLuULpncjMLcdw
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773371221
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-13 06:11:01 ====
+File: ct_20260313_061101_69b380451700b.json
+EntityType=lead, EntityId=622901
+dialedNumber=73812432442
+callerPhone=+79684037893
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3749993
+    [changedFields] => null
+    [ctCallerId] => 0d89e6c275a6c594958f8bab21b60598
+    [callerphone] => +79684037893
+    [phonenumber] => 73812432442
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-13 06:09:20
+    [timestamp] => 1773371360
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => tk
+    [medium] => cpc
+    [utm_source] => tk
+    [utm_medium] => cpc
+    [utm_campaign] => {campaign_id}
+    [utm_content] => {ad_id}
+    [utm_term] => {keyword}
+    [yaClientId] => 177336175950138849
+    [sessionId] => 259062379
+    [ctClientId] => 3000000000178564488
+    [ctGlobalId] => null
+    [hostname] => omsk-dental.ru
+    [url] => https://omsk-dental.ru/?utm_source=tk&utm_medium=cpc&utm_campaign={campaign_id}&utm_content={ad_id}&utm_term={keyword}&yclid=2547297529612206079&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.120.57.143
+    [sip_call_id] => de94a5f4-992c-123f-4582-005056be61dd
+    [callReferenceNumber] => 07261d06-1e8a-11f1-8cc4-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3MTQ2MSwiZXhwIjoyMDg4NzMxNDYxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NDk5OTN9.HzRgiewEYEBDLPqMOvG9DF7_mkyDZDIMGO6DnPulVM6lV4xeyu-zErhtu90yHC2vaoMJl6Qbyf0CYXbqWjv92Q
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773371461
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-13 06:54:03 ====
+File: ct_20260313_065401_69b38a59b66f9.json
+EntityType=lead, EntityId=647443
+dialedNumber=73812589247
+callerPhone=+79136204277
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3750074
+    [changedFields] => null
+    [ctCallerId] => 3fe75fa59c1d59052d0e4e892a524b54
+    [callerphone] => +79136204277
+    [phonenumber] => 73812589247
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 54
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 06:51:42
+    [timestamp] => 1773373902
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => c9dfe8fd-9932-123f-4582-005056be61dd
+    [callReferenceNumber] => f26df7ac-1e8f-11f1-87b6-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3NDA0MSwiZXhwIjoyMDg4NzM0MDQxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTAwNzR9.T6ILn0zmITA7fb9eDNz1BpZ5_IdpZPaVe3H-AYULKgYPskI6AOp6Zqio-UXKEiES7xKyy3aS6SQalLgXOwT7yg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773374041
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-03-13 07:24:06 ====
+File: ct_20260313_072405_69b391651056c.json
+EntityType=lead, EntityId=647551
+dialedNumber=73812432484
+callerPhone=+79994584287
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3750187
+    [changedFields] => null
+    [ctCallerId] => 1b2e225845bf750ace2da54a67de2562
+    [callerphone] => +79994584287
+    [phonenumber] => 73812432484
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 27
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 07:22:27
+    [timestamp] => 1773375747
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => tk
+    [medium] => cpc
+    [utm_source] => tk
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1773375693820954531
+    [sessionId] => 259082468
+    [ctClientId] => 3000000000178593146
+    [ctGlobalId] => null
+    [hostname] => omsk-dental.ru
+    [url] => https://omsk-dental.ru/?utm_source=tk&etext=2202.IoOK9948AqZd8Fhx9VG9SSsNLwsMXNSGOxpv-KtQvMFeygVuGc5KwMEfgWPmCG8eYWdzYWdwdHltem9nc3VxdA.f91a5c18fe722e273475a0ed2eb86c46807be022&yclid=16699879498481401855&ybaip=1#1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => kemerovo
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 188.162.6.223
+    [sip_call_id] => 15a0a7b7-9937-123f-4582-005056be61dd
+    [callReferenceNumber] => 3e3365e2-1e94-11f1-a9bd-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3NTg0NSwiZXhwIjoyMDg4NzM1ODQ1LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTAxODd9.7A5LLOjgoh8-7WnOfa1XfNGeXkKEJR0nKLVINyloDmqjTm-a9Ie5t08lZC0AOrEP_6EaAqaUp7X0PJM-xrezAQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; KINGKONG X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.703 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1773375845
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-13 07:29:02 ====
+File: ct_20260313_072901_69b3928d28ebb.json
+EntityType=lead, EntityId=647552
+dialedNumber=73812632834
+callerPhone=+79136747848
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3750193
+    [changedFields] => null
+    [ctCallerId] => 8873dbc673b577849622be69c3c11452
+    [callerphone] => +79136747848
+    [phonenumber] => 73812632834
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 222
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 07:24:10
+    [timestamp] => 1773375850
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => 703155198
+    [utm_content] => 17277682731
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773375702773578805
+    [sessionId] => 259082483
+    [ctClientId] => 3000000000178593155
+    [ctGlobalId] => null
+    [hostname] => omsk-dental.ru
+    [url] => https://omsk-dental.ru/protez/?utm_source=yandex&utm_medium=cpc&utm_campaign=703155198&utm_content=17277682731&utm_term=---autotargeting&roistat=direct1_context_17277682731_---autotargeting&roistat_referrer=yandex.ru&roistat_pos=none_0&yclid=7958419911948894207&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/institut_novykh_meditsinskikh_tekhnologiy/1017996538/?ll=73.397086,54.987290&z=13
+    [city] => ulan-ude
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => phablet
+    [ip] => 212.164.25.46
+    [sip_call_id] => 531a53e1-9937-123f-4582-005056be61dd
+    [callReferenceNumber] => 7ba5d5f4-1e94-11f1-b426-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3NjE0MSwiZXhwIjoyMDg4NzM2MTQxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTAxOTN9.y3yXBiblaQEiSkcJW7Ob1jp8gzSnG0KVHrrefKPLeXJtuJ7uDHiUlw3tNIbX5zY22LKLooBKUmJ169YUV_8fBQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; 23124RA7EO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.753 YaApp_Android/25.126.1 YaSearchBrowser/25.126.1 BroPP/1.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773376141
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-13 08:30:03 ====
+File: ct_20260313_083003_69b3a0db4ea14.json
+EntityType=lead, EntityId=611510
+dialedNumber=73812432442
+callerPhone=+74950322674
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3750574
+    [changedFields] => null
+    [ctCallerId] => c10b61ce357ab3a6025c0ccf987b83dd
+    [callerphone] => +74950322674
+    [phonenumber] => 73812432442
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 168
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 08:26:06
+    [timestamp] => 1773379566
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => 703155198
+    [utm_content] => 17277682729
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1768948903392410472
+    [sessionId] => 255797207
+    [ctClientId] => 3000000000158507569
+    [ctGlobalId] => null
+    [hostname] => omsk-dental.ru
+    [url] => https://omsk-dental.ru/protez/?utm_source=yandex&utm_medium=cpc&utm_campaign=703155198&utm_content=17277682729&utm_term=---autotargeting&roistat=direct1_context_17277682729_---autotargeting&roistat_referrer=m.dzen.ru&roistat_pos=none_0&yclid=5601176453732630527&ybaip=1
+    [attrs] => {}
+    [ref] => https://m.dzen.ru/news/story/26427b08-3d96-515b-9ce9-6c5223e12f72?from=main_portal&lang=ru&opertop=1&page=6&persistent_id=3322374684&rubric=army&story=075f3ec1-f46a-5492-be53-088c48cfb3cf&t=7435863303907180544
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.150.77
+    [sip_call_id] => fa0835d7-993f-123f-4582-005056be61dd
+    [callReferenceNumber] => 2290a814-1e9d-11f1-b302-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM3OTgwMywiZXhwIjoyMDg4NzM5ODAzLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTA1NzR9.-FQlgiBsq7KAtqwGZFxlNI3dpI7mH7TOzMceSpAYVGMh0en8z7h3kIj3kLyoA460Bi52P8vPrvIRVAhC0mTQug
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 16; MTN-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.316 YaBrowser/26.3.0.316.00 Mobile Safari/537.36
+    [sendingTimestamp] => 1773379803
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-13 09:55:05 ====
+File: ct_20260313_095503_69b3b4c7d9cff.json
+EntityType=lead, EntityId=648245
+dialedNumber=73812678991
+callerPhone=+79136632728
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3751857
+    [changedFields] => null
+    [ctCallerId] => 7484d44afe515dfc47f2780278b09bdf
+    [callerphone] => +79136632728
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 39
+    [waiting_time] => 1
+    [calltime] => 2026-03-13 09:52:27
+    [timestamp] => 1773384747
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 0a590109-994c-123f-4582-005056be61dd
+    [callReferenceNumber] => 32e8b362-1ea9-11f1-9aec-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4NDkwMywiZXhwIjoyMDg4NzQ0OTAzLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTE4NTd9.cmLxF5wfJaR0z1NZMo20w6qCrqcHwh3CcHRhonKqZdBhdaC8PKnwM2m7ggHx-QnxIqzJaEMBQCP0gXnhKg88NA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773384903
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-13 10:05:08 ====
+File: ct_20260313_100508_69b3b7248d69a.json
+EntityType=lead, EntityId=601276
+dialedNumber=73812678991
+callerPhone=+79131477403
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3752045
+    [changedFields] => null
+    [ctCallerId] => e5d35d35d41e17eb45b222fdec633958
+    [callerphone] => +79131477403
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 51
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 10:02:25
+    [timestamp] => 1773385345
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 6e990114-994d-123f-4582-005056be61dd
+    [callReferenceNumber] => 971e0ee4-1eaa-11f1-adbc-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4NTUwNywiZXhwIjoyMDg4NzQ1NTA3LCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTIwNDV9.tlURtw2HUA0SyUjFJLRL8LgwtOe_XtISKjj1D9YWjvett6gkY9tsJcasYscCElOKjkfqSgo6vwJXMjDnN6P3nA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773385507
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-13 10:19:13 ====
+File: ct_20260313_101911_69b3ba6f33c7d.json
+EntityType=lead, EntityId=648351
+dialedNumber=73812699747
+callerPhone=+79236735993
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3752324
+    [changedFields] => null
+    [ctCallerId] => 4fcba97085eb3774bfe09be91b2fb97f
+    [callerphone] => +79236735993
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 97
+    [waiting_time] => 1
+    [calltime] => 2026-03-13 10:16:07
+    [timestamp] => 1773386167
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 58aa7d52-994f-123f-4582-005056be61dd
+    [callReferenceNumber] => 813c8112-1eac-11f1-81bc-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4NjM1MSwiZXhwIjoyMDg4NzQ2MzUxLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTIzMjR9.3C14vVAxXe11hiFKOE8akPDXRbwuGptKlOsY64KskS2_rl379OWmdy7dVDCLcHjqvcakC07Qx6A4IAfnQSRtjQ
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773386351
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+
+==== 2026-03-13 10:26:14 ====
+File: ct_20260313_102613_69b3bc15ed2d8.json
+EntityType=lead, EntityId=648245
+dialedNumber=73812678991
+callerPhone=+79136632728
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3752498
+    [changedFields] => null
+    [ctCallerId] => 7484d44afe515dfc47f2780278b09bdf
+    [callerphone] => +79136632728
+    [phonenumber] => 73812678991
+    [subPoolName] => 2 ГИС Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 59
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 10:24:05
+    [timestamp] => 1773386645
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Омск
+    [medium] => 2 ГИС Омск
+    [utm_source] => 2 ГИС Омск
+    [utm_medium] => 2 ГИС Омск
+    [utm_campaign] => 2 ГИС Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 7576b6e7-9950-123f-4582-005056be61dd
+    [callReferenceNumber] => 9df5aa94-1ead-11f1-8355-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4Njc3MywiZXhwIjoyMDg4NzQ2NzczLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTI0OTh9.01VgCzXgsfxgsjnAcv6UMVTjhE_WTft97NUUMh3uJLnzKsds3mGehsAyUGwKkfCsrNRcOr3wL7KniemGwP_feg
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773386773
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Омск
+    [url] => 2 ГИС Омск
+)
+
+
+==== 2026-03-13 10:27:04 ====
+File: ct_20260313_102703_69b3bc47ce8a4.json
+EntityType=lead, EntityId=644612
+dialedNumber=73812699747
+callerPhone=+79659706930
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3752491
+    [changedFields] => null
+    [ctCallerId] => 9076075c23c2ae1a413c6f1a1fa169c8
+    [callerphone] => +79659706930
+    [phonenumber] => 73812699747
+    [subPoolName] => Яндекс Карты Омск
+    [redirectNumber] => sip:omsk_per_lead@omsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 95
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 10:23:44
+    [timestamp] => 1773386624
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Омск
+    [medium] => Яндекс Карты Омск
+    [utm_source] => Яндекс Карты Омск
+    [utm_medium] => Яндекс Карты Омск
+    [utm_campaign] => Яндекс Карты Омск
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 68af365b-9950-123f-4582-005056be61dd
+    [callReferenceNumber] => 9141717a-1ead-11f1-be7b-812bb8866edc
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4NjgyMywiZXhwIjoyMDg4NzQ2ODIzLCJzaXRlSWQiOjcyMjcyLCJjYWxsSWQiOjM3NTI0OTF9.3-fDdkDXCKOJwbwljIu4sRN1dOMpM0AX8_2uzdjPzaA5HJ4ERrhDjhwnWwy8uyctaREQZhZlndTHtIYHgkKsiA
+    [orderId] => null
+    [siteId] => 72272
+    [siteName] => Омск
+    [sendingTimestamp] => 1773386823
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Омск
+    [url] => Яндекс Карты Омск
+)
+
+

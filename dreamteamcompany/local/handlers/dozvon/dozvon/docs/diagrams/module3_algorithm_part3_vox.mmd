@@ -1,0 +1,15 @@
+flowchart TD
+  inVox([Оператор выбран])
+  tz6a["ТЗ6А: попытка operator_calling, OPERATOR_ID, SIP"]
+  inVox --> tz6a
+  tz5["ТЗ5: POST StartScenarios"]
+  tz6a --> tz5
+  voxGate{Ответ Vox OK?}
+  tz5 --> voxGate
+  voxGate -->|нет| rb["Откат в ready"]
+  rb --> errVox[["Ошибка vox"]]
+  voxGate -->|да| tz6b["ТЗ6Б: CALL_ID, session в 131"]
+  tz6b --> tz7["ТЗ7: UF лида"]
+  tz7 --> l128["128: busy, LAST_ASSIGNED_AT"]
+  l128 --> diag["Опц.: GetCallHistory"]
+  diag --> ok[["call_started"]]

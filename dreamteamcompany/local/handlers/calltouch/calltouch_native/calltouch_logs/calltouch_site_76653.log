@@ -1,0 +1,2294 @@
+==== 2025-11-17 08:29:17 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-17 10:59:38 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-17 10:59:50 ====
+File: ct_20251117_083105_691ab319c708e.json
+EntityType=lead, EntityId=441756
+dialedNumber=73422484829
+callerPhone=79630110434
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 644959
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 16
+    [waiting_time] => 1
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 31afd190-3e19-123f-24a2-005056be83e0
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzM1NzQ2NSwiZXhwIjoyMDc4NzE3NDY1LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjY0NDk1OX0._3-W1xGPzMBHhzyyL2ydTbGQTDrwzUXPG1Ail-6h9PPzm_Iy41MB0utduIZMVjnXkqk3FHbKwmP7gWt18zXGzQ
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357465
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 12:08:48 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 12:59:58 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 13:00:59 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 13:10:15 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 13:58:19 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 15:35:40 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 15:56:33 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 18:26:55 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 18:32:09 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-18 18:52:03 ====
+File: ct_20251117_082917_691ab2ad35b8e.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 644959
+    [changedFields] => null
+    [ctCallerId] => dbfdad7e2697c7d5a28ee65ba72b7b42
+    [callerphone] => 79630110434
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-17 08:29:13
+    [timestamp] => 1763357353
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 5a4276d4-c376-11f0-90a7-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1763357357
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-19 18:53:13 ====
+File: ct_20251119_185313_691de7e9a9296.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 677620
+    [changedFields] => null
+    [ctCallerId] => ad2624fe27740947deb382aa8de013a1
+    [callerphone] => 79249146536
+    [phonenumber] => 73422555394
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-19 18:53:11
+    [timestamp] => 1763567591
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1763555032220397425
+    [sessionId] => 57787244
+    [ctClientId] => 3300000000038679605
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => chelyabinsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.215.174
+    [callReferenceNumber] => d9bc5336-c55f-11f0-aebf-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763567593
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-19 18:55:07 ====
+File: ct_20251119_185504_691de858ecbaa.json
+EntityType=lead, EntityId=446436
+dialedNumber=73422555394
+callerPhone=79249146536
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 677620
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => ad2624fe27740947deb382aa8de013a1
+    [callerphone] => 79249146536
+    [phonenumber] => 73422555394
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 3
+    [waiting_time] => 2
+    [calltime] => 2025-11-19 18:53:11
+    [timestamp] => 1763567591
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1763555032220397425
+    [sessionId] => 57787244
+    [ctClientId] => 3300000000038679605
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => chelyabinsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.215.174
+    [sip_call_id] => b12ab47d-4002-123f-24a2-005056be83e0
+    [callReferenceNumber] => d9bc5336-c55f-11f0-aebf-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzU2NzcwNCwiZXhwIjoyMDc4OTI3NzA0LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjY3NzYyMH0.qC9e7OYZVKIQyBmNbv2bJ827RJxexCZBl8qXHsUtHsPE-_luDzoQqvWg59KDMT0F7LvP0M60dH-0RJUfgHEkAg
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763567704
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-19 20:29:58 ====
+File: ct_20251119_185313_691de7e9a9296.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 677620
+    [changedFields] => null
+    [ctCallerId] => ad2624fe27740947deb382aa8de013a1
+    [callerphone] => 79249146536
+    [phonenumber] => 73422555394
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-19 18:53:11
+    [timestamp] => 1763567591
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1763555032220397425
+    [sessionId] => 57787244
+    [ctClientId] => 3300000000038679605
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => chelyabinsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.215.174
+    [callReferenceNumber] => d9bc5336-c55f-11f0-aebf-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763567593
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-02 08:05:33 ====
+File: ct_20251202_080533_692e739d43656.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 792764
+    [changedFields] => null
+    [ctCallerId] => 2ba89f8f1cc00e27ff9d9d60681543c6
+    [callerphone] => 79011397088
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-02 08:05:32
+    [timestamp] => 1764651932
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 87106f28-cf3c-11f0-a524-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764651933
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-02 08:08:04 ====
+File: ct_20251202_080801_692e7431cf26c.json
+EntityType=lead, EntityId=467037
+dialedNumber=73422922419
+callerPhone=79011397088
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 792764
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 2ba89f8f1cc00e27ff9d9d60681543c6
+    [callerphone] => 79011397088
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 34
+    [waiting_time] => 2
+    [calltime] => 2025-12-02 08:05:32
+    [timestamp] => 1764651932
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 5e82edea-49df-123f-24a2-005056be83e0
+    [callReferenceNumber] => 87106f28-cf3c-11f0-a524-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDY1MjA4MSwiZXhwIjoyMDgwMDEyMDgxLCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjc5Mjc2NH0.UDychPB5_0bxp18flaEWWnJzWEcnkCam5lrJ6l7lFQHYtjMG0qCtcavpiU8ZGHe3CyaxhvyGJbmQjhuX8TIvbg
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764652081
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-02 09:22:01 ====
+File: ct_20251202_092201_692e85897773d.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 793512
+    [changedFields] => null
+    [ctCallerId] => b266e4302004ed4f5cea09ee5097d19f
+    [callerphone] => 4915204972363
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-02 09:22:00
+    [timestamp] => 1764656520
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 35c0e4f8-cf47-11f0-8c9c-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764656521
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-02 09:24:05 ====
+File: ct_20251202_092403_692e8603eca07.json
+EntityType=lead, EntityId=467165
+dialedNumber=73422922419
+callerPhone=4915204972363
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 793512
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => b266e4302004ed4f5cea09ee5097d19f
+    [callerphone] => 4915204972363
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 22
+    [waiting_time] => 2
+    [calltime] => 2025-12-02 09:22:00
+    [timestamp] => 1764656520
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 0d307b40-49ea-123f-24a2-005056be83e0
+    [callReferenceNumber] => 35c0e4f8-cf47-11f0-8c9c-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDY1NjY0MywiZXhwIjoyMDgwMDE2NjQzLCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjc5MzUxMn0.RwcXr27oU_-mNiz9OuZMikG8iCU7xwbj4A9cZomno_Xwo-cFDMkSbI4RAzSFWvPlImsNQvEaMu8lVR6cS8Z7RQ
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764656643
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-02 10:39:23 ====
+File: ct_20251202_080533_692e739d43656.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 792764
+    [changedFields] => null
+    [ctCallerId] => 2ba89f8f1cc00e27ff9d9d60681543c6
+    [callerphone] => 79011397088
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-02 08:05:32
+    [timestamp] => 1764651932
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 87106f28-cf3c-11f0-a524-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764651933
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-02 10:39:58 ====
+File: ct_20251202_092201_692e85897773d.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 793512
+    [changedFields] => null
+    [ctCallerId] => b266e4302004ed4f5cea09ee5097d19f
+    [callerphone] => 4915204972363
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-02 09:22:00
+    [timestamp] => 1764656520
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 35c0e4f8-cf47-11f0-8c9c-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764656521
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-02 12:11:49 ====
+File: ct_20251202_121149_692ead555e401.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 796662
+    [changedFields] => null
+    [ctCallerId] => 5d6c5f83d6f13339aca9bd348c3ae0cb
+    [callerphone] => 351967743220
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [calltime] => 2025-12-02 12:10:58
+    [timestamp] => 1764666658
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => TG_12.08.702606767.5627947250
+    [utm_content] => search.---autotargeting.t.me.Пермь
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1764604123762182566
+    [sessionId] => 68125453
+    [ctClientId] => 3300000000044627561
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=TG_12.08.702606767.5627947250&utm_content=search.---autotargeting.t.me.Пермь&calltouch_tm=yd_c:702606767_gb:5627947250_ad:1885328123529985240_ph:205627947250_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:50_ret:205627947250_apt:none&yclid=18058547189837463551
+    [attrs] => {}
+    [ref] => 
+    [city] => perm
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 46.146.92.205
+    [sip_call_id] => a87955ff-4a01-123f-24a2-005056be83e0
+    [callReferenceNumber] => d106763c-cf5e-11f0-a753-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1764666709
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-02 12:14:13 ====
+File: ct_20251202_121411_692eade3c8c7f.json
+EntityType=lead, EntityId=467532
+dialedNumber=73422922419
+callerPhone=351967743220
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 796662
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 5d6c5f83d6f13339aca9bd348c3ae0cb
+    [callerphone] => 351967743220
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 21
+    [waiting_time] => 2
+    [calltime] => 2025-12-02 12:10:58
+    [timestamp] => 1764666658
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => TG_12.08.702606767.5627947250
+    [utm_content] => search.---autotargeting.t.me.Пермь
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1764604123762182566
+    [sessionId] => 68125453
+    [ctClientId] => 3300000000044627561
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=TG_12.08.702606767.5627947250&utm_content=search.---autotargeting.t.me.Пермь&calltouch_tm=yd_c:702606767_gb:5627947250_ad:1885328123529985240_ph:205627947250_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:50_ret:205627947250_apt:none&yclid=18058547189837463551
+    [attrs] => {}
+    [ref] => 
+    [city] => perm
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 46.146.92.205
+    [sip_call_id] => a87955ff-4a01-123f-24a2-005056be83e0
+    [callReferenceNumber] => d106763c-cf5e-11f0-a753-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDY2Njg1MCwiZXhwIjoyMDgwMDI2ODUwLCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjc5NjY2Mn0.Oe1S3WTQLkFyY433lRSHB1DBzNLlGeqWDIcsM5K-ESpjRoSRHa4hGIgihSlFjaZG1LCT8DZJweSRb7dVArZxYg
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1764666850
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-02 12:30:22 ====
+File: ct_20251202_121149_692ead555e401.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 796662
+    [changedFields] => null
+    [ctCallerId] => 5d6c5f83d6f13339aca9bd348c3ae0cb
+    [callerphone] => 351967743220
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [calltime] => 2025-12-02 12:10:58
+    [timestamp] => 1764666658
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => TG_12.08.702606767.5627947250
+    [utm_content] => search.---autotargeting.t.me.Пермь
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1764604123762182566
+    [sessionId] => 68125453
+    [ctClientId] => 3300000000044627561
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=TG_12.08.702606767.5627947250&utm_content=search.---autotargeting.t.me.Пермь&calltouch_tm=yd_c:702606767_gb:5627947250_ad:1885328123529985240_ph:205627947250_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:50_ret:205627947250_apt:none&yclid=18058547189837463551
+    [attrs] => {}
+    [ref] => 
+    [city] => perm
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 46.146.92.205
+    [sip_call_id] => a87955ff-4a01-123f-24a2-005056be83e0
+    [callReferenceNumber] => d106763c-cf5e-11f0-a753-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1764666709
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-02 13:28:50 ====
+File: ct_20251202_132850_692ebf62085f8.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 798047
+    [changedFields] => null
+    [ctCallerId] => 77bc18c03c0f20b9321ec0248b80889e
+    [callerphone] => 34615369021
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-02 13:28:42
+    [timestamp] => 1764671322
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => TG_12.08.702606767.5627947250
+    [utm_content] => search.---autotargeting.t.me.Пермь
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1764604123762182566
+    [sessionId] => 68125453
+    [ctClientId] => 3300000000044627561
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=TG_12.08.702606767.5627947250&utm_content=search.---autotargeting.t.me.Пермь&calltouch_tm=yd_c:702606767_gb:5627947250_ad:1885328123529985240_ph:205627947250_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:50_ret:205627947250_apt:none&yclid=18058547189837463551
+    [attrs] => {}
+    [ref] => 
+    [city] => perm
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 46.146.92.205
+    [callReferenceNumber] => acbf7750-cf69-11f0-9577-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1764671329
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-02 13:30:12 ====
+File: ct_20251202_133009_692ebfb1c2226.json
+EntityType=lead, EntityId=467685
+dialedNumber=73422922419
+callerPhone=34615369021
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 798047
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 77bc18c03c0f20b9321ec0248b80889e
+    [callerphone] => 34615369021
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 17
+    [waiting_time] => 2
+    [calltime] => 2025-12-02 13:28:42
+    [timestamp] => 1764671322
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => TG_12.08.702606767.5627947250
+    [utm_content] => search.---autotargeting.t.me.Пермь
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1764604123762182566
+    [sessionId] => 68125453
+    [ctClientId] => 3300000000044627561
+    [ctGlobalId] => null
+    [hostname] => rodonta.ru
+    [url] => https://rodonta.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=TG_12.08.702606767.5627947250&utm_content=search.---autotargeting.t.me.Пермь&calltouch_tm=yd_c:702606767_gb:5627947250_ad:1885328123529985240_ph:205627947250_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:50_ret:205627947250_apt:none&yclid=18058547189837463551
+    [attrs] => {}
+    [ref] => 
+    [city] => perm
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 46.146.92.205
+    [sip_call_id] => 84322ef7-4a0c-123f-24a2-005056be83e0
+    [callReferenceNumber] => acbf7750-cf69-11f0-9577-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDY3MTQwOSwiZXhwIjoyMDgwMDMxNDA5LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjc5ODA0N30.wpiYghIJk4vuK5S3FCd3sf237zQZqNnog5m9vHRnDSUZQvgDrYreDcUUqQjfPbN1vVeMZLw6fpcEq6wrlo_vvQ
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1764671409
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-03 18:45:24 ====
+File: ct_20251203_184524_69305b14ae731.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 813444
+    [changedFields] => null
+    [ctCallerId] => b0f86ca971bf0ed02d11c92d221652c4
+    [callerphone] => 79584182042
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-03 18:45:22
+    [timestamp] => 1764776722
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 140d4734-d05f-11f0-84ec-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764776724
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-03 18:47:06 ====
+File: ct_20251203_184704_69305b78093d9.json
+EntityType=lead, EntityId=470225
+dialedNumber=73422922419
+callerPhone=79584182042
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 813444
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => b0f86ca971bf0ed02d11c92d221652c4
+    [callerphone] => 79584182042
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 28
+    [waiting_time] => 2
+    [calltime] => 2025-12-03 18:45:22
+    [timestamp] => 1764776722
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => eb7bd084-4b01-123f-24a2-005056be83e0
+    [callReferenceNumber] => 140d4734-d05f-11f0-84ec-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDc3NjgyMywiZXhwIjoyMDgwMTM2ODIzLCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjgxMzQ0NH0.8VGkhBoeYZXMYarqGcwRD7Mwb_xmYJPzDN2m6GhP7Rc4XYZG_qTIuEj4RwqyHv_fjNkbViJl4tc6zuKVlipUUw
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764776823
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-04 08:33:55 ====
+File: ct_20251204_083355_69311d434fd05.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 814883
+    [changedFields] => null
+    [ctCallerId] => 9ef3ca23c878e813316f120de42d9222
+    [callerphone] => 79332220326
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-04 08:33:54
+    [timestamp] => 1764826434
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => d2818d56-d0d2-11f0-832b-df743738bfb3
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764826435
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-04 08:36:08 ====
+File: ct_20251204_083604_69311dc4dd33f.json
+EntityType=lead, EntityId=470831
+dialedNumber=73422485418
+callerPhone=79332220326
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 814883
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 9ef3ca23c878e813316f120de42d9222
+    [callerphone] => 79332220326
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 15
+    [waiting_time] => 1
+    [calltime] => 2025-12-04 08:33:54
+    [timestamp] => 1764826434
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => a9f004a8-4b75-123f-24a2-005056be83e0
+    [callReferenceNumber] => d2818d56-d0d2-11f0-832b-df743738bfb3
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDgyNjU2NCwiZXhwIjoyMDgwMTg2NTY0LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjgxNDg4M30.XjiTvENg9COLKKWnmWTjHW-pUh5NJiDE9g-dVJPKxdkmGJ2zJegX9IiHuRsP_ZhirP3YDZPGbxz0SqPHCyqVFw
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1764826564
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-11 10:53:14 ====
+File: ct_20251211_105314_693a786a8b8b7.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 886855
+    [changedFields] => null
+    [ctCallerId] => 1d805894991788629a9621d492163a3a
+    [callerphone] => 79526516255
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-11 10:53:13
+    [timestamp] => 1765439593
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 71bb790c-d666-11f0-b61c-3562aedf7710
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1765439594
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-11 10:55:27 ====
+File: ct_20251211_105522_693a78eaed020.json
+EntityType=lead, EntityId=484520
+dialedNumber=73422484829
+callerPhone=79526516255
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 886855
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 1d805894991788629a9621d492163a3a
+    [callerphone] => 79526516255
+    [phonenumber] => 73422484829
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 42
+    [waiting_time] => 1
+    [calltime] => 2025-12-11 10:53:13
+    [timestamp] => 1765439593
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 492d88a5-5109-123f-2786-005056be83e0
+    [callReferenceNumber] => 71bb790c-d666-11f0-b61c-3562aedf7710
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NTQzOTcyMiwiZXhwIjoyMDgwNzk5NzIyLCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjg4Njg1NX0.Oe8jixRldTztApDs6POeP3CnBpmcCicoLr6PwIJiaHRLOOUU8Vu_avlzucWVn_cPcXikmnx1X-Azpm4JfRrVdw
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1765439722
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-26 15:00:30 ====
+File: ct_20251226_150029_694e78ddf144d.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 1038195
+    [changedFields] => null
+    [ctCallerId] => f57808617d541dfe88bfd4b0ca557505
+    [callerphone] => +79629496236
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-26 15:00:27
+    [timestamp] => 1766750427
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 77fbe20a-e252-11f0-a01c-3562aedf7710
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1766750429
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-12-26 15:03:07 ====
+File: ct_20251226_150306_694e797a53242.json
+EntityType=lead, EntityId=515053
+dialedNumber=73422922419
+callerPhone=+79629496236
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1038195
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => f57808617d541dfe88bfd4b0ca557505
+    [callerphone] => +79629496236
+    [phonenumber] => 73422922419
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 63
+    [waiting_time] => 1
+    [calltime] => 2025-12-26 15:00:27
+    [timestamp] => 1766750427
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 4f69daea-5cf5-123f-2786-005056be83e0
+    [callReferenceNumber] => 77fbe20a-e252-11f0-a01c-3562aedf7710
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Njc1MDU4NiwiZXhwIjoyMDgyMTEwNTg2LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjEwMzgxOTV9.GT4glSihGjB3ZeKyYrNPdW3jpMNfwGT1UMMFzmJwPuIjRA5SYWBWi2myT9PBowYrRXoX9odddmWiZiFKTbYLvQ
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1766750586
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-02-11 13:07:07 ====
+File: ct_20260211_130706_698c54cae063f.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 1486131
+    [changedFields] => null
+    [ctCallerId] => dd9a804c407b8e148b70a3b545af98ab
+    [callerphone] => +79324901761
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2026-02-11 13:07:03
+    [timestamp] => 1770804423
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 697e4520-0731-11f1-91d0-ff53ad4891b9
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1770804426
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-02-11 13:09:39 ====
+File: ct_20260211_130938_698c5562824a4.json
+EntityType=lead, EntityId=592880
+dialedNumber=73422485418
+callerPhone=+79324901761
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1486131
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => dd9a804c407b8e148b70a3b545af98ab
+    [callerphone] => +79324901761
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 60
+    [waiting_time] => 2
+    [calltime] => 2026-02-11 13:07:03
+    [timestamp] => 1770804423
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 40ebf16e-81d4-123f-7892-005056be83e0
+    [callReferenceNumber] => 697e4520-0731-11f1-91d0-ff53ad4891b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MDgwNDU3OCwiZXhwIjoyMDg2MTY0NTc4LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjE0ODYxMzF9.i72Qh4R156hwgMQY5wP5SREJQ_07LaLDapFiOFOJeXrJ333lGBLo07X2J2UeYetDVPj0PO-hbJ36fIVGt_Wrow
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1770804578
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-02-11 15:21:17 ====
+File: ct_20260211_130706_698c54cae063f.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 1486131
+    [changedFields] => null
+    [ctCallerId] => dd9a804c407b8e148b70a3b545af98ab
+    [callerphone] => +79324901761
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2026-02-11 13:07:03
+    [timestamp] => 1770804423
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 697e4520-0731-11f1-91d0-ff53ad4891b9
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1770804426
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-02-13 12:52:07 ====
+File: ct_20260213_125205_698ef445c5e6c.json
+EntityType=lead, EntityId=596466
+dialedNumber=73422485418
+callerPhone=+79324900805
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1509947
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => f78bec24776c28b4ff32146269f43233
+    [callerphone] => +79324900805
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 73
+    [waiting_time] => 1
+    [calltime] => 2026-02-13 12:49:39
+    [timestamp] => 1770976179
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 279d2ec2-8364-123f-7892-005056be83e0
+    [callReferenceNumber] => 502fa6ea-08c1-11f1-9644-ff53ad4891b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MDk3NjMyNSwiZXhwIjoyMDg2MzM2MzI1LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjE1MDk5NDd9.1FMiuwcpu_9_hQcA7SXro2wpuB4mXEJnpvt1gfThdBNIWHUIVLXYXSqFt97cumoq55ednWrZmaxKEPE3ZkAloQ
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1770976325
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-02-27 14:45:55 ====
+File: ct_20260227_144555_69a183f3634e4.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 1661463
+    [changedFields] => null
+    [ctCallerId] => dd9a804c407b8e148b70a3b545af98ab
+    [callerphone] => +79324901761
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2026-02-27 14:45:54
+    [timestamp] => 1772192754
+    [unique] => false
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => df62b9ea-13d1-11f1-be7a-ff53ad4891b9
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1772192755
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-02-27 14:48:15 ====
+File: ct_20260227_144815_69a1847f8fa06.json
+EntityType=lead, EntityId=592880
+dialedNumber=73422485418
+callerPhone=+79324901761
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1661463
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => dd9a804c407b8e148b70a3b545af98ab
+    [callerphone] => +79324901761
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => 73422252953
+    [duration] => 16
+    [waiting_time] => 16
+    [calltime] => 2026-02-27 14:45:54
+    [timestamp] => 1772192754
+    [status] => unsuccessful
+    [statusDetails] => Вызываемый абонент "Занят"
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => b6d5c445-8e74-123f-7892-005056be83e0
+    [callReferenceNumber] => df62b9ea-13d1-11f1-be7a-ff53ad4891b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjE5Mjg5NSwiZXhwIjoyMDg3NTUyODk1LCJzaXRlSWQiOjc2NjUzLCJjYWxsSWQiOjE2NjE0NjN9.piobdGO83LzYEWO2bFHiERdrfWCeOqNT67aK44E8AqCQqg0B9pFZP6ZifDSHpgLRvdjKR-3YlzyPvLXxZtgFJA
+    [orderId] => null
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1772192895
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2026-03-02 12:18:02 ====
+File: ct_20260227_144555_69a183f3634e4.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 1661463
+    [changedFields] => null
+    [ctCallerId] => dd9a804c407b8e148b70a3b545af98ab
+    [callerphone] => +79324901761
+    [phonenumber] => 73422485418
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2026-02-27 14:45:54
+    [timestamp] => 1772192754
+    [unique] => false
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => df62b9ea-13d1-11f1-be7a-ff53ad4891b9
+    [siteId] => 76653
+    [siteName] => rodonta.ru
+    [sendingTimestamp] => 1772192755
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+

@@ -1,0 +1,148 @@
+$blockName = 'bp_calltouch_ib54_lookup_code';
+$this->WriteToTrackingService('[' . $blockName . '] start');
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+try {
+    if (!\Bitrix\Main\Loader::includeModule('iblock')) {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'Модуль iblock не доступен');
+        $log('[' . $blockName . '] iblock module unavailable');
+        return;
+    }
+
+    $nameKey = trim((string)$getVar('CB_DOMAIN'));
+    $siteId = trim((string)$getVar('CB_SITE_ID'));
+    $subPoolName = trim((string)$getVar('CB_SUB_POOL_NAME'));
+
+    $log('[' . $blockName . '] lookup start | nameKey=' . $nameKey . ' | siteId=' . $siteId . ' | subPool=' . $subPoolName);
+
+    if ($nameKey === '' || $siteId === '') {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'CallTouch lookup requires nameKey and siteId');
+        $log('[' . $blockName . '] missing nameKey or siteId');
+        return;
+    }
+
+    $findElement = function ($lookupName, $lookupSiteId) {
+        $siteIdNum = (int)$lookupSiteId;
+        $siteIdStr = (string)$lookupSiteId;
+        $variants = [$siteIdNum, $siteIdStr, ['VALUE' => $siteIdNum], ['VALUE' => $siteIdStr]];
+
+        foreach ($variants as $variant) {
+            if ($siteIdNum <= 0 && is_array($variant)) {
+                continue;
+            }
+
+            $dbRes = \CIBlockElement::GetList(
+                ['ID' => 'ASC'],
+                [
+                    'IBLOCK_ID' => 54,
+                    'NAME' => $lookupName,
+                    'ACTIVE' => 'Y',
+                    'PROPERTY_199' => $variant,
+                ],
+                false,
+                ['nTopCount' => 1],
+                ['ID', 'NAME', 'PROPERTY_191', 'PROPERTY_192', 'PROPERTY_193', 'PROPERTY_194']
+            );
+
+            $element = $dbRes->GetNext();
+            if ($element) {
+                return $element;
+            }
+        }
+
+        return false;
+    };
+
+    $element = $findElement($nameKey, $siteId);
+    $effectiveName = $nameKey;
+
+    if (!$element && $subPoolName !== '' && strcasecmp($subPoolName, 'null') !== 0 && $subPoolName !== $nameKey) {
+        $log('[' . $blockName . '] fallback subPoolName=' . $subPoolName);
+        $element = $findElement($subPoolName, $siteId);
+        if ($element) {
+            $effectiveName = $subPoolName;
+        }
+    }
+
+    if (!$element) {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', "CallTouch IB54 pair not found: NAME='$nameKey', PROPERTY_199='$siteId'");
+        $log('[' . $blockName . '] pair not found');
+        return;
+    }
+
+    $setVar('CB_DOMAIN', (string)$element['NAME']);
+
+    if (!empty($element['PROPERTY_192_VALUE'])) {
+        $srcRes = \CIBlockElement::GetList(
+            [],
+            ['IBLOCK_ID' => 19, 'ID' => (int)$element['PROPERTY_192_VALUE']],
+            false,
+            ['nTopCount' => 1],
+            ['ID', 'PROPERTY_73']
+        );
+        $srcEl = $srcRes->GetNext();
+        if ($srcEl && !empty($srcEl['PROPERTY_73_VALUE'])) {
+            $setVar('CB_SOURCE_ID', (string)$srcEl['PROPERTY_73_VALUE']);
+        }
+    }
+
+    if (!empty($element['PROPERTY_191_VALUE'])) {
+        $setVar('CB_CITY_ID', (string)$element['PROPERTY_191_VALUE']);
+        $cityRes = \CIBlockElement::GetList(
+            [],
+            ['IBLOCK_ID' => 22, 'ID' => (int)$element['PROPERTY_191_VALUE']],
+            false,
+            ['nTopCount' => 1],
+            ['ID', 'PROPERTY_185']
+        );
+        $cityEl = $cityRes->GetNext();
+        if ($cityEl && !empty($cityEl['PROPERTY_185_VALUE'])) {
+            $setVar('CB_ASSIGNED_BY_ID', (string)$cityEl['PROPERTY_185_VALUE']);
+        }
+    }
+
+    if (!empty($element['PROPERTY_193_VALUE'])) {
+        $setVar('CB_ISPOLNITEL', (string)$element['PROPERTY_193_VALUE']);
+    }
+
+    if (!empty($element['PROPERTY_194_VALUE'])) {
+        $setVar('CB_INFOPOVOD', (string)$element['PROPERTY_194_VALUE']);
+    }
+
+    $observers = [];
+    $propRes = \CIBlockElement::GetProperty(54, $element['ID'], [], ['CODE' => 'PROPERTY_195']);
+    while ($prop = $propRes->GetNext()) {
+        if (!empty($prop['VALUE'])) {
+            $observers[] = (string)$prop['VALUE'];
+        }
+    }
+    if (!empty($observers)) {
+        $setVar('CB_OBSERVER_IDS', implode(',', $observers));
+    }
+
+    $setVar('CB_RESULT', 'parsed');
+    $setVar('CB_ERROR_MSG', '');
+    $log('[' . $blockName . '] parsed | foundName=' . (string)$element['NAME'] . ' | siteId=' . $siteId . ' | elementId=' . (string)$element['ID'] . ' | lookupName=' . $effectiveName);
+} catch (\Throwable $e) {
+    $setVar('CB_RESULT', 'not parsed');
+    $setVar('CB_ERROR_MSG', 'Lookup error: ' . $e->getMessage());
+    $this->WriteToTrackingService('[' . $blockName . '] exception: ' . $e->getMessage());
+}

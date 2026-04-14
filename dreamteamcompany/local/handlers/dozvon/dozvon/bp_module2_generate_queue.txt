@@ -1,0 +1,881 @@
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+
+$setVar = function (string $name, $value) use ($rootActivity): void {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+
+$log = function (string $message) {
+    $this->WriteToTrackingService($message);
+};
+
+$masterListId = 130;
+$attemptListId = 131;
+$cityListId = 22;
+
+$setVar('MODULE2_QUEUE_CREATED', 'N');
+$setVar('MODULE2_ATTEMPTS_CREATED', '0');
+$setVar('MODULE2_ERROR_MESSAGE', '');
+
+if (!Loader::includeModule('iblock')) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'iblock module not available');
+    $log('MODULE2: iblock module not available');
+    return;
+}
+
+$documentId = null;
+if (method_exists($this, 'GetDocumentId')) {
+    $documentId = $this->GetDocumentId();
+} elseif (method_exists($rootActivity, 'GetDocumentId')) {
+    $documentId = $rootActivity->GetDocumentId();
+}
+
+$masterElementId = 0;
+if (is_array($documentId)) {
+    $candidate = end($documentId);
+    if (is_scalar($candidate)) {
+        $rawDocumentId = (string)$candidate;
+        if (preg_match('/(?:^|_)(\d+)$/', $rawDocumentId, $m)) {
+            $masterElementId = (int)$m[1];
+        } elseif (ctype_digit($rawDocumentId)) {
+            $masterElementId = (int)$rawDocumentId;
+        }
+    }
+} elseif (is_scalar($documentId)) {
+    $rawDocumentId = (string)$documentId;
+    if (preg_match('/(?:^|_)(\d+)$/', $rawDocumentId, $m)) {
+        $masterElementId = (int)$m[1];
+    } elseif (ctype_digit($rawDocumentId)) {
+        $masterElementId = (int)$rawDocumentId;
+    }
+}
+
+if ($masterElementId <= 0) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Не удалось определить ID текущего элемента списка');
+    $log('MODULE2: cannot resolve current master element ID from BP document');
+    return;
+}
+
+$getListEnumId = function (int $iblockId, string $propertyCode, string $value): ?int {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $iblockId, 'CODE' => $propertyCode]);
+    $prop = $res ? $res->Fetch() : false;
+    if (!$prop || (string)($prop['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+
+    $propId = (int)$prop['ID'];
+
+    $enumRes = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $propId, 'VALUE' => $value]);
+    $enum = $enumRes ? $enumRes->Fetch() : false;
+    if ($enum) {
+        return (int)$enum['ID'];
+    }
+
+    $enumRes = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $propId, 'XML_ID' => $value]);
+    $enum = $enumRes ? $enumRes->Fetch() : false;
+    if ($enum) {
+        return (int)$enum['ID'];
+    }
+
+    return null;
+};
+
+$hasPropertyCode = function (int $iblockId, string $propertyCode): bool {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $iblockId, 'CODE' => $propertyCode]);
+    return (bool)($res && $res->Fetch());
+};
+
+$getElement = function (int $iblockId, int $elementId): ?array {
+    $res = CIBlockElement::GetByID($elementId);
+    if (!$res) {
+        return null;
+    }
+
+    $ob = $res->GetNextElement();
+    if (!$ob) {
+        return null;
+    }
+
+    $fields = $ob->GetFields();
+    if ((int)($fields['IBLOCK_ID'] ?? 0) !== $iblockId) {
+        return null;
+    }
+
+    $props = $ob->GetProperties();
+
+    $getString = static function (array $prop): string {
+        return trim((string)($prop['VALUE'] ?? ''));
+    };
+
+    $getInt = static function (array $prop): int {
+        return (int)($prop['VALUE'] ?? 0);
+    };
+
+    $getListValue = static function (array $prop): string {
+        return trim((string)($prop['VALUE_ENUM'] ?? $prop['VALUE_XML_ID'] ?? $prop['VALUE'] ?? ''));
+    };
+
+    return [
+        'ID' => (int)$fields['ID'],
+        'NAME' => (string)($fields['NAME'] ?? ''),
+        'DATE_CREATE' => (string)($fields['DATE_CREATE'] ?? ''),
+        'LEAD_ID' => $getInt($props['LEAD_ID'] ?? []),
+        'LEAD_TITLE' => $getString($props['LEAD_TITLE'] ?? []),
+        'PHONE' => $getString($props['PHONE'] ?? []),
+        'CITY_ID' => $getInt($props['CITY_ID'] ?? []),
+        'SOURCE_ID' => $getInt($props['SOURCE_ID'] ?? []),
+        'STATUS' => $getListValue($props['STATUS'] ?? []),
+        'CALLING_CONTROL' => $getListValue($props['CALLING_CONTROL'] ?? []),
+    ];
+};
+
+$getCitySettings = function (int $cityListId, int $cityElementId): ?array {
+    $res = CIBlockElement::GetByID($cityElementId);
+    if (!$res) {
+        return null;
+    }
+
+    $ob = $res->GetNextElement();
+    if (!$ob) {
+        return null;
+    }
+
+    $fields = $ob->GetFields();
+    if ((int)($fields['IBLOCK_ID'] ?? 0) !== $cityListId) {
+        return null;
+    }
+
+    $props = $ob->GetProperties();
+
+    $extractTimeValue = static function ($rawValue): string {
+        if (is_array($rawValue)) {
+            $rawValue = reset($rawValue);
+        }
+
+        $raw = trim((string)$rawValue);
+        if ($raw === '') {
+            return '';
+        }
+
+        if (preg_match('/([01]?\d|2[0-3])[:\. ]([0-5]\d)(?::[0-5]\d)?/', $raw, $m)) {
+            return sprintf('%02d:%02d', (int)$m[1], (int)$m[2]);
+        }
+
+        return '';
+    };
+
+    $extractTimeRange = static function ($rawValue): array {
+        if (is_array($rawValue)) {
+            $rawValue = reset($rawValue);
+        }
+
+        $raw = trim((string)$rawValue);
+        if ($raw === '') {
+            return ['', ''];
+        }
+
+        if (preg_match_all('/([01]?\d|2[0-3])[:\. ]([0-5]\d)(?::[0-5]\d)?/', $raw, $matches, PREG_SET_ORDER) >= 2) {
+            $start = sprintf('%02d:%02d', (int)$matches[0][1], (int)$matches[0][2]);
+            $end = sprintf('%02d:%02d', (int)$matches[1][1], (int)$matches[1][2]);
+            return [$start, $end];
+        }
+
+        return ['', ''];
+    };
+
+    $timeFieldCandidates = [];
+    foreach ($props as $code => $prop) {
+        $time = $extractTimeValue($prop['VALUE'] ?? '');
+        if ($time === '') {
+            continue;
+        }
+
+        $haystack = mb_strtolower(
+            trim((string)$code . ' ' . (string)($prop['CODE'] ?? '') . ' ' . (string)($prop['NAME'] ?? ''))
+        );
+        $timeFieldCandidates[] = [
+            'code' => (string)$code,
+            'name' => trim((string)($prop['NAME'] ?? '')),
+            'time' => $time,
+            'range' => implode('-', array_filter($extractTimeRange($prop['VALUE'] ?? ''))),
+            'haystack' => $haystack,
+        ];
+    }
+
+    $findWorkBoundary = static function (array $props, array $exactCodes, string $mode) use ($extractTimeValue): array {
+        foreach ($exactCodes as $code) {
+            if (!isset($props[$code])) {
+                continue;
+            }
+
+            $time = $extractTimeValue($props[$code]['VALUE'] ?? '');
+            if ($time !== '') {
+                return [$time, $code];
+            }
+        }
+
+        $bestTime = '';
+        $bestField = '';
+        $bestScore = -1;
+
+        foreach ($props as $code => $prop) {
+            $time = $extractTimeValue($prop['VALUE'] ?? '');
+            if ($time === '') {
+                continue;
+            }
+
+            $haystack = mb_strtolower(
+                trim((string)$code . ' ' . (string)($prop['CODE'] ?? '') . ' ' . (string)($prop['NAME'] ?? ''))
+            );
+
+            $score = 0;
+            if (
+                mb_strpos($haystack, 'раб') !== false
+                || mb_strpos($haystack, 'work') !== false
+                || mb_strpos($haystack, 'кц') !== false
+                || mb_strpos($haystack, 'call') !== false
+            ) {
+                $score += 10;
+            }
+
+            if ($mode === 'start') {
+                if (mb_strpos($haystack, 'нач') !== false || mb_strpos($haystack, 'start') !== false) {
+                    $score += 20;
+                }
+            } else {
+                if (
+                    mb_strpos($haystack, 'кон') !== false
+                    || mb_strpos($haystack, 'оконч') !== false
+                    || mb_strpos($haystack, 'end') !== false
+                    || mb_strpos($haystack, 'finish') !== false
+                ) {
+                    $score += 20;
+                }
+            }
+
+            if ($score > $bestScore) {
+                $bestScore = $score;
+                $bestTime = $time;
+                $bestField = (string)$code;
+            }
+        }
+
+        return [$bestTime, $bestField];
+    };
+
+    $raw = trim((string)($props['CHASOVOY_POYAS']['VALUE'] ?? ''));
+    if ($raw === '') {
+        return null;
+    }
+
+    if (preg_match('/-?\d+/', $raw, $m)) {
+        $utcOffset = (int)$m[0];
+    } else {
+        return null;
+    }
+
+    $intervalWorkField = ['', '', ''];
+    foreach ($props as $code => $prop) {
+        $haystack = mb_strtolower(
+            trim((string)$code . ' ' . (string)($prop['CODE'] ?? '') . ' ' . (string)($prop['NAME'] ?? ''))
+        );
+        [$rangeStart, $rangeEnd] = $extractTimeRange($prop['VALUE'] ?? '');
+        if ($rangeStart === '' || $rangeEnd === '') {
+            continue;
+        }
+
+        if (
+            mb_strpos($haystack, 'интервал') !== false
+            && (mb_strpos($haystack, 'раб') !== false || mb_strpos($haystack, 'кц') !== false || mb_strpos($haystack, 'work') !== false)
+        ) {
+            $intervalWorkField = [$rangeStart, $rangeEnd, (string)$code];
+            break;
+        }
+    }
+
+    if ($intervalWorkField[0] !== '' && $intervalWorkField[1] !== '') {
+        [$workStart, $workEnd, $intervalFieldCode] = $intervalWorkField;
+
+        return [
+            'utc_offset' => $utcOffset,
+            'work_start' => $workStart,
+            'work_end' => $workEnd,
+            'work_start_field' => $intervalFieldCode,
+            'work_end_field' => $intervalFieldCode,
+            'time_field_candidates' => $timeFieldCandidates,
+        ];
+    }
+
+    [$workStart, $workStartField] = $findWorkBoundary(
+        $props,
+        [
+            'WORK_START',
+            'WORKDAY_START',
+            'WORK_START_AT',
+            'START_TIME',
+            'NACHALO_RABOCHEGO_DNYA',
+            'VREMYA_NACHALA_RABOCHEGO_DNYA',
+            'VREMYA_NACHALA_RABOTY',
+            'NACHALO_RABOTY',
+        ],
+        'start'
+    );
+
+    [$workEnd, $workEndField] = $findWorkBoundary(
+        $props,
+        [
+            'WORK_END',
+            'WORKDAY_END',
+            'WORK_END_AT',
+            'END_TIME',
+            'KONEC_RABOCHEGO_DNYA',
+            'VREMYA_OKONCHANIYA_RABOCHEGO_DNYA',
+            'VREMYA_OKONCHANIYA_RABOTY',
+            'KONEC_RABOTY',
+        ],
+        'end'
+    );
+
+    return [
+        'utc_offset' => $utcOffset,
+        'work_start' => $workStart,
+        'work_end' => $workEnd,
+        'work_start_field' => $workStartField,
+        'work_end_field' => $workEndField,
+        'time_field_candidates' => $timeFieldCandidates,
+    ];
+};
+
+$formatDateTime = static function (string $iso): string {
+    try {
+        return (new DateTime(str_replace('T', ' ', $iso)))->format('d.m.Y H:i:s');
+    } catch (Throwable $e) {
+        return $iso;
+    }
+};
+
+$masterCreatedCache = [];
+$getMasterLeadCreatedTs = function (int $masterElementId) use (&$masterCreatedCache, $masterListId): int {
+    if ($masterElementId <= 0) {
+        return 0;
+    }
+
+    if (array_key_exists($masterElementId, $masterCreatedCache)) {
+        return $masterCreatedCache[$masterElementId];
+    }
+
+    $res = CIBlockElement::GetByID($masterElementId);
+    if (!$res) {
+        return $masterCreatedCache[$masterElementId] = 0;
+    }
+
+    $row = $res->Fetch();
+    if (!$row || (int)($row['IBLOCK_ID'] ?? 0) !== $masterListId) {
+        return $masterCreatedCache[$masterElementId] = 0;
+    }
+
+    $createdTs = strtotime((string)($row['DATE_CREATE'] ?? ''));
+    return $masterCreatedCache[$masterElementId] = ($createdTs !== false ? (int)$createdTs : 0);
+};
+
+$resolveRankPriority = static function (array $attemptProperties): int {
+    // Пока приоритет для всех элементов одинаковый.
+    return 1;
+};
+
+$recalculateRanksForDate = function (int $cityId, string $targetDate) use (
+    $attemptListId,
+    $getMasterLeadCreatedTs,
+    $resolveRankPriority
+): int {
+    if ($cityId <= 0 || $targetDate === '') {
+        return 0;
+    }
+
+    $group = [];
+
+    $res = CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        [
+            'IBLOCK_ID' => $attemptListId,
+            'CHECK_PERMISSIONS' => 'N',
+            'PROPERTY_CITY_ID' => $cityId,
+        ],
+        false,
+        false,
+        ['ID', 'IBLOCK_ID', 'NAME']
+    );
+
+    while ($ob = $res->GetNextElement()) {
+        $fields = $ob->GetFields();
+        $props = $ob->GetProperties();
+
+        $itemScheduledAtRaw = trim((string)($props['SCHEDULED_AT']['VALUE'] ?? ''));
+        if ($itemScheduledAtRaw === '') {
+            continue;
+        }
+
+        try {
+            $itemScheduledAt = new DateTime($itemScheduledAtRaw);
+        } catch (Throwable $e) {
+            continue;
+        }
+
+        if ($itemScheduledAt->format('Y-m-d') !== $targetDate) {
+            continue;
+        }
+
+        $masterElementId = (int)($props['MASTER_ELEMENT_ID']['VALUE'] ?? 0);
+
+        $group[] = [
+            'ID' => (int)($fields['ID'] ?? 0),
+            'MASTER_ELEMENT_ID' => $masterElementId,
+            'SCHEDULED_AT' => $itemScheduledAt->format('Y-m-d H:i:s'),
+            'PRIORITY' => $resolveRankPriority($props),
+            'LEAD_CREATED_TS' => $getMasterLeadCreatedTs($masterElementId),
+        ];
+    }
+
+    if (empty($group)) {
+        return 0;
+    }
+
+    usort($group, static function (array $a, array $b): int {
+        $priorityCompare = (int)$b['PRIORITY'] <=> (int)$a['PRIORITY'];
+        if ($priorityCompare !== 0) {
+            return $priorityCompare;
+        }
+
+        $leadCreatedCompare = (int)$b['LEAD_CREATED_TS'] <=> (int)$a['LEAD_CREATED_TS'];
+        if ($leadCreatedCompare !== 0) {
+            return $leadCreatedCompare;
+        }
+
+        $scheduledCompare = strcmp((string)$a['SCHEDULED_AT'], (string)$b['SCHEDULED_AT']);
+        if ($scheduledCompare !== 0) {
+            return $scheduledCompare;
+        }
+
+        return (int)$a['ID'] <=> (int)$b['ID'];
+    });
+
+    foreach ($group as $index => $item) {
+        CIBlockElement::SetPropertyValuesEx(
+            (int)$item['ID'],
+            $attemptListId,
+            ['RANZHIROVANIE' => $index + 1]
+        );
+    }
+
+    return count($group);
+};
+
+$convertCityLocalTimeToMoscow = static function (DateTime $dateTime, int $cityUtcOffset): DateTime {
+    // Поле CHASOVOY_POYAS хранит смещение города относительно UTC.
+    // В Bitrix дата будет сохраняться по московскому времени (UTC+3).
+    // ВАЖНО: $dateTime должен представлять время в поясе города (напр. 11:00 Омск).
+    // Создаём момент в UTC с учётом cityUtcOffset, затем переводим в Москву.
+    $dateStr = $dateTime->format('Y-m-d');
+    $timeStr = $dateTime->format('H:i:s');
+    $dateTimeStr = $dateStr . ' ' . $timeStr;
+
+    // Etc/GMT-N = UTC+N (для PHP: знаки инвертированы относительно ISO)
+    $cityTzName = 'Etc/GMT-' . $cityUtcOffset;
+    try {
+        $cityTz = new DateTimeZone($cityTzName);
+    } catch (Exception $e) {
+        $cityTz = new DateTimeZone('UTC');
+    }
+
+    $moscowTz = new DateTimeZone('Europe/Moscow');
+    $result = new DateTime($dateTimeStr, $cityTz);
+    $result->setTimezone($moscowTz);
+
+    return $result;
+};
+
+$setTimeFromString = static function (DateTime $dateTime, string $time): DateTime {
+    [$hours, $minutes] = array_map('intval', explode(':', $time));
+    $result = clone $dateTime;
+    $result->setTime($hours, $minutes, 0);
+    return $result;
+};
+
+$buildMoscowWorkingWindow = static function (DateTime $dateTime, string $workStart, string $workEnd) use ($setTimeFromString): array {
+    $workStartAt = $setTimeFromString($dateTime, $workStart);
+    $workEndAt = $setTimeFromString($dateTime, $workEnd);
+    $lastAllowedAt = clone $workEndAt;
+    $lastAllowedAt->modify('-30 minutes');
+
+    return [
+        'start' => $workStartAt,
+        'end' => $workEndAt,
+        'last_allowed' => $lastAllowedAt,
+    ];
+};
+
+$getDayTimes = static function (int $cycleDay): array {
+    switch ($cycleDay) {
+        case 1:
+        case 2:
+        case 3:
+            return ['11:00', '13:00', '15:00', '17:00'];
+        case 4:
+            return ['11:00', '13:30', '16:00'];
+        case 5:
+        case 6:
+        case 7:
+            return ['11:00', '14:00'];
+        case 8:
+            return ['16:00'];
+        case 9:
+            return ['11:00'];
+        case 10:
+            return ['16:00'];
+        default:
+            return [];
+    }
+};
+
+$buildQueueSortKey = static function (int $cycleDay, int $leadCreatedTs, int $attemptNumber): string {
+    $invertedLeadTs = max(0, 9999999999 - $leadCreatedTs);
+    return sprintf('%02d_%010d_%03d', $cycleDay, $invertedLeadTs, $attemptNumber);
+};
+
+$master = $getElement($masterListId, $masterElementId);
+if ($master === null) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Master element not found in list 130');
+    $log('MODULE2: master element not found: ' . $masterElementId);
+    return;
+}
+
+$control = mb_strtolower(trim($master['CALLING_CONTROL']));
+$status = mb_strtolower(trim($master['STATUS']));
+
+if ($control !== '' && $control !== 'active') {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Calling control is not active: ' . $control);
+    $log('MODULE2: queue generation skipped, CALLING_CONTROL=' . $control);
+    return;
+}
+
+if ($status !== 'new') {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Queue can be created only for STATUS=new, current STATUS=' . $status);
+    $log('MODULE2: queue generation skipped, STATUS=' . $status);
+    return;
+}
+
+$existingAttempts = CIBlockElement::GetList(
+    ['ID' => 'ASC'],
+    [
+        'IBLOCK_ID' => $attemptListId,
+        'CHECK_PERMISSIONS' => 'N',
+        'PROPERTY_MASTER_ELEMENT_ID' => $masterElementId,
+    ],
+    false,
+    ['nTopCount' => 1],
+    ['ID']
+);
+
+if ($existingAttempts && $existingAttempts->Fetch()) {
+    $setVar('MODULE2_QUEUE_CREATED', 'Y');
+    $setVar('MODULE2_ERROR_MESSAGE', '');
+    $log('MODULE2: attempts already exist for master ' . $masterElementId);
+    return;
+}
+
+$leadId = (int)$master['LEAD_ID'];
+$phone = trim((string)$master['PHONE']);
+$cityId = (int)$master['CITY_ID'];
+
+if ($leadId <= 0 || $phone === '') {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Master element must contain LEAD_ID and PHONE');
+    $log('MODULE2: LEAD_ID or PHONE is empty');
+    return;
+}
+
+if ($cityId <= 0) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'CITY_ID is empty');
+    $log('MODULE2: CITY_ID is empty');
+    return;
+}
+
+$citySettings = $getCitySettings($cityListId, $cityId);
+if ($citySettings === null) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'CHASOVOY_POYAS is empty for CITY_ID=' . $cityId);
+    $log('MODULE2: CHASOVOY_POYAS not found for city ' . $cityId);
+    return;
+}
+
+$cityUtcOffset = (int)($citySettings['utc_offset'] ?? 0);
+$cityWorkStart = trim((string)($citySettings['work_start'] ?? ''));
+$cityWorkEnd = trim((string)($citySettings['work_end'] ?? ''));
+$cityWorkStartField = trim((string)($citySettings['work_start_field'] ?? ''));
+$cityWorkEndField = trim((string)($citySettings['work_end_field'] ?? ''));
+$cityTimeFieldCandidates = (array)($citySettings['time_field_candidates'] ?? []);
+
+if ($cityWorkStart === '' || $cityWorkEnd === '') {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Working day bounds not found in city list 22 for CITY_ID=' . $cityId);
+    $log('MODULE2: working day bounds not found for city ' . $cityId);
+    return;
+}
+
+$createdAt = new DateTime();
+$createdAtIso = $createdAt->format('Y-m-d\TH:i:s');
+$moscowTz = new DateTimeZone('Europe/Moscow');
+$createdAtMoscow = (clone $createdAt)->setTimezone($moscowTz);
+
+$leadCreatedTs = strtotime($master['DATE_CREATE']) ?: time();
+
+$attemptStatusPlannedId = $getListEnumId($attemptListId, 'STATUS', 'planned');
+$masterStatusQueueGeneratedId = $getListEnumId($masterListId, 'STATUS', 'queue_generated');
+$controlActiveId = $getListEnumId($masterListId, 'CALLING_CONTROL', 'active');
+$hasRankingProperty = $hasPropertyCode($attemptListId, 'RANZHIROVANIE');
+
+if ($attemptStatusPlannedId === null || $masterStatusQueueGeneratedId === null || $controlActiveId === null) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'Required list enums not found');
+    $log('MODULE2: required enum ids not found');
+    return;
+}
+
+$attempts = [];
+$attemptNumber = 0;
+$masterCreatedAtMoscow = null;
+try {
+    $masterCreatedAtMoscow = new DateTime((string)$master['DATE_CREATE'], $moscowTz);
+} catch (Throwable $e) {
+    $masterCreatedAtMoscow = clone $createdAtMoscow;
+}
+
+$firstCycleDayDate = clone $createdAtMoscow;
+$firstCycleDayDate->setTime(0, 0, 0);
+
+$todayWindow = $buildMoscowWorkingWindow($createdAtMoscow, $cityWorkStart, $cityWorkEnd);
+$initialDayOneCandidate = clone $masterCreatedAtMoscow;
+$initialDayOneCandidate->modify('+2 hours');
+$todayLocalElevenMoscow = clone $createdAtMoscow;
+$todayLocalElevenMoscow->setTime(11, 0, 0);
+$todayLocalElevenMoscow = $convertCityLocalTimeToMoscow($todayLocalElevenMoscow, $cityUtcOffset);
+$initialDayOneAllowedCandidate = clone $initialDayOneCandidate;
+if ($initialDayOneAllowedCandidate < $todayLocalElevenMoscow) {
+    $initialDayOneAllowedCandidate = clone $todayLocalElevenMoscow;
+}
+if ($initialDayOneAllowedCandidate < $todayWindow['start']) {
+    $initialDayOneAllowedCandidate = clone $todayWindow['start'];
+}
+
+if (
+    $masterCreatedAtMoscow->format('Y-m-d') === $createdAtMoscow->format('Y-m-d')
+    && $initialDayOneAllowedCandidate <= $todayWindow['last_allowed']
+) {
+    $currentCycleDay = 1;
+} else {
+    $currentCycleDay = 0;
+    $firstCycleDayDate->modify('+1 day');
+}
+
+$addScheduledAttempt = static function (array &$attempts, int &$attemptNumber, int $cycleDay, DateTime $scheduledAt): void {
+    $attemptNumber++;
+    $attempts[] = [
+        'cycle_day' => $cycleDay,
+        'attempt_number' => $attemptNumber,
+        'scheduled_at_iso' => $scheduledAt->format('Y-m-d\TH:i:s'),
+        'scheduled_at_bitrix' => $scheduledAt->format('d.m.Y H:i:s'),
+    ];
+};
+
+$pendingAttempts = 0;
+
+for ($cycleDay = 1; $cycleDay <= 10; $cycleDay++) {
+    $dayDate = clone $firstCycleDayDate;
+    $dayDate->modify('+' . ($cycleDay - 1) . ' days');
+    $dayWindow = $buildMoscowWorkingWindow($dayDate, $cityWorkStart, $cityWorkEnd);
+    $availableSlots = [];
+    $plannedAttemptsForDay = 0;
+
+    if ($cycleDay === 1) {
+        $dayOneLocalElevenMoscow = clone $dayDate;
+        $dayOneLocalElevenMoscow->setTime(11, 0, 0);
+        $dayOneLocalElevenMoscow = $convertCityLocalTimeToMoscow($dayOneLocalElevenMoscow, $cityUtcOffset);
+
+        $dayOneCandidate = $currentCycleDay === 1 ? clone $initialDayOneCandidate : clone $dayOneLocalElevenMoscow;
+        if ($dayOneCandidate < $dayOneLocalElevenMoscow) {
+            $dayOneCandidate = clone $dayOneLocalElevenMoscow;
+        }
+        if ($dayOneCandidate < $dayWindow['start']) {
+            $dayOneCandidate = clone $dayWindow['start'];
+        }
+
+        for ($i = 0; $i < 4; $i++) {
+            $plannedAttemptsForDay++;
+            if ($dayOneCandidate <= $dayWindow['last_allowed'] && $dayOneCandidate > $createdAtMoscow) {
+                $availableSlots[] = clone $dayOneCandidate;
+            }
+
+            $dayOneCandidate->modify('+2 hours');
+        }
+    } else {
+        foreach ($getDayTimes($cycleDay) as $time) {
+            $plannedAttemptsForDay++;
+            $scheduledAt = clone $dayDate;
+            $scheduledAt = $setTimeFromString($scheduledAt, $time);
+            $scheduledAt = $convertCityLocalTimeToMoscow($scheduledAt, $cityUtcOffset);
+
+            if ($scheduledAt < $dayWindow['start'] || $scheduledAt > $dayWindow['last_allowed']) {
+                continue;
+            }
+
+            $availableSlots[] = $scheduledAt;
+        }
+    }
+
+    usort($availableSlots, static function (DateTime $a, DateTime $b): int {
+        return $a <=> $b;
+    });
+
+    $pendingBeforeScheduling = $pendingAttempts + $plannedAttemptsForDay;
+    $pendingAttempts = $pendingBeforeScheduling;
+
+    foreach ($availableSlots as $slot) {
+        if ($pendingAttempts <= 0) {
+            break;
+        }
+        $addScheduledAttempt($attempts, $attemptNumber, $cycleDay, $slot);
+        $pendingAttempts--;
+    }
+}
+
+usort($attempts, static function (array $a, array $b): int {
+    if ($a['scheduled_at_iso'] === $b['scheduled_at_iso']) {
+        return $a['attempt_number'] <=> $b['attempt_number'];
+    }
+    return strcmp($a['scheduled_at_iso'], $b['scheduled_at_iso']);
+});
+
+foreach ($attempts as $i => $attempt) {
+    $attempts[$i]['attempt_number'] = $i + 1;
+}
+
+if (empty($attempts)) {
+    $setVar('MODULE2_ERROR_MESSAGE', 'No future attempts available for queue generation');
+    $log('MODULE2: no future attempts available for master ' . $masterElementId);
+    return;
+}
+
+$el = new CIBlockElement();
+$createdCount = 0;
+$rankingDates = [];
+
+foreach ($attempts as $attempt) {
+    $queueSortKey = $buildQueueSortKey(
+        (int)$attempt['cycle_day'],
+        $leadCreatedTs,
+        (int)$attempt['attempt_number']
+    );
+
+    $attemptName = sprintf(
+        'Dozvon lead %d attempt %d day %d',
+        $leadId,
+        (int)$attempt['attempt_number'],
+        (int)$attempt['cycle_day']
+    );
+
+    $attemptId = $el->Add([
+        'IBLOCK_ID' => $attemptListId,
+        'NAME' => $attemptName,
+        'ACTIVE' => 'Y',
+        'PROPERTY_VALUES' => [
+            'MASTER_ELEMENT_ID' => $masterElementId,
+            'LEAD_ID' => $leadId,
+            'PHONE' => $phone,
+            'CITY_ID' => $cityId,
+            'CYCLE_DAY' => (int)$attempt['cycle_day'],
+            'ATTEMPT_NUMBER' => (int)$attempt['attempt_number'],
+            'SCHEDULED_AT' => $attempt['scheduled_at_bitrix'],
+            'STATUS' => $attemptStatusPlannedId,
+            'QUEUE_SORT_KEY' => $queueSortKey,
+            'CREATED_AT' => $formatDateTime($createdAtIso),
+            'UPDATED_AT' => $formatDateTime($createdAtIso),
+        ],
+    ]);
+
+    if (!$attemptId) {
+        $setVar('MODULE2_ERROR_MESSAGE', 'Failed to create attempt: ' . ($el->LAST_ERROR ?: 'unknown error'));
+        $log('MODULE2: failed to create attempt: ' . ($el->LAST_ERROR ?: 'unknown error'));
+        return;
+    }
+
+    $createdCount++;
+    $rankingDates[substr((string)$attempt['scheduled_at_iso'], 0, 10)] = true;
+}
+
+$rankedDatesInfo = [];
+if ($hasRankingProperty) {
+    foreach (array_keys($rankingDates) as $targetDate) {
+        $rankedItemsCount = $recalculateRanksForDate($cityId, $targetDate);
+        if ($rankedItemsCount > 0) {
+            $rankedDatesInfo[] = $targetDate . ':' . $rankedItemsCount;
+        }
+    }
+} else {
+    $log('MODULE2: ranking skipped, property RANZHIROVANIE not found in list 131');
+}
+
+$firstAttemptIso = $attempts[0]['scheduled_at_iso'] ?? '';
+$firstAttemptBitrix = $attempts[0]['scheduled_at_bitrix'] ?? '';
+$firstAttemptDate = substr($firstAttemptIso, 0, 10);
+$createdDate = $createdAtMoscow->format('Y-m-d');
+$cycleDaysTotal = 10;
+
+CIBlockElement::SetPropertyValuesEx($masterElementId, $masterListId, [
+    'STATUS' => $masterStatusQueueGeneratedId,
+    'CALLING_CONTROL' => $controlActiveId,
+    'CYCLE_DAY_CURRENT' => $currentCycleDay,
+    'CYCLE_DAYS_TOTAL' => $cycleDaysTotal,
+    'QUEUE_GENERATED_AT' => $formatDateTime($createdAtIso),
+    'FIRST_ATTEMPT_AT' => $firstAttemptBitrix,
+    'NEXT_ATTEMPT_AT' => $firstAttemptBitrix,
+    'MODULE2_PROCESSED_AT' => $formatDateTime($createdAtIso),
+    'ATTEMPTS_PLANNED_TOTAL' => $createdCount,
+    'ATTEMPTS_CREATED_TOTAL' => $createdCount,
+    'ATTEMPTS_COMPLETED_TOTAL' => 0,
+    'ATTEMPTS_CONNECTED_TOTAL' => 0,
+    'ATTEMPTS_CLIENT_NO_ANSWER_TOTAL' => 0,
+    'ATTEMPTS_CLIENT_BUSY_TOTAL' => 0,
+    'ATTEMPTS_OPERATOR_NO_ANSWER_TOTAL' => 0,
+    'ATTEMPTS_CANCELLED_TOTAL' => 0,
+    'ATTEMPTS_CLIENT_ANSWERED_TOTAL' => 0,
+    'LAST_RESULT' => '',
+    'LAST_ERROR' => '',
+    'LAST_ATTEMPT_STATUS' => '',
+    'LAST_ATTEMPT_RESULT_CODE' => '',
+    'LAST_ATTEMPT_RESULT_MESSAGE' => '',
+]);
+
+$setVar('MODULE2_QUEUE_CREATED', 'Y');
+$setVar('MODULE2_ATTEMPTS_CREATED', (string)$createdCount);
+$setVar('MODULE2_ERROR_MESSAGE', '');
+
+$currentCycleDayReason = $currentCycleDay === 0
+    ? 'no valid first-day slots today inside moscow working window, full 10-day calling cycle starts next workday'
+    : 'first day is built from lead transition time with 2-hour step inside moscow working window';
+
+$log(
+    'MODULE2: queue created for master ' . $masterElementId
+    . ', lead ' . $leadId
+    . ', city ' . $cityId
+    . ', attempts ' . $createdCount
+    . ', first attempt ' . $firstAttemptIso
+    . ', current cycle day ' . $currentCycleDay
+    . ', cycle days total ' . $cycleDaysTotal
+    . ', created date ' . $createdDate
+    . ', first attempt date ' . $firstAttemptDate
+    . ', city work start ' . $cityWorkStart
+    . ', city work end ' . $cityWorkEnd
+    . ', city work start field ' . ($cityWorkStartField !== '' ? $cityWorkStartField : 'n/a')
+    . ', city work end field ' . ($cityWorkEndField !== '' ? $cityWorkEndField : 'n/a')
+    . ', reason: ' . $currentCycleDayReason
+    . ', ranked dates ' . (!empty($rankedDatesInfo) ? implode(', ', $rankedDatesInfo) : 'none')
+);

@@ -1,0 +1,1675 @@
+{
+    "source_url": "https:\/\/milleniummed.bitrix24.ru",
+    "scanned_at": "2026-03-21T12:12:36+00:00",
+    "lead_fields": {
+        "ID": {
+            "type": "integer",
+            "title": "ID",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "TITLE": {
+            "type": "string",
+            "title": "Название лида",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "HONORIFIC": {
+            "type": "crm_status",
+            "title": "Обращение",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "NAME": {
+            "type": "string",
+            "title": "Имя",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "SECOND_NAME": {
+            "type": "string",
+            "title": "Отчество",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_NAME": {
+            "type": "string",
+            "title": "Фамилия",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "BIRTHDATE": {
+            "type": "date",
+            "title": "Дата рождения",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "COMPANY_TITLE": {
+            "type": "string",
+            "title": "Название компании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "SOURCE_ID": {
+            "type": "crm_status",
+            "title": "Источник",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "SOURCE_DESCRIPTION": {
+            "type": "string",
+            "title": "Дополнительно об источнике",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "STATUS_ID": {
+            "type": "crm_status",
+            "title": "Стадия",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "STATUS_DESCRIPTION": {
+            "type": "string",
+            "title": "Дополнительно о стадии",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "STATUS_SEMANTIC_ID": {
+            "type": "string",
+            "title": "Состояние статуса",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "POST": {
+            "type": "string",
+            "title": "Должность",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS": {
+            "type": "string",
+            "title": "Адрес",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_2": {
+            "type": "string",
+            "title": "Адрес (стр. 2)",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_CITY": {
+            "type": "string",
+            "title": "Город",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_POSTAL_CODE": {
+            "type": "string",
+            "title": "Почтовый индекс",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_REGION": {
+            "type": "string",
+            "title": "Район",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_PROVINCE": {
+            "type": "string",
+            "title": "Область",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_COUNTRY": {
+            "type": "string",
+            "title": "Страна",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_COUNTRY_CODE": {
+            "type": "string",
+            "title": "Код страны",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ADDRESS_LOC_ADDR_ID": {
+            "type": "integer",
+            "title": "Идентификатор адреса местоположения",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CURRENCY_ID": {
+            "type": "crm_currency",
+            "title": "Валюта",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "OPPORTUNITY": {
+            "type": "double",
+            "title": "Сумма",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "IS_MANUAL_OPPORTUNITY": {
+            "type": "char",
+            "title": "IS_MANUAL_OPPORTUNITY",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "OPENED": {
+            "type": "char",
+            "title": "Доступен для всех",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "COMMENTS": {
+            "type": "string",
+            "title": "Комментарий",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "HAS_PHONE": {
+            "type": "char",
+            "title": "Задан телефон",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "HAS_EMAIL": {
+            "type": "char",
+            "title": "Задан e-mail",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "HAS_IMOL": {
+            "type": "char",
+            "title": "Задана открытая линия",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "ASSIGNED_BY_ID": {
+            "type": "user",
+            "title": "Ответственный",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CREATED_BY_ID": {
+            "type": "user",
+            "title": "Кем создан",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "MODIFY_BY_ID": {
+            "type": "user",
+            "title": "Кем изменен",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "MOVED_BY_ID": {
+            "type": "user",
+            "title": "MOVED_BY_ID",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "DATE_CREATE": {
+            "type": "datetime",
+            "title": "Дата создания",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "DATE_MODIFY": {
+            "type": "datetime",
+            "title": "Дата изменения",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "MOVED_TIME": {
+            "type": "datetime",
+            "title": "MOVED_TIME",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "COMPANY_ID": {
+            "type": "crm_company",
+            "title": "Компания",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CONTACT_ID": {
+            "type": "crm_contact",
+            "title": "Контакт",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CONTACT_IDS": {
+            "type": "crm_contact",
+            "title": "CONTACT_IDS",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "IS_RETURN_CUSTOMER": {
+            "type": "char",
+            "title": "Повторный лид",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "DATE_CLOSED": {
+            "type": "datetime",
+            "title": "Дата завершения",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "ORIGINATOR_ID": {
+            "type": "string",
+            "title": "Внешний источник",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ORIGIN_ID": {
+            "type": "string",
+            "title": "Идентификатор элемента во внешнем источнике",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_SOURCE": {
+            "type": "string",
+            "title": "Рекламная система",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_MEDIUM": {
+            "type": "string",
+            "title": "Тип трафика",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_CAMPAIGN": {
+            "type": "string",
+            "title": "Обозначение рекламной кампании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_CONTENT": {
+            "type": "string",
+            "title": "Содержание кампании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_TERM": {
+            "type": "string",
+            "title": "Условие поиска кампании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "PARENT_ID_1048": {
+            "type": "crm_entity",
+            "title": "Задолженности ФССП",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_ACTIVITY_TIME": {
+            "type": "datetime",
+            "title": "LAST_ACTIVITY_TIME",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_ACTIVITY_BY": {
+            "type": "user",
+            "title": "LAST_ACTIVITY_BY",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_COMMUNICATION_TIME": {
+            "type": "string",
+            "title": "LAST_COMMUNICATION_TIME",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "PHONE": {
+            "type": "crm_multifield",
+            "title": "Телефон",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "EMAIL": {
+            "type": "crm_multifield",
+            "title": "E-mail",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "WEB": {
+            "type": "crm_multifield",
+            "title": "Сайт",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "IM": {
+            "type": "crm_multifield",
+            "title": "Мессенджер",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "LINK": {
+            "type": "crm_multifield",
+            "title": "LINK",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_1744791016816": {
+            "type": "rest_58_multifields_table",
+            "title": "UF_CRM_1744791016816",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_MESSENGERTYPE": {
+            "type": "string",
+            "title": "UF_CRM_MESSENGERTYPE",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_TRANID": {
+            "type": "string",
+            "title": "UF_CRM_TRANID",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FORMNAME": {
+            "type": "string",
+            "title": "UF_CRM_FORMNAME",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_COOKIES": {
+            "type": "string",
+            "title": "UF_CRM_COOKIES",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_YADAYUSOGLASI": {
+            "type": "string",
+            "title": "UF_CRM_YADAYUSOGLASI",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_CHECKBOX": {
+            "type": "string",
+            "title": "UF_CRM_CHECKBOX",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_CHUVSTVUETELI": {
+            "type": "string",
+            "title": "UF_CRM_CHUVSTVUETELI",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ESTLINANOGAHS": {
+            "type": "string",
+            "title": "UF_CRM_ESTLINANOGAHS",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_BIVAYUTLIUVAS": {
+            "type": "string",
+            "title": "UF_CRM_BIVAYUTLIUVAS",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ZAMECHALILIVI": {
+            "type": "string",
+            "title": "UF_CRM_ZAMECHALILIVI",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_UKAZHITESVOIV": {
+            "type": "string",
+            "title": "UF_CRM_UKAZHITESVOIV",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_VASEIMA": {
+            "type": "string",
+            "title": "UF_CRM_T_VASEIMA",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_P_VASNOMERTEL": {
+            "type": "string",
+            "title": "UF_CRM_P_VASNOMERTEL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_STRANICA": {
+            "type": "string",
+            "title": "UF_CRM_T_STRANICA",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_NAZVANIEFOR": {
+            "type": "string",
+            "title": "UF_CRM_T_NAZVANIEFOR",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_IP": {
+            "type": "string",
+            "title": "UF_CRM_T_IP",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_YMCLIENTID": {
+            "type": "string",
+            "title": "UF_CRM_T_YMCLIENTID",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_IPLOCATION": {
+            "type": "string",
+            "title": "UF_CRM_T_IPLOCATION",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_IMA": {
+            "type": "string",
+            "title": "UF_CRM_T_IMA",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_P_TELEFON": {
+            "type": "string",
+            "title": "UF_CRM_P_TELEFON",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_UTMSOURCE": {
+            "type": "string",
+            "title": "UF_CRM_T_UTMSOURCE",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_UTMMEDIUM": {
+            "type": "string",
+            "title": "UF_CRM_T_UTMMEDIUM",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_UTMCAMPAIGN": {
+            "type": "string",
+            "title": "UF_CRM_T_UTMCAMPAIGN",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_UTMCONTENT": {
+            "type": "string",
+            "title": "UF_CRM_T_UTMCONTENT",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_UTMTERM": {
+            "type": "string",
+            "title": "UF_CRM_T_UTMTERM",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_REFERRER": {
+            "type": "string",
+            "title": "UF_CRM_T_REFERRER",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        }
+    },
+    "deal_fields": {
+        "ID": {
+            "type": "integer",
+            "title": "ID",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "TITLE": {
+            "type": "string",
+            "title": "Название",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "TYPE_ID": {
+            "type": "crm_status",
+            "title": "Тип",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CATEGORY_ID": {
+            "type": "crm_category",
+            "title": "Воронка",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "STAGE_ID": {
+            "type": "crm_status",
+            "title": "Стадия сделки",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "PREVIOUS_STAGE_ID": {
+            "type": "crm_status",
+            "title": "Предыдущая стадия",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "STAGE_SEMANTIC_ID": {
+            "type": "string",
+            "title": "Группа стадии",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "IS_NEW": {
+            "type": "char",
+            "title": "Новая сделка",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "IS_RECURRING": {
+            "type": "char",
+            "title": "Регулярная сделка",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "IS_RETURN_CUSTOMER": {
+            "type": "char",
+            "title": "Повторная сделка",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "IS_REPEATED_APPROACH": {
+            "type": "char",
+            "title": "Повторное обращение",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "PROBABILITY": {
+            "type": "integer",
+            "title": "Вероятность",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CURRENCY_ID": {
+            "type": "crm_currency",
+            "title": "Валюта",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "OPPORTUNITY": {
+            "type": "double",
+            "title": "Сумма",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "IS_MANUAL_OPPORTUNITY": {
+            "type": "char",
+            "title": "Режим расчёта суммы",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "TAX_VALUE": {
+            "type": "double",
+            "title": "Ставка налога",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "COMPANY_ID": {
+            "type": "crm_company",
+            "title": "Компания",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CONTACT_ID": {
+            "type": "crm_contact",
+            "title": "Контакт",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CONTACT_IDS": {
+            "type": "crm_contact",
+            "title": "Контакты",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "QUOTE_ID": {
+            "type": "crm_quote",
+            "title": "Предложение",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "BEGINDATE": {
+            "type": "date",
+            "title": "Дата начала",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CLOSEDATE": {
+            "type": "date",
+            "title": "Дата завершения",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "OPENED": {
+            "type": "char",
+            "title": "Доступна для всех",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CLOSED": {
+            "type": "char",
+            "title": "Закрыта",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "COMMENTS": {
+            "type": "string",
+            "title": "Комментарий",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ASSIGNED_BY_ID": {
+            "type": "user",
+            "title": "Ответственный",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "CREATED_BY_ID": {
+            "type": "user",
+            "title": "Кем создана",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "MODIFY_BY_ID": {
+            "type": "user",
+            "title": "Кем изменена",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "MOVED_BY_ID": {
+            "type": "user",
+            "title": "MOVED_BY_ID",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "DATE_CREATE": {
+            "type": "datetime",
+            "title": "Дата создания",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "DATE_MODIFY": {
+            "type": "datetime",
+            "title": "Дата изменения",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "MOVED_TIME": {
+            "type": "datetime",
+            "title": "Когда передвинут",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "SOURCE_ID": {
+            "type": "crm_status",
+            "title": "Источник",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "SOURCE_DESCRIPTION": {
+            "type": "string",
+            "title": "Дополнительно об источнике",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LEAD_ID": {
+            "type": "crm_lead",
+            "title": "Лид",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "ADDITIONAL_INFO": {
+            "type": "string",
+            "title": "Дополнительная информация",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LOCATION_ID": {
+            "type": "location",
+            "title": "Местоположение",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ORIGINATOR_ID": {
+            "type": "string",
+            "title": "Внешний источник",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "ORIGIN_ID": {
+            "type": "string",
+            "title": "Идентификатор элемента во внешнем источнике",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_SOURCE": {
+            "type": "string",
+            "title": "Рекламная система",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_MEDIUM": {
+            "type": "string",
+            "title": "Тип трафика",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_CAMPAIGN": {
+            "type": "string",
+            "title": "Обозначение рекламной кампании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_CONTENT": {
+            "type": "string",
+            "title": "Содержание кампании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UTM_TERM": {
+            "type": "string",
+            "title": "Условие поиска кампании",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "PARENT_ID_1048": {
+            "type": "crm_entity",
+            "title": "Задолженности ФССП",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_ACTIVITY_TIME": {
+            "type": "datetime",
+            "title": "LAST_ACTIVITY_TIME",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_ACTIVITY_BY": {
+            "type": "user",
+            "title": "LAST_ACTIVITY_BY",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "LAST_COMMUNICATION_TIME": {
+            "type": "string",
+            "title": "LAST_COMMUNICATION_TIME",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "REPEAT_SALE_SEGMENT_ID": {
+            "type": "string",
+            "title": "REPEAT_SALE_SEGMENT_ID",
+            "isRequired": "N",
+            "isReadOnly": "Y",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1744280242440": {
+            "type": "datetime",
+            "title": "UF_CRM_1744280242440",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1744282605": {
+            "type": "employee",
+            "title": "UF_CRM_1744282605",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1744282618": {
+            "type": "employee",
+            "title": "UF_CRM_1744282618",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1744294910179": {
+            "type": "string",
+            "title": "UF_CRM_1744294910179",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_1744606921467": {
+            "type": "string",
+            "title": "UF_CRM_1744606921467",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1744638573001": {
+            "type": "string",
+            "title": "UF_CRM_1744638573001",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1744798273460": {
+            "type": "enumeration",
+            "title": "UF_CRM_1744798273460",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N",
+            "items": [
+                {
+                    "ID": "44",
+                    "VALUE": "Нет"
+                },
+                {
+                    "ID": "46",
+                    "VALUE": "Да"
+                }
+            ]
+        },
+        "UF_CRM_1745922084756": {
+            "type": "string",
+            "title": "UF_CRM_1745922084756",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_1745922119016": {
+            "type": "string",
+            "title": "UF_CRM_1745922119016",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_1745922132212": {
+            "type": "string",
+            "title": "UF_CRM_1745922132212",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_1745922150559": {
+            "type": "string",
+            "title": "UF_CRM_1745922150559",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_1745922324196": {
+            "type": "rest_66_b24duplicate__fields_duplicate",
+            "title": "UF_CRM_1745922324196",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1745922855949": {
+            "type": "double",
+            "title": "UF_CRM_1745922855949",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1745923182145": {
+            "type": "enumeration",
+            "title": "UF_CRM_1745923182145",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N",
+            "items": [
+                {
+                    "ID": "52",
+                    "VALUE": "Диагностика"
+                },
+                {
+                    "ID": "54",
+                    "VALUE": "Консультация"
+                },
+                {
+                    "ID": "56",
+                    "VALUE": "Процедуры"
+                }
+            ]
+        },
+        "UF_CRM_1747827168": {
+            "type": "double",
+            "title": "UF_CRM_1747827168",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_682DC63419AD2": {
+            "type": "rest_58_multifields_table",
+            "title": "UF_CRM_682DC63419AD2",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6877B9FE1FEF8": {
+            "type": "string",
+            "title": "UF_CRM_6877B9FE1FEF8",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6877B9FE30B44": {
+            "type": "string",
+            "title": "UF_CRM_6877B9FE30B44",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6877B9FE3CC74": {
+            "type": "string",
+            "title": "UF_CRM_6877B9FE3CC74",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6877B9FE47704": {
+            "type": "string",
+            "title": "UF_CRM_6877B9FE47704",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1753084950145": {
+            "type": "string",
+            "title": "UF_CRM_1753084950145",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1753087023468": {
+            "type": "datetime",
+            "title": "UF_CRM_1753087023468",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_68A86DB812898": {
+            "type": "string",
+            "title": "UF_CRM_68A86DB812898",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_68B156B59C962": {
+            "type": "string",
+            "title": "UF_CRM_68B156B59C962",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1758296848937": {
+            "type": "boolean",
+            "title": "UF_CRM_1758296848937",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1761053263850": {
+            "type": "double",
+            "title": "UF_CRM_1761053263850",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1761053484330": {
+            "type": "enumeration",
+            "title": "UF_CRM_1761053484330",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N",
+            "items": [
+                {
+                    "ID": "72",
+                    "VALUE": "РФ"
+                },
+                {
+                    "ID": "74",
+                    "VALUE": "НЕ РФ"
+                }
+            ]
+        },
+        "UF_CRM_1761053580038": {
+            "type": "enumeration",
+            "title": "UF_CRM_1761053580038",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N",
+            "items": [
+                {
+                    "ID": "76",
+                    "VALUE": "ЕСТЬ"
+                },
+                {
+                    "ID": "78",
+                    "VALUE": "НЕТ"
+                }
+            ]
+        },
+        "UF_CRM_1761053657001": {
+            "type": "enumeration",
+            "title": "UF_CRM_1761053657001",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N",
+            "items": [
+                {
+                    "ID": "80",
+                    "VALUE": "ДА"
+                },
+                {
+                    "ID": "82",
+                    "VALUE": "НЕТ"
+                }
+            ]
+        },
+        "UF_CRM_1761053747112": {
+            "type": "enumeration",
+            "title": "UF_CRM_1761053747112",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N",
+            "items": [
+                {
+                    "ID": "84",
+                    "VALUE": "ПОДХОДИТ"
+                },
+                {
+                    "ID": "86",
+                    "VALUE": "НЕ ПОДХОДИТ"
+                }
+            ]
+        },
+        "UF_CRM_69006B083BFB3": {
+            "type": "string",
+            "title": "UF_CRM_69006B083BFB3",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69006B084D448": {
+            "type": "string",
+            "title": "UF_CRM_69006B084D448",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69006B085B2BD": {
+            "type": "string",
+            "title": "UF_CRM_69006B085B2BD",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69006B086A6D9": {
+            "type": "string",
+            "title": "UF_CRM_69006B086A6D9",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69006B087A70C": {
+            "type": "string",
+            "title": "UF_CRM_69006B087A70C",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_EXE_PRODUCTION": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_EXE_PRODUCTION",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_NAME": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_NAME",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_DETAILS": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_DETAILS",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_SUBJECT": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_SUBJECT",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_DEPARTMENT": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_DEPARTMENT",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_BAILIFF": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_BAILIFF",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_IP_START": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_IP_START",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_IP_END_DATE": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_IP_END_DATE",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_FSSP_IP_END_REASON": {
+            "type": "string",
+            "title": "UF_CRM_FSSP_IP_END_REASON",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_REQUEST_FL": {
+            "type": "string",
+            "title": "UF_CRM_ST_FSSP_REQUEST_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_RESULT_FL": {
+            "type": "string",
+            "title": "UF_CRM_ST_FSSP_RESULT_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_SUMM_FL": {
+            "type": "double",
+            "title": "UF_CRM_ST_FSSP_SUMM_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_REPAID_SUMM_FL": {
+            "type": "double",
+            "title": "UF_CRM_ST_FSSP_REPAID_SUMM_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_DATE_FL": {
+            "type": "date",
+            "title": "UF_CRM_ST_FSSP_DATE_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_TRACKING_FL": {
+            "type": "boolean",
+            "title": "UF_CRM_ST_FSSP_TRACKING_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_REPORT_FL": {
+            "type": "file",
+            "title": "UF_CRM_ST_FSSP_REPORT_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_DEBTS_FL": {
+            "type": "string",
+            "title": "UF_CRM_ST_FSSP_DEBTS_FL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_ST_FSSP_REQUEST_UL": {
+            "type": "string",
+            "title": "UF_CRM_ST_FSSP_REQUEST_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_RESULT_UL": {
+            "type": "string",
+            "title": "UF_CRM_ST_FSSP_RESULT_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_SUMM_UL": {
+            "type": "double",
+            "title": "UF_CRM_ST_FSSP_SUMM_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_REPAID_SUMM_UL": {
+            "type": "double",
+            "title": "UF_CRM_ST_FSSP_REPAID_SUMM_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_DATE_UL": {
+            "type": "date",
+            "title": "UF_CRM_ST_FSSP_DATE_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_TRACKING_UL": {
+            "type": "boolean",
+            "title": "UF_CRM_ST_FSSP_TRACKING_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_REPORT_UL": {
+            "type": "file",
+            "title": "UF_CRM_ST_FSSP_REPORT_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_ST_FSSP_DEBTS_UL": {
+            "type": "string",
+            "title": "UF_CRM_ST_FSSP_DEBTS_UL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "Y"
+        },
+        "UF_CRM_698339EAA5335": {
+            "type": "string",
+            "title": "UF_CRM_698339EAA5335",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698339EACF14D": {
+            "type": "string",
+            "title": "UF_CRM_698339EACF14D",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698339EADF0A8": {
+            "type": "string",
+            "title": "UF_CRM_698339EADF0A8",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698339EAF039A": {
+            "type": "string",
+            "title": "UF_CRM_698339EAF039A",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698339EB0BD17": {
+            "type": "string",
+            "title": "UF_CRM_698339EB0BD17",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698339EB1C0ED": {
+            "type": "string",
+            "title": "UF_CRM_698339EB1C0ED",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698339EB2C30F": {
+            "type": "string",
+            "title": "UF_CRM_698339EB2C30F",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_VASEIMA": {
+            "type": "string",
+            "title": "UF_CRM_T_VASEIMA",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_P_VASNOMERTEL": {
+            "type": "string",
+            "title": "UF_CRM_P_VASNOMERTEL",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_STRANICA": {
+            "type": "string",
+            "title": "UF_CRM_T_STRANICA",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_NAZVANIEFOR": {
+            "type": "string",
+            "title": "UF_CRM_T_NAZVANIEFOR",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_IP": {
+            "type": "string",
+            "title": "UF_CRM_T_IP",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_YMCLIENTID": {
+            "type": "string",
+            "title": "UF_CRM_T_YMCLIENTID",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_T_IPLOCATION": {
+            "type": "string",
+            "title": "UF_CRM_T_IPLOCATION",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69833F8FB7B6F": {
+            "type": "string",
+            "title": "UF_CRM_69833F8FB7B6F",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69833F8FC8941": {
+            "type": "string",
+            "title": "UF_CRM_69833F8FC8941",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69833F8FD90E7": {
+            "type": "string",
+            "title": "UF_CRM_69833F8FD90E7",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69833F900EF3F": {
+            "type": "string",
+            "title": "UF_CRM_69833F900EF3F",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69833F9034501": {
+            "type": "string",
+            "title": "UF_CRM_69833F9034501",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6983446DDDC3B": {
+            "type": "string",
+            "title": "UF_CRM_6983446DDDC3B",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6983446E02B97": {
+            "type": "string",
+            "title": "UF_CRM_6983446E02B97",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_6983446EA1721": {
+            "type": "string",
+            "title": "UF_CRM_6983446EA1721",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69835751D23B5": {
+            "type": "string",
+            "title": "UF_CRM_69835751D23B5",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_69835751E1785": {
+            "type": "string",
+            "title": "UF_CRM_69835751E1785",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_698ACE5A57F7D": {
+            "type": "string",
+            "title": "UF_CRM_698ACE5A57F7D",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912365505": {
+            "type": "string",
+            "title": "UF_CRM_1773912365505",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912404736": {
+            "type": "string",
+            "title": "UF_CRM_1773912404736",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912425992": {
+            "type": "string",
+            "title": "UF_CRM_1773912425992",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912464864": {
+            "type": "string",
+            "title": "UF_CRM_1773912464864",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912479576": {
+            "type": "string",
+            "title": "UF_CRM_1773912479576",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912491872": {
+            "type": "string",
+            "title": "UF_CRM_1773912491872",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912504488": {
+            "type": "string",
+            "title": "UF_CRM_1773912504488",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912513641": {
+            "type": "string",
+            "title": "UF_CRM_1773912513641",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        },
+        "UF_CRM_1773912523448": {
+            "type": "string",
+            "title": "UF_CRM_1773912523448",
+            "isRequired": "N",
+            "isReadOnly": "N",
+            "isMultiple": "N"
+        }
+    }
+}

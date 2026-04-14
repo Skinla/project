@@ -1,0 +1,2754 @@
+==== 2025-11-11 15:18:10 ====
+File: ct_20251111_151810_6913298242f5f.json
+EntityType=lead, EntityId=432985
+dialedNumber=78462110260
+callerPhone=79277110544
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7143547
+    [changedFields] => null
+    [ctCallerId] => 19e546dfa0f544a3c3ebc172032d5a47
+    [callerphone] => 79277110544
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 673
+    [waiting_time] => 0
+    [calltime] => 2025-11-11 15:04:50
+    [timestamp] => 1762862690
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 776aedbf-3999-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 9ffadae2-bef6-11f0-87ad-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjg2MzQ4OSwiZXhwIjoyMDc4MjIzNDg5LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDM1NDd9.uG8hgHSCV51PdqXnSrox_EqS8V4WQUGFVvDEzseDKUgXfpbzj6ZlkEU6yTB1IXEoQHK_weHWP5IMO9Zle95EoQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762863489
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-11 16:42:08 ====
+File: ct_20251111_164207_69133d2f39708.json
+EntityType=lead, EntityId=433143
+dialedNumber=78463004753
+callerPhone=79376653550
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7144864
+    [changedFields] => null
+    [ctCallerId] => 385a9a4f96662f6a9bec538ec7a7efcb
+    [callerphone] => 79376653550
+    [phonenumber] => 78463004753
+    [subPoolName] => 2Гис
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 53
+    [waiting_time] => 1
+    [calltime] => 2025-11-11 16:40:02
+    [timestamp] => 1762868402
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => samara_map
+    [medium] => samara_map
+    [utm_source] => samara_map
+    [utm_medium] => samara_map
+    [utm_campaign] => samara_map
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => c4420a88-39a6-123f-6fa7-005056be98e8
+    [callReferenceNumber] => ecd1ebd2-bf03-11f0-a356-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjg2ODUyNiwiZXhwIjoyMDc4MjI4NTI2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDQ4NjR9.AC_xNaNMuTw9MBBllx-tdQtRSc54rFRpZUjnxQprx9pVgxWC-Yn3c1tKsPeg_BKU1YTuz3ZevSPA2SAq7YzKyQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762868526
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2Гис
+    [url] => 2Гис
+)
+
+
+==== 2025-11-11 18:28:05 ====
+File: ct_20251111_182805_691356056b8bd.json
+EntityType=lead, EntityId=433281
+dialedNumber=78462265016
+callerPhone=78463131243
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7145820
+    [changedFields] => null
+    [ctCallerId] => 4acc9a63a07114b21d8e6e569a9143a6
+    [callerphone] => 78463131243
+    [phonenumber] => 78462265016
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 487
+    [waiting_time] => 1
+    [calltime] => 2025-11-11 18:17:58
+    [timestamp] => 1762874278
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => tk
+    [medium] => cpc
+    [utm_source] => tk
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1750841538942250711
+    [sessionId] => 362011988
+    [ctClientId] => 2500000000216927604
+    [ctGlobalId] => null
+    [hostname] => povolzhe-dental.ru
+    [url] => https://povolzhe-dental.ru/?utm_source=tk&yclid=1965548510305320959&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 62.118.81.240
+    [sip_call_id] => 72a47b39-39b4-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 9b34b95e-bf11-11f0-84da-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjg3NDg4NSwiZXhwIjoyMDc4MjM0ODg1LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDU4MjB9.HpwDFt5EBc4-YNIxnp3PbZeEC0vNE3095fm69OCc0Y2kPO2r3TRb_2z5JSQI82MojD7tDC7MEVsqROV2E693Nw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; Infinix X6833B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.121 YaBrowser/25.10.2.121.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762874885
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 08:54:03 ====
+File: ct_20251112_085402_691420faa8e59.json
+EntityType=lead, EntityId=433837
+dialedNumber=78462110260
+callerPhone=74951626281
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7147537
+    [changedFields] => null
+    [ctCallerId] => 6060c4c3d498955ebe34ee40aaca3a5a
+    [callerphone] => 74951626281
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 16
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 08:52:33
+    [timestamp] => 1762926753
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761389391698143622
+    [sessionId] => 354680218
+    [ctClientId] => 2500000000250449214
+    [ctGlobalId] => null
+    [hostname] => vsena4.samaraprotez.ru
+    [url] => https://vsena4.samaraprotez.ru/?yclid=7387779463243890687&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 83.149.19.230
+    [sip_call_id] => 9ff2625a-3a2e-123f-6fa7-005056be98e8
+    [callReferenceNumber] => c883e64e-bf8b-11f0-a1a3-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkyNjg0MiwiZXhwIjoyMDc4Mjg2ODQyLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDc1Mzd9.mWupdCpKy5wh82dQ5vHBWr4n1YqjpheFLU0p4rIqcwHIKGUF4nDAySWEtJVjgbnApwMCr-bbuo17XAqW6s_3NQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762926842
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 10:29:10 ====
+File: ct_20251112_102909_691437459f1f7.json
+EntityType=lead, EntityId=434000
+dialedNumber=78462110260
+callerPhone=79198073539
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7149013
+    [changedFields] => null
+    [ctCallerId] => 28a0962f8ec4ffef00b8d58201dc2287
+    [callerphone] => 79198073539
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 123
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 10:25:55
+    [timestamp] => 1762932355
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ab1dc2aa-3a3b-123f-6fa7-005056be98e8
+    [callReferenceNumber] => d3a055fa-bf98-11f0-bfe7-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzMjU0OSwiZXhwIjoyMDc4MjkyNTQ5LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDkwMTN9.di-b_QTLB_fBJTYXuCtmaw0-FU1gjpcI1Yo9hWLBNv8VUb-Ln4_ZD1j_nXC74f-y57GlB5CjOZNWHEksUtFFYA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762932549
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-12 10:33:15 ====
+File: ct_20251112_103314_6914383ac7bf7.json
+EntityType=lead, EntityId=434002
+dialedNumber=78462110728
+callerPhone=79967337446
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7149018
+    [changedFields] => null
+    [ctCallerId] => 518ac0b4c1529a3bea828a2f78bb6505
+    [callerphone] => 79967337446
+    [phonenumber] => 78462110728
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 313
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 10:26:11
+    [timestamp] => 1762932371
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => ao4_maski_smr_tk
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [sessionId] => 362225698
+    [ctClientId] => 2500000000255601232
+    [ctGlobalId] => null
+    [hostname] => smr-vse-zuby.ru
+    [url] => https://smr-vse-zuby.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=ao4_maski_smr_tk&utm_term=---autotargeting&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 62.118.80.163
+    [sip_call_id] => b459d98c-3a3b-123f-6fa7-005056be98e8
+    [callReferenceNumber] => dcec6d4c-bf98-11f0-81db-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzMjc5MywiZXhwIjoyMDc4MjkyNzkzLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDkwMTh9.ZpGOuLm6m0t9Zuwr6lrPFh6RjkkPyQ077vqOK6yj6Jg8qMnz53n5IuBzKrSzp0GZGvmGTtP_jf0e5WN-eEwQMg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1762932793
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 10:45:10 ====
+File: ct_20251112_104509_69143b05a4333.json
+EntityType=lead, EntityId=434037
+dialedNumber=78462110260
+callerPhone=79687253207
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7149326
+    [changedFields] => null
+    [ctCallerId] => 6db878754e2ba3541e66bcccd91265e5
+    [callerphone] => 79687253207
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 128
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 10:41:28
+    [timestamp] => 1762933288
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 176277307784122596
+    [sessionId] => 362231792
+    [ctClientId] => 2500000000255077557
+    [ctGlobalId] => null
+    [hostname] => klinikapovolzhye.ru
+    [url] => https://klinikapovolzhye.ru/alveolitis-after-tooth-extraction-symptoms-treatment-and-healing-time/?ysclid=mhvotwxixw982589370
+    [attrs] => {}
+    [ref] => https://ya.ru/
+    [city] => elektrostal
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 46.160.245.111
+    [sip_call_id] => d6e43428-3a3d-123f-6fa7-005056be98e8
+    [callReferenceNumber] => ff729254-bf9a-11f0-9fce-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzMzUwOSwiZXhwIjoyMDc4MjkzNTA5LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDkzMjZ9.O9zwxC3jQh-xljns6pwXJqNtn1q1La1ZCqEV7G5-Rm40IhJGU4SHW-ZdoMhKP1IEHb8uOGDCgEM0fAM8nAYluQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762933509
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 10:48:16 ====
+File: ct_20251112_104815_69143bbfdb37a.json
+EntityType=lead, EntityId=434028
+dialedNumber=78462265032
+callerPhone=79123481853
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7149262
+    [changedFields] => null
+    [ctCallerId] => 314a1e38f4637cc6e44e44f618a9a7c0
+    [callerphone] => 79123481853
+    [phonenumber] => 78462265032
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 534
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 10:37:13
+    [timestamp] => 1762933033
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762940152954261415
+    [sessionId] => 362230678
+    [ctClientId] => 2500000000255604409
+    [ctGlobalId] => null
+    [hostname] => samara.implant7500.ru
+    [url] => https://samara.implant7500.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => yekaterinburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 91.191.236.194
+    [sip_call_id] => 3f36e3e9-3a3d-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 67c2299c-bf9a-11f0-8619-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzMzY5NSwiZXhwIjoyMDc4MjkzNjk1LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDkyNjJ9.CRK0GDonhG-Xovvt1fnNGJP94C7gCHkxM0ysdyKFmLvLfq2fNsrti1PncY0WycHUE_gQ-wyWaLf_foQPi4kDiw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/136.0.7103.25 Safari/537.36
+    [sendingTimestamp] => 1762933695
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 11:10:53 ====
+File: ct_20251112_085302_691420be0cfe5.json
+EntityType=lead, EntityId=434111
+dialedNumber=78462115924
+callerPhone=79376671315
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7147521
+    [changedFields] => null
+    [ctCallerId] => b3e9931e8c73b558ab6be51171e259a6
+    [callerphone] => 79376671315
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 16
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 08:51:27
+    [timestamp] => 1762926687
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 78f0d472-3a2e-123f-6fa7-005056be98e8
+    [callReferenceNumber] => a17befe2-bf8b-11f0-9bfc-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkyNjc4MSwiZXhwIjoyMDc4Mjg2NzgxLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDc1MjF9.u5ecWvv74MqcyYCjNS-gKV7_tq3QTfzx6VVvSL8yTBcywDzn53ZvKGkLS_04wTgqpbu1g-cuqP_eZWgKmfp3rQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762926781
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-12 11:14:05 ====
+File: ct_20251112_111404_691441cc876ac.json
+EntityType=lead, EntityId=434125
+dialedNumber=78462115924
+callerPhone=79874391935
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7149866
+    [changedFields] => null
+    [ctCallerId] => 8d3ddbb56bc69aa8cb839d2f638aacad
+    [callerphone] => 79874391935
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 35
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 11:09:24
+    [timestamp] => 1762934964
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => bddb8846-3a41-123f-6fa7-005056be98e8
+    [callReferenceNumber] => e66b5c88-bf9e-11f0-bf43-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzNTI0MywiZXhwIjoyMDc4Mjk1MjQzLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDk4NjZ9.NG3biFpMm8dPtJOIIuvNEMzFoudLFUjhpRpxXZf-NNaOGGmhkMEX8x0OnHq0wfjdUbEVoPQk8bRcRjsGMlwKlA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762935243
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-12 11:14:55 ====
+File: ct_20251112_102318_691435e6e744f.json
+EntityType=lead, EntityId=434126
+dialedNumber=78463004753
+callerPhone=79372026007
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7148873
+    [changedFields] => null
+    [ctCallerId] => 8e0ba2db6d8ab147c65999dd61faed92
+    [callerphone] => 79372026007
+    [phonenumber] => 78463004753
+    [subPoolName] => 2 ГИС Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 133
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 10:18:17
+    [timestamp] => 1762931897
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Самара
+    [medium] => 2 ГИС Самара
+    [utm_source] => 2 ГИС Самара
+    [utm_medium] => 2 ГИС Самара
+    [utm_campaign] => 2 ГИС Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 9a165c69-3a3a-123f-6fa7-005056be98e8
+    [callReferenceNumber] => c2a73a8a-bf97-11f0-9717-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzMjE5NywiZXhwIjoyMDc4MjkyMTk3LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDg4NzN9.fBGUi3MYNHt6HpFfQ2xuxjDfwlbUWGL3u9JP0nY18jPpl3XDmRgxyAcXKKshYpp10gAsCwF_1opokQ3TTdzs7A
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762932197
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Самара
+    [url] => 2 ГИС Самара
+)
+
+
+==== 2025-11-12 11:21:07 ====
+File: ct_20251112_112106_691443727775b.json
+EntityType=lead, EntityId=434150
+dialedNumber=78462115924
+callerPhone=79871500727
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7149927
+    [changedFields] => null
+    [ctCallerId] => 7374c26968dd98ac476bbc75f0be850d
+    [callerphone] => 79871500727
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 141
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 11:13:06
+    [timestamp] => 1762935186
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 42a4b304-3a42-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 6b317894-bf9f-11f0-95ab-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzNTY2NiwiZXhwIjoyMDc4Mjk1NjY2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNDk5Mjd9.ttSeGbJwgsLbJm7UN4az0XoeqXl-tc0GGfkUzKyrj_XG-66l3uNDTkN3nz77oxbs0D0PVkXeRIhO8JgUmfuOrg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762935666
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-12 13:44:12 ====
+File: ct_20251112_134411_691464fbbbd98.json
+EntityType=lead, EntityId=434512
+dialedNumber=78462265032
+callerPhone=79397507875
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7152400
+    [changedFields] => null
+    [ctCallerId] => f5f6d3f9c2d493949d98d846ece87a73
+    [callerphone] => 79397507875
+    [phonenumber] => 78462265032
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 80
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 13:40:49
+    [timestamp] => 1762944049
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762943901256323071
+    [sessionId] => 362306693
+    [ctClientId] => 2500000000255654793
+    [ctGlobalId] => null
+    [hostname] => klinikapovolzhye.ru
+    [url] => https://klinikapovolzhye.ru/?ysclid=mhvv9vk76135685008
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.84.55
+    [sip_call_id] => e54fea32-3a56-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 0de001f0-bfb4-11f0-bcf2-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk0NDI1MSwiZXhwIjoyMDc4MzA0MjUxLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNTI0MDB9.Yv6gRNTNKZiQjBLbgjUvCfe06RoyeAx4KI3EbQnCzlU-CyZs3FMqEsYVLZwv7uGqR2pbcS6Cf8iUYaeNJIhn0Q
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 12; M2007J20CG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.122 YaBrowser/25.10.1.122.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762944251
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 15:48:07 ====
+File: ct_20251112_154806_69148206dac3b.json
+EntityType=lead, EntityId=434748
+dialedNumber=78462110260
+callerPhone=79608341062
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7154087
+    [changedFields] => null
+    [ctCallerId] => e1e20d07a8c8ee71f68a2c8fb57c5b21
+    [callerphone] => 79608341062
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 94
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 15:37:01
+    [timestamp] => 1762951021
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 20971dc1-3a67-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 492949fa-bfc4-11f0-88e8-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk1MTY4NiwiZXhwIjoyMDc4MzExNjg2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNTQwODd9.1gfCvpnP8oKGWse7E39_gWEs3ZUz0LG0l7c9UlX2rWrPzvEk8fQoJM4aemy4oWNwIQDjCh-iDMeLDpHKgtJyxQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762951686
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-12 16:17:06 ====
+File: ct_20251112_161706_691488d2447ad.json
+EntityType=lead, EntityId=434806
+dialedNumber=78462110260
+callerPhone=79277162201
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7154526
+    [changedFields] => null
+    [ctCallerId] => 2016eed6e530b80b4ed596939ae352cd
+    [callerphone] => 79277162201
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 171
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 16:09:58
+    [timestamp] => 1762952998
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1744882963402457444
+    [sessionId] => 296100039
+    [ctClientId] => 2500000000198310736
+    [ctGlobalId] => null
+    [hostname] => samaradent.ru
+    [url] => https://samaradent.ru/implantaciya-all-on-4/?yclid=17919664535034396671
+    [attrs] => {}
+    [ref] => https://ok.ru/game/solitaire_online
+    [city] => naberezhnyye chelny
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 178.206.54.94
+    [sip_call_id] => bb51f1ba-3a6b-123f-6fa7-005056be98e8
+    [callReferenceNumber] => e3e1f4a2-bfc8-11f0-a979-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk1MzQyNiwiZXhwIjoyMDc4MzEzNDI2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNTQ1MjZ9.PODIfhu2szA5aYeB0bJBV0GHLtsFLuGj7cb0kG46WHgnPL_mFs3Qxaz-Z17AFUbD8PLHr1sS_sutpxBwl-UefQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 YaBrowser/25.4.0.0 Safari/537.36
+    [sendingTimestamp] => 1762953426
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 18:07:09 ====
+File: ct_20251112_180707_6914a29beb8f8.json
+EntityType=lead, EntityId=434981
+dialedNumber=78462110260
+callerPhone=79270019282
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7155702
+    [changedFields] => null
+    [ctCallerId] => b1ea3cf25d184a1af89ef86be5e48216
+    [callerphone] => 79270019282
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 239
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 18:01:07
+    [timestamp] => 1762959667
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 4238b8da-3a7b-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 6acbda1e-bfd8-11f0-824b-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk2MDAyNiwiZXhwIjoyMDc4MzIwMDI2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNTU3MDJ9.QTS844P2_dMz_debdyafvFe8VVCdK63Dto8n9woEqmhnFtGA-x3ZJm-1gA6ZswBTqHFgxMXSU3nyvq1OjDoVuw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1762960026
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-13 08:46:04 ====
+File: ct_20251113_084603_6915709bbd797.json
+EntityType=lead, EntityId=435535
+dialedNumber=78462115924
+callerPhone=79053031440
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7157490
+    [changedFields] => null
+    [ctCallerId] => c0fa9a1d00f14cb10c94a3898bc72196
+    [callerphone] => 79053031440
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 130
+    [waiting_time] => 0
+    [calltime] => 2025-11-13 08:42:37
+    [timestamp] => 1763012557
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 6728d99a-3af6-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 8fba30e8-c053-11f0-ab5e-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAxMjc2MywiZXhwIjoyMDc4MzcyNzYzLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNTc0OTB9.0zmIao7AxZe2j6Vl6GVqSmCizCEeEux2aVMwR3awHSBxlXvKpCB2k3msAZWVLulHizA52CscXqbt-y9w-UZ7IA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763012763
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-13 08:48:05 ====
+File: ct_20251113_084804_69157114b8f2d.json
+EntityType=lead, EntityId=435540
+dialedNumber=78462115924
+callerPhone=79053000742
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7157517
+    [changedFields] => null
+    [ctCallerId] => ae54f9f974bc20c7889069b9829e5302
+    [callerphone] => 79053000742
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 64
+    [waiting_time] => 1
+    [calltime] => 2025-11-13 08:45:55
+    [timestamp] => 1763012755
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => dce943b2-3af6-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 0579f91c-c054-11f0-b799-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAxMjg4NCwiZXhwIjoyMDc4MzcyODg0LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNTc1MTd9.3JraTOk2zxyoM0EFVgrjE9atnNuF2ipd2Z4hWOtpX_oj29LRFH9ZnLWpOti8HWyG1jpzJsa71t5kp0w3S5fLbQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763012884
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-13 12:22:16 ====
+File: ct_20251113_122214_6915a346b122f.json
+EntityType=lead, EntityId=436011
+dialedNumber=78462265016
+callerPhone=79270174242
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7160877
+    [changedFields] => null
+    [ctCallerId] => 2bafd7d1e034be29ce8c13ec769080ee
+    [callerphone] => 79270174242
+    [phonenumber] => 78462265016
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 137
+    [waiting_time] => 0
+    [calltime] => 2025-11-13 12:18:06
+    [timestamp] => 1763025486
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => 113408092
+    [utm_content] => 16392772288
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176302534478977604
+    [sessionId] => 362699243
+    [ctClientId] => 2500000000255920231
+    [ctGlobalId] => null
+    [hostname] => povolzhe-dental.ru
+    [url] => https://povolzhe-dental.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=113408092&utm_content=16392772288&utm_term=---autotargeting&yclid=535066347617386495&ybaip=1
+    [attrs] => {}
+    [ref] => https://m.dzen.ru/
+    [city] => moscow
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 95.26.142.28
+    [sip_call_id] => 816ce82f-3b14-123f-6fa7-005056be98e8
+    [callReferenceNumber] => a9f784ec-c071-11f0-8350-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAyNTczNCwiZXhwIjoyMDc4Mzg1NzM0LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjA4Nzd9.0nUjaKunpSWVxWYefGvg7ygFM11ea3RUMCQ3M3YjhhdpDQBqxK0bkt2iPidErN0F40SnINi-Mg08TVdh3SlmXw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 15_8_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.7 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1763025734
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-13 13:03:07 ====
+File: ct_20251113_130307_6915acdb4a74f.json
+EntityType=lead, EntityId=436106
+dialedNumber=78462110260
+callerPhone=79198073539
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7161552
+    [changedFields] => null
+    [ctCallerId] => 28a0962f8ec4ffef00b8d58201dc2287
+    [callerphone] => 79198073539
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 39
+    [waiting_time] => 1
+    [calltime] => 2025-11-13 13:01:22
+    [timestamp] => 1763028082
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 8cd8517a-3b1a-123f-6fa7-005056be98e8
+    [callReferenceNumber] => b567e8e8-c077-11f0-aa33-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAyODE4NiwiZXhwIjoyMDc4Mzg4MTg2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjE1NTJ9.M-F2xMJbG6wDSlKhbtzKLZ1CzwlXilJGverHpjao5-v4BT97H8kTf1tPye7rgfG3IMjLdQrbot50t-5uL8Xmbg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763028186
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-13 14:42:13 ====
+File: ct_20251113_144213_6915c41526e17.json
+EntityType=lead, EntityId=436287
+dialedNumber=78462265032
+callerPhone=79276977739
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7162981
+    [changedFields] => null
+    [ctCallerId] => ede081410a8e40cf0a0b7b54a353b08f
+    [callerphone] => 79276977739
+    [phonenumber] => 78462265032
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 436
+    [waiting_time] => 0
+    [calltime] => 2025-11-13 14:33:36
+    [timestamp] => 1763033616
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => ao4_auto_smr_rsya
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1760766709936763355
+    [sessionId] => 362779152
+    [ctClientId] => 2500000000248379631
+    [ctGlobalId] => null
+    [hostname] => smr-vse-zuby.ru
+    [url] => https://smr-vse-zuby.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=ao4_auto_smr_rsya&utm_term=---autotargeting&yclid=1986810034010193919
+    [attrs] => {}
+    [ref] => https://smotrim.ru/radio?utm_source=internal&utm_medium=tabbar-menu&utm_campaign=tabbar-menu
+    [city] => samara
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 46.0.160.47
+    [sip_call_id] => 6f4bc3d2-3b27-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 97d6e0ce-c084-11f0-8b6d-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAzNDEyOSwiZXhwIjoyMDc4Mzk0MTI5LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjI5ODF9.0l09YlWhuKl56Y4DDYoMdpBM2YJcn3ngVBiQHW-P8WVqhKflF1O6Bcr-GmKao3R_--LHGFxyxElByyImy4vTgA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1763034129
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-13 21:37:06 ====
+File: ct_20251113_213706_6916255250fa3.json
+EntityType=lead, EntityId=436919
+dialedNumber=78463004753
+callerPhone=79170396591
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7166429
+    [changedFields] => null
+    [ctCallerId] => 6640ce3f2050701c46ddcd7bcf485561
+    [callerphone] => 79170396591
+    [phonenumber] => 78463004753
+    [subPoolName] => 2 ГИС Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 49
+    [waiting_time] => 0
+    [calltime] => 2025-11-13 21:34:33
+    [timestamp] => 1763058873
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => 2 ГИС Самара
+    [medium] => 2 ГИС Самара
+    [utm_source] => 2 ГИС Самара
+    [utm_medium] => 2 ГИС Самара
+    [utm_campaign] => 2 ГИС Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 3d7b6618-3b62-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 660cf1c4-c0bf-11f0-a3a3-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA1OTAyNiwiZXhwIjoyMDc4NDE5MDI2LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjY0Mjl9.gEdzQ4vui2gsFi8_nrLx472FkFZrbOPpqfaZP28xV4uQsN6OVMnoj0NoDw1WUpCU6bopXJe3uPeYnhy7YtZgbg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763059026
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => 2 ГИС Самара
+    [url] => 2 ГИС Самара
+)
+
+
+==== 2025-11-14 08:01:03 ====
+File: ct_20251114_080102_6916b78ec5346.json
+EntityType=lead, EntityId=437215
+dialedNumber=78462115924
+callerPhone=79376671315
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7166860
+    [changedFields] => null
+    [ctCallerId] => b3e9931e8c73b558ab6be51171e259a6
+    [callerphone] => 79376671315
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 35
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 07:58:45
+    [timestamp] => 1763096325
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 70b0bbee-3bb9-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 9941347c-c116-11f0-8b43-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA5NjQ2MiwiZXhwIjoyMDc4NDU2NDYyLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjY4NjB9.moOnvp5I6vHhEhvuGi54UuQY4Gjxs9DMeGC-k0SDrOXByWao4Nd0XQSvd1bQAAsDRbfYJuPuBz2R_Zet0bJhPg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763096462
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 08:35:03 ====
+File: ct_20251114_083502_6916bf865918c.json
+EntityType=lead, EntityId=437266
+dialedNumber=78462115924
+callerPhone=79376671315
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7167121
+    [changedFields] => null
+    [ctCallerId] => b3e9931e8c73b558ab6be51171e259a6
+    [callerphone] => 79376671315
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 42
+    [waiting_time] => 1
+    [calltime] => 2025-11-14 08:32:55
+    [timestamp] => 1763098375
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 36d4398f-3bbe-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 5f65c8a8-c11b-11f0-8fb9-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA5ODUwMiwiZXhwIjoyMDc4NDU4NTAyLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjcxMjF9.-uMCdHDjxBeq4rsPeQUEX3JBok5AkpmHLcPdvksPWYhT3Qa4adAe-XcKOFPVWFus8Z80NWRbQgx3Q0nfbo04iQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763098502
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 08:40:03 ====
+File: ct_20251114_084002_6916c0b2765d4.json
+EntityType=lead, EntityId=437273
+dialedNumber=78462115924
+callerPhone=79608254874
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7167168
+    [changedFields] => null
+    [ctCallerId] => 45aa5e2a4b9b1820850e4216b43d115d
+    [callerphone] => 79608254874
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 42
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 08:37:55
+    [timestamp] => 1763098675
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => tk
+    [medium] => cpc
+    [utm_source] => tk
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1759576876647941024
+    [sessionId] => 350438613
+    [ctClientId] => 2500000000244507624
+    [ctGlobalId] => null
+    [hostname] => povolzhe-dental.ru
+    [url] => https://povolzhe-dental.ru/?utm_source=tk&yclid=1938352811070455807&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 128.204.70.51
+    [sip_call_id] => e989a731-3bbe-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 121a1be8-c11c-11f0-a3cc-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA5ODgwMiwiZXhwIjoyMDc4NDU4ODAyLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjcxNjh9.uet0xHrb2cbiUYIwgYBrCazM4x9U0zViUXfkx6xSvLJOIyomYQCNaR3Qi1gjxEBpNMKbVCX59VVe_RpDpSrOIw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763098802
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 10:14:09 ====
+File: ct_20251114_101407_6916d6bfd4961.json
+EntityType=lead, EntityId=437430
+dialedNumber=78462110260
+callerPhone=74951626281
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7168393
+    [changedFields] => null
+    [ctCallerId] => 6060c4c3d498955ebe34ee40aaca3a5a
+    [callerphone] => 74951626281
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 52
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 10:11:26
+    [timestamp] => 1763104286
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761389391698143622
+    [sessionId] => 354680218
+    [ctClientId] => 2500000000250449214
+    [ctGlobalId] => null
+    [hostname] => vsena4.samaraprotez.ru
+    [url] => https://vsena4.samaraprotez.ru/?yclid=7387779463243890687&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 83.149.19.230
+    [sip_call_id] => f9fcec11-3bcb-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 228b98c8-c129-11f0-a7f0-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzEwNDQ0NywiZXhwIjoyMDc4NDY0NDQ3LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjgzOTN9.AQwAe-hbWMLs7Z12fI6KdhHGbptikqu5PKXduYQ0KPeGwlWs_L3_hoi7-539ygNBKTVJeIlam-XIaD3tFsoahw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763104447
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-14 10:16:06 ====
+File: ct_20251114_101605_6916d735d6cbb.json
+EntityType=lead, EntityId=437410
+dialedNumber=78462112148
+callerPhone=79276582911
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7168316
+    [changedFields] => null
+    [ctCallerId] => 6049a0cec8c23b0c8b7b4fc4166e7af7
+    [callerphone] => 79276582911
+    [phonenumber] => 78462112148
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 468
+    [waiting_time] => 1
+    [calltime] => 2025-11-14 10:06:37
+    [timestamp] => 1763103997
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => ao4_maski_smr_tk
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1753902816223190491
+    [sessionId] => 336395087
+    [ctClientId] => 2500000000237671174
+    [ctGlobalId] => null
+    [hostname] => smr-vse-zuby.ru
+    [url] => https://smr-vse-zuby.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=ao4_maski_smr_tk&utm_term=---autotargeting&yclid=16827586642244009983&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 81.195.156.58
+    [sip_call_id] => 4dd35ac9-3bcb-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 7662f7da-c128-11f0-8db9-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzEwNDU2NSwiZXhwIjoyMDc4NDY0NTY1LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjgzMTZ9.2B5DYWznvhR1xyDysCE-aTAOl8y5hohi-Law-q0PzMRPXZWJ19z4eECr9jBSKPSz9ZyfH5-8oicjAm-GwZcoLA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763104565
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-14 10:18:11 ====
+File: ct_20251114_101810_6916d7b2765e6.json
+EntityType=lead, EntityId=437446
+dialedNumber=78462115924
+callerPhone=79376671315
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7168451
+    [changedFields] => null
+    [ctCallerId] => b3e9931e8c73b558ab6be51171e259a6
+    [callerphone] => 79376671315
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 62
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 10:15:16
+    [timestamp] => 1763104516
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 82e2e1a2-3bcc-123f-6fa7-005056be98e8
+    [callReferenceNumber] => ab71e69c-c129-11f0-be48-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzEwNDY5MCwiZXhwIjoyMDc4NDY0NjkwLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjg0NTF9.A5eprXfzi_-WwRutu60ywmUqYC8RKOiAwXra_QmYn2TFjbW2ax39JsJuMQc1k8eMh9Csot4gpce1E7vIC8B2dA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763104690
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 10:30:10 ====
+File: ct_20251114_103009_6916da81378a6.json
+EntityType=lead, EntityId=437470
+dialedNumber=78462115924
+callerPhone=79617842019
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7168588
+    [changedFields] => null
+    [ctCallerId] => 109228cbffed7e01797d139da05525e3
+    [callerphone] => 79617842019
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 292
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 10:23:36
+    [timestamp] => 1763105016
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ad14906c-3bcd-123f-6fa7-005056be98e8
+    [callReferenceNumber] => d5a5e9bc-c12a-11f0-aba1-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzEwNTQwNywiZXhwIjoyMDc4NDY1NDA3LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjg1ODh9.x_DBAMcefJ4JpU5y-gIou1Lsqs6QZDgCESRMmT_xFRYM2CRh-pXkbrml1RDujtwxjgqUZCAbz0ukszP3Lft0kg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763105407
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 10:47:04 ====
+File: ct_20251114_104703_6916de779dc42.json
+EntityType=lead, EntityId=437511
+dialedNumber=78462115924
+callerPhone=79053000742
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7168961
+    [changedFields] => null
+    [ctCallerId] => ae54f9f974bc20c7889069b9829e5302
+    [callerphone] => 79053000742
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 85
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 10:43:53
+    [timestamp] => 1763106233
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 823a10bf-3bd0-123f-6fa7-005056be98e8
+    [callReferenceNumber] => aac9e59c-c12d-11f0-a0e7-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzEwNjQyMywiZXhwIjoyMDc4NDY2NDIzLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjg5NjF9.hSIA-xUiJu4HKY5AIsBSjkxFzfgDdPEEKU3SPsXxSz8ei2Gf2px7OEWg6qMp7wmBp1gNCD8oD__pXDf1mvg5Zg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763106423
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 10:59:05 ====
+File: ct_20251114_105904_6916e148dd6db.json
+EntityType=lead, EntityId=437535
+dialedNumber=78462115924
+callerPhone=79967390161
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7169187
+    [changedFields] => null
+    [ctCallerId] => a08145315f9afcdb7927df2baedeb444
+    [callerphone] => 79967390161
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 53
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 10:56:24
+    [timestamp] => 1763106984
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1756537393325362742
+    [sessionId] => 359601512
+    [ctClientId] => 2500000000246820615
+    [ctGlobalId] => null
+    [hostname] => klinikapovolzhye.ru
+    [url] => https://klinikapovolzhye.ru/pacients/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => krasnodar
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 94.77.25.42
+    [sip_call_id] => 420f54ed-3bd2-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 6aa0a0a8-c12f-11f0-a9fa-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzEwNzE0NCwiZXhwIjoyMDc4NDY3MTQ0LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjkxODd9.Nq6yDIgUiBQmbiFDMg5k0AJlDRyQ5Q6ryrMO7azi931qFiBq1Tsfv0haHdLF4cuOcYUUXsuDx4cTY4mm2zZJJQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763107144
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 11:48:09 ====
+File: ct_20251114_114808_6916ecc80ec5e.json
+EntityType=lead, EntityId=437651
+dialedNumber=78462115924
+callerPhone=79061276397
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7169963
+    [changedFields] => null
+    [ctCallerId] => 089b84b38a6c6c17b34eb62b55e24717
+    [callerphone] => 79061276397
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 206
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 11:42:46
+    [timestamp] => 1763109766
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => bc316aaf-3bd8-123f-6fa7-005056be98e8
+    [callReferenceNumber] => e4c070d8-c135-11f0-9ea6-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzExMDA4NywiZXhwIjoyMDc4NDcwMDg3LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNjk5NjN9.27H4h9RzkejKP8cwxZzkCL3-FfDdimiUYoN7qLJt3op_HCkJiWiuYQacxG151hTd0-KePqwiTghpsGvjzYxtNA
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763110087
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 11:49:10 ====
+File: ct_20251114_114909_6916ed05354bf.json
+EntityType=lead, EntityId=437653
+dialedNumber=78462115924
+callerPhone=79649693594
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7170033
+    [changedFields] => null
+    [ctCallerId] => 28d1c26b77f3eeb1753c92df19279d9a
+    [callerphone] => 79649693594
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 89
+    [waiting_time] => 1
+    [calltime] => 2025-11-14 11:46:26
+    [timestamp] => 1763109986
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 3fa5766a-3bd9-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 68372f9c-c136-11f0-b42e-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzExMDE0OCwiZXhwIjoyMDc4NDcwMTQ4LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNzAwMzN9.xvYGf3qk8ZEKuYJIhjR4tTtT5ipjXDv4P1sveUSmJHuUpMVxorH8wVtCFZ6erh3qJ_9YZx87Rau5BTZqDGjy6Q
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763110148
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 11:59:06 ====
+File: ct_20251114_115905_6916ef5989142.json
+EntityType=lead, EntityId=437668
+dialedNumber=78462115924
+callerPhone=79967390161
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7170185
+    [changedFields] => null
+    [ctCallerId] => a08145315f9afcdb7927df2baedeb444
+    [callerphone] => 79967390161
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 77
+    [waiting_time] => 1
+    [calltime] => 2025-11-14 11:56:23
+    [timestamp] => 1763110583
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1756537393325362742
+    [sessionId] => 359601512
+    [ctClientId] => 2500000000246820615
+    [ctGlobalId] => null
+    [hostname] => klinikapovolzhye.ru
+    [url] => https://klinikapovolzhye.ru/pacients/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => krasnodar
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 94.77.25.42
+    [sip_call_id] => a37dde6d-3bda-123f-6fa7-005056be98e8
+    [callReferenceNumber] => cc0f76cc-c137-11f0-ab4a-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzExMDc0NCwiZXhwIjoyMDc4NDcwNzQ0LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNzAxODV9.OYrXo65eerz_oaDY1X0klGRjwdRxImeUplcuzu0qQvwJmSu508JRcJ5-Q848U5Rmt5Ry3ZT5zsSsH17B_MW-sw
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763110744
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 12:20:13 ====
+File: ct_20251114_122011_6916f44bd7006.json
+EntityType=lead, EntityId=437709
+dialedNumber=78462115924
+callerPhone=79276589433
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7170383
+    [changedFields] => null
+    [ctCallerId] => a677651daafe14dab719c4a092db8465
+    [callerphone] => 79276589433
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 627
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 12:07:28
+    [timestamp] => 1763111248
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Яндекс Карты Самара
+    [medium] => Яндекс Карты Самара
+    [utm_source] => Яндекс Карты Самара
+    [utm_medium] => Яндекс Карты Самара
+    [utm_campaign] => Яндекс Карты Самара
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 2f73b416-3bdc-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 5804ece2-c139-11f0-aaa8-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzExMjAxMCwiZXhwIjoyMDc4NDcyMDEwLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNzAzODN9.qUS0hQeccRgb8gu3GCBDiH7US8alwkPS0BcUmlFYf44wfOEaRJ-Z51gJwlgMzzPiNOa_91G-2R_h8euZDfUggg
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [sendingTimestamp] => 1763112010
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+    [url] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 12:37:05 ====
+File: ct_20251114_123704_6916f84027de2.json
+EntityType=lead, EntityId=437736
+dialedNumber=78462115924
+callerPhone=79967390161
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7170810
+    [changedFields] => null
+    [ctCallerId] => a08145315f9afcdb7927df2baedeb444
+    [callerphone] => 79967390161
+    [phonenumber] => 78462115924
+    [subPoolName] => Яндекс Карты Самара
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 80
+    [waiting_time] => 1
+    [calltime] => 2025-11-14 12:33:19
+    [timestamp] => 1763112799
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1756537393325362742
+    [sessionId] => 359601512
+    [ctClientId] => 2500000000246820615
+    [ctGlobalId] => null
+    [hostname] => klinikapovolzhye.ru
+    [url] => https://klinikapovolzhye.ru/pacients/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => krasnodar
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 94.77.25.42
+    [sip_call_id] => cc3b3637-3bdf-123f-6fa7-005056be98e8
+    [callReferenceNumber] => f4c98184-c13c-11f0-b4aa-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzExMzAyMywiZXhwIjoyMDc4NDczMDIzLCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNzA4MTB9.eCpAJb-QGp2x2k5UU5VyKufKp9oMBRbaE9G0gapiYC2rTS3taB5Fh0GMOCAA_Y3iQj9C8Q_4Zd1CZPIrJNIBFQ
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763113023
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Яндекс Карты Самара
+)
+
+
+==== 2025-11-14 13:55:08 ====
+File: ct_20251114_135507_69170a8b65047.json
+EntityType=lead, EntityId=437904
+dialedNumber=78462110260
+callerPhone=74951626281
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 7172074
+    [changedFields] => null
+    [ctCallerId] => 6060c4c3d498955ebe34ee40aaca3a5a
+    [callerphone] => 74951626281
+    [phonenumber] => 78462110260
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:samara_per_lead@samara.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 294
+    [waiting_time] => 0
+    [calltime] => 2025-11-14 13:48:25
+    [timestamp] => 1763117305
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761389391698143622
+    [sessionId] => 354680218
+    [ctClientId] => 2500000000250449214
+    [ctGlobalId] => null
+    [hostname] => vsena4.samaraprotez.ru
+    [url] => https://vsena4.samaraprotez.ru/?yclid=7387779463243890687&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 83.149.19.230
+    [sip_call_id] => 49a5618c-3bea-123f-6fa7-005056be98e8
+    [callReferenceNumber] => 7237e304-c147-11f0-8f8c-87eeeed13b5b
+    [reclink] => https://api-node25.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzExNzcwNywiZXhwIjoyMDc4NDc3NzA3LCJzaXRlSWQiOjYxOTM2LCJjYWxsSWQiOjcxNzIwNzR9.JwKMat22BeG0-onHG7JtzUakS_sxnKCVxpJfiyPFCnwiJbarJ4O3aWlZqX1SxK3dT90IPxtx1IhKDYoiHhM32w
+    [orderId] => null
+    [siteId] => 61936
+    [siteName] => Самара
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1763117707
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+

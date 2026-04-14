@@ -1,0 +1,29 @@
+[
+  {
+    "cloud_deal_id": 1,
+    "activities": [
+      {
+        "PROVIDER_ID": "CRM_BOOKING",
+        "SETTINGS": {
+          "FIELDS": {
+            "resources": [
+              { "id": 1, "typeName": "Врач", "name": "Test resource" }
+            ]
+          }
+        },
+        "migration_booking": {
+          "cloud_booking_id": 999,
+          "payload": {
+            "resources": [{ "id": 1 }],
+            "datePeriod": {
+              "from": 1700000000,
+              "to": 1700003600,
+              "fromTimezone": "Europe/Moscow",
+              "toTimezone": "Europe/Moscow"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

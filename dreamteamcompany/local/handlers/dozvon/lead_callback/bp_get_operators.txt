@@ -1,0 +1,84 @@
+/**
+ * BP блок: Получить список user_ID операторов из списка 128.
+ * Фильтр: GOROD = CB_CITY_ID.
+ * Результат — строка вида "user_11,user_22,user_33" для блока "Выбор сотрудника".
+ *
+ * Читает: CB_CITY_ID
+ * Записывает: CB_OPERATOR_LIST (строка user_ID через запятую),
+ *             CB_OPERATORS_COUNT (число найденных),
+ *             CB_OPERATORS_RESULT (found/not_found/error)
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+try {
+    $cityId = (int)preg_replace('/\D+/', '', (string)$getVar('CB_CITY_ID'));
+    $log('CB GET_OPS [1/2] cityId=' . $cityId);
+
+    if ($cityId <= 0) {
+        $setVar('CB_OPERATORS_RESULT', 'error');
+        $setVar('CB_OPERATORS_COUNT', '0');
+        return;
+    }
+
+    if (!Loader::includeModule('iblock')) {
+        $setVar('CB_OPERATORS_RESULT', 'error');
+        $setVar('CB_OPERATORS_COUNT', '0');
+        return;
+    }
+
+    $res = \CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        ['IBLOCK_ID' => 128, 'CHECK_PERMISSIONS' => 'N', 'PROPERTY_GOROD' => $cityId],
+        false,
+        ['nTopCount' => 30]
+    );
+
+    $users = [];
+    if ($res) {
+        while ($ob = $res->GetNextElement()) {
+            $props = $ob->GetProperties();
+            $val = $props['OPERATOR']['VALUE'] ?? null;
+            if (is_array($val)) $val = reset($val);
+            $uid = (int)preg_replace('/\D+/', '', (string)$val);
+            if ($uid > 0 && !in_array($uid, $users, true)) {
+                $users[] = $uid;
+            }
+        }
+    }
+
+    $log('CB GET_OPS [2/2] found ' . count($users) . ' operators');
+
+    if (empty($users)) {
+        $setVar('CB_OPERATOR_LIST', '');
+        $setVar('CB_OPERATORS_COUNT', '0');
+        $setVar('CB_OPERATORS_RESULT', 'not_found');
+        return;
+    }
+
+    $formatted = implode(',', array_map(function ($id) { return 'user_' . $id; }, $users));
+    $setVar('CB_OPERATOR_LIST', $formatted);
+    $setVar('CB_OPERATORS_COUNT', (string)count($users));
+    $setVar('CB_OPERATORS_RESULT', 'found');
+
+} catch (\Throwable $e) {
+    $setVar('CB_OPERATORS_RESULT', 'error');
+    $setVar('CB_OPERATORS_COUNT', '0');
+    $log('CB GET_OPS EXCEPTION: ' . $e->getMessage());
+}

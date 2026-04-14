@@ -1,0 +1,1547 @@
+{
+  "slug": "contacts",
+  "kind": "base",
+  "entity": "contacts",
+  "title": "Контакты",
+  "subtitle": "Все поля контактов, включая пользовательские поля UF_CRM_*.",
+  "stageTitle": "Стадии контактов",
+  "stageSubtitle": "Контакты не используют стадии.",
+  "portal": "bitrix.tms.net.ru",
+  "source": "box",
+  "sourceTitle": "Коробка",
+  "entities": [
+    {
+      "slug": "leads",
+      "title": "Лиды",
+      "kind": "base"
+    },
+    {
+      "slug": "deals",
+      "title": "Сделки",
+      "kind": "base"
+    },
+    {
+      "slug": "invoices",
+      "title": "Счета",
+      "kind": "base"
+    },
+    {
+      "slug": "contacts",
+      "title": "Контакты",
+      "kind": "base"
+    },
+    {
+      "slug": "companies",
+      "title": "Компании",
+      "kind": "base"
+    },
+    {
+      "slug": "quotes",
+      "title": "Предложения",
+      "kind": "base"
+    },
+    {
+      "slug": "sp-1058",
+      "title": "+Входящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1090",
+      "title": "+Договора от партнеров",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1082",
+      "title": "+Договоры с заказчиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1042",
+      "title": "+Договоры с поставщиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1070",
+      "title": "+Документы по договорам",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1102",
+      "title": "+Заявка на закупку",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1110",
+      "title": "+Заявка на ресурс",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1078",
+      "title": "+Заявка на транспорт",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1050",
+      "title": "+Заявки в IT-службу",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1066",
+      "title": "+Исходящие (бухгалтерия)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1062",
+      "title": "+Исходящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1054",
+      "title": "+Материалы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1046",
+      "title": "+Наименование работ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1114",
+      "title": "+Объекты",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1074",
+      "title": "+Реестр приказов",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1086",
+      "title": "+Реестр чертежей",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1098",
+      "title": "+Склады",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1106",
+      "title": "+Собственные ресурсы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1094",
+      "title": "+Сотрудники (с/п)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1038",
+      "title": "+Счета от поставщиков",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1118",
+      "title": "+Участки",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-36",
+      "title": "Документ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-39",
+      "title": "Документ компании",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "bp-templates",
+      "title": "Шаблоны БП",
+      "kind": "bizproc_registry"
+    }
+  ],
+  "stageGroups": [],
+  "stages": [],
+  "fields": [
+    {
+      "code": "ADDRESS_2",
+      "title": "ADDRESS_2",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_2",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_2"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_CITY",
+      "title": "ADDRESS_CITY",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_CITY",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_CITY"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_COUNTRY",
+      "title": "ADDRESS_COUNTRY",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_COUNTRY",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_COUNTRY"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_COUNTRY_CODE",
+      "title": "ADDRESS_COUNTRY_CODE",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_COUNTRY_CODE",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_COUNTRY_CODE"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_LOC_ADDR_ID",
+      "title": "ADDRESS_LOC_ADDR_ID",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_LOC_ADDR_ID",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "TITLE": "ADDRESS_LOC_ADDR_ID"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_POSTAL_CODE",
+      "title": "ADDRESS_POSTAL_CODE",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_POSTAL_CODE",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_POSTAL_CODE"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_PROVINCE",
+      "title": "ADDRESS_PROVINCE",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_PROVINCE",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_PROVINCE"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS_REGION",
+      "title": "ADDRESS_REGION",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ADDRESS_REGION",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "ADDRESS_REGION"
+        }
+      }
+    },
+    {
+      "code": "BIRTHDAY_SORT",
+      "title": "BIRTHDAY_SORT",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "BIRTHDAY_SORT",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "ATTRIBUTES": [
+            "HID"
+          ],
+          "TITLE": "BIRTHDAY_SORT"
+        }
+      }
+    },
+    {
+      "code": "COMPANY_IDS",
+      "title": "COMPANY_IDS",
+      "type": "crm_company",
+      "isCustom": false,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "COMPANY_IDS",
+        "type": "crm_company",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "crm_company",
+          "ATTRIBUTES": [
+            "MUL"
+          ],
+          "TITLE": "COMPANY_IDS"
+        }
+      }
+    },
+    {
+      "code": "FULL_NAME",
+      "title": "FULL_NAME",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "FULL_NAME",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "HID"
+          ],
+          "TITLE": "FULL_NAME"
+        }
+      }
+    },
+    {
+      "code": "ID",
+      "title": "ID",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ID",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "ID"
+        }
+      }
+    },
+    {
+      "code": "UTM_CAMPAIGN",
+      "title": "UTM Campaign",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "UTM Campaign",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "UTM Campaign"
+        }
+      }
+    },
+    {
+      "code": "UTM_CONTENT",
+      "title": "UTM Content",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "UTM Content",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "UTM Content"
+        }
+      }
+    },
+    {
+      "code": "UTM_MEDIUM",
+      "title": "UTM Medium",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "UTM Medium",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "UTM Medium"
+        }
+      }
+    },
+    {
+      "code": "UTM_SOURCE",
+      "title": "UTM Source",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "UTM Source",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "UTM Source"
+        }
+      }
+    },
+    {
+      "code": "UTM_TERM",
+      "title": "UTM Term",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "UTM Term",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "UTM Term"
+        }
+      }
+    },
+    {
+      "code": "LAST_ACTIVITY_BY",
+      "title": "Автор последней активности в таймлайне",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Автор последней активности в таймлайне",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [],
+          "TITLE": "Автор последней активности в таймлайне"
+        }
+      }
+    },
+    {
+      "code": "ADDRESS",
+      "title": "Адрес",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Адрес",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Адрес"
+        }
+      }
+    },
+    {
+      "code": "ORIGIN_VERSION",
+      "title": "Версия оригинала",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Версия оригинала",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Версия оригинала"
+        }
+      }
+    },
+    {
+      "code": "ORIGINATOR_ID",
+      "title": "Внешний источник",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Внешний источник",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Внешний источник"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_TIME",
+      "title": "Дата последней коммуникации",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последней коммуникации",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Дата последней коммуникации"
+        }
+      }
+    },
+    {
+      "code": "BIRTHDATE",
+      "title": "Дата рождения",
+      "type": "date",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата рождения",
+        "type": "date",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "date",
+          "TITLE": "Дата рождения"
+        }
+      }
+    },
+    {
+      "code": "POST",
+      "title": "Должность",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Должность",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Должность"
+        }
+      }
+    },
+    {
+      "code": "SOURCE_DESCRIPTION",
+      "title": "Дополнительно об источнике",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дополнительно об источнике",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Дополнительно об источнике"
+        }
+      }
+    },
+    {
+      "code": "OPENED",
+      "title": "Доступно для всех",
+      "type": "char",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Доступно для всех",
+        "type": "char",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "char",
+          "TITLE": "Доступно для всех"
+        }
+      }
+    },
+    {
+      "code": "HAS_EMAIL",
+      "title": "Задан e-mail",
+      "type": "char",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Задан e-mail",
+        "type": "char",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "char",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Задан e-mail"
+        }
+      }
+    },
+    {
+      "code": "HAS_PHONE",
+      "title": "Задан телефон",
+      "type": "char",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Задан телефон",
+        "type": "char",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "char",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Задан телефон"
+        }
+      }
+    },
+    {
+      "code": "HAS_IMOL",
+      "title": "Задана открытая линия",
+      "type": "char",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Задана открытая линия",
+        "type": "char",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "char",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Задана открытая линия"
+        }
+      }
+    },
+    {
+      "code": "ORIGIN_ID",
+      "title": "Идентификатор элемента во внешнем источнике",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Идентификатор элемента во внешнем источнике",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Идентификатор элемента во внешнем источнике"
+        }
+      }
+    },
+    {
+      "code": "NAME",
+      "title": "Имя",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Имя",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "REQ"
+          ],
+          "TITLE": "Имя"
+        }
+      }
+    },
+    {
+      "code": "SOURCE_ID",
+      "title": "Источник",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": "SOURCE",
+      "options": [
+        {
+          "code": "7",
+          "name": "Avito - Авито ТМС"
+        },
+        {
+          "code": "6",
+          "name": "Avito - Открытая линия"
+        },
+        {
+          "code": "WEBFORM",
+          "name": "CRM-форма"
+        },
+        {
+          "code": "4",
+          "name": "Telegram - Авито ТМС"
+        },
+        {
+          "code": "5",
+          "name": "Telegram - Открытая линия 6"
+        },
+        {
+          "code": "1",
+          "name": "Битрикс24 СМС и WhatsApp - Открытая линия"
+        },
+        {
+          "code": "WEB",
+          "name": "Веб-сайт"
+        },
+        {
+          "code": "3",
+          "name": "ВКонтакте - Авито ТМС"
+        },
+        {
+          "code": "TRADE_SHOW",
+          "name": "Выставка"
+        },
+        {
+          "code": "RC_GENERATOR",
+          "name": "Генератор продаж"
+        },
+        {
+          "code": "OTHER",
+          "name": "Другое"
+        },
+        {
+          "code": "CALL",
+          "name": "Звонок"
+        },
+        {
+          "code": "STORE",
+          "name": "Интернет-магазин"
+        },
+        {
+          "code": "CALLBACK",
+          "name": "Обратный звонок"
+        },
+        {
+          "code": "BOOKING",
+          "name": "Онлайн-запись"
+        },
+        {
+          "code": "REPEAT_SALE",
+          "name": "Онлайн-запись"
+        },
+        {
+          "code": "2",
+          "name": "Онлайн-чат - Открытая линия"
+        },
+        {
+          "code": "RECOMMENDATION",
+          "name": "По рекомендации"
+        },
+        {
+          "code": "8",
+          "name": "Повторные продажи"
+        },
+        {
+          "code": "ADVERTISING",
+          "name": "Реклама"
+        },
+        {
+          "code": "PARTNER",
+          "name": "Существующий клиент"
+        },
+        {
+          "code": "EMAIL",
+          "name": "Электронная почта"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Источник",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": "SOURCE",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "SOURCE",
+          "ATTRIBUTES": [
+            "HAS_DEFAULT_VALUE"
+          ],
+          "TITLE": "Источник"
+        }
+      }
+    },
+    {
+      "code": "MODIFY_BY_ID",
+      "title": "Кем обновлён",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кем обновлён",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Кем обновлён"
+        }
+      }
+    },
+    {
+      "code": "CREATED_BY_ID",
+      "title": "Кем создан",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кем создан",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Кем создан"
+        }
+      }
+    },
+    {
+      "code": "DATE_MODIFY",
+      "title": "Когда обновлён",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Когда обновлён",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Когда обновлён"
+        }
+      }
+    },
+    {
+      "code": "DATE_CREATE",
+      "title": "Когда создан",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Когда создан",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Когда создан"
+        }
+      }
+    },
+    {
+      "code": "COMMENTS",
+      "title": "Комментарий",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Комментарий",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "VALUE_TYPE": "html",
+          "TITLE": "Комментарий"
+        }
+      }
+    },
+    {
+      "code": "COMPANY_ID",
+      "title": "Компания",
+      "type": "crm_company",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Компания",
+        "type": "crm_company",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "crm_company",
+          "ATTRIBUTES": [
+            "DEP"
+          ],
+          "TITLE": "Компания"
+        }
+      }
+    },
+    {
+      "code": "LEAD_ID",
+      "title": "Лид",
+      "type": "crm_lead",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Лид",
+        "type": "crm_lead",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "crm_lead",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "SETTINGS": {
+            "parentEntityTypeId": 1
+          },
+          "TITLE": "Лид"
+        }
+      }
+    },
+    {
+      "code": "HONORIFIC",
+      "title": "Обращение",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": "HONORIFIC",
+      "options": [
+        {
+          "code": "HNR_RU_2",
+          "name": "г-жа"
+        },
+        {
+          "code": "HNR_RU_1",
+          "name": "г-н"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Обращение",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": "HONORIFIC",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "HONORIFIC",
+          "TITLE": "Обращение"
+        }
+      }
+    },
+    {
+      "code": "ASSIGNED_BY_ID",
+      "title": "Ответственный",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Ответственный",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "TITLE": "Ответственный"
+        }
+      }
+    },
+    {
+      "code": "SECOND_NAME",
+      "title": "Отчество",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Отчество",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "REQ"
+          ],
+          "TITLE": "Отчество"
+        }
+      }
+    },
+    {
+      "code": "LAST_ACTIVITY_TIME",
+      "title": "Последняя активность",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Последняя активность",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [],
+          "TITLE": "Последняя активность"
+        }
+      }
+    },
+    {
+      "code": "TYPE_ID",
+      "title": "Тип контакта",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": "CONTACT_TYPE",
+      "options": [
+        {
+          "code": "OTHER",
+          "name": "Другое"
+        },
+        {
+          "code": "CLIENT",
+          "name": "Клиенты"
+        },
+        {
+          "code": "PARTNER",
+          "name": "Партнеры"
+        },
+        {
+          "code": "SUPPLIER",
+          "name": "Поставщики"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Тип контакта",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": "CONTACT_TYPE",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "CONTACT_TYPE",
+          "ATTRIBUTES": [
+            "HAS_DEFAULT_VALUE"
+          ],
+          "TITLE": "Тип контакта"
+        }
+      }
+    },
+    {
+      "code": "EXPORT",
+      "title": "Участвует в экспорте контактов",
+      "type": "char",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Участвует в экспорте контактов",
+        "type": "char",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "char",
+          "TITLE": "Участвует в экспорте контактов"
+        }
+      }
+    },
+    {
+      "code": "LAST_NAME",
+      "title": "Фамилия",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Фамилия",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "REQ"
+          ],
+          "TITLE": "Фамилия"
+        }
+      }
+    },
+    {
+      "code": "PHOTO",
+      "title": "Фотография",
+      "type": "file",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Фотография",
+        "type": "file",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "file",
+          "VALUE_TYPE": "image",
+          "TITLE": "Фотография"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "stageCount": 0,
+    "pipelineCount": 0,
+    "fieldCount": 47,
+    "customFieldCount": 0,
+    "optionFieldCount": 3
+  }
+}

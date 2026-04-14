@@ -1,0 +1,161 @@
+/**
+ * BP блок: Выбор оператора из списка 128.
+ *
+ * 1. Получает список операторов по городу (GOROD = CB_CITY_ID) из списка 128
+ * 2. Round-robin: перебирает операторов последовательно (смещение CB_OP_OFFSET)
+ * 3. Для каждого: проверка рабочего дня (CTimeManUser) + проверка BUSY (CVoxImplantIncoming)
+ * 4. Возвращает первого свободного оператора
+ *
+ * Читает:  CB_CITY_ID, CB_OP_OFFSET
+ * Записывает: CB_OPERATOR_ID, CB_OPERATOR_BUSY (Y/N),
+ *             CB_OPERATOR_RESULT (found/not_found/all_busy/error),
+ *             CB_OP_OFFSET, CB_OPERATORS_COUNT, CB_OPERATOR_EXTENSION
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+try {
+    $retries = (int)$getVar('CB_PICK_RETRIES');
+    $retries++;
+    $setVar('CB_PICK_RETRIES', (string)$retries);
+
+    if ($retries > 5) {
+        $setVar('CB_OPERATOR_RESULT', 'max_retries');
+        $setVar('CB_OPERATOR_ID', '0');
+        $log('CB PICK STOP: лимит повторов (' . $retries . '/5), завершаем цикл');
+        return;
+    }
+
+    $cityId = (int)preg_replace('/\D+/', '', (string)$getVar('CB_CITY_ID'));
+    $offset = (int)$getVar('CB_OP_OFFSET');
+    $log('CB PICK [1/4] cityId=' . $cityId . ' offset=' . $offset . ' retry=' . $retries);
+
+    if ($cityId <= 0) {
+        $setVar('CB_OPERATOR_RESULT', 'error');
+        $setVar('CB_OPERATORS_COUNT', '0');
+        $log('CB PICK ERR: cityId is empty');
+        return;
+    }
+
+    if (!Loader::includeModule('iblock')) {
+        $setVar('CB_OPERATOR_RESULT', 'error');
+        $log('CB PICK ERR: iblock module not loaded');
+        return;
+    }
+
+    $res = \CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        ['IBLOCK_ID' => 128, 'CHECK_PERMISSIONS' => 'N', 'PROPERTY_GOROD' => $cityId],
+        false,
+        ['nTopCount' => 50]
+    );
+
+    $operators = [];
+    if ($res) {
+        while ($ob = $res->GetNextElement()) {
+            $props = $ob->GetProperties();
+            $val = $props['OPERATOR']['VALUE'] ?? null;
+            if (is_array($val)) $val = reset($val);
+            $uid = (int)preg_replace('/\D+/', '', (string)$val);
+            if ($uid <= 0) continue;
+
+            $ext = $props['VNUTRENNIY_NOMER']['VALUE'] ?? '';
+            if (is_array($ext)) $ext = reset($ext);
+
+            if (!in_array($uid, array_column($operators, 'id'), true)) {
+                $operators[] = ['id' => $uid, 'ext' => (string)$ext];
+            }
+        }
+    }
+
+    $total = count($operators);
+    $setVar('CB_OPERATORS_COUNT', (string)$total);
+    $log('CB PICK [2/4] found ' . $total . ' operators');
+
+    if ($total === 0) {
+        $setVar('CB_OPERATOR_RESULT', 'not_found');
+        $setVar('CB_OPERATOR_ID', '0');
+        return;
+    }
+
+    $voxLoaded = Loader::includeModule('voximplant');
+    $canCheckBusy = $voxLoaded && class_exists('CVoxImplantIncoming')
+        && method_exists('CVoxImplantIncoming', 'getUserInfo');
+
+    $tmLoaded = Loader::includeModule('timeman');
+
+    if ($offset >= $total) {
+        $offset = 0;
+    }
+
+    for ($i = 0; $i < $total; $i++) {
+        $idx = ($offset + $i) % $total;
+        $op = $operators[$idx];
+        $uid = $op['id'];
+
+        if ($tmLoaded && class_exists('CTimeManUser')) {
+            try {
+                $tmUser = new \CTimeManUser($uid);
+                $info = $tmUser->GetCurrentInfo(true);
+                $state = is_array($info) ? ($info['STATE'] ?? '') : '';
+                if ($state === 'CLOSED') {
+                    $log('CB PICK skip uid=' . $uid . ' timeman=CLOSED');
+                    continue;
+                }
+            } catch (\Throwable $e) {
+                $log('CB PICK timeman error uid=' . $uid . ': ' . $e->getMessage());
+            }
+        }
+
+        $isBusy = false;
+        if ($canCheckBusy) {
+            try {
+                $userInfo = \CVoxImplantIncoming::getUserInfo($uid, false);
+                $busy = is_array($userInfo) ? ($userInfo['BUSY'] ?? null) : null;
+                $isBusy = in_array($busy, [true, 1, '1', 'Y', 'y'], true);
+            } catch (\Throwable $e) {
+                $log('CB PICK busy error uid=' . $uid . ': ' . $e->getMessage());
+            }
+        }
+
+        if ($isBusy) {
+            $log('CB PICK skip uid=' . $uid . ' busy=Y');
+            continue;
+        }
+
+        $setVar('CB_OPERATOR_ID', (string)$uid);
+        $setVar('CB_OPERATOR_EXTENSION', (string)$op['ext']);
+        $setVar('CB_OPERATOR_BUSY', 'N');
+        $setVar('CB_OPERATOR_RESULT', 'found');
+        $newOffset = ($idx + 1) % $total;
+        $setVar('CB_OP_OFFSET', (string)$newOffset);
+        $log('CB PICK [4/4] FOUND uid=' . $uid . ' ext=' . $op['ext'] . ' newOffset=' . $newOffset);
+        return;
+    }
+
+    $setVar('CB_OPERATOR_RESULT', 'all_busy');
+    $setVar('CB_OPERATOR_ID', '0');
+    $setVar('CB_OP_OFFSET', '0');
+    $log('CB PICK [4/4] all operators busy or offline');
+
+} catch (\Throwable $e) {
+    $setVar('CB_OPERATOR_RESULT', 'error');
+    $setVar('CB_OPERATOR_ID', '0');
+    $log('CB PICK EXCEPTION: ' . $e->getMessage());
+}

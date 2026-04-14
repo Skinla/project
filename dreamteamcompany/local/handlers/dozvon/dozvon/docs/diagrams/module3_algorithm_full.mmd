@@ -1,0 +1,37 @@
+flowchart TD
+  start([Старт запуска БП])
+  init["Инициализация: модули iblock voximplant im, таймзона, enum 130/131"]
+  start --> init
+  buildReady["Сбор eligible: 131 ready, фильтр SCHEDULED_AT, мастер 130 active, не completed/cancelled"]
+  init --> buildReady
+  fork{eligible пуст?}
+  buildReady --> fork
+  fork -->|да| tz1["ТЗ п.1: planned по SCHEDULED_AT ASC, те же проверки мастера, перевод в ready"]
+  tz1 --> stopIdle[["Выход без звонка: MODULE3_RESULT activated или no_attempts"]]
+  fork -->|нет| tz2sort["ТЗ п.2: сортировка RANZHIROVANIE, CYCLE_DAY, дата мастера desc, SCHEDULED_AT"]
+  tz2sort --> pickFirst["Взять первую попытку"]
+  pickFirst --> phoneGate{PHONE заполнен?}
+  phoneGate -->|нет| errPhone[["MODULE3_ERROR phone_empty"]]
+  phoneGate -->|да| tz3["ТЗ п.3: список 22 — SIP 441/470, SIP_PAROL, RULE_ID"]
+  tz3 --> cityGate{"RULE_ID, SIP, пароль OK?"}
+  cityGate -->|нет| errCity[["Ошибка: no_rule_id / no_sip_line / no_sip_parol"]]
+  cityGate -->|да| refresh128["Обновить список 128 по городу refreshList128Operators"]
+  refresh128 --> opStage1["ТЗ п.4 этап 1: операторы города, иначе все из 128"]
+  opStage1 --> opStage2["ТЗ п.4 этап 2: TimeMan OPENED/PAUSED, WORKDAY_STARTED"]
+  opStage2 --> workdayFork{"Никого с рабочим днём и city задан?"}
+  workdayFork -->|да| opFallback["Fallback: все операторы 128, повтор этапа 2"]
+  workdayFork -->|нет| opStage3["ТЗ п.4 этап 3: Vox BUSY, LINE_FREE, STATUS free/busy"]
+  opFallback --> opStage3
+  opStage3 --> opStage4["ТЗ п.4 этап 4: round-robin LAST_ASSIGNED_AT, иначе shuffle"]
+  opStage4 --> opGate{Оператор выбран?}
+  opGate -->|нет| errOp[["MODULE3_ERROR no_free_operator"]]
+  opGate -->|да| tz6a["ТЗ п.6 часть А: попытка 131 — operator_calling, OPERATOR_ID, SIP_NUMBER"]
+  tz6a --> tz5["ТЗ п.5: POST StartScenarios, script_custom_data"]
+  tz5 --> voxGate{Ответ Vox успешен?}
+  voxGate -->|нет| rollback["Откат попытки в ready, MODULE3_ERROR vox_*"]
+  rollback --> errVox[["Выход с ошибкой"]]
+  voxGate -->|да| tz6b["ТЗ п.6 часть B: CALL_ID, VOX_SESSION_ID, запись в 131"]
+  tz6b --> tz7["ТЗ п.7: UF лида номер попытки"]
+  tz7 --> list128fin["Список 128: busy, LAST_ASSIGNED_AT, счётчики"]
+  list128fin --> diag["Опционально: GetCallHistory в лог"]
+  diag --> success[["MODULE3_RESULT call_started, MODULE3_CALL_ID"]]

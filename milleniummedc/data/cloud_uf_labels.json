@@ -1,0 +1,949 @@
+{
+    "exported_at": "2026-03-25T08:59:11+00:00",
+    "source_url": "https:\/\/milleniummed.bitrix24.ru",
+    "entities": {
+        "CRM_LEAD": {
+            "UF_CRM_1744791016816": {
+                "listLabel": "Тест",
+                "formLabel": "Тест",
+                "filterLabel": "Тест"
+            },
+            "UF_CRM_BIVAYUTLIUVAS": {
+                "listLabel": "Бывают ли у вас судороги в ногах особенно по ночам",
+                "formLabel": "Бывают ли у вас судороги в ногах особенно по ночам",
+                "filterLabel": "Бывают ли у вас судороги в ногах особенно по ночам"
+            },
+            "UF_CRM_CHECKBOX": {
+                "listLabel": "Checkbox",
+                "formLabel": "Checkbox",
+                "filterLabel": "Checkbox"
+            },
+            "UF_CRM_CHUVSTVUETELI": {
+                "listLabel": "Чувствуете ли вы боль покалывание или жжение в ногах",
+                "formLabel": "Чувствуете ли вы боль покалывание или жжение в ногах",
+                "filterLabel": "Чувствуете ли вы боль покалывание или жжение в ногах"
+            },
+            "UF_CRM_COOKIES": {
+                "listLabel": "cookies",
+                "formLabel": "cookies",
+                "filterLabel": "cookies"
+            },
+            "UF_CRM_ESTLINANOGAHS": {
+                "listLabel": "Есть ли на ногах сосудистая сетка вены или звёздочки",
+                "formLabel": "Есть ли на ногах сосудистая сетка вены или звёздочки",
+                "filterLabel": "Есть ли на ногах сосудистая сетка вены или звёздочки"
+            },
+            "UF_CRM_FORMNAME": {
+                "listLabel": "formname",
+                "formLabel": "formname",
+                "filterLabel": "formname"
+            },
+            "UF_CRM_MESSENGERTYPE": {
+                "listLabel": "messenger-type",
+                "formLabel": "messenger-type",
+                "filterLabel": "messenger-type"
+            },
+            "UF_CRM_P_TELEFON": {
+                "listLabel": "Телефон (из flexbe)",
+                "formLabel": "Телефон",
+                "filterLabel": "Телефон (из flexbe)"
+            },
+            "UF_CRM_P_VASNOMERTEL": {
+                "listLabel": "Ваш номер телефона (из flexbe)",
+                "formLabel": "Ваш номер телефона",
+                "filterLabel": "Ваш номер телефона (из flexbe)"
+            },
+            "UF_CRM_TRANID": {
+                "listLabel": "tranid",
+                "formLabel": "tranid",
+                "filterLabel": "tranid"
+            },
+            "UF_CRM_T_IMA": {
+                "listLabel": "Имя  (из flexbe)",
+                "formLabel": "Имя",
+                "filterLabel": "Имя  (из flexbe)"
+            },
+            "UF_CRM_T_IP": {
+                "listLabel": "ip (из flexbe)",
+                "formLabel": "ip",
+                "filterLabel": "ip (из flexbe)"
+            },
+            "UF_CRM_T_IPLOCATION": {
+                "listLabel": "ip location (из flexbe)",
+                "formLabel": "ip location",
+                "filterLabel": "ip location (из flexbe)"
+            },
+            "UF_CRM_T_NAZVANIEFOR": {
+                "listLabel": "Название формы (из flexbe)",
+                "formLabel": "Название формы",
+                "filterLabel": "Название формы (из flexbe)"
+            },
+            "UF_CRM_T_REFERRER": {
+                "listLabel": "referrer (из flexbe)",
+                "formLabel": "referrer",
+                "filterLabel": "referrer (из flexbe)"
+            },
+            "UF_CRM_T_STRANICA": {
+                "listLabel": "Страница (из flexbe)",
+                "formLabel": "Страница",
+                "filterLabel": "Страница (из flexbe)"
+            },
+            "UF_CRM_T_UTMCAMPAIGN": {
+                "listLabel": "utm campaign (из flexbe)",
+                "formLabel": "utm campaign",
+                "filterLabel": "utm campaign (из flexbe)"
+            },
+            "UF_CRM_T_UTMCONTENT": {
+                "listLabel": "utm content (из flexbe)",
+                "formLabel": "utm content",
+                "filterLabel": "utm content (из flexbe)"
+            },
+            "UF_CRM_T_UTMMEDIUM": {
+                "listLabel": "utm medium (из flexbe)",
+                "formLabel": "utm medium",
+                "filterLabel": "utm medium (из flexbe)"
+            },
+            "UF_CRM_T_UTMSOURCE": {
+                "listLabel": "utm source (из flexbe)",
+                "formLabel": "utm source",
+                "filterLabel": "utm source (из flexbe)"
+            },
+            "UF_CRM_T_UTMTERM": {
+                "listLabel": "utm term (из flexbe)",
+                "formLabel": "utm term",
+                "filterLabel": "utm term (из flexbe)"
+            },
+            "UF_CRM_T_VASEIMA": {
+                "listLabel": "Ваше имя (из flexbe)",
+                "formLabel": "Ваше имя",
+                "filterLabel": "Ваше имя (из flexbe)"
+            },
+            "UF_CRM_T_YMCLIENTID": {
+                "listLabel": "ym client id (из flexbe)",
+                "formLabel": "ym client id",
+                "filterLabel": "ym client id (из flexbe)"
+            },
+            "UF_CRM_UKAZHITESVOIV": {
+                "listLabel": "Укажите свой возраст",
+                "formLabel": "Укажите свой возраст",
+                "filterLabel": "Укажите свой возраст"
+            },
+            "UF_CRM_YADAYUSOGLASI": {
+                "listLabel": "Я даю согласие на обработку моих персональных данных",
+                "formLabel": "Я даю согласие на обработку моих персональных данных",
+                "filterLabel": "Я даю согласие на обработку моих персональных данных"
+            },
+            "UF_CRM_ZAMECHALILIVI": {
+                "listLabel": "Замечали ли вы отёки тяжесть или гудение в ногах после рабочего дня",
+                "formLabel": "Замечали ли вы отёки тяжесть или гудение в ногах после рабочего дня",
+                "filterLabel": "Замечали ли вы отёки тяжесть или гудение в ногах после рабочего дня"
+            }
+        },
+        "CRM_DEAL": {
+            "UF_CRM_1744280242440": {
+                "listLabel": "Дата\/Время записи клиента",
+                "formLabel": "Дата\/Время записи клиента",
+                "filterLabel": "Дата\/Время записи клиента"
+            },
+            "UF_CRM_1744282605": {
+                "listLabel": "Координатор",
+                "formLabel": "Координатор",
+                "filterLabel": "Координатор"
+            },
+            "UF_CRM_1744282618": {
+                "listLabel": "Врач",
+                "formLabel": "Врач",
+                "filterLabel": "Врач"
+            },
+            "UF_CRM_1744294910179": {
+                "listLabel": "Комментарий к записи болезне",
+                "formLabel": "Комментарий к записи болезне",
+                "filterLabel": "Комментарий к записи болезне"
+            },
+            "UF_CRM_1744606921467": {
+                "listLabel": "Услуга",
+                "formLabel": "Услуга",
+                "filterLabel": "Услуга"
+            },
+            "UF_CRM_1744638573001": {
+                "listLabel": "Примечание",
+                "formLabel": "Примечание",
+                "filterLabel": "Примечание"
+            },
+            "UF_CRM_1744798273460": {
+                "listLabel": "Ты внес запись в \"Онлайн-запись\" ?",
+                "formLabel": "Ты внес запись в \"Онлайн-запись\" ?",
+                "filterLabel": "Ты внес запись в \"Онлайн-запись\" ?"
+            },
+            "UF_CRM_1745922084756": {
+                "listLabel": "Комментарий Первичка",
+                "formLabel": "Комментарий Первичка",
+                "filterLabel": "Комментарий Первичка"
+            },
+            "UF_CRM_1745922119016": {
+                "listLabel": "Комментарий Вторичка",
+                "formLabel": "Комментарий Вторичка",
+                "filterLabel": "Комментарий Вторичка"
+            },
+            "UF_CRM_1745922132212": {
+                "listLabel": "Комментарий Врача",
+                "formLabel": "Комментарий Врача",
+                "filterLabel": "Комментарий Врача"
+            },
+            "UF_CRM_1745922150559": {
+                "listLabel": "Комментарий Клиника",
+                "formLabel": "Комментарий Клиника",
+                "filterLabel": "Комментарий Клиника"
+            },
+            "UF_CRM_1745922324196": {
+                "listLabel": "Контроль дубликатов",
+                "formLabel": "Контроль дубликатов",
+                "filterLabel": "Контроль дубликатов"
+            },
+            "UF_CRM_1745922855949": {
+                "listLabel": "Цикл",
+                "formLabel": "Цикл",
+                "filterLabel": "Цикл"
+            },
+            "UF_CRM_1745923182145": {
+                "listLabel": "Тип продажи",
+                "formLabel": "Тип продажи",
+                "filterLabel": "Тип продажи"
+            },
+            "UF_CRM_1747827168": {
+                "listLabel": "Количество циклов (((Тех.ПОЛЕ)))",
+                "formLabel": "Количество циклов (((Тех.ПОЛЕ)))",
+                "filterLabel": "Количество циклов (((Тех.ПОЛЕ)))"
+            },
+            "UF_CRM_1753084950145": {
+                "listLabel": "Тестовая текущая дата",
+                "formLabel": "Тестовая текущая дата",
+                "filterLabel": "Тестовая текущая дата"
+            },
+            "UF_CRM_1753087023468": {
+                "listLabel": "Тестовое время + 1 9.30",
+                "formLabel": "Тестовое время + 1 9.30",
+                "filterLabel": "Тестовое время + 1 9.30"
+            },
+            "UF_CRM_1758296848937": {
+                "listLabel": "НЕКВАЛ",
+                "formLabel": "НЕКВАЛ",
+                "filterLabel": "НЕКВАЛ"
+            },
+            "UF_CRM_1761053263850": {
+                "listLabel": "ВОЗРАСТ",
+                "formLabel": "ВОЗРАСТ",
+                "filterLabel": "ВОЗРАСТ"
+            },
+            "UF_CRM_1761053484330": {
+                "listLabel": "Гражданство",
+                "formLabel": "Гражданство",
+                "filterLabel": "Гражданство"
+            },
+            "UF_CRM_1761053580038": {
+                "listLabel": "Противопоказания",
+                "formLabel": "Противопоказания",
+                "filterLabel": "Противопоказания"
+            },
+            "UF_CRM_1761053657001": {
+                "listLabel": "Оставлял",
+                "formLabel": "Оставлял",
+                "filterLabel": "Оставлял"
+            },
+            "UF_CRM_1761053747112": {
+                "listLabel": "ГЕО",
+                "formLabel": "ГЕО",
+                "filterLabel": "ГЕО"
+            },
+            "UF_CRM_1773912365505": {
+                "listLabel": "ID сайта в Calltouch",
+                "formLabel": "ID сайта в Calltouch",
+                "filterLabel": "ID сайта в Calltouch"
+            },
+            "UF_CRM_1773912404736": {
+                "listLabel": "ID звонка в Calltouch",
+                "formLabel": "ID звонка в Calltouch",
+                "filterLabel": "ID звонка в Calltouch"
+            },
+            "UF_CRM_1773912425992": {
+                "listLabel": "ID заявки в Calltouch",
+                "formLabel": "ID заявки в Calltouch",
+                "filterLabel": "ID заявки в Calltouch"
+            },
+            "UF_CRM_1773912464864": {
+                "listLabel": "Яндекс Метрика",
+                "formLabel": "Яндекс Метрика",
+                "filterLabel": "Яндекс Метрика"
+            },
+            "UF_CRM_1773912479576": {
+                "listLabel": "Отслеживаемый сайт",
+                "formLabel": "Отслеживаемый сайт",
+                "filterLabel": "Отслеживаемый сайт"
+            },
+            "UF_CRM_1773912491872": {
+                "listLabel": "Дата (Запись)",
+                "formLabel": "Дата (Запись)",
+                "filterLabel": "Дата (Запись)"
+            },
+            "UF_CRM_1773912504488": {
+                "listLabel": "Дата (Явка)",
+                "formLabel": "Дата (Явка)",
+                "filterLabel": "Дата (Явка)"
+            },
+            "UF_CRM_1773912513641": {
+                "listLabel": "Дата (ПЦП)",
+                "formLabel": "Дата (ПЦП)",
+                "filterLabel": "Дата (ПЦП)"
+            },
+            "UF_CRM_1773912523448": {
+                "listLabel": "Дата (начало лечения)",
+                "formLabel": "Дата (начало лечения)",
+                "filterLabel": "Дата (начало лечения)"
+            },
+            "UF_CRM_682DC63419AD2": {
+                "listLabel": "Тест",
+                "formLabel": "Тест",
+                "filterLabel": "Тест"
+            },
+            "UF_CRM_6877B9FE1FEF8": {
+                "listLabel": "UF CRM MESSENGERTYPE",
+                "formLabel": "messenger-type",
+                "filterLabel": "UF CRM MESSENGERTYPE"
+            },
+            "UF_CRM_6877B9FE30B44": {
+                "listLabel": "UF CRM TRANID",
+                "formLabel": "tranid",
+                "filterLabel": "UF CRM TRANID"
+            },
+            "UF_CRM_6877B9FE3CC74": {
+                "listLabel": "UF CRM FORMNAME",
+                "formLabel": "formname",
+                "filterLabel": "UF CRM FORMNAME"
+            },
+            "UF_CRM_6877B9FE47704": {
+                "listLabel": "UF CRM COOKIES",
+                "formLabel": "cookies",
+                "filterLabel": "UF CRM COOKIES"
+            },
+            "UF_CRM_68A86DB812898": {
+                "listLabel": "UF CRM YADAYUSOGLASI",
+                "formLabel": "Я даю согласие на обработку моих персональных данных",
+                "filterLabel": "UF CRM YADAYUSOGLASI"
+            },
+            "UF_CRM_68B156B59C962": {
+                "listLabel": "UF CRM CHECKBOX",
+                "formLabel": "Checkbox",
+                "filterLabel": "UF CRM CHECKBOX"
+            },
+            "UF_CRM_69006B083BFB3": {
+                "listLabel": "UF CRM CHUVSTVUETELI",
+                "formLabel": "Чувствуете ли вы боль покалывание или жжение в ногах",
+                "filterLabel": "UF CRM CHUVSTVUETELI"
+            },
+            "UF_CRM_69006B084D448": {
+                "listLabel": "UF CRM ESTLINANOGAHS",
+                "formLabel": "Есть ли на ногах сосудистая сетка вены или звёздочки",
+                "filterLabel": "UF CRM ESTLINANOGAHS"
+            },
+            "UF_CRM_69006B085B2BD": {
+                "listLabel": "UF CRM BIVAYUTLIUVAS",
+                "formLabel": "Бывают ли у вас судороги в ногах особенно по ночам",
+                "filterLabel": "UF CRM BIVAYUTLIUVAS"
+            },
+            "UF_CRM_69006B086A6D9": {
+                "listLabel": "UF CRM ZAMECHALILIVI",
+                "formLabel": "Замечали ли вы отёки тяжесть или гудение в ногах после рабочего дня",
+                "filterLabel": "UF CRM ZAMECHALILIVI"
+            },
+            "UF_CRM_69006B087A70C": {
+                "listLabel": "UF CRM UKAZHITESVOIV",
+                "formLabel": "Укажите свой возраст",
+                "filterLabel": "UF CRM UKAZHITESVOIV"
+            },
+            "UF_CRM_698339EAA5335": {
+                "listLabel": "Ваше имя (из flexbe)",
+                "formLabel": "Ваше имя",
+                "filterLabel": "UF CRM T VASEIMA"
+            },
+            "UF_CRM_698339EACF14D": {
+                "listLabel": "Ваш номер телефона (из flexbe)",
+                "formLabel": "Ваш номер телефона",
+                "filterLabel": "UF CRM P VASNOMERTEL"
+            },
+            "UF_CRM_698339EADF0A8": {
+                "listLabel": "Страница (из flexbe)",
+                "formLabel": "Страница",
+                "filterLabel": "UF CRM T STRANICA"
+            },
+            "UF_CRM_698339EAF039A": {
+                "listLabel": "Название формы (из flexbe)",
+                "formLabel": "Название формы",
+                "filterLabel": "UF CRM T NAZVANIEFOR"
+            },
+            "UF_CRM_698339EB0BD17": {
+                "listLabel": "ip (из flexbe)",
+                "formLabel": "ip",
+                "filterLabel": "UF CRM T IP"
+            },
+            "UF_CRM_698339EB1C0ED": {
+                "listLabel": "ym client id (из flexbe)",
+                "formLabel": "ym client id",
+                "filterLabel": "UF CRM T YMCLIENTID"
+            },
+            "UF_CRM_698339EB2C30F": {
+                "listLabel": "ip location (из flexbe)",
+                "formLabel": "ip location",
+                "filterLabel": "UF CRM T IPLOCATION"
+            },
+            "UF_CRM_69833F8FB7B6F": {
+                "listLabel": "Имя  (из flexbe)",
+                "formLabel": "Имя",
+                "filterLabel": "UF CRM T IMA"
+            },
+            "UF_CRM_69833F8FC8941": {
+                "listLabel": "Телефон (из flexbe)",
+                "formLabel": "Телефон",
+                "filterLabel": "UF CRM P TELEFON"
+            },
+            "UF_CRM_69833F8FD90E7": {
+                "listLabel": "utm source (из flexbe)",
+                "formLabel": "utm source",
+                "filterLabel": "UF CRM T UTMSOURCE"
+            },
+            "UF_CRM_69833F900EF3F": {
+                "listLabel": "utm medium (из flexbe)",
+                "formLabel": "utm medium",
+                "filterLabel": "UF CRM T UTMMEDIUM"
+            },
+            "UF_CRM_69833F9034501": {
+                "listLabel": "utm campaign (из flexbe)",
+                "formLabel": "utm campaign",
+                "filterLabel": "UF CRM T UTMCAMPAIGN"
+            },
+            "UF_CRM_6983446DDDC3B": {
+                "listLabel": "utm source (из flexbe)",
+                "formLabel": "utm source",
+                "filterLabel": "UF CRM T UTMSOURCE"
+            },
+            "UF_CRM_6983446E02B97": {
+                "listLabel": "utm medium (из flexbe)",
+                "formLabel": "utm medium",
+                "filterLabel": "UF CRM T UTMMEDIUM"
+            },
+            "UF_CRM_6983446EA1721": {
+                "listLabel": "utm campaign (из flexbe)",
+                "formLabel": "utm campaign",
+                "filterLabel": "UF CRM T UTMCAMPAIGN"
+            },
+            "UF_CRM_69835751D23B5": {
+                "listLabel": "utm content (из flexbe)",
+                "formLabel": "utm content",
+                "filterLabel": "UF CRM T UTMCONTENT"
+            },
+            "UF_CRM_69835751E1785": {
+                "listLabel": "utm term (из flexbe)",
+                "formLabel": "utm term",
+                "filterLabel": "UF CRM T UTMTERM"
+            },
+            "UF_CRM_698ACE5A57F7D": {
+                "listLabel": "referrer (из flexbe)",
+                "formLabel": "referrer",
+                "filterLabel": "UF CRM T REFERRER"
+            },
+            "UF_CRM_FSSP_BAILIFF": {
+                "listLabel": "Судебный пристав-исполнитель",
+                "formLabel": "Судебный пристав-исполнитель",
+                "filterLabel": "Судебный пристав-исполнитель"
+            },
+            "UF_CRM_FSSP_DEPARTMENT": {
+                "listLabel": "Отдел судебных приставов",
+                "formLabel": "Отдел судебных приставов",
+                "filterLabel": "Отдел судебных приставов"
+            },
+            "UF_CRM_FSSP_DETAILS": {
+                "listLabel": "Реквизиты исполнительного документа",
+                "formLabel": "Реквизиты исполнительного документа",
+                "filterLabel": "Реквизиты исполнительного документа"
+            },
+            "UF_CRM_FSSP_EXE_PRODUCTION": {
+                "listLabel": "Номер исполнительного производства",
+                "formLabel": "Номер исполнительного производства",
+                "filterLabel": "Номер исполнительного производства"
+            },
+            "UF_CRM_FSSP_IP_END_DATE": {
+                "listLabel": "Дата окончания или прекращения производства",
+                "formLabel": "Дата окончания или прекращения производства",
+                "filterLabel": "Дата окончания или прекращения производства"
+            },
+            "UF_CRM_FSSP_IP_END_REASON": {
+                "listLabel": "Причина окончания или прекращения ИП",
+                "formLabel": "Причина окончания или прекращения ИП",
+                "filterLabel": "Причина окончания или прекращения ИП"
+            },
+            "UF_CRM_FSSP_IP_START": {
+                "listLabel": "Дата начала производства",
+                "formLabel": "Дата начала производства",
+                "filterLabel": "Дата начала производства"
+            },
+            "UF_CRM_FSSP_NAME": {
+                "listLabel": "Должник",
+                "formLabel": "Должник",
+                "filterLabel": "Должник"
+            },
+            "UF_CRM_FSSP_SUBJECT": {
+                "listLabel": "Предмет исполнения",
+                "formLabel": "Предмет исполнения",
+                "filterLabel": "Предмет исполнения"
+            },
+            "UF_CRM_P_VASNOMERTEL": {
+                "listLabel": "Ваш номер телефона (из flexbe)",
+                "formLabel": "Ваш номер телефона",
+                "filterLabel": "Ваш номер телефона (из flexbe)"
+            },
+            "UF_CRM_ST_FSSP_DATE_FL": {
+                "listLabel": "Дата проверки ФССП Физ. лицо",
+                "formLabel": "Дата проверки ФССП Физ. лицо",
+                "filterLabel": "Дата проверки ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_DATE_UL": {
+                "listLabel": "Дата проверки ФССП Юр. лицо",
+                "formLabel": "Дата проверки ФССП Юр. лицо",
+                "filterLabel": "Дата проверки ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_DEBTS_FL": {
+                "listLabel": "Задолженности ФССП Физ. лицо",
+                "formLabel": "Задолженности ФССП Физ. лицо",
+                "filterLabel": "Задолженности ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_DEBTS_UL": {
+                "listLabel": "Задолженности ФССП Юр. лицо",
+                "formLabel": "Задолженности ФССП Юр. лицо",
+                "filterLabel": "Задолженности ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_REPAID_SUMM_FL": {
+                "listLabel": "Сумма задолженностей погашенных через суд ФССП Физ. лицо",
+                "formLabel": "Сумма задолженностей погашенных через суд ФССП Физ. лицо",
+                "filterLabel": "Сумма задолженностей погашенных через суд ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_REPAID_SUMM_UL": {
+                "listLabel": "Сумма задолженностей погашенных через суд ФССП Юр. лицо",
+                "formLabel": "Сумма задолженностей погашенных через суд ФССП Юр. лицо",
+                "filterLabel": "Сумма задолженностей погашенных через суд ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_REPORT_FL": {
+                "listLabel": "Отчет ФССП Физ. лицо",
+                "formLabel": "Отчет ФССП Физ. лицо",
+                "filterLabel": "Отчет ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_REPORT_UL": {
+                "listLabel": "Отчет ФССП Юр. лицо",
+                "formLabel": "Отчет ФССП Юр. лицо",
+                "filterLabel": "Отчет ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_REQUEST_FL": {
+                "listLabel": "Данные проверки ФССП Физ. лицо",
+                "formLabel": "Данные проверки ФССП Физ. лицо",
+                "filterLabel": "Данные проверки ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_REQUEST_UL": {
+                "listLabel": "Данные проверки ФССП Юр. лицо",
+                "formLabel": "Данные проверки ФССП Юр. лицо",
+                "filterLabel": "Данные проверки ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_RESULT_FL": {
+                "listLabel": "Результат проверки ФССП Физ. лицо",
+                "formLabel": "Результат проверки ФССП Физ. лицо",
+                "filterLabel": "Результат проверки ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_RESULT_UL": {
+                "listLabel": "Результат проверки ФССП Юр. лицо",
+                "formLabel": "Результат проверки ФССП Юр. лицо",
+                "filterLabel": "Результат проверки ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_SUMM_FL": {
+                "listLabel": "Сумма задолженности ФССП Физ. лицо",
+                "formLabel": "Сумма задолженности ФССП Физ. лицо",
+                "filterLabel": "Сумма задолженности ФССП Физ. лицо"
+            },
+            "UF_CRM_ST_FSSP_SUMM_UL": {
+                "listLabel": "Сумма задолженности ФССП Юр. лицо",
+                "formLabel": "Сумма задолженности ФССП Юр. лицо",
+                "filterLabel": "Сумма задолженности ФССП Юр. лицо"
+            },
+            "UF_CRM_ST_FSSP_TRACKING_FL": {
+                "listLabel": "Физ. лицо на мониторинге ФССП",
+                "formLabel": "Физ. лицо на мониторинге ФССП",
+                "filterLabel": "Физ. лицо на мониторинге ФССП"
+            },
+            "UF_CRM_ST_FSSP_TRACKING_UL": {
+                "listLabel": "Юр. лицо на мониторинге ФССП",
+                "formLabel": "Юр. лицо на мониторинге ФССП",
+                "filterLabel": "Юр. лицо на мониторинге ФССП"
+            },
+            "UF_CRM_T_IP": {
+                "listLabel": "ip (из flexbe)",
+                "formLabel": "ip",
+                "filterLabel": "ip (из flexbe)"
+            },
+            "UF_CRM_T_IPLOCATION": {
+                "listLabel": "ip location (из flexbe)",
+                "formLabel": "ip location",
+                "filterLabel": "ip location (из flexbe)"
+            },
+            "UF_CRM_T_NAZVANIEFOR": {
+                "listLabel": "Название формы (из flexbe)",
+                "formLabel": "Название формы",
+                "filterLabel": "Название формы (из flexbe)"
+            },
+            "UF_CRM_T_STRANICA": {
+                "listLabel": "Страница (из flexbe)",
+                "formLabel": "Страница",
+                "filterLabel": "Страница (из flexbe)"
+            },
+            "UF_CRM_T_VASEIMA": {
+                "listLabel": "Ваше имя (из flexbe)",
+                "formLabel": "Ваше имя",
+                "filterLabel": "Ваше имя (из flexbe)"
+            },
+            "UF_CRM_T_YMCLIENTID": {
+                "listLabel": "ym client id (из flexbe)",
+                "formLabel": "ym client id",
+                "filterLabel": "ym client id (из flexbe)"
+            }
+        },
+        "CRM_CONTACT": {
+            "UF_CRM_1745916715160": {
+                "listLabel": "Место рождения",
+                "formLabel": "Место рождения",
+                "filterLabel": "Место рождения"
+            },
+            "UF_CRM_1745916774453": {
+                "listLabel": "Серия",
+                "formLabel": "Серия",
+                "filterLabel": "Серия"
+            },
+            "UF_CRM_1745916780839": {
+                "listLabel": "Номер",
+                "formLabel": "Номер",
+                "filterLabel": "Номер"
+            },
+            "UF_CRM_1745916793948": {
+                "listLabel": "Кем выдан",
+                "formLabel": "Кем выдан",
+                "filterLabel": "Кем выдан"
+            },
+            "UF_CRM_1745916803222": {
+                "listLabel": "Зарегистрированный по адресу",
+                "formLabel": "Зарегистрированный по адресу",
+                "filterLabel": "Зарегистрированный по адресу"
+            },
+            "UF_CRM_1745916813683": {
+                "listLabel": "Проживает по адресу",
+                "formLabel": "Проживает по адресу",
+                "filterLabel": "Проживает по адресу"
+            },
+            "UF_CRM_1745917243099": {
+                "listLabel": "Дата выдачи",
+                "formLabel": "Дата выдачи",
+                "filterLabel": "Дата выдачи"
+            },
+            "UF_CRM_1745917803195": {
+                "listLabel": "Примечание: (при рассрочке приложение №2) (Для договора)",
+                "formLabel": "Примечание: (при рассрочке приложение №2) (Для договора)",
+                "filterLabel": "Примечание: (при рассрочке приложение №2) (Для договора)"
+            },
+            "UF_CRM_1745917888685": {
+                "listLabel": "Примечание: (Для договора)",
+                "formLabel": "Примечание: (Для договора)",
+                "filterLabel": "Примечание: (Для договора)"
+            },
+            "UF_CRM_1745918512061": {
+                "listLabel": "Оказание услуг \"C\"",
+                "formLabel": "Оказание услуг \"C\"",
+                "filterLabel": "Оказание услуг \"C\""
+            },
+            "UF_CRM_1745918537311": {
+                "listLabel": "Оказание услуг \"До\"",
+                "formLabel": "Оказание услуг \"До\"",
+                "filterLabel": "Оказание услуг \"До\""
+            },
+            "UF_CRM_1745921895341": {
+                "listLabel": "Удалить",
+                "formLabel": "Удалить",
+                "filterLabel": "Удалить"
+            },
+            "UF_CRM_1745921941707": {
+                "listLabel": "Удалить",
+                "formLabel": "Удалить",
+                "filterLabel": "Удалить"
+            },
+            "UF_CRM_1748846719053": {
+                "listLabel": "Услуга (из Клиентикса)",
+                "formLabel": "Услуга (из Клиентикса)",
+                "filterLabel": "Услуга (из Клиентикса)"
+            },
+            "UF_CRM_1750673023488": {
+                "listLabel": "Черный список",
+                "formLabel": "Черный список",
+                "filterLabel": "Черный список"
+            },
+            "UF_CRM_1750682260515": {
+                "listLabel": "Код клиента (из Клиентикса)",
+                "formLabel": "Код клиента (из Клиентикса)",
+                "filterLabel": "Код клиента (из Клиентикса)"
+            },
+            "UF_CRM_1750682303057": {
+                "listLabel": "Дополнительное контактное лицо (из Клиентикса)",
+                "formLabel": "Дополнительное контактное лицо (из Клиентикса)",
+                "filterLabel": "Дополнительное контактное лицо (из Клиентикса)"
+            },
+            "UF_CRM_1750682355659": {
+                "listLabel": "Общая выручка (из Клиентикса)",
+                "formLabel": "Общая выручка (из Клиентикса)",
+                "filterLabel": "Общая выручка (из Клиентикса)"
+            },
+            "UF_CRM_1750682381464": {
+                "listLabel": "Число записей (из Клиентикса)",
+                "formLabel": "Число записей (из Клиентикса)",
+                "filterLabel": "Число записей (из Клиентикса)"
+            },
+            "UF_CRM_1750682392318": {
+                "listLabel": "Отмененных записей (из Клиентикса)",
+                "formLabel": "Отмененных записей (из Клиентикса)",
+                "filterLabel": "Отмененных записей (из Клиентикса)"
+            },
+            "UF_CRM_1750683033751": {
+                "listLabel": "Дополнительный контактный телефон (из клиентикса)",
+                "formLabel": "Дополнительный контактный телефон (из клиентикса)",
+                "filterLabel": "Дополнительный контактный телефон (из клиентикса)"
+            },
+            "UF_CRM_1753360515534": {
+                "listLabel": "Номер договора",
+                "formLabel": "Номер договора",
+                "filterLabel": "Номер договора"
+            },
+            "UF_CRM_682DC634101E0": {
+                "listLabel": "Тест",
+                "formLabel": "Тест",
+                "filterLabel": "Тест"
+            },
+            "UF_CRM_6877B9FDDC644": {
+                "listLabel": "UF CRM MESSENGERTYPE",
+                "formLabel": "messenger-type",
+                "filterLabel": "UF CRM MESSENGERTYPE"
+            },
+            "UF_CRM_6877B9FDEE885": {
+                "listLabel": "UF CRM TRANID",
+                "formLabel": "tranid",
+                "filterLabel": "UF CRM TRANID"
+            },
+            "UF_CRM_6877B9FE06297": {
+                "listLabel": "UF CRM FORMNAME",
+                "formLabel": "formname",
+                "filterLabel": "UF CRM FORMNAME"
+            },
+            "UF_CRM_6877B9FE12212": {
+                "listLabel": "UF CRM COOKIES",
+                "formLabel": "cookies",
+                "filterLabel": "UF CRM COOKIES"
+            },
+            "UF_CRM_68A86DB7F0713": {
+                "listLabel": "UF CRM YADAYUSOGLASI",
+                "formLabel": "Я даю согласие на обработку моих персональных данных",
+                "filterLabel": "UF CRM YADAYUSOGLASI"
+            },
+            "UF_CRM_68B156B582FFC": {
+                "listLabel": "UF CRM CHECKBOX",
+                "formLabel": "Checkbox",
+                "filterLabel": "UF CRM CHECKBOX"
+            },
+            "UF_CRM_69006B07CB193": {
+                "listLabel": "UF CRM CHUVSTVUETELI",
+                "formLabel": "Чувствуете ли вы боль покалывание или жжение в ногах",
+                "filterLabel": "UF CRM CHUVSTVUETELI"
+            },
+            "UF_CRM_69006B07E95D4": {
+                "listLabel": "UF CRM ESTLINANOGAHS",
+                "formLabel": "Есть ли на ногах сосудистая сетка вены или звёздочки",
+                "filterLabel": "UF CRM ESTLINANOGAHS"
+            },
+            "UF_CRM_69006B0805DB5": {
+                "listLabel": "UF CRM BIVAYUTLIUVAS",
+                "formLabel": "Бывают ли у вас судороги в ногах особенно по ночам",
+                "filterLabel": "UF CRM BIVAYUTLIUVAS"
+            },
+            "UF_CRM_69006B081891C": {
+                "listLabel": "UF CRM ZAMECHALILIVI",
+                "formLabel": "Замечали ли вы отёки тяжесть или гудение в ногах после рабочего дня",
+                "filterLabel": "UF CRM ZAMECHALILIVI"
+            },
+            "UF_CRM_69006B082AF05": {
+                "listLabel": "UF CRM UKAZHITESVOIV",
+                "formLabel": "Укажите свой возраст",
+                "filterLabel": "UF CRM UKAZHITESVOIV"
+            },
+            "UF_CRM_698339E9C6148": {
+                "listLabel": "Ваше имя (из flexbe)",
+                "formLabel": "Ваше имя",
+                "filterLabel": "UF CRM T VASEIMA"
+            },
+            "UF_CRM_698339E9E7273": {
+                "listLabel": "Ваш номер телефона (из flexbe)",
+                "formLabel": "Ваш номер телефона",
+                "filterLabel": "UF CRM P VASNOMERTEL"
+            },
+            "UF_CRM_698339EA066F7": {
+                "listLabel": "Страница (из flexbe)",
+                "formLabel": "Страница",
+                "filterLabel": "UF CRM T STRANICA"
+            },
+            "UF_CRM_698339EA1B461": {
+                "listLabel": "Название формы (из flexbe)",
+                "formLabel": "Название формы",
+                "filterLabel": "UF CRM T NAZVANIEFOR"
+            },
+            "UF_CRM_698339EA36CCF": {
+                "listLabel": "ip (из flexbe)",
+                "formLabel": "ip",
+                "filterLabel": "UF CRM T IP"
+            },
+            "UF_CRM_698339EA49DCE": {
+                "listLabel": "ym client id (из flexbe)",
+                "formLabel": "ym client id",
+                "filterLabel": "UF CRM T YMCLIENTID"
+            },
+            "UF_CRM_698339EA8C7D1": {
+                "listLabel": "ip location (из flexbe)",
+                "formLabel": "ip location",
+                "filterLabel": "UF CRM T IPLOCATION"
+            },
+            "UF_CRM_69833F8F4F016": {
+                "listLabel": "Имя  (из flexbe)",
+                "formLabel": "Имя",
+                "filterLabel": "UF CRM T IMA"
+            },
+            "UF_CRM_69833F8F790E6": {
+                "listLabel": "Телефон (из flexbe)",
+                "formLabel": "Телефон",
+                "filterLabel": "UF CRM P TELEFON"
+            },
+            "UF_CRM_69833F8F88D10": {
+                "listLabel": "utm source (из flexbe)",
+                "formLabel": "utm source",
+                "filterLabel": "UF CRM T UTMSOURCE"
+            },
+            "UF_CRM_69833F8F96919": {
+                "listLabel": "utm medium (из flexbe)",
+                "formLabel": "utm medium",
+                "filterLabel": "UF CRM T UTMMEDIUM"
+            },
+            "UF_CRM_69833F8FA55A8": {
+                "listLabel": "utm campaign (из flexbe)",
+                "formLabel": "utm campaign",
+                "filterLabel": "UF CRM T UTMCAMPAIGN"
+            },
+            "UF_CRM_69835751B2D3B": {
+                "listLabel": "utm content (из flexbe)",
+                "formLabel": "utm content",
+                "filterLabel": "UF CRM T UTMCONTENT"
+            },
+            "UF_CRM_69835751C33C1": {
+                "listLabel": "utm term (из flexbe)",
+                "formLabel": "utm term",
+                "filterLabel": "UF CRM T UTMTERM"
+            },
+            "UF_CRM_698ACE5A18EE4": {
+                "listLabel": "referrer (из flexbe)",
+                "formLabel": "referrer",
+                "filterLabel": "UF CRM T REFERRER"
+            },
+            "UF_CRM_FSSP_IP_NUM": {
+                "listLabel": "Количество исполнительных производств ФССП",
+                "formLabel": "Количество исполнительных производств ФССП",
+                "filterLabel": "Количество исполнительных производств ФССП"
+            },
+            "UF_CRM_FSSP_MONITORING": {
+                "listLabel": "Мониторинг дел ФССП",
+                "formLabel": "Мониторинг дел ФССП",
+                "filterLabel": "Мониторинг дел ФССП"
+            },
+            "UF_CRM_ST_FSSP_DATE": {
+                "listLabel": "Дата проверки ФССП",
+                "formLabel": "Дата проверки ФССП",
+                "filterLabel": "Дата проверки ФССП"
+            },
+            "UF_CRM_ST_FSSP_DEBTS": {
+                "listLabel": "Задолженности ФССП",
+                "formLabel": "Задолженности ФССП",
+                "filterLabel": "Задолженности ФССП"
+            },
+            "UF_CRM_ST_FSSP_REPAID_SUMM": {
+                "listLabel": "Сумма задолженностей погашенных через суд ФССП",
+                "formLabel": "Сумма задолженностей погашенных через суд ФССП",
+                "filterLabel": "Сумма задолженностей погашенных через суд ФССП"
+            },
+            "UF_CRM_ST_FSSP_REPORT": {
+                "listLabel": "Отчет ФССП",
+                "formLabel": "Отчет ФССП",
+                "filterLabel": "Отчет ФССП"
+            },
+            "UF_CRM_ST_FSSP_REQUEST": {
+                "listLabel": "Данные проверки ФССП",
+                "formLabel": "Данные проверки ФССП",
+                "filterLabel": "Данные проверки ФССП"
+            },
+            "UF_CRM_ST_FSSP_RESULT": {
+                "listLabel": "Результат проверки ФССП",
+                "formLabel": "Результат проверки ФССП",
+                "filterLabel": "Результат проверки ФССП"
+            },
+            "UF_CRM_ST_FSSP_SUMM": {
+                "listLabel": "Сумма задолженности ФССП",
+                "formLabel": "Сумма задолженности ФССП",
+                "filterLabel": "Сумма задолженности ФССП"
+            },
+            "UF_CRM_ST_FSSP_TRACKING": {
+                "listLabel": "Находится на мониторинге ФССП",
+                "formLabel": "Находится на мониторинге ФССП",
+                "filterLabel": "Находится на мониторинге ФССП"
+            }
+        },
+        "CRM_COMPANY": {
+            "UF_CRM_6899927C5605D": {
+                "listLabel": "Тест",
+                "formLabel": "Тест",
+                "filterLabel": "Тест"
+            },
+            "UF_CRM_6899927C68CCF": {
+                "listLabel": "UF CRM MESSENGERTYPE",
+                "formLabel": "messenger-type",
+                "filterLabel": "UF CRM MESSENGERTYPE"
+            },
+            "UF_CRM_6899927C78C18": {
+                "listLabel": "UF CRM TRANID",
+                "formLabel": "tranid",
+                "filterLabel": "UF CRM TRANID"
+            },
+            "UF_CRM_6899927C841C7": {
+                "listLabel": "UF CRM FORMNAME",
+                "formLabel": "formname",
+                "filterLabel": "UF CRM FORMNAME"
+            },
+            "UF_CRM_6899927C8E793": {
+                "listLabel": "UF CRM COOKIES",
+                "formLabel": "cookies",
+                "filterLabel": "UF CRM COOKIES"
+            },
+            "UF_CRM_FSSP_IP_NUM": {
+                "listLabel": "Количество исполнительных производств ФССП",
+                "formLabel": "Количество исполнительных производств ФССП",
+                "filterLabel": "Количество исполнительных производств ФССП"
+            },
+            "UF_CRM_FSSP_MONITORING": {
+                "listLabel": "Мониторинг дел ФССП",
+                "formLabel": "Мониторинг дел ФССП",
+                "filterLabel": "Мониторинг дел ФССП"
+            }
+        }
+    }
+}

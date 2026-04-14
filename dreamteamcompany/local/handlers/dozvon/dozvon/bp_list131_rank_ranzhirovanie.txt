@@ -1,0 +1,231 @@
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+
+$log = function (string $message) {
+    $this->WriteToTrackingService($message);
+};
+
+$attemptListId = 131;
+$masterListId = 130;
+
+if (!Loader::includeModule('iblock')) {
+    $log('RANK131: iblock module not available');
+    return;
+}
+
+$documentId = null;
+if (method_exists($this, 'GetDocumentId')) {
+    $documentId = $this->GetDocumentId();
+} elseif (method_exists($rootActivity, 'GetDocumentId')) {
+    $documentId = $rootActivity->GetDocumentId();
+}
+
+$currentAttemptId = 0;
+if (is_array($documentId)) {
+    $candidate = end($documentId);
+    if (is_scalar($candidate)) {
+        $rawDocumentId = (string)$candidate;
+        if (preg_match('/(?:^|_)(\d+)$/', $rawDocumentId, $m)) {
+            $currentAttemptId = (int)$m[1];
+        } elseif (ctype_digit($rawDocumentId)) {
+            $currentAttemptId = (int)$rawDocumentId;
+        }
+    }
+} elseif (is_scalar($documentId)) {
+    $rawDocumentId = (string)$documentId;
+    if (preg_match('/(?:^|_)(\d+)$/', $rawDocumentId, $m)) {
+        $currentAttemptId = (int)$m[1];
+    } elseif (ctype_digit($rawDocumentId)) {
+        $currentAttemptId = (int)$rawDocumentId;
+    }
+}
+
+if ($currentAttemptId <= 0) {
+    $log('RANK131: cannot resolve current attempt element ID from BP document');
+    return;
+}
+
+$getElement = function (int $iblockId, int $elementId): ?array {
+    $res = CIBlockElement::GetByID($elementId);
+    if (!$res) {
+        return null;
+    }
+
+    $ob = $res->GetNextElement();
+    if (!$ob) {
+        return null;
+    }
+
+    $fields = $ob->GetFields();
+    if ((int)($fields['IBLOCK_ID'] ?? 0) !== $iblockId) {
+        return null;
+    }
+
+    $props = $ob->GetProperties();
+
+    $getString = static function (array $prop): string {
+        return trim((string)($prop['VALUE'] ?? ''));
+    };
+
+    return [
+        'ID' => (int)$fields['ID'],
+        'NAME' => (string)($fields['NAME'] ?? ''),
+        'DATE_CREATE' => (string)($fields['DATE_CREATE'] ?? ''),
+        'MASTER_ELEMENT_ID' => (int)($props['MASTER_ELEMENT_ID']['VALUE'] ?? 0),
+        'CITY_ID' => $getString($props['CITY_ID'] ?? []),
+        'SCHEDULED_AT' => $getString($props['SCHEDULED_AT'] ?? []),
+        'RANZHIROVANIE' => (int)($props['RANZHIROVANIE']['VALUE'] ?? 0),
+    ];
+};
+
+$currentAttempt = $getElement($attemptListId, $currentAttemptId);
+if ($currentAttempt === null) {
+    $log('RANK131: current attempt not found in list 131, id=' . $currentAttemptId);
+    return;
+}
+
+$cityId = trim((string)$currentAttempt['CITY_ID']);
+$scheduledAtRaw = trim((string)$currentAttempt['SCHEDULED_AT']);
+
+if ($cityId === '' || $scheduledAtRaw === '') {
+    $log('RANK131: CITY_ID or SCHEDULED_AT is empty for attempt ' . $currentAttemptId);
+    return;
+}
+
+try {
+    $scheduledAt = new DateTime($scheduledAtRaw);
+} catch (Throwable $e) {
+    $log('RANK131: invalid SCHEDULED_AT for attempt ' . $currentAttemptId . ': ' . $scheduledAtRaw);
+    return;
+}
+
+$targetDay = (int)$scheduledAt->format('d');
+$targetMonth = (int)$scheduledAt->format('m');
+
+$masterCreatedCache = [];
+$getMasterLeadCreatedTs = function (int $masterElementId) use (&$masterCreatedCache, $masterListId): int {
+    if ($masterElementId <= 0) {
+        return 0;
+    }
+
+    if (array_key_exists($masterElementId, $masterCreatedCache)) {
+        return $masterCreatedCache[$masterElementId];
+    }
+
+    $res = CIBlockElement::GetByID($masterElementId);
+    if (!$res) {
+        return $masterCreatedCache[$masterElementId] = 0;
+    }
+
+    $row = $res->Fetch();
+    if (!$row || (int)($row['IBLOCK_ID'] ?? 0) !== $masterListId) {
+        return $masterCreatedCache[$masterElementId] = 0;
+    }
+
+    $createdTs = strtotime((string)($row['DATE_CREATE'] ?? ''));
+    return $masterCreatedCache[$masterElementId] = ($createdTs !== false ? (int)$createdTs : 0);
+};
+
+$resolvePriority = static function (array $attempt): int {
+    // Пока приоритет один для всех элементов.
+    // Оставлено отдельной функцией, чтобы позже легко добавить разные уровни.
+    return 1;
+};
+
+$group = [];
+
+$res = CIBlockElement::GetList(
+    ['ID' => 'ASC'],
+    [
+        'IBLOCK_ID' => $attemptListId,
+        'CHECK_PERMISSIONS' => 'N',
+        'PROPERTY_CITY_ID' => $cityId,
+    ],
+    false,
+    false,
+    ['ID', 'IBLOCK_ID', 'NAME']
+);
+
+while ($ob = $res->GetNextElement()) {
+    $fields = $ob->GetFields();
+    $props = $ob->GetProperties();
+
+    $itemScheduledAtRaw = trim((string)($props['SCHEDULED_AT']['VALUE'] ?? ''));
+    if ($itemScheduledAtRaw === '') {
+        continue;
+    }
+
+    try {
+        $itemScheduledAt = new DateTime($itemScheduledAtRaw);
+    } catch (Throwable $e) {
+        continue;
+    }
+
+    if (
+        (int)$itemScheduledAt->format('d') !== $targetDay
+        || (int)$itemScheduledAt->format('m') !== $targetMonth
+    ) {
+        continue;
+    }
+
+    $masterElementId = (int)($props['MASTER_ELEMENT_ID']['VALUE'] ?? 0);
+
+    $group[] = [
+        'ID' => (int)$fields['ID'],
+        'NAME' => (string)($fields['NAME'] ?? ''),
+        'MASTER_ELEMENT_ID' => $masterElementId,
+        'SCHEDULED_AT' => $itemScheduledAt->format('Y-m-d H:i:s'),
+        'PRIORITY' => $resolvePriority($props),
+        'LEAD_CREATED_TS' => $getMasterLeadCreatedTs($masterElementId),
+    ];
+}
+
+if (empty($group)) {
+    $log('RANK131: no elements found for city=' . $cityId . ', day=' . $targetDay . ', month=' . $targetMonth);
+    return;
+}
+
+usort($group, static function (array $a, array $b): int {
+    $priorityCompare = (int)$b['PRIORITY'] <=> (int)$a['PRIORITY'];
+    if ($priorityCompare !== 0) {
+        return $priorityCompare;
+    }
+
+    $leadCreatedCompare = (int)$b['LEAD_CREATED_TS'] <=> (int)$a['LEAD_CREATED_TS'];
+    if ($leadCreatedCompare !== 0) {
+        return $leadCreatedCompare;
+    }
+
+    $scheduledCompare = strcmp((string)$a['SCHEDULED_AT'], (string)$b['SCHEDULED_AT']);
+    if ($scheduledCompare !== 0) {
+        return $scheduledCompare;
+    }
+
+    return (int)$a['ID'] <=> (int)$b['ID'];
+});
+
+$currentRank = 0;
+
+foreach ($group as $index => $item) {
+    $rank = $index + 1;
+
+    CIBlockElement::SetPropertyValuesEx(
+        (int)$item['ID'],
+        $attemptListId,
+        ['RANZHIROVANIE' => $rank]
+    );
+
+    if ((int)$item['ID'] === $currentAttemptId) {
+        $currentRank = $rank;
+    }
+}
+
+$log(
+    'RANK131: ranking updated for city=' . $cityId
+    . ', day=' . $targetDay
+    . ', month=' . $targetMonth
+    . ', items=' . count($group)
+    . ', current attempt=' . $currentAttemptId
+    . ', current rank=' . $currentRank
+);

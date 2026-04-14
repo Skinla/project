@@ -1,0 +1,2077 @@
+==== 2025-11-26 07:58:43 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-26 14:53:42 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-26 14:53:55 ====
+File: ct_20251126_080205_692689cd19b5d.json
+EntityType=lead, EntityId=457846
+dialedNumber=78462110792
+callerPhone=79272028316
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 736506
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 129
+    [waiting_time] => 3
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [sip_call_id] => 6ba77212-4527-123f-42b6-005056940bcf
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NDEzMzMyNCwiZXhwIjoyMDc5NDkzMzI0LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjczNjUwNn0.Gy2KPmf1QbBI1c4TFPTLzICHtlH3Io3i95oFVnBoS61Aqq5I0rw0See5uW5xTPYFAHxSQpygXfLPpK3VO6iDEw
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133324
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-26 18:12:38 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-26 18:39:43 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-27 12:58:09 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-27 12:59:34 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-27 13:01:29 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-11-28 10:40:07 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-01 12:21:38 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-01 16:37:44 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-01 17:23:01 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-01 17:33:20 ====
+File: ct_20251126_075843_6926890303464.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 736506
+    [changedFields] => null
+    [ctCallerId] => 960491e22256dd6b7ae5f249fa3a6f7f
+    [callerphone] => 79272028316
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-26 07:58:42
+    [timestamp] => 1764133122
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_mk
+    [utm_source] => yandex
+    [utm_medium] => cpc_mk
+    [utm_campaign] => 703040162
+    [utm_content] => 17377133487
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1764132894545378981
+    [sessionId] => 63163820
+    [ctClientId] => 3300000000041925164
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=yandex&utm_medium=cpc_mk&utm_campaign=703040162&utm_content=17377133487&utm_term=---autotargeting&yclid=4927767627742838783&ybaip=1
+    [attrs] => {}
+    [ref] => https://dzen.ru/news/story/b1c83ba5-aeed-5312-994d-f4779b029df2?lang=ru&fan=1&t=1764130005&tt=true&persistent_id=3275428396&cl4url=fd26f55daf4fe3806c64f50fb93e3adc&story=c69d308d-da78-51c0-8d37-66fd1c83b1ff
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 46.0.92.52
+    [callReferenceNumber] => 94384f7a-ca84-11f0-8020-23efe68d4161
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; NDL-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.110 YaBrowser/25.10.4.110.01 Safari/537.36
+    [sendingTimestamp] => 1764133122
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-10 09:10:21 ====
+File: ct_20251210_091021_69390ecd3db3d.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 874193
+    [changedFields] => null
+    [ctCallerId] => 7363a5fc0e3cbe759b717b3ce3ca3cf1
+    [callerphone] => 79270307043
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-10 09:10:19
+    [timestamp] => 1765347019
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => s:news.mail.ru
+    [medium] => cpc
+    [utm_source] => s:news.mail.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара
+    [utm_content] => g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1765346941175196210
+    [sessionId] => 74998753
+    [ctClientId] => 3300000000048972865
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:news.mail.ru&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара&utm_content=g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0&utm_term=---autotargeting&yclid=15624152201100787711&ybaip=1
+    [attrs] => {}
+    [ref] => https://news.mail.ru/politics/69016129/?user_id=3693693068938835983&utm_partner_id=130&mt_sub3=339&utm_campaign=media&utm_referrer=https://smartmedia.mail.ru&utm_source=smartmedia_mail_ru
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.84.216
+    [callReferenceNumber] => e775f04c-d58e-11f0-be52-2db6267e1a32
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 12; GFY-LX1 Build/HUAWEIGFY-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36
+    [sendingTimestamp] => 1765347021
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-11 13:54:15 ====
+File: ct_20251211_135415_693aa2d757b16.json
+callphase=callconnected (allowed=calldisconnected) => skip creation.
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 890016
+    [changedFields] => null
+    [ctCallerId] => 6d4560a698093024176fd08d1875da75
+    [callerphone] => 79270111776
+    [phonenumber] => 78462552481
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => undefined
+    [calltime] => 2025-12-11 13:54:12
+    [timestamp] => 1765450452
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => s:ngnovoros.ru
+    [medium] => cpc
+    [utm_source] => s:ngnovoros.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара
+    [utm_content] => g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1765450146727344496
+    [sessionId] => 76144374
+    [ctClientId] => 3300000000049642258
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:ngnovoros.ru&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара&utm_content=g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0&utm_term=---autotargeting&calltouch_tm=yd_c:703423041_gb:5680630518_ad:17433461747_ph:205680630518_st:context_pt:none_p:0_s:ngnovoros.ru_dt:mobile_reg:51_ret:205680630518_apt:none&yclid=1273621952113672191&ybaip=1
+    [attrs] => {}
+    [ref] => https://ngnovoros.ru/
+    [city] => nizhniy novgorod
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 82.208.126.2
+    [callReferenceNumber] => ba305dba-d67f-11f0-9c47-2db6267e1a32
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1765450454
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-16 10:51:58 ====
+File: ct_20251210_091207_69390f37924b0.json
+EntityType=lead, EntityId=495494
+dialedNumber=78462110792
+callerPhone=79270307043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 874193
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 7363a5fc0e3cbe759b717b3ce3ca3cf1
+    [callerphone] => 79270307043
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 30
+    [waiting_time] => 6
+    [calltime] => 2025-12-10 09:10:19
+    [timestamp] => 1765347019
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:news.mail.ru
+    [medium] => cpc
+    [utm_source] => s:news.mail.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара
+    [utm_content] => g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1765346941175196210
+    [sessionId] => 74998753
+    [ctClientId] => 3300000000048972865
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:news.mail.ru&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара&utm_content=g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0&utm_term=---autotargeting&yclid=15624152201100787711&ybaip=1
+    [attrs] => {}
+    [ref] => https://news.mail.ru/politics/69016129/?user_id=3693693068938835983&utm_partner_id=130&mt_sub3=339&utm_campaign=media&utm_referrer=https://smartmedia.mail.ru&utm_source=smartmedia_mail_ru
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.84.216
+    [sip_call_id] => bee483c6-5031-123f-65af-005056940bcf
+    [callReferenceNumber] => e775f04c-d58e-11f0-be52-2db6267e1a32
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NTM0NzEyNywiZXhwIjoyMDgwNzA3MTI3LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjg3NDE5M30.VeUdAhNmPf4E8XPf9g9nD99S50nMvz6SuKGVkCf_F7cMjy2Y6RLBrhJsdsrQ4FjzfUG7V6rXOKmCJNYn9nVsow
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 12; GFY-LX1 Build/HUAWEIGFY-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36
+    [sendingTimestamp] => 1765347127
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-16 10:52:23 ====
+File: ct_20251211_135924_693aa40c8f809.json
+EntityType=lead, EntityId=495493
+dialedNumber=78462552481
+callerPhone=79270111776
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 890016
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 6d4560a698093024176fd08d1875da75
+    [callerphone] => 79270111776
+    [phonenumber] => 78462552481
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 201
+    [waiting_time] => 3
+    [calltime] => 2025-12-11 13:54:12
+    [timestamp] => 1765450452
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:ngnovoros.ru
+    [medium] => cpc
+    [utm_source] => s:ngnovoros.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара
+    [utm_content] => g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1765450146727344496
+    [sessionId] => 76144374
+    [ctClientId] => 3300000000049642258
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:ngnovoros.ru&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара&utm_content=g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0&utm_term=---autotargeting&calltouch_tm=yd_c:703423041_gb:5680630518_ad:17433461747_ph:205680630518_st:context_pt:none_p:0_s:ngnovoros.ru_dt:mobile_reg:51_ret:205680630518_apt:none&yclid=1273621952113672191&ybaip=1
+    [attrs] => {}
+    [ref] => https://ngnovoros.ru/
+    [city] => nizhniy novgorod
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 82.208.126.2
+    [sip_call_id] => 919f8374-5122-123f-65af-005056940bcf
+    [callReferenceNumber] => ba305dba-d67f-11f0-9c47-2db6267e1a32
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NTQ1MDc2NCwiZXhwIjoyMDgwODEwNzY0LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjg5MDAxNn0.uVwxyopgOMjXI-W0kqQiMZUImgHDCe1vnLw9tMNBhjQFmagFyBG3o_k4iT_cF5LmI-s3rjZassWVCh8K3PMm7w
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1765450764
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2025-12-30 17:13:11 ====
+File: ct_20251230_171309_6953ddf59f95d.json
+EntityType=lead, EntityId=521468
+dialedNumber=78462552401
+callerPhone=+79879821555
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1071737
+    [changedFields] => null
+    [ctCallerId] => 41ea059a5f40f7ae907a93839f6fc460
+    [callerphone] => +79879821555
+    [phonenumber] => 78462552401
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 49
+    [waiting_time] => 3
+    [calltime] => 2025-12-30 17:10:30
+    [timestamp] => 1767103830
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:none
+    [medium] => cpc
+    [utm_source] => s:none
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076777|geoname:Самара|geoid:51|dev:mobile|r:205636076777|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1767103804134493520
+    [sessionId] => 91751190
+    [ctClientId] => 3300000000059021026
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:none&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076777|geoname:Самара|geoid:51|dev:mobile|r:205636076777|cor:0&utm_term=---autotargeting&etext=2202.i7KonhegyiQEc8ykO04oCpGP5plWIYGeJyq494b8l7d0cGR0bGt4cGdodGZpaGxi.273e2953b4551bdf15d62ebf3a6027e0a5dbb4e5&yclid=16404751904339918847&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 5.165.46.90
+    [sip_call_id] => 23e86174-602c-123f-fca9-005056940bcf
+    [callReferenceNumber] => 4c7b8862-e589-11f0-97e9-f7930faad4b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NzEwMzk4OSwiZXhwIjoyMDgyNDYzOTg5LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjEwNzE3Mzd9.3CNxvuB06cIxENewRD4hQ4aDsyX8KxjfmdF__9ihdr6yRqJT2DssYK9kcNjOpX8ngSry5p4RDQrlcXL76zQN9Q
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; RMX3710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.133 YaBrowser/25.12.1.133.00 Mobile Safari/537.36
+    [sendingTimestamp] => 1767103989
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-01-07 07:59:13 ====
+File: ct_20260107_075912_695de8201104d.json
+EntityType=lead, EntityId=530310
+dialedNumber=78462552471
+callerPhone=+79171540660
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1118912
+    [changedFields] => null
+    [ctCallerId] => 9356a2fdb32a9a0199f45400286320a3
+    [callerphone] => +79171540660
+    [phonenumber] => 78462552471
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 53
+    [waiting_time] => 3
+    [calltime] => 2026-01-07 07:56:10
+    [timestamp] => 1767761770
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 06dda7e6-6628-123f-fda9-005056940bcf
+    [callReferenceNumber] => 2f6f3cda-eb85-11f0-9c1e-f7930faad4b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Nzc2MTk1MSwiZXhwIjoyMDgzMTIxOTUxLCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjExMTg5MTJ9.Gl_PN4DDCiSuxLNgtW8wwDWI7k2XsLSoh5y5OcmaedsT2ivPF1670snXVdEkngLm5Whr1WaG8TvYoVch9_i-Tg
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [sendingTimestamp] => 1767761951
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+    [url] => povolzhyeklinika.ru
+)
+
+
+==== 2026-01-24 08:56:36 ====
+File: ct_20260124_085634_69745f12da1d4.json
+EntityType=lead, EntityId=562048
+dialedNumber=78462552401
+callerPhone=+79276560377
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1293867
+    [changedFields] => null
+    [ctCallerId] => 10b81cb0060a714109ac896a78e012c8
+    [callerphone] => +79276560377
+    [phonenumber] => 78462552401
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 93
+    [waiting_time] => 3
+    [calltime] => 2026-01-24 08:53:17
+    [timestamp] => 1769233997
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:none
+    [medium] => cpc
+    [utm_source] => s:none
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076783|geoname:Самара|geoid:51|dev:mobile|r:205636076783|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1769233923617405142
+    [sessionId] => 108202142
+    [ctClientId] => 3300000000069622821
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:none&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076783|geoname:Самара|geoid:51|dev:mobile|r:205636076783|cor:0&utm_term=---autotargeting&etext=2202.QsX3Bp_0WX8VCj8_OqbRyh7VITqy7RakNnHOHGnEB1hEiE9SCzzW1FZJIwAjKHKZa2zSnB07qvS50AHaS7aDn3BmdmFodnlqdGJ6YnRic3c.79448495a765aa89d8009fde1051a9708c1103a2&yclid=2784540114378293247&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 95.27.69.93
+    [sip_call_id] => d255ee4a-738b-123f-ffa9-005056940bcf
+    [callReferenceNumber] => fae7aa94-f8e8-11f0-a8ab-f7930faad4b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2OTIzNDE5NCwiZXhwIjoyMDg0NTk0MTk0LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjEyOTM4Njd9.wra0Kxkdn3l-R4zMhYIwqcepCh23ic_RD92kY6KE29y-NgLZ0vIDds16dxZ21jEtwJ1cuIjSwmcUcaHxx4BiZA
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; SM-A045F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.98.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1769234194
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-01-24 09:04:17 ====
+File: ct_20260124_090415_697460df717b0.json
+EntityType=lead, EntityId=562055
+dialedNumber=78462552401
+callerPhone=+79277069685
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1293901
+    [changedFields] => null
+    [ctCallerId] => 23698b66f1f119f63a08917c848bbfec
+    [callerphone] => +79277069685
+    [phonenumber] => 78462552401
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 199
+    [waiting_time] => 2
+    [calltime] => 2026-01-24 08:59:13
+    [timestamp] => 1769234353
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:none
+    [medium] => cpc
+    [utm_source] => s:none
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076783|geoname:Самара|geoid:51|dev:mobile|r:205636076783|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1769233923617405142
+    [sessionId] => 108202142
+    [ctClientId] => 3300000000069622821
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:none&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076783|geoname:Самара|geoid:51|dev:mobile|r:205636076783|cor:0&utm_term=---autotargeting&etext=2202.QsX3Bp_0WX8VCj8_OqbRyh7VITqy7RakNnHOHGnEB1hEiE9SCzzW1FZJIwAjKHKZa2zSnB07qvS50AHaS7aDn3BmdmFodnlqdGJ6YnRic3c.79448495a765aa89d8009fde1051a9708c1103a2&yclid=2784540114378293247&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 95.27.69.93
+    [sip_call_id] => a65e1d95-738c-123f-ffa9-005056940bcf
+    [callReferenceNumber] => cef05174-f8e9-11f0-9162-f7930faad4b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2OTIzNDY1NSwiZXhwIjoyMDg0NTk0NjU1LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjEyOTM5MDF9.r0jsmmPloRlZKECCCsS-tYe4OyR3yqY2ClIa_TD6LiUnq0-FOtgD1KYCYe_ZvHck2b-c1NkeiudDlDCF-gPSSg
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; SM-A045F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.98.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1769234655
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-01-27 15:48:22 ====
+File: ct_20260127_154820_6978b414aa901.json
+EntityType=lead, EntityId=568076
+dialedNumber=78462552471
+callerPhone=+79832974187
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1329407
+    [changedFields] => null
+    [ctCallerId] => ff9190d6d646ae15ac02c45cc03886f0
+    [callerphone] => +79832974187
+    [phonenumber] => 78462552471
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 39
+    [waiting_time] => 3
+    [calltime] => 2026-01-27 15:45:46
+    [timestamp] => 1769517946
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:none
+    [medium] => cpc
+    [utm_source] => s:none
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076777|geoname:Чапаевск|geoid:11141|dev:mobile|r:205636076777|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176951784887244398
+    [sessionId] => 110615879
+    [ctClientId] => 3300000000071151174
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:none&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076777|geoname:Чапаевск|geoid:11141|dev:mobile|r:205636076777|cor:0&utm_term=---autotargeting&etext=2202.88RAMx-dj_oBkpsOhlFXIupHQfANZe3Nf74Id6k5HbDTa_ZSc-xjfDzpGORwrX7sb3B1c3JqbXVqdXNzanVvYw.c0aefac5dc353a7391144c0e994493c0a74233a6&yclid=6339920885610708991&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => togliatti
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 95.67.212.5
+    [sip_call_id] => f0f6f29f-7620-123f-ffa9-005056940bcf
+    [callReferenceNumber] => 19877f82-fb7e-11f0-a9da-f7930faad4b9
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2OTUxODA5OSwiZXhwIjoyMDg0ODc4MDk5LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjEzMjk0MDd9.RmVudDY8bgwn_XNJm50fdC_pQw9imVwztiptUINJSmHev_OIJO4NcZE-aCh0okSRqlmrWD3fYVrHis5q15nbaw
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 16; SM-A346E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.961 YaSearchBrowser/25.106.1 BroPP/1.0 YaSearchApp/25.106.1 webOmni SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1769518099
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-09 16:32:19 ====
+File: ct_20260209_163217_6989e1e148086.json
+EntityType=lead, EntityId=589883
+dialedNumber=78462552471
+callerPhone=+79626075154
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1464603
+    [changedFields] => null
+    [ctCallerId] => 42359329ccc97f18587ff3e1198dfda8
+    [callerphone] => +79626075154
+    [phonenumber] => 78462552471
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 255
+    [waiting_time] => 3
+    [calltime] => 2026-02-09 16:26:17
+    [timestamp] => 1770643577
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:t.me
+    [medium] => cpc
+    [utm_source] => s:t.me
+    [utm_medium] => cpc
+    [utm_campaign] => 702895713|tp8_cpc_site - TG - Самара
+    [utm_content] => g:5632704922|geoname:Самара|geoid:51|dev:desktop|r:205632704922|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1759417898319688650
+    [sessionId] => 120771422
+    [ctClientId] => 3300000000017138657
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:t.me&utm_medium=cpc&utm_campaign=702895713|tp8_cpc_site - TG - Самара&utm_content=g:5632704922|geoname:Самара|geoid:51|dev:desktop|r:205632704922|cor:0&utm_term=---autotargeting&yclid=15830569089304625151
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.15.161.193
+    [sip_call_id] => c1beb7b3-805d-123f-aaa2-005056940bcf
+    [callReferenceNumber] => ea4e17b6-05ba-11f1-b142-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MDY0MzkzNywiZXhwIjoyMDg2MDAzOTM3LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE0NjQ2MDN9.MOgOV7OzYHZRBJPbEjrCq-o8MA0UH5fEanVfAmAXjpXqmfPKt4EneIW85pcax_VmUBQ6KOKr3wOAn5pKetU5wQ
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.109 Mobile Safari/537.36
+    [sendingTimestamp] => 1770643937
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-18 09:19:10 ====
+File: ct_20260218_091908_699559dca9c83.json
+EntityType=lead, EntityId=604148
+dialedNumber=78462552481
+callerPhone=+79022978699
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1559025
+    [changedFields] => null
+    [ctCallerId] => edb9aad6e226da060ca7b97b4b64b27e
+    [callerphone] => +79022978699
+    [phonenumber] => 78462552481
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 362
+    [waiting_time] => 3
+    [calltime] => 2026-02-18 09:11:20
+    [timestamp] => 1771395080
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:ru.yandex.weatherplugin
+    [medium] => cpc
+    [utm_source] => s:ru.yandex.weatherplugin
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076777|geoname:Samara|geoid:51|dev:mobile|r:205636076777|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1770280727595048477
+    [sessionId] => 127387486
+    [ctClientId] => 3300000000075381135
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:ru.yandex.weatherplugin&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076777|geoname:Samara|geoid:51|dev:mobile|r:205636076777|cor:0&utm_term=---autotargeting&yclid=16235862872686067711&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => nizhniy novgorod
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.107.6
+    [sip_call_id] => 7c2770d5-8733-123f-aba2-005056940bcf
+    [callReferenceNumber] => a4b88ca4-0c90-11f1-85dd-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTM5NTU0OCwiZXhwIjoyMDg2NzU1NTQ4LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE1NTkwMjV9.JS5lvz_Cs7EKktoKzH1B2znTt3g81JBwcReuz_V1iHoXsxj8i5qJEmTpNtNidHe9E2076dA5mPKtraQDqSVj2g
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1771395548
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-18 13:47:13 ====
+File: ct_20260218_134711_699598af71be8.json
+EntityType=lead, EntityId=604748
+dialedNumber=78462552401
+callerPhone=+79270226612
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1564599
+    [changedFields] => null
+    [ctCallerId] => ae97667f840b40e628b933515555eb56
+    [callerphone] => +79270226612
+    [phonenumber] => 78462552401
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 47
+    [waiting_time] => 3
+    [calltime] => 2026-02-18 13:45:09
+    [timestamp] => 1771411509
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:yandex.ru
+    [medium] => cpc
+    [utm_source] => s:yandex.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076777|geoname:Самара|geoid:51|dev:mobile|r:205636076777|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1761799545237381407
+    [sessionId] => 127620242
+    [ctClientId] => 3300000000081830114
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:yandex.ru&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076777|geoname:Самара|geoid:51|dev:mobile|r:205636076777|cor:0&utm_term=---autotargeting&yclid=2965443748859740159&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/pogoda/ru/syezzheye?lat=53.015142&lon=51.202453
+    [city] => togliatti
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 88.200.244.21
+    [sip_call_id] => bca67eba-8759-123f-aba2-005056940bcf
+    [callReferenceNumber] => e534f5bc-0cb6-11f1-9937-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTQxMTYzMSwiZXhwIjoyMDg2NzcxNjMxLCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE1NjQ1OTl9.Cq25cvM2v3j4szqgdFkyDgRixPs7Q2GafB8PBzF3IfIXVayAiApjbPreNexUf3nEGYsQ3PlCB3CThS3Jka-fRQ
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1771411631
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-19 10:00:31 ====
+File: ct_20260219_100029_6996b50d63057.json
+EntityType=lead, EntityId=606356
+dialedNumber=78462110792
+callerPhone=+79879131659
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1572459
+    [changedFields] => null
+    [ctCallerId] => ec7588cc706d0f21ebbb8ea7a81df234
+    [callerphone] => +79879131659
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 269
+    [waiting_time] => 3
+    [calltime] => 2026-02-19 09:54:40
+    [timestamp] => 1771484080
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:ru.yandex.yandexnavi
+    [medium] => cpc
+    [utm_source] => s:ru.yandex.yandexnavi
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара - mob
+    [utm_content] => g:5680643838|geoname:Samara|geoid:51|dev:tablet|r:205680643838|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1771483906464776105
+    [sessionId] => 128229812
+    [ctClientId] => 3300000000082205811
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:ru.yandex.yandexnavi&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара - mob&utm_content=g:5680643838|geoname:Samara|geoid:51|dev:tablet|r:205680643838|cor:0&utm_term=---autotargeting&calltouch_tm=yd_c:703423041_gb:5680643838_ad:17433515725_ph:205680643838_st:context_pt:none_p:0_s:ru.yandex.yandexnavi_dt:tablet_reg:51_ret:205680643838_apt:none&yclid=1350831025570185215&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => tablet
+    [ip] => 62.118.80.90
+    [sip_call_id] => b468cacf-8802-123f-aba2-005056940bcf
+    [callReferenceNumber] => dcf75b34-0d5f-11f1-a116-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTQ4NDQyOSwiZXhwIjoyMDg2ODQ0NDI5LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE1NzI0NTl9.UdVnch7mwBbva3O0qD46528k-HQdwtZ25wQNXTMWtXGR3okVjr7bI1aMPuNexY2B6wrwxONSya7qEBQQxDcfLA
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; Bengal for arm64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.100 YaBrowser/24.12.3.100.01 Safari/537.36
+    [sendingTimestamp] => 1771484429
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-19 10:47:28 ====
+File: ct_20260219_104726_6996c00ea08c1.json
+EntityType=lead, EntityId=606472
+dialedNumber=78462110792
+callerPhone=+79669650279
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1573475
+    [changedFields] => null
+    [ctCallerId] => 96fb547f6b3fcd839bea0c919d211081
+    [callerphone] => +79669650279
+    [phonenumber] => 78462110792
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 157
+    [waiting_time] => 3
+    [calltime] => 2026-02-19 10:43:10
+    [timestamp] => 1771486990
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:none
+    [medium] => cpc
+    [utm_source] => s:none
+    [utm_medium] => cpc
+    [utm_campaign] => 703040162|tp6_cpa_site - МК - Самара
+    [utm_content] => g:5636076777|geoname:Самара|geoid:51|dev:desktop|r:205636076777|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 177139728862788959
+    [sessionId] => 128272809
+    [ctClientId] => 3300000000081715734
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:none&utm_medium=cpc&utm_campaign=703040162|tp6_cpa_site - МК - Самара&utm_content=g:5636076777|geoname:Самара|geoid:51|dev:desktop|r:205636076777|cor:0&utm_term=---autotargeting&etext=2202.IgthcxCRSjHpFkTX8KtPshsLxVsWfdxoPt-8Wz7HkiJMC52CtFVX_9HUUaV259eY9DdVZL6uRf6yhuWjq8UEAXBycWNoeXlycmJiaXNudGY.3b4e9341cde231b980f9ceb64fdf5f1b925495f2&yclid=13678742789717491711&ybaip=1
+    [attrs] => {}
+    [ref] => https://portal.abdm.ru/
+    [city] => nizhniy novgorod
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 89.109.49.65
+    [sip_call_id] => 7aac27a9-8809-123f-aba2-005056940bcf
+    [callReferenceNumber] => a33a297e-0d66-11f1-bee0-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTQ4NzI0NiwiZXhwIjoyMDg2ODQ3MjQ2LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE1NzM0NzV9.yqm38eqNbvDzA_OHOwel54pA0-ZNtSKI9vn_xlvEjWEljGAfbUFj39zRWnXy2wyzdIZzkHnb07PjInNdxw0t0Q
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1771487246
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-19 19:08:16 ====
+File: ct_20260219_190814_6997356ee45ea.json
+EntityType=lead, EntityId=607413
+dialedNumber=78462552401
+callerPhone=+79877823077
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1581609
+    [changedFields] => null
+    [ctCallerId] => ec4f8def91442d6f3e6079ceb833c1dd
+    [callerphone] => +79877823077
+    [phonenumber] => 78462552401
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 11
+    [waiting_time] => 3
+    [calltime] => 2026-02-19 19:06:12
+    [timestamp] => 1771517172
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:pogoda7.ru
+    [medium] => cpc
+    [utm_source] => s:pogoda7.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара - mob
+    [utm_content] => g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1765047451346335601
+    [sessionId] => 128699302
+    [ctClientId] => 3300000000047292658
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:pogoda7.ru&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара - mob&utm_content=g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0&utm_term=---autotargeting&calltouch_tm=yd_c:703423041_gb:5680630518_ad:17433461747_ph:205680630518_st:context_pt:none_p:0_s:pogoda7.ru_dt:mobile_reg:51_ret:205680630518_apt:none&yclid=8873830953177841663&ybaip=1
+    [attrs] => {}
+    [ref] => https://pogoda7.ru/
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 62.118.82.247
+    [sip_call_id] => c0d8073b-884f-123f-aba2-005056940bcf
+    [callReferenceNumber] => e96a4d98-0dac-11f1-9bf4-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTUxNzI5NCwiZXhwIjoyMDg2ODc3Mjk0LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE1ODE2MDl9.uNYZ3eSX8MpEQTVvskip3XuBbXnZNOpq8qR6x5s9bDw5qHab84rkADRUcfkiOOXSouC_ijuXN750f_teNKAIiQ
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1771517294
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-02-20 10:28:19 ====
+File: ct_20260220_102818_69980d1203f64.json
+EntityType=lead, EntityId=608219
+dialedNumber=78462552471
+callerPhone=+79277116744
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1584716
+    [changedFields] => null
+    [ctCallerId] => 465ffc23a0f3ea70a5c261f55e77472f
+    [callerphone] => +79277116744
+    [phonenumber] => 78462552471
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 185
+    [waiting_time] => 3
+    [calltime] => 2026-02-20 10:22:57
+    [timestamp] => 1771572177
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:yandex.ru
+    [medium] => cpc
+    [utm_source] => s:yandex.ru
+    [utm_medium] => cpc
+    [utm_campaign] => 703423041|tp1_cpa_site - РСЯ - Самара - mob
+    [utm_content] => g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1771571566727953760
+    [sessionId] => 129039442
+    [ctClientId] => 3300000000082697773
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:yandex.ru&utm_medium=cpc&utm_campaign=703423041|tp1_cpa_site - РСЯ - Самара - mob&utm_content=g:5680630518|geoname:Самара|geoid:51|dev:mobile|r:205680630518|cor:0&utm_term=---autotargeting&yclid=3580482262528163839&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 62.118.80.186
+    [sip_call_id] => d23e8b36-88cf-123f-aba2-005056940bcf
+    [callReferenceNumber] => facae28e-0e2c-11f1-a6ea-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTU3MjQ5NywiZXhwIjoyMDg2OTMyNDk3LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE1ODQ3MTZ9.zhPu2k0bRlN-5Voljx4sW5d6ot60ZOGc1gnfhNf3kh3AVeTKg5JWLa03NxTVO38A37wOLYsJDNvxCiYrnSi3Lg
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 15; REA-NX9 Build/HONORREA-N39; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36
+    [sendingTimestamp] => 1771572497
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-03-02 08:20:18 ====
+File: ct_20260302_082016_69a51e1038f78.json
+EntityType=lead, EntityId=623545
+dialedNumber=78462552471
+callerPhone=+79297021202
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1680529
+    [changedFields] => null
+    [ctCallerId] => 69b276a789cb6bf43662bc9d7e009c07
+    [callerphone] => +79297021202
+    [phonenumber] => 78462552471
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 70
+    [waiting_time] => 3
+    [calltime] => 2026-03-02 08:17:12
+    [timestamp] => 1772428632
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:t.me
+    [medium] => cpc
+    [utm_source] => s:t.me
+    [utm_medium] => cpc
+    [utm_campaign] => 702895713|tp8_cpc_site - TG - Самара
+    [utm_content] => g:5632704922|geoname:Самара|geoid:51|dev:desktop|r:205632704922|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1772428549615295735
+    [sessionId] => 135875358
+    [ctClientId] => 3300000000086977570
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:t.me&utm_medium=cpc&utm_campaign=702895713|tp8_cpc_site - TG - Самара&utm_content=g:5632704922|geoname:Самара|geoid:51|dev:desktop|r:205632704922|cor:0&utm_term=---autotargeting&yclid=7741996983116103679
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 88.200.215.139
+    [sip_call_id] => e96b43c7-9099-123f-aba2-005056940bcf
+    [callReferenceNumber] => 11fb9f76-15f7-11f1-be32-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjQyODgxNiwiZXhwIjoyMDg3Nzg4ODE2LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE2ODA1Mjl9.1gW5SQIbkFNxsb7VtlEFwoVNAnYEiES8RfQ9165037fr249tySuyn7e7CfvQU8j54rvVKZKP4UdDV7PdGnngow
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2.1 Mobile/23C71 Safari/604.1
+    [sendingTimestamp] => 1772428816
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+
+==== 2026-03-04 10:49:11 ====
+File: ct_20260304_104909_69a7e3f58dc83.json
+EntityType=lead, EntityId=626978
+dialedNumber=78462552401
+callerPhone=+79270025935
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1708778
+    [changedFields] => null
+    [ctCallerId] => c3e628b30c816744c2b133ffd042628b
+    [callerphone] => +79270025935
+    [phonenumber] => 78462552401
+    [subPoolName] => povolzhyeklinika.ru
+    [redirectNumber] => 78469708286
+    [duration] => 108
+    [waiting_time] => 4
+    [calltime] => 2026-03-04 10:45:52
+    [timestamp] => 1772610352
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => s:t.me
+    [medium] => cpc
+    [utm_source] => s:t.me
+    [utm_medium] => cpc
+    [utm_campaign] => 702895713|tp8_cpc_site - TG - Самара
+    [utm_content] => g:5632704922|geoname:Самара|geoid:51|dev:desktop|r:205632704922|cor:0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1772610196236442766
+    [sessionId] => 137451528
+    [ctClientId] => 3300000000087902651
+    [ctGlobalId] => null
+    [hostname] => povolzhyeklinika.ru
+    [url] => https://povolzhyeklinika.ru/?utm_source=s:t.me&utm_medium=cpc&utm_campaign=702895713|tp8_cpc_site - TG - Самара&utm_content=g:5632704922|geoname:Самара|geoid:51|dev:desktop|r:205632704922|cor:0&utm_term=---autotargeting&yclid=16488936308546732031
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 85.26.235.170
+    [sip_call_id] => 02ed272c-9241-123f-aca2-005056940bcf
+    [callReferenceNumber] => 2b697df4-179e-11f1-aa4a-2549e3e0393b
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjYxMDU0OSwiZXhwIjoyMDg3OTcwNTQ5LCJzaXRlSWQiOjc2OTM5LCJjYWxsSWQiOjE3MDg3Nzh9.hRv6cA_tS-3-HF12Qw8tsXfaeRhT17WE_e6QpPvXLf_eOchYa3rx-UHXJlumNru0Q3hx53m6OlPJsYGs68vnVQ
+    [orderId] => null
+    [siteId] => 76939
+    [siteName] => povolzhyeklinika.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 15; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.79 Mobile Safari/537.36
+    [sendingTimestamp] => 1772610549
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => povolzhyeklinika.ru
+)
+
+

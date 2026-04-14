@@ -1,0 +1,3 @@
+<?
+$sSectionName="universal_system";
+?>

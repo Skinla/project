@@ -1,0 +1,137 @@
+/**
+ * Часть 2: Удаление попыток для отменённых циклов.
+ * PHP-блок для конструктора БП «Выполнение произвольного PHP кода».
+ *
+ * Логика:
+ * 1. Обходит все элементы списка 130 со STATUS=cancelled.
+ * 2. Для каждого находит элементы списка 131 с тем же LEAD_ID.
+ * 3. Удаляет найденные элементы списка 131.
+ * 4. Пишет в лог БП каждый шаг.
+ *
+ * Запуск: вручную. Обычно после bp_cancel_by_lead_status.txt.
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+
+$setVar = function (string $name, $value) use ($rootActivity): void {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+
+$log = function (string $message) {
+    $this->WriteToTrackingService($message);
+};
+
+$masterListId = 130;
+$attemptListId = 131;
+
+$setVar('DELETE_CANCELLED_PROCESSED', '0');
+$setVar('DELETE_CANCELLED_DELETED', '0');
+$setVar('DELETE_CANCELLED_ERROR', '');
+
+$log('DELETE_CANCELLED_ATTEMPTS: start, processing list ' . $masterListId . ' with STATUS=cancelled');
+
+if (!Loader::includeModule('iblock')) {
+    $setVar('DELETE_CANCELLED_ERROR', 'iblock module not available');
+    $log('DELETE_CANCELLED_ATTEMPTS: iblock module not available');
+    return;
+}
+
+$getListEnumId = function (int $iblockId, string $propertyCode, string $value): ?int {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $iblockId, 'CODE' => $propertyCode]);
+    $prop = $res ? $res->Fetch() : false;
+    if (!$prop || (string)($prop['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $propId = (int)$prop['ID'];
+    $enumRes = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $propId, 'VALUE' => $value]);
+    $enum = $enumRes ? $enumRes->Fetch() : false;
+    if ($enum) {
+        return (int)$enum['ID'];
+    }
+    $enumRes = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $propId, 'XML_ID' => $value]);
+    $enum = $enumRes ? $enumRes->Fetch() : false;
+    return $enum ? (int)$enum['ID'] : null;
+};
+
+$cancelledEnumId = $getListEnumId($masterListId, 'STATUS', 'cancelled');
+if ($cancelledEnumId === null) {
+    $setVar('DELETE_CANCELLED_ERROR', 'STATUS enum cancelled not found in list ' . $masterListId);
+    $log('DELETE_CANCELLED_ATTEMPTS: STATUS enum cancelled not found');
+    return;
+}
+
+$processed = 0;
+$deleted = 0;
+
+$res = CIBlockElement::GetList(
+    ['ID' => 'ASC'],
+    [
+        'IBLOCK_ID' => $masterListId,
+        'CHECK_PERMISSIONS' => 'N',
+        'PROPERTY_STATUS' => $cancelledEnumId,
+    ],
+    false,
+    false,
+    ['ID', 'IBLOCK_ID', 'NAME']
+);
+
+if (!is_object($res) || !method_exists($res, 'GetNextElement')) {
+    $setVar('DELETE_CANCELLED_ERROR', 'GetList failed for list ' . $masterListId);
+    $log('DELETE_CANCELLED_ATTEMPTS: GetList failed');
+    return;
+}
+
+while ($ob = $res->GetNextElement()) {
+    $fields = $ob->GetFields();
+    $props = $ob->GetProperties();
+
+    $masterElementId = (int)($fields['ID'] ?? 0);
+    $leadId = (int)($props['LEAD_ID']['VALUE'] ?? 0);
+
+    $processed++;
+    $log('DELETE_CANCELLED_ATTEMPTS: element ' . $masterElementId . ', lead ' . $leadId);
+
+    if ($leadId <= 0) {
+        $log('DELETE_CANCELLED_ATTEMPTS: element ' . $masterElementId . ' skipped, LEAD_ID empty');
+        continue;
+    }
+
+    $attemptsRes = CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        [
+            'IBLOCK_ID' => $attemptListId,
+            'CHECK_PERMISSIONS' => 'N',
+            'PROPERTY_LEAD_ID' => $leadId,
+        ],
+        false,
+        false,
+        ['ID']
+    );
+
+    if (!is_object($attemptsRes) || !method_exists($attemptsRes, 'Fetch')) {
+        $log('DELETE_CANCELLED_ATTEMPTS: element ' . $masterElementId . ', GetList attempts failed');
+        continue;
+    }
+
+    while ($row = $attemptsRes->Fetch()) {
+        $attemptId = (int)($row['ID'] ?? 0);
+        if ($attemptId > 0) {
+            if (CIBlockElement::Delete($attemptId)) {
+                $log('DELETE_CANCELLED_ATTEMPTS: deleted attempt element ' . $attemptId . ' (lead ' . $leadId . ')');
+                $deleted++;
+            } else {
+                $log('DELETE_CANCELLED_ATTEMPTS: failed to delete attempt element ' . $attemptId);
+            }
+        }
+    }
+}
+
+$setVar('DELETE_CANCELLED_PROCESSED', (string)$processed);
+$setVar('DELETE_CANCELLED_DELETED', (string)$deleted);
+$setVar('DELETE_CANCELLED_ERROR', '');
+
+$log('DELETE_CANCELLED_ATTEMPTS: done, processed=' . $processed . ', deleted=' . $deleted);

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'CRON_SECRET_KEY' => '',
+    'ALLOWED_IPS' => [],
+
+    'LEAD_CALLBACK_V2_LOG_FILE' => __DIR__ . '/lead_callback_v2.log',
+    'LEAD_CALLBACK_V2_JOBS_PATH' => __DIR__ . '/jobs',
+
+    'LEAD_CALLBACK_V2_CITY_LIST_ID' => 22,
+    'LEAD_CALLBACK_V2_OPERATORS_LIST_ID' => 128,
+    'LEAD_CALLBACK_V2_SYSTEM_USER_ID' => 1,
+
+    'LEAD_CALLBACK_V2_VOX_ACCOUNT_ID' => '9935862',
+    'LEAD_CALLBACK_V2_VOX_API_KEY' => 'f9a8a2d0-4f60-4007-abff-2d39e8ed636c',
+
+    'LEAD_CALLBACK_V2_TEST_MODE' => false,
+    'LEAD_CALLBACK_V2_TEST_RESULT' => 'connected',
+
+    'LEAD_CALLBACK_V2_OPERATOR_ROUTE_MODE' => 'sip',
+    'LEAD_CALLBACK_V2_OPERATOR_SIP_DESTINATION_TEMPLATE' => 'sip:{extension}@ip.b24-3389-1750795062.bitrixphone.com',
+
+    'LEAD_CALLBACK_V2_DEFAULT_PORTAL_HOST' => 'bitrix.dreamteamcompany.ru',
+    'LEAD_CALLBACK_V2_REQUIRED_STATUS' => 'NEW',
+    'LEAD_CALLBACK_V2_FINAL_FAILED_STATUS' => 'PROCESSED',
+];

@@ -105,4 +105,3 @@ Raw → Detected → Normalized → Processed
   - Windows: `start /B php ...`
 - Осмысленная отладка путей:
   - `realpath`, `which/where php`, проверка `file_exists/is_readable`
-

@@ -1,0 +1,397 @@
+<?php
+// logger_and_queue.php
+
+if (!function_exists('logMessage')) {
+function logMessage($message, $logFile, $config)
+{
+    $defaults = [
+        'logs_dir' => __DIR__ . '/logs',
+        'max_log_size' => 2 * 1024 * 1024,
+    ];
+    $config = array_merge($defaults, $config);
+
+    $logsDir = $config['logs_dir'];
+    if (!is_dir($logsDir)) {
+        mkdir($logsDir, 0777, true);
+    }
+    $fullPath = $logsDir . '/' . $logFile;
+    
+    // ДОПОЛНИТЕЛЬНОЕ ЛОГИРОВАНИЕ ДЛЯ ОТЛАДКИ
+    // error_log("DEBUG logMessage: $message | File: $fullPath");
+
+    if (file_exists($fullPath) && filesize($fullPath) > $config['max_log_size']) {
+        @unlink($fullPath);
+    }
+
+    $date = date('[Y-m-d H:i:s]');
+    $logEntry = $date . ' ' . $message . PHP_EOL;
+    
+    // Используем неблокирующую запись для избежания зависаний
+    $fp = @fopen($fullPath, 'a');
+    if ($fp === false) {
+        // error_log("ОШИБКА ОТКРЫТИЯ ЛОГА: $fullPath | Сообщение: $message");
+        return false;
+    }
+    
+    // Пытаемся получить блокировку с таймаутом (неблокирующая)
+    $locked = @flock($fp, LOCK_EX | LOCK_NB);
+    if (!$locked) {
+        // Если не удалось получить блокировку, пишем без блокировки (лучше потерять запись, чем зависнуть)
+        fclose($fp);
+        // Пробуем записать без блокировки как fallback
+        $result = @file_put_contents($fullPath, $logEntry, FILE_APPEND);
+        if ($result === false) {
+            // error_log("ОШИБКА ЗАПИСИ В ЛОГ (без блокировки): $fullPath | Сообщение: $message");
+            return false;
+        }
+        return true;
+    }
+    
+    $result = fwrite($fp, $logEntry);
+    flock($fp, LOCK_UN);
+    fclose($fp);
+    
+    // Проверяем результат записи
+    if ($result === false) {
+        // error_log("ОШИБКА ЗАПИСИ В ЛОГ: $fullPath | Сообщение: $message");
+        return false;
+    }
+    
+    // ДОПОЛНИТЕЛЬНО: принудительная запись в error_log для критических сообщений
+    // if (strpos($message, 'Телефон помечен как') !== false || 
+    //     strpos($message, 'LEAD_PROCESSING_START') !== false ||
+    //     strpos($message, 'LEAD_FIELDS_BASIC') !== false) {
+    //     error_log("CRITICAL LOG: $message");
+    // }
+    }
+}
+
+/**
+ * Сохранить запрос в очередь
+ */
+function saveRequestToQueue($data, $config)
+{
+    $queueDir = $config['queue_dir'];
+    
+    // Проверяем и создаем директорию с правами
+    if (!is_dir($queueDir)) {
+        if (!mkdir($queueDir, 0777, true)) {
+            $error = error_get_last();
+            logMessage("Ошибка создания директории очереди: " . $error['message'], $config['global_log'], $config);
+            return false;
+    }
+    }
+    
+    // Проверяем права доступа
+    if (!is_writable($queueDir)) {
+        if (!chmod($queueDir, 0777)) {
+            $error = error_get_last();
+            logMessage("Ошибка изменения прав доступа директории очереди: " . $error['message'], $config['global_log'], $config);
+            return false;
+        }
+    }
+    
+    // Генерируем уникальное имя файла
+    $maxAttempts = 5;
+    $attempt = 0;
+    $filePath = '';
+    
+    do {
+        $timestamp = date('Ymd_His');
+        $random = substr(md5(uniqid(mt_rand(), true)), 0, 13);
+        $fileName = "{$timestamp}_{$random}.json";
+        $filePath = $queueDir . '/' . $fileName;
+        $attempt++;
+        
+        // Если файл уже существует, пробуем снова
+        if (file_exists($filePath)) {
+            if ($attempt >= $maxAttempts) {
+                logMessage("Не удалось создать уникальное имя файла после $maxAttempts попыток", $config['global_log'], $config);
+                return false;
+            }
+            usleep(1000); // Небольшая задержка между попытками
+            continue;
+        }
+        
+        // Пытаемся создать файл с блокировкой
+        $fp = @fopen($filePath, 'x');
+        if ($fp === false) {
+            if ($attempt >= $maxAttempts) {
+                logMessage("Не удалось создать файл очереди после $maxAttempts попыток", $config['global_log'], $config);
+                return false;
+            }
+            usleep(1000);
+            continue;
+        }
+        
+        // Записываем данные
+        $jsonData = json_encode($data, JSON_UNESCAPED_UNICODE);
+        if (fwrite($fp, $jsonData) === false) {
+            fclose($fp);
+            unlink($filePath);
+            logMessage("Ошибка записи в файл очереди", $config['global_log'], $config);
+            return false;
+        }
+        
+        fclose($fp);
+        break;
+        
+    } while ($attempt < $maxAttempts);
+    
+    return $filePath;
+}
+
+/**
+ * Универсальная функция сохранения в очередь (для любых папок)
+ */
+function saveToQueue($data, $targetDir, $prefix = '') {
+    // Проверяем и создаем директорию с правами
+    if (!is_dir($targetDir)) {
+        if (!mkdir($targetDir, 0777, true)) {
+            $error = error_get_last();
+            logMessage("Ошибка создания директории: " . $error['message'], 'global.log', []);
+            return false;
+        }
+    }
+    
+    // Проверяем права доступа
+    if (!is_writable($targetDir)) {
+        if (!chmod($targetDir, 0777)) {
+            $error = error_get_last();
+            logMessage("Ошибка изменения прав доступа директории: " . $error['message'], 'global.log', []);
+            return false;
+        }
+    }
+    
+    // Генерируем уникальное имя файла
+    $maxAttempts = 5;
+    $attempt = 0;
+    $filePath = '';
+    
+    do {
+        $timestamp = date('Ymd_His');
+        $random = substr(md5(uniqid(mt_rand(), true)), 0, 13);
+        $fileName = $prefix . $timestamp . '_' . $random . '.json';
+        $filePath = $targetDir . '/' . $fileName;
+        $attempt++;
+    } while (file_exists($filePath) && $attempt < $maxAttempts);
+    
+    if ($attempt >= $maxAttempts) {
+        logMessage("Не удалось создать уникальное имя файла после $maxAttempts попыток", 'global.log', []);
+        return false;
+    }
+    
+    // Сохраняем данные в JSON формате
+    $jsonData = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    
+    if ($jsonData === false) {
+        logMessage("Ошибка кодирования данных в JSON: " . json_last_error_msg(), 'global.log', []);
+        return false;
+    }
+    
+    // Записываем файл с неблокирующей записью
+    $fp = @fopen($filePath, 'w');
+    if ($fp === false) {
+        logMessage("Ошибка открытия файла очереди: $filePath", 'global.log', []);
+        return false;
+    }
+    
+    // Пытаемся получить блокировку с таймаутом (неблокирующая)
+    $locked = @flock($fp, LOCK_EX | LOCK_NB);
+    if (!$locked) {
+        fclose($fp);
+        logMessage("Не удалось получить блокировку для файла очереди: $filePath", 'global.log', []);
+        return false;
+    }
+    
+    $bytesWritten = fwrite($fp, $jsonData);
+    flock($fp, LOCK_UN);
+    fclose($fp);
+    
+    if ($bytesWritten === false) {
+        logMessage("Ошибка записи файла очереди: $filePath", 'global.log', []);
+        return false;
+    }
+    
+    // Устанавливаем права доступа
+    chmod($filePath, 0666);
+    
+    return $filePath;
+}
+
+/**
+ * Получаем список .json-файлов из очереди
+ */
+function getQueueFiles($config)
+{
+    $queueDir = $config['queue_dir'];
+    if (!is_dir($queueDir)) {
+        return [];
+    }
+    $files = glob($queueDir . '/*.json');
+    return $files ?: [];
+}
+
+/**
+ * Удаляем файл из очереди
+ */
+function removeQueueFile($filepath)
+{
+    if (file_exists($filepath)) {
+        unlink($filepath);
+    }
+}
+function logRawRequest($rawData, $config)
+{
+    $logsDir = $config['logs_dir'];
+    if (!is_dir($logsDir)) {
+        mkdir($logsDir, 0777, true);
+    }
+    $rawLogFile = $logsDir . '/raw_requests.log';
+
+    // Проверяем размер
+    if (file_exists($rawLogFile) && filesize($rawLogFile) > 2 * 1024 * 1024) {
+        @unlink($rawLogFile);
+    }
+
+    // Если файла нет, создаём
+    if (!file_exists($rawLogFile)) {
+        file_put_contents($rawLogFile, "=== Start of raw requests log ===\n");
+    }
+
+    $date = date('[Y-m-d H:i:s]');
+    $record = $date . " " . $rawData . "\n";
+    file_put_contents($rawLogFile, $record, FILE_APPEND);
+}
+
+/**
+ * Копируем произвольный файл в очередь ошибок, оставляя оригинал на месте
+ */
+function copyToQueueErrors($filePath, $config)
+{
+    $errorDir = $config['queue_dir'] . '/queue_errors';
+    if (!is_dir($errorDir)) {
+        mkdir($errorDir, 0777, true);
+    }
+    $target = $errorDir . '/' . basename($filePath);
+    if (file_exists($filePath)) {
+        if (@copy($filePath, $target)) {
+            logMessage("Скопирован файл в queue_errors: " . basename($filePath), $config['global_log'], $config);
+            return $target;
+        }
+        logMessage("Не удалось скопировать файл в queue_errors: " . basename($filePath), $config['global_log'], $config);
+    } else {
+        logMessage("Исходный файл для копирования в queue_errors не найден: $filePath", $config['global_log'], $config);
+    }
+    return false;
+}
+
+/**
+ * Перемещаем файл в папку failed
+ */
+if (!function_exists('moveToFailed')) {
+function moveToFailed($filePath, $config) {
+    $failedDir = $config['queue_dir'] . '/failed';
+    
+    // Check if failed directory exists and create it if needed
+    if (!is_dir($failedDir)) {
+        if (!mkdir($failedDir, 0777, true)) {
+            $error = error_get_last();
+            logMessage("Ошибка создания директории failed: " . $error['message'], $config['global_log'], $config);
+            return false;
+        }
+        logMessage("Создана директория failed", $config['global_log'], $config);
+    }
+    
+    $fileName = basename($filePath);
+    $newPath = $failedDir . '/' . $fileName;
+    
+    // Check if source file exists
+    if (!file_exists($filePath)) {
+        logMessage("Файл не существует: $filePath", $config['global_log'], $config);
+        return false;
+    }
+
+    // Check and fix file permissions
+    if (!is_writable($filePath)) {
+        if (!chmod($filePath, 0666)) {
+            $error = error_get_last();
+            logMessage("Ошибка изменения прав доступа файла: " . $error['message'], $config['global_log'], $config);
+            return false;
+        }
+        logMessage("Изменены права доступа файла: $filePath", $config['global_log'], $config);
+    }
+
+    // Check and fix directory permissions
+    if (!is_writable($failedDir)) {
+        if (!chmod($failedDir, 0777)) {
+            $error = error_get_last();
+            logMessage("Ошибка изменения прав доступа директории: " . $error['message'], $config['global_log'], $config);
+            return false;
+        }
+        logMessage("Изменены права доступа директории: $failedDir", $config['global_log'], $config);
+    }
+    
+    // Check disk space
+    $freeSpace = disk_free_space($failedDir);
+    $fileSize = filesize($filePath);
+    if ($freeSpace < $fileSize * 2) { // Leave some buffer
+        logMessage("Недостаточно места на диске для перемещения файла", $config['global_log'], $config);
+        return false;
+    }
+    
+    // Move file into failed stage (источник сохранится только если вызывающий код не удалял его ранее)
+    if (!rename($filePath, $newPath)) {
+        $error = error_get_last();
+        logMessage("Ошибка перемещения файла в failed: " . $error['message'], $config['global_log'], $config);
+        return false;
+    }
+
+    logMessage("Файл успешно перемещен в папку failed: $fileName", $config['global_log'], $config);
+    
+    // Отправляем стандартизированное уведомление через ErrorHandler и копируем файл в queue_errors
+    try {
+        require_once __DIR__ . '/error_handler.php';
+        $errorHandler = new ErrorHandler($config);
+        
+        // Попробуем извлечь детали: домен и предполагаемый нормализатор
+        $normalizerFile = 'generic_normalizer.php';
+        $reason = 'processing_failed';
+        $details = 'ошибка обработки файла на этапе failed';
+        $domain = 'unknown.domain';
+        
+        if (file_exists($newPath)) {
+            $content = file_get_contents($newPath);
+            $data = json_decode($content, true);
+            if (is_array($data)) {
+                if (isset($data['source_domain']) && $data['source_domain']) {
+                    $domain = $data['source_domain'];
+                }
+                if (isset($data['normalizer_file']) && $data['normalizer_file']) {
+                    $normalizerFile = $data['normalizer_file'];
+                } elseif (isset($data['calltouch_data'])) {
+                    $normalizerFile = 'calltouch_normalizer.php';
+                }
+                // Уточним детали по префиксу имени (raw_/detected_/normalized_)
+                if (strpos($fileName, 'raw_') === 0) {
+                    $details = "ошибка на этапе raw для домена '$domain'";
+                } elseif (strpos($fileName, 'detected_') === 0) {
+                    $details = "ошибка на этапе detected для домена '$domain'";
+                } elseif (strpos($fileName, 'normalized_') === 0) {
+                    $details = "ошибка на этапе normalized для домена '$domain'";
+                }
+            } else {
+                $reason = 'json_decode_failed';
+                $details = 'не удалось декодировать JSON проблемного файла';
+            }
+        }
+        
+        // Сообщение и копирование в queue_errors выполнит ErrorHandler (мы передаём полный путь)
+        $errorHandler->handleError('generic', $newPath, $reason, $details, $normalizerFile);
+    } catch (Exception $e) {
+        logMessage("Ошибка при уведомлении ErrorHandler: " . $e->getMessage(), $config['global_log'], $config);
+    }
+    
+    return true;
+    }
+}

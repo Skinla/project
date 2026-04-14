@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-01-24T23:20:00+03:00",
+  "bitrix24": {
+    "webhookBaseUrl": "ENV:BITRIX24_WEBHOOK_BASE_URL",
+    "iblockId": 14,
+    "search": {
+      "minQueryLength": 3,
+      "method": "catalog.product.list",
+      "filter": {
+        "operator": "%name",
+        "notes": "Подстрочный поиск работает через %name. *name у портала не дал результатов."
+      },
+      "limit": 8
+    },
+    "pagination": {
+      "method": "catalog.product.list",
+      "param": "start",
+      "pageSize": 50,
+      "notes": "Поля total/next/time находятся на верхнем уровне ответа, а не внутри result."
+    },
+    "sections": {
+      "method": "catalog.section.list",
+      "items": [
+        { "id": 40, "name": "Рабочие профессии" },
+        { "id": 68, "name": "Охрана труда" },
+        { "id": 70, "name": "Повышение квалификации" },
+        { "id": 72, "name": "Проф.переподготовка" },
+        { "id": 74, "name": "Лицензирование" },
+        { "id": 76, "name": "Аттестации специалистов" },
+        { "id": 78, "name": "Вступление в СРО" },
+        { "id": 80, "name": "Аудит и расчет рисков" }
+      ]
+    },
+    "product": {
+      "listMethod": "catalog.product.list",
+      "getMethod": "catalog.product.get",
+      "priceListMethod": "catalog.price.list",
+      "requiredSelectFields": ["iblockId"],
+      "commonSelect": ["id", "iblockId", "name"],
+      "detailPage": {
+        "currentUrl": "N/A (detail открывается блоком на любой странице)",
+        "notes": "URL детальной страницы на конкретный товар в каталоге нет. Для деталки используем параметр на текущей странице: #product=<id> (или ?productId=<id>) + detail-block."
+      }
+    },
+    "properties": {
+      "notes": "В ответах приходят property<ID> (например property112), часть свойств не имеет code — опираться на id.",
+      "cardFields": [
+        { "propertyId": 112, "name": "Объём курса (уч. ч.)", "key": "property112" },
+        { "propertyId": 114, "name": "Периодичность (мес.)", "key": "property114" },
+        { "propertyId": 116, "name": "Срок оказания (раб. дней)", "key": "property116" },
+        { "propertyId": 124, "name": "Формат обучения", "key": "property124" },
+        { "propertyId": 122, "name": "Реестр", "key": "property122" },
+        { "propertyId": 126, "name": "Требования к клиенту", "key": "property126" },
+        { "propertyId": 128, "name": "Требуемый уровень образования", "key": "property128" }
+      ],
+      "pricing": {
+        "primary": {
+          "propertyId": 152,
+          "name": "Розничная цена",
+          "key": "property152",
+          "format": "Money string like \"5000|RUB\""
+        },
+        "secondary": {
+          "propertyId": 154,
+          "name": "Партнёрская цена",
+          "key": "property154",
+          "format": "Money string like \"5000|RUB\""
+        },
+        "fallbackApi": {
+          "method": "catalog.price.list",
+          "notes": "Проверено, что catalog.price.list отвечает (пример productId=7896, catalogGroupId=2). Если property152 пустой/0 у части товаров — решаем, берём ли из price.list."
+        }
+      },
+      "links": [
+        {
+          "propertyId": 142,
+          "name": "Структурирован курс (ссылка)",
+          "key": "property142",
+          "notes": "В первых 200 товарах значение не встретилось."
+        },
+        {
+          "propertyId": 200,
+          "name": "Ссылка на журнал практики",
+          "key": "property200",
+          "notes": "Может содержать URL на документ/диск."
+        }
+      ]
+    },
+    "methodsChecklist": [
+      "scope",
+      "user.current (может требовать доп. scope)",
+      "catalog.product.list",
+      "catalog.product.get",
+      "catalog.productProperty.list",
+      "catalog.section.list",
+      "catalog.price.list"
+    ],
+    "scopesObserved": [
+      "bizproc",
+      "catalog",
+      "crm",
+      "disk",
+      "documentgenerator",
+      "lists",
+      "rpa"
+    ],
+    "knownIssues": [
+      "user.current: insufficient_scope",
+      "catalog.product.list: required select field iblockId",
+      "detail page per-product URL not present in catalog responses"
+    ]
+  },
+  "bitrixBoxLocalApp": {
+    "baseDomain": "https://bitrix.axiom24.ru",
+    "paths": {
+      "install": "/local/akademia-profi/academyprofi-catalog-app/install.php",
+      "handler": "/local/akademia-profi/academyprofi-catalog-app/handler.php"
+    },
+    "clientId": "local.6974b194f086f9.16749360",
+    "clientSecret": "ENV:BITRIX_APP_CLIENT_SECRET",
+    "notes": "По HTTP на 2026-01-24 оба URL отдавали 404 — файлы приложения ещё не размещены по указанному пути."
+  }
+}

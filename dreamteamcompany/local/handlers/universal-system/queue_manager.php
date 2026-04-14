@@ -1,0 +1,457 @@
+<?php
+// queue_manager.php
+// Менеджер очередей для управления файлами на разных этапах
+
+if (empty($_SERVER['DOCUMENT_ROOT'])) {
+    $_SERVER['DOCUMENT_ROOT'] = realpath(__DIR__ . '/../../../..');
+}
+
+require_once __DIR__ . '/logger_and_queue.php';
+require_once __DIR__ . '/data_type_detector.php';
+require_once __DIR__ . '/normalizers/normalizer_factory.php';
+require_once __DIR__ . '/lead_processor.php';
+require_once __DIR__ . '/error_handler.php';
+
+/**
+ * Обрабатывает все этапы очереди
+ */
+function processAllQueues($config) {
+    logMessage("queue_manager: начинаем обработку всех очередей", $config['global_log'], $config);
+    
+    // Этап 1: Определение типа данных
+    processRawFiles($config);
+    
+    // Этап 2: Нормализация данных
+    processDetectedFiles($config);
+    
+    // Этап 3: Создание лидов
+    processNormalizedFiles($config);
+    
+    logMessage("queue_manager: обработка всех очередей завершена", $config['global_log'], $config);
+}
+
+/**
+ * Регистрирует ошибки этапа normalizer через единый ErrorHandler.
+ */
+function reportDetectedFileError($detectedFile, $reason, $details, $config, $normalizerFile = 'generic_normalizer.php', $errorType = 'generic') {
+    $errorHandler = new ErrorHandler($config);
+    $errorHandler->handleError($errorType, $detectedFile, $reason, $details, $normalizerFile);
+}
+
+/**
+ * Обрабатывает файлы с определенным типом и нормализует их
+ */
+function processDetectedFiles($config) {
+    $detectedDir = $config['queue_dir'] . '/detected';
+    $normalizedDir = $config['queue_dir'] . '/normalized';
+    
+    // Создаем папки если их нет
+    if (!is_dir($detectedDir)) {
+        mkdir($detectedDir, 0777, true);
+    }
+    if (!is_dir($normalizedDir)) {
+        mkdir($normalizedDir, 0777, true);
+    }
+    
+    $detectedFiles = glob($detectedDir . '/*.json');
+    
+    if (empty($detectedFiles)) {
+        logMessage("queue_manager: нет файлов в папке detected", $config['global_log'], $config);
+        return;
+    }
+    
+    // Ограничиваем количество обрабатываемых файлов за раз для избежания зависаний
+    $maxFilesPerRun = $config['max_files_per_run'] ?? 50;
+    $totalFiles = count($detectedFiles);
+    $filesToProcess = array_slice($detectedFiles, 0, $maxFilesPerRun);
+    
+    logMessage("queue_manager: найдено $totalFiles файлов для нормализации, обрабатываем " . count($filesToProcess) . " файлов за этот запуск", $config['global_log'], $config);
+    
+    $processedCount = 0;
+    $cycleStartTime = microtime(true);
+    
+    foreach ($filesToProcess as $detectedFile) {
+        // Проверяем таймаут выполнения
+        $maxExecutionTime = $config['max_execution_time'] ?? 25;
+        $totalElapsed = microtime(true) - $cycleStartTime;
+        if ($totalElapsed > $maxExecutionTime) {
+            logMessage("queue_manager: достигнут лимит времени выполнения, обработано $processedCount из " . count($filesToProcess) . " файлов", $config['global_log'], $config);
+            break;
+        }
+        
+        $fileStartTime = microtime(true);
+        
+        // Пропускаем файлы с блокировкой
+        $lockFile = $detectedFile . '.lock';
+        if (file_exists($lockFile)) {
+            // Проверяем, не устарела ли блокировка
+            $lockTimeout = $config['lock_timeout'] ?? 300;
+            $lockTime = filemtime($lockFile);
+            if (time() - $lockTime > $lockTimeout) {
+                @unlink($lockFile);
+                logMessage("queue_manager: удалена устаревшая блокировка для " . basename($detectedFile), $config['global_log'], $config);
+            } else {
+                logMessage("queue_manager: пропускаем файл с активной блокировкой: " . basename($detectedFile), $config['global_log'], $config);
+                continue;
+            }
+        }
+        
+        // Создаем блокировку для файла
+        @file_put_contents($lockFile, date('Y-m-d H:i:s'));
+        try {
+            $detectedData = json_decode(file_get_contents($detectedFile), true);
+            
+            if (!$detectedData) {
+                logMessage("queue_manager: ошибка декодирования JSON в файле " . basename($detectedFile), $config['global_log'], $config);
+                reportDetectedFileError(
+                    $detectedFile,
+                    'detected_json_decode_failed',
+                    'Не удалось декодировать JSON detected-файла на этапе нормализации',
+                    $config,
+                    'queue_manager.php',
+                    'queue_manager'
+                );
+                continue;
+            }
+            
+            $normalizerFile = $detectedData['normalizer_file'] ?? 'generic_normalizer.php';
+            $rawData = $detectedData['raw_data'] ?? [];
+            
+            // Создаем нормализатор по имени файла
+            $normalizer = NormalizerFactory::createNormalizerByFile($normalizerFile, $config);
+            // Логируем выбранный класс нормализатора для диагностики
+            $className = is_object($normalizer) ? get_class($normalizer) : 'unknown';
+            logMessage("queue_manager: выбран нормализатор class='$className' file='$normalizerFile' для " . basename($detectedFile), $config['global_log'], $config);
+            
+            // Нормализуем данные
+            $normalizedData = $normalizer->normalize($rawData);
+
+            // Если нормализатор не смог вернуть структуру — отправляем файл в queue_errors, чтобы не блокировать очередь
+            if ($normalizedData === null) {
+                logMessage(
+                    "queue_manager: нормализатор '$normalizerFile' вернул null для файла " . basename($detectedFile) . " — переносим в queue_errors",
+                    $config['global_log'],
+                    $config
+                );
+                reportDetectedFileError(
+                    $detectedFile,
+                    'normalizer_returned_null',
+                    "Нормализатор '$normalizerFile' вернул null для detected-файла",
+                    $config,
+                    $normalizerFile
+                );
+                @unlink($detectedFile);
+                continue;
+            }
+
+            // Мягкий фильтр: если generic + unknown.domain → отправляем в queue_errors один раз
+            $sourceDomain = $normalizedData['source_domain'] ?? ($rawData['source_domain'] ?? '');
+            if ($normalizerFile === 'generic_normalizer.php' && ($sourceDomain === '' || $sourceDomain === 'unknown.domain')) {
+                $alreadyFlag = isset($detectedData['skip_reprocess']) && $detectedData['skip_reprocess'] === true;
+                if (!$alreadyFlag) {
+                    // Помечаем и отправляем в ошибки, чтобы не гонялось по кругу
+                    $detectedData['skip_reprocess'] = true;
+                    file_put_contents($detectedFile, json_encode($detectedData, JSON_UNESCAPED_UNICODE));
+                    reportDetectedFileError(
+                        $detectedFile,
+                        'unknown_domain_after_normalization',
+                        "После нормализации не определен source_domain для файла " . basename($detectedFile),
+                        $config,
+                        $normalizerFile
+                    );
+                    // Удаляем detected
+                    @unlink($detectedFile);
+                    logMessage("queue_manager: generic+unknown.domain → перенесено в queue_errors: " . basename($detectedFile), $config['global_log'], $config);
+                    continue;
+                }
+            }
+
+            // Прокидываем ссылку на исходный raw-файл в нормализованные данные
+            if (isset($detectedData['raw_file_path'])) {
+                $normalizedData['raw_file_path'] = $detectedData['raw_file_path'];
+            }
+            if (isset($detectedData['raw_file_name'])) {
+                $normalizedData['raw_file_name'] = $detectedData['raw_file_name'];
+            }
+            // Для трассировки сохраняем имя detected-файла
+            $normalizedData['detected_file_name'] = basename($detectedFile);
+            // Прокидываем request_id для отслеживания запросов
+            if (isset($detectedData['request_id'])) {
+                $normalizedData['request_id'] = $detectedData['request_id'];
+            }
+            
+            // Сохраняем нормализованные данные
+            $normalizedFile = saveToQueue($normalizedData, $normalizedDir, 'normalized_');
+            
+            // Удаляем файл с определенным типом и его блокировку
+            @unlink($detectedFile);
+            @unlink($lockFile);
+            
+            $processedCount++;
+            $elapsedTime = microtime(true) - $fileStartTime;
+            logMessage("queue_manager: данные нормализованы (нормализатор: $normalizerFile) для файла " . basename($detectedFile) . " -> " . basename($normalizedFile) . " (время: " . round($elapsedTime, 2) . "с)", $config['global_log'], $config);
+            
+        } catch (Exception $e) {
+            @unlink($lockFile);
+            logMessage("queue_manager: ошибка нормализации файла " . basename($detectedFile) . ": " . $e->getMessage(), $config['global_log'], $config);
+            reportDetectedFileError(
+                $detectedFile,
+                'normalization_exception',
+                $e->getMessage(),
+                $config,
+                $normalizerFile ?? 'generic_normalizer.php'
+            );
+        } catch (Throwable $e) {
+            @unlink($lockFile);
+            logMessage("queue_manager: критическая ошибка нормализации файла " . basename($detectedFile) . ": " . $e->getMessage(), $config['global_log'], $config);
+            reportDetectedFileError(
+                $detectedFile,
+                'normalization_throwable',
+                $e->getMessage(),
+                $config,
+                $normalizerFile ?? 'generic_normalizer.php',
+                'queue_manager'
+            );
+        }
+    }
+    
+    if ($processedCount > 0) {
+        logMessage("queue_manager: нормализация завершена, обработано $processedCount файлов", $config['global_log'], $config);
+    }
+}
+
+/**
+ * Получает статистику по всем очередям
+ */
+function getQueueStats($config) {
+    $stats = [
+        'raw' => 0,
+        'detected' => 0,
+        'normalized' => 0,
+        'processed' => 0,
+        'duplicates' => 0,
+        'failed' => 0
+    ];
+    
+    $queueDirs = [
+        'raw' => $config['queue_dir'] . '/raw',
+        'detected' => $config['queue_dir'] . '/detected',
+        'normalized' => $config['queue_dir'] . '/normalized',
+        'processed' => $config['queue_dir'] . '/processed',
+        'duplicates' => $config['queue_dir'] . '/duplicates',
+        'failed' => $config['queue_dir'] . '/failed'
+    ];
+    
+    foreach ($queueDirs as $stage => $dir) {
+        if (is_dir($dir)) {
+            $files = glob($dir . '/*.json');
+            $stats[$stage] = count($files);
+        }
+    }
+    
+    return $stats;
+}
+
+/**
+ * Очищает старые файлы из очередей
+ */
+function cleanupOldQueueFiles($config, $daysOld = 7) {
+    $queueDirs = [
+        'processed' => $config['queue_dir'] . '/processed',
+        'duplicates' => $config['queue_dir'] . '/duplicates',
+        'failed' => $config['queue_dir'] . '/failed'
+    ];
+    
+    $cutoffTime = time() - ($daysOld * 24 * 60 * 60);
+    $cleanedCount = 0;
+    
+    foreach ($queueDirs as $stage => $dir) {
+        if (is_dir($dir)) {
+            $files = glob($dir . '/*.json');
+            
+            foreach ($files as $file) {
+                if (filemtime($file) < $cutoffTime) {
+                    unlink($file);
+                    $cleanedCount++;
+                }
+            }
+        }
+    }
+    
+    logMessage("queue_manager: очищено $cleanedCount старых файлов (старше $daysOld дней)", $config['global_log'], $config);
+    
+    return $cleanedCount;
+}
+
+/**
+ * Повторная обработка файлов из папки failed
+ */
+function retryFailedFiles($config) {
+    $failedDir = $config['queue_dir'] . '/failed';
+    $rawDir = $config['queue_dir'] . '/raw';
+    
+    if (!is_dir($failedDir)) {
+        logMessage("queue_manager: папка failed не существует", $config['global_log'], $config);
+        return 0;
+    }
+    
+    $failedFiles = glob($failedDir . '/*.json');
+    
+    if (empty($failedFiles)) {
+        logMessage("queue_manager: нет файлов в папке failed", $config['global_log'], $config);
+        return 0;
+    }
+    
+    $retriedCount = 0;
+    
+    foreach ($failedFiles as $failedFile) {
+        try {
+            $failedData = json_decode(file_get_contents($failedFile), true);
+            
+            if (!$failedData) {
+                continue;
+            }
+            
+            // Определяем на каком этапе произошла ошибка
+            if (isset($failedData['type'])) {
+                // Ошибка на этапе нормализации - отправляем в detected
+                $detectedDir = $config['queue_dir'] . '/detected';
+                if (!is_dir($detectedDir)) {
+                    mkdir($detectedDir, 0777, true);
+                }
+                
+                $newFile = $detectedDir . '/' . basename($failedFile);
+                file_put_contents($newFile, json_encode($failedData, JSON_UNESCAPED_UNICODE));
+                
+            } elseif (isset($failedData['normalized_data'])) {
+                // Ошибка на этапе создания лида - отправляем в normalized
+                $normalizedDir = $config['queue_dir'] . '/normalized';
+                if (!is_dir($normalizedDir)) {
+                    mkdir($normalizedDir, 0777, true);
+                }
+                
+                $newFile = $normalizedDir . '/' . basename($failedFile);
+                file_put_contents($newFile, json_encode($failedData['normalized_data'], JSON_UNESCAPED_UNICODE));
+                
+            } else {
+                // Ошибка на этапе определения типа - отправляем в raw
+                if (!is_dir($rawDir)) {
+                    mkdir($rawDir, 0777, true);
+                }
+                
+                $newFile = $rawDir . '/' . basename($failedFile);
+                file_put_contents($newFile, json_encode($failedData, JSON_UNESCAPED_UNICODE));
+            }
+            
+            // Удаляем из failed
+            unlink($failedFile);
+            $retriedCount++;
+            
+            logMessage("queue_manager: файл отправлен на повторную обработку: " . basename($failedFile), $config['global_log'], $config);
+            
+        } catch (Exception $e) {
+            logMessage("queue_manager: ошибка при повторной обработке файла " . basename($failedFile) . ": " . $e->getMessage(), $config['global_log'], $config);
+        }
+    }
+    
+    logMessage("queue_manager: отправлено на повторную обработку $retriedCount файлов", $config['global_log'], $config);
+    
+    return $retriedCount;
+}
+
+/**
+ * Повторная обработка файлов из папки raw_errors
+ */
+function retryRawErrors($config) {
+    $rawDir = $config['queue_dir'] . '/raw';
+    $rawErrorsDir = $rawDir . '/raw_errors';
+    
+    if (!is_dir($rawErrorsDir)) {
+        logMessage("queue_manager: папка raw_errors не существует", $config['global_log'], $config);
+        return 0;
+    }
+    
+    $errorFiles = glob($rawErrorsDir . '/raw_*.json');
+    
+    if (empty($errorFiles)) {
+        logMessage("queue_manager: нет файлов в папке raw_errors", $config['global_log'], $config);
+        return 0;
+    }
+    
+    logMessage("queue_manager: найдено " . count($errorFiles) . " файлов в raw_errors для повторной обработки", $config['global_log'], $config);
+    
+    $retriedCount = 0;
+    
+    foreach ($errorFiles as $errorFile) {
+        try {
+            $fileName = basename($errorFile);
+            $newPath = $rawDir . '/' . $fileName;
+            
+            // Перемещаем файл обратно в корень raw/
+            if (rename($errorFile, $newPath)) {
+                logMessage("queue_manager: файл возвращен из raw_errors в raw: " . $fileName, $config['global_log'], $config);
+                $retriedCount++;
+            } else {
+                logMessage("queue_manager: не удалось переместить файл из raw_errors: " . $fileName, $config['global_log'], $config);
+            }
+            
+        } catch (Exception $e) {
+            logMessage("queue_manager: ошибка при повторной обработке файла из raw_errors " . basename($errorFile) . ": " . $e->getMessage(), $config['global_log'], $config);
+        }
+    }
+    
+    // Запускаем обработку очередей для перемещенных файлов
+    if ($retriedCount > 0) {
+        logMessage("queue_manager: запускаем обработку очередей для $retriedCount файлов", $config['global_log'], $config);
+        processAllQueues($config);
+    }
+    
+    return $retriedCount;
+}
+
+// Поддержка запуска из CLI: php queue_manager.php
+if (PHP_SAPI === 'cli') {
+    $argv = $_SERVER['argv'] ?? [];
+    
+    if (isset($argv[1])) {
+        $config = require __DIR__ . '/config.php';
+        
+        switch ($argv[1]) {
+            case 'run':
+                processAllQueues($config);
+                echo "OK\n";
+                break;
+                
+            case 'stats':
+                $stats = getQueueStats($config);
+                echo "Статистика очередей:\n";
+                echo "  Raw: {$stats['raw']}\n";
+                echo "  Detected: {$stats['detected']}\n";
+                echo "  Normalized: {$stats['normalized']}\n";
+                echo "  Processed: {$stats['processed']}\n";
+                echo "  Duplicates: {$stats['duplicates']}\n";
+                echo "  Failed: {$stats['failed']}\n";
+                break;
+                
+            case 'cleanup':
+                $days = isset($argv[2]) ? (int)$argv[2] : 7;
+                $cleaned = cleanupOldQueueFiles($config, $days);
+                echo "Очищено $cleaned файлов\n";
+                break;
+                
+            case 'retry':
+                $retried = retryFailedFiles($config);
+                echo "Отправлено на повторную обработку $retried файлов\n";
+                break;
+                
+            case 'retry-raw-errors':
+                $retried = retryRawErrors($config);
+                echo "Отправлено на повторную обработку $retried файлов из raw_errors\n";
+                break;
+                
+            default:
+                echo "Использование: php queue_manager.php [run|stats|cleanup|retry|retry-raw-errors]\n";
+                break;
+        }
+    }
+}

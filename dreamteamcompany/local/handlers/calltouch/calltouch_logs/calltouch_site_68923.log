@@ -1,0 +1,941 @@
+==== 2025-11-10 15:10:33 ====
+File: ct_20251110_151033_6911d63913e1e.json
+EntityType=lead, EntityId=431289
+dialedNumber=78312660341
+callerPhone=79307157206
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4734739
+    [changedFields] => null
+    [ctCallerId] => 1516b05511141b8a9d1b02c1df34ab79
+    [callerphone] => 79307157206
+    [phonenumber] => 78312660341
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 65
+    [waiting_time] => 0
+    [calltime] => 2025-11-10 15:05:05
+    [timestamp] => 1762776305
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => new-alldent-vn4_yandex_cpc_vsena4_vse_nn_s
+    [utm_content] => ad_id|17322274705|banner_id|17322274705|campaign_type|type1|campaign_id|703688870|device_type|mobile|group_id|5654348361|phrase_id|205654348361|position|0|position_type|none|placement|yandex.ru|placement_type|context|region_name|Нижний Новгород|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1762584567273127898
+    [sessionId] => 293520786
+    [ctClientId] => 2800000000197781134
+    [ctGlobalId] => null
+    [hostname] => alldentvsena4.ru
+    [url] => https://alldentvsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=new-alldent-vn4_yandex_cpc_vsena4_vse_nn_s&utm_term=---autotargeting&utm_content=ad_id|17322274705|banner_id|17322274705|campaign_type|type1|campaign_id|703688870|device_type|mobile|group_id|5654348361|phrase_id|205654348361|position|0|position_type|none|placement|yandex.ru|placement_type|context|region_name|Нижний Новгород|correction|0|&calltouch_tm=yd_c:703688870_gb:5654348361_ad:17322274705_ph:205654348361_st:context_pt:none_p:0_s:yandex.ru_dt:mobile_reg:47_ret:205654348361_apt:none&yclid=12446560368839098367&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/47/nizhny-novgorod/house/ulitsa_ulyanova_10/YE0YdgZgSEQOQFtsfX9zd39gbA==/?ll=44.010119,56.326338&z=15
+    [city] => nizhniy novgorod
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 128.204.73.38
+    [sip_call_id] => 55f9d6ea-38d0-123f-ff85-0050569465cc
+    [callReferenceNumber] => 7e89acf4-be2d-11f0-a59c-fb1d1dac1793
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjc3NjYzMiwiZXhwIjoyMDc4MTM2NjMyLCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3MzQ3Mzl9.QY_bgB6TMCisAY5FB_Y8frDVrO588OdrY5eEuJwY29oGjxYNQkewQlbbz0tIjHVF1ZgFDb2wYLy0XThShrLvrA
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; 24117RN76O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.454 YaSearchBrowser/24.79.1 BroPP/1.0 YaSearchApp/24.79.1 webOmni SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762776632
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 13:26:15 ====
+File: ct_20251112_132613_691460c583e9c.json
+EntityType=lead, EntityId=434480
+dialedNumber=78314180288
+callerPhone=79960421977
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4757223
+    [changedFields] => null
+    [ctCallerId] => 6d2112dd394391a8510a2e63841d7d83
+    [callerphone] => 79960421977
+    [phonenumber] => 78314180288
+    [subPoolName] => null
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 268
+    [waiting_time] => 41
+    [calltime] => 2025-11-12 13:20:30
+    [timestamp] => 1762942830
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => alldent-vn4_yandex_cpc_vsena4_pp_nn
+    [utm_content] => ad_id|17400051882|banner_id|17400051882|campaign_type|type1|campaign_id|703688704|device_type|mobile|group_id|5654345909|phrase_id|205654345909|position|0|position_type|none|placement|com.vitastudio.mahjong|placement_type|context|region_name|Nizhny Novgorod|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1762942764264551368
+    [sessionId] => 295924363
+    [ctClientId] => 2800000000199433214
+    [ctGlobalId] => null
+    [hostname] => alldent-vsena4.ru
+    [url] => https://alldent-vsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=alldent-vn4_yandex_cpc_vsena4_pp_nn&utm_term=---autotargeting&utm_content=ad_id|17400051882|banner_id|17400051882|campaign_type|type1|campaign_id|703688704|device_type|mobile|group_id|5654345909|phrase_id|205654345909|position|0|position_type|none|placement|com.vitastudio.mahjong|placement_type|context|region_name|Nizhny Novgorod|correction|0|&calltouch_tm=yd_c:703688704_gb:5654345909_ad:17400051882_ph:205654345909_st:context_pt:none_p:0_s:com.vitastudio.mahjong_dt:mobile_reg:47_ret:205654345909_apt:none&yclid=3506530897566105599&ybaip=1
+    [attrs] => {}
+    [callback_request_id] => 229886784
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => nizhniy novgorod
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 95.79.239.121
+    [sip_call_id] => 0e6d2ca4-3a54-123f-e7ab-005056be61fd
+    [callReferenceNumber] => 370e4f6c-bfb1-11f0-b4c9-67bf64e5467c
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk0MzE3MywiZXhwIjoyMDc4MzAzMTczLCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NTcyMjN9.NEERMyY5FJOXoknbwaIZoj8z5_ga5euzhYDLa-t4g1ZME7fYRj86zVYBOjVqRNBytfM47NaGy6qJ7Hjvy9k8kw
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762943173
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Антон Чернов
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79960421977
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-12 14:14:19 ====
+File: ct_20251112_141418_69146c0a63979.json
+EntityType=lead, EntityId=434569
+dialedNumber=78314180288
+callerPhone=79090670692
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4758071
+    [changedFields] => null
+    [ctCallerId] => 089c4fa9a9c6b0742e3a73d89e195000
+    [callerphone] => 79090670692
+    [phonenumber] => 78314180288
+    [subPoolName] => null
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 229
+    [waiting_time] => 33
+    [calltime] => 2025-11-12 14:08:19
+    [timestamp] => 1762945699
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => alldent-vn4_yandex_cpc_vsena4_pp_nn
+    [utm_content] => ad_id|17322264096|banner_id|17322264096|campaign_type|type1|campaign_id|703688704|device_type|mobile|group_id|5654345909|phrase_id|205654345909|position|0|position_type|none|placement|ru.ok.android|placement_type|context|region_name|Svetlogorsk|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1762945626186183222
+    [sessionId] => 295950821
+    [ctClientId] => 2800000000199450590
+    [ctGlobalId] => null
+    [hostname] => alldent-vsena4.ru
+    [url] => https://alldent-vsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=alldent-vn4_yandex_cpc_vsena4_pp_nn&utm_term=---autotargeting&utm_content=ad_id|17322264096|banner_id|17322264096|campaign_type|type1|campaign_id|703688704|device_type|mobile|group_id|5654345909|phrase_id|205654345909|position|0|position_type|none|placement|ru.ok.android|placement_type|context|region_name|Svetlogorsk|correction|0|&calltouch_tm=yd_c:703688704_gb:5654345909_ad:17322264096_ph:205654345909_st:context_pt:none_p:0_s:ru.ok.android_dt:mobile_reg:146543_ret:205654345909_apt:none&yclid=12428472992145080319&ybaip=1
+    [attrs] => {}
+    [callback_request_id] => 229888103
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => nizhniy novgorod
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => phablet
+    [ip] => 176.59.123.184
+    [sip_call_id] => bcc3ae9a-3a5a-123f-e7ab-005056be61fd
+    [callReferenceNumber] => e5650ea6-bfb7-11f0-b50d-67bf64e5467c
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk0NjA1OCwiZXhwIjoyMDc4MzA2MDU4LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NTgwNzF9.fdR5geeJUmosSDAacDTGXLTKCpX5y-4NqgBaggF1ku3AX9ro_mgRc_bW5sfAAohhEHhQseE41bIZEmBZ91zrQQ
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; Infinix X6858) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.892 YaSearchBrowser/25.102.1 BroPP/1.0 YaSearchApp/25.102.1 webOmni SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762946058
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Александр т
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79090670692
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-12 14:26:10 ====
+File: ct_20251112_142610_69146ed2499d3.json
+EntityType=lead, EntityId=434610
+dialedNumber=78312660341
+callerPhone=79917931667
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4758341
+    [changedFields] => null
+    [ctCallerId] => 19ceb66aea3e775622fcfd3dd76829d4
+    [callerphone] => 79917931667
+    [phonenumber] => 78312660341
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 10
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 14:23:54
+    [timestamp] => 1762946634
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ea0dabb0-3a5c-123f-ff85-0050569465cc
+    [callReferenceNumber] => 129fe0d8-bfba-11f0-91f6-fb1d1dac1793
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk0Njc2OSwiZXhwIjoyMDc4MzA2NzY5LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NTgzNDF9.4yaG8UN5SAMpC4rEm7_wrA2wC8cEZVKNKAcTNb6LN4KIdESVHEJqvpOKishrs2YBer61x3ikXxFUTZyT-6f-aQ
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [sendingTimestamp] => 1762946769
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-12 16:51:13 ====
+File: ct_20251112_165112_691490d040081.json
+EntityType=lead, EntityId=434881
+dialedNumber=78312660341
+callerPhone=79082329081
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4760460
+    [changedFields] => null
+    [ctCallerId] => 8f1a2faeddb9a16460658548bd475a38
+    [callerphone] => 79082329081
+    [phonenumber] => 78312660341
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 37
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 16:48:51
+    [timestamp] => 1762955331
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 29f21559-3a71-123f-ff85-0050569465cc
+    [callReferenceNumber] => 52842f9c-bfce-11f0-935b-fb1d1dac1793
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk1NTQ3MCwiZXhwIjoyMDc4MzE1NDcwLCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NjA0NjB9.FOhVw9SvwLmlrEDk93vUyeYZoPjWRQQ1deQVPHF93Lc6xcJAPPRIZVW4s8X6o9hVLAqxMT4j8m-6G0BVEyl6VA
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [sendingTimestamp] => 1762955470
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-12 16:55:06 ====
+File: ct_20251112_165506_691491ba4e39f.json
+EntityType=lead, EntityId=434881
+dialedNumber=78312660341
+callerPhone=79082329081
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4760503
+    [changedFields] => null
+    [ctCallerId] => 8f1a2faeddb9a16460658548bd475a38
+    [callerphone] => 79082329081
+    [phonenumber] => 78312660341
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 0
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 16:53:06
+    [timestamp] => 1762955586
+    [status] => unsuccessful
+    [statusDetails] => Вызывающий абонент положил трубку до начала соединения
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => ea6d4b9a-bfce-11f0-bfd7-fb1d1dac1793
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk1NTcwNSwiZXhwIjoyMDc4MzE1NzA1LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NjA1MDN9.L6SaSAGxDJmLLDPn9krQlQHXn8QEvL6w4P2P9eJ6-8vsYo6s4CpLWOEI6njsNXBclyzE6EDn10QaB663wxSraQ
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [sendingTimestamp] => 1762955705
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-13 14:02:25 ====
+File: ct_20251113_140225_6915bac100238.json
+EntityType=lead, EntityId=436215
+dialedNumber=78314180288
+callerPhone=79036073292
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4769930
+    [changedFields] => null
+    [ctCallerId] => 9cf240729f4b1cf29a66ce7316382f75
+    [callerphone] => 79036073292
+    [phonenumber] => 78314180288
+    [subPoolName] => null
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 27
+    [waiting_time] => 27
+    [calltime] => 2025-11-13 14:00:03
+    [timestamp] => 1763031603
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => new-alldent-vn4_yandex_cpc_vsena4_sl-z_nn_k
+    [utm_content] => ad_id|17231824692|banner_id|17231824692|campaign_type|type1|campaign_id|702356941|device_type|desktop|group_id|5624864622|phrase_id|205624864622|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Новгород|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1763031585650303754
+    [sessionId] => 296525518
+    [ctClientId] => 2800000000199848038
+    [ctGlobalId] => null
+    [hostname] => alldentvsena4.ru
+    [url] => https://alldentvsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=new-alldent-vn4_yandex_cpc_vsena4_sl-z_nn_k&utm_term=---autotargeting&utm_content=ad_id|17231824692|banner_id|17231824692|campaign_type|type1|campaign_id|702356941|device_type|desktop|group_id|5624864622|phrase_id|205624864622|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Новгород|correction|0|&calltouch_tm=yd_c:702356941_gb:5624864622_ad:17231824692_ph:205624864622_st:search_pt:premium_p:1_s:none_dt:desktop_reg:47_ret:205624864622_apt:none&ybaip=1&yclid=951505987308617727
+    [attrs] => {}
+    [callback_request_id] => 229911448
+    [callback_final_attempt] => 0
+    [ref] => https://ya.ru/
+    [city] => nizhniy novgorod
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 79.126.48.104
+    [sip_call_id] => bf56e077-3b22-123f-e7ab-005056be61fd
+    [callReferenceNumber] => e7f7ef9e-c07f-11f0-a656-67bf64e5467c
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAzMTc0NCwiZXhwIjoyMDc4MzkxNzQ0LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3Njk5MzB9.lA5ebqnJY1Fq_-GtoYPVFO-RoH92fODybu-ZSdHy-W-jcgwYF24VXHtphI3JDEtvLg35kAqfKktC2SD6eNtY9Q
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36
+    [sendingTimestamp] => 1763031744
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Владимир иванович
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79036073292
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-13 14:13:19 ====
+File: ct_20251113_141319_6915bd4f9fc68.json
+EntityType=lead, EntityId=436215
+dialedNumber=78314180288
+callerPhone=79036073292
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4770130
+    [changedFields] => null
+    [ctCallerId] => 9cf240729f4b1cf29a66ce7316382f75
+    [callerphone] => 79036073292
+    [phonenumber] => 78314180288
+    [subPoolName] => null
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 12
+    [waiting_time] => 12
+    [calltime] => 2025-11-13 14:10:50
+    [timestamp] => 1763032250
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => new-alldent-vn4_yandex_cpc_vsena4_sl-z_nn_k
+    [utm_content] => ad_id|17231824692|banner_id|17231824692|campaign_type|type1|campaign_id|702356941|device_type|desktop|group_id|5624864622|phrase_id|205624864622|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Новгород|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1763031585650303754
+    [sessionId] => 296525518
+    [ctClientId] => 2800000000199848038
+    [ctGlobalId] => null
+    [hostname] => alldentvsena4.ru
+    [url] => https://alldentvsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=new-alldent-vn4_yandex_cpc_vsena4_sl-z_nn_k&utm_term=---autotargeting&utm_content=ad_id|17231824692|banner_id|17231824692|campaign_type|type1|campaign_id|702356941|device_type|desktop|group_id|5624864622|phrase_id|205624864622|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Новгород|correction|0|&calltouch_tm=yd_c:702356941_gb:5624864622_ad:17231824692_ph:205624864622_st:search_pt:premium_p:1_s:none_dt:desktop_reg:47_ret:205624864622_apt:none&ybaip=1&yclid=951505987308617727
+    [attrs] => {}
+    [callback_request_id] => 229911448
+    [callback_final_attempt] => 1
+    [ref] => https://ya.ru/
+    [city] => nizhniy novgorod
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 79.126.48.104
+    [sip_call_id] => 40d8bfb2-3b24-123f-e7ab-005056be61fd
+    [callReferenceNumber] => 6979e4fe-c081-11f0-9573-67bf64e5467c
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAzMjM5NiwiZXhwIjoyMDc4MzkyMzk2LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NzAxMzB9.Jn_oJiaVbywfViDJUL3-RQhZwvtdFK_bx1I1uWtOwS67SyZXMfBVMqidev8hc3ceb8xebZyBCxgjVnZjav8U6A
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36
+    [sendingTimestamp] => 1763032396
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Владимир иванович
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79036073292
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-13 15:29:14 ====
+File: ct_20251113_152913_6915cf19def30.json
+EntityType=lead, EntityId=436390
+dialedNumber=78312660341
+callerPhone=79871138477
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4771193
+    [changedFields] => null
+    [ctCallerId] => e7dcdc821600b0f081a4dfd00470b906
+    [callerphone] => 79871138477
+    [phonenumber] => 78312660341
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 372
+    [waiting_time] => 0
+    [calltime] => 2025-11-13 15:21:00
+    [timestamp] => 1763036460
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 0e329053-3b2e-123f-ff85-0050569465cc
+    [callReferenceNumber] => 36c358f6-c08b-11f0-8da4-fb1d1dac1793
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAzNjk1MywiZXhwIjoyMDc4Mzk2OTUzLCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NzExOTN9.6oJOP1pTKmGIjAKc-H61nJEMc7kY9eRSmfRtpF4G4Z8JRphw1SdivCs_UYho-JlbwDDvwyk7pvKn50rAWmk-7w
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [sendingTimestamp] => 1763036953
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-13 18:32:06 ====
+File: ct_20251113_183206_6915f9f615e6d.json
+EntityType=lead, EntityId=436729
+dialedNumber=78314180288
+callerPhone=79659288330
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4773382
+    [changedFields] => null
+    [ctCallerId] => 7e5bf0b14ddc500087879c749dec575a
+    [callerphone] => 79659288330
+    [phonenumber] => 78314180288
+    [subPoolName] => null
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 9
+    [waiting_time] => 9
+    [calltime] => 2025-11-13 18:30:31
+    [timestamp] => 1763047831
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => new-alldent-vn4_yandex_cpc_vsena4_vse_nn_s
+    [utm_content] => ad_id|17322274705|banner_id|17322274705|campaign_type|type1|campaign_id|703688870|device_type|mobile|group_id|5654348361|phrase_id|205654348361|position|0|position_type|none|placement|ru.busti.me|placement_type|context|region_name|Нижний Новгород|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176304779082723242
+    [sessionId] => 296689794
+    [ctClientId] => 2800000000199956610
+    [ctGlobalId] => null
+    [hostname] => alldentvsena4.ru
+    [url] => https://alldentvsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=new-alldent-vn4_yandex_cpc_vsena4_vse_nn_s&utm_term=---autotargeting&utm_content=ad_id|17322274705|banner_id|17322274705|campaign_type|type1|campaign_id|703688870|device_type|mobile|group_id|5654348361|phrase_id|205654348361|position|0|position_type|none|placement|ru.busti.me|placement_type|context|region_name|Нижний Новгород|correction|0|&calltouch_tm=yd_c:703688870_gb:5654348361_ad:17322274705_ph:205654348361_st:context_pt:none_p:0_s:ru.busti.me_dt:mobile_reg:47_ret:205654348361_apt:none&yclid=1998262404804509695&ybaip=1
+    [attrs] => {}
+    [callback_request_id] => 229918411
+    [callback_final_attempt] => 0
+    [ref] => https://ru.busti.me/
+    [city] => moscow
+    [browser] => Google Search App
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 81.222.191.228
+    [sip_call_id] => 88447561-3b48-123f-e7ab-005056be61fd
+    [callReferenceNumber] => b0e5c064-c0a5-11f0-938a-67bf64e5467c
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA0NzkyNSwiZXhwIjoyMDc4NDA3OTI1LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NzMzODJ9.fu3i10y3hiW6c4Eiowf7UGI2t_7hTG0d9PgXUi-jXcfaKBs07VbZWhBqHwRA58_UqrKPSinkLZXBYWBvXozFpQ
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 15_8_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/388.0.811331708 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1763047925
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Гузель 
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79659288330
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-13 18:43:05 ====
+File: ct_20251113_184305_6915fc894050c.json
+EntityType=lead, EntityId=436729
+dialedNumber=78314180288
+callerPhone=79659288330
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 4773466
+    [changedFields] => null
+    [ctCallerId] => 7e5bf0b14ddc500087879c749dec575a
+    [callerphone] => 79659288330
+    [phonenumber] => 78314180288
+    [subPoolName] => null
+    [redirectNumber] => sip:nino_per_lead@nino.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 33
+    [waiting_time] => 25
+    [calltime] => 2025-11-13 18:41:07
+    [timestamp] => 1763048467
+    [status] => successful
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_n
+    [medium] => cpc
+    [utm_source] => yandex_n
+    [utm_medium] => cpc
+    [utm_campaign] => new-alldent-vn4_yandex_cpc_vsena4_vse_nn_s
+    [utm_content] => ad_id|17322274705|banner_id|17322274705|campaign_type|type1|campaign_id|703688870|device_type|mobile|group_id|5654348361|phrase_id|205654348361|position|0|position_type|none|placement|ru.busti.me|placement_type|context|region_name|Нижний Новгород|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176304779082723242
+    [sessionId] => 296689794
+    [ctClientId] => 2800000000199956610
+    [ctGlobalId] => null
+    [hostname] => alldentvsena4.ru
+    [url] => https://alldentvsena4.ru/?utm_source=yandex_n&utm_medium=cpc&utm_campaign=new-alldent-vn4_yandex_cpc_vsena4_vse_nn_s&utm_term=---autotargeting&utm_content=ad_id|17322274705|banner_id|17322274705|campaign_type|type1|campaign_id|703688870|device_type|mobile|group_id|5654348361|phrase_id|205654348361|position|0|position_type|none|placement|ru.busti.me|placement_type|context|region_name|Нижний Новгород|correction|0|&calltouch_tm=yd_c:703688870_gb:5654348361_ad:17322274705_ph:205654348361_st:context_pt:none_p:0_s:ru.busti.me_dt:mobile_reg:47_ret:205654348361_apt:none&yclid=1998262404804509695&ybaip=1
+    [attrs] => {}
+    [callback_request_id] => 229918411
+    [callback_final_attempt] => 1
+    [ref] => https://ru.busti.me/
+    [city] => moscow
+    [browser] => Google Search App
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 81.222.191.228
+    [sip_call_id] => 02e2e186-3b4a-123f-e7ab-005056be61fd
+    [callReferenceNumber] => 2b84139c-c0a7-11f0-af36-67bf64e5467c
+    [reclink] => https://api-node28.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA0ODU4NCwiZXhwIjoyMDc4NDA4NTg0LCJzaXRlSWQiOjY4OTIzLCJjYWxsSWQiOjQ3NzM0NjZ9.pbp6SRNv4shSXXi-TfnmuPkLTcQsaz13ufR1i5V1i6quQc2hlvGVJmBdJ7KGYW8Yn7Ut0ESxx173eZTUhxN9Aw
+    [orderId] => null
+    [siteId] => 68923
+    [siteName] => alldent-vsena4.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 15_8_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/388.0.811331708 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1763048584
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Гузель 
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79659288330
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+

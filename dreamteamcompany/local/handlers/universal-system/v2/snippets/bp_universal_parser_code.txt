@@ -1,0 +1,265 @@
+$blockName = 'bp_universal_parser_code';
+$this->WriteToTrackingService('[' . $blockName . '] start');
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+$blankVars = [
+    'CB_UTM_SOURCE', 'CB_UTM_MEDIUM', 'CB_UTM_CAMPAIGN', 'CB_UTM_CONTENT', 'CB_UTM_TERM',
+    'CB_TITLE', 'CB_LEAD_TITLE', 'CB_PHONE', 'CB_NAME', 'CB_LAST_NAME', 'CB_SECOND_NAME',
+    'CB_DOMAIN', 'CB_COMMENT', 'CB_SOURCE_DESCRIPTION', 'CB_OPENED', 'CB_STATUS_ID',
+    'CB_RESULT', 'CB_ERROR_MSG',
+    'CB_ASSIGNED_BY_ID', 'CB_ASSIGNED_BY_EMAIL', 'CB_ASSIGNED_BY_PERSONAL_MOBILE', 'CB_ASSIGNED_BY_WORK_PHONE',
+    'CB_SOURCE_ID', 'CB_TRACKING_SOURCE_ID', 'CB_OBSERVER_IDS', 'CB_CITY_ID', 'CB_ISPOLNITEL', 'CB_INFOPOVOD'
+];
+
+try {
+    $rawJson = (string)$this->GetVariable('CB_RAW_JSON');
+    $rawJson = trim((string)preg_replace('/^\xEF\xBB\xBF/', '', $rawJson));
+
+    foreach ($blankVars as $name) {
+        $setVar($name, '');
+    }
+
+    if ($rawJson === '') {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'RAW_DATA пуст');
+        $log('[' . $blockName . '] RAW_DATA пуст');
+        return;
+    }
+
+    $jsonFlags = defined('JSON_INVALID_UTF8_SUBSTITUTE') ? JSON_INVALID_UTF8_SUBSTITUTE : 0;
+    if (defined('JSON_BIGINT_AS_STRING')) {
+        $jsonFlags |= JSON_BIGINT_AS_STRING;
+    }
+
+    $data = json_decode($rawJson, true, 512, $jsonFlags);
+    if (!is_array($data)) {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'Невалидный JSON в RAW_DATA: ' . json_last_error_msg());
+        $log('[' . $blockName . '] невалидный JSON');
+        return;
+    }
+
+    $recognized = false;
+    if (array_key_exists('parsed_data', $data)) {
+        $recognized = true;
+    }
+    if (!empty($data['raw_body']) && is_string($data['raw_body'])) {
+        $recognized = true;
+    }
+    if (!empty($data['raw_headers']) && is_array($data['raw_headers'])) {
+        $recognized = true;
+    }
+    if (!empty($data['source_domain']) && is_string($data['source_domain'])) {
+        $recognized = true;
+    }
+    foreach (['Phone', 'phone', 'PHONE', 'callerphone', 'utm_source'] as $k) {
+        if (!empty($data[$k])) {
+            $recognized = true;
+        }
+    }
+    if (isset($data['contacts']) && is_array($data['contacts']) && $data['contacts'] !== []) {
+        $recognized = true;
+    }
+
+    if (!$recognized) {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', '');
+        $log('[' . $blockName . '] стандартный конверт не распознан');
+        return;
+    }
+
+    $rawHeaders = isset($data['raw_headers']) && is_array($data['raw_headers']) ? $data['raw_headers'] : [];
+    $rawBody = (string)($data['raw_body'] ?? '');
+    $contentType = (string)($rawHeaders['CONTENT_TYPE'] ?? '');
+
+    if (array_key_exists('parsed_data', $data)) {
+        $pd = $data['parsed_data'];
+        if (is_array($pd)) {
+            $parsedData = $pd;
+        } elseif (is_string($pd) && $pd !== '') {
+            $parsedData = json_decode($pd, true, 512, $jsonFlags);
+            $parsedData = is_array($parsedData) ? $parsedData : [];
+        } else {
+            $parsedData = [];
+        }
+    } else {
+        $parsedData = $data;
+    }
+
+    $isFormUrlencoded = stripos($contentType, 'application/x-www-form-urlencoded') !== false;
+    $looksLikeQueryBody = $rawBody !== '' && preg_match('/[^=&]+=/', $rawBody);
+    if ($rawBody !== '' && ($isFormUrlencoded || ($contentType === '' && $looksLikeQueryBody))) {
+        $reparsed = [];
+        parse_str($rawBody, $reparsed);
+        if (is_array($reparsed)) {
+            foreach ($reparsed as $k => $v) {
+                $parsedData[$k] = $v;
+            }
+        }
+    }
+
+    if (is_array($parsedData)) {
+        array_walk_recursive($parsedData, function (&$value) {
+            if (is_string($value)) {
+                $value = html_entity_decode($value, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            }
+        });
+    } else {
+        $parsedData = [];
+    }
+
+    $domain = (string)($data['source_domain'] ?? ($parsedData['source_domain'] ?? 'unknown'));
+
+    $phone = '';
+    foreach (['Phone', 'phone', 'PHONE'] as $f) {
+        if (!empty($parsedData[$f])) {
+            $phone = (string)$parsedData[$f];
+            break;
+        }
+    }
+    if ($phone === '' && !empty($parsedData['contacts']['phone'])) {
+        $phone = (string)$parsedData['contacts']['phone'];
+    }
+    if ($phone === '' && !empty($parsedData['callerphone'])) {
+        $phone = (string)$parsedData['callerphone'];
+    }
+    if ($phone === '' && !empty($rawHeaders['QUERY_STRING'])) {
+        $qs = urldecode((string)$rawHeaders['QUERY_STRING']);
+        if (preg_match('/fields\[PHONE\]\[0\]\[VALUE\]=([^&]+)/', $qs, $m)) {
+            $phone = urldecode($m[1]);
+        }
+    }
+    if ($phone === '') {
+        foreach ($parsedData as $k => $v) {
+            if (is_string($v) && $v !== '' && preg_match('/^phone/i', (string)$k)) {
+                $phone = $v;
+                break;
+            }
+        }
+    }
+
+    $cleanPhone = preg_replace('/\D+/', '', $phone);
+    if (strlen($cleanPhone) === 11 && $cleanPhone[0] === '8') {
+        $cleanPhone = '7' . substr($cleanPhone, 1);
+    }
+    if (strlen($cleanPhone) === 10) {
+        $cleanPhone = '7' . $cleanPhone;
+    }
+    if (strlen($cleanPhone) >= 11 && $cleanPhone[0] === '7') {
+        $phone = '+' . $cleanPhone;
+    } elseif ($cleanPhone !== '') {
+        $phone = '+' . $cleanPhone;
+    }
+
+    $name = '';
+    foreach (['name', 'Name', 'NAME', 'fio', 'FIO', 'fullname'] as $f) {
+        if (!empty($parsedData[$f]) && $parsedData[$f] !== 'Неизвестно') {
+            $val = trim((string)$parsedData[$f]);
+            if (strlen($val) < 100 && !preg_match('/^\d+$/', $val)) {
+                $name = $val;
+                break;
+            }
+        }
+    }
+    if ($name === '' && !empty($parsedData['contacts']['name'])) {
+        $name = trim((string)$parsedData['contacts']['name']);
+    }
+
+    foreach (['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'] as $uf) {
+        $setVar('CB_' . strtoupper($uf), (string)($parsedData[$uf] ?? ''));
+    }
+
+    $excludeKeys = [
+        'phone', 'Phone', 'PHONE', 'name', 'Name', 'NAME', 'source_domain',
+        'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
+        'rawBody', 'raw_body', 'raw_headers', 'parsed_data',
+        'contacts', 'extra', '__submission', 'ASSIGNED_BY_ID', 'callerphone'
+    ];
+    $commentLines = [];
+
+    if (!empty($parsedData['answers']) && is_array($parsedData['answers'])) {
+        foreach ($parsedData['answers'] as $item) {
+            $q = $item['q'] ?? '';
+            $a = $item['a'] ?? '';
+            if (is_array($a)) {
+                $a = implode(', ', $a);
+            }
+            $q = strip_tags(trim((string)$q));
+            $a = strip_tags(trim((string)$a));
+            if ($q !== '' && $a !== '') {
+                $commentLines[] = $q . ': ' . $a;
+            }
+        }
+    } else {
+        foreach ($parsedData as $k => $v) {
+            if (in_array($k, $excludeKeys, true)) {
+                continue;
+            }
+            if (is_string($v) && $v !== '' && strlen($v) < 500) {
+                $commentLines[] = str_replace('_', ' ', (string)$k) . ': ' . strip_tags(trim($v));
+            }
+        }
+    }
+    $comment = implode("\n", $commentLines);
+
+    $lastName = '';
+    foreach (['last_name', 'surname', 'lastName', 'LAST_NAME'] as $f) {
+        if (!empty($parsedData[$f])) {
+            $lastName = trim((string)$parsedData[$f]);
+            break;
+        }
+    }
+
+    $secondName = '';
+    foreach (['second_name', 'middle_name', 'patronymic', 'otchestvo', 'SECOND_NAME'] as $f) {
+        if (!empty($parsedData[$f])) {
+            $secondName = trim((string)$parsedData[$f]);
+            break;
+        }
+    }
+
+    $isCallTouch = isset($parsedData['callerphone']) || isset($parsedData['subPoolName']) || isset($parsedData['siteId']);
+    $sourceType = $isCallTouch ? 'calltouch' : 'web';
+    $leadTitle = (($sourceType === 'calltouch') ? 'Звонок' : 'Лид') . ' с сайта [' . $domain . ']';
+    $sourceDescription = ($sourceType === 'calltouch') ? 'CallTouch' : ('Сайт: ' . $domain);
+
+    $setVar('CB_TITLE', $sourceType);
+    $setVar('CB_LEAD_TITLE', $leadTitle);
+    $setVar('CB_PHONE', $phone);
+    $setVar('CB_NAME', $name);
+    $setVar('CB_LAST_NAME', $lastName);
+    $setVar('CB_SECOND_NAME', $secondName);
+    $setVar('CB_DOMAIN', $domain);
+    $setVar('CB_COMMENT', $comment);
+    $setVar('CB_SOURCE_DESCRIPTION', $sourceDescription);
+    $setVar('CB_OPENED', 'Y');
+    $setVar('CB_STATUS_ID', 'NEW');
+    $setVar('CB_RESULT', 'parsed');
+    $setVar('CB_ERROR_MSG', '');
+
+    $setVar('CB_ASSIGNED_BY_ID', (string)($parsedData['ASSIGNED_BY_ID'] ?? $parsedData['assigned_by_id'] ?? ''));
+    $setVar('CB_ASSIGNED_BY_EMAIL', (string)($parsedData['ASSIGNED_BY_EMAIL'] ?? $parsedData['assigned_by_email'] ?? ''));
+    $setVar('CB_ASSIGNED_BY_PERSONAL_MOBILE', (string)($parsedData['ASSIGNED_BY_PERSONAL_MOBILE'] ?? $parsedData['assigned_by_personal_mobile'] ?? ''));
+    $setVar('CB_ASSIGNED_BY_WORK_PHONE', (string)($parsedData['ASSIGNED_BY_WORK_PHONE'] ?? $parsedData['assigned_by_work_phone'] ?? ''));
+    $setVar('CB_SOURCE_ID', (string)($parsedData['SOURCE_ID'] ?? $parsedData['source_id'] ?? ''));
+    $setVar('CB_TRACKING_SOURCE_ID', (string)($parsedData['TRACKING_SOURCE_ID'] ?? $parsedData['tracking_source_id'] ?? ''));
+    $setVar('CB_OBSERVER_IDS', (string)($parsedData['OBSERVER_IDS'] ?? $parsedData['observer_ids'] ?? ''));
+    $setVar('CB_CITY_ID', (string)($parsedData['UF_CRM_1773161068'] ?? $parsedData['UF_CRM_1744362815'] ?? $parsedData['city'] ?? ''));
+    $setVar('CB_ISPOLNITEL', (string)($parsedData['UF_CRM_LEAD_1761829560855'] ?? $parsedData['UF_CRM_1745957138'] ?? $parsedData['ispolnitel'] ?? ''));
+    $setVar('CB_INFOPOVOD', (string)($parsedData['UF_CRM_1754927102'] ?? $parsedData['infopovod'] ?? ''));
+
+    $log('[' . $blockName . '] parsed | phone=' . $phone . ' | name=' . $name . ' | domain=' . $domain);
+} catch (\Throwable $e) {
+    $setVar('CB_RESULT', 'not parsed');
+    $setVar('CB_ERROR_MSG', 'Parse error: ' . $e->getMessage());
+    $this->WriteToTrackingService('[' . $blockName . '] exception: ' . $e->getMessage());
+}

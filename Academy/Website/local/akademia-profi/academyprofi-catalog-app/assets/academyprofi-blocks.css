@@ -1,0 +1,520 @@
+.ap-block {
+  font-family: Roboto, Arial, sans-serif;
+  color: #f2f2f2;
+}
+
+:where(.ap-search__container) {
+  background: linear-gradient(to bottom, #eeeff1, #4a4a4a);
+  padding: 30px 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #404040;
+}
+
+:where(.ap-catalog__container):not([class*="g-bg-"]):not([class*="g-bg-img"]) {
+  background: linear-gradient(135deg, rgba(87, 217, 144, 0.3), rgba(74, 74, 74, 0.3));
+}
+
+:where(.ap-catalog__container) {
+  padding: 30px 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #404040;
+}
+
+:where(.ap-catalog__wrapper) {
+  width: 100%;
+  max-width: none;
+  padding: 0 20px;
+}
+
+:where(.ap-catalog__inner) {
+  --ap-catalog-gap: 18px;
+  --ap-card-height: 168px;
+  padding: var(--ap-catalog-gap);
+}
+
+:where(.ap-detail__container):not([class*="g-bg-"]):not([class*="g-bg-img"]) {
+  background: #f2f2f2;
+}
+
+:where(.ap-detail__container) {
+  padding: 30px 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #404040;
+}
+
+:where(.ap-detail__wrapper) {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+:where(.ap-search__wrapper) {
+  width: 100%;
+  max-width: none;
+  padding: 0 20px;
+}
+
+.ap-search__form {
+  width: 100%;
+}
+
+:where(.ap-search__row) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.ap-search__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.ap-search__row:focus-within .ap-search__icon {
+  color: #57d990;
+}
+
+:where(.ap-search__input-container) {
+  flex: 1 1 360px;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+
+:where(.ap-search__input) {
+  flex-grow: 1;
+  padding: 11px 20px 11px 45px;
+  border: none;
+  border-radius: inherit;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  height: 44px;
+  box-sizing: border-box;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+:where(.ap-search__row):focus-within :where(.ap-search__input) {
+  background-color: #ffffff;
+  border-color: #57d990;
+  box-shadow: 0 2px 12px rgba(87, 217, 144, 0.4);
+}
+
+:where(.ap-search__button) {
+  /* may be overridden by Bitrix .btn; real centering rule below */
+  overflow: hidden;
+  border-radius: 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  min-height: 44px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  min-width: 90px;
+  flex-shrink: 0;
+  text-decoration: none;
+  width: auto;
+  font: inherit;
+}
+
+/* Ensure vertical centering even when Bitrix overrides .btn display */
+.ap-search .ap-search__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+/* Defaults only (Bitrix may override with classes/styles) */
+:where(.ap-search__button):not([class*="g-btn-"]) {
+  background: linear-gradient(to right, #57d990, #4acd82);
+  border: none;
+  padding: 0 28px;
+}
+
+:where(.ap-search__button):not([class*="g-color-"]) { color: #000; }
+
+/* Default input-container visuals (Bitrix classes will override) */
+:where(.ap-search__input-container):not([class*="g-bg-"]) {
+  background-color: #eeeff1;
+}
+
+:where(.ap-search__input-container):not([class*="g-brd-"]) {
+  border: 1px solid #ccc;
+}
+
+:where(.ap-search__input-container):not([class*="g-color-"]) {
+  color: #333;
+}
+
+:where(.ap-search__input)::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* If editor sets full-width on button/container, keep layout sane */
+:where(.ap-search__button.w-100) {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+:where(.ap-search__button.w-100) {
+  width: 100%;
+}
+
+:where(.ap-search__button:hover) {
+  background: linear-gradient(to right, #4acd82, #3ec174);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+:where(.ap-search__button:active) {
+  transform: translateY(0);
+}
+
+.ap-search__dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 10px);
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: rgba(238, 239, 241, 0.98);
+  max-height: 320px;
+  overflow: auto;
+  z-index: 9999;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.ap-search__item {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+
+.ap-search__item:hover {
+  background: rgba(87, 217, 144, 0.15);
+}
+
+.ap-search__item:last-child {
+  border-bottom: none;
+}
+
+@keyframes ap-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.ap-search__input.ap-is-shaking {
+  animation: ap-shake 0.5s;
+}
+
+.ap-catalog__grid {
+  display: grid;
+  gap: var(--ap-catalog-gap, 18px);
+}
+
+.ap-catalog.ap-cols-5 .ap-catalog__grid {
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+}
+
+.ap-catalog.ap-cols-3 .ap-catalog__grid {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .ap-catalog.ap-cols-5 .ap-catalog__grid {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+  .ap-catalog.ap-cols-3 .ap-catalog__grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .ap-catalog.ap-cols-5 .ap-catalog__grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+  .ap-catalog.ap-cols-3 .ap-catalog__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .ap-catalog.ap-cols-5 .ap-catalog__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ap-card {
+  border: 2px solid #808080;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  height: var(--ap-card-height, 168px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ap-card:hover {
+  box-shadow: 0 0 0 2px #57d990 inset;
+}
+
+.ap-card__name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.ap-card__meta {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  opacity: 0.95;
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.ap-catalog__pager {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ap-catalog__total {
+  flex-basis: 100%;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.ap-page {
+  border: 2px solid transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.ap-page.is-active {
+  border-color: #57d990;
+}
+
+.ap-page:hover {
+  text-decoration: underline;
+}
+
+:where(.ap-detail__inner) {
+  padding: 16px;
+  color: #4a4a4a;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.ap-detail__empty {
+  padding: 16px;
+  color: #4a4a4a;
+  font-family: Roboto, Arial, sans-serif;
+  opacity: 0.8;
+}
+
+:where(.ap-detail__inner):not([class*="g-bg-"]) {
+  background: transparent;
+}
+
+:where(.ap-detail__inner):not([class*="g-brd-"]) {
+  border: none;
+}
+
+.ap-detail__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.ap-detail__title {
+  font-size: 30px;
+  font-weight: 700;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ap-detail__price {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ap-detail__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.ap-detail__service-type {
+  margin-top: 8px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.ap-detail__grid {
+  margin-top: 14px;
+}
+
+.ap-detail__fields-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 6px 24px;
+}
+
+.ap-detail__fields-row--labels {
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.ap-detail__fields-row--values {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.ap-detail__field-cell {
+  min-width: 0;
+}
+
+/* Force correct weights even if Bitrix styles leak in */
+.ap-detail__fields-row--labels .ap-detail__field-cell {
+  font-weight: 700;
+}
+
+.ap-detail__fields-row--values .ap-detail__field-cell {
+  font-weight: 400;
+}
+
+.ap-detail__sections {
+  /* Larger spacing between top fields (ID/...) and lower sections */
+  margin-top: 28px;
+  display: grid;
+  /* Move right section ("Образование") a bit left (closer to "Объем курса") */
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .ap-detail__sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ap-detail__section {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ap-detail__section-title {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.ap-detail__section-empty {
+  opacity: 0.7;
+}
+
+.ap-detail__section-value {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* sections are laid out by .ap-detail__sections */
+
+.ap-detail__requirements ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.ap-detail__requirements li {
+  margin-top: 6px;
+}
+
+.ap-detail__requirements li::before {
+  content: "- ";
+}
+
+:where(.ap-detail__cta) {
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/* Keep CTA vertically centered */
+.ap-detail .ap-detail__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Defaults only (Bitrix may override with classes/styles) */
+:where(.ap-detail__cta):not([class*="g-btn-"]) {
+  background: #e6e6e6;
+  border: none;
+  padding: 12px 28px;
+}
+
+/* Default "shorter" CTA (only if editor didn't set g-btn-px-*) */
+:where(.ap-detail__cta):not([class*="g-btn-px-"]) {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+:where(.ap-detail__cta):not([class*="g-color-"]) {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.ap-detail__cta:hover {
+  filter: brightness(0.95);
+}
+

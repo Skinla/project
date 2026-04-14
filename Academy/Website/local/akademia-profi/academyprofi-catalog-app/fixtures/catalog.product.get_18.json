@@ -1,0 +1,21 @@
+{
+  "result": {
+    "product": {
+      "id": 18,
+      "iblockId": 14,
+      "name": "Жестянщик 2 (второго) разряда",
+      "code": "zhestyanshchik_2_vtorogo_razryada",
+      "iblockSectionId": 40,
+      "property106": { "valueEnum": "Рабочие профессии, должности служащих" },
+      "property112": { "value": "360" },
+      "property114": { "value": "Бессрочно" },
+      "property116": { "value": "45" },
+      "property122": { "value": "ФИС ФРДО" },
+      "property124": { "value": "Очно/Очно-заочно" },
+      "property126": { "value": "Паспорт\nСНИЛС\nДокумент об образовании\nФотография 3x4\nЭл. почта" },
+      "property128": { "value": "Среднее общее (школа)" },
+      "property152": { "value": "5000|RUB" }
+    }
+  }
+}
+

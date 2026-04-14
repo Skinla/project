@@ -1,0 +1,2877 @@
+{
+  "slug": "sp-1074",
+  "kind": "smart_process",
+  "entity": "items",
+  "title": "+Реестр приказов",
+  "subtitle": "Смарт-процесс \"+Реестр приказов\": воронки, стадии, поля и значения списочных полей.",
+  "stageTitle": "Воронки и стадии",
+  "stageSubtitle": "Стадии смарт-процесса без разделения по воронкам.",
+  "portal": "bitrix.tms.net.ru",
+  "source": "box",
+  "sourceTitle": "Коробка",
+  "entities": [
+    {
+      "slug": "leads",
+      "title": "Лиды",
+      "kind": "base"
+    },
+    {
+      "slug": "deals",
+      "title": "Сделки",
+      "kind": "base"
+    },
+    {
+      "slug": "invoices",
+      "title": "Счета",
+      "kind": "base"
+    },
+    {
+      "slug": "contacts",
+      "title": "Контакты",
+      "kind": "base"
+    },
+    {
+      "slug": "companies",
+      "title": "Компании",
+      "kind": "base"
+    },
+    {
+      "slug": "quotes",
+      "title": "Предложения",
+      "kind": "base"
+    },
+    {
+      "slug": "sp-1058",
+      "title": "+Входящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1090",
+      "title": "+Договора от партнеров",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1082",
+      "title": "+Договоры с заказчиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1042",
+      "title": "+Договоры с поставщиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1070",
+      "title": "+Документы по договорам",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1102",
+      "title": "+Заявка на закупку",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1110",
+      "title": "+Заявка на ресурс",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1078",
+      "title": "+Заявка на транспорт",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1050",
+      "title": "+Заявки в IT-службу",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1066",
+      "title": "+Исходящие (бухгалтерия)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1062",
+      "title": "+Исходящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1054",
+      "title": "+Материалы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1046",
+      "title": "+Наименование работ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1114",
+      "title": "+Объекты",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1074",
+      "title": "+Реестр приказов",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1086",
+      "title": "+Реестр чертежей",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1098",
+      "title": "+Склады",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1106",
+      "title": "+Собственные ресурсы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1094",
+      "title": "+Сотрудники (с/п)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1038",
+      "title": "+Счета от поставщиков",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1118",
+      "title": "+Участки",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-36",
+      "title": "Документ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-39",
+      "title": "Документ компании",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "bp-templates",
+      "title": "Шаблоны БП",
+      "kind": "bizproc_registry"
+    }
+  ],
+  "stageGroups": [
+    {
+      "id": "sp-1074",
+      "title": "Стадии",
+      "code": "DYNAMIC_1074_STAGE_17",
+      "entityId": "DYNAMIC_1074_STAGE_17",
+      "stageCount": 5,
+      "stages": [
+        {
+          "id": "280",
+          "entityId": "DYNAMIC_1074_STAGE_17",
+          "code": "DT1074_17:NEW",
+          "name": "Начало",
+          "sort": 10,
+          "color": "#22B9FF",
+          "semantic": null,
+          "isSystem": true,
+          "raw": {
+            "id": "280",
+            "entityId": "DYNAMIC_1074_STAGE_17",
+            "statusId": "DT1074_17:NEW",
+            "name": "Начало",
+            "nameInit": "Начало",
+            "sort": 10,
+            "color": "#22B9FF",
+            "semantics": null,
+            "SYSTEM": "Y",
+            "CATEGORY_ID": "17"
+          }
+        },
+        {
+          "id": "281",
+          "entityId": "DYNAMIC_1074_STAGE_17",
+          "code": "DT1074_17:PREPARATION",
+          "name": "Подготовка",
+          "sort": 20,
+          "color": "#88B9FF",
+          "semantic": null,
+          "isSystem": false,
+          "raw": {
+            "id": "281",
+            "entityId": "DYNAMIC_1074_STAGE_17",
+            "statusId": "DT1074_17:PREPARATION",
+            "name": "Подготовка",
+            "nameInit": "Подготовка",
+            "sort": 20,
+            "color": "#88B9FF",
+            "semantics": null,
+            "SYSTEM": "N",
+            "CATEGORY_ID": "17"
+          }
+        },
+        {
+          "id": "282",
+          "entityId": "DYNAMIC_1074_STAGE_17",
+          "code": "DT1074_17:CLIENT",
+          "name": "Согласование",
+          "sort": 30,
+          "color": "#10e5fc",
+          "semantic": null,
+          "isSystem": false,
+          "raw": {
+            "id": "282",
+            "entityId": "DYNAMIC_1074_STAGE_17",
+            "statusId": "DT1074_17:CLIENT",
+            "name": "Согласование",
+            "nameInit": "Согласование",
+            "sort": 30,
+            "color": "#10e5fc",
+            "semantics": null,
+            "SYSTEM": "N",
+            "CATEGORY_ID": "17"
+          }
+        },
+        {
+          "id": "283",
+          "entityId": "DYNAMIC_1074_STAGE_17",
+          "code": "DT1074_17:SUCCESS",
+          "name": "Успех",
+          "sort": 40,
+          "color": "#00ff00",
+          "semantic": "S",
+          "isSystem": true,
+          "raw": {
+            "id": "283",
+            "entityId": "DYNAMIC_1074_STAGE_17",
+            "statusId": "DT1074_17:SUCCESS",
+            "name": "Успех",
+            "nameInit": "Успех",
+            "sort": 40,
+            "color": "#00ff00",
+            "semantics": "S",
+            "SYSTEM": "Y",
+            "CATEGORY_ID": "17"
+          }
+        },
+        {
+          "id": "284",
+          "entityId": "DYNAMIC_1074_STAGE_17",
+          "code": "DT1074_17:FAIL",
+          "name": "Провал",
+          "sort": 50,
+          "color": "#ff0000",
+          "semantic": "F",
+          "isSystem": true,
+          "raw": {
+            "id": "284",
+            "entityId": "DYNAMIC_1074_STAGE_17",
+            "statusId": "DT1074_17:FAIL",
+            "name": "Провал",
+            "nameInit": "Провал",
+            "sort": 50,
+            "color": "#ff0000",
+            "semantics": "F",
+            "SYSTEM": "Y",
+            "CATEGORY_ID": "17"
+          }
+        }
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "280",
+      "entityId": "DYNAMIC_1074_STAGE_17",
+      "code": "DT1074_17:NEW",
+      "name": "Начало",
+      "sort": 10,
+      "color": "#22B9FF",
+      "semantic": null,
+      "isSystem": true,
+      "raw": {
+        "id": "280",
+        "entityId": "DYNAMIC_1074_STAGE_17",
+        "statusId": "DT1074_17:NEW",
+        "name": "Начало",
+        "nameInit": "Начало",
+        "sort": 10,
+        "color": "#22B9FF",
+        "semantics": null,
+        "SYSTEM": "Y",
+        "CATEGORY_ID": "17"
+      }
+    },
+    {
+      "id": "281",
+      "entityId": "DYNAMIC_1074_STAGE_17",
+      "code": "DT1074_17:PREPARATION",
+      "name": "Подготовка",
+      "sort": 20,
+      "color": "#88B9FF",
+      "semantic": null,
+      "isSystem": false,
+      "raw": {
+        "id": "281",
+        "entityId": "DYNAMIC_1074_STAGE_17",
+        "statusId": "DT1074_17:PREPARATION",
+        "name": "Подготовка",
+        "nameInit": "Подготовка",
+        "sort": 20,
+        "color": "#88B9FF",
+        "semantics": null,
+        "SYSTEM": "N",
+        "CATEGORY_ID": "17"
+      }
+    },
+    {
+      "id": "282",
+      "entityId": "DYNAMIC_1074_STAGE_17",
+      "code": "DT1074_17:CLIENT",
+      "name": "Согласование",
+      "sort": 30,
+      "color": "#10e5fc",
+      "semantic": null,
+      "isSystem": false,
+      "raw": {
+        "id": "282",
+        "entityId": "DYNAMIC_1074_STAGE_17",
+        "statusId": "DT1074_17:CLIENT",
+        "name": "Согласование",
+        "nameInit": "Согласование",
+        "sort": 30,
+        "color": "#10e5fc",
+        "semantics": null,
+        "SYSTEM": "N",
+        "CATEGORY_ID": "17"
+      }
+    },
+    {
+      "id": "283",
+      "entityId": "DYNAMIC_1074_STAGE_17",
+      "code": "DT1074_17:SUCCESS",
+      "name": "Успех",
+      "sort": 40,
+      "color": "#00ff00",
+      "semantic": "S",
+      "isSystem": true,
+      "raw": {
+        "id": "283",
+        "entityId": "DYNAMIC_1074_STAGE_17",
+        "statusId": "DT1074_17:SUCCESS",
+        "name": "Успех",
+        "nameInit": "Успех",
+        "sort": 40,
+        "color": "#00ff00",
+        "semantics": "S",
+        "SYSTEM": "Y",
+        "CATEGORY_ID": "17"
+      }
+    },
+    {
+      "id": "284",
+      "entityId": "DYNAMIC_1074_STAGE_17",
+      "code": "DT1074_17:FAIL",
+      "name": "Провал",
+      "sort": 50,
+      "color": "#ff0000",
+      "semantic": "F",
+      "isSystem": true,
+      "raw": {
+        "id": "284",
+        "entityId": "DYNAMIC_1074_STAGE_17",
+        "statusId": "DT1074_17:FAIL",
+        "name": "Провал",
+        "nameInit": "Провал",
+        "sort": 50,
+        "color": "#ff0000",
+        "semantics": "F",
+        "SYSTEM": "Y",
+        "CATEGORY_ID": "17"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "code": "ID",
+      "title": "ID",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ID",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "ID"
+        }
+      }
+    },
+    {
+      "code": "LAST_ACTIVITY_BY",
+      "title": "Автор последней активности в таймлайне",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Автор последней активности в таймлайне",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "Автор последней активности в таймлайне"
+        }
+      }
+    },
+    {
+      "code": "XML_ID",
+      "title": "Внешний код",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Внешний код",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Внешний код"
+        }
+      }
+    },
+    {
+      "code": "CATEGORY_ID",
+      "title": "Воронка",
+      "type": "crm_category",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [
+        {
+          "code": "DYNAMIC_1074_STAGE_17",
+          "name": "Стадии"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Воронка",
+        "type": "crm_category",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "crm_category",
+          "ATTRIBUTES": [
+            "N-D",
+            "HAS_DEFAULT_VALUE"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Category",
+          "TITLE": "Воронка"
+        }
+      }
+    },
+    {
+      "code": "MOVED_TIME",
+      "title": "Дата изменения стадии",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата изменения стадии",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\MovedTime",
+          "TITLE": "Дата изменения стадии"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_EMAIL_TIME",
+      "title": "Дата последнего e-mail",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего e-mail",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего e-mail"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_IMOL_TIME",
+      "title": "Дата последнего диалога в открытой линии",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего диалога в открытой линии",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего диалога в открытой линии"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_WEBFORM_TIME",
+      "title": "Дата последнего заполнения CRM-формы",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего заполнения CRM-формы",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего заполнения CRM-формы"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_CALL_TIME",
+      "title": "Дата последнего звонка",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего звонка",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего звонка"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_TIME",
+      "title": "Дата последней коммуникации",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последней коммуникации",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Дата последней коммуникации"
+        }
+      }
+    },
+    {
+      "code": "OPENED",
+      "title": "Доступно для всех",
+      "type": "boolean",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Доступно для всех",
+        "type": "boolean",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "boolean",
+          "ATTRIBUTES": [
+            "REQ"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Opened",
+          "TITLE": "Доступно для всех"
+        }
+      }
+    },
+    {
+      "code": "UPDATED_BY",
+      "title": "Кем обновлён",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кем обновлён",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\UpdatedBy",
+          "TITLE": "Кем обновлён"
+        }
+      }
+    },
+    {
+      "code": "CREATED_BY",
+      "title": "Кем создан",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кем создан",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\CreatedBy",
+          "TITLE": "Кем создан"
+        }
+      }
+    },
+    {
+      "code": "UPDATED_TIME",
+      "title": "Когда обновлён",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Когда обновлён",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\UpdatedTime",
+          "TITLE": "Когда обновлён"
+        }
+      }
+    },
+    {
+      "code": "CREATED_TIME",
+      "title": "Когда создан",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Когда создан",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\CreatedTime",
+          "TITLE": "Когда создан"
+        }
+      }
+    },
+    {
+      "code": "MOVED_BY",
+      "title": "Кто изменил стадию",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кто изменил стадию",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\MovedBy",
+          "TITLE": "Кто изменил стадию"
+        }
+      }
+    },
+    {
+      "code": "TITLE",
+      "title": "Название",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Название",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "HAS_DEFAULT_VALUE",
+            "CAN_NOT_BE_EMPTIED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Title",
+          "TITLE": "Название"
+        }
+      }
+    },
+    {
+      "code": "ASSIGNED_BY_ID",
+      "title": "Ответственный",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Ответственный",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "CAN_NOT_BE_EMPTIED",
+            "HAS_DEFAULT_VALUE"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Assigned",
+          "TITLE": "Ответственный"
+        }
+      }
+    },
+    {
+      "code": "LAST_ACTIVITY_TIME",
+      "title": "Последняя активность",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Последняя активность",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\LastActivityTime",
+          "TITLE": "Последняя активность"
+        }
+      }
+    },
+    {
+      "code": "PREVIOUS_STAGE_ID",
+      "title": "Предыдущая стадия",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": "DYNAMIC_1074_STAGE_17",
+      "options": [
+        {
+          "code": "DT1074_17:NEW",
+          "name": "Начало"
+        },
+        {
+          "code": "DT1074_17:PREPARATION",
+          "name": "Подготовка"
+        },
+        {
+          "code": "DT1074_17:FAIL",
+          "name": "Провал"
+        },
+        {
+          "code": "DT1074_17:CLIENT",
+          "name": "Согласование"
+        },
+        {
+          "code": "DT1074_17:SUCCESS",
+          "name": "Успех"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Предыдущая стадия",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": "DYNAMIC_1074_STAGE_17",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "DYNAMIC_1074_STAGE_17",
+          "ATTRIBUTES": [
+            "PROG",
+            "R-O"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\PreviousStageId",
+          "TITLE": "Предыдущая стадия"
+        }
+      }
+    },
+    {
+      "code": "PARENT_ID_2",
+      "title": "Сделка",
+      "type": "crm_entity",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Сделка",
+        "type": "crm_entity",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "crm_entity",
+          "SETTINGS": {
+            "parentEntityTypeId": 2
+          },
+          "TITLE": "Сделка",
+          "CLASS": "Bitrix\\Crm\\Field\\ParentEntityId"
+        }
+      }
+    },
+    {
+      "code": "WEBFORM_ID",
+      "title": "Создано CRM-формой",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Создано CRM-формой",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "Создано CRM-формой"
+        }
+      }
+    },
+    {
+      "code": "STAGE_ID",
+      "title": "Стадия",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": "DYNAMIC_1074_STAGE_17",
+      "options": [
+        {
+          "code": "DT1074_17:NEW",
+          "name": "Начало"
+        },
+        {
+          "code": "DT1074_17:PREPARATION",
+          "name": "Подготовка"
+        },
+        {
+          "code": "DT1074_17:FAIL",
+          "name": "Провал"
+        },
+        {
+          "code": "DT1074_17:CLIENT",
+          "name": "Согласование"
+        },
+        {
+          "code": "DT1074_17:SUCCESS",
+          "name": "Успех"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Стадия",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": "DYNAMIC_1074_STAGE_17",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "DYNAMIC_1074_STAGE_17",
+          "ATTRIBUTES": [
+            "PROG"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Stage",
+          "TITLE": "Стадия"
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986984",
+      "title": "Адрес Объекта",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Адрес Объекта",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "446",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986984",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "230",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Адрес Объекта",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Адрес Объекта",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986535",
+      "title": "Вид приказа",
+      "type": "enumeration",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [
+        {
+          "code": "93",
+          "name": "Ответственный"
+        },
+        {
+          "code": "94",
+          "name": "Пожарная безопасность"
+        },
+        {
+          "code": "95",
+          "name": "Охрана труда (ответственный)"
+        },
+        {
+          "code": "96",
+          "name": "Высотные работы"
+        },
+        {
+          "code": "97",
+          "name": "Наряд-допуски"
+        },
+        {
+          "code": "98",
+          "name": "Электробезопасность"
+        },
+        {
+          "code": "99",
+          "name": "Подъемные сооружения"
+        },
+        {
+          "code": "100",
+          "name": "Индивидуальная защита"
+        },
+        {
+          "code": "101",
+          "name": "Охрана труда (специалист)"
+        },
+        {
+          "code": "102",
+          "name": "Ограждения"
+        },
+        {
+          "code": "103",
+          "name": "Сварщик (один)"
+        },
+        {
+          "code": "104",
+          "name": "Сварщики (два и более)"
+        },
+        {
+          "code": "105",
+          "name": "Праздничные дни"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Вид приказа",
+        "type": "enumeration",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [
+          {
+            "ID": "93",
+            "VALUE": "Ответственный",
+            "SORT": "100",
+            "DEF": "N"
+          },
+          {
+            "ID": "94",
+            "VALUE": "Пожарная безопасность",
+            "SORT": "200",
+            "DEF": "N"
+          },
+          {
+            "ID": "95",
+            "VALUE": "Охрана труда (ответственный)",
+            "SORT": "300",
+            "DEF": "N"
+          },
+          {
+            "ID": "96",
+            "VALUE": "Высотные работы",
+            "SORT": "400",
+            "DEF": "N"
+          },
+          {
+            "ID": "97",
+            "VALUE": "Наряд-допуски",
+            "SORT": "500",
+            "DEF": "N"
+          },
+          {
+            "ID": "98",
+            "VALUE": "Электробезопасность",
+            "SORT": "600",
+            "DEF": "N"
+          },
+          {
+            "ID": "99",
+            "VALUE": "Подъемные сооружения",
+            "SORT": "700",
+            "DEF": "N"
+          },
+          {
+            "ID": "100",
+            "VALUE": "Индивидуальная защита",
+            "SORT": "800",
+            "DEF": "N"
+          },
+          {
+            "ID": "101",
+            "VALUE": "Охрана труда (специалист)",
+            "SORT": "900",
+            "DEF": "N"
+          },
+          {
+            "ID": "102",
+            "VALUE": "Ограждения",
+            "SORT": "1000",
+            "DEF": "N"
+          },
+          {
+            "ID": "103",
+            "VALUE": "Сварщик (один)",
+            "SORT": "1100",
+            "DEF": "N"
+          },
+          {
+            "ID": "104",
+            "VALUE": "Сварщики (два и более)",
+            "SORT": "1200",
+            "DEF": "N"
+          },
+          {
+            "ID": "105",
+            "VALUE": "Праздничные дни",
+            "SORT": "1300",
+            "DEF": "N"
+          }
+        ],
+        "raw": {
+          "ID": "427",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986535",
+          "USER_TYPE_ID": "enumeration",
+          "XML_ID": null,
+          "SORT": "10",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DISPLAY": "LIST",
+            "LIST_HEIGHT": 1,
+            "CAPTION_NO_VALUE": "",
+            "SHOW_NO_VALUE": "Y"
+          },
+          "TITLE": "Вид приказа",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Вид приказа",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "enumeration",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\EnumType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Список",
+            "BASE_TYPE": "enum"
+          },
+          "TYPE": "enumeration",
+          "ENUM_ITEMS": [
+            {
+              "ID": "93",
+              "VALUE": "Ответственный",
+              "SORT": "100",
+              "DEF": "N"
+            },
+            {
+              "ID": "94",
+              "VALUE": "Пожарная безопасность",
+              "SORT": "200",
+              "DEF": "N"
+            },
+            {
+              "ID": "95",
+              "VALUE": "Охрана труда (ответственный)",
+              "SORT": "300",
+              "DEF": "N"
+            },
+            {
+              "ID": "96",
+              "VALUE": "Высотные работы",
+              "SORT": "400",
+              "DEF": "N"
+            },
+            {
+              "ID": "97",
+              "VALUE": "Наряд-допуски",
+              "SORT": "500",
+              "DEF": "N"
+            },
+            {
+              "ID": "98",
+              "VALUE": "Электробезопасность",
+              "SORT": "600",
+              "DEF": "N"
+            },
+            {
+              "ID": "99",
+              "VALUE": "Подъемные сооружения",
+              "SORT": "700",
+              "DEF": "N"
+            },
+            {
+              "ID": "100",
+              "VALUE": "Индивидуальная защита",
+              "SORT": "800",
+              "DEF": "N"
+            },
+            {
+              "ID": "101",
+              "VALUE": "Охрана труда (специалист)",
+              "SORT": "900",
+              "DEF": "N"
+            },
+            {
+              "ID": "102",
+              "VALUE": "Ограждения",
+              "SORT": "1000",
+              "DEF": "N"
+            },
+            {
+              "ID": "103",
+              "VALUE": "Сварщик (один)",
+              "SORT": "1100",
+              "DEF": "N"
+            },
+            {
+              "ID": "104",
+              "VALUE": "Сварщики (два и более)",
+              "SORT": "1200",
+              "DEF": "N"
+            },
+            {
+              "ID": "105",
+              "VALUE": "Праздничные дни",
+              "SORT": "1300",
+              "DEF": "N"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986818",
+      "title": "Дата приказа",
+      "type": "date",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата приказа",
+        "type": "date",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "436",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986818",
+          "USER_TYPE_ID": "date",
+          "XML_ID": null,
+          "SORT": "100",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DEFAULT_VALUE": {
+              "TYPE": "NONE",
+              "VALUE": ""
+            }
+          },
+          "TITLE": "Дата приказа",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Дата приказа",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "date",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\DateType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Дата",
+            "BASE_TYPE": "datetime"
+          },
+          "TYPE": "date",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986705",
+      "title": "Дополнительный сотрудник",
+      "type": "crm",
+      "isCustom": true,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дополнительный сотрудник",
+        "type": "crm",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "430",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986705",
+          "USER_TYPE_ID": "crm",
+          "XML_ID": null,
+          "SORT": "40",
+          "MULTIPLE": "Y",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "LEAD": "Y",
+            "DYNAMIC_1094": "Y"
+          },
+          "TITLE": "Дополнительный сотрудник",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Дополнительный сотрудник",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "crm",
+            "CLASS_NAME": "Bitrix\\Crm\\UserField\\Types\\ElementType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Привязка к элементам CRM",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "crm",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986782",
+      "title": "Квалиф. удостов. сварщика(-ов)",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Квалиф. удостов. сварщика(-ов)",
+        "type": "string",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "434",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986782",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "80",
+          "MULTIPLE": "Y",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Квалиф. удостов. сварщика(-ов)",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Квалиф. удостов. сварщика(-ов)",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986969",
+      "title": "Название Объекта",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Название Объекта",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "445",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986969",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "220",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Название Объекта",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Название Объекта",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986835",
+      "title": "Начало периода",
+      "type": "date",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Начало периода",
+        "type": "date",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "437",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986835",
+          "USER_TYPE_ID": "date",
+          "XML_ID": null,
+          "SORT": "110",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DEFAULT_VALUE": {
+              "TYPE": "NONE",
+              "VALUE": ""
+            }
+          },
+          "TITLE": "Начало периода",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Начало периода",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "date",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\DateType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Дата",
+            "BASE_TYPE": "datetime"
+          },
+          "TYPE": "date",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986645",
+      "title": "Объект",
+      "type": "iblock_element",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Объект",
+        "type": "iblock_element",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "428",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986645",
+          "USER_TYPE_ID": "iblock_element",
+          "XML_ID": null,
+          "SORT": "20",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DISPLAY": "LIST",
+            "LIST_HEIGHT": 1,
+            "IBLOCK_ID": 62,
+            "DEFAULT_VALUE": "",
+            "ACTIVE_FILTER": "N"
+          },
+          "TITLE": "Объект",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Объект",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "iblock_element",
+            "CLASS_NAME": "Bitrix\\Iblock\\UserField\\Types\\ElementType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Iblock\\UserField\\Types\\ElementType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Iblock\\UserField\\Types\\ElementType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Привязка к элементам инф. блоков",
+            "BASE_TYPE": "int"
+          },
+          "TYPE": "iblock_element",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986856",
+      "title": "Окончание периода",
+      "type": "date",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Окончание периода",
+        "type": "date",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "438",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986856",
+          "USER_TYPE_ID": "date",
+          "XML_ID": null,
+          "SORT": "120",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DEFAULT_VALUE": {
+              "TYPE": "NONE",
+              "VALUE": ""
+            }
+          },
+          "TITLE": "Окончание периода",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Окончание периода",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "date",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\DateType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Дата",
+            "BASE_TYPE": "datetime"
+          },
+          "TYPE": "date",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986678",
+      "title": "Основной сотрудник",
+      "type": "crm",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Основной сотрудник",
+        "type": "crm",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "429",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986678",
+          "USER_TYPE_ID": "crm",
+          "XML_ID": null,
+          "SORT": "30",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "LEAD": "Y",
+            "DYNAMIC_1094": "Y"
+          },
+          "TITLE": "Основной сотрудник",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Основной сотрудник",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "crm",
+            "CLASS_NAME": "Bitrix\\Crm\\UserField\\Types\\ElementType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Привязка к элементам CRM",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "crm",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986998",
+      "title": "Предмет договора",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Предмет договора",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "447",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986998",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "240",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Предмет договора",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Предмет договора",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986765",
+      "title": "Протокол проверки знаний (для СВ)",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Протокол проверки знаний (для СВ)",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "433",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986765",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "70",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Протокол проверки знаний (для СВ)",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Протокол проверки знаний (для СВ)",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986901",
+      "title": "Сделка",
+      "type": "crm",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Сделка",
+        "type": "crm",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "441",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986901",
+          "USER_TYPE_ID": "crm",
+          "XML_ID": null,
+          "SORT": "150",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DEAL": "Y",
+            "LEAD": null
+          },
+          "TITLE": "Сделка",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Сделка",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "crm",
+            "CLASS_NAME": "Bitrix\\Crm\\UserField\\Types\\ElementType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Привязка к элементам CRM",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "crm",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986728",
+      "title": "Список сотрудников",
+      "type": "crm",
+      "isCustom": true,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Список сотрудников",
+        "type": "crm",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "431",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986728",
+          "USER_TYPE_ID": "crm",
+          "XML_ID": null,
+          "SORT": "50",
+          "MULTIPLE": "Y",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "LEAD": "Y",
+            "DYNAMIC_1094": "Y"
+          },
+          "TITLE": "Список сотрудников",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Список сотрудников",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "crm",
+            "CLASS_NAME": "Bitrix\\Crm\\UserField\\Types\\ElementType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Привязка к элементам CRM",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "crm",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768987019",
+      "title": "Тех. поле (для СВ) №1",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Тех. поле (для СВ) №1",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "448",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768987019",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "300",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Тех. поле (для СВ) №1",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Тех. поле (для СВ) №1",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768987034",
+      "title": "Тех. поле (для СВ) №2",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Тех. поле (для СВ) №2",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "449",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768987034",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "305",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Тех. поле (для СВ) №2",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Тех. поле (для СВ) №2",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768987044",
+      "title": "Тех. поле (для СВ) №3",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Тех. поле (для СВ) №3",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "450",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768987044",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "310",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Тех. поле (для СВ) №3",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Тех. поле (для СВ) №3",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986748",
+      "title": "Удостоверение (для СВ)",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Удостоверение (для СВ)",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "432",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986748",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "60",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Удостоверение (для СВ)",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Удостоверение (для СВ)",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986872",
+      "title": "Файл",
+      "type": "file",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Файл",
+        "type": "file",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "439",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986872",
+          "USER_TYPE_ID": "file",
+          "XML_ID": null,
+          "SORT": "130",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "LIST_WIDTH": 0,
+            "LIST_HEIGHT": 0,
+            "MAX_SHOW_SIZE": 0,
+            "MAX_ALLOWED_SIZE": 0,
+            "EXTENSIONS": [],
+            "TARGET_BLANK": "Y",
+            "DEFAULT_VIEW": null
+          },
+          "TITLE": "Файл",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Файл",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "file",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\FileType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\FileType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\FileType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Файл",
+            "BASE_TYPE": "file"
+          },
+          "TYPE": "file",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986949",
+      "title": "ФИО (список)",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ФИО (список)",
+        "type": "string",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "444",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986949",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "215",
+          "MULTIPLE": "Y",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "ФИО (список)",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "ФИО (список)",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986934",
+      "title": "ФИО ДОП (род.пад.)",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ФИО ДОП (род.пад.)",
+        "type": "string",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "443",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986934",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "210",
+          "MULTIPLE": "Y",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "ФИО ДОП (род.пад.)",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "ФИО ДОП (род.пад.)",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986920",
+      "title": "ФИО ОСН (род. пад.)",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ФИО ОСН (род. пад.)",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "442",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986920",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "200",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "ФИО ОСН (род. пад.)",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "ФИО ОСН (род. пад.)",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986887",
+      "title": "№ договора",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "№ договора",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "440",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986887",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "140",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "№ договора",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "№ договора",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_13_1768986803",
+      "title": "№ приказа",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "№ приказа",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "435",
+          "ENTITY_ID": "CRM_13",
+          "FIELD_NAME": "UF_CRM_13_1768986803",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "90",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "№ приказа",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "№ приказа",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    }
+  ],
+  "summary": {
+    "stageCount": 5,
+    "pipelineCount": 1,
+    "fieldCount": 47,
+    "customFieldCount": 24,
+    "optionFieldCount": 4
+  }
+}

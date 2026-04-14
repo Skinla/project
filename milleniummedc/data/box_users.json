@@ -1,0 +1,324 @@
+[
+    {
+        "ID": "1",
+        "LOGIN": "Mi11Admin",
+        "EMAIL": "it@obcom.su",
+        "NAME": "Admin",
+        "LAST_NAME": "Admin"
+    },
+    {
+        "ID": "3",
+        "LOGIN": "bot_call_CallFollowupBot_vahMS",
+        "EMAIL": null,
+        "NAME": "Call Followup Bot",
+        "LAST_NAME": null
+    },
+    {
+        "ID": "4",
+        "LOGIN": "victor.makarov",
+        "EMAIL": "victor.makarov@axiom24.ru",
+        "NAME": "Виктор",
+        "LAST_NAME": "Макаров"
+    },
+    {
+        "ID": "5",
+        "LOGIN": "elizaveta.makarova",
+        "EMAIL": "elizaveta.makarova@ipalitra.art",
+        "NAME": "Елизавета",
+        "LAST_NAME": "Макарова"
+    },
+    {
+        "ID": "6",
+        "LOGIN": "dmitriy.medvedev",
+        "EMAIL": "dmitriy.v.medvedev@mail.ru",
+        "NAME": "Дмитрий",
+        "LAST_NAME": "Медведев"
+    },
+    {
+        "ID": "7",
+        "LOGIN": "lyubomir.timonin",
+        "EMAIL": "lyubas999@gmail.com",
+        "NAME": "Любомир",
+        "LAST_NAME": "Тимонин"
+    },
+    {
+        "ID": "8",
+        "LOGIN": "aleksandr.turchak",
+        "EMAIL": "Summit_ray@mail.ru",
+        "NAME": "Александр",
+        "LAST_NAME": "Турчак"
+    },
+    {
+        "ID": "9",
+        "LOGIN": "liliya.lukaczkaya",
+        "EMAIL": "luk_lil@mail.ru",
+        "NAME": "Лилия",
+        "LAST_NAME": "Лукацкая"
+    },
+    {
+        "ID": "10",
+        "LOGIN": "anna.vasilchenko",
+        "EMAIL": "vasilchenko19anna88@gmail.com",
+        "NAME": "Анна",
+        "LAST_NAME": "Васильченко"
+    },
+    {
+        "ID": "11",
+        "LOGIN": "darya.krizhanovskaya",
+        "EMAIL": "daschakri@mail.ru",
+        "NAME": "Дарья",
+        "LAST_NAME": "Крижановская"
+    },
+    {
+        "ID": "12",
+        "LOGIN": "tatyana.ermolenko",
+        "EMAIL": "tgermolen29@yandex.ru",
+        "NAME": "Татьяна",
+        "LAST_NAME": "Ермоленко"
+    },
+    {
+        "ID": "13",
+        "LOGIN": "nina.sysoeva",
+        "EMAIL": "ninasysoeva462192@yandex.ru",
+        "NAME": "Нина",
+        "LAST_NAME": "Сысоева"
+    },
+    {
+        "ID": "14",
+        "LOGIN": "marina.evseeva",
+        "EMAIL": "eltexremont@mail.ru",
+        "NAME": "Марина",
+        "LAST_NAME": "Евсеева"
+    },
+    {
+        "ID": "15",
+        "LOGIN": "anatolij.aldoshin",
+        "EMAIL": "a91153197@gmail.com",
+        "NAME": "Анатолий",
+        "LAST_NAME": "Алдошин"
+    },
+    {
+        "ID": "16",
+        "LOGIN": "evgenij.smirnov",
+        "EMAIL": "20evgeniys04@gmail.com",
+        "NAME": "Евгений",
+        "LAST_NAME": "Смирнов"
+    },
+    {
+        "ID": "17",
+        "LOGIN": "vera.kopejkina",
+        "EMAIL": "v.yastrebova2020@gmail.com",
+        "NAME": "Вера",
+        "LAST_NAME": "Копейкина"
+    },
+    {
+        "ID": "18",
+        "LOGIN": "darya.glebova",
+        "EMAIL": "sheglebovad@mail.ru",
+        "NAME": "Дарья",
+        "LAST_NAME": "Глебова"
+    },
+    {
+        "ID": "19",
+        "LOGIN": "svetlana.davydova",
+        "EMAIL": "vip.davsvet8080@yandex.ru",
+        "NAME": "Светлана",
+        "LAST_NAME": "Давыдова"
+    },
+    {
+        "ID": "20",
+        "LOGIN": "darya.mostakova",
+        "EMAIL": "dashenka9072@gmail.com",
+        "NAME": "Дарья",
+        "LAST_NAME": "Мостакова"
+    },
+    {
+        "ID": "21",
+        "LOGIN": "lolita.dasaeva",
+        "EMAIL": "d.lola2010@yandex.ru",
+        "NAME": "Лолита",
+        "LAST_NAME": "Дасаева"
+    },
+    {
+        "ID": "22",
+        "LOGIN": "vladislav.safin",
+        "EMAIL": "vladislav.safin@rambler.ru",
+        "NAME": "Владислав",
+        "LAST_NAME": "Сафин"
+    },
+    {
+        "ID": "23",
+        "LOGIN": "aleksej.rylko",
+        "EMAIL": "Lehaolimpiec@mail.ru",
+        "NAME": "Алексей",
+        "LAST_NAME": "Рылко"
+    },
+    {
+        "ID": "24",
+        "LOGIN": "egor.davydov",
+        "EMAIL": "egorka.davidov2005@gmail.com",
+        "NAME": "Егор",
+        "LAST_NAME": "Давыдов"
+    },
+    {
+        "ID": "25",
+        "LOGIN": "aleksej.galaev",
+        "EMAIL": "test146790@gmail.com",
+        "NAME": "Алексей",
+        "LAST_NAME": "Галаев"
+    },
+    {
+        "ID": "26",
+        "LOGIN": "chinar.shirova",
+        "EMAIL": "melisa.vera@bk.ru",
+        "NAME": "Чинар",
+        "LAST_NAME": "Широва"
+    },
+    {
+        "ID": "27",
+        "LOGIN": "eleonora.dorina",
+        "EMAIL": "dorina.elya27@gmail.com",
+        "NAME": "Элеонора",
+        "LAST_NAME": "Дорина"
+    },
+    {
+        "ID": "28",
+        "LOGIN": "svetlana.shipova",
+        "EMAIL": "Nevalainvelikimerlin@yandex.ru",
+        "NAME": "Светлана",
+        "LAST_NAME": "Шипова"
+    },
+    {
+        "ID": "29",
+        "LOGIN": "viktor.priporov",
+        "EMAIL": "viktor.pr.98@gmail.com",
+        "NAME": "Виктор",
+        "LAST_NAME": "Припоров"
+    },
+    {
+        "ID": "30",
+        "LOGIN": "svetlana.bobrovich",
+        "EMAIL": "lana.bobrovitch@yandex.ru",
+        "NAME": "Светлана",
+        "LAST_NAME": "Бобрович"
+    },
+    {
+        "ID": "31",
+        "LOGIN": "mariya.vorobjeva",
+        "EMAIL": "mariavorobeva78291@gmail.com",
+        "NAME": "Мария",
+        "LAST_NAME": "Воробьева"
+    },
+    {
+        "ID": "32",
+        "LOGIN": "maryam.batalova",
+        "EMAIL": "89118449905@mail.ru",
+        "NAME": "Марьям",
+        "LAST_NAME": "Баталова"
+    },
+    {
+        "ID": "33",
+        "LOGIN": "svetlana.igolnikova",
+        "EMAIL": "veneciasvet@yandex.ru",
+        "NAME": "Светлана",
+        "LAST_NAME": "Игольникова"
+    },
+    {
+        "ID": "34",
+        "LOGIN": "roman.safonov",
+        "EMAIL": "porazaa@bk.ru",
+        "NAME": "Роман",
+        "LAST_NAME": "Сафонов"
+    },
+    {
+        "ID": "35",
+        "LOGIN": "evelina.emelyanova",
+        "EMAIL": "ackulowa.evelina@yandex.ru",
+        "NAME": "Эвелина",
+        "LAST_NAME": "Емельянова"
+    },
+    {
+        "ID": "36",
+        "LOGIN": "natalya.chernyaeva",
+        "EMAIL": "nat4er@list.ru",
+        "NAME": "Наталья",
+        "LAST_NAME": "Черняева"
+    },
+    {
+        "ID": "37",
+        "LOGIN": "feda.starikov",
+        "EMAIL": "sburchinfeda@mail.ru",
+        "NAME": "Феда",
+        "LAST_NAME": "Стариков"
+    },
+    {
+        "ID": "38",
+        "LOGIN": "anna.leontjeva",
+        "EMAIL": "leonteaal@mail.ru",
+        "NAME": "Анна",
+        "LAST_NAME": "Леонтьева"
+    },
+    {
+        "ID": "39",
+        "LOGIN": "tatyana.barishenko",
+        "EMAIL": "tatyanabarishenko@yandex.ru",
+        "NAME": "Татьяна",
+        "LAST_NAME": "Баришенко"
+    },
+    {
+        "ID": "40",
+        "LOGIN": "yana.lebedeva",
+        "EMAIL": "le-yana@mail.ru",
+        "NAME": "Яна",
+        "LAST_NAME": "Лебедева"
+    },
+    {
+        "ID": "41",
+        "LOGIN": "sofya.spiridonova",
+        "EMAIL": "EvaRoyh@yandex.ru",
+        "NAME": "Софья",
+        "LAST_NAME": "Спиридонова"
+    },
+    {
+        "ID": "42",
+        "LOGIN": "ekaterina.pomelova",
+        "EMAIL": "pomelowaekaterina@yandex.ru",
+        "NAME": "Екатерина",
+        "LAST_NAME": "Помелова"
+    },
+    {
+        "ID": "43",
+        "LOGIN": "vera.karausheva",
+        "EMAIL": "verunyak2012@mail.ru",
+        "NAME": "Вера",
+        "LAST_NAME": "Караушева"
+    },
+    {
+        "ID": "44",
+        "LOGIN": "mark.sinergium",
+        "EMAIL": "integrator-sinergium@yandex.ru",
+        "NAME": "Марк",
+        "LAST_NAME": "Синергиум"
+    },
+    {
+        "ID": "45",
+        "LOGIN": "viktoriya.chepurko",
+        "EMAIL": "slava.yakovlev.52@inbox.ru",
+        "NAME": "Виктория",
+        "LAST_NAME": "Чепурко"
+    },
+    {
+        "ID": "46",
+        "LOGIN": "igor.kulikovskij",
+        "EMAIL": "hellboy246_kool@mail.ru",
+        "NAME": "Игорь",
+        "LAST_NAME": "Куликовский"
+    },
+    {
+        "ID": "47",
+        "LOGIN": "larisa.shatalova",
+        "EMAIL": "Shat4lova.lar@yandex.ru",
+        "NAME": "Лариса",
+        "LAST_NAME": "Шаталова"
+    }
+]

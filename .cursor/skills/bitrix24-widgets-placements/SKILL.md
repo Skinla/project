@@ -121,4 +121,3 @@ description: Build, register, and debug Bitrix24 widgets/placements (especially 
 - **`check_placements.php`** style:
   - show current registrations for `USER_PROFILE_MENU` and `USER_PROFILE_TOOLBAR`
   - allow re-register in one click (delete old → add new)
-

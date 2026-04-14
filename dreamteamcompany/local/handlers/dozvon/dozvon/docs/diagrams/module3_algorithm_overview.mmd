@@ -1,0 +1,16 @@
+flowchart LR
+  subgraph queue [Очередь 131 и мастер 130]
+    R[Есть eligible ready?]
+  end
+  subgraph alt [Альтернатива]
+    P[Активация planned to ready]
+    S[Стоп без звонка]
+  end
+  subgraph dial [Звонок]
+    C[Город 22]
+    O[Оператор 128]
+    V[Vox]
+    F[Финализация CRM и 128]
+  end
+  R -->|нет| P --> S
+  R -->|да| C --> O --> V --> F

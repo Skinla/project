@@ -1,0 +1,1876 @@
+==== 2025-09-10 12:42:27 ====
+File: ct_20250910_124216_68c147f86b11c.json
+EntityType=lead, EntityId=
+dialedNumber=73812432499
+callerPhone=74953080100
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 143374
+    [changedFields] => null
+    [ctCallerId] => 6d322c1de4e356928b9fab356385c38d
+    [callerphone] => 74953080100
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-09-10 12:42:10
+    [timestamp] => 1757497330
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [callReferenceNumber] => 6c8b391a-8e2a-11f0-b9d7-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [sendingTimestamp] => 1757497332
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-09-10 12:44:13 ====
+File: ct_20250910_124402_68c14862130fb.json
+EntityType=lead, EntityId=
+dialedNumber=73812432499
+callerPhone=74953080100
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 143374
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_pn,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 6d322c1de4e356928b9fab356385c38d
+    [callerphone] => 74953080100
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 30
+    [waiting_time] => 1
+    [calltime] => 2025-09-10 12:42:10
+    [timestamp] => 1757497330
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => Тест от calltouch
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => Тест от calltouch
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 43facbce-08cd-123f-ac8e-005056beafdc
+    [callReferenceNumber] => 6c8b391a-8e2a-11f0-b9d7-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1NzQ5NzQ0MiwiZXhwIjoyMDcyODU3NDQyLCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjE0MzM3NH0.25d5jXT2Z_FW6B-TuBuV7b_xVIpebQksZSRWSWUj-E9xXY-6ii83rEAvRpXLkrQOpHDS7_XaUqainqlkqCRMdA
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [sendingTimestamp] => 1757497442
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-09-11 14:38:50 ====
+File: ct_20250911_143838_68c2b4beae36c.json
+EntityType=lead, EntityId=
+dialedNumber=73812432414
+callerPhone=79605518447
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 148790
+    [changedFields] => null
+    [ctCallerId] => 656013807b1b23fdefcec3360cc1b281
+    [callerphone] => 79605518447
+    [phonenumber] => 73812432414
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-09-11 14:38:36
+    [timestamp] => 1757590716
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757590678601534403
+    [sessionId] => 13555304
+    [ctClientId] => 3300000000010098705
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => voronezh
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 5.187.86.223
+    [callReferenceNumber] => dadd973a-8f03-11f0-b9fd-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1757590718
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-11 14:41:15 ====
+File: ct_20250911_144103_68c2b54fc4d5f.json
+EntityType=lead, EntityId=
+dialedNumber=73812432414
+callerPhone=79605518447
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 148790
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 656013807b1b23fdefcec3360cc1b281
+    [callerphone] => 79605518447
+    [phonenumber] => 73812432414
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 72
+    [waiting_time] => 2
+    [calltime] => 2025-09-11 14:38:36
+    [timestamp] => 1757590716
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757590678601534403
+    [sessionId] => 13555304
+    [ctClientId] => 3300000000010098705
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => voronezh
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 5.187.86.223
+    [sip_call_id] => b24b5f5a-09a6-123f-ac8e-005056beafdc
+    [callReferenceNumber] => dadd973a-8f03-11f0-b9fd-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1NzU5MDg2MywiZXhwIjoyMDcyOTUwODYzLCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjE0ODc5MH0.BZ37p-1aJfyNeV-0Zm7QIHBd6gHT47KvfgmRp1-8Nob5K9Ulj_FMpJkpWGmIl0bHvocMwpHg2tffO2sICrSfog
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1757590863
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-11 16:46:13 ====
+File: ct_20250911_164606_68c2d29e352a1.json
+EntityType=lead, EntityId=
+dialedNumber=73812432499
+callerPhone=79603511515
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 149594
+    [changedFields] => null
+    [ctCallerId] => 4a0a2e5a74648b1030947a6cc728b281
+    [callerphone] => 79603511515
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-09-11 16:46:02
+    [timestamp] => 1757598362
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757598332332216837
+    [sessionId] => 13598553
+    [ctClientId] => 3300000000010130037
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Mac
+    [device] => desktop
+    [ip] => 46.138.14.34
+    [callReferenceNumber] => a8186ca0-8f15-11f0-9aa7-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1757598365
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-11 16:48:14 ====
+File: ct_20250911_164803_68c2d31376cea.json
+EntityType=lead, EntityId=
+dialedNumber=73812432499
+callerPhone=79603511515
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 149594
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 4a0a2e5a74648b1030947a6cc728b281
+    [callerphone] => 79603511515
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 7
+    [waiting_time] => 1
+    [calltime] => 2025-09-11 16:46:02
+    [timestamp] => 1757598362
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757598332332216837
+    [sessionId] => 13598553
+    [ctClientId] => 3300000000010130037
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Mac
+    [device] => desktop
+    [ip] => 46.138.14.34
+    [sip_call_id] => 7f8637b7-09b8-123f-ac8e-005056beafdc
+    [callReferenceNumber] => a8186ca0-8f15-11f0-9aa7-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1NzU5ODQ4MywiZXhwIjoyMDcyOTU4NDgzLCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjE0OTU5NH0.9LZYS988r6JsCR0LYwdIgaG76PRyu2rLRILr_n4_BFDNLfxaFtN3v6yERnC9MN6WzLhRTiYi7p14pStuHd1xBA
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1757598483
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-15 16:29:58 ====
+File: ct_20250915_162949_68c814cd73c98.json
+EntityType=lead, EntityId=
+dialedNumber=73812432499
+callerPhone=79777672883
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 165031
+    [changedFields] => null
+    [ctCallerId] => b4b5f129cbf623a7852cc58328f18bba
+    [callerphone] => 79777672883
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [calltime] => 2025-09-15 16:27:13
+    [timestamp] => 1757942833
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757598332332216837
+    [sessionId] => 14874105
+    [ctClientId] => 3300000000010130037
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Mac
+    [device] => desktop
+    [ip] => 46.138.14.34
+    [sip_call_id] => 881c1ff3-0cda-123f-ac8e-005056beafdc
+    [callReferenceNumber] => b0aa0e9e-9237-11f0-867f-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1757942989
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-15 16:38:52 ====
+File: ct_20250915_163843_68c816e3f3329.json
+EntityType=lead, EntityId=
+dialedNumber=73812432499
+callerPhone=79777672883
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 165031
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => b4b5f129cbf623a7852cc58328f18bba
+    [callerphone] => 79777672883
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 7
+    [waiting_time] => 1
+    [calltime] => 2025-09-15 16:27:13
+    [timestamp] => 1757942833
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757598332332216837
+    [sessionId] => 14874105
+    [ctClientId] => 3300000000010130037
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Mac
+    [device] => desktop
+    [ip] => 46.138.14.34
+    [sip_call_id] => 881c1ff3-0cda-123f-ac8e-005056beafdc
+    [callReferenceNumber] => b0aa0e9e-9237-11f0-867f-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1Nzk0MzUyMywiZXhwIjoyMDczMzAzNTIzLCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjE2NTAzMX0.7OWpucMeMjB2D1_Es9kLSRy07qzMEwD40QGQyhcTm4AdSDCRToGkJ-_5H98pIEvAjzNSWGVqL3K_MtT_LhOltQ
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1757943523
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-17 10:33:26 ====
+File: ct_20250917_103313_68ca6439e51fd.json
+EntityType=lead, EntityId=
+dialedNumber=73812432475
+callerPhone=79081123264
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 173028
+    [changedFields] => null
+    [ctCallerId] => 2f926aee191166381a9ffae7c4912f9d
+    [callerphone] => 79081123264
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-09-17 10:31:51
+    [timestamp] => 1758094311
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => rsya_omsk_cpc_3000_703327388
+    [utm_content] => 17292040441
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1758094287990562445
+    [sessionId] => 15491453
+    [ctClientId] => 3300000000011535760
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=rsya_omsk_cpc_3000_703327388&utm_content=17292040441&utm_term=---autotargeting&calltouch_tm=yd_c:703327388_gb:5643211088_ad:17292040441_ph:205643211088_st:context_pt:none_p:0_s:ru.ok.android_dt:mobile_reg:66_ret:205643211088_apt:none&yclid=9470963384371118079&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Yandex Browser Lite
+    [os] => Android
+    [device] => smartphone
+    [ip] => 2.60.104.50
+    [callReferenceNumber] => 60615836-9398-11f0-9e86-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 12; MAO-LX9N Build/HUAWEIMAO-LX9N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 YaBrowser/22.8.1.92 (lite) Mobile Safari/537.36
+    [sendingTimestamp] => 1758094393
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-17 10:37:33 ====
+File: ct_20250917_103719_68ca652f35255.json
+EntityType=lead, EntityId=
+dialedNumber=73812432475
+callerPhone=79081123264
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 173028
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 2f926aee191166381a9ffae7c4912f9d
+    [callerphone] => 79081123264
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 121
+    [waiting_time] => 2
+    [calltime] => 2025-09-17 10:31:51
+    [timestamp] => 1758094311
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => rsya_omsk_cpc_3000_703327388
+    [utm_content] => 17292040441
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1758094287990562445
+    [sessionId] => 15491453
+    [ctClientId] => 3300000000011535760
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=rsya_omsk_cpc_3000_703327388&utm_content=17292040441&utm_term=---autotargeting&calltouch_tm=yd_c:703327388_gb:5643211088_ad:17292040441_ph:205643211088_st:context_pt:none_p:0_s:ru.ok.android_dt:mobile_reg:66_ret:205643211088_apt:none&yclid=9470963384371118079&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Yandex Browser Lite
+    [os] => Android
+    [device] => smartphone
+    [ip] => 2.60.104.50
+    [sip_call_id] => 37d05f25-0e3b-123f-ac8e-005056beafdc
+    [callReferenceNumber] => 60615836-9398-11f0-9e86-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1ODA5NDYzOCwiZXhwIjoyMDczNDU0NjM4LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjE3MzAyOH0.GJkXEsSe4kR0105gvkz9YhWd7ws5UwX3jGLYaWjdi9_LH25IJiCWEQWSpF_Yc0aGx5n7J_zJNVk2AJi31j_Msw
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 12; MAO-LX9N Build/HUAWEIMAO-LX9N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 YaBrowser/22.8.1.92 (lite) Mobile Safari/537.36
+    [sendingTimestamp] => 1758094638
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-17 13:10:30 ====
+File: ct_20250917_131017_68ca8909e84f6.json
+EntityType=lead, EntityId=
+dialedNumber=73812432475
+callerPhone=79514297223
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 174253
+    [changedFields] => null
+    [ctCallerId] => 72e38acb68363b1d1d6a82c5ea6d6b25
+    [callerphone] => 79514297223
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [calltime] => 2025-09-17 12:49:49
+    [timestamp] => 1758102589
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => rsya_omsk_cpc_3000_703327388
+    [utm_content] => 17292040439
+    [utm_term] => ---autotargeting
+    [yaClientId] => 175810217134989632
+    [sessionId] => 15543450
+    [ctClientId] => 3300000000011573634
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=rsya_omsk_cpc_3000_703327388&utm_content=17292040439&utm_term=---autotargeting&calltouch_tm=yd_c:703327388_gb:5643211086_ad:17292040439_ph:205643211086_st:context_pt:none_p:0_s:com.caldroidsample123_dt:mobile_reg:66_ret:205643211086_apt:none&yclid=7109682117587501055&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.120.63.251
+    [sip_call_id] => 7e052984-0e4e-123f-ac8e-005056beafdc
+    [callReferenceNumber] => a696cbfc-93ab-11f0-aeb8-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1758103817
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-17 13:22:57 ====
+File: ct_20250917_132245_68ca8bf5f372e.json
+EntityType=lead, EntityId=
+dialedNumber=73812432475
+callerPhone=79514297223
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 174253
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 72e38acb68363b1d1d6a82c5ea6d6b25
+    [callerphone] => 79514297223
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 35
+    [waiting_time] => 2
+    [calltime] => 2025-09-17 12:49:49
+    [timestamp] => 1758102589
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => rsya_omsk_cpc_3000_703327388
+    [utm_content] => 17292040439
+    [utm_term] => ---autotargeting
+    [yaClientId] => 175810217134989632
+    [sessionId] => 15543450
+    [ctClientId] => 3300000000011573634
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=rsya_omsk_cpc_3000_703327388&utm_content=17292040439&utm_term=---autotargeting&calltouch_tm=yd_c:703327388_gb:5643211086_ad:17292040439_ph:205643211086_st:context_pt:none_p:0_s:com.caldroidsample123_dt:mobile_reg:66_ret:205643211086_apt:none&yclid=7109682117587501055&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.120.63.251
+    [sip_call_id] => 7e052984-0e4e-123f-ac8e-005056beafdc
+    [callReferenceNumber] => a696cbfc-93ab-11f0-aeb8-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1ODEwNDU2NSwiZXhwIjoyMDczNDY0NTY1LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjE3NDI1M30.2enqxAZOCQwddL0tLzD_hRqt2Aa3it_3bo5p-lqU73ExGVzHikVXSb7kS8y74zbKLCReXLWonU17PGQ5y8Ie4w
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1758104565
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-26 17:27:08 ====
+File: ct_20250926_172708_68d6a2bc0aff7.json
+EntityType=lead, EntityId=351848
+dialedNumber=73812432475
+callerPhone=79658785018
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 225647
+    [changedFields] => null
+    [ctCallerId] => 94e73ddf52015d2006f71f2ef382d88f
+    [callerphone] => 79658785018
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-09-26 17:27:05
+    [timestamp] => 1758896825
+    [unique] => false
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => poisk_omsk_cpc_4000_703327119
+    [utm_content] => 17291999756
+    [utm_term] => протезирование зубов цена
+    [yaClientId] => 1758729653561110015
+    [sessionId] => 20363744
+    [ctClientId] => 3300000000014160519
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk_omsk_cpc_4000_703327119&utm_content=17291999756&utm_term=протезирование зубов цена&calltouch_tm=yd_c:703327119_gb:5643207731_ad:17291999756_ph:55600073393_st:search_pt:premium_p:2_s:none_dt:mobile_reg:66_ret:55600073393_apt:none&yclid=17592044587175641087
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 185.210.140.1
+    [callReferenceNumber] => e062df8e-9ae4-11f0-9d64-27b66b21c98f
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; RMX3710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.105 YaBrowser/25.8.5.105.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1758896827
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-26 17:29:06 ====
+File: ct_20250926_172906_68d6a33250206.json
+EntityType=lead, EntityId=351848
+dialedNumber=73812432475
+callerPhone=79658785018
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 225647
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 94e73ddf52015d2006f71f2ef382d88f
+    [callerphone] => 79658785018
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 8
+    [waiting_time] => 1
+    [calltime] => 2025-09-26 17:27:05
+    [timestamp] => 1758896825
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => poisk_omsk_cpc_4000_703327119
+    [utm_content] => 17291999756
+    [utm_term] => протезирование зубов цена
+    [yaClientId] => 1758729653561110015
+    [sessionId] => 20363744
+    [ctClientId] => 3300000000014160519
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk_omsk_cpc_4000_703327119&utm_content=17291999756&utm_term=протезирование зубов цена&calltouch_tm=yd_c:703327119_gb:5643207731_ad:17291999756_ph:55600073393_st:search_pt:premium_p:2_s:none_dt:mobile_reg:66_ret:55600073393_apt:none&yclid=17592044587175641087
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 185.210.140.1
+    [sip_call_id] => b7d3bcb7-1587-123f-ac8e-005056beafdc
+    [callReferenceNumber] => e062df8e-9ae4-11f0-9d64-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1ODg5Njk0NiwiZXhwIjoyMDc0MjU2OTQ2LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjIyNTY0N30.bzDO93EKzuhCjVJJDCbpWUsqwXQl3vzmGDI03YWeDqIz6T82C95Ln-tq7PfU-cf9WtKAFCiqtKw7dqKfiw9R1g
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; RMX3710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.105 YaBrowser/25.8.5.105.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1758896946
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-07 09:59:27 ====
+File: ct_20251007_095926_68e4ba4edc15a.json
+EntityType=lead, EntityId=368231
+dialedNumber=73812432499
+callerPhone=79687253481
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 292335
+    [changedFields] => null
+    [ctCallerId] => 82218d25ad62d022172bd5f2775d5c8c
+    [callerphone] => 79687253481
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-07 09:59:24
+    [timestamp] => 1759820364
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => poisk_omsk_cpa_4000_703510850
+    [utm_content] => 17307506882
+    [utm_term] => вставить зубы
+    [yaClientId] => 1759819878801498321
+    [sessionId] => 26078364
+    [ctClientId] => 3300000000018713596
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk_omsk_cpa_4000_703510850&utm_content=17307506882&utm_term=вставить зубы&calltouch_tm=yd_c:703510850_gb:5649241778_ad:17307506882_ph:55654957280_st:search_pt:other_p:4_s:none_dt:desktop_reg:66_ret:55654957280_apt:none&etext=2202.vQqlMd7UctpkXI9AD401RkHF34naR-_uEIRfhuvjL9bbPiLWD8DUp-jW630f0L8v3RidiV55V31QRvMfhGsQK255cG53b3p3YXJxemhpYW8.78b575a51bb32913df41ae659ea7c3144f0ee0ec&yclid=1868575616741146623
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => yekaterinburg
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 91.191.236.194
+    [callReferenceNumber] => 28a25d38-a34b-11f0-b3de-93193d8d6688
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1759820366
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-07 10:03:06 ====
+File: ct_20251007_100305_68e4bb29ef527.json
+EntityType=lead, EntityId=368231
+dialedNumber=73812432499
+callerPhone=79687253481
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 292335
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 82218d25ad62d022172bd5f2775d5c8c
+    [callerphone] => 79687253481
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 95
+    [waiting_time] => 1
+    [calltime] => 2025-10-07 09:59:24
+    [timestamp] => 1759820364
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => poisk_omsk_cpa_4000_703510850
+    [utm_content] => 17307506882
+    [utm_term] => вставить зубы
+    [yaClientId] => 1759819878801498321
+    [sessionId] => 26078364
+    [ctClientId] => 3300000000018713596
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk_omsk_cpa_4000_703510850&utm_content=17307506882&utm_term=вставить зубы&calltouch_tm=yd_c:703510850_gb:5649241778_ad:17307506882_ph:55654957280_st:search_pt:other_p:4_s:none_dt:desktop_reg:66_ret:55654957280_apt:none&etext=2202.vQqlMd7UctpkXI9AD401RkHF34naR-_uEIRfhuvjL9bbPiLWD8DUp-jW630f0L8v3RidiV55V31QRvMfhGsQK255cG53b3p3YXJxemhpYW8.78b575a51bb32913df41ae659ea7c3144f0ee0ec&yclid=1868575616741146623
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => yekaterinburg
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 91.191.236.194
+    [sip_call_id] => 0012d568-1dee-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 28a25d38-a34b-11f0-b3de-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTgyMDU4NSwiZXhwIjoyMDc1MTgwNTg1LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjI5MjMzNX0.BRY6aqz6rrndRHVjwcZyq5xKyQ8rozJzfJO_bB2DUs6KRg7MF0sp59oehZS5ubycPQ5Xhhw4ZcivET3XgVWaJA
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1759820585
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-09 08:55:29 ====
+File: ct_20251009_085528_68e74e50ccea7.json
+EntityType=lead, EntityId=371583
+dialedNumber=73812432499
+callerPhone=73812722350
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 308496
+    [changedFields] => null
+    [ctCallerId] => bdc42446d4ce61c6c1255dabe368ff09
+    [callerphone] => 73812722350
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-09 08:55:27
+    [timestamp] => 1759989327
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => 703222564
+    [utm_content] => 1887090403372785942
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1759845388310818805
+    [sessionId] => 27431584
+    [ctClientId] => 3300000000018905995
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=703222564&utm_content=1887090403372785942&utm_term=---autotargeting&yclid=12748127038740627455
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 188.232.100.96
+    [callReferenceNumber] => 8e4dc598-a4d4-11f0-a43f-93193d8d6688
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1759989328
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-09 09:00:04 ====
+File: ct_20251009_090004_68e74f64219fe.json
+EntityType=lead, EntityId=371583
+dialedNumber=73812432499
+callerPhone=73812722350
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 308496
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => bdc42446d4ce61c6c1255dabe368ff09
+    [callerphone] => 73812722350
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 160
+    [waiting_time] => 1
+    [calltime] => 2025-10-09 08:55:27
+    [timestamp] => 1759989327
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => 703222564
+    [utm_content] => 1887090403372785942
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1759845388310818805
+    [sessionId] => 27431584
+    [ctClientId] => 3300000000018905995
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=703222564&utm_content=1887090403372785942&utm_term=---autotargeting&yclid=12748127038740627455
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 188.232.100.96
+    [sip_call_id] => 65bd975f-1f77-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 8e4dc598-a4d4-11f0-a43f-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTk4OTYwNCwiZXhwIjoyMDc1MzQ5NjA0LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjMwODQ5Nn0.vtqoGaGmZouhpg5p0vjP3M_KIYOGHGoUbkODzmIhGHyrmsnwDWDgvpHMangK-UMHY0rgQFu3DK2idMZewmPqjw
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1759989604
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-20 17:41:57 ====
+File: ct_20251017_075501_68f1cc252adce.json
+EntityType=lead, EntityId=395696
+dialedNumber=73812432475
+callerPhone=79658772760
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 370840
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => f4aa4514e1897623f2feaefe50ad884a
+    [callerphone] => 79658772760
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 5
+    [waiting_time] => 1
+    [calltime] => 2025-10-17 07:53:32
+    [timestamp] => 1760676812
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => poisk_omsk_cpc_5000_703327119
+    [utm_content] => 17291999758
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176067396727615319
+    [sessionId] => 32914072
+    [ctClientId] => 3300000000023140965
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk_omsk_cpc_5000_703327119&utm_content=17291999758&utm_term=---autotargeting&calltouch_tm=yd_c:703327119_gb:5643207733_ad:17291999758_ph:205643207733_st:search_pt:premium_p:1_s:none_dt:desktop_reg:66_ret:205643207733_apt:none&ybaip=1&yclid=5931551869403135999
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => moscow
+    [browser] => Internet Explorer
+    [os] => Windows
+    [device] => desktop
+    [ip] => 185.24.213.125
+    [sip_call_id] => 12b97fc1-25b8-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 3b4dafb0-ab15-11f0-86fa-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDY3NjkwMSwiZXhwIjoyMDc2MDM2OTAxLCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjM3MDg0MH0.VVzTj24SZLyyICLbLFWEfgO41wKWxa3QYjzObVl2rbnbnG2BuFSedc4-RIStYQtWXzGMngS2zlYHMNgiYtrdxA
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+    [sendingTimestamp] => 1760676901
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-20 17:42:05 ====
+File: ct_20251017_075333_68f1cbcdd4d80.json
+EntityType=lead, EntityId=395696
+dialedNumber=73812432475
+callerPhone=79658772760
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 370840
+    [changedFields] => null
+    [ctCallerId] => f4aa4514e1897623f2feaefe50ad884a
+    [callerphone] => 79658772760
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-17 07:53:32
+    [timestamp] => 1760676812
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => poisk_omsk_cpc_5000_703327119
+    [utm_content] => 17291999758
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176067396727615319
+    [sessionId] => 32914072
+    [ctClientId] => 3300000000023140965
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=poisk_omsk_cpc_5000_703327119&utm_content=17291999758&utm_term=---autotargeting&calltouch_tm=yd_c:703327119_gb:5643207733_ad:17291999758_ph:205643207733_st:search_pt:premium_p:1_s:none_dt:desktop_reg:66_ret:205643207733_apt:none&ybaip=1&yclid=5931551869403135999
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => moscow
+    [browser] => Internet Explorer
+    [os] => Windows
+    [device] => desktop
+    [ip] => 185.24.213.125
+    [callReferenceNumber] => 3b4dafb0-ab15-11f0-86fa-93193d8d6688
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0
+    [sendingTimestamp] => 1760676813
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-22 08:24:56 ====
+File: ct_20251022_082455_68f86aa7a9b0a.json
+EntityType=lead, EntityId=398192
+dialedNumber=73812432475
+callerPhone=79048219337
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 411545
+    [changedFields] => null
+    [ctCallerId] => bc0b7b49b736474222f4454726c4de4b
+    [callerphone] => 79048219337
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-22 08:24:54
+    [timestamp] => 1761110694
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => rsya_omsk_cpc_3000_703327388
+    [utm_content] => 17292040441
+    [utm_term] => сколько стоит вставить имплант зуба
+    [yaClientId] => 1761110630581082035
+    [sessionId] => 36438256
+    [ctClientId] => 3300000000025425023
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=rsya_omsk_cpc_3000_703327388&utm_content=17292040441&utm_term=сколько стоит вставить имплант зуба&calltouch_tm=yd_c:703327388_gb:5643211088_ad:17292040441_ph:55600500094_st:context_pt:none_p:0_s:ru.ngs.news_dt:mobile_reg:66_ret:55600500094_apt:none&yclid=14491369799409729535&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => 
+    [browser] => Opera
+    [os] => Android
+    [device] => smartphone
+    [ip] => 82.145.211.66
+    [callReferenceNumber] => 70cc2da6-af07-11f0-8d52-93193d8d6688
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 OPR/92.0.0.0
+    [sendingTimestamp] => 1761110695
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-22 08:28:02 ====
+File: ct_20251022_082802_68f86b627d8d2.json
+EntityType=lead, EntityId=398192
+dialedNumber=73812432475
+callerPhone=79048219337
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 411545
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => bc0b7b49b736474222f4454726c4de4b
+    [callerphone] => 79048219337
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 86
+    [waiting_time] => 0
+    [calltime] => 2025-10-22 08:24:54
+    [timestamp] => 1761110694
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => rsya_omsk_cpc_3000_703327388
+    [utm_content] => 17292040441
+    [utm_term] => сколько стоит вставить имплант зуба
+    [yaClientId] => 1761110630581082035
+    [sessionId] => 36438256
+    [ctClientId] => 3300000000025425023
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=rsya_omsk_cpc_3000_703327388&utm_content=17292040441&utm_term=сколько стоит вставить имплант зуба&calltouch_tm=yd_c:703327388_gb:5643211088_ad:17292040441_ph:55600500094_st:context_pt:none_p:0_s:ru.ngs.news_dt:mobile_reg:66_ret:55600500094_apt:none&yclid=14491369799409729535&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => 
+    [browser] => Opera
+    [os] => Android
+    [device] => smartphone
+    [ip] => 82.145.211.66
+    [sip_call_id] => 48386b74-29aa-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 70cc2da6-af07-11f0-8d52-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTExMDg4MiwiZXhwIjoyMDc2NDcwODgyLCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjQxMTU0NX0.NAfX14JBJkWgRgYEHHt30ugs7o8-orpdMaDTVH43IoL-imUMex-PjckzcyBLVPuDpjagq75MDccY076eGm997A
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 OPR/92.0.0.0
+    [sendingTimestamp] => 1761110882
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-22 10:35:25 ====
+File: ct_20251022_103524_68f8893ce08b9.json
+EntityType=lead, EntityId=398438
+dialedNumber=73812432499
+callerPhone=79087907802
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 413266
+    [changedFields] => null
+    [ctCallerId] => 6cb1d91fea3f3d5fc14618fe5eab4df3
+    [callerphone] => 79087907802
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-22 10:35:16
+    [timestamp] => 1761118516
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => 704280149
+    [utm_content] => 1890902839681941874
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176110302454587724
+    [sessionId] => 36525678
+    [ctClientId] => 3300000000025396969
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=704280149&utm_content=1890902839681941874&utm_term=---autotargeting&yclid=12879897011852673023
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.129.246
+    [callReferenceNumber] => a7572940-af19-11f0-97de-93193d8d6688
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 11; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.208 Mobile Safari/537.36
+    [sendingTimestamp] => 1761118524
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-22 10:41:05 ====
+File: ct_20251022_104104_68f88a90bb08b.json
+EntityType=lead, EntityId=398438
+dialedNumber=73812432499
+callerPhone=79087907802
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 413266
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 6cb1d91fea3f3d5fc14618fe5eab4df3
+    [callerphone] => 79087907802
+    [phonenumber] => 73812432499
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 242
+    [waiting_time] => 1
+    [calltime] => 2025-10-22 10:35:16
+    [timestamp] => 1761118516
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => 704280149
+    [utm_content] => 1890902839681941874
+    [utm_term] => ---autotargeting
+    [yaClientId] => 176110302454587724
+    [sessionId] => 36525678
+    [ctClientId] => 3300000000025396969
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=704280149&utm_content=1890902839681941874&utm_term=---autotargeting&yclid=12879897011852673023
+    [attrs] => {}
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.129.246
+    [sip_call_id] => 7ecdd540-29bc-123f-8e8e-005056beafdc
+    [callReferenceNumber] => a7572940-af19-11f0-97de-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTExODg2NCwiZXhwIjoyMDc2NDc4ODY0LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjQxMzI2Nn0.G0Qi6A85kQJUnuxtSccy3cC2KNP3omme4U6Vajf4kgmHNlTU_QdAseg_hCe3ltFn2Kb8aA8Cs99JGtRqi296Bw
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 11; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.208 Mobile Safari/537.36
+    [sendingTimestamp] => 1761118864
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-01 12:20:04 ====
+File: ct_20251101_122004_6905d0c42f43e.json
+EntityType=lead, EntityId=416869
+dialedNumber=73812432414
+callerPhone=79088038490
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 505664
+    [changedFields] => null
+    [ctCallerId] => 024b0de375acb9b5c48f073d2cccea93
+    [callerphone] => 79088038490
+    [phonenumber] => 73812432414
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [calltime] => 2025-11-01 12:15:41
+    [timestamp] => 1761988541
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761988504525245829
+    [sessionId] => 43975524
+    [ctClientId] => 3300000000030098006
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => https://www.google.ru/
+    [city] => omsk
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 176.59.148.195
+    [sip_call_id] => 2df5f842-31a6-123f-0394-005056beafdc
+    [callReferenceNumber] => 56825c6e-b703-11f0-8562-0b02f6801b0e
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1761988804
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-01 12:23:20 ====
+File: ct_20251101_122319_6905d187bfb6f.json
+EntityType=lead, EntityId=416869
+dialedNumber=73812432414
+callerPhone=79088038490
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 505664
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 024b0de375acb9b5c48f073d2cccea93
+    [callerphone] => 79088038490
+    [phonenumber] => 73812432414
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 98
+    [waiting_time] => 1
+    [calltime] => 2025-11-01 12:15:41
+    [timestamp] => 1761988541
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761988504525245829
+    [sessionId] => 43975524
+    [ctClientId] => 3300000000030098006
+    [ctGlobalId] => null
+    [hostname] => siberiansmile.ru
+    [url] => https://siberiansmile.ru/
+    [attrs] => {}
+    [ref] => https://www.google.ru/
+    [city] => omsk
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 176.59.148.195
+    [sip_call_id] => 2df5f842-31a6-123f-0394-005056beafdc
+    [callReferenceNumber] => 56825c6e-b703-11f0-8562-0b02f6801b0e
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTk4ODk5OSwiZXhwIjoyMDc3MzQ4OTk5LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjUwNTY2NH0.5Mz-sTKsp_SGlyGFKXV8tQgZlCIwkz6BRRGORw4dfz0xiYcFiia95bgrTmDHbv-AXxelf8MdL56wZzSqUUsLRw
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1761988999
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-12 12:50:02 ====
+File: ct_20251112_125001_69145849ebf6b.json
+EntityType=lead, EntityId=434409
+dialedNumber=73812432475
+callerPhone=74953088080
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 603947
+    [changedFields] => null
+    [ctCallerId] => 8a4da31ad7d24a73e3aedc129f3a6106
+    [callerphone] => 74953088080
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [calltime] => 2025-11-12 12:48:48
+    [timestamp] => 1762940928
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => Тест от calltouch
+    [tags_api] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => a0dd7a83-3a4f-123f-0394-005056beafdc
+    [callReferenceNumber] => c970150c-bfac-11f0-8539-0b02f6801b0e
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [sendingTimestamp] => 1762941001
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+
+==== 2025-11-12 12:51:15 ====
+File: ct_20251112_125114_69145892e9e9e.json
+EntityType=lead, EntityId=434409
+dialedNumber=73812432475
+callerPhone=74953088080
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 603947
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 8a4da31ad7d24a73e3aedc129f3a6106
+    [callerphone] => 74953088080
+    [phonenumber] => 73812432475
+    [subPoolName] => Остальные
+    [redirectNumber] => 73812678066
+    [duration] => 4
+    [waiting_time] => 1
+    [calltime] => 2025-11-12 12:48:48
+    [timestamp] => 1762940928
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => Тест от calltouch
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => Тест от calltouch
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => a0dd7a83-3a4f-123f-0394-005056beafdc
+    [callReferenceNumber] => c970150c-bfac-11f0-8539-0b02f6801b0e
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk0MTA2OSwiZXhwIjoyMDc4MzAxMDY5LCJzaXRlSWQiOjc3MjY2LCJjYWxsSWQiOjYwMzk0N30.IFamhmS-bLFHgukKEYdGGkA2GUXNXme7DCde10LW_7oaFV4fI8muhfF--8Thzsq5kGxeQfIC7YxPb95Dr0sKrA
+    [orderId] => null
+    [siteId] => 77266
+    [siteName] => siberiansmile.ru
+    [sendingTimestamp] => 1762941069
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+    [url] => Остальные
+)
+
+

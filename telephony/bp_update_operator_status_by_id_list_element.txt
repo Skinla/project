@@ -1,0 +1,247 @@
+use Bitrix\Main\Loader;
+
+$iblockId = 128;
+$operatorPropertyCode = 'OPERATOR';
+$statusPropertyCode = 'STATUS';
+$updatedAtPropertyCode = 'UPDATED_AT';
+$imStatusPropertyCode = 'IM_STATUS';
+$isOnlinePropertyCode = 'IS_ONLINE';
+$activeCallsCountPropertyCode = 'ACTIVE_CALLS_COUNT';
+$lastActivityDatePropertyCode = 'LAST_ACTIVITY_DATE';
+$statusFreeEnumId = 1163;
+$statusBusyEnumId = 1164;
+$imStatusEnumMap = array(
+    'online' => 1165,
+    'dnd' => 1166,
+    'away' => 1167,
+    'break' => 1168,
+    'offline' => 1169,
+);
+$isOnlineYesEnumId = 1170;
+$isOnlineNoEnumId = 1171;
+
+$rawElementId = (string) $this->GetVariable('id_list_element');
+$elementId = (int) preg_replace('/\D+/', '', $rawElementId);
+
+if ($elementId <= 0) {
+    $this->WriteToTrackingService('id_list_element is empty or invalid: ' . $rawElementId);
+    return;
+}
+
+if (!Loader::includeModule('iblock')) {
+    $this->WriteToTrackingService('iblock module not available');
+    return;
+}
+
+if (!Loader::includeModule('voximplant')) {
+    $this->WriteToTrackingService('voximplant module not available');
+    return;
+}
+
+Loader::includeModule('im');
+
+if (!function_exists('normalizeListDateTimeValue')) {
+    function normalizeListDateTimeValue($value)
+    {
+        if ($value instanceof \Bitrix\Main\Type\DateTime) {
+            return $value->format('d.m.Y H:i:s');
+        }
+
+        if ($value instanceof \DateTimeInterface) {
+            return $value->format('d.m.Y H:i:s');
+        }
+
+        if (!is_string($value) || trim($value) === '') {
+            return null;
+        }
+
+        $timestamp = MakeTimeStamp($value);
+        if ((int) $timestamp <= 0) {
+            $timestamp = strtotime($value);
+        }
+
+        if ((int) $timestamp <= 0) {
+            return null;
+        }
+
+        return date('d.m.Y H:i:s', (int) $timestamp);
+    }
+}
+
+if (!function_exists('tableHasColumn')) {
+    function tableHasColumn($db, $tableName, $columnName)
+    {
+        if (!is_object($db)) {
+            return false;
+        }
+
+        $tableName = preg_replace('/[^a-zA-Z0-9_]/', '', (string) $tableName);
+        $columnName = preg_replace('/[^a-zA-Z0-9_]/', '', (string) $columnName);
+        if ($tableName === '' || $columnName === '') {
+            return false;
+        }
+
+        $res = $db->Query("SHOW COLUMNS FROM `" . $tableName . "` LIKE '" . $columnName . "'");
+        return is_object($res) && method_exists($res, 'Fetch') && (bool) $res->Fetch();
+    }
+}
+
+$elementRes = \CIBlockElement::GetByID($elementId);
+$element = $elementRes ? $elementRes->GetNextElement() : false;
+
+if (!$element) {
+    $this->WriteToTrackingService('List element not found: ' . $elementId);
+    return;
+}
+
+$properties = $element->GetProperties();
+$operatorValue = $properties[$operatorPropertyCode]['VALUE'] ?? null;
+$operatorUserId = 0;
+
+if (is_array($operatorValue)) {
+    $operatorValue = reset($operatorValue);
+}
+
+$operatorUserId = (int) preg_replace('/\D+/', '', (string) $operatorValue);
+
+if ($operatorUserId <= 0) {
+    $this->WriteToTrackingService('Operator is empty in list element: ' . $elementId);
+    return;
+}
+
+if (!class_exists('CVoxImplantIncoming') || !method_exists('CVoxImplantIncoming', 'getUserInfo')) {
+    $this->WriteToTrackingService('CVoxImplantIncoming::getUserInfo is not available');
+    return;
+}
+
+$userInfo = \CVoxImplantIncoming::getUserInfo($operatorUserId, false);
+
+if (!is_array($userInfo)) {
+    $this->WriteToTrackingService('Unexpected telephony response for user ' . $operatorUserId);
+    return;
+}
+
+$busyRaw = $userInfo['BUSY'] ?? null;
+$isBusy = in_array($busyRaw, array(true, 1, '1', 'Y', 'y', 'true', 'TRUE'), true);
+$statusEnumId = $isBusy ? $statusBusyEnumId : $statusFreeEnumId;
+$statusCode = $isBusy ? 'busy' : 'free';
+
+$user = \CUser::GetByID($operatorUserId)->Fetch();
+$isOnline = null;
+$lastActivityDate = null;
+
+if (is_array($user)) {
+    $isOnlineRaw = $user['IS_ONLINE'] ?? null;
+    if (in_array($isOnlineRaw, array(true, 1, '1', 'Y', 'y', 'true', 'TRUE'), true)) {
+        $isOnline = true;
+    } elseif (in_array($isOnlineRaw, array(false, 0, '0', 'N', 'n', 'false', 'FALSE'), true)) {
+        $isOnline = false;
+    }
+
+    if (!empty($user['LAST_ACTIVITY_DATE'])) {
+        $lastActivityDate = normalizeListDateTimeValue($user['LAST_ACTIVITY_DATE']);
+    }
+}
+
+if ($isOnline === null) {
+    $onlineRaw = $userInfo['ONLINE'] ?? null;
+    if (in_array($onlineRaw, array(true, 1, '1', 'Y', 'y', 'true', 'TRUE'), true)) {
+        $isOnline = true;
+    } elseif (in_array($onlineRaw, array(false, 0, '0', 'N', 'n', 'false', 'FALSE'), true)) {
+        $isOnline = false;
+    }
+}
+
+$imStatusCode = null;
+if (class_exists('CIMStatus') && method_exists('CIMStatus', 'GetList')) {
+    $statusRes = \CIMStatus::GetList(array(), array('=USER_ID' => $operatorUserId));
+    if (is_object($statusRes) && method_exists($statusRes, 'Fetch')) {
+        $statusRow = $statusRes->Fetch();
+        if (is_array($statusRow) && !empty($statusRow['STATUS'])) {
+            $imStatusCode = strtolower((string) $statusRow['STATUS']);
+        }
+    }
+}
+
+if ($imStatusCode === null || !isset($imStatusEnumMap[$imStatusCode])) {
+    $imStatusCode = $isOnline ? 'online' : 'offline';
+}
+
+$imStatusEnumId = $imStatusEnumMap[$imStatusCode];
+$isOnlineEnumId = $isOnline ? $isOnlineYesEnumId : $isOnlineNoEnumId;
+$updatedAtValue = date('d.m.Y H:i:s');
+$activeCallsCount = 0;
+
+global $DB;
+if (is_object($DB)) {
+    $callHasLastPing = tableHasColumn($DB, 'b_voximplant_call', 'LAST_PING');
+    $callUserHasInserted = tableHasColumn($DB, 'b_voximplant_call_user', 'INSERTED');
+
+    $recentFilter = '';
+    if ($callHasLastPing || $callUserHasInserted) {
+        $recentConditions = array();
+        if ($callHasLastPing) {
+            $recentConditions[] = "c.LAST_PING >= DATE_SUB(NOW(), INTERVAL 15 MINUTE)";
+        }
+        if ($callUserHasInserted) {
+            $recentConditions[] = "cu.INSERTED >= DATE_SUB(NOW(), INTERVAL 15 MINUTE)";
+        }
+        $recentFilter = "
+          AND (
+              " . implode("
+              OR ", $recentConditions) . "
+          )";
+    }
+
+    $countSql = "
+        SELECT COUNT(DISTINCT cu.CALL_ID) AS CNT
+        FROM b_voximplant_call_user cu
+        INNER JOIN b_voximplant_call c ON c.CALL_ID = cu.CALL_ID
+        WHERE cu.USER_ID = " . (int) $operatorUserId . "
+          AND (
+              c.STATUS IN ('waiting', 'connecting', 'connected')
+              OR cu.STATUS IN ('waiting', 'connecting', 'connected')
+          )
+          " . $recentFilter . "
+    ";
+    $countRes = $DB->Query($countSql);
+    if (is_object($countRes) && method_exists($countRes, 'Fetch')) {
+        $countRow = $countRes->Fetch();
+        if (is_array($countRow)) {
+            $activeCallsCount = (int) ($countRow['CNT'] ?? 0);
+        }
+    }
+}
+
+$propertyValues = array(
+    $statusPropertyCode => $statusEnumId,
+    $updatedAtPropertyCode => $updatedAtValue,
+    $imStatusPropertyCode => $imStatusEnumId,
+    $isOnlinePropertyCode => $isOnlineEnumId,
+    $activeCallsCountPropertyCode => $activeCallsCount,
+);
+
+if ($lastActivityDate !== null) {
+    $propertyValues[$lastActivityDatePropertyCode] = $lastActivityDate;
+}
+
+\CIBlockElement::SetPropertyValuesEx(
+    $elementId,
+    $iblockId,
+    $propertyValues
+);
+
+$this->WriteToTrackingService(
+    'Element ' . $elementId
+    . ', operator ' . $operatorUserId
+    . ', BUSY=' . print_r($busyRaw, true)
+    . ', STATUS=' . $statusCode
+    . ' (' . $statusEnumId . ')'
+    . ', IM_STATUS=' . $imStatusCode
+    . ' (' . $imStatusEnumId . ')'
+    . ', IS_ONLINE=' . ($isOnline ? 'Y' : 'N')
+    . ' (' . $isOnlineEnumId . ')'
+    . ', ACTIVE_CALLS_COUNT=' . $activeCallsCount
+    . ', LAST_ACTIVITY_DATE=' . ($lastActivityDate !== null ? $lastActivityDate : 'null')
+    . ', UPDATED_AT=' . $updatedAtValue
+);

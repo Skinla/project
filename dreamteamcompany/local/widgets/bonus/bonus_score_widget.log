@@ -1,0 +1,448 @@
+[2025-12-17 16:40:41] Leader check via IsAdmin() {"current_user_id":1}
+[2025-12-17 16:40:41] Bonus scoring popup access {"profile_user_id":1,"current_user_id":1,"is_leader":"Y"}
+[2025-12-17 16:40:41] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2025-12-17 16:40:41] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2025-12-17 16:40:41] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2025-12-17 16:40:41] Final visible reasons {"is_leader":"Y","visible_count":5,"visible_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2025-12-17 16:40:51] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_9"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"1","Bonus_Quantity":"1000","Charge_Reason":"причина №1"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2025-12-17 16:40:53] Bonus BP start: success {"http_code":200,"response":{"result":"6942b2e418a9b8.13013283","time":{"start":1765978851,"finish":1765978853.087944,"duration":2.0879440307617188,"processing":1,"date_start":"2025-12-17T16:40:51+03:00","date_finish":"2025-12-17T16:40:53+03:00"}}}
+[2025-12-18 11:18:29] Leader check via structure sections {"current_user_id":34762,"section_id":"225"}
+[2025-12-18 11:18:29] Bonus scoring popup access {"profile_user_id":34762,"current_user_id":34762,"is_leader":"Y"}
+[2025-12-18 11:18:29] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":34762}
+[2025-12-18 11:18:29] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2025-12-18 11:18:29] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2025-12-18 11:18:29] Final visible reasons {"is_leader":"Y","visible_count":5,"visible_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2025-12-24 22:39:18] Leader check - not a leader {"current_user_id":51438,"leader_group_ids":[1]}
+[2025-12-24 22:39:18] Bonus scoring popup access {"profile_user_id":51438,"current_user_id":51438,"is_leader":"N"}
+[2025-12-24 22:39:18] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":51438}
+[2025-12-24 22:39:18] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2025-12-24 22:39:18] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2025-12-24 22:39:18] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2026-01-05 11:17:47] Leader check via structure sections {"current_user_id":674,"section_id":"157"}
+[2026-01-05 11:17:47] Bonus scoring popup access {"profile_user_id":674,"current_user_id":674,"is_leader":"Y"}
+[2026-01-05 11:17:47] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":674}
+[2026-01-05 11:17:47] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2026-01-05 11:17:47] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2026-01-05 11:17:47] Final visible reasons {"is_leader":"Y","visible_count":5,"visible_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2026-01-09 14:20:20] Leader check - not a leader {"current_user_id":297,"leader_group_ids":[1]}
+[2026-01-09 14:20:20] Bonus scoring popup access {"profile_user_id":297,"current_user_id":297,"is_leader":"N"}
+[2026-01-09 14:20:20] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":297}
+[2026-01-09 14:20:20] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2026-01-09 14:20:20] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2026-01-09 14:20:20] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2026-01-09 15:57:28] Leader check - not a leader {"current_user_id":297,"leader_group_ids":[1]}
+[2026-01-09 15:57:28] Bonus scoring popup access {"profile_user_id":297,"current_user_id":297,"is_leader":"N"}
+[2026-01-09 15:57:28] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":297}
+[2026-01-09 15:57:28] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2026-01-09 15:57:28] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2026-01-09 15:57:28] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2026-01-14 12:36:43] Leader check - not a leader {"current_user_id":80293,"leader_group_ids":[1]}
+[2026-01-14 12:36:43] Bonus scoring popup access {"profile_user_id":80293,"current_user_id":80293,"is_leader":"N"}
+[2026-01-14 12:36:43] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":80293}
+[2026-01-14 12:36:43] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2026-01-14 12:36:43] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2026-01-14 12:36:43] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2026-01-14 15:31:07] Leader check - not a leader {"current_user_id":5576,"leader_group_ids":[1]}
+[2026-01-14 15:31:07] Bonus scoring popup access {"profile_user_id":5576,"current_user_id":5576,"is_leader":"N"}
+[2026-01-14 15:31:08] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":5576}
+[2026-01-14 15:31:08] User field found {"field_id":4414,"entity_id":"CRM_29"}
+[2026-01-14 15:31:08] Reason enum loaded {"found_count":5,"all_options":[{"ID":6513,"VALUE":"причина №1","XML_ID":"349f81f5e117f4962e7325ce3565121b"},{"ID":6514,"VALUE":"причина №2","XML_ID":"c769a88dd21343badc103a76a4cb1887"},{"ID":6515,"VALUE":"причина №3","XML_ID":"18ee53fe8cd426dea4164e097a6fc48e"},{"ID":6516,"VALUE":"причина №4","XML_ID":"b59881310bb255db5fc9664a164ea09c"},{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}],"transfer_option_found":"Y"}
+[2026-01-14 15:31:08] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6534,"VALUE":"ПЕРЕВОД","XML_ID":"9602c94d3fe5425cb324404faecf2ff9"}]}
+[2026-01-16 10:26:27] Leader check via IsAdmin() {"current_user_id":6}
+[2026-01-16 10:26:27] Bonus scoring popup access {"profile_user_id":6,"current_user_id":6,"is_leader":"Y"}
+[2026-01-16 10:26:27] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":6}
+[2026-01-16 10:26:27] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-16 10:26:27] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-16 10:26:27] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-19 10:39:23] Leader check - not a leader {"current_user_id":83969,"leader_group_ids":[1]}
+[2026-01-19 10:39:23] Bonus scoring popup access {"profile_user_id":83969,"current_user_id":83969,"is_leader":"N"}
+[2026-01-19 10:39:23] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":83969}
+[2026-01-19 10:39:23] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 10:39:23] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 10:39:23] Final visible reasons {"is_leader":"N","visible_count":0,"visible_options":[]}
+[2026-01-19 14:58:41] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-19 14:58:41] Bonus scoring popup access {"profile_user_id":9,"current_user_id":9,"is_leader":"Y"}
+[2026-01-19 14:58:41] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-19 14:58:41] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 14:58:41] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 14:58:41] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-19 16:56:57] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-19 16:56:57] Bonus scoring popup access {"profile_user_id":34,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-19 16:56:57] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-19 16:56:57] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 16:56:57] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 16:56:57] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-19 17:03:50] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-19 17:03:50] Bonus scoring popup access {"profile_user_id":9,"current_user_id":9,"is_leader":"Y"}
+[2026-01-19 17:03:50] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-19 17:03:50] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 17:03:50] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 17:03:50] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-19 17:05:17] Leader check via IsAdmin() {"current_user_id":5}
+[2026-01-19 17:05:17] Bonus scoring popup access {"profile_user_id":5,"current_user_id":5,"is_leader":"Y"}
+[2026-01-19 17:05:18] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":5}
+[2026-01-19 17:05:18] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 17:05:18] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 17:05:18] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-19 19:04:05] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-19 19:04:05] Bonus scoring popup access {"profile_user_id":1,"current_user_id":1,"is_leader":"Y"}
+[2026-01-19 19:04:05] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-19 19:04:05] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 19:04:05] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 19:04:05] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-19 20:34:35] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-19 20:34:35] Bonus scoring popup access {"profile_user_id":9,"current_user_id":9,"is_leader":"Y"}
+[2026-01-19 20:34:35] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-19 20:34:35] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-19 20:34:35] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-19 20:34:35] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-20 10:55:49] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-20 10:55:49] Bonus scoring popup access {"profile_user_id":9,"current_user_id":9,"is_leader":"Y"}
+[2026-01-20 10:55:49] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-20 10:55:49] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-20 10:55:49] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-20 10:55:49] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-20 16:17:21] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-20 16:17:21] Bonus scoring popup access {"profile_user_id":9,"current_user_id":9,"is_leader":"Y"}
+[2026-01-20 16:17:21] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-20 16:17:21] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-20 16:17:21] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-20 16:17:21] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-20 16:26:22] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-20 16:26:22] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-20 16:26:22] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-20 16:26:22] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-20 16:26:22] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-20 16:26:22] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-21 12:13:52] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 12:13:52] Bonus scoring popup access {"profile_user_id":1,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 12:13:52] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 12:13:52] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-21 12:13:52] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-21 12:13:52] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-21 12:24:56] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 12:24:56] Bonus scoring popup access {"profile_user_id":9,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 12:24:56] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 12:24:56] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-21 12:24:56] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-21 12:24:56] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-21 12:40:41] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 12:40:41] Bonus scoring popup access {"profile_user_id":5,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 12:40:41] Bonus popup calculation error {"message":"Unknown field definition `UF_CRM_29_1768987790` (UF_CRM_29_1768987790) for \\crm_items_26 Entity.","code":100}
+[2026-01-21 12:40:41] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 12:40:41] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-21 12:40:41] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-21 12:40:41] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-21 12:41:01] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 12:41:01] Bonus scoring popup access {"profile_user_id":1,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 12:41:01] Bonus popup calculation error {"message":"Unknown field definition `UF_CRM_29_1768987790` (UF_CRM_29_1768987790) for \\crm_items_26 Entity.","code":100}
+[2026-01-21 12:41:01] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 12:41:01] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-21 12:41:01] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-21 12:41:01] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-21 12:47:13] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 12:47:13] Bonus scoring popup access {"profile_user_id":5,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 12:47:13] Bonus popup calculation error {"message":"Unknown field definition `UF_CRM_29_1768987790` (UF_CRM_29_1768987790) for \\crm_items_26 Entity.","code":100}
+[2026-01-21 12:47:13] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1764154224","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 12:47:13] User field not found by name {"reason_uf_name":"UF_CRM_29_1764154224"}
+[2026-01-21 12:47:13] Reason enum loaded {"found_count":0,"all_options":[],"transfer_option_found":"N"}
+[2026-01-21 12:47:13] Final visible reasons {"is_leader":"Y","visible_count":0,"visible_options":[]}
+[2026-01-21 12:49:27] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 12:49:27] Bonus scoring popup access {"profile_user_id":5,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 12:49:27] Bonus popup calculation error {"message":"Unknown field definition `UF_CRM_29_1768987790` (UF_CRM_29_1768987790) for \\crm_items_26 Entity.","code":100}
+[2026-01-21 12:49:27] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 12:49:27] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 12:49:27] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 12:49:27] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 13:18:03] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-21 13:18:03] Bonus scoring popup access {"profile_user_id":9,"current_user_id":9,"is_leader":"Y"}
+[2026-01-21 13:18:03] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-21 13:18:03] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 13:18:03] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 13:18:03] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 13:18:39] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"9","Bonus_Scores_Sender":"9","Bonus_Quantity":"100","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 13:18:41] Bonus BP start: success {"http_code":200,"response":{"result":"6970a7ffbe6547.70136634","time":{"start":1768990719,"finish":1768990721.777153,"duration":2.7771530151367188,"processing":2,"date_start":"2026-01-21T13:18:39+03:00","date_finish":"2026-01-21T13:18:41+03:00"}}}
+[2026-01-21 13:31:59] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 13:31:59] Bonus scoring popup access {"profile_user_id":5,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 13:31:59] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 13:31:59] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 13:31:59] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 13:31:59] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 13:34:52] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 13:34:52] Bonus scoring popup access {"profile_user_id":9,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 13:34:52] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 13:34:52] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 13:34:52] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 13:34:52] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 13:35:00] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"9","Bonus_Scores_Sender":"1","Bonus_Quantity":"200","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 13:35:00] Bonus BP start: success {"http_code":200,"response":{"result":"6970abd4364067.16456639","time":{"start":1768991700,"finish":1768991700.607067,"duration":0.6070671081542969,"processing":0,"date_start":"2026-01-21T13:35:00+03:00","date_finish":"2026-01-21T13:35:00+03:00"}}}
+[2026-01-21 13:36:12] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 13:36:12] Bonus scoring popup access {"profile_user_id":9,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 13:36:12] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 13:36:12] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 13:36:12] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 13:36:12] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 13:36:30] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"9","Bonus_Scores_Sender":"1","Bonus_Quantity":"100","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 13:36:31] Bonus BP start: success {"http_code":200,"response":{"result":"6970ac2f1af5c4.46018379","time":{"start":1768991791,"finish":1768991791.606295,"duration":0.606295108795166,"processing":0,"date_start":"2026-01-21T13:36:31+03:00","date_finish":"2026-01-21T13:36:31+03:00"}}}
+[2026-01-21 13:38:04] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 13:38:04] Bonus scoring popup access {"profile_user_id":1,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 13:38:04] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 13:38:04] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 13:38:04] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 13:38:04] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 13:38:11] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"1","Bonus_Quantity":"100","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 13:38:12] Bonus BP start: success {"http_code":200,"response":{"result":"6970ac940824e4.14660899","time":{"start":1768991891,"finish":1768991892.28927,"duration":1.2892699241638184,"processing":1,"date_start":"2026-01-21T13:38:11+03:00","date_finish":"2026-01-21T13:38:12+03:00"}}}
+[2026-01-21 14:12:28] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-21 14:12:28] Bonus scoring popup access {"profile_user_id":1,"current_user_id":9,"is_leader":"Y"}
+[2026-01-21 14:12:28] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-21 14:12:28] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 14:12:28] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 14:12:28] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 14:12:40] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"9","Bonus_Quantity":"100","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 14:12:41] Bonus BP start: success {"http_code":200,"response":{"result":"6970b4a8677c63.35025400","time":{"start":1768993960,"finish":1768993961.896731,"duration":1.896730899810791,"processing":1,"date_start":"2026-01-21T14:12:40+03:00","date_finish":"2026-01-21T14:12:41+03:00"}}}
+[2026-01-21 14:52:14] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 14:52:14] Bonus scoring popup access {"profile_user_id":9,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 14:52:14] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 14:52:14] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 14:52:14] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 14:52:14] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 14:52:24] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"9","Bonus_Scores_Sender":"1","Bonus_Quantity":"200","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 14:52:25] Bonus BP start: success {"http_code":200,"response":{"result":"6970bdf8626f26.11412696","time":{"start":1768996344,"finish":1768996345.114882,"duration":1.114881992340088,"processing":1,"date_start":"2026-01-21T14:52:24+03:00","date_finish":"2026-01-21T14:52:25+03:00"}}}
+[2026-01-21 17:49:00] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-21 17:49:00] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-21 17:49:00] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-21 17:49:00] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 17:49:00] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 17:49:00] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 19:28:34] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-21 19:28:34] Bonus scoring popup access {"profile_user_id":1,"current_user_id":9,"is_leader":"Y"}
+[2026-01-21 19:28:34] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-21 19:28:34] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 19:28:34] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 19:28:34] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 19:29:48] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-21 19:29:48] Bonus scoring popup access {"profile_user_id":9,"current_user_id":1,"is_leader":"Y"}
+[2026-01-21 19:29:48] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-21 19:29:48] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-21 19:29:48] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-21 19:29:48] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-21 19:29:57] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"9","Bonus_Scores_Sender":"1","Bonus_Quantity":"200","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-21 19:29:57] Bonus BP start: success {"http_code":200,"response":{"result":"6970ff05466fd2.81777347","time":{"start":1769012997,"finish":1769012997.987107,"duration":0.9871070384979248,"processing":0,"date_start":"2026-01-21T19:29:57+03:00","date_finish":"2026-01-21T19:29:57+03:00"}}}
+[2026-01-22 10:32:44] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-22 10:32:44] Bonus scoring popup access {"profile_user_id":1,"current_user_id":9,"is_leader":"Y"}
+[2026-01-22 10:32:44] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-22 10:32:44] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-22 10:32:44] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-22 10:32:44] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-22 10:32:59] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"9","Bonus_Quantity":"3000","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-22 10:33:00] Bonus BP start: success {"http_code":200,"response":{"result":"6971d2abd2aa27.71976692","time":{"start":1769067179,"finish":1769067180.832949,"duration":1.832948923110962,"processing":1,"date_start":"2026-01-22T10:32:59+03:00","date_finish":"2026-01-22T10:33:00+03:00"}}}
+[2026-01-22 12:43:31] Leader check via IsAdmin() {"current_user_id":1}
+[2026-01-22 12:43:31] Bonus scoring popup access {"profile_user_id":1,"current_user_id":1,"is_leader":"Y"}
+[2026-01-22 12:43:31] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":1}
+[2026-01-22 12:43:31] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-22 12:43:31] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-22 12:43:31] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-22 12:43:39] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"1","Bonus_Quantity":"100","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-22 12:43:41] Bonus BP start: success {"http_code":200,"response":{"result":"6971f14b8bce85.66655691","time":{"start":1769075019,"finish":1769075021.106431,"duration":2.106431007385254,"processing":2,"date_start":"2026-01-22T12:43:39+03:00","date_finish":"2026-01-22T12:43:41+03:00"}}}
+[2026-01-22 13:27:13] Leader check via structure sections {"current_user_id":680,"section_id":"116"}
+[2026-01-22 13:27:13] Bonus scoring popup access {"profile_user_id":680,"current_user_id":680,"is_leader":"Y"}
+[2026-01-22 13:27:13] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":680}
+[2026-01-22 13:27:13] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-22 13:27:13] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-22 13:27:13] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-22 14:09:28] Leader check via structure sections {"current_user_id":6000,"section_id":"90"}
+[2026-01-22 14:09:28] Bonus scoring popup access {"profile_user_id":6000,"current_user_id":6000,"is_leader":"Y"}
+[2026-01-22 14:09:28] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":6000}
+[2026-01-22 14:09:28] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-22 14:09:28] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-22 14:09:28] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-22 16:42:22] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-22 16:42:22] Bonus scoring popup access {"profile_user_id":1,"current_user_id":9,"is_leader":"Y"}
+[2026-01-22 16:42:22] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-22 16:42:22] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-22 16:42:22] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-22 16:42:22] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-22 16:42:31] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"9","Bonus_Quantity":"3000","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-22 16:42:32] Bonus BP start: success {"http_code":200,"response":{"result":"697229477a5ba8.46476991","time":{"start":1769089351,"finish":1769089352.317167,"duration":1.317167043685913,"processing":1,"date_start":"2026-01-22T16:42:31+03:00","date_finish":"2026-01-22T16:42:32+03:00"}}}
+[2026-01-22 16:42:54] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-22 16:42:54] Bonus scoring popup access {"profile_user_id":1,"current_user_id":9,"is_leader":"Y"}
+[2026-01-22 16:42:54] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-22 16:42:54] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-22 16:42:54] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-22 16:42:54] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-22 16:43:06] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"1","Bonus_Scores_Sender":"9","Bonus_Quantity":"3000","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-22 16:43:07] Bonus BP start: success {"http_code":200,"response":{"result":"6972296ade1bd6.91723880","time":{"start":1769089386,"finish":1769089387.659976,"duration":1.6599760055541992,"processing":1,"date_start":"2026-01-22T16:43:06+03:00","date_finish":"2026-01-22T16:43:07+03:00"}}}
+[2026-01-23 12:45:47] Leader check via IsAdmin() {"current_user_id":9}
+[2026-01-23 12:45:47] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":9,"is_leader":"Y"}
+[2026-01-23 12:45:47] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":9}
+[2026-01-23 12:45:47] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-23 12:45:47] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-23 12:45:47] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-23 12:46:02] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"4496","Bonus_Scores_Sender":"9","Bonus_Quantity":"5000","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-23 12:46:04] Bonus BP start: success {"http_code":200,"response":{"result":"6973435b0f7535.99121138","time":{"start":1769161562,"finish":1769161564.785219,"duration":2.7852189540863037,"processing":2,"date_start":"2026-01-23T12:46:02+03:00","date_finish":"2026-01-23T12:46:04+03:00"}}}
+[2026-01-23 12:47:07] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-23 12:47:07] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-23 12:47:07] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-23 12:47:07] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-23 12:47:07] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-23 12:47:07] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-23 15:32:59] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-23 15:32:59] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-23 15:32:59] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-23 15:32:59] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-23 15:32:59] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-23 15:32:59] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-26 10:03:48] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-26 10:03:48] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-26 10:03:48] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-26 10:03:48] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-26 10:03:48] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-26 10:03:48] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-26 12:30:44] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-26 12:30:44] Bonus scoring popup access {"profile_user_id":5,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-26 12:30:44] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-26 12:30:44] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-26 12:30:44] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-26 12:30:44] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-26 13:25:59] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-01-26 13:25:59] Bonus scoring popup access {"profile_user_id":5,"current_user_id":4496,"is_leader":"Y"}
+[2026-01-26 13:25:59] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-01-26 13:25:59] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-26 13:25:59] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-26 13:25:59] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-26 13:26:16] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"5","Bonus_Scores_Sender":"4496","Bonus_Quantity":"100","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-26 13:26:18] Bonus BP start: success {"http_code":200,"response":{"result":"69774148802a48.35668854","time":{"start":1769423176,"finish":1769423178.093035,"duration":2.0930349826812744,"processing":2,"date_start":"2026-01-26T13:26:16+03:00","date_finish":"2026-01-26T13:26:18+03:00"}}}
+[2026-01-28 13:19:37] Leader check via structure sections {"current_user_id":55,"section_id":"28"}
+[2026-01-28 13:19:37] Bonus scoring popup access {"profile_user_id":55,"current_user_id":55,"is_leader":"Y"}
+[2026-01-28 13:19:37] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":55}
+[2026-01-28 13:19:37] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-28 13:19:37] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-28 13:19:37] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-28 13:20:00] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"55","Bonus_Scores_Sender":"55","Bonus_Quantity":"100","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-28 13:20:01] Bonus BP start: success {"http_code":200,"response":{"result":"6979e2d0d02059.55218039","time":{"start":1769595600,"finish":1769595601.603524,"duration":1.6035239696502686,"processing":1,"date_start":"2026-01-28T13:20:00+03:00","date_finish":"2026-01-28T13:20:01+03:00"}}}
+[2026-01-28 17:28:54] Leader check via structure sections {"current_user_id":13995,"section_id":"166"}
+[2026-01-28 17:28:54] Bonus scoring popup access {"profile_user_id":13995,"current_user_id":13995,"is_leader":"Y"}
+[2026-01-28 17:28:54] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":13995}
+[2026-01-28 17:28:54] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-28 17:28:54] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-28 17:28:54] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-29 11:16:28] Leader check via structure sections {"current_user_id":55,"section_id":"28"}
+[2026-01-29 11:16:28] Bonus scoring popup access {"profile_user_id":55,"current_user_id":55,"is_leader":"Y"}
+[2026-01-29 11:16:28] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":55}
+[2026-01-29 11:16:28] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-29 11:16:28] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-29 11:16:28] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-29 11:16:38] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"55","Bonus_Scores_Sender":"55","Bonus_Quantity":"200","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-29 11:16:40] Bonus BP start: success {"http_code":200,"response":{"result":"697b1766812542.33695159","time":{"start":1769674598,"finish":1769674600.11637,"duration":2.1163699626922607,"processing":2,"date_start":"2026-01-29T11:16:38+03:00","date_finish":"2026-01-29T11:16:40+03:00"}}}
+[2026-01-29 11:17:09] Leader check via structure sections {"current_user_id":55,"section_id":"28"}
+[2026-01-29 11:17:09] Bonus scoring popup access {"profile_user_id":55,"current_user_id":55,"is_leader":"Y"}
+[2026-01-29 11:17:09] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":55}
+[2026-01-29 11:17:09] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-01-29 11:17:09] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-01-29 11:17:09] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-01-29 11:17:35] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"55","Bonus_Scores_Sender":"55","Bonus_Quantity":"100","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-01-29 11:17:37] Bonus BP start: success {"http_code":200,"response":{"result":"697b179fcb7089.88498498","time":{"start":1769674655,"finish":1769674657.839896,"duration":2.8398959636688232,"processing":2,"date_start":"2026-01-29T11:17:35+03:00","date_finish":"2026-01-29T11:17:37+03:00"}}}
+[2026-02-01 07:07:46] Leader check via structure sections {"current_user_id":15791,"section_id":"368"}
+[2026-02-01 07:07:46] Bonus scoring popup access {"profile_user_id":15787,"current_user_id":15791,"is_leader":"Y"}
+[2026-02-01 07:07:46] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":15791}
+[2026-02-01 07:07:46] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-01 07:07:46] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-01 07:07:46] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-02 14:05:29] Leader check via IsAdmin() {"current_user_id":5}
+[2026-02-02 14:05:29] Bonus scoring popup access {"profile_user_id":5,"current_user_id":5,"is_leader":"Y"}
+[2026-02-02 14:05:29] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":5}
+[2026-02-02 14:05:29] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-02 14:05:29] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-02 14:05:29] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-04 08:57:55] Leader check via structure sections {"current_user_id":22613,"section_id":"63"}
+[2026-02-04 08:57:55] Bonus scoring popup access {"profile_user_id":22613,"current_user_id":22613,"is_leader":"Y"}
+[2026-02-04 08:57:55] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":22613}
+[2026-02-04 08:57:55] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-04 08:57:55] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-04 08:57:55] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-04 17:51:31] Leader check - not a leader {"current_user_id":4304,"leader_group_ids":[1]}
+[2026-02-04 17:51:31] Bonus scoring popup access {"profile_user_id":4304,"current_user_id":4304,"is_leader":"N"}
+[2026-02-04 17:51:32] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":4304}
+[2026-02-04 17:51:32] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-04 17:51:32] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-04 17:51:32] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"}]}
+[2026-02-12 11:08:40] Leader check via structure sections {"current_user_id":149489,"section_id":"166"}
+[2026-02-12 11:08:40] Bonus scoring popup access {"profile_user_id":149489,"current_user_id":149489,"is_leader":"Y"}
+[2026-02-12 11:08:40] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":149489}
+[2026-02-12 11:08:40] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-12 11:08:40] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-12 11:08:40] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-12 11:14:34] Leader check - not a leader {"current_user_id":10151,"leader_group_ids":[1]}
+[2026-02-12 11:14:34] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":10151,"is_leader":"N"}
+[2026-02-12 11:14:34] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":10151}
+[2026-02-12 11:14:34] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-12 11:14:34] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-12 11:14:34] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"}]}
+[2026-02-12 11:14:48] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"4496","Bonus_Scores_Sender":"10151","Bonus_Quantity":"1","Charge_Reason":"Перевод"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-02-12 11:14:49] Bonus BP start: success {"http_code":200,"response":{"result":"698d8bf888c681.46223668","time":{"start":1770884088,"finish":1770884089.139449,"duration":1.139448881149292,"processing":1,"date_start":"2026-02-12T11:14:48+03:00","date_finish":"2026-02-12T11:14:49+03:00"}}}
+[2026-02-12 14:32:19] Leader check via structure sections {"current_user_id":47578,"section_id":"177"}
+[2026-02-12 14:32:19] Bonus scoring popup access {"profile_user_id":47578,"current_user_id":47578,"is_leader":"Y"}
+[2026-02-12 14:32:19] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":47578}
+[2026-02-12 14:32:19] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-12 14:32:19] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-12 14:32:19] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-12 14:32:40] Leader check via structure sections {"current_user_id":47578,"section_id":"177"}
+[2026-02-12 14:32:40] Bonus scoring popup access {"profile_user_id":5458,"current_user_id":47578,"is_leader":"Y"}
+[2026-02-12 14:32:40] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":47578}
+[2026-02-12 14:32:40] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-12 14:32:40] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-12 14:32:40] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-13 09:36:17] Leader check - not a leader {"current_user_id":27,"leader_group_ids":[1]}
+[2026-02-13 09:36:17] Bonus scoring popup access {"profile_user_id":27,"current_user_id":27,"is_leader":"N"}
+[2026-02-13 09:36:17] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":27}
+[2026-02-13 09:36:17] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-13 09:36:17] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-13 09:36:17] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"}]}
+[2026-02-13 14:50:52] Leader check - not a leader {"current_user_id":34832,"leader_group_ids":[1]}
+[2026-02-13 14:50:52] Bonus scoring popup access {"profile_user_id":34832,"current_user_id":34832,"is_leader":"N"}
+[2026-02-13 14:50:52] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":34832}
+[2026-02-13 14:50:52] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-13 14:50:52] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-13 14:50:52] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"}]}
+[2026-02-16 10:44:24] Leader check via structure sections {"current_user_id":680,"section_id":"116"}
+[2026-02-16 10:44:24] Bonus scoring popup access {"profile_user_id":680,"current_user_id":680,"is_leader":"Y"}
+[2026-02-16 10:44:24] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":680}
+[2026-02-16 10:44:24] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-16 10:44:24] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-16 10:44:24] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-16 10:44:45] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"680","Bonus_Scores_Sender":"680","Bonus_Quantity":"100","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-02-16 10:44:46] Bonus BP start: success {"http_code":200,"response":{"result":"6992caedec35b3.68304707","time":{"start":1771227885,"finish":1771227886.700504,"duration":1.7005040645599365,"processing":1,"date_start":"2026-02-16T10:44:45+03:00","date_finish":"2026-02-16T10:44:46+03:00"}}}
+[2026-02-20 14:17:05] Leader check via IsAdmin() {"current_user_id":55239}
+[2026-02-20 14:17:05] Bonus scoring popup access {"profile_user_id":55239,"current_user_id":55239,"is_leader":"Y"}
+[2026-02-20 14:17:05] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":55239}
+[2026-02-20 14:17:05] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-20 14:17:05] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-20 14:17:05] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-22 12:49:03] Leader check - not a leader {"current_user_id":51455,"leader_group_ids":[1]}
+[2026-02-22 12:49:03] Bonus scoring popup access {"profile_user_id":51455,"current_user_id":51455,"is_leader":"N"}
+[2026-02-22 12:49:03] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"N","current_user_id":51455}
+[2026-02-22 12:49:03] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-22 12:49:03] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-22 12:49:03] Final visible reasons {"is_leader":"N","visible_count":1,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"}]}
+[2026-02-25 09:39:09] Leader check via structure sections {"current_user_id":4219,"section_id":"57"}
+[2026-02-25 09:39:09] Bonus scoring popup access {"profile_user_id":87,"current_user_id":4219,"is_leader":"Y"}
+[2026-02-25 09:39:09] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4219}
+[2026-02-25 09:39:09] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-25 09:39:09] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-25 09:39:09] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-25 09:39:15] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"87","Bonus_Scores_Sender":"4219","Bonus_Quantity":"1","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-02-25 09:39:16] Bonus BP start: success {"http_code":200,"response":{"result":"699e9913a6e072.91123571","time":{"start":1772001555,"finish":1772001556.343606,"duration":1.3436059951782227,"processing":1,"date_start":"2026-02-25T09:39:15+03:00","date_finish":"2026-02-25T09:39:16+03:00"}}}
+[2026-02-25 11:13:40] Leader check via IsAdmin() {"current_user_id":4496}
+[2026-02-25 11:13:40] Bonus scoring popup access {"profile_user_id":4496,"current_user_id":4496,"is_leader":"Y"}
+[2026-02-25 11:13:40] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":4496}
+[2026-02-25 11:13:40] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-25 11:13:40] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-25 11:13:40] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-25 15:25:10] Leader check via structure sections {"current_user_id":55,"section_id":"28"}
+[2026-02-25 15:25:10] Bonus scoring popup access {"profile_user_id":55,"current_user_id":55,"is_leader":"Y"}
+[2026-02-25 15:25:10] Loading reason enum list {"reason_uf_name":"UF_CRM_29_1768987790","reason_value_for_non_leaders":"ПЕРЕВОД","is_leader":"Y","current_user_id":55}
+[2026-02-25 15:25:10] User field found {"field_id":4467,"entity_id":"CRM_29"}
+[2026-02-25 15:25:10] Reason enum loaded {"found_count":3,"all_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}],"transfer_option_found":"Y"}
+[2026-02-25 15:25:10] Final visible reasons {"is_leader":"Y","visible_count":3,"visible_options":[{"ID":6584,"VALUE":"Перевод","XML_ID":"0ce61a6031f21f7582d18247394996a1"},{"ID":6585,"VALUE":"Благодарность","XML_ID":"716d5a3c6084204bd91dc86735e650a0"},{"ID":6586,"VALUE":"Наставничество","XML_ID":"fce41c6990046fb00e63a3ff2caab3a6"}]}
+[2026-02-25 15:25:23] Bonus BP start: request build {"template_id":605,"document_id":["crm","Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic","DYNAMIC_1156_152"],"params":{"Recipient_Credit":"55","Bonus_Scores_Sender":"55","Bonus_Quantity":"200","Charge_Reason":"Благодарность"},"webhook":"https://bitrix.dreamteamcompany.ru/rest/1/7sz1joi0kdkq3523/bizproc.workflow.start"}
+[2026-02-25 15:25:24] Bonus BP start: success {"http_code":200,"response":{"result":"699eea331543f6.11132220","time":{"start":1772022323,"finish":1772022324.436725,"duration":1.4367249011993408,"processing":1,"date_start":"2026-02-25T15:25:23+03:00","date_finish":"2026-02-25T15:25:24+03:00"}}}

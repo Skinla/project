@@ -1,0 +1,1888 @@
+==== 2025-09-12 15:32:59 ====
+File: ct_20250912_153245_68c412ed98de2.json
+EntityType=lead, EntityId=
+dialedNumber=78122506442
+callerPhone=74994443789
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 153629
+    [changedFields] => null
+    [ctCallerId] => ff66a1728f0e5e49223709bfe63474df
+    [callerphone] => 74994443789
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [calltime] => 2025-09-12 15:25:36
+    [timestamp] => 1757679936
+    [unique] => false
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => Тест от calltouch
+    [tags_api] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757679668309211940
+    [sessionId] => 13897455
+    [ctClientId] => 3300000000010350098
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => yaroslavl
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 178.57.122.135
+    [sip_call_id] => 6d15f847-0a76-123f-ac8e-005056beafdc
+    [callReferenceNumber] => 95a7895c-8fd3-11f0-8cba-27b66b21c98f
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1757680365
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-12 15:34:48 ====
+File: ct_20250912_153436_68c4135ce06d5.json
+EntityType=lead, EntityId=
+dialedNumber=78122506442
+callerPhone=74994443789
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 153629
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => ff66a1728f0e5e49223709bfe63474df
+    [callerphone] => 74994443789
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 2
+    [waiting_time] => 2
+    [calltime] => 2025-09-12 15:25:36
+    [timestamp] => 1757679936
+    [status] => unsuccessful
+    [statusDetails] => Вызывающий абонент положил трубку до начала соединения
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => Тест от calltouch
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => Тест от calltouch
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757679668309211940
+    [sessionId] => 13897455
+    [ctClientId] => 3300000000010350098
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => yaroslavl
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 178.57.122.135
+    [sip_call_id] => 6d15f847-0a76-123f-ac8e-005056beafdc
+    [callReferenceNumber] => 95a7895c-8fd3-11f0-8cba-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1NzY4MDQ3NiwiZXhwIjoyMDczMDQwNDc2LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjE1MzYyOX0.Ec7k2vK7HiTRgXQz4TfPeqjqqRP1u7v-zplzDI6cQZQbIzoxeMS0xcAJAsI28Xyz8CjQ64aqCgng-jE0yaGUUQ
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1757680476
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-17 16:22:39 ====
+File: ct_20250917_162227_68cab613482d6.json
+EntityType=lead, EntityId=
+dialedNumber=78122507349
+callerPhone=79995600943
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 175348
+    [changedFields] => null
+    [ctCallerId] => 9c71ac5237f2acd98887198e6324f931
+    [callerphone] => 79995600943
+    [phonenumber] => 78122507349
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [calltime] => 2025-09-17 15:07:28
+    [timestamp] => 1758110848
+    [unique] => false
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => direct.yandex.ru
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757669202559161823
+    [sessionId] => 15575557
+    [ctClientId] => 3300000000010306979
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?calltouch_tm=yd_c:{campaign_id}_gb:{gbid}_ad:{ad_id}_ph:{phrase_id}_st:{source_type}_pt:{position_type}_p:{position}_s:{source}_dt:{device_type}_reg:{region_id}_ret:{retargeting_id}_apt:{addphrasestext}
+    [attrs] => {}
+    [ref] => https://direct.yandex.ru/
+    [city] => yekaterinburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 91.191.236.194
+    [sip_call_id] => b8ce7897-0e61-123f-ac8e-005056beafdc
+    [callReferenceNumber] => e1617292-93be-11f0-8900-27b66b21c98f
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1758115346
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-18 09:28:45 ====
+File: ct_20250918_092844_68cba69c5cd76.json
+EntityType=lead, EntityId=329897
+dialedNumber=78122507298
+callerPhone=79661846926
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 177961
+    [changedFields] => null
+    [ctCallerId] => e123ea285f26e7df348e98b159dde905
+    [callerphone] => 79661846926
+    [phonenumber] => 78122507298
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-09-18 09:28:43
+    [timestamp] => 1758176923
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261321
+    [utm_term] => имплантация зубов спб под ключ акции
+    [yaClientId] => 1758085863969558493
+    [sessionId] => 15861349
+    [ctClientId] => 3300000000011500994
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?calltouch_tm=yd_c:703184422_gb:5639458712_ad:17280261321_ph:55554345396_st:context_pt:none_p:0_s:com.save.princess.girl.dragon.out.and_dt:mobile_reg:2_ret:55554345396_apt:none&utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261321&utm_term=имплантация зубов спб под ключ акции&yclid=9279354361620987903&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => surgut
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.195.239.163
+    [callReferenceNumber] => b904f414-9458-11f0-9b73-27b66b21c98f
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1758176924
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-18 09:30:09 ====
+File: ct_20250918_093009_68cba6f142b51.json
+EntityType=lead, EntityId=329898
+dialedNumber=78122507298
+callerPhone=79661846926
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 177961
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => e123ea285f26e7df348e98b159dde905
+    [callerphone] => 79661846926
+    [phonenumber] => 78122507298
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 14
+    [waiting_time] => 5
+    [calltime] => 2025-09-18 09:28:43
+    [timestamp] => 1758176923
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261321
+    [utm_term] => имплантация зубов спб под ключ акции
+    [yaClientId] => 1758085863969558493
+    [sessionId] => 15861349
+    [ctClientId] => 3300000000011500994
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?calltouch_tm=yd_c:703184422_gb:5639458712_ad:17280261321_ph:55554345396_st:context_pt:none_p:0_s:com.save.princess.girl.dragon.out.and_dt:mobile_reg:2_ret:55554345396_apt:none&utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261321&utm_term=имплантация зубов спб под ключ акции&yclid=9279354361620987903&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => surgut
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.195.239.163
+    [sip_call_id] => 90743f6d-0efb-123f-ac8e-005056beafdc
+    [callReferenceNumber] => b904f414-9458-11f0-9b73-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1ODE3NzAwOCwiZXhwIjoyMDczNTM3MDA4LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjE3Nzk2MX0.BEbAgfFEMQnac2-yzIjgtJ0IcQ819NQFUPLEroUSUkvxesUZz7kf6HJ6jkzs0VrXjZgGpgwchghiNaxGwj-_sQ
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1758177008
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-22 10:55:29 ====
+File: ct_20250922_105528_68d100f0adde0.json
+EntityType=lead, EntityId=336066
+dialedNumber=78122506519
+callerPhone=79111120847
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 196913
+    [changedFields] => null
+    [ctCallerId] => c98b0425354f1b1d20ac5602fe4cd4b4
+    [callerphone] => 79111120847
+    [phonenumber] => 78122506519
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [calltime] => 2025-09-22 10:49:56
+    [timestamp] => 1758527396
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261343
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1758522248445936249
+    [sessionId] => 17771550
+    [ctClientId] => 3300000000013186751
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261343&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458726_ad:17280261343_ph:205639458726_st:context_pt:none_p:0_s:ru.fontanka.fontanka-ios_dt:mobile_reg:2_ret:205639458726_apt:none&yclid=7208899978373365759&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => saint petersburg
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 188.170.82.197
+    [sip_call_id] => 92edce29-122b-123f-ac8e-005056beafdc
+    [callReferenceNumber] => bb7d49e8-9788-11f0-b200-27b66b21c98f
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1758527728
+    [callUrl] => Остальные
+)
+
+
+==== 2025-09-22 10:59:06 ====
+File: ct_20250922_105906_68d101ca1bfbe.json
+EntityType=lead, EntityId=336070
+dialedNumber=78122506519
+callerPhone=79111120847
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 196913
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => c98b0425354f1b1d20ac5602fe4cd4b4
+    [callerphone] => 79111120847
+    [phonenumber] => 78122506519
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 126
+    [waiting_time] => 14
+    [calltime] => 2025-09-22 10:49:56
+    [timestamp] => 1758527396
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261343
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1758522248445936249
+    [sessionId] => 17771550
+    [ctClientId] => 3300000000013186751
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261343&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458726_ad:17280261343_ph:205639458726_st:context_pt:none_p:0_s:ru.fontanka.fontanka-ios_dt:mobile_reg:2_ret:205639458726_apt:none&yclid=7208899978373365759&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => saint petersburg
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 188.170.82.197
+    [sip_call_id] => 92edce29-122b-123f-ac8e-005056beafdc
+    [callReferenceNumber] => bb7d49e8-9788-11f0-b200-27b66b21c98f
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1ODUyNzk0NSwiZXhwIjoyMDczODg3OTQ1LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjE5NjkxM30.iKTLtkswGKn_QRP_JLwlbQwcPwAn5CueG85S_20oTJM95rgPoNuOEYoi3bPBNKx7pFD3e93uDS9JWZeIEy7TUQ
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1758527945
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-01 11:40:21 ====
+File: ct_20251001_114019_68dce8f3d5ee0.json
+EntityType=lead, EntityId=359438
+dialedNumber=78122506436
+callerPhone=79291849188
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 252434
+    [changedFields] => null
+    [ctCallerId] => 6671542e32a6e3d6372c445ad3f6a1b9
+    [callerphone] => 79291849188
+    [phonenumber] => 78122506436
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-01 11:40:14
+    [timestamp] => 1759308014
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => vk_ads
+    [medium] => cpc
+    [utm_source] => vk_ads
+    [utm_medium] => cpc
+    [utm_campaign] => 119908035
+    [utm_content] => 194703497
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1759307982873422826
+    [sessionId] => 22815223
+    [ctClientId] => 3300000000016580304
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/thank-you?utm_medium=cpc&utm_source=vk_ads&utm_campaign=119908035&utm_content=194703497
+    [attrs] => {}
+    [ref] => https://away.vk.com/
+    [city] => apatity
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 94.140.240.167
+    [callReferenceNumber] => 404363d6-9ea2-11f0-ab7a-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1759308019
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-01 11:46:06 ====
+File: ct_20251001_114605_68dcea4d700b0.json
+EntityType=lead, EntityId=359438
+dialedNumber=78122506436
+callerPhone=79291849188
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 252434
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 6671542e32a6e3d6372c445ad3f6a1b9
+    [callerphone] => 79291849188
+    [phonenumber] => 78122506436
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 231
+    [waiting_time] => 9
+    [calltime] => 2025-10-01 11:40:14
+    [timestamp] => 1759308014
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => vk_ads
+    [medium] => cpc
+    [utm_source] => vk_ads
+    [utm_medium] => cpc
+    [utm_campaign] => 119908035
+    [utm_content] => 194703497
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1759307982873422826
+    [sessionId] => 22815223
+    [ctClientId] => 3300000000016580304
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/thank-you?utm_medium=cpc&utm_source=vk_ads&utm_campaign=119908035&utm_content=194703497
+    [attrs] => {}
+    [ref] => https://away.vk.com/
+    [city] => apatity
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 94.140.240.167
+    [sip_call_id] => 17b032e4-1945-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 404363d6-9ea2-11f0-ab7a-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTMwODM2NSwiZXhwIjoyMDc0NjY4MzY1LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjI1MjQzNH0.DFeJqGebsiUrRN7NaGFfGP37Ttoya7qkqJKzBb4Qr4MiqF5xsIrBd_G_p11e2H6GWkh1ReMOmhiFIE9tnLN7_w
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1759308365
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-01 15:28:29 ====
+File: ct_20251001_152827_68dd1e6ba8041.json
+EntityType=lead, EntityId=359965
+dialedNumber=78122506442
+callerPhone=79687253831
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 254985
+    [changedFields] => null
+    [ctCallerId] => a305fe91c82c99b5a11d6d8f937683b2
+    [callerphone] => 79687253831
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [calltime] => 2025-10-01 15:26:07
+    [timestamp] => 1759321567
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => metrika.yandex.ru
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757669202559161823
+    [sessionId] => 16137029
+    [ctClientId] => 3300000000010306979
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/
+    [attrs] => {}
+    [ref] => https://metrika.yandex.ru/
+    [city] => yekaterinburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 91.191.236.194
+    [sip_call_id] => a5b6fabf-1964-123f-8e8e-005056beafdc
+    [callReferenceNumber] => ce36e374-9ec1-11f0-b17f-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1759321707
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-01 15:31:06 ====
+File: ct_20251001_153105_68dd1f09aac84.json
+EntityType=lead, EntityId=359965
+dialedNumber=78122506442
+callerPhone=79687253831
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 254985
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => a305fe91c82c99b5a11d6d8f937683b2
+    [callerphone] => 79687253831
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 58
+    [waiting_time] => 8
+    [calltime] => 2025-10-01 15:26:07
+    [timestamp] => 1759321567
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => metrika.yandex.ru
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1757669202559161823
+    [sessionId] => 16137029
+    [ctClientId] => 3300000000010306979
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/
+    [attrs] => {}
+    [ref] => https://metrika.yandex.ru/
+    [city] => yekaterinburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 91.191.236.194
+    [sip_call_id] => a5b6fabf-1964-123f-8e8e-005056beafdc
+    [callReferenceNumber] => ce36e374-9ec1-11f0-b17f-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTMyMTg2NSwiZXhwIjoyMDc0NjgxODY1LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjI1NDk4NX0._NP5rZTy9Ok7354Kzh38zAN5ewpSGheY871M9OXgQzVOqUxmUeVYxVdSze4-SpO1vvztsK810Pu9yjlfV_TwNw
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1759321865
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-06 20:19:07 ====
+File: ct_20251006_201906_68e3fa0a74bca.json
+EntityType=lead, EntityId=367795
+dialedNumber=78122507064
+callerPhone=79111327890
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 290501
+    [changedFields] => null
+    [ctCallerId] => 57adc887fa4214b3fe2dc1bbb65af4ef
+    [callerphone] => 79111327890
+    [phonenumber] => 78122507064
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-06 20:18:58
+    [timestamp] => 1759771138
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1759770942349882731
+    [sessionId] => 25845651
+    [ctClientId] => 3300000000018560911
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => Internet Explorer
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.195.94.225
+    [callReferenceNumber] => 8b4c8dc8-a2d8-11f0-911c-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+    [sendingTimestamp] => 1759771146
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-06 20:36:03 ====
+File: ct_20251006_203602_68e3fe02497cc.json
+EntityType=lead, EntityId=367795
+dialedNumber=78122507064
+callerPhone=79111327890
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 290501
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 57adc887fa4214b3fe2dc1bbb65af4ef
+    [callerphone] => 79111327890
+    [phonenumber] => 78122507064
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 939
+    [waiting_time] => 3
+    [calltime] => 2025-10-06 20:18:58
+    [timestamp] => 1759771138
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1759770942349882731
+    [sessionId] => 25845651
+    [ctClientId] => 3300000000018560911
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => Internet Explorer
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.195.94.225
+    [sip_call_id] => 62b77c52-1d7b-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 8b4c8dc8-a2d8-11f0-911c-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTc3MjE2MSwiZXhwIjoyMDc1MTMyMTYxLCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjI5MDUwMX0.zNP9NWUNOFljgfevTMgLoCmotugYFDMvt8ofRi9-G6HRZG9U4Vxtwcuj_RjCeBp1c2ZG02yBib9lS-MtXnbE_g
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+    [sendingTimestamp] => 1759772161
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-08 15:52:59 ====
+File: ct_20251008_155257_68e65ea9a6c12.json
+EntityType=lead, EntityId=370765
+dialedNumber=78122506490
+callerPhone=79363007010
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 305734
+    [changedFields] => null
+    [ctCallerId] => 167b78a443e1e004e235ca1a03e9c9d3
+    [callerphone] => 79363007010
+    [phonenumber] => 78122506490
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-08 15:52:53
+    [timestamp] => 1759927973
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => 703197931
+    [utm_content] => 1886996982466239660
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1759925157151736860
+    [sessionId] => 26997235
+    [ctClientId] => 3300000000019305557
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=703197931&utm_content=1886996982466239660&utm_term=---autotargeting&calltouch_tm=yd_c:703197931_gb:5639701673_ad:1886996982466239660_ph:205639701673_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:2_ret:205639701673_apt:none&yclid=15709688045191299071
+    [attrs] => {}
+    [ref] => 
+    [city] => saint petersburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 217.195.83.24
+    [callReferenceNumber] => b49ce89e-a445-11f0-bda3-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1759927977
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-08 15:55:14 ====
+File: ct_20251008_155514_68e65f3201f77.json
+EntityType=lead, EntityId=370765
+dialedNumber=78122506490
+callerPhone=79363007010
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 305734
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 167b78a443e1e004e235ca1a03e9c9d3
+    [callerphone] => 79363007010
+    [phonenumber] => 78122506490
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 9
+    [waiting_time] => 3
+    [calltime] => 2025-10-08 15:52:53
+    [timestamp] => 1759927973
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_tg
+    [utm_source] => yandex
+    [utm_medium] => cpc_tg
+    [utm_campaign] => 703197931
+    [utm_content] => 1886996982466239660
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1759925157151736860
+    [sessionId] => 26997235
+    [ctClientId] => 3300000000019305557
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_tg&utm_campaign=703197931&utm_content=1886996982466239660&utm_term=---autotargeting&calltouch_tm=yd_c:703197931_gb:5639701673_ad:1886996982466239660_ph:205639701673_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:2_ret:205639701673_apt:none&yclid=15709688045191299071
+    [attrs] => {}
+    [ref] => 
+    [city] => saint petersburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 217.195.83.24
+    [sip_call_id] => 8c0c9c61-1ee8-123f-8e8e-005056beafdc
+    [callReferenceNumber] => b49ce89e-a445-11f0-bda3-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTkyODExMywiZXhwIjoyMDc1Mjg4MTEzLCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjMwNTczNH0.Dluf8dXUW58oDV6snd-6wBcq1mmO-6jLQgL2yCmGGgTKt0XpapV_qXbg1x02-qmRHPjdBaCsh5R-MSKNWyZKIg
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1759928113
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-09 10:07:30 ====
+File: ct_20251009_100729_68e75f3103a20.json
+EntityType=lead, EntityId=371701
+dialedNumber=78122507298
+callerPhone=79362911811
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 309377
+    [changedFields] => null
+    [ctCallerId] => 3cdb44a57a6a40bb28388de5c6a17ab3
+    [callerphone] => 79362911811
+    [phonenumber] => 78122507298
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-09 10:07:25
+    [timestamp] => 1759993645
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => vk_ads
+    [medium] => cpc
+    [utm_source] => vk_ads
+    [utm_medium] => cpc
+    [utm_campaign] => 119908036
+    [utm_content] => 194703498
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1759945033817826801
+    [sessionId] => 27419267
+    [ctClientId] => 3300000000019455996
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/thank-you?utm_medium=cpc&utm_source=vk_ads&utm_campaign=119908036&utm_content=194703498
+    [attrs] => {}
+    [ref] => https://away.vk.com/
+    [city] => saint petersburg
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 217.66.159.220
+    [callReferenceNumber] => 9be0e8fc-a4de-11f0-9143-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1759993648
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-09 10:09:05 ====
+File: ct_20251009_100905_68e75f91229aa.json
+EntityType=lead, EntityId=371701
+dialedNumber=78122507298
+callerPhone=79362911811
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 309377
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 3cdb44a57a6a40bb28388de5c6a17ab3
+    [callerphone] => 79362911811
+    [phonenumber] => 78122507298
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 9
+    [waiting_time] => 3
+    [calltime] => 2025-10-09 10:07:25
+    [timestamp] => 1759993645
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => vk_ads
+    [medium] => cpc
+    [utm_source] => vk_ads
+    [utm_medium] => cpc
+    [utm_campaign] => 119908036
+    [utm_content] => 194703498
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1759945033817826801
+    [sessionId] => 27419267
+    [ctClientId] => 3300000000019455996
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/thank-you?utm_medium=cpc&utm_source=vk_ads&utm_campaign=119908036&utm_content=194703498
+    [attrs] => {}
+    [ref] => https://away.vk.com/
+    [city] => saint petersburg
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 217.66.159.220
+    [sip_call_id] => 7352354e-1f81-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 9be0e8fc-a4de-11f0-9143-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTk5Mzc0NSwiZXhwIjoyMDc1MzUzNzQ1LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjMwOTM3N30.vXQGrU-Eagu6Bmor0RviSpI3P03ICmikNVYWaSs0S0pb8SrkxPK3GAQUMbcfAXpGhnXYTRNipMielOgwO4E6SA
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1759993745
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-16 13:02:36 ====
+File: ct_20251016_115109_68f0b1fdcb273.json
+EntityType=lead, EntityId=387872
+dialedNumber=78122507263
+callerPhone=79216375676
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 364260
+    [changedFields] => callphase,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 6b82f11fb91bbe61da8c99dd73afd045
+    [callerphone] => 79216375676
+    [phonenumber] => 78122507263
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 185
+    [waiting_time] => 3
+    [calltime] => 2025-10-16 11:24:33
+    [timestamp] => 1760603073
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_poisk
+    [utm_source] => yandex
+    [utm_medium] => cpc_poisk
+    [utm_campaign] => 703184410
+    [utm_content] => 17280260725
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1760603002556263462
+    [sessionId] => 32330711
+    [ctClientId] => 3300000000022761069
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_poisk&utm_campaign=703184410&utm_content=17280260725&utm_term=---autotargeting&calltouch_tm=yd_c:703184410_gb:5639458559_ad:17280260725_ph:205639458559_st:search_pt:premium_p:2_s:none_dt:mobile_reg:2_ret:205639458559_apt:none&ybaip=1&yclid=12865985822756962303
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 188.243.183.214
+    [sip_call_id] => 627bafad-250c-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 8b0ba7ca-aa69-11f0-b877-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDYwNDY2OSwiZXhwIjoyMDc1OTY0NjY5LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjM2NDI2MH0.YkgVg4ph1ttZ63soKCj6n_wy4NQNFCwWjF6fFqqrT0mmATsV2OIQiRP_dvY-HRjweec2w4wmQAD1OoFXWrYr2Q
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; SM-M156B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1760604669
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-16 13:02:39 ====
+File: ct_20251016_114527_68f0b0a7da815.json
+EntityType=lead, EntityId=387872
+dialedNumber=78122507263
+callerPhone=79216375676
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 364260
+    [changedFields] => null
+    [ctCallerId] => 6b82f11fb91bbe61da8c99dd73afd045
+    [callerphone] => 79216375676
+    [phonenumber] => 78122507263
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [calltime] => 2025-10-16 11:24:33
+    [timestamp] => 1760603073
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_poisk
+    [utm_source] => yandex
+    [utm_medium] => cpc_poisk
+    [utm_campaign] => 703184410
+    [utm_content] => 17280260725
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1760603002556263462
+    [sessionId] => 32330711
+    [ctClientId] => 3300000000022761069
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_poisk&utm_campaign=703184410&utm_content=17280260725&utm_term=---autotargeting&calltouch_tm=yd_c:703184410_gb:5639458559_ad:17280260725_ph:205639458559_st:search_pt:premium_p:2_s:none_dt:mobile_reg:2_ret:205639458559_apt:none&ybaip=1&yclid=12865985822756962303
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 188.243.183.214
+    [sip_call_id] => 627bafad-250c-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 8b0ba7ca-aa69-11f0-b877-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; SM-M156B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1760604327
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-25 18:56:11 ====
+File: ct_20251025_185610_68fcf31a90842.json
+EntityType=lead, EntityId=404986
+dialedNumber=78122507263
+callerPhone=78126021906
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 446053
+    [changedFields] => null
+    [ctCallerId] => 14ca97cda4e1fc56250e47e687efc7a4
+    [callerphone] => 78126021906
+    [phonenumber] => 78122507263
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-25 18:56:07
+    [timestamp] => 1761407767
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261341
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1761407690483372751
+    [sessionId] => 39098345
+    [ctClientId] => 3300000000027106106
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261341&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458724_ad:17280261341_ph:205639458724_st:context_pt:none_p:0_s:mail.yandex.ru_dt:desktop_reg:2_ret:205639458724_apt:none&yclid=18090921385789489151&ybaip=1
+    [attrs] => {}
+    [ref] => https://mail.yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 85.143.144.205
+    [callReferenceNumber] => 1e4d39e2-b1bb-11f0-8162-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36
+    [sendingTimestamp] => 1761407770
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-25 19:04:01 ====
+File: ct_20251025_190401_68fcf4f17850e.json
+EntityType=lead, EntityId=404986
+dialedNumber=78122507263
+callerPhone=78126021906
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 446053
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 14ca97cda4e1fc56250e47e687efc7a4
+    [callerphone] => 78126021906
+    [phonenumber] => 78122507263
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 401
+    [waiting_time] => 2
+    [calltime] => 2025-10-25 18:56:07
+    [timestamp] => 1761407767
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261341
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1761407690483372751
+    [sessionId] => 39098345
+    [ctClientId] => 3300000000027106106
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261341&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458724_ad:17280261341_ph:205639458724_st:context_pt:none_p:0_s:mail.yandex.ru_dt:desktop_reg:2_ret:205639458724_apt:none&yclid=18090921385789489151&ybaip=1
+    [attrs] => {}
+    [ref] => https://mail.yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 85.143.144.205
+    [sip_call_id] => f5c3f119-2c5d-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 1e4d39e2-b1bb-11f0-8162-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTQwODI0MSwiZXhwIjoyMDc2NzY4MjQxLCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjQ0NjA1M30.egiHXwyuIZD_GsCMVGyXlleuM2Oti5y7QrlgtyARxwgOz244KGPGnreEw5OgL6r5ltLUv8c9-g2opi-ZO7RXMw
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36
+    [sendingTimestamp] => 1761408241
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-27 15:28:28 ====
+File: ct_20251027_152827_68ff656b98ae3.json
+EntityType=lead, EntityId=407778
+dialedNumber=78122506442
+callerPhone=78123167806
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 458462
+    [changedFields] => null
+    [ctCallerId] => fef9d8fbcb30df43cb6d3a5bdf12c447
+    [callerphone] => 78123167806
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [calltime] => 2025-10-27 14:13:02
+    [timestamp] => 1761563582
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261328
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1761553513594567730
+    [sessionId] => 40095047
+    [ctClientId] => 3300000000027731937
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261328&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458716_ad:17280261328_ph:205639458716_st:context_pt:none_p:0_s:brozen.yandex.ru_dt:desktop_reg:2_ret:205639458716_apt:none&yclid=6707757765399150591&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => saint petersburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 93.100.118.245
+    [sip_call_id] => bed7b7ca-2dc8-123f-8e8e-005056beafdc
+    [callReferenceNumber] => e769e5da-b325-11f0-a979-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1761568107
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-30 09:49:31 ====
+File: ct_20251030_094930_69030a7a49bc0.json
+EntityType=lead, EntityId=412631
+dialedNumber=78122506519
+callerPhone=79110154931
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 485141
+    [changedFields] => null
+    [ctCallerId] => 0f138ecf8dafc8bc6a3c8810f01a1f9c
+    [callerphone] => 79110154931
+    [phonenumber] => 78122506519
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-30 09:49:27
+    [timestamp] => 1761806967
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761806903129012219
+    [sessionId] => 42350377
+    [ctClientId] => 3300000000029117261
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?calltouch_tm=yd_c:703184410_gb:5639458563_ad:17280260733_ph:55554342400_st:search_pt:premium_p:1_s:none_dt:mobile_reg:2_ret:55554342400_apt:none&ybaip=1&yclid=7957468201914990591#section-benefits
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 217.66.156.202
+    [callReferenceNumber] => 9421b090-b55c-11f0-abfd-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; SM-A155F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1761806970
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-30 09:51:07 ====
+File: ct_20251030_095106_69030ada6a664.json
+EntityType=lead, EntityId=412631
+dialedNumber=78122506519
+callerPhone=79110154931
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 485141
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 0f138ecf8dafc8bc6a3c8810f01a1f9c
+    [callerphone] => 79110154931
+    [phonenumber] => 78122506519
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 4
+    [waiting_time] => 3
+    [calltime] => 2025-10-30 09:49:27
+    [timestamp] => 1761806967
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc (yclid)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761806903129012219
+    [sessionId] => 42350377
+    [ctClientId] => 3300000000029117261
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?calltouch_tm=yd_c:703184410_gb:5639458563_ad:17280260733_ph:55554342400_st:search_pt:premium_p:1_s:none_dt:mobile_reg:2_ret:55554342400_apt:none&ybaip=1&yclid=7957468201914990591#section-benefits
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 217.66.156.202
+    [sip_call_id] => 6b921cda-2fff-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 9421b090-b55c-11f0-abfd-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTgwNzA2NiwiZXhwIjoyMDc3MTY3MDY2LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjQ4NTE0MX0.8CaM8IWSsBvHSaci2AmQWB4GvAZZ6T5oPHG8QL4L_195TOhVoS-grMCO3JqFNkHSOzUIE5Y2vryXkukjLBP0Cw
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; SM-A155F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1761807066
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-31 11:54:07 ====
+File: ct_20251031_115406_6904792e57db4.json
+EntityType=lead, EntityId=415053
+dialedNumber=78122506442
+callerPhone=74953084810
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 496513
+    [changedFields] => null
+    [ctCallerId] => 39eafa5fe5d489ff9d8f763f63de5fb3
+    [callerphone] => 74953084810
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-10-31 11:54:03
+    [timestamp] => 1761900843
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261341
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1761637927530953100
+    [sessionId] => 43162902
+    [ctClientId] => 3300000000028208157
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261341&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458724_ad:17280261341_ph:205639458724_st:context_pt:none_p:0_s:yandex.ru_dt:desktop_reg:2_ret:205639458724_apt:none&yclid=17496585850164346879&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/video/preview/12319304104620953009
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 128.204.74.25
+    [callReferenceNumber] => 268182aa-b637-11f0-8635-93193d8d6688
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1761900845
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-31 11:56:19 ====
+File: ct_20251031_115619_690479b3683a6.json
+EntityType=lead, EntityId=415053
+dialedNumber=78122506442
+callerPhone=74953084810
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 496513
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 39eafa5fe5d489ff9d8f763f63de5fb3
+    [callerphone] => 74953084810
+    [phonenumber] => 78122506442
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 37
+    [waiting_time] => 3
+    [calltime] => 2025-10-31 11:54:03
+    [timestamp] => 1761900843
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_set
+    [utm_source] => yandex
+    [utm_medium] => cpc_set
+    [utm_campaign] => 703184422
+    [utm_content] => 17280261341
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1761637927530953100
+    [sessionId] => 43162902
+    [ctClientId] => 3300000000028208157
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_set&utm_campaign=703184422&utm_content=17280261341&utm_term=---autotargeting&calltouch_tm=yd_c:703184422_gb:5639458724_ad:17280261341_ph:205639458724_st:context_pt:none_p:0_s:yandex.ru_dt:desktop_reg:2_ret:205639458724_apt:none&yclid=17496585850164346879&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/video/preview/12319304104620953009
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 128.204.74.25
+    [sip_call_id] => fdf1681d-30d9-123f-8e8e-005056beafdc
+    [callReferenceNumber] => 268182aa-b637-11f0-8635-93193d8d6688
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTkwMDk3OSwiZXhwIjoyMDc3MjYwOTc5LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjQ5NjUxM30.GYNIJCdcPbWO_IgYxKMruZ1t4TrsxOB1jAkzmA4H_LeCD8suluuLHPy4xbyzEhKTbDy5VFaWhMz7Iki2rcGU3g
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1761900979
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-06 10:54:08 ====
+File: ct_20251106_105406_690c541ee8dda.json
+EntityType=lead, EntityId=424796
+dialedNumber=78122509448
+callerPhone=79213586579
+callphase=callconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => callconnected
+    [id] => 545669
+    [changedFields] => null
+    [ctCallerId] => 0f69d08d61b262dda64b77774ec5a415
+    [callerphone] => 79213586579
+    [phonenumber] => 78122509448
+    [subPoolName] => Остальные
+    [redirectNumber] => undefined
+    [calltime] => 2025-11-06 10:50:43
+    [timestamp] => 1762415443
+    [unique] => true
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [tags_auto_pn] => null
+    [tags_api] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_poisk
+    [utm_source] => yandex
+    [utm_medium] => cpc_poisk
+    [utm_campaign] => 703184410
+    [utm_content] => 17280260734
+    [utm_term] => ворлд дент
+    [yaClientId] => 1762415412991180172
+    [sessionId] => 47357834
+    [ctClientId] => 3300000000032202798
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_poisk&utm_campaign=703184410&utm_content=17280260734&utm_term=ворлд дент&calltouch_tm=yd_c:703184410_gb:5639458563_ad:17280260734_ph:55554342400_st:search_pt:premium_p:1_s:none_dt:mobile_reg:2_ret:55554342400_apt:none&etext=&yclid=18362430747875475455&ybaip=1
+    [attrs] => {}
+    [ref] => https://ya.ru/
+    [city] => saint petersburg
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 188.170.83.255
+    [callReferenceNumber] => 4bd64f1a-bae5-11f0-b112-0b02f6801b0e
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/29.0 Chrome/136.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762415646
+    [callUrl] => Остальные
+)
+
+
+==== 2025-11-06 10:59:18 ====
+File: ct_20251106_105918_690c555639675.json
+EntityType=lead, EntityId=424796
+dialedNumber=78122509448
+callerPhone=79213586579
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 545669
+    [changedFields] => callphase,redirectNumber,duration,waiting_time,status,statusDetails,targetcall,uniqtargetcall,rating,tags_all,tags_auto_pr,tags_auto_af,tags_auto_gr,tags_auto_ct,tags_auto_text,tags_manual,tags_triggers,tags_xls,sip_call_id,reclink,orderId,sendingTimestamp,text,manager,spam
+    [ctCallerId] => 0f69d08d61b262dda64b77774ec5a415
+    [callerphone] => 79213586579
+    [phonenumber] => 78122509448
+    [subPoolName] => Остальные
+    [redirectNumber] => 78122408100
+    [duration] => 232
+    [waiting_time] => 2
+    [calltime] => 2025-11-06 10:50:43
+    [timestamp] => 1762415443
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc_poisk
+    [utm_source] => yandex
+    [utm_medium] => cpc_poisk
+    [utm_campaign] => 703184410
+    [utm_content] => 17280260734
+    [utm_term] => ворлд дент
+    [yaClientId] => 1762415412991180172
+    [sessionId] => 47357834
+    [ctClientId] => 3300000000032202798
+    [ctGlobalId] => null
+    [hostname] => worlddent-spb.ru
+    [url] => https://worlddent-spb.ru/?utm_source=yandex&utm_medium=cpc_poisk&utm_campaign=703184410&utm_content=17280260734&utm_term=ворлд дент&calltouch_tm=yd_c:703184410_gb:5639458563_ad:17280260734_ph:55554342400_st:search_pt:premium_p:1_s:none_dt:mobile_reg:2_ret:55554342400_apt:none&etext=&yclid=18362430747875475455&ybaip=1
+    [attrs] => {}
+    [ref] => https://ya.ru/
+    [city] => saint petersburg
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 188.170.83.255
+    [sip_call_id] => 23494d06-3588-123f-0394-005056beafdc
+    [callReferenceNumber] => 4bd64f1a-bae5-11f0-b112-0b02f6801b0e
+    [reclink] => https://api-node33.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjQxNTk1NywiZXhwIjoyMDc3Nzc1OTU3LCJzaXRlSWQiOjc3MzEyLCJjYWxsSWQiOjU0NTY2OX0.Hu2pCT2dgV9bh_Q-8aoOE9aGV0WtrK4YV5OMNtiGvnAwq-H0SNYxMBdCoCH5z-vpyzbGObV40xdz7RopOX9CQA
+    [orderId] => null
+    [siteId] => 77312
+    [siteName] => worlddent-spb.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/29.0 Chrome/136.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762415957
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+

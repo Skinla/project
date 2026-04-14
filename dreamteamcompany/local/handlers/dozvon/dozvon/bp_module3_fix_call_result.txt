@@ -1,0 +1,740 @@
+/**
+ * Модуль 3: фиксация результата звонка.
+ * Один PHP-блок для конструктора БП «Выполнение произвольного PHP кода».
+ *
+ * Логика:
+ * 1. Читает из БП MODULE3_ATTEMPT_ID для текущего звонка
+ * 2. Находит конкретную попытку 131 по ID и берёт из неё VOX_SESSION_ID
+ * 3. Получает статистику звонка через внутренний API Bitrix или Vox GetCallHistory
+ * 4. Обновляет попытку: STATUS, FINISHED_AT, RESULT_CODE, RESULT_MESSAGE, VOX_SESSION_ID, VOX_RECORDING_URL
+ * 5. При connected — отменяет будущие попытки мастера, пересчитывает агрегаты
+ *
+ * Переменные БП на выход: MODULE3_FIX_RESULT, MODULE3_FIX_UPDATED, MODULE3_FIX_ERROR, MODULE3_STATUS_LINE
+ *
+ * Запускать по таймеру (например, каждые 1–2 мин), отдельно от блока обзвона.
+ * Без webhook — используется внутренний API Bitrix.
+ */
+
+use Bitrix\Main\Loader;
+
+$getVar = function (string $name) {
+    return $this->GetVariable($name);
+};
+$setVar = function (string $name, $value): void {
+    $this->SetVariable($name, (string)$value);
+};
+$log = function (string $msg) {
+    $this->WriteToTrackingService($msg);
+};
+$setStatusLine = function (string $code, string $text) use ($setVar): void {
+    $allowedCodes = ['human', 'voicemail', 'client_no_answer', 'client_busy', 'operator_no_answer', 'failed', 'cancelled', 'unknown'];
+    $cleanCode = trim($code);
+    if (!in_array($cleanCode, $allowedCodes, true)) {
+        $cleanCode = 'unknown';
+    }
+    $cleanText = trim(str_replace(["\r", "\n", '|'], [' ', ' ', '/'], $text));
+    if ($cleanText === '') {
+        $cleanText = $cleanCode;
+    }
+    $setVar('MODULE3_STATUS_LINE', $cleanCode . '|' . $cleanText);
+};
+
+$masterListId = 130;
+$attemptListId = 131;
+$voxHistoryUrl = 'https://api.voximplant.com/platform_api/GetCallHistory/';
+$voxAccountId = '9935862';
+$voxApiKey = 'f9a8a2d0-4f60-4007-abff-2d39e8ed636c';
+
+$statusOperatorCalling = 'operator_calling';
+$statusConnected = 'connected';
+$statusClientNoAnswer = 'client_no_answer';
+$statusClientBusy = 'client_busy';
+$statusOperatorNoAnswer = 'operator_no_answer';
+$statusCancelled = 'cancelled';
+
+$codeToStatus = [
+    '200' => $statusConnected,
+    '304' => $statusClientNoAnswer,
+    '486' => $statusClientBusy,
+    '603' => $statusOperatorNoAnswer,
+    '603-S' => $statusOperatorNoAnswer,
+    '404' => $statusClientNoAnswer,
+    '403' => $statusClientNoAnswer,
+    '480' => $statusClientNoAnswer,
+    '503' => $statusClientNoAnswer,
+    '484' => $statusClientNoAnswer,
+    '402' => $statusCancelled,
+    '423' => $statusCancelled,
+];
+$defaultStatus = $statusClientNoAnswer;
+
+$setVar('MODULE3_FIX_RESULT', '');
+$setVar('MODULE3_FIX_UPDATED', '0');
+$setVar('MODULE3_FIX_ERROR', '');
+$setVar('MODULE3_STATUS_LINE', '');
+
+if (!Loader::includeModule('iblock')) {
+    $setVar('MODULE3_FIX_ERROR', 'iblock not available');
+    $setStatusLine('failed', 'Модуль iblock недоступен');
+    $log('MODULE3 FIX: iblock not available');
+    return;
+}
+
+date_default_timezone_set('Europe/Moscow');
+$nowBitrix = date('d.m.Y H:i:s');
+
+$getStatusEnumId = function (int $listId, string $statusValue): ?int {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $listId, 'CODE' => 'STATUS']);
+    if (!$res || !($p = $res->Fetch()) || (string)($p['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $pid = (int)$p['ID'];
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'VALUE' => $statusValue])->Fetch();
+    if ($e) {
+        return (int)$e['ID'];
+    }
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'XML_ID' => $statusValue])->Fetch();
+    return $e ? (int)$e['ID'] : null;
+};
+
+$getListEnumId = function (int $listId, string $propertyCode, string $value): ?int {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $listId, 'CODE' => $propertyCode]);
+    if (!$res || !($p = $res->Fetch()) || (string)($p['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $pid = (int)$p['ID'];
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'VALUE' => $value])->Fetch();
+    if ($e) {
+        return (int)$e['ID'];
+    }
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'XML_ID' => $value])->Fetch();
+    return $e ? (int)$e['ID'] : null;
+};
+
+$operatorCallingEnumId = $getStatusEnumId($attemptListId, $statusOperatorCalling) ?? $statusOperatorCalling;
+$callDetectionEnumIds = [
+    'human' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'human') ?? 1206,
+    'voicemail' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'voicemail') ?? 1207,
+    'client_no_answer' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'client_no_answer') ?? 1208,
+    'client_busy' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'client_busy') ?? 1209,
+    'operator_no_answer' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'operator_no_answer') ?? 1210,
+    'failed' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'failed') ?? 1211,
+    'cancelled' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'cancelled') ?? 1212,
+    'unknown' => $getListEnumId($attemptListId, 'CALL_DETECTION_TYPE', 'unknown') ?? 1213,
+];
+$clientCallStatusEnumIds = [
+    'dialing' => $getListEnumId($attemptListId, 'CLIENT_CALL_STATUS', 'dialing'),
+    'answered' => $getListEnumId($attemptListId, 'CLIENT_CALL_STATUS', 'answered'),
+    'busy' => $getListEnumId($attemptListId, 'CLIENT_CALL_STATUS', 'busy'),
+    'no_answer' => $getListEnumId($attemptListId, 'CLIENT_CALL_STATUS', 'no_answer'),
+    'failed' => $getListEnumId($attemptListId, 'CLIENT_CALL_STATUS', 'failed'),
+    'cancelled' => $getListEnumId($attemptListId, 'CLIENT_CALL_STATUS', 'cancelled'),
+];
+$operatorCallStatusEnumIds = [
+    'dialing' => $getListEnumId($attemptListId, 'OPERATOR_CALL_STATUS', 'dialing'),
+    'answered' => $getListEnumId($attemptListId, 'OPERATOR_CALL_STATUS', 'answered'),
+    'no_answer' => $getListEnumId($attemptListId, 'OPERATOR_CALL_STATUS', 'no_answer'),
+    'failed' => $getListEnumId($attemptListId, 'OPERATOR_CALL_STATUS', 'failed'),
+    'cancelled' => $getListEnumId($attemptListId, 'OPERATOR_CALL_STATUS', 'cancelled'),
+];
+
+$extractAttempt = static function ($ob): ?array {
+    if (!is_object($ob) || !method_exists($ob, 'GetFields') || !method_exists($ob, 'GetProperties')) {
+        return null;
+    }
+    $fields = $ob->GetFields();
+    $props = $ob->GetProperties();
+    return [
+        'ID' => (int)($fields['ID'] ?? 0),
+        'MASTER_ELEMENT_ID' => (int)preg_replace('/\D+/', '', (string)($props['MASTER_ELEMENT_ID']['VALUE'] ?? '')),
+        'CALL_ID' => trim((string)($props['CALL_ID']['VALUE'] ?? '')),
+        'VOX_SESSION_ID' => trim((string)($props['VOX_SESSION_ID']['VALUE'] ?? '')),
+        'OPERATOR_ID' => (int)preg_replace('/\D+/', '', (string)($props['OPERATOR_ID']['VALUE'] ?? '')),
+        'PHONE' => trim((string)($props['PHONE']['VALUE'] ?? '')),
+        'STARTED_AT' => trim((string)($props['STARTED_AT']['VALUE'] ?? '')),
+    ];
+};
+
+$findAttemptById = function (int $attemptId) use ($attemptListId, $operatorCallingEnumId, $extractAttempt): ?array {
+    if ($attemptId <= 0) {
+        return null;
+    }
+    $res = CIBlockElement::GetList(
+        ['ID' => 'DESC'],
+        [
+            'IBLOCK_ID' => $attemptListId,
+            'CHECK_PERMISSIONS' => 'N',
+            '=ID' => $attemptId,
+            'PROPERTY_STATUS' => $operatorCallingEnumId,
+        ],
+        false,
+        ['nTopCount' => 1]
+    );
+    if ($res && ($ob = $res->GetNextElement())) {
+        return $extractAttempt($ob);
+    }
+    return null;
+};
+
+$bpAttemptIdRaw = $getVar('MODULE3_ATTEMPT_ID');
+$bpVoxSessionIdRaw = $getVar('MODULE3_VOX_SESSION_ID');
+$bpAttemptId = (int)preg_replace('/\D+/', '', (string)(is_array($bpAttemptIdRaw) ? reset($bpAttemptIdRaw) : $bpAttemptIdRaw));
+$bpVoxSessionId = preg_replace('/\D+/', '', (string)(is_array($bpVoxSessionIdRaw) ? reset($bpVoxSessionIdRaw) : $bpVoxSessionIdRaw));
+
+$toProcess = [];
+if ($bpAttemptId <= 0) {
+    $setVar('MODULE3_FIX_RESULT', 'no_pending');
+    $setVar('MODULE3_FIX_ERROR', 'attempt_id_empty');
+    $setStatusLine('unknown', 'Нет MODULE3_ATTEMPT_ID в контексте БП');
+    $log('MODULE3 FIX: no MODULE3_ATTEMPT_ID in BP context');
+    return;
+}
+
+$log('MODULE3 FIX: BP vars attempt_id=' . $bpAttemptId . ' vox_session_id=' . ($bpVoxSessionId !== '' ? $bpVoxSessionId : '-'));
+
+$targetAttempt = $findAttemptById($bpAttemptId);
+if ($targetAttempt === null) {
+    $setVar('MODULE3_FIX_RESULT', 'no_records');
+    $setVar('MODULE3_FIX_ERROR', 'attempt_not_found');
+    $setStatusLine('unknown', 'Попытка не найдена для фиксации результата');
+    $log('MODULE3 FIX: attempt not found by MODULE3_ATTEMPT_ID=' . $bpAttemptId);
+    return;
+}
+
+$toProcess[] = $targetAttempt;
+
+$getCallStat = function (string $callId): ?array {
+    if (Loader::includeModule('voximplant')) {
+        $tableClass = null;
+        if (class_exists('\Bitrix\Voximplant\StatisticTable')) {
+            $tableClass = '\Bitrix\Voximplant\StatisticTable';
+        } elseif (class_exists('\Bitrix\Voximplant\Model\StatisticTable')) {
+            $tableClass = '\Bitrix\Voximplant\Model\StatisticTable';
+        }
+        if ($tableClass !== null) {
+            $res = $tableClass::getList([
+                'filter' => ['=CALL_ID' => $callId],
+                'order' => ['ID' => 'DESC'],
+                'limit' => 1,
+            ]);
+            $row = $res->fetch();
+            if (is_array($row)) {
+                return $row;
+            }
+        }
+    }
+    $conn = \Bitrix\Main\Application::getConnection();
+    $helper = $conn->getSqlHelper();
+    $table = 'b_voximplant_statistic';
+    if ($conn->isTableExists($table)) {
+        $callIdEsc = $helper->forSql($callId);
+        $rs = $conn->query("SELECT CALL_ID, PORTAL_USER_ID, CALL_FAILED_CODE, CALL_FAILED_REASON, CALL_DURATION FROM {$table} WHERE CALL_ID = '{$callIdEsc}' ORDER BY ID DESC LIMIT 1");
+        if ($row = $rs->fetch()) {
+            return $row;
+        }
+    }
+    return null;
+};
+
+$getCallStatByOperatorPhone = function (int $operatorId, string $phone): ?array {
+    $phoneNorm = preg_replace('/\D+/', '', $phone);
+    if ($operatorId <= 0 || strlen($phoneNorm) < 10) {
+        return null;
+    }
+    $conn = \Bitrix\Main\Application::getConnection();
+    $helper = $conn->getSqlHelper();
+    $table = 'b_voximplant_statistic';
+    if (!$conn->isTableExists($table)) {
+        return null;
+    }
+    $opEsc = (int)$operatorId;
+    $phoneEsc = $helper->forSql($phoneNorm);
+    $rs = $conn->query("SELECT CALL_ID, PORTAL_USER_ID, CALL_FAILED_CODE, CALL_FAILED_REASON, CALL_DURATION FROM {$table} WHERE PORTAL_USER_ID = {$opEsc} AND REPLACE(REPLACE(REPLACE(PHONE_NUMBER,'+',''),' ',''),'-','') = '{$phoneEsc}' AND CALL_START_DATE >= DATE_SUB(NOW(), INTERVAL 30 MINUTE) ORDER BY ID DESC LIMIT 1");
+    return $rs && ($row = $rs->fetch()) ? $row : null;
+};
+
+$extractOperatorIdFromRecord = static function (?array $record): int {
+    if (!is_array($record)) {
+        return 0;
+    }
+    $candidates = [
+        $record['PORTAL_USER_ID'] ?? null,
+        $record['USER_ID'] ?? null,
+        $record['USER_PHONE_INNER'] ?? null,
+    ];
+    foreach ($candidates as $candidate) {
+        $id = (int)preg_replace('/\D+/', '', (string)$candidate);
+        if ($id > 0) {
+            return $id;
+        }
+    }
+    return 0;
+};
+
+$extractVoxSessionId = static function (string $callId, string $voxSessionId = ''): string {
+    $voxSessionId = trim($voxSessionId);
+    if ($voxSessionId !== '') {
+        return preg_replace('/\D+/', '', $voxSessionId);
+    }
+    if (preg_match('/^vox_(\d+)$/', trim($callId), $m)) {
+        return $m[1];
+    }
+    return '';
+};
+
+$getVoxHistoryBySessionId = function (string $sessionId) use ($voxHistoryUrl, $voxAccountId, $voxApiKey, $log): ?array {
+    $sessionId = preg_replace('/\D+/', '', $sessionId);
+    if ($sessionId === '' || !function_exists('curl_init')) {
+        return null;
+    }
+
+    $payload = http_build_query([
+        'account_id' => $voxAccountId,
+        'api_key' => $voxApiKey,
+        'call_session_history_id' => $sessionId,
+    ]);
+    $deadlineTs = time() + 600;
+    $retrySchedule = [5, 10, 15, 20, 30, 45, 60];
+    $attemptNo = 0;
+
+    while (true) {
+        $attemptNo++;
+        $ch = curl_init($voxHistoryUrl);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $payload,
+            CURLOPT_HTTPHEADER => ['Content-Type: application/x-www-form-urlencoded', 'Accept: application/json'],
+            CURLOPT_TIMEOUT => 15,
+            CURLOPT_CONNECTTIMEOUT => 5,
+            CURLOPT_SSL_VERIFYPEER => false,
+        ]);
+        $response = curl_exec($ch);
+        $httpCode = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $curlErr = curl_error($ch);
+        curl_close($ch);
+
+        if (!is_string($response) || $response === '') {
+            if ($curlErr !== '') {
+                $log('MODULE3 FIX: Vox history curl error session=' . $sessionId . ' attempt=' . $attemptNo . ' err=' . $curlErr);
+            }
+            return null;
+        }
+
+        $decoded = json_decode($response, true);
+        if (!is_array($decoded)) {
+            $log('MODULE3 FIX: Vox history invalid JSON session=' . $sessionId . ' http=' . $httpCode . ' attempt=' . $attemptNo);
+            return null;
+        }
+        if (!empty($decoded['error'])) {
+            $errMsg = is_array($decoded['error']) ? (string)($decoded['error']['msg'] ?? 'unknown') : (string)$decoded['error'];
+            $isRetryable = stripos($errMsg, 'call_session_history_id') !== false && stripos($errMsg, 'invalid') !== false;
+            if ($isRetryable && time() < $deadlineTs) {
+                $remaining = max(0, $deadlineTs - time());
+                $scheduleIdx = min($attemptNo - 1, count($retrySchedule) - 1);
+                $sleepSeconds = (int)$retrySchedule[$scheduleIdx];
+                $waitSeconds = (int)min($sleepSeconds, $remaining);
+                $log('MODULE3 FIX: Vox history pending session=' . $sessionId . ' attempt=' . $attemptNo . ' wait=' . $waitSeconds . 's err=' . $errMsg);
+                sleep($waitSeconds);
+                continue;
+            }
+            $log('MODULE3 FIX: Vox history API error session=' . $sessionId . ' http=' . $httpCode . ' err=' . $errMsg);
+            return null;
+        }
+        if (!empty($decoded['result'][0]) && is_array($decoded['result'][0])) {
+            return $decoded['result'][0];
+        }
+        if (time() < $deadlineTs) {
+            $remaining = max(0, $deadlineTs - time());
+            $scheduleIdx = min($attemptNo - 1, count($retrySchedule) - 1);
+            $sleepSeconds = (int)$retrySchedule[$scheduleIdx];
+            $waitSeconds = (int)min($sleepSeconds, $remaining);
+            $log('MODULE3 FIX: Vox history empty result session=' . $sessionId . ' attempt=' . $attemptNo . ' wait=' . $waitSeconds . 's');
+            sleep($waitSeconds);
+            continue;
+        }
+        break;
+    }
+
+    $log('MODULE3 FIX: Vox history timeout session=' . $sessionId . ' after 600s');
+
+    return null;
+};
+
+$resolveVoxHistoryOutcome = static function (array $history): array {
+    $duration = (int)($history['duration'] ?? 0);
+    $finishReason = trim((string)($history['finish_reason'] ?? ''));
+    $resourceUsage = is_array($history['other_resource_usage'] ?? null) ? $history['other_resource_usage'] : [];
+    $hasVoicemail = false;
+    foreach ($resourceUsage as $usage) {
+        if (!is_array($usage)) {
+            continue;
+        }
+        $type = strtoupper(trim((string)($usage['resource_type'] ?? '')));
+        $desc = strtoupper(trim((string)($usage['description'] ?? '')));
+        if ($type === 'VOICEMAILDETECTION' || $desc === 'VOICEMAIL') {
+            $hasVoicemail = true;
+            break;
+        }
+    }
+
+    $finishReasonLc = mb_strtolower($finishReason);
+    $type = 'unknown';
+    $code = 'OTHER';
+    $message = $finishReason !== '' ? $finishReason : 'Vox history fallback';
+
+    if ($hasVoicemail) {
+        $type = 'voicemail';
+        $code = '304';
+        $message = 'VoiceMail';
+    } elseif ($duration > 0) {
+        $type = 'human';
+        $code = '200';
+    } elseif (strpos($finishReasonLc, 'busy') !== false || strpos($finishReasonLc, '486') !== false) {
+        $type = 'client_busy';
+        $code = '486';
+    } elseif (
+        strpos($finishReasonLc, 'operator') !== false
+        && (strpos($finishReasonLc, 'no answer') !== false || strpos($finishReasonLc, 'unanswered') !== false)
+    ) {
+        $type = 'operator_no_answer';
+        $code = '603';
+    } elseif (
+        strpos($finishReasonLc, 'no answer') !== false
+        || strpos($finishReasonLc, 'no_answer') !== false
+        || strpos($finishReasonLc, 'not answered') !== false
+        || strpos($finishReasonLc, 'unanswered') !== false
+        || strpos($finishReasonLc, 'timeout') !== false
+        || strpos($finishReasonLc, '404') !== false
+        || strpos($finishReasonLc, '403') !== false
+        || strpos($finishReasonLc, '480') !== false
+        || strpos($finishReasonLc, '484') !== false
+    ) {
+        $type = 'client_no_answer';
+        $code = '304';
+    } elseif (
+        strpos($finishReasonLc, 'fail') !== false
+        || strpos($finishReasonLc, 'error') !== false
+        || strpos($finishReasonLc, 'reject') !== false
+        || strpos($finishReasonLc, 'declin') !== false
+        || strpos($finishReasonLc, 'cancel') !== false
+    ) {
+        $type = 'failed';
+        $code = '503';
+    }
+
+    return [
+        'type' => $type,
+        'code' => $code,
+        'message' => $message,
+        'duration' => $duration,
+    ];
+};
+
+$buildVoxFallbackResult = static function (array $history) use ($resolveVoxHistoryOutcome): array {
+    $outcome = $resolveVoxHistoryOutcome($history);
+
+    return [
+        'CALL_FAILED_CODE' => (string)($outcome['code'] ?? 'OTHER'),
+        'CALL_FAILED_REASON' => (string)($outcome['message'] ?? 'Vox history fallback'),
+        'CALL_DURATION' => (int)($outcome['duration'] ?? 0),
+    ];
+};
+
+$resolveCallDetectionType = static function (string $failedCode, string $newStatus, ?array $voxHistory) use ($resolveVoxHistoryOutcome): string {
+    $failedCode = strtoupper(trim($failedCode));
+    $newStatus = trim($newStatus);
+
+    if (is_array($voxHistory)) {
+        $outcome = $resolveVoxHistoryOutcome($voxHistory);
+        $voxType = trim((string)($outcome['type'] ?? ''));
+        if ($voxType !== '' && $voxType !== 'unknown') {
+            return $voxType;
+        }
+    }
+
+    if ($failedCode === '200' || $newStatus === 'connected') {
+        return 'human';
+    }
+    if ($failedCode === '486' || $newStatus === 'client_busy') {
+        return 'client_busy';
+    }
+    if ($failedCode === '603' || $failedCode === '603-S' || $newStatus === 'operator_no_answer') {
+        return 'operator_no_answer';
+    }
+    if (in_array($failedCode, ['304', '404', '403', '480', '503', '484'], true) || $newStatus === 'client_no_answer') {
+        return 'client_no_answer';
+    }
+    if (in_array($failedCode, ['402', '423'], true)) {
+        return 'failed';
+    }
+    if ($failedCode === '' || $failedCode === 'OTHER') {
+        return 'unknown';
+    }
+
+    return 'failed';
+};
+
+$buildResultMessage = static function (string $baseMessage, ?array $voxHistory): string {
+    $parts = [];
+    $baseMessage = trim($baseMessage);
+    if ($baseMessage !== '') {
+        $parts[] = $baseMessage;
+    }
+    if (is_array($voxHistory)) {
+        $voxBits = [];
+        $ruleName = trim((string)($voxHistory['rule_name'] ?? ''));
+        $appName = trim((string)($voxHistory['application_name'] ?? ''));
+        $finishReason = trim((string)($voxHistory['finish_reason'] ?? ''));
+        $duration = (int)($voxHistory['duration'] ?? 0);
+        if ($ruleName !== '') {
+            $voxBits[] = 'rule=' . $ruleName;
+        }
+        if ($appName !== '') {
+            $voxBits[] = 'app=' . $appName;
+        }
+        if ($finishReason !== '') {
+            $voxBits[] = 'finish=' . $finishReason;
+        }
+        if ($duration > 0) {
+            $voxBits[] = 'duration=' . $duration . 's';
+        }
+        if (!empty($voxHistory['log_file_url'])) {
+            $voxBits[] = 'log_url=' . $voxHistory['log_file_url'];
+        }
+        if (!empty($voxBits)) {
+            $parts[] = 'Vox: ' . implode(', ', $voxBits);
+        }
+    }
+    return implode(' | ', $parts);
+};
+
+$resolveLegStatuses = static function (string $newStatus, string $callDetectionType): array {
+    $newStatus = trim($newStatus);
+    $callDetectionType = trim($callDetectionType);
+
+    $clientStatus = null;
+    $operatorStatus = null;
+
+    if ($callDetectionType === 'human' || $newStatus === 'connected') {
+        $clientStatus = 'answered';
+        $operatorStatus = 'answered';
+    } elseif ($callDetectionType === 'voicemail' || $newStatus === 'client_no_answer') {
+        $clientStatus = 'no_answer';
+    } elseif ($callDetectionType === 'client_busy' || $newStatus === 'client_busy') {
+        $clientStatus = 'busy';
+    } elseif ($callDetectionType === 'operator_no_answer' || $newStatus === 'operator_no_answer') {
+        $operatorStatus = 'no_answer';
+    } elseif ($callDetectionType === 'failed') {
+        $clientStatus = 'failed';
+    }
+
+    return [
+        'CLIENT_CALL_STATUS' => $clientStatus,
+        'OPERATOR_CALL_STATUS' => $operatorStatus,
+    ];
+};
+
+$updateAttempt = function (int $attemptId, array $fields) use ($attemptListId): void {
+    $vals = [];
+    foreach ($fields as $k => $v) {
+        if ($v !== null && (string)$v !== '') {
+            $vals[$k] = $v;
+        }
+    }
+    if (!empty($vals)) {
+        CIBlockElement::SetPropertyValuesEx($attemptId, $attemptListId, $vals);
+    }
+};
+
+$cancelFutureAttempts = function (int $masterId) use ($attemptListId, $nowBitrix, $getStatusEnumId, $statusCancelled): void {
+    $cancelledEnumId = $getStatusEnumId($attemptListId, $statusCancelled) ?? $statusCancelled;
+    $finalStatuses = ['connected', 'client_no_answer', 'client_busy', 'operator_no_answer', 'cancelled'];
+    $res = CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        [
+            'IBLOCK_ID' => $attemptListId,
+            'PROPERTY_MASTER_ELEMENT_ID' => $masterId,
+        ],
+    );
+    while ($ob = $res->GetNextElement()) {
+        $f = $ob->GetFields();
+        $p = $ob->GetProperties();
+        $st = trim((string)($p['STATUS']['VALUE'] ?? $p['STATUS']['VALUE_ENUM'] ?? $p['STATUS']['VALUE_XML_ID'] ?? ''));
+        if (!in_array($st, $finalStatuses, true)) {
+            CIBlockElement::SetPropertyValuesEx((int)$f['ID'], $attemptListId, [
+                'STATUS' => $cancelledEnumId,
+                'UPDATED_AT' => $nowBitrix,
+                'FINISHED_AT' => $nowBitrix,
+                'RESULT_CODE' => 'connected_completed',
+                'RESULT_MESSAGE' => 'Отменено после успешного соединения',
+            ]);
+        }
+    }
+};
+
+$recalculateMaster = function (int $masterId) use ($masterListId, $attemptListId): void {
+    $res = CIBlockElement::GetList(
+        ['ID' => 'ASC'],
+        ['IBLOCK_ID' => $attemptListId, 'PROPERTY_MASTER_ELEMENT_ID' => $masterId],
+    );
+    $counts = ['completed' => 0, 'connected' => 0, 'client_no_answer' => 0, 'client_busy' => 0, 'operator_no_answer' => 0, 'cancelled' => 0];
+    $nextAt = '';
+    while ($ob = $res->GetNextElement()) {
+        $p = $ob->GetProperties();
+        $st = trim((string)($p['STATUS']['VALUE'] ?? $p['STATUS']['VALUE_ENUM'] ?? ''));
+        if (in_array($st, ['connected', 'client_no_answer', 'client_busy', 'operator_no_answer', 'cancelled'], true)) {
+            $counts['completed']++;
+            if (isset($counts[$st])) {
+                $counts[$st]++;
+            }
+        }
+        if (in_array($st, ['ready', 'planned', 'operator_calling'], true)) {
+            $sch = trim((string)($p['SCHEDULED_AT']['VALUE'] ?? ''));
+            if ($sch !== '' && ($nextAt === '' || strcmp($sch, $nextAt) < 0)) {
+                $nextAt = $sch;
+            }
+        }
+    }
+    $upd = [
+        'ATTEMPTS_COMPLETED_TOTAL' => $counts['completed'],
+        'ATTEMPTS_CONNECTED_TOTAL' => $counts['connected'],
+        'ATTEMPTS_CLIENT_NO_ANSWER_TOTAL' => $counts['client_no_answer'],
+        'ATTEMPTS_CLIENT_BUSY_TOTAL' => $counts['client_busy'],
+        'ATTEMPTS_OPERATOR_NO_ANSWER_TOTAL' => $counts['operator_no_answer'],
+        'ATTEMPTS_CANCELLED_TOTAL' => $counts['cancelled'],
+        'NEXT_ATTEMPT_AT' => $nextAt,
+        'MODULE2_PROCESSED_AT' => date('Y-m-d\TH:i:s'),
+    ];
+    if ($counts['connected'] > 0) {
+        $upd['STATUS'] = 'completed';
+        $upd['COMPLETED_AT'] = date('d.m.Y H:i:s');
+    } elseif ($counts['completed'] > 0) {
+        $upd['STATUS'] = 'in_progress';
+    }
+    $vals = [];
+    foreach ($upd as $k => $v) {
+        if ($v !== null && (string)$v !== '') {
+            $vals[$k] = $v;
+        }
+    }
+    if (!empty($vals)) {
+        CIBlockElement::SetPropertyValuesEx($masterId, $masterListId, $vals);
+    }
+};
+
+$updated = 0;
+$processedCount = count($toProcess);
+foreach ($toProcess as $item) {
+    $attemptId = (int)$item['ID'];
+    $masterId = (int)$item['MASTER_ELEMENT_ID'];
+    $callId = (string)$item['CALL_ID'];
+    $voxSessionId = (string)$item['VOX_SESSION_ID'];
+    $operatorId = (int)$item['OPERATOR_ID'];
+    $phone = (string)$item['PHONE'];
+    if ($voxSessionId === '' && $bpVoxSessionId !== '') {
+        $voxSessionId = $bpVoxSessionId;
+        $updateAttempt($attemptId, ['VOX_SESSION_ID' => $bpVoxSessionId, 'UPDATED_AT' => $nowBitrix]);
+        $log('MODULE3 FIX: restored VOX_SESSION_ID from BP vars attempt=' . $attemptId . ' session=' . $bpVoxSessionId);
+    }
+
+    $record = null;
+    if ($callId !== '' && strpos($callId, 'vox_') !== 0) {
+        $record = $getCallStat($callId);
+    }
+    if ($record === null && $operatorId > 0 && $phone !== '') {
+        $record = $getCallStatByOperatorPhone($operatorId, $phone);
+        if (is_array($record) && !empty($record['CALL_ID'])) {
+            $updateAttempt($attemptId, ['CALL_ID' => $record['CALL_ID'], 'UPDATED_AT' => $nowBitrix]);
+            $log('MODULE3 FIX: found by operator+phone attempt=' . $attemptId . ' call_id=' . $record['CALL_ID']);
+        }
+    }
+
+    $voxHistory = null;
+    $voxSessionIdResolved = $extractVoxSessionId($callId, $voxSessionId);
+    if ($voxSessionIdResolved !== '') {
+        $voxHistory = $getVoxHistoryBySessionId($voxSessionIdResolved);
+        if ($record === null && is_array($voxHistory)) {
+            $record = $buildVoxFallbackResult($voxHistory);
+            $log('MODULE3 FIX: fallback to Vox history attempt=' . $attemptId . ' session=' . $voxSessionIdResolved);
+        }
+    }
+
+    if ($record === null || !is_array($record)) {
+        continue;
+    }
+    $failedCode = trim((string)($record['CALL_FAILED_CODE'] ?? 'OTHER'));
+    $failedReason = trim((string)($record['CALL_FAILED_REASON'] ?? ''));
+    $duration = (int)($record['CALL_DURATION'] ?? 0);
+    $resolvedOperatorId = $extractOperatorIdFromRecord($record);
+
+    $newStatus = $codeToStatus[$failedCode] ?? $defaultStatus;
+    $statusEnumId = $getStatusEnumId($attemptListId, $newStatus) ?? $newStatus;
+    $callDetectionType = $resolveCallDetectionType($failedCode, $newStatus, $voxHistory);
+    $callDetectionEnumId = $callDetectionEnumIds[$callDetectionType] ?? ($callDetectionEnumIds['unknown'] ?? null);
+    $legStatuses = $resolveLegStatuses($newStatus, $callDetectionType);
+    $clientCallStatusEnumId = !empty($legStatuses['CLIENT_CALL_STATUS']) ? ($clientCallStatusEnumIds[$legStatuses['CLIENT_CALL_STATUS']] ?? null) : null;
+    $operatorCallStatusEnumId = !empty($legStatuses['OPERATOR_CALL_STATUS']) ? ($operatorCallStatusEnumIds[$legStatuses['OPERATOR_CALL_STATUS']] ?? null) : null;
+
+    $finishedAt = $nowBitrix;
+    if (is_array($voxHistory) && !empty($voxHistory['start_date'])) {
+        try {
+            $voxStart = new \DateTimeImmutable((string)$voxHistory['start_date'], new \DateTimeZone('Etc/GMT'));
+            $voxFinish = $voxStart->modify('+' . max(0, $duration) . ' seconds')->setTimezone(new \DateTimeZone('Europe/Moscow'));
+            $finishedAt = $voxFinish->format('d.m.Y H:i:s');
+        } catch (\Throwable $e) {
+            $log('MODULE3 FIX: failed to convert Vox time session=' . ($voxSessionIdResolved !== '' ? $voxSessionIdResolved : '-') . ' err=' . $e->getMessage());
+        }
+    }
+
+    $attemptUpdate = [
+        'STATUS' => $statusEnumId,
+        'CALL_DETECTION_TYPE' => $callDetectionEnumId,
+        'FINISHED_AT' => $finishedAt,
+        'RESULT_CODE' => $failedCode,
+        'RESULT_MESSAGE' => $buildResultMessage($failedReason !== '' ? $failedReason : $failedCode, $voxHistory),
+        'UPDATED_AT' => $nowBitrix,
+    ];
+    if ($clientCallStatusEnumId !== null) {
+        $attemptUpdate['CLIENT_CALL_STATUS'] = $clientCallStatusEnumId;
+    }
+    if ($operatorCallStatusEnumId !== null) {
+        $attemptUpdate['OPERATOR_CALL_STATUS'] = $operatorCallStatusEnumId;
+    }
+    if ($voxSessionIdResolved !== '') {
+        $attemptUpdate['VOX_SESSION_ID'] = $voxSessionIdResolved;
+        if ($callId === '') {
+            $attemptUpdate['CALL_ID'] = 'vox_' . $voxSessionIdResolved;
+        }
+    }
+    if ($resolvedOperatorId > 0) {
+        $attemptUpdate['OPERATOR_ID'] = $resolvedOperatorId;
+    }
+    if (is_array($voxHistory)) {
+        $voxRecordingUrl = trim((string)($voxHistory['record_url'] ?? $voxHistory['recording_url'] ?? $voxHistory['media_session_access_url'] ?? $voxHistory['media_session_access_secure_url'] ?? ''));
+        if ($voxRecordingUrl !== '') {
+            $attemptUpdate['VOX_RECORDING_URL'] = $voxRecordingUrl;
+        }
+    }
+
+    $updateAttempt($attemptId, $attemptUpdate);
+    $setStatusLine($callDetectionType, (string)($attemptUpdate['RESULT_MESSAGE'] ?? $failedCode));
+
+    $updated++;
+
+    if ($newStatus === $statusConnected && $masterId > 0) {
+        $cancelFutureAttempts($masterId);
+    }
+    if ($masterId > 0) {
+        $recalculateMaster($masterId);
+    }
+
+    $log('MODULE3 FIX: attempt ' . $attemptId . ' -> ' . $newStatus . ' (code ' . $failedCode . ', session=' . ($voxSessionIdResolved !== '' ? $voxSessionIdResolved : '-') . ')');
+}
+
+$setVar('MODULE3_FIX_RESULT', $updated > 0 ? 'updated' : 'no_records');
+$setVar('MODULE3_FIX_UPDATED', (string)$updated);
+if ($updated <= 0) {
+    $setStatusLine('unknown', 'Результат звонка пока не найден');
+}
+$log('MODULE3 FIX: processed ' . $processedCount . ', updated ' . $updated);

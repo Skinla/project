@@ -1,0 +1,200 @@
+/**
+ * BP блок: Фиксация результата звонка.
+ * Vox GetCallHistory + StatisticTable + маппинг кодов.
+ *
+ * Читает: CB_LEAD_ID, CB_OPERATOR_ID, CB_STARTED_AT, CB_VOX_SESSION_ID, CB_PHONE, CB_ATTEMPT
+ * Записывает: CB_FIX_STATUS (connected/retry_wait/final_failed/error),
+ *             CB_FIX_RESULT (connected/operator_no_answer/client_no_answer/client_busy),
+ *             CB_FIX_MESSAGE, CB_FIX_LABEL
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+$extractInt = function ($value) {
+    if ($value === null) return 0;
+    if (is_array($value)) $value = reset($value);
+    $clean = preg_replace('/\D+/', '', (string)$value);
+    return (int)($clean !== null && $clean !== '' ? $clean : '0');
+};
+
+$maxAttempts       = 5;
+$resultLookbackMin = 10;
+$statusConnected   = 'connected';
+$statusOpNoAnswer  = 'operator_no_answer';
+$statusClNoAnswer  = 'client_no_answer';
+$statusClBusy      = 'client_busy';
+
+$voxHistoryUrl = 'https://api.voximplant.com/platform_api/GetCallHistory/';
+$voxAccountId  = '9935862';
+$voxApiKey     = 'f9a8a2d0-4f60-4007-abff-2d39e8ed636c';
+$envAccId = getenv('LEAD_CALLBACK_VOX_ACCOUNT_ID');
+if (is_string($envAccId) && $envAccId !== '') $voxAccountId = $envAccId;
+$envApiKey = getenv('LEAD_CALLBACK_VOX_API_KEY');
+if (is_string($envApiKey) && $envApiKey !== '') $voxApiKey = $envApiKey;
+
+$codeToStatus = [
+    '200' => $statusConnected, '304' => $statusClNoAnswer, '404' => $statusClNoAnswer,
+    '403' => $statusClNoAnswer, '480' => $statusClNoAnswer, '484' => $statusClNoAnswer,
+    '486' => $statusClBusy, '503' => $statusClNoAnswer, '603' => $statusOpNoAnswer,
+    '603-S' => $statusOpNoAnswer, '402' => 'cancelled', '423' => 'cancelled',
+];
+
+$statusToLabel = function ($s) use ($statusConnected, $statusOpNoAnswer, $statusClNoAnswer, $statusClBusy) {
+    $map = [
+        $statusConnected  => 'Успешно соединён',
+        $statusOpNoAnswer => 'Не удалось (оператор не ответил)',
+        $statusClNoAnswer => 'Не удалось (клиент не ответил)',
+        $statusClBusy     => 'Не удалось (клиент занят)',
+        'cancelled'       => 'Не удалось (звонок отменён)',
+    ];
+    return $map[$s] ?? '';
+};
+
+try {
+    $leadId       = $extractInt($getVar('CB_LEAD_ID'));
+    $operatorId   = $extractInt($getVar('CB_OPERATOR_ID'));
+    $startedAt    = trim((string)$getVar('CB_STARTED_AT'));
+    $voxSessionId = trim((string)$getVar('CB_VOX_SESSION_ID'));
+    $phone        = trim((string)$getVar('CB_PHONE'));
+    $attemptNum   = $extractInt($getVar('CB_ATTEMPT'));
+
+    $log('CB FIX [1/5] start leadId=' . $leadId . ' op=' . $operatorId . ' vox=' . $voxSessionId . ' attempt=' . $attemptNum);
+
+    $record = null;
+
+    if ($voxSessionId !== '') {
+        try {
+            $hPayload = http_build_query([
+                'account_id' => $voxAccountId, 'api_key' => $voxApiKey,
+                'from_date' => date('Y-m-d H:i:s', strtotime('-30 minutes')),
+                'to_date' => date('Y-m-d H:i:s', strtotime('+5 minutes')),
+            ]);
+            $ch = curl_init($voxHistoryUrl);
+            curl_setopt_array($ch, [
+                CURLOPT_RETURNTRANSFER => true, CURLOPT_POST => true, CURLOPT_POSTFIELDS => $hPayload,
+                CURLOPT_HTTPHEADER => ['Content-Type: application/x-www-form-urlencoded'], CURLOPT_TIMEOUT => 20,
+                CURLOPT_CONNECTTIMEOUT => 10, CURLOPT_SSL_VERIFYPEER => false,
+            ]);
+            $hResp = curl_exec($ch);
+            curl_close($ch);
+            if ($hResp !== false) {
+                $hDec = json_decode($hResp, true);
+                if (is_array($hDec) && !empty($hDec['result']) && is_array($hDec['result'])) {
+                    foreach ($hDec['result'] as $row) {
+                        if (is_array($row) && (string)($row['history_id'] ?? '') === $voxSessionId) {
+                            $record = $row;
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch (\Throwable $e) {
+            $log('CB FIX [2/5] vox history error: ' . $e->getMessage());
+        }
+    }
+
+    if ($record === null && $operatorId > 0 && $phone !== '') {
+        try {
+            $phoneNorm = preg_replace('/\D+/', '', $phone);
+            if (is_string($phoneNorm) && strlen($phoneNorm) >= 11 && Loader::includeModule('voximplant')) {
+                $fromTs = $startedAt !== ''
+                    ? strtotime($startedAt . ' -2 minutes')
+                    : strtotime('-' . $resultLookbackMin . ' minutes');
+                $fromDate = new \Bitrix\Main\Type\DateTime(
+                    date('d.m.Y H:i:s', $fromTs), 'd.m.Y H:i:s'
+                );
+                $res = \Bitrix\Voximplant\StatisticTable::getList([
+                    'filter' => [
+                        '=PORTAL_USER_ID' => $operatorId,
+                        '%=PHONE_NUMBER' => '%' . $phoneNorm,
+                        '>=CALL_START_DATE' => $fromDate,
+                    ],
+                    'order' => ['ID' => 'DESC'],
+                    'limit' => 1,
+                ]);
+                $row = $res->fetch();
+                if (is_array($row)) $record = $row;
+            }
+        } catch (\Throwable $e) {
+            $log('CB FIX [2/5] StatisticTable error: ' . $e->getMessage());
+        }
+    }
+
+    $log('CB FIX [3/5] record ' . ($record !== null ? 'FOUND' : 'NOT FOUND'));
+
+    if ($record === null) {
+        $fixStatus = ($attemptNum < $maxAttempts) ? 'retry_wait' : 'final_failed';
+        $setVar('CB_FIX_STATUS', $fixStatus);
+        $setVar('CB_FIX_RESULT', $statusOpNoAnswer);
+        $setVar('CB_FIX_LABEL', $statusToLabel($statusOpNoAnswer));
+        $setVar('CB_FIX_MESSAGE', 'Статистика не найдена' . ($fixStatus === 'retry_wait' ? ', повторим' : ', лимит исчерпан'));
+        $log('CB FIX [4/5] ' . $fixStatus);
+        return;
+    }
+
+    $duration = $extractInt($record['CALL_DURATION'] ?? $record['duration'] ?? 0);
+    $status = $statusOpNoAnswer;
+
+    if ($duration > 0) {
+        $status = $statusConnected;
+    } else {
+        $scriptStatus = trim((string)($record['status'] ?? $record['script_result'] ?? $record['result'] ?? ''));
+        if (in_array($scriptStatus, [$statusConnected, $statusOpNoAnswer, $statusClNoAnswer, $statusClBusy], true)) {
+            $status = $scriptStatus;
+        } else {
+            $code = trim((string)($record['CALL_FAILED_CODE'] ?? $record['call_failed_code'] ?? $record['code'] ?? $record['disconnect_code'] ?? ''));
+            if ($code !== '' && isset($codeToStatus[$code])) $status = $codeToStatus[$code];
+        }
+    }
+
+    $label = $statusToLabel($status);
+    $log('CB FIX [4/5] status=' . $status . ' duration=' . $duration);
+
+    if ($status === $statusConnected) {
+        $setVar('CB_FIX_STATUS', 'connected');
+        $setVar('CB_FIX_RESULT', $status);
+        $setVar('CB_FIX_LABEL', $label);
+        $setVar('CB_FIX_MESSAGE', 'Клиент соединён с оператором');
+        $log('CB FIX [5/5] DONE connected');
+        return;
+    }
+
+    if (in_array($status, [$statusClNoAnswer, $statusClBusy], true)) {
+        $setVar('CB_FIX_STATUS', 'final_failed');
+        $setVar('CB_FIX_RESULT', $status);
+        $setVar('CB_FIX_LABEL', $label);
+        $setVar('CB_FIX_MESSAGE', 'Оператор ответил, клиент не соединён');
+        $log('CB FIX [5/5] DONE client failed');
+        return;
+    }
+
+    $fixStatus = ($attemptNum < $maxAttempts) ? 'retry_wait' : 'final_failed';
+    $setVar('CB_FIX_STATUS', $fixStatus);
+    $setVar('CB_FIX_RESULT', $status);
+    $setVar('CB_FIX_LABEL', $label);
+    $setVar('CB_FIX_MESSAGE', 'Оператор не ответил' . ($fixStatus === 'retry_wait' ? ', повтор' : ', лимит исчерпан'));
+    $log('CB FIX [5/5] DONE ' . $fixStatus);
+
+} catch (\Throwable $e) {
+    $setVar('CB_FIX_STATUS', 'error');
+    $setVar('CB_FIX_RESULT', 'error');
+    $setVar('CB_FIX_LABEL', 'Ошибка callback');
+    $setVar('CB_FIX_MESSAGE', 'Exception: ' . $e->getMessage());
+    $log('CB FIX EXCEPTION: ' . $e->getMessage());
+}

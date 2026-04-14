@@ -1,0 +1,964 @@
+/**
+ * Модуль 3: обработка очереди обзвона.
+ * Один PHP-блок для конструктора БП «Выполнение произвольного PHP кода».
+ *
+ * Логика:
+ * 1. Активирует попытки 131 (planned -> ready), у которых SCHEDULED_AT <= now.
+ *    Выборка planned по SCHEDULED_AT ASC — сначала просроченные (из прошлого).
+ * 2. Берёт обязательный параметр шаблона MODULE3_CITY_ID и обрабатывает только попытки этого города.
+ *    Выбирает первую попытку по RANZHIROVANIE, cycle_day, lead date desc, scheduled_at
+ * 3. Берёт из списка 22 (город): SIP (441/470), SIP_PAROL (пароль)
+ * 4. Выбор оператора из списка 128 (по этапам):
+ *    Этап 1: выбираем всех операторов города по списку 128 (PROPERTY_GOROD = cityId). Без фильтра STATUS — занятость проверяем в этапе 3.
+ *    Этап 2: определяем доступных по факту — у кого начат рабочий день (TimeMan State = OPENED или PAUSED). Записываем WORKDAY_STARTED (Y/N) в список 128.
+ *    Этап 3: у кого начат рабочий день — проверяем свободна ли линия (voximplant BUSY). Записываем LINE_FREE (Y/N) и STATUS (free/busy) в список 128.
+ *    Этап 4: выбираем кому назначить звонок из операторов с начатым рабочим днём и свободных по round-robin (LAST_ASSIGNED_AT ASC, пустое = самый старый; при всех пустых — shuffle).
+ *    Fallback на операторов других городов запрещён.
+ * 5. Вызывает Voximplant Platform API StartScenarios (POST https://api.voximplant.com/platform_api/StartScenarios/)
+ *    script_custom_data: client_number (131), host, user (22 SIP), pass (22 SIP_PAROL) — extension временно не передаётся в Voximplant
+ * 6. Записывает CALL_ID и SIP_NUMBER в попытку
+ * 7. После успешного Vox: в лид (LEAD_ID из списка 130 по MASTER_ELEMENT_ID) через CCrmLead::Update пишет UF_CRM_1771439155 = ATTEMPT_NUMBER из попытки 131
+ *
+ * Переменные БП на выход: MODULE3_RESULT, MODULE3_ERROR, MODULE3_CALL_ID, MODULE3_STATUS_LINE
+ *
+ * Список 128: WORKDAY_STARTED (S, Y/N), LINE_FREE (S, Y/N), LAST_ASSIGNED_AT (S:DateTime), VNUTRENNIY_NOMER (внутренний номер).
+ * Список 22: 441/470 (SIP), SIP_PAROL (пароль), RULE_ID (Voximplant rule_id).
+ * Список 131: VOX_SESSION_ID, VOX_RECORDING_URL — добавить свойства вручную, если их нет.
+ *
+ * ВАЖНО: после изменения этого файла скопируйте его содержимое в PHP-активность БП «Обзвон v3».
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function (string $name, $value) use ($rootActivity): void {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getTemplateParam = function (string $name) use ($rootActivity) {
+    if (method_exists($rootActivity, '__get')) {
+        return $rootActivity->__get($name);
+    }
+    if (isset($rootActivity->$name) || property_exists($rootActivity, $name)) {
+        return $rootActivity->$name;
+    }
+    return null;
+};
+$log = function (string $msg) {
+    $this->WriteToTrackingService($msg);
+};
+$setStatusLine = function (string $code, string $text) use ($setVar): void {
+    $rawCode = trim($code);
+    $statusCodeMap = [
+        'module3_city_id_empty' => 'failed',
+        'iblock_not_available' => 'failed',
+        'voximplant_not_available' => 'failed',
+        'activated' => 'unknown',
+        'no_attempts' => 'unknown',
+        'city_scope_mismatch' => 'failed',
+        'phone_empty' => 'failed',
+        'no_rule_id' => 'failed',
+        'no_sip_line' => 'failed',
+        'no_sip_parol' => 'failed',
+        'no_city_operators' => 'cancelled',
+        'no_city_workday_operator' => 'cancelled',
+        'no_operator' => 'cancelled',
+        'no_free_operator' => 'cancelled',
+        'missed_deadline' => 'cancelled',
+        'vox_api_failed' => 'failed',
+        'vox_invalid_response' => 'failed',
+        'vox_error' => 'failed',
+        'call_started' => 'unknown',
+    ];
+    $allowedCodes = ['human', 'voicemail', 'client_no_answer', 'client_busy', 'operator_no_answer', 'failed', 'cancelled', 'unknown'];
+    $cleanCode = $statusCodeMap[$rawCode] ?? $rawCode;
+    if (!in_array($cleanCode, $allowedCodes, true)) {
+        $cleanCode = 'unknown';
+    }
+    $cleanText = trim(str_replace(["\r", "\n", '|'], [' ', ' ', '/'], $text));
+    if ($cleanText === '') {
+        $cleanText = $cleanCode;
+    }
+    $setVar('MODULE3_STATUS_LINE', $cleanCode . '|' . $cleanText);
+};
+
+$masterListId = 130;
+$attemptListId = 131;
+$cityListId = 22;
+$operatorListId = 128;
+$leadAttemptNumberUf = 'UF_CRM_1771439155';
+
+$voxApiUrl = 'https://api.voximplant.com/platform_api/StartScenarios/';
+$voxAccountId = '9935862';
+$voxApiKey = 'f9a8a2d0-4f60-4007-abff-2d39e8ed636c';
+$voxHost = 'ip.b24-3389-1750795062.bitrixphone.com';
+$statusReady = 'ready';
+$statusPlanned = 'planned';
+$statusOperatorCalling = 'operator_calling';
+$statusFreeEnumId = 1163;
+$statusBusyEnumId = 1164;
+$controlActive = 'active';
+
+$getStatusEnumId = function (int $listId, string $statusValue): ?int {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $listId, 'CODE' => 'STATUS']);
+    if (!$res || !($p = $res->Fetch()) || (string)($p['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $pid = (int)$p['ID'];
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'VALUE' => $statusValue])->Fetch();
+    if ($e) {
+        return (int)$e['ID'];
+    }
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'XML_ID' => $statusValue])->Fetch();
+    return $e ? (int)$e['ID'] : null;
+};
+
+$getListEnum = function (int $listId, string $propCode, string $xmlId): ?array {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $listId, 'CODE' => $propCode]);
+    if (!$res || !($p = $res->Fetch()) || (string)($p['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $pid = (int)$p['ID'];
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'XML_ID' => $xmlId])->Fetch();
+    if (!$e) {
+        $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => $pid, 'VALUE' => $xmlId])->Fetch();
+    }
+    return $e ? ['ID' => (int)$e['ID'], 'XML_ID' => trim((string)($e['XML_ID'] ?? '')), 'VALUE' => trim((string)($e['VALUE'] ?? ''))] : null;
+};
+
+$getEnumByXmlId = function (int $listId, string $propCode, string $xmlId): ?array {
+    $res = CIBlockProperty::GetList([], ['IBLOCK_ID' => $listId, 'CODE' => $propCode]);
+    if (!$res || !($p = $res->Fetch()) || (string)($p['PROPERTY_TYPE'] ?? '') !== 'L') {
+        return null;
+    }
+    $e = CIBlockPropertyEnum::GetList(['SORT' => 'ASC'], ['PROPERTY_ID' => (int)$p['ID'], 'XML_ID' => $xmlId])->Fetch();
+    return $e ? ['ID' => (int)$e['ID'], 'XML_ID' => trim((string)($e['XML_ID'] ?? '')), 'VALUE' => trim((string)($e['VALUE'] ?? ''))] : null;
+};
+
+$controlActiveEnum = $getListEnum($masterListId, 'CALLING_CONTROL', 'active');
+$statusCompletedEnum = $getListEnum($masterListId, 'STATUS', 'completed');
+$statusCancelledEnum = $getListEnum($masterListId, 'STATUS', 'cancelled');
+$controlActiveEnumId = $controlActiveEnum['ID'] ?? null;
+$controlActiveEnumXmlId = $controlActiveEnum['XML_ID'] ?? '';
+$statusCompletedEnumId = $statusCompletedEnum['ID'] ?? null;
+$statusCompletedEnumXmlId = $statusCompletedEnum['XML_ID'] ?? '';
+$statusCancelledEnumId = $statusCancelledEnum['ID'] ?? null;
+$statusCancelledEnumXmlId = $statusCancelledEnum['XML_ID'] ?? '';
+
+$readyEnumId = $getStatusEnumId($attemptListId, $statusReady) ?? $statusReady;
+$plannedEnumId = $getStatusEnumId($attemptListId, $statusPlanned) ?? $statusPlanned;
+$operatorCallingEnumId = $getStatusEnumId($attemptListId, $statusOperatorCalling) ?? $statusOperatorCalling;
+$attemptCancelledEnum = $getListEnum($attemptListId, 'STATUS', 'cancelled');
+$attemptCancelledEnumId = $attemptCancelledEnum['ID'] ?? ($getStatusEnumId($attemptListId, 'cancelled') ?? 'cancelled');
+$callDetectionCancelledEnum = $getListEnum($attemptListId, 'CALL_DETECTION_TYPE', 'cancelled');
+$callDetectionCancelledEnumId = $callDetectionCancelledEnum['ID'] ?? null;
+$clientCallCancelledEnum = $getListEnum($attemptListId, 'CLIENT_CALL_STATUS', 'cancelled');
+$clientCallCancelledEnumId = $clientCallCancelledEnum['ID'] ?? null;
+$operatorCallCancelledEnum = $getListEnum($attemptListId, 'OPERATOR_CALL_STATUS', 'cancelled');
+$operatorCallCancelledEnumId = $operatorCallCancelledEnum['ID'] ?? null;
+
+$setVar('MODULE3_RESULT', '');
+$setVar('MODULE3_ERROR', '');
+$setVar('MODULE3_CALL_ID', '');
+$setVar('MODULE3_ATTEMPT_ID', '');
+$setVar('MODULE3_STATUS_LINE', '');
+
+$isOnlineYesEnumId = 1170;
+$isOnlineNoEnumId = 1171;
+$module3CityIdRaw = $getTemplateParam('MODULE3_CITY_ID');
+$module3CityId = (int)preg_replace('/\D+/', '', (string)(is_array($module3CityIdRaw) ? reset($module3CityIdRaw) : $module3CityIdRaw));
+
+$log('MODULE3: start');
+if ($module3CityId > 0) {
+    $log('MODULE3: template param MODULE3_CITY_ID=' . $module3CityId);
+} else {
+    $setVar('MODULE3_ERROR', 'module3_city_id_empty');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('module3_city_id_empty', 'Параметр города не заполнен');
+    $log('MODULE3: template param MODULE3_CITY_ID is empty or invalid');
+    return;
+}
+
+if (!Loader::includeModule('iblock')) {
+    $setVar('MODULE3_ERROR', 'iblock not available');
+    $setStatusLine('iblock_not_available', 'Модуль iblock недоступен');
+    $log('MODULE3: iblock not available');
+    return;
+}
+if (!Loader::includeModule('voximplant')) {
+    $setVar('MODULE3_ERROR', 'voximplant not available');
+    $setStatusLine('voximplant_not_available', 'Модуль voximplant недоступен');
+    $log('MODULE3: voximplant not available');
+    return;
+}
+Loader::includeModule('im');
+
+date_default_timezone_set('Europe/Moscow');
+$now = date('Y-m-d\TH:i:s');
+$nowBitrix = date('d.m.Y H:i:s');
+$nowTs = time();
+$overdueGraceSeconds = 28800;
+$log('MODULE3: now=' . $nowBitrix . ' readyEnum=' . json_encode($readyEnumId) . ' plannedEnum=' . json_encode($plannedEnumId));
+
+$imStatusEnumMap = ['online' => 1165, 'dnd' => 1166, 'away' => 1167, 'break' => 1168, 'offline' => 1169];
+
+$refreshList128Operators = function (int $cityId = 0) use ($operatorListId, $statusFreeEnumId, $statusBusyEnumId, $nowBitrix, $log, $imStatusEnumMap, $isOnlineYesEnumId, $isOnlineNoEnumId): void {
+    try {
+    $filter = ['IBLOCK_ID' => $operatorListId, 'CHECK_PERMISSIONS' => 'N'];
+    if ($cityId > 0) {
+        $filter['PROPERTY_GOROD'] = $cityId;
+    }
+    $res = CIBlockElement::GetList(['ID' => 'ASC'], $filter, false, false, []);
+    if (!is_object($res) || !method_exists($res, 'GetNextElement')) {
+        $log('MODULE3: list128 GetList failed');
+        return;
+    }
+    $updated = 0;
+    $refreshedOps = [];
+    global $DB;
+    $recentFilter = '';
+    if (is_object($DB)) {
+        $conds = [];
+        $r1 = @$DB->Query("SHOW COLUMNS FROM b_voximplant_call LIKE 'LAST_PING'");
+        if (is_object($r1) && method_exists($r1, 'Fetch') && $r1->Fetch()) $conds[] = "c.LAST_PING >= DATE_SUB(NOW(), INTERVAL 15 MINUTE)";
+        $r2 = @$DB->Query("SHOW COLUMNS FROM b_voximplant_call_user LIKE 'INSERTED'");
+        if (is_object($r2) && method_exists($r2, 'Fetch') && $r2->Fetch()) $conds[] = "cu.INSERTED >= DATE_SUB(NOW(), INTERVAL 15 MINUTE)";
+        if (!empty($conds)) $recentFilter = ' AND (' . implode(' OR ', $conds) . ')';
+    }
+    while ($ob = $res->GetNextElement()) {
+        $f = $ob->GetFields();
+        $p = $ob->GetProperties();
+        $opVal = $p['OPERATOR']['VALUE'] ?? '';
+        $uid = (int)preg_replace('/\D+/', '', (string)(is_array($opVal) ? reset($opVal) : $opVal));
+        if ($uid <= 0) continue;
+        $elId = (int)$f['ID'];
+        $userInfo = class_exists('CVoxImplantIncoming') ? \CVoxImplantIncoming::getUserInfo($uid, false) : null;
+        $busyRaw = is_array($userInfo) ? ($userInfo['BUSY'] ?? null) : null;
+        $isBusy = in_array($busyRaw, [true, 1, '1', 'Y', 'y', 'true', 'TRUE'], true);
+        $activeCallsCount = 0;
+        if (is_object($DB)) {
+            $countRes = $DB->Query("SELECT COUNT(DISTINCT cu.CALL_ID) AS CNT FROM b_voximplant_call_user cu INNER JOIN b_voximplant_call c ON c.CALL_ID = cu.CALL_ID WHERE cu.USER_ID = " . (int)$uid . " AND (c.STATUS IN ('waiting','connecting','connected') OR cu.STATUS IN ('waiting','connecting','connected'))" . $recentFilter);
+            if (is_object($countRes) && method_exists($countRes, 'Fetch') && ($row = $countRes->Fetch())) $activeCallsCount = (int)($row['CNT'] ?? 0);
+        }
+        if ($activeCallsCount > 0) $isBusy = true;
+        $user = class_exists('CUser') ? CUser::GetByID($uid)->Fetch() : null;
+        $isOnline = null;
+        $lastActivityDate = null;
+        if (is_array($user)) {
+            $io = $user['IS_ONLINE'] ?? null;
+            if (in_array($io, [true, 1, '1', 'Y'], true)) $isOnline = true;
+            elseif (in_array($io, [false, 0, '0', 'N'], true)) $isOnline = false;
+            if (!empty($user['LAST_ACTIVITY_DATE'])) {
+                $ts = MakeTimeStamp($user['LAST_ACTIVITY_DATE']);
+                $lastActivityDate = $ts > 0 ? date('d.m.Y H:i:s', $ts) : null;
+            }
+        }
+        if ($isOnline === null && is_array($userInfo)) {
+            $io = $userInfo['ONLINE'] ?? null;
+            $isOnline = in_array($io, [true, 1, '1', 'Y'], true);
+        }
+        $imStatusCode = 'offline';
+        if (class_exists('CIMStatus') && method_exists('CIMStatus', 'GetList')) {
+            $sr = CIMStatus::GetList([], ['=USER_ID' => $uid]);
+            if (is_object($sr) && method_exists($sr, 'Fetch') && ($row = $sr->Fetch()) && !empty($row['STATUS'])) $imStatusCode = strtolower((string)$row['STATUS']);
+        }
+        if (!isset($imStatusEnumMap[$imStatusCode])) $imStatusCode = $isOnline ? 'online' : 'offline';
+        $vals = [
+            'STATUS' => $isBusy ? $statusBusyEnumId : $statusFreeEnumId,
+            'UPDATED_AT' => $nowBitrix,
+            'IM_STATUS' => $imStatusEnumMap[$imStatusCode] ?? 1169,
+            'IS_ONLINE' => $isOnline ? $isOnlineYesEnumId : $isOnlineNoEnumId,
+            'ACTIVE_CALLS_COUNT' => $activeCallsCount,
+        ];
+        if ($lastActivityDate !== null) $vals['LAST_ACTIVITY_DATE'] = $lastActivityDate;
+        CIBlockElement::SetPropertyValuesEx($elId, $operatorListId, $vals);
+        $updated++;
+        $opName = is_array($user) ? trim((string)($user['NAME'] ?? '') . ' ' . (string)($user['LAST_NAME'] ?? '')) : '';
+        $refreshedOps[] = $uid . ($opName !== '' ? ' (' . $opName . ')' : '');
+    }
+    $log('MODULE3: list128 refreshed ' . $updated . ' operators' . ($refreshedOps !== [] ? ': ' . implode(', ', $refreshedOps) : ''));
+    } catch (Throwable $e) {
+        $log('MODULE3: list128 refresh error: ' . $e->getMessage());
+    }
+};
+
+$getElement = function (int $iblockId, int $elementId): ?array {
+    $res = CIBlockElement::GetByID($elementId);
+    if (!$res || !($ob = $res->GetNextElement())) {
+        return null;
+    }
+    $fields = $ob->GetFields();
+    if ((int)($fields['IBLOCK_ID'] ?? 0) !== $iblockId) {
+        return null;
+    }
+    $props = $ob->GetProperties();
+    return [
+        'ID' => (int)$fields['ID'],
+        'NAME' => (string)($fields['NAME'] ?? ''),
+        'DATE_CREATE' => (string)($fields['DATE_CREATE'] ?? ''),
+        'IBLOCK_ID' => (int)$fields['IBLOCK_ID'],
+        'props' => $props,
+    ];
+};
+
+$updateAttempt = function (int $attemptId, array $fields) use ($attemptListId): bool {
+    $vals = [];
+    foreach ($fields as $k => $v) {
+        if ($v !== null && $v !== '') {
+            $vals[$k] = $v;
+        }
+    }
+    if (empty($vals)) {
+        return true;
+    }
+    CIBlockElement::SetPropertyValuesEx($attemptId, $attemptListId, $vals);
+    return true;
+};
+
+$markAttemptCancelled = function (int $attemptId, string $resultCode, string $resultMessage) use (
+    $attemptCancelledEnumId,
+    $callDetectionCancelledEnumId,
+    $clientCallCancelledEnumId,
+    $operatorCallCancelledEnumId,
+    $nowBitrix,
+    $updateAttempt
+): void {
+    $fields = [
+        'STATUS' => $attemptCancelledEnumId,
+        'FINISHED_AT' => $nowBitrix,
+        'UPDATED_AT' => $nowBitrix,
+        'RESULT_CODE' => $resultCode,
+        'RESULT_MESSAGE' => $resultMessage,
+    ];
+    if ($callDetectionCancelledEnumId !== null) {
+        $fields['CALL_DETECTION_TYPE'] = $callDetectionCancelledEnumId;
+    }
+    if ($clientCallCancelledEnumId !== null) {
+        $fields['CLIENT_CALL_STATUS'] = $clientCallCancelledEnumId;
+    }
+    if ($operatorCallCancelledEnumId !== null) {
+        $fields['OPERATOR_CALL_STATUS'] = $operatorCallCancelledEnumId;
+    }
+    $updateAttempt($attemptId, $fields);
+};
+
+$log('MODULE3: querying ready attempts list131 STATUS=ready');
+$res = CIBlockElement::GetList(
+    ['ID' => 'ASC'],
+    [
+        'IBLOCK_ID' => $attemptListId,
+        'CHECK_PERMISSIONS' => 'N',
+        'PROPERTY_STATUS' => $readyEnumId,
+        'PROPERTY_CITY_ID' => $module3CityId,
+    ],
+    false,
+    ['nTopCount' => 100]
+);
+
+$attempts = [];
+$readyRawCount = 0;
+$skippedScheduled = 0;
+$skippedOverdue = 0;
+$skippedNoMaster = 0;
+$skippedMasterNotFound = 0;
+$skippedCtrl = 0;
+$skippedStatus = 0;
+while ($ob = $res->GetNextElement()) {
+    $readyRawCount++;
+    $props = $ob->GetProperties();
+    $sch = trim((string)($props['SCHEDULED_AT']['VALUE'] ?? ''));
+    if ($sch !== '' && $sch > $nowBitrix) {
+        $skippedScheduled++;
+        continue;
+    }
+    $fields = $ob->GetFields();
+    $attemptId = (int)$fields['ID'];
+    $schTs = $sch !== '' ? strtotime($sch) : false;
+    if ($schTs !== false && $schTs < ($nowTs - $overdueGraceSeconds)) {
+        $markAttemptCancelled($attemptId, 'missed_deadline', 'Не успели обработать попытку вовремя');
+        $skippedOverdue++;
+        continue;
+    }
+    $masterId = (int)preg_replace('/\D+/', '', (string)($props['MASTER_ELEMENT_ID']['VALUE'] ?? ''));
+    if ($masterId <= 0) {
+        $skippedNoMaster++;
+        continue;
+    }
+    $master = $getElement($masterListId, $masterId);
+    if (!$master) {
+        $skippedMasterNotFound++;
+        continue;
+    }
+    $ctrlProp = $master['props']['CALLING_CONTROL'] ?? [];
+    $statusProp = $master['props']['STATUS'] ?? [];
+    $ctrlRaw = $ctrlProp['VALUE'] ?? '';
+    $statusRaw = $statusProp['VALUE'] ?? '';
+    $ctrlValStr = trim((string)(is_array($ctrlRaw) ? reset($ctrlRaw) : $ctrlRaw));
+    $controlVal = (int)preg_replace('/\D+/', '', $ctrlValStr);
+    $statusVal = (int)preg_replace('/\D+/', '', (string)(is_array($statusRaw) ? reset($statusRaw) : $statusRaw));
+    $ctrlByHash = (strlen($ctrlValStr) >= 16 && ctype_xdigit($ctrlValStr)) ? $getEnumByXmlId($masterListId, 'CALLING_CONTROL', $ctrlValStr) : null;
+    $ctrlStr = mb_strtolower(trim((string)($ctrlProp['VALUE'] ?? $ctrlProp['VALUE_ENUM'] ?? $ctrlProp['VALUE_XML_ID'] ?? '')));
+    $ctrlOk = ($controlActiveEnumId && $controlVal === $controlActiveEnumId)
+        || ($controlActiveEnumXmlId !== '' && $ctrlValStr === $controlActiveEnumXmlId)
+        || ($ctrlByHash && in_array(mb_strtolower($ctrlByHash['VALUE'] ?? ''), ['active', 'активный'], true))
+        || ($ctrlByHash && mb_strtolower($ctrlByHash['XML_ID'] ?? '') === $controlActive)
+        || $ctrlStr === $controlActive;
+    $statusValStr = trim((string)(is_array($statusRaw) ? reset($statusRaw) : $statusRaw));
+    $statusByHash = (strlen($statusValStr) >= 16 && ctype_xdigit($statusValStr)) ? $getEnumByXmlId($masterListId, 'STATUS', $statusValStr) : null;
+    $statusBlock = ($statusCompletedEnumId && $statusVal === $statusCompletedEnumId) || ($statusCancelledEnumId && $statusVal === $statusCancelledEnumId)
+        || ($statusCompletedEnumXmlId !== '' && $statusValStr === $statusCompletedEnumXmlId) || ($statusCancelledEnumXmlId !== '' && $statusValStr === $statusCancelledEnumXmlId)
+        || ($statusByHash && ($statusByHash['ID'] === $statusCompletedEnumId || $statusByHash['ID'] === $statusCancelledEnumId))
+        || in_array(mb_strtolower(trim((string)($statusProp['VALUE_XML_ID'] ?? $statusProp['VALUE_ENUM'] ?? ''))), ['completed', 'cancelled'], true);
+    if (!$ctrlOk) {
+        $skippedCtrl++;
+        continue;
+    }
+    if ($statusBlock) {
+        $skippedStatus++;
+        continue;
+    }
+    $cityIdVal = $props['CITY_ID']['VALUE'] ?? '';
+    $cityId = is_array($cityIdVal) ? (int)reset($cityIdVal) : (int)preg_replace('/\D+/', '', (string)$cityIdVal);
+    $attNumRaw = $props['ATTEMPT_NUMBER']['VALUE'] ?? $props['ATTEMPT_NUMBER']['VALUE_NUM'] ?? null;
+    $attemptNumber = (int)preg_replace('/\D+/', '', (string)(is_array($attNumRaw) ? reset($attNumRaw) : $attNumRaw));
+    $leadPropFromMaster = $master['props']['LEAD_ID']['VALUE'] ?? null;
+    $leadIdFromMaster = (int)preg_replace('/\D+/', '', (string)(is_array($leadPropFromMaster) ? reset($leadPropFromMaster) : $leadPropFromMaster));
+    $attempts[] = [
+        'ID' => $attemptId,
+        'MASTER_ELEMENT_ID' => $masterId,
+        'LEAD_ID' => $leadIdFromMaster,
+        'ATTEMPT_NUMBER' => $attemptNumber,
+        'PHONE' => trim((string)($props['PHONE']['VALUE'] ?? '')),
+        'CITY_ID' => $cityId,
+        'CYCLE_DAY' => (int)($props['CYCLE_DAY']['VALUE'] ?? 0),
+        'SCHEDULED_AT' => trim((string)($props['SCHEDULED_AT']['VALUE'] ?? '')),
+        'RANZHIROVANIE' => (int)($props['RANZHIROVANIE']['VALUE'] ?? 999999),
+        '_MASTER_DATE_CREATE_TS' => strtotime($master['DATE_CREATE'] ?? '') ?: 0,
+    ];
+}
+$log('MODULE3: ready raw=' . $readyRawCount . ' city=' . $module3CityId . ' skipped: scheduled=' . $skippedScheduled . ' overdue=' . $skippedOverdue . ' noMaster=' . $skippedNoMaster . ' masterNotFound=' . $skippedMasterNotFound . ' ctrl=' . $skippedCtrl . ' status=' . $skippedStatus . ' eligible=' . count($attempts));
+
+if (empty($attempts)) {
+    $log('MODULE3: no ready eligible, querying planned attempts list131 STATUS=planned by SCHEDULED_AT ASC (past first)');
+    $resPlanned = CIBlockElement::GetList(
+        ['PROPERTY_SCHEDULED_AT' => 'ASC', 'ID' => 'ASC'],
+        [
+            'IBLOCK_ID' => $attemptListId,
+            'CHECK_PERMISSIONS' => 'N',
+            'PROPERTY_STATUS' => $plannedEnumId,
+            'PROPERTY_CITY_ID' => $module3CityId,
+        ],
+        false,
+        ['nTopCount' => 100]
+    );
+    $activated = 0;
+    $plannedRawCount = 0;
+    $plannedSkippedScheduled = 0;
+    $plannedSkippedOverdue = 0;
+    $plannedSkippedNoMaster = 0;
+    $plannedSkippedMasterNotFound = 0;
+    $plannedSkippedCtrl = 0;
+    $plannedSkippedStatus = 0;
+    while ($obP = $resPlanned->GetNextElement()) {
+        $plannedRawCount++;
+        $p = $obP->GetProperties();
+        $schRaw = $p['SCHEDULED_AT']['VALUE'] ?? '';
+        $sch = trim((string)(is_array($schRaw) ? reset($schRaw) : $schRaw));
+        if ($sch !== '' && $sch > $nowBitrix) {
+            $plannedSkippedScheduled++;
+            continue;
+        }
+        $f = $obP->GetFields();
+        $aid = (int)$f['ID'];
+        $schTs = $sch !== '' ? strtotime($sch) : false;
+        if ($schTs !== false && $schTs < ($nowTs - $overdueGraceSeconds)) {
+            $markAttemptCancelled($aid, 'missed_deadline', 'Не успели обработать попытку вовремя');
+            $plannedSkippedOverdue++;
+            continue;
+        }
+        $mid = (int)preg_replace('/\D+/', '', (string)($p['MASTER_ELEMENT_ID']['VALUE'] ?? ''));
+        if ($mid <= 0) {
+            $plannedSkippedNoMaster++;
+            continue;
+        }
+        $m = $getElement($masterListId, $mid);
+        if (!$m) {
+            $plannedSkippedMasterNotFound++;
+            continue;
+        }
+        $ctrlProp = $m['props']['CALLING_CONTROL'] ?? [];
+        $statusProp = $m['props']['STATUS'] ?? [];
+        $ctrlRaw = $ctrlProp['VALUE'] ?? '';
+        $statusRaw = $statusProp['VALUE'] ?? '';
+        $ctrlValStr = trim((string)(is_array($ctrlRaw) ? reset($ctrlRaw) : $ctrlRaw));
+        $statusValStr = trim((string)(is_array($statusRaw) ? reset($statusRaw) : $statusRaw));
+        $controlVal = (int)preg_replace('/\D+/', '', $ctrlValStr);
+        $statusVal = (int)preg_replace('/\D+/', '', $statusValStr);
+        $ctrlByHash = (strlen($ctrlValStr) >= 16 && ctype_xdigit($ctrlValStr)) ? $getEnumByXmlId($masterListId, 'CALLING_CONTROL', $ctrlValStr) : null;
+        $ctrlStr = mb_strtolower(trim((string)($ctrlProp['VALUE'] ?? $ctrlProp['VALUE_ENUM'] ?? $ctrlProp['VALUE_XML_ID'] ?? '')));
+        $ctrlOk = ($controlActiveEnumId && $controlVal === $controlActiveEnumId)
+            || ($controlActiveEnumXmlId !== '' && $ctrlValStr === $controlActiveEnumXmlId)
+            || ($ctrlByHash && in_array(mb_strtolower($ctrlByHash['VALUE'] ?? ''), ['active', 'активный'], true))
+            || ($ctrlByHash && mb_strtolower($ctrlByHash['XML_ID'] ?? '') === $controlActive)
+            || $ctrlStr === $controlActive;
+        $statusByHash = (strlen($statusValStr) >= 16 && ctype_xdigit($statusValStr)) ? $getEnumByXmlId($masterListId, 'STATUS', $statusValStr) : null;
+        $statusBlock = ($statusCompletedEnumId && $statusVal === $statusCompletedEnumId) || ($statusCancelledEnumId && $statusVal === $statusCancelledEnumId)
+            || ($statusCompletedEnumXmlId !== '' && $statusValStr === $statusCompletedEnumXmlId) || ($statusCancelledEnumXmlId !== '' && $statusValStr === $statusCancelledEnumXmlId)
+            || ($statusByHash && ($statusByHash['ID'] === $statusCompletedEnumId || $statusByHash['ID'] === $statusCancelledEnumId))
+            || in_array(mb_strtolower(trim((string)($statusProp['VALUE_XML_ID'] ?? $statusProp['VALUE_ENUM'] ?? ''))), ['completed', 'cancelled'], true);
+        if (!$ctrlOk) {
+            $plannedSkippedCtrl++;
+            continue;
+        }
+        if ($statusBlock) {
+            $plannedSkippedStatus++;
+            continue;
+        }
+        $readyVal = is_int($readyEnumId) ? $readyEnumId : $statusReady;
+        $updateAttempt($aid, ['STATUS' => $readyVal, 'UPDATED_AT' => $nowBitrix]);
+        $activated++;
+    }
+    $log('MODULE3: planned raw=' . $plannedRawCount . ' city=' . $module3CityId . ' skipped: scheduled=' . $plannedSkippedScheduled . ' overdue=' . $plannedSkippedOverdue . ' noMaster=' . $plannedSkippedNoMaster . ' masterNotFound=' . $plannedSkippedMasterNotFound . ' ctrl=' . $plannedSkippedCtrl . ' status=' . $plannedSkippedStatus . ' activated=' . $activated);
+    $setVar('MODULE3_RESULT', $activated > 0 ? 'activated' : 'no_attempts');
+    if ($activated > 0) {
+        $setStatusLine('activated', 'Активированы попытки');
+    } elseif (($skippedOverdue + $plannedSkippedOverdue) > 0) {
+        $setStatusLine('missed_deadline', 'Не успели обработать попытку вовремя');
+    } else {
+        $setStatusLine('no_attempts', 'Нет попыток для обработки');
+    }
+    $log('MODULE3: ' . ($activated > 0 ? "activated {$activated}" : 'no attempts'));
+    return;
+}
+
+$log('MODULE3: sorting ' . count($attempts) . ' attempts');
+usort($attempts, static function (array $a, array $b): int {
+    $r = ($a['RANZHIROVANIE'] ?? 999999) <=> ($b['RANZHIROVANIE'] ?? 999999);
+    if ($r !== 0) {
+        return $r;
+    }
+    $r = ($a['CYCLE_DAY'] ?? 0) <=> ($b['CYCLE_DAY'] ?? 0);
+    if ($r !== 0) {
+        return $r;
+    }
+    $r = ($b['_MASTER_DATE_CREATE_TS'] ?? 0) <=> ($a['_MASTER_DATE_CREATE_TS'] ?? 0);
+    if ($r !== 0) {
+        return $r;
+    }
+    return strcmp((string)($a['SCHEDULED_AT'] ?? ''), (string)($b['SCHEDULED_AT'] ?? ''));
+});
+
+$attempt = $attempts[0];
+$attemptId = (int)$attempt['ID'];
+$cityId = (int)$attempt['CITY_ID'];
+$phone = trim((string)$attempt['PHONE']);
+$leadId = (int)$attempt['LEAD_ID'];
+$log('MODULE3: selected attempt=' . $attemptId . ' master=' . ($attempt['MASTER_ELEMENT_ID'] ?? 0) . ' lead=' . $leadId . ' city=' . $cityId . ' templateCity=' . $module3CityId . ' phone=' . substr($phone, 0, 4) . '***');
+
+if ($cityId !== $module3CityId) {
+    $setVar('MODULE3_ERROR', 'city_scope_mismatch');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('city_scope_mismatch', 'Попытка не соответствует городу шаблона');
+    $log('MODULE3: template city mismatch attemptCity=' . $cityId . ' MODULE3_CITY_ID=' . $module3CityId);
+    return;
+}
+
+if ($phone === '') {
+    $setVar('MODULE3_ERROR', 'phone_empty');
+    $setStatusLine('phone_empty', 'У попытки пустой телефон');
+    $log('MODULE3: attempt ' . $attemptId . ' has no phone');
+    return;
+}
+
+$log('MODULE3: lookup city list22 id=' . $cityId . ' templateCity=' . $module3CityId);
+$cityEl = $cityId > 0 ? $getElement($cityListId, $cityId) : null;
+$sipLine = '';
+$sipParol = '';
+if ($cityEl && !empty($cityEl['props'])) {
+    foreach (['441', '470', 'PROPERTY_441', 'PROPERTY_470'] as $code) {
+        $v = $cityEl['props'][$code]['VALUE'] ?? null;
+        if ($v !== null && $v !== '') {
+            $sipLine = trim((string)(is_array($v) ? reset($v) : $v));
+            if (ctype_digit($sipLine) || (strlen($sipLine) > 0 && ctype_digit(ltrim($sipLine, '-')))) {
+                $sipLine = 'sip' . $sipLine;
+            }
+            break;
+        }
+    }
+    $parolRaw = $cityEl['props']['SIP_PAROL']['VALUE'] ?? $cityEl['props']['PROPERTY_SIP_PAROL']['VALUE'] ?? null;
+    $sipParol = trim((string)(is_array($parolRaw) ? reset($parolRaw) : ($parolRaw ?? '')));
+}
+$voxRuleId = '';
+if ($cityEl && !empty($cityEl['props'])) {
+    $ruleRaw = $cityEl['props']['RULE_ID']['VALUE'] ?? $cityEl['props']['PROPERTY_RULE_ID']['VALUE'] ?? $cityEl['props']['VOX_RULE_ID']['VALUE'] ?? null;
+    $voxRuleId = trim((string)(is_array($ruleRaw) ? reset($ruleRaw) : ($ruleRaw ?? '')));
+}
+if ($voxRuleId === '') {
+    $setVar('MODULE3_ERROR', 'no_rule_id');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('no_rule_id', 'Не найден RULE_ID для города');
+    $log('MODULE3: no RULE_ID for city ' . $cityId);
+    return;
+}
+if ($sipLine !== '') {
+    $log('MODULE3: city=' . ($cityEl['NAME'] ?? '?') . ' SIP line=' . $sipLine);
+} elseif ($cityId <= 0) {
+    $log('MODULE3: cityId=0, no city element');
+} elseif (!$cityEl) {
+    $log('MODULE3: city element not found for id=' . $cityId);
+} else {
+    $log('MODULE3: city found but no SIP in 441/470 for city=' . $cityId);
+}
+if ($sipLine === '') {
+    $setVar('MODULE3_ERROR', 'no_sip_line');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('no_sip_line', 'Не найдена SIP-линия города');
+    $log('MODULE3: no SIP for city ' . $cityId);
+    return;
+}
+if ($sipParol === '') {
+    $setVar('MODULE3_ERROR', 'no_sip_parol');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('no_sip_parol', 'Не найден пароль SIP-линии');
+    $log('MODULE3: no SIP_PAROL for city ' . $cityId);
+    return;
+}
+
+$log('MODULE3: refreshing list128 operators city=' . $cityId);
+$refreshList128Operators($cityId);
+
+$baseOpFilter = ['IBLOCK_ID' => $operatorListId, 'CHECK_PERMISSIONS' => 'N'];
+$opFilterWithCity = $cityId > 0 ? array_merge($baseOpFilter, ['PROPERTY_GOROD' => $cityId]) : $baseOpFilter;
+
+$log('MODULE3_OP: этап 1 — выбираем всех операторов города ' . $cityId . ' из списка 128 (без фильтра STATUS)');
+$resOp = CIBlockElement::GetList(['ID' => 'ASC'], $opFilterWithCity, false, ['nTopCount' => 30]);
+$candidates = [];
+while ($ob = $resOp->GetNextElement()) {
+    $f = $ob->GetFields();
+    $p = $ob->GetProperties();
+    $opVal = $p['OPERATOR']['VALUE'] ?? '';
+    $uid = (int)preg_replace('/\D+/', '', (string)(is_array($opVal) ? reset($opVal) : $opVal));
+    $propLa = $p['LAST_ASSIGNED_AT'] ?? [];
+    $lastAtRaw = $propLa['VALUE'] ?? $propLa['VALUE_TEXT'] ?? $propLa['VALUE_NUM'] ?? '';
+    $lastAssignedAt = trim((string)(is_array($lastAtRaw) ? reset($lastAtRaw) : $lastAtRaw));
+    $extRaw = $p['VNUTRENNIY_NOMER']['VALUE'] ?? $p['VNUTRENNIY_NOMER']['VALUE_NUM'] ?? $p['PROPERTY_VNUTRENNIY_NOMER']['VALUE'] ?? '';
+    $extension = trim((string)(is_array($extRaw) ? reset($extRaw) : $extRaw));
+    if ($uid > 0) {
+        $candidates[] = ['elementId' => (int)$f['ID'], 'uid' => $uid, 'lastAssignedAt' => $lastAssignedAt, 'extension' => $extension];
+    }
+}
+$log('MODULE3_OP: этап 1 — выбрано ' . count($candidates) . ' операторов: ' . implode(', ', array_column($candidates, 'uid')));
+if (empty($candidates)) {
+    $setVar('MODULE3_ERROR', 'no_city_operators');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('no_city_operators', 'В городе нет операторов');
+    $log('MODULE3_OP: этап 1 — в городе ' . $cityId . ' нет операторов, cross-city fallback запрещён');
+    return;
+}
+
+$log('MODULE3_OP: этап 2 — определяем у кого начат рабочий день (TimeMan State = OPENED/PAUSED)');
+$withWorkday = [];
+$workdayRejected = [];
+foreach ($candidates as $c) {
+    $uid = $c['uid'];
+    $elId = $c['elementId'];
+    $ok = true;
+    if (Loader::includeModule('timeman') && class_exists('CTimeManUser')) {
+        $tmUser = new \CTimeManUser($uid);
+        $state = method_exists($tmUser, 'State') ? $tmUser->State() : null;
+        if ($state !== null && $state !== 'OPENED' && $state !== 'PAUSED') {
+            $ok = false;
+            $workdayRejected[] = $uid;
+        }
+    }
+    CIBlockElement::SetPropertyValuesEx($elId, $operatorListId, [
+        'WORKDAY_STARTED' => $ok ? 'Y' : 'N',
+        'UPDATED_AT' => $nowBitrix,
+    ]);
+    if ($ok) {
+        $withWorkday[] = $c;
+    }
+}
+$log('MODULE3_OP: этап 2 — с начатым рабочим днём: ' . count($withWorkday) . ' (' . implode(', ', array_column($withWorkday, 'uid')) . '), rejected workday_not_started: ' . implode(', ', $workdayRejected));
+if (empty($withWorkday)) {
+    $setVar('MODULE3_ERROR', 'no_city_workday_operator');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('no_city_workday_operator', 'Нет оператора с начатым рабочим днём');
+    $log('MODULE3_OP: этап 2 — в городе ' . $cityId . ' нет операторов с начатым рабочим днём, cross-city fallback запрещён');
+    return;
+}
+
+$log('MODULE3_OP: этап 3 — проверяем свободна ли линия (voximplant BUSY)');
+$free = [];
+$busyRejected = [];
+foreach ($withWorkday as $c) {
+    $uid = $c['uid'];
+    $elId = $c['elementId'];
+    $isFree = true;
+    if (Loader::includeModule('voximplant') && class_exists('CVoxImplantIncoming') && method_exists('CVoxImplantIncoming', 'getUserInfo')) {
+        $ui = \CVoxImplantIncoming::getUserInfo($uid, false);
+        $busy = $ui['BUSY'] ?? null;
+        if (is_array($ui) && in_array($busy, [true, 1, '1', 'Y', 'y'], true)) {
+            $isFree = false;
+            $busyRejected[] = $uid;
+        }
+    }
+    CIBlockElement::SetPropertyValuesEx($elId, $operatorListId, [
+        'LINE_FREE' => $isFree ? 'Y' : 'N',
+        'STATUS' => $isFree ? $statusFreeEnumId : $statusBusyEnumId,
+        'UPDATED_AT' => $nowBitrix,
+    ]);
+    if ($isFree) {
+        $free[] = $c;
+    }
+}
+$log('MODULE3_OP: этап 3 — свободных: ' . count($free) . ' (' . implode(', ', array_column($free, 'uid')) . '), rejected busy: ' . implode(', ', $busyRejected));
+
+$log('MODULE3_OP: этап 4 — выбираем по round-robin (LAST_ASSIGNED_AT ASC, пустое = самый старый)');
+$operatorUserId = 0;
+$operatorElementId = 0;
+if (!empty($free)) {
+    if (count($free) === 1) {
+        $selected = $free[0];
+        $log('MODULE3_OP: этап 4 — один оператор, round-robin пропущен');
+    } else {
+        $lastAtLog = array_map(static function (array $c) { return $c['uid'] . ':' . ($c['lastAssignedAt'] ?? ''); }, $free);
+        $log('MODULE3_OP: этап 4 — до сортировки uid:lastAssignedAt ' . implode(', ', $lastAtLog));
+        $hasAnyLastAt = false;
+        foreach ($free as $c) {
+            if (($c['lastAssignedAt'] ?? '') !== '') {
+                $hasAnyLastAt = true;
+                break;
+            }
+        }
+        if ($hasAnyLastAt) {
+            usort($free, static function (array $a, array $b): int {
+                $la = $a['lastAssignedAt'] ?? '';
+                $lb = $b['lastAssignedAt'] ?? '';
+                if ($la === '' && $lb === '') return 0;
+                if ($la === '') return -1;
+                if ($lb === '') return 1;
+                return strcmp($la, $lb);
+            });
+        } else {
+            shuffle($free);
+            $log('MODULE3_OP: этап 4 — все lastAssignedAt пустые, случайный выбор для распределения');
+        }
+        $selected = $free[0];
+    }
+    $operatorUserId = $selected['uid'];
+    $operatorElementId = $selected['elementId'];
+    $log('MODULE3_OP: этап 4 — выбран оператор uid=' . $operatorUserId . ' elementId=' . $operatorElementId . ' lastAssignedAt=' . ($selected['lastAssignedAt'] ?? ''));
+} else {
+    $log('MODULE3_OP: этап 4 — нет доступных операторов (свободных с начатым рабочим днём)');
+}
+
+$operatorName = '';
+if ($operatorUserId > 0 && class_exists('CUser') && method_exists('CUser', 'GetByID')) {
+    $u = CUser::GetByID($operatorUserId)->Fetch();
+    $operatorName = trim((string)($u['NAME'] ?? '') . ' ' . ($u['LAST_NAME'] ?? ''));
+}
+$log('MODULE3: call operator=' . $operatorUserId . ' (' . ($operatorName ?: 'id') . ') list128_element=' . $operatorElementId . ' attempt=' . $attemptId . ' lead=' . $leadId);
+
+if ($operatorUserId <= 0) {
+    $markAttemptCancelled($attemptId, 'no_operator', 'Нет свободного оператора');
+    $setVar('MODULE3_ERROR', 'no_free_operator');
+    $setVar('MODULE3_RESULT', 'no_operator');
+    $setStatusLine('no_operator', 'Нет свободного оператора');
+    $log('MODULE3: no free operator' . ($cityId > 0 ? ' for city ' . $cityId : ''));
+    return;
+}
+
+$extension = $selected['extension'] ?? '';
+
+$updateAttempt($attemptId, [
+    'STATUS' => $operatorCallingEnumId,
+    'SIP_NUMBER' => $sipLine,
+    'UPDATED_AT' => $nowBitrix,
+]);
+
+$scriptCustomData = json_encode([
+    'client_number' => $phone,
+    'host' => $voxHost,
+    'user' => $sipLine,
+    'pass' => $sipParol,
+], JSON_UNESCAPED_UNICODE);
+
+$voxFormData = [
+    'account_id' => $voxAccountId,
+    'api_key' => $voxApiKey,
+    'rule_id' => $voxRuleId,
+    'script_custom_data' => $scriptCustomData,
+];
+$voxPayload = http_build_query($voxFormData);
+
+$log('MODULE3: calling Voximplant StartScenarios to=' . substr($phone, 0, 4) . '*** operator=' . $operatorUserId . ' ext=' . ($extension !== '' ? $extension : '(empty)') . ' (extension not sent to Vox, temp)');
+$log('MODULE3: Voximplant request payload=' . $voxPayload);
+$ch = curl_init($voxApiUrl);
+curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => $voxPayload,
+    CURLOPT_HTTPHEADER => ['Content-Type: application/x-www-form-urlencoded', 'Accept: application/json'],
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_CONNECTTIMEOUT => 10,
+    CURLOPT_SSL_VERIFYPEER => false,
+]);
+$response = curl_exec($ch);
+$httpCode = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curlErr = curl_error($ch);
+$curlErrno = curl_errno($ch);
+curl_close($ch);
+$log('MODULE3: Voximplant response http=' . $httpCode . ' len=' . strlen($response ?: '') . ($curlErr ? ' err=' . $curlErr : ''));
+
+if ($response === false) {
+    $updateAttempt($attemptId, ['STATUS' => $readyEnumId, 'UPDATED_AT' => $nowBitrix]);
+    $setVar('MODULE3_ERROR', 'vox_api_failed');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('vox_api_failed', 'Ошибка API Voximplant');
+    $log('MODULE3: Voximplant API failed errno=' . $curlErrno . ' err=' . $curlErr);
+    return;
+}
+
+$decoded = json_decode($response, true);
+$callId = '';
+if (!is_array($decoded)) {
+    $updateAttempt($attemptId, ['STATUS' => $readyEnumId, 'UPDATED_AT' => $nowBitrix]);
+    $setVar('MODULE3_ERROR', 'vox_invalid_response');
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('vox_invalid_response', 'Некорректный ответ Voximplant');
+    $log('MODULE3: Voximplant invalid JSON http=' . $httpCode . ' len=' . strlen($response));
+    return;
+}
+$errMsg = isset($decoded['error_description']) ? (string)$decoded['error_description'] : (isset($decoded['error']) ? (is_array($decoded['error']) ? json_encode($decoded['error'], JSON_UNESCAPED_UNICODE) : (string)$decoded['error']) : '');
+if (isset($decoded['error']) || isset($decoded['error_description']) || ($httpCode >= 400 && $errMsg === '')) {
+    if ($errMsg === '' && $httpCode >= 400) $errMsg = 'HTTP ' . $httpCode;
+    $updateAttempt($attemptId, ['STATUS' => $readyEnumId, 'UPDATED_AT' => $nowBitrix]);
+    $setVar('MODULE3_ERROR', $errMsg);
+    $setVar('MODULE3_RESULT', 'error');
+    $setStatusLine('vox_error', $errMsg);
+    $log('MODULE3: Voximplant error: ' . $errMsg . ' (keys=' . implode(',', array_keys($decoded)) . ')');
+    $log('MODULE3: Voximplant error response=' . json_encode($decoded, JSON_UNESCAPED_UNICODE));
+    return;
+}
+
+$callId = '';
+$voxSessionId = '';
+$recordingUrl = '';
+$recordingUrlSecure = '';
+if (!empty($decoded['call_session_history_id'])) {
+    $voxSessionId = (string)$decoded['call_session_history_id'];
+    $callId = 'vox_' . $voxSessionId;
+} elseif (is_array($decoded['result'] ?? null) && !empty($decoded['result']['scenario_id'])) {
+    $callId = (string)$decoded['result']['scenario_id'];
+} elseif (is_array($decoded['result'] ?? null) && !empty($decoded['result']['CALL_ID'])) {
+    $callId = (string)$decoded['result']['CALL_ID'];
+} elseif (is_array($decoded['result'] ?? null) && !empty($decoded['result']['SESSION_ID'])) {
+    $callId = (string)$decoded['result']['SESSION_ID'];
+} elseif (is_string($decoded['result'] ?? '') && $decoded['result'] !== '' && $decoded['result'] !== '1') {
+    $callId = (string)$decoded['result'];
+} else {
+    $respKeys = array_keys($decoded);
+    $log('MODULE3: Voximplant resp keys=' . implode(',', $respKeys) . ' (no call_session_history_id)');
+}
+$recordingUrl = trim((string)($decoded['media_session_access_url'] ?? ''));
+$recordingUrlSecure = trim((string)($decoded['media_session_access_secure_url'] ?? ''));
+$log('MODULE3: Voximplant full response keys=' . implode(',', array_keys($decoded)) . ' session_id=' . $voxSessionId . ' recording=' . ($recordingUrl !== '' ? 'yes' : 'no'));
+
+$attemptUpdate = ['CALL_ID' => $callId, 'STARTED_AT' => $nowBitrix];
+if ($voxSessionId !== '') $attemptUpdate['VOX_SESSION_ID'] = $voxSessionId;
+if ($recordingUrl !== '') $attemptUpdate['VOX_RECORDING_URL'] = $recordingUrl;
+$updateAttempt($attemptId, $attemptUpdate);
+
+$attemptNumForUf = (int)($attempt['ATTEMPT_NUMBER'] ?? 0);
+$masterIdForLead = (int)($attempt['MASTER_ELEMENT_ID'] ?? 0);
+if ($leadId > 0 && Loader::includeModule('crm')) {
+    $ufPayload = [$leadAttemptNumberUf => $attemptNumForUf];
+    if (class_exists('\CCrmLead')) {
+        $ent = new \CCrmLead(false);
+        if ($ent->Update($leadId, $ufPayload)) {
+            $log('MODULE3: lead UF ' . $leadAttemptNumberUf . '=' . $attemptNumForUf . ' lead_id=' . $leadId);
+        } else {
+            $log('MODULE3: lead UF update failed lead_id=' . $leadId);
+        }
+    } else {
+        $log('MODULE3: lead UF update skipped (CCrmLead not available)');
+    }
+} elseif ($leadId <= 0 && $masterIdForLead > 0) {
+    $log('MODULE3: lead UF skipped (no LEAD_ID on master master_id=' . $masterIdForLead . ')');
+} elseif ($leadId > 0) {
+    $log('MODULE3: lead UF skipped (crm module not loaded)');
+}
+
+$setVar('MODULE3_VOX_SESSION_ID', $voxSessionId);
+$setVar('MODULE3_ATTEMPT_ID', (string)$attemptId);
+if ($recordingUrl !== '') $setVar('MODULE3_RECORDING_URL', $recordingUrl);
+if ($recordingUrlSecure !== '') $setVar('MODULE3_RECORDING_URL_SECURE', $recordingUrlSecure);
+
+if ($voxSessionId !== '') {
+    $fromDate = date('Y-m-d H:i:s', strtotime('-15 minutes'));
+    $toDate = date('Y-m-d H:i:s', strtotime('+2 minutes'));
+    $historyForm = [
+        'account_id' => $voxAccountId,
+        'api_key' => $voxApiKey,
+        'from_date' => $fromDate,
+        'to_date' => $toDate,
+    ];
+    $historyPayload = http_build_query($historyForm);
+    $historyUrl = 'https://api.voximplant.com/platform_api/GetCallHistory/';
+    $chHist = curl_init($historyUrl);
+    curl_setopt_array($chHist, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => $historyPayload,
+        CURLOPT_HTTPHEADER => ['Content-Type: application/x-www-form-urlencoded', 'Accept: application/json'],
+        CURLOPT_TIMEOUT => 15,
+        CURLOPT_CONNECTTIMEOUT => 5,
+        CURLOPT_SSL_VERIFYPEER => false,
+    ]);
+    $historyResp = curl_exec($chHist);
+    curl_close($chHist);
+    if ($historyResp !== false) {
+        $historyData = json_decode($historyResp, true);
+        $log('MODULE3: GetCallHistory response keys=' . (is_array($historyData) ? implode(',', array_keys($historyData)) : 'parse_error'));
+        if (is_array($historyData) && !empty($historyData['result'])) {
+            $log('MODULE3: GetCallHistory result count=' . count($historyData['result']));
+            foreach ($historyData['result'] as $idx => $histItem) {
+                if (is_array($histItem) && isset($histItem['history_id']) && (string)$histItem['history_id'] === $voxSessionId) {
+                    $log('MODULE3: GetCallHistory found match: ' . json_encode($histItem, JSON_UNESCAPED_UNICODE));
+                    break;
+                }
+            }
+        } elseif (is_array($historyData) && isset($historyData['history_report_id'])) {
+            $log('MODULE3: GetCallHistory async report_id=' . $historyData['history_report_id']);
+        }
+    }
+}
+
+if ($operatorElementId > 0) {
+    $list128Update = [
+        'STATUS' => $statusBusyEnumId,
+        'UPDATED_AT' => $nowBitrix,
+        'ACTIVE_CALLS_COUNT' => 1,
+        'LAST_ACTIVITY_DATE' => $nowBitrix,
+        'LAST_ASSIGNED_AT' => $nowBitrix,
+    ];
+    CIBlockElement::SetPropertyValuesEx($operatorElementId, $operatorListId, $list128Update);
+    $verifyProps = [];
+    $resV = CIBlockElement::GetByID($operatorElementId);
+    if ($resV && ($elV = $resV->GetNextElement())) {
+        $pv = $elV->GetProperties();
+        $verifyProps = [
+            'STATUS' => $pv['STATUS']['VALUE'] ?? $pv['STATUS']['VALUE_ENUM'] ?? $pv['STATUS']['VALUE_XML_ID'] ?? '?',
+            'UPDATED_AT' => $pv['UPDATED_AT']['VALUE'] ?? '?',
+            'ACTIVE_CALLS_COUNT' => $pv['ACTIVE_CALLS_COUNT']['VALUE'] ?? '?',
+        ];
+    }
+    $log('MODULE3: list128 element=' . $operatorElementId . ' written=' . json_encode($list128Update) . ' verify=' . json_encode($verifyProps));
+}
+
+$setVar('MODULE3_RESULT', 'call_started');
+$setVar('MODULE3_CALL_ID', $callId);
+$setStatusLine('call_started', 'Звонок запущен');
+$log('MODULE3: call started attempt=' . $attemptId . ' call_id=' . $callId);

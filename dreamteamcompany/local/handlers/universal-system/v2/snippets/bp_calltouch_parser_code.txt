@@ -1,0 +1,189 @@
+$blockName = 'bp_calltouch_parser_code';
+$this->WriteToTrackingService('[' . $blockName . '] start');
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+$blankVars = [
+    'CB_UTM_SOURCE', 'CB_UTM_MEDIUM', 'CB_UTM_CAMPAIGN', 'CB_UTM_CONTENT', 'CB_UTM_TERM',
+    'CB_TITLE', 'CB_LEAD_TITLE', 'CB_PHONE', 'CB_NAME', 'CB_LAST_NAME', 'CB_SECOND_NAME',
+    'CB_DOMAIN', 'CB_COMMENT', 'CB_SOURCE_DESCRIPTION', 'CB_OPENED', 'CB_STATUS_ID',
+    'CB_RESULT', 'CB_ERROR_MSG',
+    'CB_ASSIGNED_BY_ID', 'CB_ASSIGNED_BY_EMAIL', 'CB_ASSIGNED_BY_PERSONAL_MOBILE', 'CB_ASSIGNED_BY_WORK_PHONE',
+    'CB_SOURCE_ID', 'CB_TRACKING_SOURCE_ID', 'CB_OBSERVER_IDS', 'CB_CITY_ID', 'CB_ISPOLNITEL', 'CB_INFOPOVOD',
+    'CB_SITE_ID', 'CB_SUB_POOL_NAME'
+];
+
+$cleanString = function ($value) {
+    $value = trim((string)$value);
+    return strcasecmp($value, 'null') === 0 ? '' : $value;
+};
+$getDomainUrl = function ($fullUrl) {
+    if ($fullUrl === '') {
+        return '';
+    }
+    $parts = parse_url($fullUrl);
+    if (!empty($parts['host'])) {
+        return (string)$parts['host'];
+    }
+    return $fullUrl;
+};
+$normalizePhone = function ($raw) {
+    if ($raw === '') {
+        return '';
+    }
+    $digits = preg_replace('/\D+/', '', $raw);
+    $cleaned = preg_replace('/[^\d+]/', '', $raw);
+    if (preg_match('/^\+7\d{10}$/', $cleaned)) {
+        return $cleaned;
+    }
+    if (strlen($digits) === 11 && ($digits[0] === '7' || $digits[0] === '8')) {
+        return '+7' . substr($digits, 1);
+    }
+    if (strlen($digits) === 10) {
+        return '+7' . $digits;
+    }
+    return '';
+};
+
+try {
+    $rawJson = (string)$this->GetVariable('CB_RAW_JSON');
+    $rawJson = trim((string)preg_replace('/^\xEF\xBB\xBF/', '', $rawJson));
+
+    foreach ($blankVars as $name) {
+        $setVar($name, '');
+    }
+
+    if ($rawJson === '') {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'RAW_DATA пуст');
+        $log('[' . $blockName . '] RAW_DATA пуст');
+        return;
+    }
+
+    $jsonFlags = defined('JSON_INVALID_UTF8_SUBSTITUTE') ? JSON_INVALID_UTF8_SUBSTITUTE : 0;
+    if (defined('JSON_BIGINT_AS_STRING')) {
+        $jsonFlags |= JSON_BIGINT_AS_STRING;
+    }
+
+    $data = json_decode($rawJson, true, 512, $jsonFlags);
+    if (!is_array($data)) {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'Невалидный JSON в RAW_DATA: ' . json_last_error_msg());
+        $log('[' . $blockName . '] невалидный JSON');
+        return;
+    }
+
+    $payload = isset($data['parsed_data']) && is_array($data['parsed_data']) ? $data['parsed_data'] : $data;
+    $rawHeaders = isset($data['raw_headers']) && is_array($data['raw_headers']) ? $data['raw_headers'] : [];
+    $rawBody = (string)($data['raw_body'] ?? '');
+    $contentType = (string)($rawHeaders['CONTENT_TYPE'] ?? '');
+
+    if ($rawBody !== '') {
+        $looksLikeQueryBody = preg_match('/[^=&]+=/', $rawBody) === 1;
+        if (stripos($contentType, 'application/x-www-form-urlencoded') !== false || $looksLikeQueryBody) {
+            $bodyFields = [];
+            parse_str($rawBody, $bodyFields);
+            foreach ($bodyFields as $k => $v) {
+                if (!isset($payload[$k]) || $payload[$k] === '') {
+                    $payload[$k] = $v;
+                }
+            }
+        } elseif (($rawBody[0] ?? '') === '{') {
+            $bodyJson = json_decode($rawBody, true, 512, $jsonFlags);
+            if (is_array($bodyJson)) {
+                foreach ($bodyJson as $k => $v) {
+                    if (!isset($payload[$k]) || $payload[$k] === '') {
+                        $payload[$k] = $v;
+                    }
+                }
+            }
+        }
+    }
+
+    $subPoolName = $cleanString($payload['subPoolName'] ?? '');
+    if (($payload['callUrl'] ?? '') === '' && $subPoolName !== '') {
+        $payload['callUrl'] = $subPoolName;
+    }
+    if (($payload['url'] ?? '') === '' && $subPoolName !== '') {
+        $payload['url'] = $subPoolName;
+    }
+
+    $isCalltouch = false;
+    if ($cleanString($payload['siteId'] ?? '') !== '') {
+        foreach (['callerphone', 'subPoolName', 'ctCallerId', 'callphase', 'leadtype', 'hostname', 'siteName', 'url', 'callUrl'] as $key) {
+            if ($cleanString($payload[$key] ?? '') !== '') {
+                $isCalltouch = true;
+                break;
+            }
+        }
+    }
+
+    if (!$isCalltouch) {
+        $setVar('CB_RESULT', 'not parsed');
+        $setVar('CB_ERROR_MSG', 'CallTouch payload not matched');
+        $log('[' . $blockName . '] формат не совпал');
+        return;
+    }
+
+    $nameKey = $cleanString($payload['hostname'] ?? '');
+    if ($nameKey === '') {
+        $url = $cleanString($payload['url'] ?? '');
+        if ($url !== '') {
+            $nameKey = $getDomainUrl($url);
+        }
+    }
+    if ($nameKey === '') {
+        $callUrl = $cleanString($payload['callUrl'] ?? '');
+        if ($callUrl !== '') {
+            $nameKey = $getDomainUrl($callUrl);
+        }
+    }
+    if ($nameKey === '') {
+        $nameKey = $cleanString($payload['siteName'] ?? '');
+    }
+    if ($nameKey === '') {
+        $nameKey = $subPoolName;
+    }
+
+    $siteId = $cleanString($payload['siteId'] ?? '');
+    $phone = $normalizePhone((string)($payload['callerphone'] ?? $payload['phone'] ?? ''));
+    $name = trim((string)($payload['name'] ?? $payload['Name'] ?? ''));
+    $comment = trim((string)($payload['comment'] ?? $payload['COMMENTS'] ?? ''));
+
+    $setVar('CB_TITLE', 'calltouch');
+    $setVar('CB_LEAD_TITLE', '');
+    $setVar('CB_PHONE', $phone);
+    $setVar('CB_NAME', $name);
+    $setVar('CB_LAST_NAME', '');
+    $setVar('CB_SECOND_NAME', '');
+    $setVar('CB_DOMAIN', $nameKey);
+    $setVar('CB_COMMENT', $comment);
+    $setVar('CB_SOURCE_DESCRIPTION', 'CallTouch (siteId=' . $siteId . ')');
+    $setVar('CB_OPENED', 'Y');
+    $setVar('CB_STATUS_ID', 'NEW');
+    $setVar('CB_RESULT', 'parsed');
+    $setVar('CB_ERROR_MSG', '');
+
+    $setVar('CB_SITE_ID', $siteId);
+    $setVar('CB_SUB_POOL_NAME', $subPoolName);
+
+    foreach ($payload as $k => $v) {
+        if (is_string($v) && stripos($k, 'utm_') === 0 && $v !== '') {
+            $setVar('CB_' . strtoupper($k), $v);
+        }
+    }
+
+    $log('[' . $blockName . '] parsed | nameKey=' . $nameKey . ' | siteId=' . $siteId . ' | phone=' . $phone);
+} catch (\Throwable $e) {
+    $setVar('CB_RESULT', 'not parsed');
+    $setVar('CB_ERROR_MSG', 'Parse error: ' . $e->getMessage());
+    $this->WriteToTrackingService('[' . $blockName . '] exception: ' . $e->getMessage());
+}

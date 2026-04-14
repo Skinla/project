@@ -1,0 +1,679 @@
+==== 2025-12-23 13:48:30 ====
+File: ct_20251223_133802_694a710acef2e.json
+EntityType=lead, EntityId=509763
+dialedNumber=78482688592
+callerPhone=+79047086272
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 191010
+    [changedFields] => null
+    [ctCallerId] => db800e8eba0dbbe67ad9479b625e7e1b
+    [callerphone] => +79047086272
+    [phonenumber] => 78482688592
+    [subPoolName] => Остальные
+    [redirectNumber] => 78482388114
+    [duration] => 4
+    [waiting_time] => 3
+    [calltime] => 2025-12-23 13:35:45
+    [timestamp] => 1766486145
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_mk
+    [medium] => cpc
+    [utm_source] => yandex_mk
+    [utm_medium] => cpc
+    [utm_campaign] => tp6_cpa_site - МК - ВМЦ - Тольятти
+    [utm_content] => ad_id|17466864387|banner_id|17466864387|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|4|position_type|premium|placement|none|placement_type|search|region_name|Подстепки|correction|0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1766485907746417195
+    [sessionId] => 19795421
+    [ctClientId] => 3400000000014613882
+    [ctGlobalId] => null
+    [hostname] => tollyattident.ru
+    [url] => https://tollyattident.ru/?utm_source=yandex_mk&utm_medium=cpc&utm_campaign=tp6_cpa_site - МК - ВМЦ - Тольятти&utm_term=---autotargeting&utm_content=ad_id|17466864387|banner_id|17466864387|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|4|position_type|premium|placement|none|placement_type|search|region_name|Подстепки|correction|0&calltouch_tm=yd_c:705490186_gb:5686870587_ad:17466864387_ph:205686870587_st:search_pt:premium_p:4_s:none_dt:mobile_reg:119604_ret:205686870587_apt:none&etext=2202.dMXDdnEWcQqbNb_sC_M1P5uhBkSEP_tJ1u5jbyod6DTezZ2szsEefTBmafFcqHc4NciSMeQtEPHRqI4yMDFao5GZUmf3LD8yZRDJUT82CqpMJ_B4hb8m03o1JaI0HDfcGTWjPXkbq6YLonBALLG92d8LqwoKcbC8EGnktm4J_7pycmJreHlyeXp5bmFsaXBx.7ece1523a69a5a8b3014153b54a0b8f79d2d08f5&yclid=2160771259423522815&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saratov
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.178.210.138
+    [sip_call_id] => fb10ffe8-5a8d-123f-068a-005056beb46b
+    [callReferenceNumber] => 2399cd44-dfeb-11f0-9722-17c15dfce5c0
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NjQ4NjI4MiwiZXhwIjoyMDgxODQ2MjgyLCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjE5MTAxMH0.Ge-xJBJwOLhHB_UkjCeuOMgaWDye-ubqxEM9gTysU9Rhcw3vybny_qWiPHSAxHVckLkjDKgJDRpB0wFynue4UQ
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.703 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1766486282
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-23 13:48:36 ====
+File: ct_20251223_133803_694a710b07039.json
+EntityType=lead, EntityId=509764
+dialedNumber=78482688592
+callerPhone=+79047086272
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 190997
+    [changedFields] => null
+    [ctCallerId] => db800e8eba0dbbe67ad9479b625e7e1b
+    [callerphone] => +79047086272
+    [phonenumber] => 78482688592
+    [subPoolName] => Остальные
+    [redirectNumber] => 78482388114
+    [duration] => 4
+    [waiting_time] => 3
+    [calltime] => 2025-12-23 13:34:54
+    [timestamp] => 1766486094
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_mk
+    [medium] => cpc
+    [utm_source] => yandex_mk
+    [utm_medium] => cpc
+    [utm_campaign] => tp6_cpa_site - МК - ВМЦ - Тольятти
+    [utm_content] => ad_id|17466864387|banner_id|17466864387|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|4|position_type|premium|placement|none|placement_type|search|region_name|Подстепки|correction|0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1766485907746417195
+    [sessionId] => 19795421
+    [ctClientId] => 3400000000014613882
+    [ctGlobalId] => null
+    [hostname] => tollyattident.ru
+    [url] => https://tollyattident.ru/?utm_source=yandex_mk&utm_medium=cpc&utm_campaign=tp6_cpa_site - МК - ВМЦ - Тольятти&utm_term=---autotargeting&utm_content=ad_id|17466864387|banner_id|17466864387|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|4|position_type|premium|placement|none|placement_type|search|region_name|Подстепки|correction|0&calltouch_tm=yd_c:705490186_gb:5686870587_ad:17466864387_ph:205686870587_st:search_pt:premium_p:4_s:none_dt:mobile_reg:119604_ret:205686870587_apt:none&etext=2202.dMXDdnEWcQqbNb_sC_M1P5uhBkSEP_tJ1u5jbyod6DTezZ2szsEefTBmafFcqHc4NciSMeQtEPHRqI4yMDFao5GZUmf3LD8yZRDJUT82CqpMJ_B4hb8m03o1JaI0HDfcGTWjPXkbq6YLonBALLG92d8LqwoKcbC8EGnktm4J_7pycmJreHlyeXp5bmFsaXBx.7ece1523a69a5a8b3014153b54a0b8f79d2d08f5&yclid=2160771259423522815&ybaip=1
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => saratov
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.178.210.138
+    [sip_call_id] => dc8a52af-5a8d-123f-068a-005056beb46b
+    [callReferenceNumber] => 0512a8aa-dfeb-11f0-8f8d-17c15dfce5c0
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NjQ4NjI4MiwiZXhwIjoyMDgxODQ2MjgyLCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjE5MDk5N30.pRB9IRu1hV6vm8QMnHVGHsT6PnLwob5zGkyE9qa3JPc63fA3rxsui3RmrDoi-Swl0iO1tHPrBwzp6szALfQ8ig
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.703 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1766486282
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-23 14:57:09 ====
+File: ct_20251223_145707_694a839371a43.json
+EntityType=lead, EntityId=509887
+dialedNumber=78482688593
+callerPhone=+79608491029
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 191698
+    [changedFields] => null
+    [ctCallerId] => 290b465906e37f6808ab6c4a8a920599
+    [callerphone] => +79608491029
+    [phonenumber] => 78482688593
+    [subPoolName] => Остальные
+    [redirectNumber] => 78482388114
+    [duration] => 3
+    [waiting_time] => 2
+    [calltime] => 2025-12-23 14:55:44
+    [timestamp] => 1766490944
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_mk
+    [medium] => cpc
+    [utm_source] => yandex_mk
+    [utm_medium] => cpc
+    [utm_campaign] => tp6_cpa_site - МК - ВМЦ - Тольятти
+    [utm_content] => ad_id|17466864335|banner_id|17466864335|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Togliatti|correction|0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1766490814516687779
+    [sessionId] => 19843091
+    [ctClientId] => 3400000000014647567
+    [ctGlobalId] => null
+    [hostname] => tollyattident.ru
+    [url] => https://tollyattident.ru/?utm_source=yandex_mk&utm_medium=cpc&utm_campaign=tp6_cpa_site - МК - ВМЦ - Тольятти&utm_term=---autotargeting&utm_content=ad_id|17466864335|banner_id|17466864335|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Togliatti|correction|0&calltouch_tm=yd_c:705490186_gb:5686870587_ad:17466864335_ph:205686870587_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:240_ret:205686870587_apt:none&yclid=15654039782383943679&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 80.234.72.58
+    [sip_call_id] => 278087be-5a99-123f-068a-005056beb46b
+    [callReferenceNumber] => 500adebc-dff6-11f0-99a3-17c15dfce5c0
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NjQ5MTAyNywiZXhwIjoyMDgxODUxMDI3LCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjE5MTY5OH0.9b1M77DkWz-IRfraTakVyklvXkQGOKl3jkPp7ofd5TBpFgsARL_PZpZ9mhBCWM8rPyC5w02m2wbwxiaQWz2S5Q
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.698 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1766491027
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-23 14:58:14 ====
+File: ct_20251223_145814_694a83d60211b.json
+EntityType=lead, EntityId=509887
+dialedNumber=78482688593
+callerPhone=+79608491029
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 191707
+    [changedFields] => null
+    [ctCallerId] => 290b465906e37f6808ab6c4a8a920599
+    [callerphone] => +79608491029
+    [phonenumber] => 78482688593
+    [subPoolName] => Остальные
+    [redirectNumber] => 78482388114
+    [duration] => 3
+    [waiting_time] => 2
+    [calltime] => 2025-12-23 14:56:35
+    [timestamp] => 1766490995
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_mk
+    [medium] => cpc
+    [utm_source] => yandex_mk
+    [utm_medium] => cpc
+    [utm_campaign] => tp6_cpa_site - МК - ВМЦ - Тольятти
+    [utm_content] => ad_id|17466864335|banner_id|17466864335|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Togliatti|correction|0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1766490814516687779
+    [sessionId] => 19843091
+    [ctClientId] => 3400000000014647567
+    [ctGlobalId] => null
+    [hostname] => tollyattident.ru
+    [url] => https://tollyattident.ru/?utm_source=yandex_mk&utm_medium=cpc&utm_campaign=tp6_cpa_site - МК - ВМЦ - Тольятти&utm_term=---autotargeting&utm_content=ad_id|17466864335|banner_id|17466864335|campaign_type|type1|campaign_id|705490186|device_type|mobile|group_id|5686870587|phrase_id|205686870587|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Togliatti|correction|0&calltouch_tm=yd_c:705490186_gb:5686870587_ad:17466864335_ph:205686870587_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:240_ret:205686870587_apt:none&yclid=15654039782383943679&ybaip=1
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 80.234.72.58
+    [sip_call_id] => 45c6f18b-5a99-123f-068a-005056beb46b
+    [callReferenceNumber] => 6e563326-dff6-11f0-a000-17c15dfce5c0
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NjQ5MTA5MywiZXhwIjoyMDgxODUxMDkzLCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjE5MTcwN30.t2xfQUNL88IKeHqT1mFjX-cHjrapP5lzHfWTmWl-McS4XWP9XaHU3gUvYM54B8Pzxjd7i3PqFLXtOO1qUFbZRQ
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.698 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1766491093
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-25 13:30:11 ====
+File: ct_20251224_181213_694c02cd0b61e.json
+EntityType=lead, EntityId=513086
+dialedNumber=78482688592
+callerPhone=+79346694026
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 198841
+    [changedFields] => null
+    [ctCallerId] => 38b0f6a886d97baa9579dae203076e1b
+    [callerphone] => +79346694026
+    [phonenumber] => 78482688592
+    [subPoolName] => tollyattident.ru
+    [redirectNumber] => 78482388114
+    [duration] => 4
+    [waiting_time] => 3
+    [calltime] => 2025-12-24 18:10:02
+    [timestamp] => 1766589002
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex_tg
+    [medium] => cpc
+    [utm_source] => yandex_tg
+    [utm_medium] => cpc
+    [utm_campaign] => tp8_cpc_site - ВМЦ - Тольятти
+    [utm_content] => ad_id|1895446082931869592|banner_id|1895446082931869592|campaign_type|type1|campaign_id|705489300|device_type|desktop|group_id|5686862589|phrase_id|205686862589|position|0|position_type|none|placement|t.me|placement_type|context|region_name|Тольятти|correction|0
+    [utm_term] => ---autotargeting
+    [yaClientId] => 17665888415741863
+    [sessionId] => 20507745
+    [ctClientId] => 3400000000015121260
+    [ctGlobalId] => null
+    [hostname] => tollyattident.ru
+    [url] => https://tollyattident.ru/?utm_source=yandex_tg&utm_medium=cpc&utm_campaign=tp8_cpc_site - ВМЦ - Тольятти&utm_term=---autotargeting&utm_content=ad_id|1895446082931869592|banner_id|1895446082931869592|campaign_type|type1|campaign_id|705489300|device_type|desktop|group_id|5686862589|phrase_id|205686862589|position|0|position_type|none|placement|t.me|placement_type|context|region_name|Тольятти|correction|0&calltouch_tm=yd_c:705489300_gb:5686862589_ad:1895446082931869592_ph:205686862589_st:context_pt:none_p:0_s:t.me_dt:desktop_reg:240_ret:205686862589_apt:none&yclid=16879144277819260927
+    [attrs] => {}
+    [ref] => 
+    [city] => samara
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => phablet
+    [ip] => 128.204.71.227
+    [sip_call_id] => 76c42f5c-5b7d-123f-068a-005056beb46b
+    [callReferenceNumber] => 9f53358e-e0da-11f0-8edf-17c15dfce5c0
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NjU4OTEzMiwiZXhwIjoyMDgxOTQ5MTMyLCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjE5ODg0MX0.GmgbypNhvnO2QBvoveUg3YZ794Tvse7XuYL_WncpbS7eS-sE7wMjsVWVWlVjCj4kfNWWmOjzC1P3HLxkVeUMUw
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; 2201116TG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1116 YaSearchBrowser/25.121.1 BroPP/1.0 YaSearchApp/25.121.1 webOmni Mobile Safari/537.36
+    [sendingTimestamp] => 1766589132
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => tollyattident.ru
+)
+
+
+==== 2026-01-16 12:36:05 ====
+File: ct_20260116_123602_696a06828c8d3.json
+EntityType=lead, EntityId=547893
+dialedNumber=78482688592
+callerPhone=+79584108538
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 308286
+    [changedFields] => null
+    [ctCallerId] => 012ee0af047c7b38e36d85cae571b60f
+    [callerphone] => +79584108538
+    [phonenumber] => 78482688592
+    [subPoolName] => tollyattident.ru
+    [redirectNumber] => 78482388114
+    [duration] => 3
+    [waiting_time] => 3
+    [calltime] => 2026-01-16 12:34:37
+    [timestamp] => 1768556077
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 6a7cdea0-6d61-123f-d993-005056beb46b
+    [callReferenceNumber] => 9307e13a-f2be-11f0-bf73-859efe17fb06
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2ODU1NjE2MiwiZXhwIjoyMDgzOTE2MTYyLCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjMwODI4Nn0.kTu3uoyUU7j0IfCaXrsmHInDtXeapveIE6-MrXs3wVnxzN3siuyH5P7N7xYH92XBF9cIx57-bxUI6RTcXAbFjQ
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [sendingTimestamp] => 1768556162
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => tollyattident.ru
+    [url] => tollyattident.ru
+)
+
+
+==== 2026-02-22 10:48:08 ====
+File: ct_20260222_104806_699ab4b66cbbe.json
+EntityType=lead, EntityId=611344
+dialedNumber=78482688561
+callerPhone=+79608438799
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 566720
+    [changedFields] => null
+    [ctCallerId] => ac2758ede18aa86b8c4403263c211fee
+    [callerphone] => +79608438799
+    [phonenumber] => 78482688561
+    [subPoolName] => tollyattident.ru
+    [redirectNumber] => 78482388114
+    [duration] => 3
+    [waiting_time] => 3
+    [calltime] => 2026-02-22 10:46:08
+    [timestamp] => 1771746368
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 63e0f263-8a65-123f-05ab-005056beb46b
+    [callReferenceNumber] => 8c6fd8ca-0fc2-11f1-9b84-1d5faa77b238
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MTc0NjQ4NiwiZXhwIjoyMDg3MTA2NDg2LCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjU2NjcyMH0.cALFF9i0mIyZjPCqqJrEKO0T3f2oQWUeiUp5faAR53jtnX7iPIGAAm7_R8u38wMn4T3KLoukvrMEWcofgAEXRw
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [sendingTimestamp] => 1771746486
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => tollyattident.ru
+    [url] => tollyattident.ru
+)
+
+
+==== 2026-02-27 11:13:08 ====
+File: ct_20260227_111306_69a152124dfaf.json
+EntityType=lead, EntityId=619122
+dialedNumber=78482688592
+callerPhone=+79021836278
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 606545
+    [changedFields] => null
+    [ctCallerId] => e32b563f6bd0f5b72f9ae01d235bf4e7
+    [callerphone] => +79021836278
+    [phonenumber] => 78482688592
+    [subPoolName] => tollyattident.ru
+    [redirectNumber] => 78482388114
+    [duration] => 3
+    [waiting_time] => 2
+    [calltime] => 2026-02-27 11:11:50
+    [timestamp] => 1772179910
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => cf3d0dcc-8e56-123f-05ab-005056beb46b
+    [callReferenceNumber] => f7cd7f7e-13b3-11f1-911b-1d5faa77b238
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjE3OTk4NSwiZXhwIjoyMDg3NTM5OTg1LCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjYwNjU0NX0.d0N-M6NELw_h4UAqWzPEWz9BW26Xh4HKiJj3ZIkA1emCMLPjxM_G6TukVPMLBz3AlBakIi_yIYICLUzPaZSBYQ
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [sendingTimestamp] => 1772179985
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => tollyattident.ru
+    [url] => tollyattident.ru
+)
+
+
+==== 2026-02-27 11:14:07 ====
+File: ct_20260227_111407_69a1524f30aa1.json
+EntityType=lead, EntityId=619122
+dialedNumber=78482688592
+callerPhone=+79021836278
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 606548
+    [changedFields] => null
+    [ctCallerId] => e32b563f6bd0f5b72f9ae01d235bf4e7
+    [callerphone] => +79021836278
+    [phonenumber] => 78482688592
+    [subPoolName] => tollyattident.ru
+    [redirectNumber] => 78482388114
+    [duration] => 4
+    [waiting_time] => 3
+    [calltime] => 2026-02-27 11:12:05
+    [timestamp] => 1772179925
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Остальные
+    [medium] => <не указано>
+    [utm_source] => Остальные
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d892941d-8e56-123f-05ab-005056beb46b
+    [callReferenceNumber] => 0122cc32-13b4-11f1-9474-1d5faa77b238
+    [reclink] => https://api-node34.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjE4MDA0NiwiZXhwIjoyMDg3NTQwMDQ2LCJzaXRlSWQiOjc5MzkzLCJjYWxsSWQiOjYwNjU0OH0.o9P0IBwTGCJMCkTdUh93rQKnXA5ld0sQADIPqibdxNp2tjC6x2nefloPnhvY2FwwmrqEe8xt75jefc5BarMjig
+    [orderId] => null
+    [siteId] => 79393
+    [siteName] => tollyattident.ru
+    [sendingTimestamp] => 1772180046
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => tollyattident.ru
+    [url] => tollyattident.ru
+)
+
+

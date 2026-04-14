@@ -1,0 +1,461 @@
+<?php
+declare(strict_types=1);
+
+namespace App\Bitrix;
+
+use App\Contracts\IblockScoreWriterInterface;
+use App\DTO\ScorePayloadDTO;
+use RuntimeException;
+
+final class Iblock122ScoreWriter implements IblockScoreWriterInterface
+{
+    private BitrixBootstrap $bootstrap;
+
+    /** @var array<string, mixed> */
+    private array $config;
+
+    /**
+     * @param array<string, mixed> $config
+     */
+    public function __construct(BitrixBootstrap $bootstrap, array $config)
+    {
+        $this->bootstrap = $bootstrap;
+        $this->config = $config;
+    }
+
+    /**
+     * @return array{element_id:int, verified:bool}
+     */
+    public function write(string $callId, ScorePayloadDTO $payload): array
+    {
+        $this->appendDebugLog(
+            sprintf(
+                'CALL_ID=%s WRITER_STAGE=START is_booked_value=%s',
+                $callId,
+                (string) ($payload->isBookedValue() ?? 'NULL')
+            )
+        );
+
+        if ($payload->finalScore() === null) {
+            throw new RuntimeException('FINAL_SCORE не найден и не может быть записан в iblock.');
+        }
+
+        $this->bootstrap->boot();
+
+        $iblockId = (int) ($this->config['iblock_id'] ?? 0);
+        if ($iblockId <= 0) {
+            throw new RuntimeException('Invalid iblock_id in config.');
+        }
+
+        $propertyValues = $this->buildPropertyValues($callId, $payload);
+        $this->appendDebugLog(
+            sprintf(
+                'CALL_ID=%s WRITER_STAGE=PROPERTY_VALUES_BUILT has_is_booked=%s',
+                $callId,
+                array_key_exists((string) ($this->config['is_booked_property_code'] ?? 'IS_BOOKED'), $propertyValues) ? 'Y' : 'N'
+            )
+        );
+        $upsertByCallId = (bool) ($this->config['upsert_by_call_id'] ?? false);
+
+        if ($upsertByCallId) {
+            $existingId = $this->findElementIdByCallId($iblockId, $callId);
+            if ($existingId !== null) {
+                $this->appendDebugLog(
+                    sprintf('CALL_ID=%s WRITER_STAGE=UPSERT target_element_id=%d', $callId, $existingId)
+                );
+                \CIBlockElement::SetPropertyValuesEx(
+                    $existingId,
+                    $iblockId,
+                    $propertyValues
+                );
+
+                $verified = $this->verifyWrite($existingId, $propertyValues);
+
+                return [
+                    'element_id' => $existingId,
+                    'verified' => $verified,
+                ];
+            }
+        }
+
+        $element = new \CIBlockElement();
+        $elementId = $element->Add([
+            'IBLOCK_ID' => $iblockId,
+            'NAME' => $this->buildElementName($callId, $payload),
+            'ACTIVE' => 'Y',
+            'PROPERTY_VALUES' => $propertyValues,
+        ]);
+
+        if (!$elementId) {
+            $error = is_string($element->LAST_ERROR) ? trim($element->LAST_ERROR) : '';
+            throw new RuntimeException($error !== '' ? $error : 'CIBlockElement::Add failed.');
+        }
+
+        $verified = $this->verifyWrite((int) $elementId, $propertyValues);
+        $this->appendDebugLog(
+            sprintf('CALL_ID=%s WRITER_STAGE=ADD_OK element_id=%d verified=%s', $callId, (int) $elementId, $verified ? 'Y' : 'N')
+        );
+
+        return [
+            'element_id' => (int) $elementId,
+            'verified' => $verified,
+        ];
+    }
+
+    /**
+     * @return array<string, int|float|string>
+     */
+    private function buildPropertyValues(string $callId, ScorePayloadDTO $payload): array
+    {
+        $propertyValues = [];
+        $callIdPropertyCode = (string) ($this->config['call_id_property_code'] ?? 'CALL_ID');
+        $propertyValues[$callIdPropertyCode] = $callId;
+
+        /** @var array<int, string> $criteriaMap */
+        $criteriaMap = $this->config['criteria_property_map'] ?? [];
+        foreach ($payload->criteriaScores() as $criterion => $score) {
+            if (!isset($criteriaMap[$criterion])) {
+                continue;
+            }
+
+            $propertyValues[$criteriaMap[$criterion]] = $score;
+        }
+
+        /** @var array<string, string> $aggregateMap */
+        $aggregateMap = $this->config['aggregate_property_map'] ?? [];
+        if (isset($aggregateMap['BASE_SCORE']) && $payload->baseScore() !== null) {
+            $propertyValues[$aggregateMap['BASE_SCORE']] = $payload->baseScore();
+        }
+        if (isset($aggregateMap['FINAL_SCORE']) && $payload->finalScore() !== null) {
+            $propertyValues[$aggregateMap['FINAL_SCORE']] = $payload->finalScore();
+        }
+        if (isset($aggregateMap['DEDUCTION_TOTAL']) && $payload->deductionTotal() !== null) {
+            $propertyValues[$aggregateMap['DEDUCTION_TOTAL']] = $payload->deductionTotal();
+        }
+        if (isset($aggregateMap['CRITERIA_TOTAL']) && $payload->criteriaTotal() > 0) {
+            $propertyValues[$aggregateMap['CRITERIA_TOTAL']] = $payload->criteriaTotal();
+        }
+        if (isset($aggregateMap['FINAL_SCORE_PERCENT']) && $payload->finalScorePercent() !== null) {
+            $propertyValues[$aggregateMap['FINAL_SCORE_PERCENT']] = $payload->finalScorePercent();
+        }
+
+        $callDateTime = $payload->callDateTime();
+        if ($callDateTime !== null && $callDateTime !== '') {
+            $callDateTimePropertyCode = (string) ($this->config['call_datetime_property_code'] ?? 'CALL_DATETIME');
+            $propertyValues[$callDateTimePropertyCode] = $callDateTime;
+        }
+
+        $familyOfferStatusCode = $payload->familyOfferStatusCode();
+        if ($familyOfferStatusCode !== null && $familyOfferStatusCode !== '') {
+            $familyStatusPropCode = (string) ($this->config['family_offer_status_property_code'] ?? 'FAMILY_OFFER_STATUS');
+            $familyStatusEnumId = $this->resolvePropertyEnumIdByValue($familyStatusPropCode, $familyOfferStatusCode);
+            if ($familyStatusEnumId !== null) {
+                $propertyValues[$familyStatusPropCode] = $familyStatusEnumId;
+            }
+        }
+
+        $isBookedValue = $payload->isBookedValue();
+        $isBookedPropertyCode = (string) ($this->config['is_booked_property_code'] ?? 'IS_BOOKED');
+        $this->appendDebugLog(
+            sprintf(
+                'CALL_ID=%s WRITER_STAGE=IS_BOOKED_INPUT value=%s property=%s',
+                $callId,
+                (string) ($isBookedValue ?? 'NULL'),
+                $isBookedPropertyCode
+            )
+        );
+        if ($isBookedValue !== null && $isBookedValue !== '') {
+            $isBookedEnumId = $this->resolvePropertyEnumIdByValue($isBookedPropertyCode, $isBookedValue);
+            $this->appendDebugLog(
+                sprintf(
+                    'CALL_ID=%s WRITER_STAGE=IS_BOOKED_ENUM_RESOLVE value=%s enum_id=%s',
+                    $callId,
+                    $isBookedValue,
+                    (string) ($isBookedEnumId ?? 'NULL')
+                )
+            );
+            if ($isBookedEnumId !== null) {
+                $propertyValues[$isBookedPropertyCode] = $isBookedEnumId;
+            }
+        }
+
+        /** @var array<string, string> $extraMap */
+        $extraMap = $this->config['extra_property_map'] ?? [];
+        if ($extraMap === []) {
+            $extraMap = [
+                'PHONE_NUMBER' => 'PHONE_NUMBER',
+                'PORTAL_NUMBER' => 'PORTAL_NUMBER',
+                'CRM_ENTITY_TYPE' => 'CRM_ENTITY_TYPE',
+                'CRM_ENTITY_ID' => 'CRM_ENTITY_ID',
+                'CRM_ACTIVITY_ID' => 'CRM_ACTIVITY_ID',
+                'CALL_START_DATE' => 'CALL_START_DATE',
+                'PORTAL_USER_ID' => 'PORTAL_USER_ID',
+                'CALL_DURATION' => 'CALL_DURATION',
+                'CALL_TYPE' => 'CALL_TYPE',
+            ];
+        }
+
+        $metadata = $payload->metadata();
+        foreach ($extraMap as $metaKey => $propertyCode) {
+            if (!isset($metadata[$metaKey]) || $metadata[$metaKey] === '') {
+                continue;
+            }
+
+            $value = $metadata[$metaKey];
+            if ($metaKey === 'CALL_START_DATE') {
+                $normalizedDate = $this->normalizeBitrixDateTime($value);
+                if ($normalizedDate === null) {
+                    continue;
+                }
+                $propertyValues[$propertyCode] = $normalizedDate;
+                continue;
+            }
+
+            if (in_array($metaKey, ['PORTAL_NUMBER', 'CRM_ENTITY_TYPE'], true)) {
+                $propertyValues[$propertyCode] = (string) $value;
+                continue;
+            }
+
+            $numeric = $this->normalizeNumericValue($value);
+            if ($numeric !== null) {
+                $propertyValues[$propertyCode] = $numeric;
+            }
+        }
+
+        return $propertyValues;
+    }
+
+    /**
+     * @param int|float|string $value
+     * @return int|float|string|null
+     */
+    private function normalizeNumericValue($value)
+    {
+        if (is_int($value) || is_float($value)) {
+            return $value;
+        }
+
+        $raw = trim((string) $value);
+        if ($raw === '') {
+            return null;
+        }
+
+        $normalized = str_replace(',', '.', $raw);
+        if (preg_match('/^-?\d+$/', $normalized) === 1) {
+            return (int) $normalized;
+        }
+        if (preg_match('/^-?\d+\.\d+$/', $normalized) === 1) {
+            return (float) $normalized;
+        }
+
+        return null;
+    }
+
+    /**
+     * @param int|float|string $value
+     */
+    private function normalizeBitrixDateTime($value): ?string
+    {
+        $raw = trim((string) $value);
+        if ($raw === '') {
+            return null;
+        }
+
+        $direct = \DateTimeImmutable::createFromFormat('d.m.Y H:i:s', $raw);
+        if ($direct instanceof \DateTimeImmutable) {
+            return $direct->format('d.m.Y H:i:s');
+        }
+
+        $timestamp = strtotime($raw);
+        if ($timestamp === false) {
+            return null;
+        }
+
+        $timezone = (string) ($this->config['call_datetime_timezone'] ?? 'Europe/Moscow');
+        try {
+            return (new \DateTimeImmutable('@' . (string) $timestamp))
+                ->setTimezone(new \DateTimeZone($timezone))
+                ->format('d.m.Y H:i:s');
+        } catch (\Throwable $e) {
+            return gmdate('d.m.Y H:i:s', $timestamp);
+        }
+    }
+
+    private function buildElementName(string $callId, ScorePayloadDTO $payload): string
+    {
+        $metadata = $payload->metadata();
+        if (isset($metadata['NAME']) && is_string($metadata['NAME']) && trim($metadata['NAME']) !== '') {
+            return trim($metadata['NAME']);
+        }
+        if (isset($metadata['TITLE']) && is_string($metadata['TITLE']) && trim($metadata['TITLE']) !== '') {
+            return trim($metadata['TITLE']);
+        }
+
+        $callDateTime = $payload->callDateTime();
+        if (is_string($callDateTime) && trim($callDateTime) !== '') {
+            $dt = \DateTimeImmutable::createFromFormat('d.m.Y H:i:s', $callDateTime);
+            if ($dt instanceof \DateTimeImmutable) {
+                return sprintf('Call %s %s', $callId, $dt->format('Y-m-d H:i:s'));
+            }
+        }
+
+        $timezone = (string) ($this->config['service_timezone'] ?? $this->config['call_datetime_timezone'] ?? 'Europe/Moscow');
+        try {
+            $now = new \DateTimeImmutable('now', new \DateTimeZone($timezone));
+            return sprintf('Call %s %s', $callId, $now->format('Y-m-d H:i:s'));
+        } catch (\Throwable $e) {
+            return sprintf('Call %s %s', $callId, gmdate('Y-m-d H:i:s'));
+        }
+    }
+
+    private function findElementIdByCallId(int $iblockId, string $callId): ?int
+    {
+        $callIdPropertyCode = (string) ($this->config['call_id_property_code'] ?? 'CALL_ID');
+        $res = \CIBlockElement::GetList(
+            ['ID' => 'DESC'],
+            [
+                'IBLOCK_ID' => $iblockId,
+                'CHECK_PERMISSIONS' => 'N',
+                'PROPERTY_' . $callIdPropertyCode => $callId,
+            ],
+            false,
+            ['nTopCount' => 1],
+            ['ID']
+        );
+
+        $row = $res->Fetch();
+        if (!is_array($row) || !isset($row['ID'])) {
+            return null;
+        }
+
+        return (int) $row['ID'];
+    }
+
+    private function resolvePropertyEnumIdByValue(string $propertyCode, string $value): ?int
+    {
+        $property = \CIBlockProperty::GetList([], [
+            'IBLOCK_ID' => (int) ($this->config['iblock_id'] ?? 0),
+            'CODE' => $propertyCode,
+        ])->Fetch();
+
+        if (!is_array($property) || !isset($property['ID'])) {
+            $this->appendDebugLog(
+                sprintf('WRITER_STAGE=ENUM_PROPERTY_NOT_FOUND property=%s', $propertyCode)
+            );
+            return null;
+        }
+
+        $propertyId = (int) $property['ID'];
+        $expectedRaw = trim($value);
+        $expectedLower = mb_strtolower($expectedRaw);
+        $expectedCompact = preg_replace('/\s+/u', '', $expectedLower);
+        if (!is_string($expectedCompact)) {
+            $expectedCompact = $expectedLower;
+        }
+
+        $fallbackFirstEnumId = null;
+        $enumRes = \CIBlockPropertyEnum::GetList(
+            ['SORT' => 'ASC', 'ID' => 'ASC'],
+            ['PROPERTY_ID' => $propertyId]
+        );
+
+        while ($enum = $enumRes->Fetch()) {
+            if (!is_array($enum) || !isset($enum['ID'])) {
+                continue;
+            }
+
+            if ($fallbackFirstEnumId === null) {
+                $fallbackFirstEnumId = (int) $enum['ID'];
+            }
+
+            $enumValueRaw = isset($enum['VALUE']) && is_string($enum['VALUE']) ? trim($enum['VALUE']) : '';
+            if ($enumValueRaw === '') {
+                continue;
+            }
+
+            $enumValueLower = mb_strtolower($enumValueRaw);
+            $enumValueCompact = preg_replace('/\s+/u', '', $enumValueLower);
+            if (!is_string($enumValueCompact)) {
+                $enumValueCompact = $enumValueLower;
+            }
+
+            if ($enumValueRaw === $expectedRaw || $enumValueLower === $expectedLower || $enumValueCompact === $expectedCompact) {
+                $this->appendDebugLog(
+                    sprintf(
+                        'WRITER_STAGE=ENUM_MATCH property=%s value=%s matched_enum_value=%s enum_id=%d',
+                        $propertyCode,
+                        $value,
+                        $enumValueRaw,
+                        (int) $enum['ID']
+                    )
+                );
+                return (int) $enum['ID'];
+            }
+        }
+
+        $this->appendDebugLog(
+            sprintf(
+                'WRITER_STAGE=ENUM_NOT_FOUND property=%s value=%s fallback_first_enum_id=%s',
+                $propertyCode,
+                $value,
+                (string) ($fallbackFirstEnumId ?? 'NULL')
+            )
+        );
+        return null;
+    }
+
+    private function appendDebugLog(string $message): void
+    {
+        $logPath = $this->config['runtime_log_path'] ?? null;
+        if (!is_string($logPath) || $logPath === '') {
+            return;
+        }
+
+        $timezone = (string) ($this->config['service_timezone'] ?? $this->config['call_datetime_timezone'] ?? 'Europe/Moscow');
+        try {
+            $lineTimestamp = (new \DateTimeImmutable('now', new \DateTimeZone($timezone)))->format('c');
+        } catch (\Throwable $e) {
+            $lineTimestamp = gmdate('c');
+        }
+
+        $line = '[' . $lineTimestamp . '] ' . $message . PHP_EOL;
+        @file_put_contents($logPath, $line, FILE_APPEND | LOCK_EX);
+    }
+
+    /**
+     * @param array<string, int|float|string> $expectedPropertyValues
+     */
+    private function verifyWrite(int $elementId, array $expectedPropertyValues): bool
+    {
+        $ob = \CIBlockElement::GetByID($elementId)->GetNextElement();
+        if (!$ob) {
+            return false;
+        }
+
+        $properties = $ob->GetProperties();
+        foreach ($expectedPropertyValues as $propertyCode => $expectedValue) {
+            if (!isset($properties[$propertyCode])) {
+                return false;
+            }
+
+            $actualRaw = $properties[$propertyCode]['VALUE'] ?? null;
+            if ($actualRaw === null || $actualRaw === '') {
+                return false;
+            }
+
+            if (is_float($expectedValue)) {
+                $actual = (float) str_replace(',', '.', (string) $actualRaw);
+                if (abs($actual - $expectedValue) > 0.01) {
+                    return false;
+                }
+                continue;
+            }
+
+            if ((string) $actualRaw !== (string) $expectedValue) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}

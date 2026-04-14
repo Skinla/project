@@ -1,0 +1,29 @@
+{
+    "_comment": "cloud SOURCE_ID -> box SOURCE_ID. Проверено REST (облако) + MySQL b_crm_status (коробка): EMAIL→1 (Арбитражник 1), 2|RADIST_*→2, 2|NOTIFICATIONS→3.",
+    "source_url": "https://milleniummed.bitrix24.ru",
+    "target_url": "https://bitrix.milleniummedc.ru",
+    "created_at": "2026-03-21T12:00:00+00:00",
+    "sources": {
+        "EMAIL": "1",
+        "UC_QUY0M1": "UC_QUY0M1",
+        "UC_WLSZQY": "UC_WLSZQY",
+        "UC_WDO908": "UC_WDO908",
+        "CALL": "CALL",
+        "UC_7NTPSY": "UC_7NTPSY",
+        "ADVERTISING": "ADVERTISING",
+        "WEB": "WEB",
+        "PARTNER": "PARTNER",
+        "RECOMMENDATION": "RECOMMENDATION",
+        "TRADE_SHOW": "TRADE_SHOW",
+        "WEBFORM": "WEBFORM",
+        "BOOKING": "BOOKING",
+        "CALLBACK": "CALLBACK",
+        "RC_GENERATOR": "RC_GENERATOR",
+        "STORE": "STORE",
+        "OTHER": "OTHER",
+        "2|RADIST_ONLINE_WHATSAPP": "2",
+        "2|NOTIFICATIONS": "3",
+        "REPEAT_SALE": "REPEAT_SALE",
+        "UC_2N3ORA": "UC_2N3ORA"
+    }
+}

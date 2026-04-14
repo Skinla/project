@@ -1,0 +1,258 @@
+==== 2025-04-01 06:39:09 ====
+File: ct_20250401_063907_67eb5fdb936cf.json
+EntityType=lead, EntityId=642312
+dialedNumber=73833888471
+callerPhone=79137609198
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 13247
+    [changedFields] => null
+    [ctCallerId] => 8bf3e69bae90f0ff948ad5df2e7a27da
+    [callerphone] => 79137609198
+    [phonenumber] => 73833888471
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:73832840761@trunk.uiscom.ru:9090
+    [duration] => 23
+    [waiting_time] => 0
+    [calltime] => 2025-04-01 06:37:08
+    [timestamp] => 1743478628
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => easystom-vn4_yandex_cpc_vsena4_conm_nvs
+    [utm_content] => ad_id|16907896983|banner_id|16907896983|campaign_type|type1|campaign_id|118747294|device_type|mobile|group_id|5552921567|phrase_id|54481183386|position|0|position_type|none|placement|news.sportbox.ru|placement_type|context|region_name|Novosibirsk|correction|0|
+    [utm_term] => имплант
+    [yaClientId] => 1743478554370634195
+    [sessionId] => 1880415
+    [ctClientId] => 3200000000001462194
+    [ctGlobalId] => null
+    [hostname] => easystom-vsena4.ru
+    [url] => https://easystom-vsena4.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=easystom-vn4_yandex_cpc_vsena4_conm_nvs&utm_term=имплант&utm_content=ad_id|16907896983|banner_id|16907896983|campaign_type|type1|campaign_id|118747294|device_type|mobile|group_id|5552921567|phrase_id|54481183386|position|0|position_type|none|placement|news.sportbox.ru|placement_type|context|region_name|Novosibirsk|correction|0|&calltouch_tm=yd_c:118747294_gb:5552921567_ad:16907896983_ph:54481183386_st:context_pt:none_p:0_s:news.sportbox.ru_dt:mobile_reg:65_ret:54481183386_apt:none&yclid=751098806062022655
+    [attrs] => {}
+    [ref] => https://news.sportbox.ru/
+    [city] => novosibirsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 85.140.162.27
+    [sip_call_id] => 6e05fa8e-894d-123e-a990-005056be61dd
+    [callReferenceNumber] => 9698e6ee-0eaa-11f0-932d-41ab8fcf3b73
+    [reclink] => https://api-node32.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc0MzQ3ODc0NywiZXhwIjoyMDU4ODM4NzQ3LCJzaXRlSWQiOjczNTEyLCJjYWxsSWQiOjEzMjQ3fQ.jAMbEj1HsteswY7WwopHEyJ9OYaUtSkNIbJg_PXEvfMho4JcKCnQy-hL2UWvFyLCrWKCd6hw625GV6yj7xHbXA
+    [orderId] => null
+    [siteId] => 73512
+    [siteName] => Новосибирск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1743478747
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2025-04-01 16:28:57 ====
+File: ct_20250401_162853_67ebea15c9cf1.json
+EntityType=lead, EntityId=643374
+dialedNumber=73833888357
+callerPhone=79249900035
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 14237
+    [changedFields] => null
+    [ctCallerId] => 9048e200aea4aa0d84296c64e2e5049d
+    [callerphone] => 79249900035
+    [phonenumber] => 73833888357
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:73832840761@trunk.uiscom.ru:9090
+    [duration] => 14
+    [waiting_time] => 0
+    [calltime] => 2025-04-01 16:14:21
+    [timestamp] => 1743513261
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => easystom-vn4_yandex_cpc_vsena4_auto_nvs
+    [utm_content] => ad_id|16907903092|banner_id|16907903092|campaign_type|type1|campaign_id|118833401|device_type|mobile|group_id|5554073140|phrase_id|54499172555|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Новосибирск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1743513148249223839
+    [sessionId] => 1963165
+    [ctClientId] => 3200000000001522436
+    [ctGlobalId] => null
+    [hostname] => easystom-vsena4.ru
+    [url] => https://easystom-vsena4.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=easystom-vn4_yandex_cpc_vsena4_auto_nvs&utm_term=---autotargeting&utm_content=ad_id|16907903092|banner_id|16907903092|campaign_type|type1|campaign_id|118833401|device_type|mobile|group_id|5554073140|phrase_id|54499172555|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Новосибирск|correction|0|&calltouch_tm=yd_c:118833401_gb:5554073140_ad:16907903092_ph:54499172555_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:65_ret:54499172555_apt:none&yclid=5944692814008287231
+    [attrs] => {}
+    [ref] => https://dzen.ru/news
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 185.210.140.69
+    [sip_call_id] => 10c82d35-899e-123e-a990-005056be61dd
+    [callReferenceNumber] => 395a2d02-0efb-11f0-921c-41ab8fcf3b73
+    [reclink] => https://api-node32.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc0MzUxNDEzMywiZXhwIjoyMDU4ODc0MTMzLCJzaXRlSWQiOjczNTEyLCJjYWxsSWQiOjE0MjM3fQ.PTWsxcBOESIwm1nJ6KG2L0SeEJj9RiGS9m-uRCcT1DDAV5PyJIu9SV8eEIfZf92j2UzdxRrKJ0Uht8BiIJWMaw
+    [orderId] => null
+    [siteId] => 73512
+    [siteName] => Новосибирск
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1743514133
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2025-04-02 05:57:09 ====
+File: ct_20250402_055706_67eca782279fa.json
+EntityType=lead, EntityId=643722
+dialedNumber=73833889120
+callerPhone=79134775805
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 14593
+    [changedFields] => null
+    [ctCallerId] => e6fd808ad107afa59b057d8d8a318ae3
+    [callerphone] => 79134775805
+    [phonenumber] => 73833889120
+    [subPoolName] => null
+    [redirectNumber] => sip:73832840761@trunk.uiscom.ru:9090
+    [duration] => 30
+    [waiting_time] => 30
+    [calltime] => 2025-04-02 05:55:27
+    [timestamp] => 1743562527
+    [status] => unsuccessful
+    [statusDetails] => Вызов не был принят колл-центром
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => easystom-vn4_yandex_cpc_vsena4_main_nvs
+    [utm_content] => ad_id|16911677659|banner_id|16911677659|campaign_type|type1|campaign_id|118668454|device_type|mobile|group_id|5550863351|phrase_id|54446403115|position|0|position_type|none|placement|com.miui.cleaner|placement_type|context|region_name|Новосибирск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1743397531694856129
+    [sessionId] => 2040972
+    [ctClientId] => 3200000000001340635
+    [ctGlobalId] => null
+    [hostname] => easystom-vsena4.ru
+    [url] => https://easystom-vsena4.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=easystom-vn4_yandex_cpc_vsena4_main_nvs&utm_term=---autotargeting&utm_content=ad_id|16911677659|banner_id|16911677659|campaign_type|type1|campaign_id|118668454|device_type|mobile|group_id|5550863351|phrase_id|54446403115|position|0|position_type|none|placement|com.miui.cleaner|placement_type|context|region_name|Новосибирск|correction|0|&calltouch_tm=yd_c:118668454_gb:5550863351_ad:16911677659_ph:54446403115_st:context_pt:none_p:0_s:com.miui.cleaner_dt:mobile_reg:65_ret:54446403115_apt:none&yclid=7697130087628668927
+    [attrs] => {}
+    [callback_request_id] => 225400633
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => novosibirsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 85.140.163.238
+    [sip_call_id] => c5daf23a-8a10-123e-7ab7-005056be61fd
+    [callReferenceNumber] => ee7c21a0-0f6d-11f0-a88f-59d9f35ba11a
+    [reclink] => https://api-node32.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc0MzU2MjYyNiwiZXhwIjoyMDU4OTIyNjI2LCJzaXRlSWQiOjczNTEyLCJjYWxsSWQiOjE0NTkzfQ.8hq4RkTLUIunN9cHm2pt02GoSzzdYF7m3s-xdcbd0UKV2rrtAfIEL6kobiXsQcGleWSlUZykabWIlRms4hPlSQ
+    [orderId] => null
+    [siteId] => 73512
+    [siteName] => Новосибирск
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; 2409BRN2CY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.55 YaBrowser/24.10.5.55.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1743562626
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Энна
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79134775805
+                )
+
+            [2] => Array
+                (
+                    [name] => personalDataAgreement
+                    [value] => 1
+                )
+
+        )
+
+)
+
+

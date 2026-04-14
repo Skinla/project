@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "name": "academyprofi-catalog-module",
+    "version": 1
+  },
+  "security": {
+    "cors": {
+      "allowedDomains": []
+    }
+  },
+  "routing": {
+    "productId": {
+      "mode": "hash",
+      "param": "product"
+    }
+  },
+  "blocks": {
+    "sections": "academyprofi",
+    "assetsBaseUrl": "https://bitrix.axiom24.ru/local/akademia-profi/academyprofi-catalog-app/assets"
+  },
+  "ui": {
+    "detail": {
+      "mode": "embedded",
+      "productId": 18,
+      "pagePath": "/rabochie_professii_occg/"
+    },
+    "cta": {
+      "label": "Оставить заявку",
+      "mode": "anchor",
+      "anchor": "#request"
+    }
+  },
+  "api": {
+    "basePath": "/academyprofi-catalog",
+    "cacheTtlSeconds": 600,
+    "pageSize": 50
+  }
+}
+

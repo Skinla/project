@@ -1,0 +1,114 @@
+/**
+ * BP блок: Получить телефон лида + проверить недавние звонки.
+ * CCrmFieldMulti, нормализация, StatisticTable.
+ *
+ * Читает: CB_LEAD_ID (из переменной БП)
+ * Записывает: CB_PHONE, CB_PHONE_RESULT (passed/skipped/error), CB_PHONE_MESSAGE
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+$callLookbackMin = 10;
+
+try {
+    $leadId = (int)preg_replace('/\D+/', '', (string)$getVar('CB_LEAD_ID'));
+    $log('CB PHONE [1/4] leadId=' . $leadId);
+
+    if ($leadId <= 0) {
+        $setVar('CB_PHONE_RESULT', 'error');
+        $setVar('CB_PHONE_MESSAGE', 'leadId=0');
+        return;
+    }
+
+    if (!Loader::includeModule('crm')) {
+        $setVar('CB_PHONE_RESULT', 'error');
+        $setVar('CB_PHONE_MESSAGE', 'crm module not available');
+        return;
+    }
+
+    $phone = '';
+    if (class_exists('CCrmFieldMulti')) {
+        $res = \CCrmFieldMulti::GetList(
+            ['ID' => 'ASC'],
+            ['ENTITY_ID' => 'LEAD', 'ELEMENT_ID' => $leadId, 'TYPE_ID' => 'PHONE']
+        );
+        if ($row = $res->Fetch()) {
+            $phone = isset($row['VALUE']) ? trim((string)$row['VALUE']) : '';
+        }
+    }
+
+    $digits = preg_replace('/\D+/', '', (string)$phone);
+    if (!is_string($digits) || $digits === '') {
+        $setVar('CB_PHONE', '');
+        $setVar('CB_PHONE_RESULT', 'skipped');
+        $setVar('CB_PHONE_MESSAGE', 'У лида нет телефона');
+        $log('CB PHONE [2/4] no phone');
+        return;
+    }
+    if (strlen($digits) == 11 && $digits[0] == '8') $digits = '7' . substr($digits, 1);
+    elseif (strlen($digits) == 10) $digits = '7' . $digits;
+    if (strlen($digits) < 11) {
+        $setVar('CB_PHONE', '');
+        $setVar('CB_PHONE_RESULT', 'skipped');
+        $setVar('CB_PHONE_MESSAGE', 'Невалидный телефон');
+        $log('CB PHONE [2/4] invalid phone');
+        return;
+    }
+    $normalizedPhone = '+' . $digits;
+    $setVar('CB_PHONE', $normalizedPhone);
+    $log('CB PHONE [2/4] phone=' . $normalizedPhone);
+
+    $hasRecent = false;
+    try {
+        if (Loader::includeModule('voximplant')) {
+            $fromDate = new \Bitrix\Main\Type\DateTime(
+                date('d.m.Y H:i:s', strtotime("-{$callLookbackMin} minutes")),
+                'd.m.Y H:i:s'
+            );
+            $res = \Bitrix\Voximplant\StatisticTable::getList([
+                'filter' => [
+                    '%=PHONE_NUMBER' => '%' . $digits,
+                    '>=CALL_START_DATE' => $fromDate,
+                ],
+                'select' => ['ID'],
+                'order' => ['ID' => 'DESC'],
+                'limit' => 1,
+            ]);
+            $hasRecent = (bool)$res->fetch();
+        }
+    } catch (\Throwable $e) {
+        $log('CB PHONE [3/4] recent call check error: ' . $e->getMessage());
+    }
+
+    if ($hasRecent) {
+        $setVar('CB_PHONE_RESULT', 'skipped');
+        $setVar('CB_PHONE_MESSAGE', 'По номеру уже был звонок за последние 10 минут');
+        $log('CB PHONE [3/4] skipped: recent call');
+        return;
+    }
+
+    $setVar('CB_PHONE_RESULT', 'passed');
+    $setVar('CB_PHONE_MESSAGE', 'Телефон OK');
+    $log('CB PHONE [4/4] DONE passed');
+
+} catch (\Throwable $e) {
+    $setVar('CB_PHONE_RESULT', 'error');
+    $setVar('CB_PHONE_MESSAGE', 'Exception: ' . $e->getMessage());
+    $log('CB PHONE EXCEPTION: ' . $e->getMessage());
+}

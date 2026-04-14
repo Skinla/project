@@ -1,0 +1,1918 @@
+==== 2026-03-10 10:43:16 ====
+File: ct_20260310_104314_69afcb922d3de.json
+EntityType=lead, EntityId=636616
+dialedNumber=73919869735
+callerPhone=+79232871569
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16455472
+    [changedFields] => null
+    [ctCallerId] => ea5474fddb78ce3d01d34b7abd25529f
+    [callerphone] => +79232871569
+    [phonenumber] => 73919869735
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 331
+    [waiting_time] => 1
+    [calltime] => 2026-03-10 10:36:20
+    [timestamp] => 1773128180
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17472329021|banner_id|17472329021|campaign_type|type1|campaign_id|701723683|device_type|desktop|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|rp5.ru|placement_type|context|region_name|Дудинка|correction|0|image|chelust3
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1767933826854532542
+    [sessionId] => 934609693
+    [ctClientId] => 2100000000526789869
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17472329021|banner_id|17472329021|campaign_type|type1|campaign_id|701723683|device_type|desktop|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|rp5.ru|placement_type|context|region_name|Дудинка|correction|0|image|chelust3&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17472329021_ph:205617468004_st:context_pt:none_p:0_s:rp5.ru_dt:desktop_reg:11344_ret:205617468004_apt:none&yclid=15631511432518696959
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17472329021|banner_id|17472329021|campaign_type|type1|campaign_id|701723683|device_type|desktop|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|rp5.ru|placement_type|context|region_name|Дудинка|correction|0|image|chelust3&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17472329021_ph:205617468004_st:context_pt:none_p:0_s:rp5.ru_dt:desktop_reg:11344_ret:205617468004_apt:none&yclid=15631511432518696959
+    [ref] => https://rp5.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.236.255.246
+    [sip_call_id] => ac8f238f-96f6-123f-08b5-005056be09bc
+    [callReferenceNumber] => d52083ce-1c53-11f1-a1a6-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzEyODU5MywiZXhwIjoyMDg4NDg4NTkzLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDU1NDcyfQ.qa8ddF_y_5ryaKy4xXbftKO1CxlrqIEkCcuz_Ez0gJ_IFBM6ywcjESoVV2eXcwVsfcWA1l7vt3Dzb_XpKbhHbg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36
+    [sendingTimestamp] => 1773128593
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 10:53:19 ====
+File: ct_20260310_105317_69afcded53b2d.json
+EntityType=lead, EntityId=636636
+dialedNumber=73919869735
+callerPhone=+79130371592
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16455880
+    [changedFields] => null
+    [ctCallerId] => 1c5ec9b1917f96f1e9eb9e78d8325003
+    [callerphone] => +79130371592
+    [phonenumber] => 73919869735
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 19
+    [waiting_time] => 0
+    [calltime] => 2026-03-10 10:51:20
+    [timestamp] => 1773129080
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Sukhobuzimskoe|correction|0|image|pacient_old
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773032327676890754
+    [sessionId] => 934602808
+    [ctClientId] => 2100000000542804773
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Sukhobuzimskoe|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:101007_ret:205617468004_apt:none&yclid=3865034763025252351
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Сухобузимское|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:101007_ret:205617468004_apt:none&yclid=1182369369757057023
+    [ref] => https://dzen.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.48.51
+    [sip_call_id] => c479919a-96f8-123f-08b5-005056be09bc
+    [callReferenceNumber] => ed0e2c00-1c55-11f1-baf5-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzEyOTE5NywiZXhwIjoyMDg4NDg5MTk3LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDU1ODgwfQ.JA7GhDXXg1xsZdZ0-HUPRPKElChdTE0Tov467-9E0gYtcohDo7uF9NqZ5oVLgGRUucwBpatx-EwL602QFN2wEw
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm; Android 10; M2006C3MNG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1773129197
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 10:58:10 ====
+File: ct_20260310_105810_69afcf1294164.json
+EntityType=lead, EntityId=636636
+dialedNumber=73919869735
+callerPhone=+79130371592
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16455892
+    [changedFields] => null
+    [ctCallerId] => 1c5ec9b1917f96f1e9eb9e78d8325003
+    [callerphone] => +79130371592
+    [phonenumber] => 73919869735
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 256
+    [waiting_time] => 0
+    [calltime] => 2026-03-10 10:51:58
+    [timestamp] => 1773129118
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Sukhobuzimskoe|correction|0|image|pacient_old
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773032327676890754
+    [sessionId] => 934602808
+    [ctClientId] => 2100000000542804773
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Sukhobuzimskoe|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:101007_ret:205617468004_apt:none&yclid=3865034763025252351
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Сухобузимское|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:101007_ret:205617468004_apt:none&yclid=1182369369757057023
+    [ref] => https://dzen.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.48.51
+    [sip_call_id] => db8184f8-96f8-123f-08b5-005056be09bc
+    [callReferenceNumber] => 0417942c-1c56-11f1-860e-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzEyOTQ4OSwiZXhwIjoyMDg4NDg5NDg5LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDU1ODkyfQ.jqsD0og76Vx_gXhM_IzlIasAAFD_VH3GMWkDcrbclrnjxHAlXlKhpfFHRZ3PxQfxe0PBk-akWS8MoMZWBbrlIQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm; Android 10; M2006C3MNG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1773129489
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 12:48:26 ====
+File: ct_20260310_124826_69afe8eaa0f3b.json
+EntityType=lead, EntityId=636359
+dialedNumber=73919869734
+callerPhone=+79048966704
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16458674
+    [changedFields] => null
+    [ctCallerId] => db488bff1570ff336cf938c92130c7ca
+    [callerphone] => +79048966704
+    [phonenumber] => 73919869734
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 74
+    [waiting_time] => 1
+    [calltime] => 2026-03-10 12:45:39
+    [timestamp] => 1773135939
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.lqg.solitaire|placement_type|context|region_name|Курагино|correction|0|image|chelust
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1771927588353870604
+    [sessionId] => 934657996
+    [ctClientId] => 2100000000539648219
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.lqg.solitaire|placement_type|context|region_name|Курагино|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.lqg.solitaire_dt:mobile_reg:100999_ret:205617826965_apt:none&yclid=1777873083160592383
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.lqg.solitaire|placement_type|context|region_name|Курагино|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.lqg.solitaire_dt:mobile_reg:100999_ret:205617826965_apt:none&yclid=1777873083160592383
+    [ref] => 
+    [city] => novosibirsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.145.94
+    [sip_call_id] => bd2efee3-9708-123f-08b5-005056be09bc
+    [callReferenceNumber] => e5c4460e-1c65-11f1-99c5-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzEzNjEwNiwiZXhwIjoyMDg4NDk2MTA2LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDU4Njc0fQ._n2igtMC4dcguwnK5eleOX_sVwuGRUUCV_pqPRhr9a4P60WngB9fVEGUNhRP6P7z5bB4W1P8s8JK_PPX4KrZig
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 10; HRY-LX1T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1033 YaSearchBrowser/25.124.1 BroPP/1.0 YaSearchApp/25.124.1 webOmni Mobile Safari/537.36
+    [sendingTimestamp] => 1773136106
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 15:35:27 ====
+File: ct_20260310_153525_69b0100d474ee.json
+EntityType=lead, EntityId=640702
+dialedNumber=73919869378
+callerPhone=+79138303043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16462098
+    [changedFields] => null
+    [ctCallerId] => 1e19c887ffff13a2b5190043f0ac7bc4
+    [callerphone] => +79138303043
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2026-03-10 15:32:54
+    [timestamp] => 1773145974
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773145885440226599
+    [sessionId] => 934739847
+    [ctClientId] => 2100000000543171340
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [callback_request_id] => 234648320
+    [callback_final_attempt] => 0
+    [ref] => https://yandex.ru/
+    [city] => zheleznogorsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.196.215.8
+    [sip_call_id] => 1a3d304f-9720-123f-e6b5-005056be61fd
+    [callReferenceNumber] => 42dad85a-1c7d-11f1-847b-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzE0NjEyNSwiZXhwIjoyMDg4NTA2MTI1LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDYyMDk4fQ.YK0wTv8yUb_IRonKW-is7BzfAF9Vd4YMwd58gn1uvRa3xLZyCbaJup29Ra1dmKS5hOlwJ3EwtSNZu-7r8KI0gg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773146125
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 15:46:26 ====
+File: ct_20260310_154626_69b012a210816.json
+EntityType=lead, EntityId=640702
+dialedNumber=73919869378
+callerPhone=+79138303043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16462302
+    [changedFields] => null
+    [ctCallerId] => 1e19c887ffff13a2b5190043f0ac7bc4
+    [callerphone] => +79138303043
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2026-03-10 15:44:04
+    [timestamp] => 1773146644
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773145885440226599
+    [sessionId] => 934739847
+    [ctClientId] => 2100000000543171340
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [callback_request_id] => 234648320
+    [callback_final_attempt] => 0
+    [ref] => https://yandex.ru/
+    [city] => zheleznogorsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.196.215.8
+    [sip_call_id] => a9b12476-9721-123f-e6b5-005056be61fd
+    [callReferenceNumber] => d252890a-1c7e-11f1-b12f-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzE0Njc4NSwiZXhwIjoyMDg4NTA2Nzg1LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDYyMzAyfQ.GeE_UFxW-McU7WB6tboTvToSr1QCsFqPsAeHA4wT_xoOvUq3lj3B_i3ahvJcLQy_hd-qALXPfLqMWfr5RId50w
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773146785
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 16:03:09 ====
+File: ct_20260310_160309_69b0168d6f5a1.json
+EntityType=lead, EntityId=640702
+dialedNumber=73919869378
+callerPhone=+79138303043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16462569
+    [changedFields] => null
+    [ctCallerId] => 1e19c887ffff13a2b5190043f0ac7bc4
+    [callerphone] => +79138303043
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2026-03-10 16:00:23
+    [timestamp] => 1773147623
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773145885440226599
+    [sessionId] => 934739847
+    [ctClientId] => 2100000000543171340
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [callback_request_id] => 234648320
+    [callback_final_attempt] => 0
+    [ref] => https://yandex.ru/
+    [city] => zheleznogorsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.196.215.8
+    [sip_call_id] => f0fc07f2-9723-123f-e6b5-005056be61fd
+    [callReferenceNumber] => 199d548c-1c81-11f1-b08a-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzE0Nzc4OCwiZXhwIjoyMDg4NTA3Nzg4LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDYyNTY5fQ.VNESyrhY2kq67SMX1aeu5MSlA-MGEp_PYpXyrJlt4lb8hkRlKBqJLnU-EdF4pwNKd9UqYOstT6Zwhxay1jjmtg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773147788
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-10 16:33:10 ====
+File: ct_20260310_163310_69b01d9610614.json
+EntityType=lead, EntityId=640702
+dialedNumber=73919869378
+callerPhone=+79138303043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16463156
+    [changedFields] => null
+    [ctCallerId] => 1e19c887ffff13a2b5190043f0ac7bc4
+    [callerphone] => +79138303043
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 1
+    [waiting_time] => 1
+    [calltime] => 2026-03-10 16:31:43
+    [timestamp] => 1773149503
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773145885440226599
+    [sessionId] => 934739847
+    [ctClientId] => 2100000000543171340
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17484337896|banner_id|17484337896|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|3|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337896_ph:205690488911_st:search_pt:premium_p:3_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.PFTOL5fxA2NR3RPxW27e-ESlDZOSGTu1gkmhcOPQ0tEOZX-29SdXoNOcON5TTSbMq0TMGT3giMvsEKiqEjsnDKd5iVGztFX0al3BEo4GHCWoHcK9XKb7V1NZOw8OiYNPaXNnbGZwcmhpZmViYXB6cA.097a0ce1deb85e0ae5bbb65d470cde1f42fd07ac&yclid=1108363681395900415#dop1
+    [callback_request_id] => 234648320
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => zheleznogorsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.196.215.8
+    [sip_call_id] => 5200ab3a-9728-123f-e6b5-005056be61fd
+    [callReferenceNumber] => 7aa188bc-1c85-11f1-a797-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzE0OTU4OSwiZXhwIjoyMDg4NTA5NTg5LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDYzMTU2fQ.IuvRM_Vf6KoN3g7aGXQ3SwL6o1EITLrUq5zfzXpiE79gzT0ZJZ4w0D7l4Mp04klzzBA1BejHE5IyBUFP0wmLzQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+    [sendingTimestamp] => 1773149589
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-11 08:13:04 ====
+File: ct_20260311_081304_69b0f9e08db92.json
+EntityType=lead, EntityId=630650
+dialedNumber=73919869735
+callerPhone=+79135696290
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16467429
+    [changedFields] => null
+    [ctCallerId] => 0e1564f7419468c0f26fafbb98298a6d
+    [callerphone] => +79135696290
+    [phonenumber] => 73919869735
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 58
+    [waiting_time] => 1
+    [calltime] => 2026-03-11 08:10:53
+    [timestamp] => 1773205853
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|ru.ok.android|placement_type|context|region_name|Yesaul'sky rural settlement|correction|0|image|chelust
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773205341582244949
+    [sessionId] => 934935364
+    [ctClientId] => 2100000000543314182
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|ru.ok.android|placement_type|context|region_name|Yesaul'sky rural settlement|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:ru.ok.android_dt:mobile_reg:183746_ret:205617826965_apt:none&yclid=11686616204621905919
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|ru.ok.android|placement_type|context|region_name|Yesaul''sky rural settlement|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:ru.ok.android_dt:mobile_reg:183746_ret:205617826965_apt:none&yclid=11686616204621905919
+    [ref] => 
+    [city] => moscow
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 91.79.224.125
+    [sip_call_id] => 851efc10-97ab-123f-08b5-005056be09bc
+    [callReferenceNumber] => adb29024-1d08-11f1-9d83-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIwNTk4NCwiZXhwIjoyMDg4NTY1OTg0LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDY3NDI5fQ.oXp-SXq5DBGqbsUK7D45wbbLNWqzxChshxOogJg56-ZPuVW6kCgGMlMnupzKH6Z1x4rLoE6kwEL3JjERbCPvFw
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/130.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773205984
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-11 09:56:14 ====
+File: ct_20260311_095612_69b1120c8ffb6.json
+EntityType=lead, EntityId=641756
+dialedNumber=73919869378
+callerPhone=+79632586301
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16469186
+    [changedFields] => null
+    [ctCallerId] => 0ecebd106be574c194455fefdf9b6607
+    [callerphone] => +79632586301
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 59
+    [waiting_time] => 33
+    [calltime] => 2026-03-11 09:53:10
+    [timestamp] => 1773211990
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,ОЗ,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17624178276|banner_id|17624178276|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|1|position_type|other|placement|none|placement_type|search|region_name|Красноярск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773211978936058304
+    [sessionId] => 934971616
+    [ctClientId] => 2100000000543338028
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17624178276|banner_id|17624178276|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|1|position_type|other|placement|none|placement_type|search|region_name|Красноярск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17624178276_ph:205690488911_st:search_pt:other_p:1_s:none_dt:mobile_reg:62_ret:205690488911_apt:none&etext=2202.ODae4hubjolzWmk-mQdgJFzrT1jEZtPOTxglSkabN7YoRAQxGX8l54mnOnmNNbTr7m6f_Es5LxlF61hszpTWHmJxbmZoeWxjZHFjbmJuaGI.583fc9eb11343b5898c0e71809f0925e297d7409&yclid=15461719176458272767#dop2
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17624178276|banner_id|17624178276|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|1|position_type|other|placement|none|placement_type|search|region_name|Красноярск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17624178276_ph:205690488911_st:search_pt:other_p:1_s:none_dt:mobile_reg:62_ret:205690488911_apt:none&etext=2202.ODae4hubjolzWmk-mQdgJFzrT1jEZtPOTxglSkabN7YoRAQxGX8l54mnOnmNNbTr7m6f_Es5LxlF61hszpTWHmJxbmZoeWxjZHFjbmJuaGI.583fc9eb11343b5898c0e71809f0925e297d7409&yclid=15461719176458272767#dop2
+    [callback_request_id] => 234687469
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => novosibirsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 128.204.66.196
+    [sip_call_id] => cf24f321-97b9-123f-e6b5-005056be61fd
+    [callReferenceNumber] => f7c64210-1d16-11f1-bd9a-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIxMjE3MSwiZXhwIjoyMDg4NTcyMTcxLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDY5MTg2fQ.Xb3C74q6tY-JmSZRVWKhVhNPnOSw2SIrDZkAfX_oiUhDhvTYsgXvEVAA7SyKz5Mobomwjj8o6tsquiC_BxvpOw
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773212171
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => phone
+                    [value] => 79632586301
+                )
+
+        )
+
+)
+
+
+==== 2026-03-11 10:50:13 ====
+File: ct_20260311_105012_69b11eb438946.json
+EntityType=lead, EntityId=641860
+dialedNumber=73912287215
+callerPhone=+79131718244
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16470333
+    [changedFields] => null
+    [ctCallerId] => a29070bf4057061f4b57c1eda7079b19
+    [callerphone] => +79131718244
+    [phonenumber] => 73912287215
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 376
+    [waiting_time] => 1
+    [calltime] => 2026-03-11 10:42:17
+    [timestamp] => 1773214937
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.prison.escape.hungry.worm|placement_type|context|region_name|Krasnoyarsk|correction|0|image|chelust
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773214826556760872
+    [sessionId] => 934990350
+    [ctClientId] => 2100000000543350592
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.prison.escape.hungry.worm|placement_type|context|region_name|Krasnoyarsk|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.prison.escape.hungry.worm_dt:mobile_reg:62_ret:205617826965_apt:none&yclid=4738386050333540351
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.prison.escape.hungry.worm|placement_type|context|region_name|Krasnoyarsk|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.prison.escape.hungry.worm_dt:mobile_reg:62_ret:205617826965_apt:none&yclid=4738386050333540351
+    [ref] => 
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.215.125.175
+    [sip_call_id] => abaf0e56-97c0-123f-08b5-005056be09bc
+    [callReferenceNumber] => d4406a62-1d1d-11f1-81e1-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIxNTQxMSwiZXhwIjoyMDg4NTc1NDExLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDcwMzMzfQ.NcFrw7LcBHvRuWMAYGUwQJxB6urrbLtYTwUQkNzYK7C9u7pE84vOa2zTy2NuVsQm_pmDuGQF-Iz8mNBcV-COgg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 15; TECNO KM5n Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.120 Mobile Safari/537.36
+    [sendingTimestamp] => 1773215411
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-11 12:27:12 ====
+File: ct_20260311_122710_69b1356e91fa0.json
+EntityType=lead, EntityId=642101
+dialedNumber=73919869738
+callerPhone=+79513791088
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16472726
+    [changedFields] => null
+    [ctCallerId] => 8afb10f473d7ab25dd51b935aaf43bcb
+    [callerphone] => +79513791088
+    [phonenumber] => 73919869738
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 67
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 12:24:28
+    [timestamp] => 1773221068
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17599710442|banner_id|17599710442|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|1|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1770626913331007992
+    [sessionId] => 935032421
+    [ctClientId] => 2100000000535434923
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17599710442|banner_id|17599710442|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|1|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17599710442_ph:205690488911_st:search_pt:premium_p:1_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.npk00il4RsCRorZW8wysV85IZCEouN2P4Np4j04yriBeVUCPeJLxLShXuGfICcdIEmJ0-bzyBZM-7TdVGbUsUWd3ZmRsYmV4eGtmY2podGw.91b0b3ade9322b995ffbda839ee5674ef2cfe7e1&yclid=10199470576707567615
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17599710442|banner_id|17599710442|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|1|position_type|premium|placement|none|placement_type|search|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17599710442_ph:205690488911_st:search_pt:premium_p:1_s:none_dt:desktop_reg:20086_ret:205690488911_apt:none&etext=2202.npk00il4RsCRorZW8wysV85IZCEouN2P4Np4j04yriBeVUCPeJLxLShXuGfICcdIEmJ0-bzyBZM-7TdVGbUsUWd3ZmRsYmV4eGtmY2podGw.91b0b3ade9322b995ffbda839ee5674ef2cfe7e1&yclid=10199470576707567615
+    [ref] => https://yandex.ru/
+    [city] => zheleznogorsk
+    [browser] => YaBrowser
+    [os] => Windows
+    [device] => desktop
+    [ip] => 109.196.217.13
+    [sip_call_id] => f1db5d2e-97ce-123f-08b5-005056be09bc
+    [callReferenceNumber] => 1a70c51e-1d2c-11f1-86bb-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyMTIzMCwiZXhwIjoyMDg4NTgxMjMwLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDcyNzI2fQ.vm7MmcQMBlajVOYC0UOpFbx9pvt88ow-NMuwtaoNb9DllI-a3BeTk6r19grGpZjyxplx9eF4Z-u3P-gNC35POg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 YaBrowser/26.3.0.0 Safari/537.36
+    [sendingTimestamp] => 1773221230
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-11 13:18:15 ====
+File: ct_20260311_131812_69b1416496886.json
+EntityType=lead, EntityId=642209
+dialedNumber=73919869735
+callerPhone=+79131708435
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16473771
+    [changedFields] => null
+    [ctCallerId] => c951744f75621a0a100e496ee2beeda1
+    [callerphone] => +79131708435
+    [phonenumber] => 73919869735
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 243
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 13:12:17
+    [timestamp] => 1773223937
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17624178260|banner_id|17624178260|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|0|position_type|none|placement|com.freevpn.russiavpn|placement_type|context|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773223935893030496
+    [sessionId] => 935051440
+    [ctClientId] => 2100000000543392419
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17624178260|banner_id|17624178260|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|0|position_type|none|placement|com.freevpn.russiavpn|placement_type|context|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17624178260_ph:205690488911_st:context_pt:none_p:0_s:com.freevpn.russiavpn_dt:mobile_reg:20086_ret:205690488911_apt:none&yclid=8992465574912327679
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17624178260|banner_id|17624178260|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|0|position_type|none|placement|com.freevpn.russiavpn|placement_type|context|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17624178260_ph:205690488911_st:context_pt:none_p:0_s:com.freevpn.russiavpn_dt:mobile_reg:20086_ret:205690488911_apt:none&yclid=8992465574912327679
+    [ref] => 
+    [city] => zheleznogorsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.196.217.13
+    [sip_call_id] => 9ff317d9-97d5-123f-08b5-005056be09bc
+    [callReferenceNumber] => c8889a86-1d32-11f1-9d9d-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNDI5MSwiZXhwIjoyMDg4NTg0MjkxLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDczNzcxfQ.asaPrw7z8Ub73gPnu6dVpsPW6Rug2f0i-wPQ7vV9wlpSrZuLcDbtrIDxhmK1gblDHLgwl1G00Tggr7WLAuE11g
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773224291
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-11 13:22:11 ====
+File: ct_20260311_132209_69b1425186234.json
+EntityType=lead, EntityId=642207
+dialedNumber=73919869735
+callerPhone=+79131833378
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16473878
+    [changedFields] => null
+    [ctCallerId] => 3c6ee70bce7b26809d2c64ff7a267591
+    [callerphone] => +79131833378
+    [phonenumber] => 73919869735
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 162
+    [waiting_time] => 0
+    [calltime] => 2026-03-11 13:18:08
+    [timestamp] => 1773224288
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17624178260|banner_id|17624178260|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|0|position_type|none|placement|com.freevpn.russiavpn|placement_type|context|region_name|Железногорск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773223935893030496
+    [sessionId] => 935051440
+    [ctClientId] => 2100000000543392419
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17624178260|banner_id|17624178260|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|0|position_type|none|placement|com.freevpn.russiavpn|placement_type|context|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17624178260_ph:205690488911_st:context_pt:none_p:0_s:com.freevpn.russiavpn_dt:mobile_reg:20086_ret:205690488911_apt:none&yclid=8992465574912327679
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17624178260|banner_id|17624178260|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|0|position_type|none|placement|com.freevpn.russiavpn|placement_type|context|region_name|Железногорск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17624178260_ph:205690488911_st:context_pt:none_p:0_s:com.freevpn.russiavpn_dt:mobile_reg:20086_ret:205690488911_apt:none&yclid=8992465574912327679
+    [ref] => 
+    [city] => zheleznogorsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.196.217.13
+    [sip_call_id] => 70e199d2-97d6-123f-08b5-005056be09bc
+    [callReferenceNumber] => 9976db30-1d33-11f1-a349-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzIyNDUyOSwiZXhwIjoyMDg4NTg0NTI5LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDczODc4fQ.BhhaLU1ypwr8y391Q_8iIqDdAM9kZpE6p10-ymfkS6I9EtUh8mlAN_CoSdyC2LEgrmvkkOwA_sL8vxn79_ZK-A
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773224529
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-12 08:58:05 ====
+File: ct_20260312_085804_69b255eca1653.json
+EntityType=lead, EntityId=641860
+dialedNumber=73912287215
+callerPhone=+79131718244
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16482205
+    [changedFields] => null
+    [ctCallerId] => a29070bf4057061f4b57c1eda7079b19
+    [callerphone] => +79131718244
+    [phonenumber] => 73912287215
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 94
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 08:55:07
+    [timestamp] => 1773294907
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|com.custom.goescape|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773215621833656003
+    [sessionId] => 935328768
+    [ctClientId] => 2100000000543354353
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|com.custom.goescape|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:com.custom.goescape_dt:mobile_reg:62_ret:205617468004_apt:none&yclid=11501303469659914239
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|com.custom.goescape|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:com.custom.goescape_dt:mobile_reg:62_ret:205617468004_apt:none&yclid=12765653312028540927
+    [ref] => 
+    [city] => novosibirsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.140.217
+    [sip_call_id] => dd46af55-987a-123f-08b5-005056be09bc
+    [callReferenceNumber] => 05dcd456-1dd8-11f1-a148-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5NTA4NCwiZXhwIjoyMDg4NjU1MDg0LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDgyMjA1fQ.WGuPq8N60EhuvX3QFGZX0Ayw4Dh0se7RCzO7Pk2dXfTa35R7z3QChT8ZMOW4pMT4fvCnbXOZDq1T3lEMEgTT9A
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773295084
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-12 10:16:13 ====
+File: ct_20260312_101613_69b2683db6c83.json
+EntityType=lead, EntityId=641860
+dialedNumber=73912287215
+callerPhone=+79131718244
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16483897
+    [changedFields] => null
+    [ctCallerId] => a29070bf4057061f4b57c1eda7079b19
+    [callerphone] => +79131718244
+    [phonenumber] => 73912287215
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 22
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 10:13:14
+    [timestamp] => 1773299594
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17584787913|banner_id|17584787913|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Ivanovsky rural settlement|correction|0|image|pacient_old2
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773299185562675449
+    [sessionId] => 935363886
+    [ctClientId] => 2100000000543620881
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17584787913|banner_id|17584787913|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Ivanovsky rural settlement|correction|0|image|pacient_old2&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17584787913_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:185770_ret:205617468004_apt:none&yclid=5834193119018483711#scrollTo=_target:prices
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17584787913|banner_id|17584787913|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Ivanovsky rural settlement|correction|0|image|pacient_old2&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17584787913_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:185770_ret:205617468004_apt:none&yclid=5834193119018483711#scrollTo=_target:prices
+    [ref] => https://dzen.ru/
+    [city] => sochi
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.178.200.46
+    [sip_call_id] => c6f609a7-9885-123f-08b5-005056be09bc
+    [callReferenceNumber] => ef883b5e-1de2-11f1-a1ec-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzI5OTc3MSwiZXhwIjoyMDg4NjU5NzcxLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDgzODk3fQ.oUdAVQY2TevxW4607c5mu6MQfoGSqfbOwWVk_i5qtLNJz6EYlBvZId7H1OX1m2Qi4rid9eNAf5lbpEEcLPGfDQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm; Android 10; M2006C3MNG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 YaApp_Android/22.91.1 YaSearchBrowser/22.91.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1773299771
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-12 11:27:10 ====
+File: ct_20260312_112708_69b278dcc67ff.json
+EntityType=lead, EntityId=644483
+dialedNumber=73919869734
+callerPhone=+79135880442
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16485426
+    [changedFields] => null
+    [ctCallerId] => 08400657f57305a937a26bc47aa82d4d
+    [callerphone] => +79135880442
+    [phonenumber] => 73919869734
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 499
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 11:17:17
+    [timestamp] => 1773303437
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.sled.surfers.game|placement_type|context|region_name|Dzerzhinsky District|correction|0|image|chelust
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773301685250574665
+    [sessionId] => 935381086
+    [ctClientId] => 2100000000543632192
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.sled.surfers.game|placement_type|context|region_name|Dzerzhinsky District|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.sled.surfers.game_dt:mobile_reg:100149_ret:205617826965_apt:none&yclid=12683796764215476223
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.sled.surfers.game|placement_type|context|region_name|Dzerzhinsky District|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.sled.surfers.game_dt:mobile_reg:100149_ret:205617826965_apt:none&yclid=12683796764215476223
+    [ref] => 
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.48.32
+    [sip_call_id] => b9a8b6e5-988e-123f-08b5-005056be09bc
+    [callReferenceNumber] => e231aa54-1deb-11f1-b457-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwNDAyOCwiZXhwIjoyMDg4NjY0MDI4LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDg1NDI2fQ.fPvijnV702a-glQNykTPT5AgaANEx34rKMvQz1a1y_WZFGY2DVvhWblxiQxYLv1Yab1LJ7hxe8VvTFZA6LXvUQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773304028
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-12 12:06:10 ====
+File: ct_20260312_120609_69b282010f5c1.json
+EntityType=lead, EntityId=644692
+dialedNumber=73912287215
+callerPhone=+73917122581
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16486312
+    [changedFields] => null
+    [ctCallerId] => 57af69f88bc7406b5f53a751d42b654e
+    [callerphone] => +73917122581
+    [phonenumber] => 73912287215
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 322
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 11:59:11
+    [timestamp] => 1773305951
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => ya
+    [medium] => cpc
+    [utm_source] => ya
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17484337838|banner_id|17484337838|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Ингаш|correction|0|
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1773305880865086295
+    [sessionId] => 935412246
+    [ctClientId] => 2100000000543652771
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=ya&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_content=ad_id|17484337838|banner_id|17484337838|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Ингаш|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337838_ph:205690488911_st:search_pt:premium_p:1_s:none_dt:desktop_reg:101002_ret:205690488911_apt:none&etext=2202.SBX4uIeq1ObgqIzMlZogFeugI04_jKmSFs_lLGPEvEra1-wbpmCBrB6qq8j-zGUEUYYafILtvsi649qs5frGyWAmr9KsRtJHGojtUMhWsdhzc2xzbndwc2lqY2NjZ3pp.ab3721c4ee4c643dddb36a2de2bed3437fdc7628&yclid=9004399499684085759
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=ya&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_content=ad_id|17484337838|banner_id|17484337838|campaign_type|type1|campaign_id|705711477|device_type|desktop|group_id|5690488911|phrase_id|205690488911|position|1|position_type|premium|placement|none|placement_type|search|region_name|Нижний Ингаш|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17484337838_ph:205690488911_st:search_pt:premium_p:1_s:none_dt:desktop_reg:101002_ret:205690488911_apt:none&etext=2202.SBX4uIeq1ObgqIzMlZogFeugI04_jKmSFs_lLGPEvEra1-wbpmCBrB6qq8j-zGUEUYYafILtvsi649qs5frGyWAmr9KsRtJHGojtUMhWsdhzc2xzbndwc2lqY2NjZ3pp.ab3721c4ee4c643dddb36a2de2bed3437fdc7628&yclid=9004399499684085759
+    [ref] => https://yandex.ru/search/?text=март хорошие дни протезирование зубов&clid=2707774&win=677&lr=101002
+    [city] => novosibirsk
+    [browser] => YaBrowser
+    [os] => GNU/Linux
+    [device] => desktop
+    [ip] => 212.164.254.162
+    [sip_call_id] => 93fc409c-9894-123f-08b5-005056be09bc
+    [callReferenceNumber] => bc90e17e-1df1-11f1-8eef-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwNjM2OCwiZXhwIjoyMDg4NjY2MzY4LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDg2MzEyfQ.Du2NAlf8IaHeO5q1gqOTy0USqUaUZ9zNOPMQFToZ_agDmHgktaHM0YuueEcbvjiVBMO4n7TF93b_XiIsnQr5Ng
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36
+    [sendingTimestamp] => 1773306368
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-12 12:39:25 ====
+File: ct_20260312_123923_69b289cb811c0.json
+EntityType=lead, EntityId=644833
+dialedNumber=73919869734
+callerPhone=+79538549370
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16487124
+    [changedFields] => null
+    [ctCallerId] => eae06d277e068fd4234622f3fdd35355
+    [callerphone] => +79538549370
+    [phonenumber] => 73919869734
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 381
+    [waiting_time] => 0
+    [calltime] => 2026-03-12 12:30:44
+    [timestamp] => 1773307844
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379636|banner_id|17164379636|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.rioo.runnersubway|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773306823610443950
+    [sessionId] => 935419057
+    [ctClientId] => 2100000000543657546
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379636|banner_id|17164379636|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.rioo.runnersubway|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379636_ph:205617826965_st:context_pt:none_p:0_s:com.rioo.runnersubway_dt:mobile_reg:62_ret:205617826965_apt:none&yclid=11979922374699253759
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379636|banner_id|17164379636|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.rioo.runnersubway|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379636_ph:205617826965_st:context_pt:none_p:0_s:com.rioo.runnersubway_dt:mobile_reg:62_ret:205617826965_apt:none&yclid=11979922374699253759
+    [ref] => 
+    [city] => krasnoyarsk
+    [browser] => Opera
+    [os] => Android
+    [device] => smartphone
+    [ip] => 80.253.235.7
+    [sip_call_id] => fc5ddcf1-9898-123f-08b5-005056be09bc
+    [callReferenceNumber] => 24f02bf4-1df6-11f1-9b3f-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzMwODM2MywiZXhwIjoyMDg4NjY4MzYzLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDg3MTI0fQ.gnRGEZ4OiNFIBGq1_Y_zwWU2NieK94dxMIFtY5WX6eRyGdY_GLDBB4PMwHl53yDOH-c0G12DKRWNYdUYRplwaw
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; U; Android 13; SM-A035F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.120 Mobile Safari/537.36 OPR/98.0.2254.81553
+    [sendingTimestamp] => 1773308363
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-13 08:53:05 ====
+File: ct_20260313_085304_69b3a640ecc89.json
+EntityType=lead, EntityId=644483
+dialedNumber=73919869734
+callerPhone=+79135880442
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16496104
+    [changedFields] => null
+    [ctCallerId] => 08400657f57305a937a26bc47aa82d4d
+    [callerphone] => +79135880442
+    [phonenumber] => 73919869734
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 83
+    [waiting_time] => 1
+    [calltime] => 2026-03-13 08:50:02
+    [timestamp] => 1773381002
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|com.xgfs.freedomt.mi|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old
+    [utm_term] => ---autotargeting
+    [yaClientId] => 177338086285137271
+    [sessionId] => 935727230
+    [ctClientId] => 2100000000543879418
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|com.xgfs.freedomt.mi|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:com.xgfs.freedomt.mi_dt:mobile_reg:62_ret:205617468004_apt:none&yclid=10344225061364563967
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17160872309|banner_id|17160872309|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|com.xgfs.freedomt.mi|placement_type|context|region_name|Krasnoyarsk|correction|0|image|pacient_old&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17160872309_ph:205617468004_st:context_pt:none_p:0_s:com.xgfs.freedomt.mi_dt:mobile_reg:62_ret:205617468004_apt:none&yclid=10344225061364563967
+    [ref] => 
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => phablet
+    [ip] => 188.162.11.244
+    [sip_call_id] => 520591b0-9943-123f-08b5-005056be09bc
+    [callReferenceNumber] => 7a97e6c8-1ea0-11f1-95e2-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4MTE4NCwiZXhwIjoyMDg4NzQxMTg0LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDk2MTA0fQ.wUVr5YjMkn8nGLDsRym3xYkgK8Wo2JS-IvAHgG79n_W74emOAR4u1DlSjwQ5Gyc_kwGD02JOYXi-4rGFmpaHPQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 15; Redmi Note 14 Pro Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.51.0-gn
+    [sendingTimestamp] => 1773381184
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-13 09:03:14 ====
+File: ct_20260313_090312_69b3a8a028efe.json
+EntityType=lead, EntityId=648033
+dialedNumber=73919869378
+callerPhone=+79048954333
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16496159
+    [changedFields] => null
+    [ctCallerId] => fc397e5637e6241c7cf5e84c0bba1ce3
+    [callerphone] => +79048954333
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 523
+    [waiting_time] => 33
+    [calltime] => 2026-03-13 08:52:32
+    [timestamp] => 1773381152
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk
+    [utm_content] => ad_id|17599710445|banner_id|17599710445|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|4|position_type|premium|placement|none|placement_type|search|region_name|Красноярск|correction|0|
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773381075453716046
+    [sessionId] => 935728511
+    [ctClientId] => 2100000000543880279
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17599710445|banner_id|17599710445|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|4|position_type|premium|placement|none|placement_type|search|region_name|Красноярск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17599710445_ph:205690488911_st:search_pt:premium_p:4_s:none_dt:mobile_reg:62_ret:205690488911_apt:none&etext=2202.6jms5BiPNPiHAYjepwGYgzVwEclugiRTuevAAEl4n4NUOr2Sd8cmfPBRJLjtb65jbZak6aRZBvEIZE5bmdI8lmkWqpVkb5SFdYkz_Qt6YMtpbXhic3VzbmRlYnlrc3Rn.b4b743f068406bc4040ac1b2bd60c8ab65e017ad&yclid=6341929972296581119
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_autotarget_kk_tk&utm_term=---autotargeting&utm_content=ad_id|17599710445|banner_id|17599710445|campaign_type|type1|campaign_id|705711477|device_type|mobile|group_id|5690488911|phrase_id|205690488911|position|4|position_type|premium|placement|none|placement_type|search|region_name|Красноярск|correction|0|&calltouch_tm=yd_c:705711477_gb:5690488911_ad:17599710445_ph:205690488911_st:search_pt:premium_p:4_s:none_dt:mobile_reg:62_ret:205690488911_apt:none&etext=2202.6jms5BiPNPiHAYjepwGYgzVwEclugiRTuevAAEl4n4NUOr2Sd8cmfPBRJLjtb65jbZak6aRZBvEIZE5bmdI8lmkWqpVkb5SFdYkz_Qt6YMtpbXhic3VzbmRlYnlrc3Rn.b4b743f068406bc4040ac1b2bd60c8ab65e017ad&yclid=6341929972296581119
+    [callback_request_id] => 234797649
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 109.195.74.5
+    [sip_call_id] => ab907e61-9943-123f-e6b5-005056be61fd
+    [callReferenceNumber] => d431c82a-1ea0-11f1-b53b-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4MTc5MSwiZXhwIjoyMDg4NzQxNzkxLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDk2MTU5fQ.uwgAqLZCzSEtja4OFMgemmv9B0wYMDpVuuX3lrGT15yJZhA5ETrD-iMWI5AqSfLNN2d0TKc2BSJcIReCR7KvZg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; 22071212AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.316 YaBrowser/26.3.0.316.00 Mobile Safari/537.36
+    [sendingTimestamp] => 1773381791
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-13 10:17:12 ====
+File: ct_20260313_101710_69b3b9f6bdee8.json
+EntityType=lead, EntityId=648334
+dialedNumber=73919869378
+callerPhone=+79029114094
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16497862
+    [changedFields] => null
+    [ctCallerId] => 9bb580a4b4f9bfd332e52fd38350eff9
+    [callerphone] => +79029114094
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 206
+    [waiting_time] => 33
+    [calltime] => 2026-03-13 10:11:49
+    [timestamp] => 1773385909
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.vkontakte.android|placement_type|context|region_name|Balakhta|correction|0|image|chelust
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773385843897999154
+    [sessionId] => 935759541
+    [ctClientId] => 2100000000543900731
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.vkontakte.android|placement_type|context|region_name|Balakhta|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.vkontakte.android_dt:mobile_reg:100927_ret:205617826965_apt:none&yclid=16170703831943348223
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|com.vkontakte.android|placement_type|context|region_name|Balakhta|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:com.vkontakte.android_dt:mobile_reg:100927_ret:205617826965_apt:none&yclid=16170703831943348223
+    [callback_request_id] => 234801364
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.135.235
+    [sip_call_id] => be9dd4fa-994e-123f-e6b5-005056be61fd
+    [callReferenceNumber] => e73f0a9e-1eab-11f1-885e-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4NjIzMCwiZXhwIjoyMDg4NzQ2MjMwLCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDk3ODYyfQ.cxO8h6Gl-bYX7d6LtFAlDkGHyLOE0XVTEa3AU4Kgx0H5FomLf3Xmt7Tq3e4T4cOl8M_e0afzo0IappiWq0uKSQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773386230
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-13 11:19:22 ====
+File: ct_20260313_111920_69b3c88855d2e.json
+EntityType=lead, EntityId=648622
+dialedNumber=73919869738
+callerPhone=+79020134705
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16499354
+    [changedFields] => null
+    [ctCallerId] => cba8948d8e4c7845be579a0893c24d01
+    [callerphone] => +79020134705
+    [phonenumber] => 73919869738
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 38
+    [waiting_time] => 0
+    [calltime] => 2026-03-13 11:17:18
+    [timestamp] => 1773389838
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya
+    [utm_content] => ad_id|17472329021|banner_id|17472329021|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Yermakovskoe|correction|0|image|chelust3
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1773389819846767971
+    [sessionId] => 935789624
+    [ctClientId] => 2100000000543920867
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17472329021|banner_id|17472329021|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Yermakovskoe|correction|0|image|chelust3&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17472329021_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:100992_ret:205617468004_apt:none&yclid=6897513985926758399
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-imp_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17472329021|banner_id|17472329021|campaign_type|type1|campaign_id|701723683|device_type|mobile|group_id|5617468004|phrase_id|205617468004|position|0|position_type|none|placement|dzen.ru|placement_type|context|region_name|Yermakovskoe|correction|0|image|chelust3&calltouch_tm=yd_c:701723683_gb:5617468004_ad:17472329021_ph:205617468004_st:context_pt:none_p:0_s:dzen.ru_dt:mobile_reg:100992_ret:205617468004_apt:none&yclid=6897513985926758399
+    [ref] => https://dzen.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.8.68
+    [sip_call_id] => e48644e5-9957-123f-08b5-005056be09bc
+    [callReferenceNumber] => 0d19cade-1eb5-11f1-a833-6d045c3ffa6b
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM4OTk1OSwiZXhwIjoyMDg4NzQ5OTU5LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDk5MzU0fQ.htIBVpWwVIyOTxRQgy0WpCW7eowDVsnsAYedq6CRocAdn1sTsVrqJvDOq9RBnTXWuGQoV5WcKou-C7NCSEDTwg
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm; Android 10; MOA-LX9N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.629 YaApp_Android/24.101.1 YaSearchBrowser/24.101.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1773389959
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+
+==== 2026-03-13 11:23:06 ====
+File: ct_20260313_112306_69b3c96a1403e.json
+EntityType=lead, EntityId=629113
+dialedNumber=73919869378
+callerPhone=+79131932076
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 16499267
+    [changedFields] => null
+    [ctCallerId] => 74ec5ab04f7c496e94be0ceaabaf2ade
+    [callerphone] => +79131932076
+    [phonenumber] => 73919869378
+    [subPoolName] => null
+    [redirectNumber] => sip:krsk_synergium@krasnoyarsk.dreamteamcompany.voximplant.com
+    [duration] => 522
+    [waiting_time] => 32
+    [calltime] => 2026-03-13 11:13:03
+    [timestamp] => 1773389583
+    [status] => successful
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с формы,ОЗ с квиза сайта,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => cpc
+    [utm_source] => yandex
+    [utm_medium] => cpc
+    [utm_campaign] => sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya
+    [utm_content] => ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|games.flexus.trainminer|placement_type|context|region_name|Lesosibirsk|correction|0|image|chelust
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1772709707580310334
+    [sessionId] => 935787014
+    [ctClientId] => 2100000000541939813
+    [ctGlobalId] => null
+    [hostname] => sibdental-4implants.ru
+    [url] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|games.flexus.trainminer|placement_type|context|region_name|Lesosibirsk|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:games.flexus.trainminer_dt:mobile_reg:20090_ret:205617826965_apt:none&yclid=12865264023043309567
+    [attrs] => {}
+    [callUrl] => https://sibdental-4implants.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=sibdental-4implants_yandex_cpc_vsena4_prot-polnyj_kk_rsya&utm_term=---autotargeting&utm_content=ad_id|17164379634|banner_id|17164379634|campaign_type|type1|campaign_id|701769863|device_type|mobile|group_id|5617826965|phrase_id|205617826965|position|0|position_type|none|placement|games.flexus.trainminer|placement_type|context|region_name|Lesosibirsk|correction|0|image|chelust&calltouch_tm=yd_c:701769863_gb:5617826965_ad:17164379634_ph:205617826965_st:context_pt:none_p:0_s:games.flexus.trainminer_dt:mobile_reg:20090_ret:205617826965_apt:none&yclid=12865264023043309567
+    [callback_request_id] => 234804583
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => lesosibirsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 178.176.249.113
+    [sip_call_id] => 4caf1a7f-9957-123f-e6b5-005056be61fd
+    [callReferenceNumber] => 75507b6c-1eb4-11f1-878d-610d0c934a6c
+    [reclink] => https://api-node21.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MzM5MDE4NSwiZXhwIjoyMDg4NzUwMTg1LCJzaXRlSWQiOjUxMzc2LCJjYWxsSWQiOjE2NDk5MjY3fQ.ZrxPIMf_6QLToDpWMSfa-4_NRsBorRdggGvkIwNNI0nS90ofboV8LG8Kft3Rwd09HGCkHbFhIO5NRmCfJU0LNQ
+    [orderId] => null
+    [siteId] => 51376
+    [siteName] => sibdental-allon4.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1773390185
+    [text] => null
+    [manager] => null
+    [spam] => false
+)
+
+

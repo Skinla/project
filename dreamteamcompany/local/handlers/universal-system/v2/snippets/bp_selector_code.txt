@@ -1,0 +1,109 @@
+$blockName = 'bp_selector_code';
+$this->WriteToTrackingService('[' . $blockName . '] start');
+
+$rawJson = (string)$this->GetVariable('CB_RAW_JSON');
+$rawJson = trim((string)preg_replace('/^\xEF\xBB\xBF/', '', $rawJson));
+
+$parser = 'universal';
+$reason = 'standard_envelope';
+
+if ($rawJson === '') {
+    $parser = 'narrow';
+    $reason = 'empty_raw_json';
+} else {
+    $jsonFlags = defined('JSON_INVALID_UTF8_SUBSTITUTE') ? JSON_INVALID_UTF8_SUBSTITUTE : 0;
+    if (defined('JSON_BIGINT_AS_STRING')) {
+        $jsonFlags |= JSON_BIGINT_AS_STRING;
+    }
+
+    $data = json_decode($rawJson, true, 512, $jsonFlags);
+
+    if (!is_array($data)) {
+        $parser = 'narrow';
+        $reason = 'invalid_json';
+    } else {
+        $parsedData = isset($data['parsed_data']) && is_array($data['parsed_data']) ? $data['parsed_data'] : $data;
+        $rawHeaders = isset($data['raw_headers']) && is_array($data['raw_headers']) ? $data['raw_headers'] : [];
+        $rawBody = (string)($data['raw_body'] ?? '');
+        $queryString = (string)($rawHeaders['QUERY_STRING'] ?? '');
+
+        $assignedById = trim((string)($parsedData['ASSIGNED_BY_ID'] ?? $parsedData['assigned_by_id'] ?? ''));
+        $contentType = (string)($rawHeaders['CONTENT_TYPE'] ?? '');
+
+        if ($assignedById === '' && !empty($rawHeaders['QUERY_STRING'])) {
+            $qs = [];
+            parse_str((string)$rawHeaders['QUERY_STRING'], $qs);
+            $assignedById = trim((string)($qs['ASSIGNED_BY_ID'] ?? ''));
+        }
+
+        if ($assignedById === '' && $rawBody !== '' && preg_match('/[^=&]+=/', $rawBody)) {
+            $bodyFields = [];
+            parse_str($rawBody, $bodyFields);
+            $assignedById = trim((string)($bodyFields['ASSIGNED_BY_ID'] ?? ''));
+        }
+
+        $sourceDescription = '';
+        if ($queryString !== '') {
+            $decodedQuery = urldecode($queryString);
+            if (preg_match('/fields\[SOURCE_DESCRIPTION\]=([^&]*)/', $decodedQuery, $m)) {
+                $sourceDescription = trim((string)urldecode($m[1]));
+            }
+        }
+
+        if ($sourceDescription !== '') {
+            $parser = 'bitrix24_source_description';
+            $reason = 'query_source_description';
+        } elseif ($assignedById !== '' && mb_strpos($assignedById, 'Заявка от Bushueva') === 0) {
+            $parser = 'bushueva_supplier';
+            $reason = 'assigned_by_prefix_bushueva';
+        } else {
+            $calltouchPayload = $parsedData;
+
+            if ($rawBody !== '') {
+                $looksLikeQueryBody = preg_match('/[^=&]+=/', $rawBody) === 1;
+                if (stripos($contentType, 'application/x-www-form-urlencoded') !== false || $looksLikeQueryBody) {
+                    $bodyFields = [];
+                    parse_str($rawBody, $bodyFields);
+                    foreach ($bodyFields as $k => $v) {
+                        if (!isset($calltouchPayload[$k]) || $calltouchPayload[$k] === '') {
+                            $calltouchPayload[$k] = $v;
+                        }
+                    }
+                }
+            }
+
+            $isCalltouch = false;
+            $siteId = trim((string)($calltouchPayload['siteId'] ?? ''));
+            if ($siteId !== '' && strcasecmp($siteId, 'null') !== 0) {
+                foreach (['callerphone', 'subPoolName', 'ctCallerId', 'callphase', 'leadtype', 'hostname', 'siteName', 'url', 'callUrl'] as $key) {
+                    $value = trim((string)($calltouchPayload[$key] ?? ''));
+                    if ($value !== '' && strcasecmp($value, 'null') !== 0) {
+                        $isCalltouch = true;
+                        break;
+                    }
+                }
+            }
+
+            if ($isCalltouch) {
+                $parser = 'calltouch';
+                $reason = 'calltouch_signature';
+            } elseif (
+                !array_key_exists('parsed_data', $data) &&
+                !(array_key_exists('raw_headers', $data) && is_array($data['raw_headers'])) &&
+                !(array_key_exists('raw_body', $data) && is_string($data['raw_body'])) &&
+                !(array_key_exists('source_domain', $data) && is_string($data['source_domain']) && $data['source_domain'] !== '')
+            ) {
+                $parser = 'narrow';
+                $reason = 'no_standard_envelope';
+            }
+        }
+    }
+}
+
+$root = $this->GetRootActivity();
+if (method_exists($root, 'SetVariable')) {
+    $root->SetVariable('CB_PARSER_NAME', $parser);
+    $root->SetVariable('CB_PARSER_REASON', $reason);
+}
+
+$this->WriteToTrackingService('[' . $blockName . '] parser=' . $parser . ' reason=' . $reason);

@@ -1,0 +1,1795 @@
+{
+  "slug": "bp-templates",
+  "kind": "bizproc_registry",
+  "entity": "bizproc-templates",
+  "title": "Шаблоны БП",
+  "subtitle": "Реестр шаблонов бизнес-процессов портала и сущностей, где они запускаются.",
+  "portal": "bitrix.tms.net.ru",
+  "source": "box",
+  "sourceTitle": "Коробка",
+  "entities": [
+    {
+      "slug": "leads",
+      "title": "Лиды",
+      "kind": "base"
+    },
+    {
+      "slug": "deals",
+      "title": "Сделки",
+      "kind": "base"
+    },
+    {
+      "slug": "invoices",
+      "title": "Счета",
+      "kind": "base"
+    },
+    {
+      "slug": "contacts",
+      "title": "Контакты",
+      "kind": "base"
+    },
+    {
+      "slug": "companies",
+      "title": "Компании",
+      "kind": "base"
+    },
+    {
+      "slug": "quotes",
+      "title": "Предложения",
+      "kind": "base"
+    },
+    {
+      "slug": "sp-1058",
+      "title": "+Входящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1090",
+      "title": "+Договора от партнеров",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1082",
+      "title": "+Договоры с заказчиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1042",
+      "title": "+Договоры с поставщиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1070",
+      "title": "+Документы по договорам",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1102",
+      "title": "+Заявка на закупку",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1110",
+      "title": "+Заявка на ресурс",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1078",
+      "title": "+Заявка на транспорт",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1050",
+      "title": "+Заявки в IT-службу",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1066",
+      "title": "+Исходящие (бухгалтерия)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1062",
+      "title": "+Исходящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1054",
+      "title": "+Материалы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1046",
+      "title": "+Наименование работ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1114",
+      "title": "+Объекты",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1074",
+      "title": "+Реестр приказов",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1086",
+      "title": "+Реестр чертежей",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1098",
+      "title": "+Склады",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1106",
+      "title": "+Собственные ресурсы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1094",
+      "title": "+Сотрудники (с/п)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1038",
+      "title": "+Счета от поставщиков",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1118",
+      "title": "+Участки",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-36",
+      "title": "Документ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-39",
+      "title": "Документ компании",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "bp-templates",
+      "title": "Шаблоны БП",
+      "kind": "bizproc_registry"
+    }
+  ],
+  "templates": [
+    {
+      "id": "64",
+      "name": "Счета от поставщиков v.10 (actual)",
+      "moduleId": "crm",
+      "entity": "Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic",
+      "systemCode": null,
+      "active": "Y",
+      "autoExecute": {
+        "value": 0,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "crm",
+        "Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic",
+        "DYNAMIC_1038"
+      ],
+      "target": {
+        "moduleId": "crm",
+        "entity": "Bitrix\\Crm\\Integration\\BizProc\\Document\\Dynamic",
+        "documentCode": "DYNAMIC_1038",
+        "name": "+Счета от поставщиков"
+      }
+    },
+    {
+      "id": "11",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "19",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "27",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "35",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "43",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "51",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "59",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_QUEUE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "12",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "20",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "28",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "36",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "44",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "52",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "60",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_BUSY_RESPONSIBLE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "13",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "21",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "29",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "37",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "45",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "53",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "61",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_EFFICIENCY_LOWER",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "16",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "24",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "32",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "40",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "48",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "56",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "8",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "17",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "25",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "33",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "41",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "49",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "57",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "9",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_MANUAL_DISTRIBUTOR_CHANGE_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "14",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "22",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "30",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "38",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "46",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "54",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "6",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "15",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "23",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "31",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "39",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "47",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "55",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "7",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_FORCED_FLOW_SWITCH_TO_MANUAL_DISTRIBUTION_ABSENT",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "FLOW"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Flow",
+        "documentCode": "FLOW",
+        "name": "FLOW"
+      }
+    },
+    {
+      "id": "10",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "18",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "26",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "34",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "42",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "50",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "58",
+      "name": "TASKS_FLOW_NOTIFICATION_CAPTION_HALF_TIME_BEFORE_EXPIRE",
+      "moduleId": "tasks",
+      "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 32,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "tasks",
+        "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "TASK"
+      ],
+      "target": {
+        "moduleId": "tasks",
+        "entity": "Bitrix\\Tasks\\Integration\\Bizproc\\Document\\Task",
+        "documentCode": "TASK",
+        "name": "TASK"
+      }
+    },
+    {
+      "id": "62",
+      "name": "Шаблон автоматизации (C11:EXECUTING)",
+      "moduleId": "crm",
+      "entity": "CCrmDocumentDeal",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 8,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "crm",
+        "CCrmDocumentDeal",
+        "DEAL"
+      ],
+      "target": {
+        "moduleId": "crm",
+        "entity": "CCrmDocumentDeal",
+        "documentCode": "DEAL",
+        "name": "Сделка"
+      }
+    },
+    {
+      "id": "63",
+      "name": "Шаблон автоматизации (C12:UC_HUQJZ1)",
+      "moduleId": "crm",
+      "entity": "CCrmDocumentDeal",
+      "systemCode": "bitrix_bizproc_automation",
+      "active": "Y",
+      "autoExecute": {
+        "value": 8,
+        "labels": [
+          "Вручную"
+        ]
+      },
+      "documentType": [
+        "crm",
+        "CCrmDocumentDeal",
+        "DEAL"
+      ],
+      "target": {
+        "moduleId": "crm",
+        "entity": "CCrmDocumentDeal",
+        "documentCode": "DEAL",
+        "name": "Сделка"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Заявление на отпуск",
+      "moduleId": "lists",
+      "entity": "BizprocDocument",
+      "systemCode": "bitrix_holiday",
+      "active": "Y",
+      "autoExecute": {
+        "value": 1,
+        "labels": [
+          "При создании"
+        ]
+      },
+      "documentType": [
+        "lists",
+        "BizprocDocument",
+        "iblock_10"
+      ],
+      "target": {
+        "moduleId": "lists",
+        "entity": "BizprocDocument",
+        "documentCode": "iblock_10",
+        "name": "Список iblock_10"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Счет на оплату",
+      "moduleId": "lists",
+      "entity": "BizprocDocument",
+      "systemCode": "bitrix_invoice",
+      "active": "Y",
+      "autoExecute": {
+        "value": 1,
+        "labels": [
+          "При создании"
+        ]
+      },
+      "documentType": [
+        "lists",
+        "BizprocDocument",
+        "iblock_11"
+      ],
+      "target": {
+        "moduleId": "lists",
+        "entity": "BizprocDocument",
+        "documentCode": "iblock_11",
+        "name": "Список iblock_11"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Исходящие документы",
+      "moduleId": "lists",
+      "entity": "BizprocDocument",
+      "systemCode": "bitrix_outgoing_doc",
+      "active": "Y",
+      "autoExecute": {
+        "value": 1,
+        "labels": [
+          "При создании"
+        ]
+      },
+      "documentType": [
+        "lists",
+        "BizprocDocument",
+        "iblock_12"
+      ],
+      "target": {
+        "moduleId": "lists",
+        "entity": "BizprocDocument",
+        "documentCode": "iblock_12",
+        "name": "Список iblock_12"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Заявление на коммандировку",
+      "moduleId": "lists",
+      "entity": "BizprocDocument",
+      "systemCode": "bitrix_trip",
+      "active": "Y",
+      "autoExecute": {
+        "value": 1,
+        "labels": [
+          "При создании"
+        ]
+      },
+      "documentType": [
+        "lists",
+        "BizprocDocument",
+        "iblock_13"
+      ],
+      "target": {
+        "moduleId": "lists",
+        "entity": "BizprocDocument",
+        "documentCode": "iblock_13",
+        "name": "Список iblock_13"
+      }
+    },
+    {
+      "id": "72",
+      "name": "Новый элемент",
+      "moduleId": "lists",
+      "entity": "Bitrix\\Lists\\BizprocDocumentLists",
+      "systemCode": null,
+      "active": "Y",
+      "autoExecute": {
+        "value": 1,
+        "labels": [
+          "При создании"
+        ]
+      },
+      "documentType": [
+        "lists",
+        "Bitrix\\Lists\\BizprocDocumentLists",
+        "iblock_69"
+      ],
+      "target": {
+        "moduleId": "lists",
+        "entity": "Bitrix\\Lists\\BizprocDocumentLists",
+        "documentCode": "iblock_69",
+        "name": "Список iblock_69"
+      }
+    },
+    {
+      "id": "1",
+      "name": "Выдача наличных",
+      "moduleId": "lists",
+      "entity": "BizprocDocument",
+      "systemCode": "bitrix_cash",
+      "active": "Y",
+      "autoExecute": {
+        "value": 1,
+        "labels": [
+          "При создании"
+        ]
+      },
+      "documentType": [
+        "lists",
+        "BizprocDocument",
+        "iblock_9"
+      ],
+      "target": {
+        "moduleId": "lists",
+        "entity": "BizprocDocument",
+        "documentCode": "iblock_9",
+        "name": "Список iblock_9"
+      }
+    }
+  ],
+  "summary": {
+    "templateCount": 65,
+    "targetCount": 10,
+    "autoStartCount": 64,
+    "manualOnlyCount": 1
+  }
+}

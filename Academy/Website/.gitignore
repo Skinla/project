@@ -1,0 +1,10 @@
+# Secrets / local config
+bitrix.access.env
+
+# Generated API dumps
+webhook_check/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+

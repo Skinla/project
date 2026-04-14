@@ -1,0 +1,868 @@
+==== 2025-11-17 11:52:22 ====
+File: ct_20251117_115219_691ae243db076.json
+EntityType=lead, EntityId=442149
+dialedNumber=73833884924
+callerPhone=79139188030
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2665008
+    [changedFields] => null
+    [ctCallerId] => 6e348b5581733bf4f557fbaf79892e92
+    [callerphone] => 79139188030
+    [phonenumber] => 73833884924
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 141
+    [waiting_time] => 0
+    [calltime] => 2025-11-17 11:47:41
+    [timestamp] => 1763369261
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => link.2gis.ru
+    [medium] => referral
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1763362121447512607
+    [sessionId] => 194174810
+    [ctClientId] => 3000000000134417067
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/
+    [attrs] => {}
+    [ref] => https://link.2gis.ru/
+    [city] => omsk
+    [browser] => YaBrowser
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 176.59.137.43
+    [sip_call_id] => eb3bc957-3e34-123f-24a2-005056be83e0
+    [callReferenceNumber] => 13cbe2dc-c392-11f0-bae2-df743738bfb3
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzM2OTUzOCwiZXhwIjoyMDc4NzI5NTM4LCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjI2NjUwMDh9.a5uLnGZcxID5jVM6cBHDHKQSYNyovbi4bz7Zr0oFIm9GeLKhstWLZ6lTVwFRnZKTPZG2CbU8KmFeLybhI2yVTA
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 YaBrowser/25.10.5.774.10 SA/3 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1763369538
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-12-24 08:14:11 ====
+File: ct_20251224_081410_694b76a235c80.json
+EntityType=lead, EntityId=510836
+dialedNumber=73832283528
+callerPhone=+79059302011
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3018684
+    [changedFields] => null
+    [ctCallerId] => 0de66a12106ee7240e26b384d88ac150
+    [callerphone] => +79059302011
+    [phonenumber] => 73832283528
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 59
+    [waiting_time] => 0
+    [calltime] => 2025-12-24 08:11:23
+    [timestamp] => 1766553083
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1766550801350292175
+    [sessionId] => 215799337
+    [ctClientId] => 3000000000148919553
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/services/?ysclid=mjjiqdzcg2286879837
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 89.113.138.138
+    [sip_call_id] => d4fd6051-5b29-123f-2786-005056be83e0
+    [callReferenceNumber] => fd8e0092-e086-11f0-a627-3562aedf7710
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2NjU1MzI1MCwiZXhwIjoyMDgxOTEzMjUwLCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjMwMTg2ODR9.QFgUaAIDOkjwyZQXLbNMsa0udyqNKklM8iyXxvXBUlpxq3SqUE7gHlWmOhZ6EvWOj2kGQ3925tIpl40R7b7VOw
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; 23053RN02Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.98 YaBrowser/25.8.1.98.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1766553250
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-01-14 15:37:08 ====
+File: ct_20260114_153706_69678df250a15.json
+EntityType=lead, EntityId=544334
+dialedNumber=73833884719
+callerPhone=+79094626081
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3190128
+    [changedFields] => null
+    [ctCallerId] => 720018133e9ceaff84382d28ec44f11f
+    [callerphone] => +79094626081
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 56
+    [waiting_time] => 1
+    [calltime] => 2026-01-14 15:34:18
+    [timestamp] => 1768394058
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1768378928417865968
+    [sessionId] => 225486236
+    [ctClientId] => 3000000000155708108
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 185.210.142.237
+    [sip_call_id] => 2fe24b38-6be8-123f-e881-005056be83e0
+    [callReferenceNumber] => 5868818a-f145-11f0-8a08-9bfa144bbe81
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2ODM5NDIyNiwiZXhwIjoyMDgzNzU0MjI2LCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjMxOTAxMjh9.Qu_A_fShL6IqnBJWDL88WP-jnsFtXIUHXYVVX1flQnnViyzG2tAXyu-88J5aTkzOTtfi6JFOZO2eUSXk7vs_Rw
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1768394226
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-01-17 15:14:13 ====
+File: ct_20260117_151411_696b7d13beed4.json
+EntityType=lead, EntityId=550051
+dialedNumber=73833884719
+callerPhone=+79038002538
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3221739
+    [changedFields] => null
+    [ctCallerId] => a55a4e0c5a717759c1673c96f949a65b
+    [callerphone] => +79038002538
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 11
+    [waiting_time] => 0
+    [calltime] => 2026-01-17 15:11:41
+    [timestamp] => 1768651901
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 227312007
+    [ctClientId] => 3000000000156993169
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/doctors/
+    [attrs] => {}
+    [ref] => 
+    [city] => moscow
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 109.172.88.25
+    [sip_call_id] => 860ac4c6-6e40-123f-e881-005056be83e0
+    [callReferenceNumber] => ae990ea8-f39d-11f0-bd68-9bfa144bbe81
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2ODY1MjA1MSwiZXhwIjoyMDg0MDEyMDUxLCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjMyMjE3Mzl9.pBUGn4AcE5SmamybjnePtfZ3co2Z0rXjQyw-lvMc_Tq__hAmiyYRUYxr0dw9QkgKHZpPzldeJo5k69QgPYdOTg
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1768652051
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-01-19 15:42:06 ====
+File: ct_20260119_154205_696e269d69b49.json
+EntityType=lead, EntityId=553475
+dialedNumber=73833884719
+callerPhone=+79627077510
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3238852
+    [changedFields] => null
+    [ctCallerId] => e94d16bf73d3f14758d5637bd2d1d809
+    [callerphone] => +79627077510
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 35
+    [waiting_time] => 0
+    [calltime] => 2026-01-19 15:40:19
+    [timestamp] => 1768826419
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1768801396310311886
+    [sessionId] => 228505196
+    [ctClientId] => 3000000000157683952
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/doctors/zokirov/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => omsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.59.136.206
+    [sip_call_id] => dafccf3c-6fd6-123f-e881-005056be83e0
+    [callReferenceNumber] => 0386ece0-f534-11f0-a924-9bfa144bbe81
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2ODgyNjUyNSwiZXhwIjoyMDg0MTg2NTI1LCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjMyMzg4NTJ9.ZsUe6xiDw7lXlGSacxekmFeol03tbyqCsTnQfDvNgUae0ztbYmfZGUNTkaIDwobZhn9pIVRg8uMc_cYvNOjhzg
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1768826525
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-02-03 08:32:05 ====
+File: ct_20260203_083204_6981885428abe.json
+EntityType=lead, EntityId=578410
+dialedNumber=73833884719
+callerPhone=+79618477771
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3381243
+    [changedFields] => null
+    [ctCallerId] => 5ab918e424d0d2146f4fe21868d2a7a3
+    [callerphone] => +79618477771
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 45
+    [waiting_time] => 1
+    [calltime] => 2026-02-03 08:29:51
+    [timestamp] => 1770096591
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1770096541552844246
+    [sessionId] => 237257507
+    [ctClientId] => 3000000000163826757
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/
+    [attrs] => {}
+    [ref] => 
+    [city] => 
+    [browser] => Chrome
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 146.70.16.126
+    [sip_call_id] => 34a775a6-7b64-123f-e881-005056be83e0
+    [callReferenceNumber] => 5d323bc6-00c1-11f1-80c9-9bfa144bbe81
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MDA5NjcyMywiZXhwIjoyMDg1NDU2NzIzLCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjMzODEyNDN9.hGL2kO5r6dl2Wb_mYhV7ky2OJjnhW3W2M18ALosAEVw9AMhYcXkrRcvEZyyfA1DQlPZ2EtdI1fq4bDtRmxciPw
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/144.0.7559.95 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1770096723
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-02-26 13:52:16 ====
+File: ct_20260226_135214_69a025dec7d1b.json
+EntityType=lead, EntityId=617766
+dialedNumber=73833884719
+callerPhone=+77017121925
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3609519
+    [changedFields] => null
+    [ctCallerId] => 6d64718219e1eb8d2c4d3af31dda1bfe
+    [callerphone] => +77017121925
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 56
+    [waiting_time] => 0
+    [calltime] => 2026-02-26 13:49:19
+    [timestamp] => 1772102959
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1772099263462023494
+    [sessionId] => 251083304
+    [ctClientId] => 3000000000173200959
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/services/periodontology/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => saint petersburg
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 79.134.220.18
+    [sip_call_id] => a4d1e42c-8da3-123f-7892-005056be83e0
+    [callReferenceNumber] => cd64516c-1300-11f1-81e0-ff53ad4891b9
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjEwMzEzMywiZXhwIjoyMDg3NDYzMTMzLCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjM2MDk1MTl9.5dFhL1xldm8Ck9KHLxluGI0s0mRmg_XrCkZAniwHiGJcCAfOkoneEIDbsldjzfvQeJAGz8fmfv4VY3PKhihdeA
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1772103133
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-02-26 15:47:06 ====
+File: ct_20260226_154704_69a040c8671e6.json
+EntityType=lead, EntityId=617966
+dialedNumber=73833884719
+callerPhone=+79963808433
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3611306
+    [changedFields] => null
+    [ctCallerId] => a2927202ec209d435969608344abee82
+    [callerphone] => +79963808433
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 38
+    [waiting_time] => 1
+    [calltime] => 2026-02-26 15:45:24
+    [timestamp] => 1772109924
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => geoadv_maps
+    [medium] => cpc
+    [utm_source] => geoadv_maps
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => 17601701865
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1772107808684742583
+    [sessionId] => 251171763
+    [ctClientId] => 3000000000173257725
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/?yclid=6330983301268897791&utm_content=17601701865&utm_source=geoadv_maps
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/izi_stom/97447253270/?ll=82.935836,55.017875&profile-mode=1&source=wizbiz_new_map_multi&z=17.06
+    [city] => novosibirsk
+    [browser] => Opera
+    [os] => Windows
+    [device] => desktop
+    [ip] => 5.128.37.111
+    [sip_call_id] => dc21855f-8db3-123f-7892-005056be83e0
+    [callReferenceNumber] => 04b2b770-1311-11f1-b1d4-ff53ad4891b9
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjExMDAyNCwiZXhwIjoyMDg3NDcwMDI0LCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjM2MTEzMDZ9.7ryaLrWP8Ca0-EIuKD6u_G_UlyhA7GJzERoVO-PTMwjpVC1BzHC-g2E8UP_r0WKy5cTFnaq4MLsVoO6fpJEZAw
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0 (Edition Yx 08)
+    [sendingTimestamp] => 1772110024
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-02-27 13:05:10 ====
+File: ct_20260227_130510_69a16c5661c1d.json
+EntityType=lead, EntityId=617966
+dialedNumber=73833884719
+callerPhone=+79963808433
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3619522
+    [changedFields] => null
+    [ctCallerId] => a2927202ec209d435969608344abee82
+    [callerphone] => +79963808433
+    [phonenumber] => 73833884719
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 118
+    [waiting_time] => 1
+    [calltime] => 2026-02-27 13:02:04
+    [timestamp] => 1772186524
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => geoadv_maps
+    [medium] => cpc
+    [utm_source] => geoadv_maps
+    [utm_medium] => <не заполнено>
+    [utm_campaign] => <не заполнено>
+    [utm_content] => 17601701865
+    [utm_term] => <не заполнено>
+    [yaClientId] => 1772107808684742583
+    [sessionId] => 251171763
+    [ctClientId] => 3000000000173257725
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/?yclid=6330983301268897791&utm_content=17601701865&utm_source=geoadv_maps
+    [attrs] => {}
+    [ref] => https://yandex.ru/maps/org/izi_stom/97447253270/?ll=82.935836,55.017875&profile-mode=1&source=wizbiz_new_map_multi&z=17.06
+    [city] => novosibirsk
+    [browser] => Opera
+    [os] => Windows
+    [device] => desktop
+    [ip] => 5.128.37.111
+    [sip_call_id] => 35d8d362-8e66-123f-7892-005056be83e0
+    [callReferenceNumber] => 5e62a71e-13c3-11f1-9479-ff53ad4891b9
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjE4NjcxMCwiZXhwIjoyMDg3NTQ2NzEwLCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjM2MTk1MjJ9.5P5Ih8eidsGtOYQnnmNLxfkn7fYbZPSjOlsOk-TYCa17idqCe_hRCPFpeyTAoxVR-Y1S8Dgz5B8ivcA6wRi-1A
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0 (Edition Yx 08)
+    [sendingTimestamp] => 1772186710
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-05 14:20:24 ====
+File: ct_20260304_101009_69a7dad16d33d.json
+EntityType=lead, EntityId=626894
+dialedNumber=73833884983
+callerPhone=+79232253255
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3663525
+    [changedFields] => null
+    [ctCallerId] => b9aa8e90bbf1b7aee8e820eff599897a
+    [callerphone] => +79232253255
+    [phonenumber] => 73833884983
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 44
+    [waiting_time] => 0
+    [calltime] => 2026-03-04 10:06:55
+    [timestamp] => 1772608015
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex-direct
+    [medium] => cpc
+    [utm_source] => yandex-direct
+    [utm_medium] => cpc
+    [utm_campaign] => ao4_main_nsk_rsya
+    [utm_content] => <не заполнено>
+    [utm_term] => ---autotargeting
+    [yaClientId] => 1750302444548312623
+    [sessionId] => 99963595
+    [ctClientId] => 3000000000070313851
+    [ctGlobalId] => null
+    [hostname] => nsk-vsena4.ru
+    [url] => https://nsk-vsena4.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=ao4_main_nsk_rsya&utm_term=---autotargeting&yclid=13962034447702556671
+    [attrs] => {}
+    [ref] => https://yandex.ru/pogoda/ru/146693?lat=54.56425858&lon=78.3248291&utm_source=morda
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => phablet
+    [ip] => 185.210.142.154
+    [sip_call_id] => 91d7d691-923b-123f-7892-005056be83e0
+    [callReferenceNumber] => ba660fb4-1798-11f1-a061-ff53ad4891b9
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3MjYwODIwOCwiZXhwIjoyMDg3OTY4MjA4LCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjM2NjM1MjV9.wUQId7bZTafDZglsjQOiHtk5fZpyIjt3CFd8-V4fezG4RLhKdS5fq9XXhMVttfTu_aHbJNv0FfcSQAGeAw0ZYQ
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; TECNO LI7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.537 YaSearchBrowser/25.45.1 BroPP/1.0 YaSearchApp/25.45.1 webOmni SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1772608208
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2026-03-06 05:22:47 ====
+File: ct_20260306_052247_69aa3a7798827.json
+EntityType=lead, EntityId=626894
+dialedNumber=73833884983
+callerPhone=+79232253255
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 3682704
+    [changedFields] => null
+    [ctCallerId] => b9aa8e90bbf1b7aee8e820eff599897a
+    [callerphone] => +79232253255
+    [phonenumber] => 73833884983
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:novosib_per_lead@novosib.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 7
+    [waiting_time] => 0
+    [calltime] => 2026-03-06 05:20:03
+    [timestamp] => 1772763603
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1772598934587099206
+    [sessionId] => 254206793
+    [ctClientId] => 3000000000175296999
+    [ctGlobalId] => null
+    [hostname] => easystomdental.ru
+    [url] => https://easystomdental.ru/services/implantology/
+    [attrs] => {}
+    [ref] => https://www.google.com/
+    [city] => moscow
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 91.79.219.70
+    [sip_call_id] => d3434aa4-93a5-123f-7892-005056be83e0
+    [callReferenceNumber] => fbd6081c-1902-11f1-8759-ff53ad4891b9
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc3Mjc2Mzc2NywiZXhwIjoyMDg4MTIzNzY3LCJzaXRlSWQiOjcyNjgyLCJjYWxsSWQiOjM2ODI3MDR9.zlNAh_t7jG_fDxE_Et4xP3lir-s-VMuapkOmVovKbeHi-szI72txnfNSVTY7CHU17gyN7DTjjVpW8HaDbFwZNA
+    [orderId] => null
+    [siteId] => 72682
+    [siteName] => Новосибирск 2
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1772763767
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+

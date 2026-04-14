@@ -1,0 +1,571 @@
+{
+    "scanned_at": "2026-03-21T09:51:28+00:00",
+    "source_url": "https:\/\/milleniummed.bitrix24.ru",
+    "crm_mode": 1,
+    "used_entities": [
+        "deals",
+        "leads",
+        "contacts",
+        "companies",
+        "smart_processes"
+    ],
+    "deal_categories": [
+        {
+            "id": 0,
+            "name": "Первичная продажа",
+            "stages": [
+                {
+                    "status_id": "NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "PREPAYMENT_INVOICE",
+                    "name": "Первичный обзвон"
+                },
+                {
+                    "status_id": "PREPARATION",
+                    "name": "Повторный обзвон"
+                },
+                {
+                    "status_id": "FINAL_INVOICE",
+                    "name": "Заключительный обзвон"
+                },
+                {
+                    "status_id": "UC_2XC3O7",
+                    "name": "Не может говорить"
+                },
+                {
+                    "status_id": "UC_KB9GZS",
+                    "name": "Созвон (КВАЛ)"
+                },
+                {
+                    "status_id": "EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "UC_R57KXM",
+                    "name": "Клиент записан"
+                },
+                {
+                    "status_id": "UC_71Y6QT",
+                    "name": "Запись подтверждена"
+                },
+                {
+                    "status_id": "UC_B1R3UU",
+                    "name": "Пришел"
+                },
+                {
+                    "status_id": "WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "LOSE",
+                    "name": "Отменилась запись"
+                },
+                {
+                    "status_id": "UC_X9YV0L",
+                    "name": "Не оставлял"
+                },
+                {
+                    "status_id": "UC_Y7H815",
+                    "name": "Игнор"
+                },
+                {
+                    "status_id": "UC_8BLK4A",
+                    "name": "ФССП"
+                },
+                {
+                    "status_id": "UC_HPBE45",
+                    "name": "Банкрот"
+                },
+                {
+                    "status_id": "UC_WEU52D",
+                    "name": "Смерть"
+                },
+                {
+                    "status_id": "UC_NLDWAC",
+                    "name": "Не купил"
+                },
+                {
+                    "status_id": "UC_AZE4CR",
+                    "name": "Отказ банка"
+                },
+                {
+                    "status_id": "UC_OTZJDV",
+                    "name": "Противопоказания"
+                },
+                {
+                    "status_id": "2",
+                    "name": "НЕ РФ"
+                },
+                {
+                    "status_id": "3",
+                    "name": "ВОЗРАСТ +"
+                },
+                {
+                    "status_id": "4",
+                    "name": "ВОЗРАСТ -"
+                },
+                {
+                    "status_id": "5",
+                    "name": "Противопоказания"
+                },
+                {
+                    "status_id": "6",
+                    "name": "ГЕО"
+                },
+                {
+                    "status_id": "7",
+                    "name": "Отказ от записи после презентации (ПАЦИЕНТ)"
+                },
+                {
+                    "status_id": "8",
+                    "name": "НЗ (НЕ ТРОГАТЬ)"
+                },
+                {
+                    "status_id": "9",
+                    "name": "Отказ 10 секунд \/ негатив"
+                },
+                {
+                    "status_id": "10",
+                    "name": "Нужна только справка"
+                },
+                {
+                    "status_id": "11",
+                    "name": "ЧС"
+                },
+                {
+                    "status_id": "UC_2MC3CM",
+                    "name": "Нет жалоб"
+                },
+                {
+                    "status_id": "UC_BME726",
+                    "name": "Регистрация"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Повторная продажа",
+            "stages": [
+                {
+                    "status_id": "C6:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C6:EXECUTING",
+                    "name": "Позвонить клиенту"
+                },
+                {
+                    "status_id": "C6:UC_VX647E",
+                    "name": "созвон"
+                },
+                {
+                    "status_id": "C6:FINAL_INVOICE",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C6:UC_VP177E",
+                    "name": "Клиент записан"
+                },
+                {
+                    "status_id": "C6:UC_T7N9CC",
+                    "name": "Запись подтверждена"
+                },
+                {
+                    "status_id": "C6:UC_2ZPQEY",
+                    "name": "Пришел"
+                },
+                {
+                    "status_id": "C6:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C6:LOSE",
+                    "name": "Банкрот"
+                },
+                {
+                    "status_id": "C6:6",
+                    "name": "ИГНОР"
+                },
+                {
+                    "status_id": "C6:4",
+                    "name": "Не пришел"
+                },
+                {
+                    "status_id": "C6:APOLOGY",
+                    "name": "Смерть"
+                },
+                {
+                    "status_id": "C6:1",
+                    "name": "Не купил"
+                },
+                {
+                    "status_id": "C6:2",
+                    "name": "Отказ банка"
+                },
+                {
+                    "status_id": "C6:3",
+                    "name": "мед.отвод"
+                },
+                {
+                    "status_id": "C6:5",
+                    "name": "ФССП"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Клиника",
+            "stages": [
+                {
+                    "status_id": "C2:NEW",
+                    "name": "РОП1 (первичка)"
+                },
+                {
+                    "status_id": "C2:UC_601DA0",
+                    "name": "РОП2 (вторичка)"
+                },
+                {
+                    "status_id": "C2:PREPARATION",
+                    "name": "Координатор"
+                },
+                {
+                    "status_id": "C2:PREPAYMENT_INVOICE",
+                    "name": "Врач"
+                },
+                {
+                    "status_id": "C2:EXECUTING",
+                    "name": "Координатор"
+                },
+                {
+                    "status_id": "C2:FINAL_INVOICE",
+                    "name": "Фин.отдел"
+                },
+                {
+                    "status_id": "C2:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C2:LOSE",
+                    "name": "Отказ (клиника)"
+                },
+                {
+                    "status_id": "C2:1",
+                    "name": "Отказ (пациент)"
+                },
+                {
+                    "status_id": "C2:3",
+                    "name": "Не купил"
+                },
+                {
+                    "status_id": "C2:4",
+                    "name": "Сплит"
+                },
+                {
+                    "status_id": "C2:UC_375XUX",
+                    "name": "Возраст"
+                },
+                {
+                    "status_id": "C2:5",
+                    "name": "Мед.отвод"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Воронка отменившихся",
+            "stages": [
+                {
+                    "status_id": "C4:NEW",
+                    "name": "Все"
+                },
+                {
+                    "status_id": "C4:PREPARATION",
+                    "name": "Попытка возврата клиента"
+                },
+                {
+                    "status_id": "C4:PREPAYMENT_INVOICE",
+                    "name": "Ответ получен"
+                },
+                {
+                    "status_id": "C4:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C4:LOSE",
+                    "name": "Сделка провалена"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Абонементы",
+            "stages": [
+                {
+                    "status_id": "C8:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C8:PREPARATION",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C8:UC_T47Z7F",
+                    "name": "Клиент записан"
+                },
+                {
+                    "status_id": "C8:UC_B4GK43",
+                    "name": "Запись подтверждена"
+                },
+                {
+                    "status_id": "C8:UC_489VAO",
+                    "name": "Пришел"
+                },
+                {
+                    "status_id": "C8:UC_J35WU9",
+                    "name": "NPC"
+                },
+                {
+                    "status_id": "C8:UC_45WPEB",
+                    "name": "hjhjh"
+                },
+                {
+                    "status_id": "C8:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C8:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C8:APOLOGY",
+                    "name": "Анализ причины провала"
+                },
+                {
+                    "status_id": "C8:UC_C7QU8N",
+                    "name": "8-10"
+                },
+                {
+                    "status_id": "C8:UC_HLA40Z",
+                    "name": "0-7"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "тестовая запись к врачу",
+            "stages": [
+                {
+                    "status_id": "C10:NEW",
+                    "name": "Имя уролога"
+                },
+                {
+                    "status_id": "C10:PREPARATION",
+                    "name": "Кабинет капельниц"
+                },
+                {
+                    "status_id": "C10:PREPAYMENT_INVOIC",
+                    "name": "Имя невролога"
+                },
+                {
+                    "status_id": "C10:EXECUTING",
+                    "name": "Имя косметолога"
+                },
+                {
+                    "status_id": "C10:FINAL_INVOICE",
+                    "name": "Завершение записи"
+                },
+                {
+                    "status_id": "C10:UC_9PFCTE",
+                    "name": "Отмена (созвон)"
+                },
+                {
+                    "status_id": "C10:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C10:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C10:APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        }
+    ],
+    "lead_stages": [
+        {
+            "status_id": "NEW",
+            "name": "Не обработан"
+        },
+        {
+            "status_id": "CONVERTED",
+            "name": "Качественный лид"
+        },
+        {
+            "status_id": "UC_W1QFJG",
+            "name": "OLD"
+        },
+        {
+            "status_id": "JUNK",
+            "name": "ЧС"
+        },
+        {
+            "status_id": "1",
+            "name": "Дубль"
+        },
+        {
+            "status_id": "2",
+            "name": "Неправильный номер"
+        }
+    ],
+    "smart_process_types": [
+        {
+            "entityTypeId": 1042,
+            "title": "Для Разработки",
+            "categories": [
+                {
+                    "id": 12,
+                    "name": "Общая",
+                    "stages": []
+                }
+            ]
+        },
+        {
+            "entityTypeId": 1048,
+            "title": "Задолженности ФССП",
+            "categories": [
+                {
+                    "id": 18,
+                    "name": "Общая",
+                    "stages": []
+                }
+            ]
+        }
+    ],
+    "bizproc_templates_count": 7,
+    "projects_count": 0,
+    "disk_storages_count": 0,
+    "lists_count": 0,
+    "calendar_sections_count": 0,
+    "errors": [
+        {
+            "method": "disk.storage.get",
+            "error": "ERROR_ARGUMENT",
+            "description": "Invalid value of parameter { Parameter #0 [ <required> $id ] }."
+        },
+        {
+            "method": "disk.storage.getchildren",
+            "error": "ERROR_NOT_FOUND",
+            "description": "Could not find entity with id '0'."
+        },
+        {
+            "method": "lists.get",
+            "error": "ACCESS_DENIED",
+            "description": "Нет прав для просмотра и редактирования списка."
+        },
+        {
+            "method": "calendar.section.get",
+            "error": "",
+            "description": "Не задан обязательный параметр \"type\" для метода \"calendar.section.get\""
+        }
+    ],
+    "lead_sources": [
+        {
+            "status_id": "EMAIL",
+            "name": "Арбитражник 1"
+        },
+        {
+            "status_id": "UC_QUY0M1",
+            "name": "Арбитражник 2"
+        },
+        {
+            "status_id": "UC_WLSZQY",
+            "name": "Арбитражник 3"
+        },
+        {
+            "status_id": "UC_WDO908",
+            "name": "Арбитражник 4"
+        },
+        {
+            "status_id": "CALL",
+            "name": "Звонок"
+        },
+        {
+            "status_id": "UC_7NTPSY",
+            "name": "НЕРОН"
+        },
+        {
+            "status_id": "ADVERTISING",
+            "name": "Реклама"
+        },
+        {
+            "status_id": "WEB",
+            "name": "Веб-сайт"
+        },
+        {
+            "status_id": "PARTNER",
+            "name": "Существующий клиент"
+        },
+        {
+            "status_id": "RECOMMENDATION",
+            "name": "По рекомендации"
+        },
+        {
+            "status_id": "TRADE_SHOW",
+            "name": "Выставка"
+        },
+        {
+            "status_id": "WEBFORM",
+            "name": "CRM-форма"
+        },
+        {
+            "status_id": "BOOKING",
+            "name": "Онлайн-запись"
+        },
+        {
+            "status_id": "CALLBACK",
+            "name": "Обратный звонок"
+        },
+        {
+            "status_id": "RC_GENERATOR",
+            "name": "Генератор продаж"
+        },
+        {
+            "status_id": "STORE",
+            "name": "Интернет-магазин"
+        },
+        {
+            "status_id": "OTHER",
+            "name": "Другое"
+        },
+        {
+            "status_id": "2|RADIST_ONLINE_WHATSAPP",
+            "name": "WhatsApp - Открытая линия"
+        },
+        {
+            "status_id": "2|NOTIFICATIONS",
+            "name": "Битрикс24 СМС и WhatsApp - Открытая линия"
+        },
+        {
+            "status_id": "REPEAT_SALE",
+            "name": "Повторные продажи"
+        },
+        {
+            "status_id": "UC_2N3ORA",
+            "name": "Стоматология"
+        }
+    ],
+    "lead_honorific": [
+        {
+            "status_id": "HNR_RU_1",
+            "name": "г-н"
+        },
+        {
+            "status_id": "HNR_RU_2",
+            "name": "г-жа"
+        }
+    ]
+}

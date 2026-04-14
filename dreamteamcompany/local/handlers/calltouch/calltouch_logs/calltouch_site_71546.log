@@ -1,0 +1,5523 @@
+==== 2025-06-29 06:38:06 ====
+File: ct_20250629_063802_6860b51a64f7f.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79831680791
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1279329
+    [changedFields] => null
+    [ctCallerId] => 4bc93a649b8dd17fe6309cb46c9f13e2
+    [callerphone] => 79831680791
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 213
+    [waiting_time] => 4
+    [calltime] => 2025-06-29 06:33:10
+    [timestamp] => 1751167990
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 9ef04a95-cf3c-123e-91af-00505694e0e9
+    [callReferenceNumber] => c7849ade-5499-11f0-af45-e7b4186a6db0
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MTE2ODI4MiwiZXhwIjoyMDY2NTI4MjgyLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjEyNzkzMjl9.gp3ecGRDFn9cgZ7RuJIchEmXgElqvVI5vtETI8Yt8QbhySoFeicFhfT6uFgrc-F-PHXcRmgcv3zDKyJMPnzHoA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1751168282
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-06-29 11:14:07 ====
+File: ct_20250629_111404_6860f5cc21b24.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79233136246
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1280698
+    [changedFields] => null
+    [ctCallerId] => 90c4ebdffa6d9f41875900b25ee4696a
+    [callerphone] => 79233136246
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 254
+    [waiting_time] => 5
+    [calltime] => 2025-06-29 11:08:23
+    [timestamp] => 1751184503
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 11a771d7-cf63-123e-91af-00505694e0e9
+    [callReferenceNumber] => 3a3bb3ca-54c0-11f0-911a-e7b4186a6db0
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MTE4NDg0NCwiZXhwIjoyMDY2NTQ0ODQ0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjEyODA2OTh9.OBmkwT0emEtytYtphUFEPLn0vc3Tw0iy25sSEUDy1sC_ZpKyQ1F0q-Ik-fR8gM318nVMgMtGUxp04cPrx7wxaw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1751184844
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-06-30 07:19:07 ====
+File: ct_20250630_071903_68621037b9a11.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79135508939
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1284734
+    [changedFields] => null
+    [ctCallerId] => 6138395dc20f952bf4094d971bc0945d
+    [callerphone] => 79135508939
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 128
+    [waiting_time] => 4
+    [calltime] => 2025-06-30 07:15:21
+    [timestamp] => 1751256921
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ae2ad09e-d00b-123e-91af-00505694e0e9
+    [callReferenceNumber] => d6b9b28a-5568-11f0-8a77-e7b4186a6db0
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MTI1NzE0MywiZXhwIjoyMDY2NjE3MTQzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjEyODQ3MzR9.DbFaVPZ9mBR5RcGxCVGYDjeeGgkL9oJ3xq5UyVWV2YaGU75_hHEc8H31r8tHstQnev7ptvuDYQXsKtb-gqaeYQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1751257143
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-07-01 09:37:13 ====
+File: ct_20250701_093709_6863821512403.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79069716252
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1297235
+    [changedFields] => null
+    [ctCallerId] => 8ac243dbc3c81cc14b5f1094b9536dab
+    [callerphone] => 79069716252
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 16
+    [waiting_time] => 4
+    [calltime] => 2025-07-01 09:35:20
+    [timestamp] => 1751351720
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 668a4723-d0e8-123e-91af-00505694e0e9
+    [callReferenceNumber] => 8f1eb23a-5645-11f0-a3c1-e7b4186a6db0
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MTM1MTgyOCwiZXhwIjoyMDY2NzExODI4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjEyOTcyMzV9.LfZT-QXXwFkiPMnO0O5Gow9pDEA4YeJ8YbsmioBJJVSB0DPHxVn2nTMcn6G5P5eRLW7tM4IyccQaqlatAZ7wyQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1751351828
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-07-05 14:14:10 ====
+File: ct_20250705_141405_686908fd1e885.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79230201004
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1340274
+    [changedFields] => null
+    [ctCallerId] => 76add18496c846f93453467bbfbcb706
+    [callerphone] => 79230201004
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 42
+    [waiting_time] => 4
+    [calltime] => 2025-07-05 14:11:13
+    [timestamp] => 1751713873
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 9a86ddbe-d433-123e-5487-00505694e0e9
+    [callReferenceNumber] => c31c4d1a-5990-11f0-b55f-5de00aebc053
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MTcxNDA0NSwiZXhwIjoyMDY3MDc0MDQ1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjEzNDAyNzR9.AavXJ_L5MpusozHaBgYR7lHlfATGYrrbu9YjDo9gzma_6_9cxuTEh7dIYUXWfUukrCOQZEfG-sp1u0kLwKHsLg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1751714045
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-07-05 14:16:57 ====
+File: ct_20250705_141652_686909a4d8337.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79230201004
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1340294
+    [changedFields] => null
+    [ctCallerId] => 76add18496c846f93453467bbfbcb706
+    [callerphone] => 79230201004
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 66
+    [waiting_time] => 4
+    [calltime] => 2025-07-05 14:13:59
+    [timestamp] => 1751714039
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => fd7e93f1-d433-123e-5487-00505694e0e9
+    [callReferenceNumber] => 26143df6-5991-11f0-8cfd-5de00aebc053
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MTcxNDIxMiwiZXhwIjoyMDY3MDc0MjEyLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjEzNDAyOTR9.eHtT6IAyJBNENqaIv6yzV0cP2YO4DIs8teRNRs1IkAeRdQJ1jMAwWpWQlQgIDf6ZjCBTZmeQ6Tm8vR4QIaSgBQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1751714212
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-07-13 14:57:18 ====
+File: ct_20250713_145714_68739f1a199a2.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79233185612
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1410649
+    [changedFields] => null
+    [ctCallerId] => 734b2a193e2d280b7fe7b8c92a7c4bfc
+    [callerphone] => 79233185612
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 77
+    [waiting_time] => 4
+    [calltime] => 2025-07-13 14:54:10
+    [timestamp] => 1752407650
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => edcf0065-da82-123e-5487-00505694e0e9
+    [callReferenceNumber] => 16623b10-5fe0-11f0-8d19-5de00aebc053
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MjQwNzgzNCwiZXhwIjoyMDY3NzY3ODM0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjE0MTA2NDl9.-GBVSTncevxEuou5VPZK2zyxUQTyn3drM0ZcYqlkCIUMG_SndD8yBK78RaIlqYMLxdWAaMG4V6zKmA2PiOe03A
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1752407834
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-07-13 15:00:12 ====
+File: ct_20250713_150007_68739fc7f10e8.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79233185612
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1410674
+    [changedFields] => null
+    [ctCallerId] => 734b2a193e2d280b7fe7b8c92a7c4bfc
+    [callerphone] => 79233185612
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 48
+    [waiting_time] => 4
+    [calltime] => 2025-07-13 14:57:26
+    [timestamp] => 1752407846
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 630c8830-da83-123e-5487-00505694e0e9
+    [callReferenceNumber] => 8b9e2c04-5fe0-11f0-a74b-5de00aebc053
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MjQwODAwNywiZXhwIjoyMDY3NzY4MDA3LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjE0MTA2NzR9.QoUb708js1s6zUI69UbvatPMFVMgu0aYGHdALf49G3YcqQuAyLWSdJkN2GN8AZcqNk5BqwyKiOTabN1HyP1lKA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1752408007
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-07-14 07:41:07 ====
+File: ct_20250714_074103_68748a5f40be1.json
+EntityType=lead, EntityId=
+dialedNumber=73919886542
+callerPhone=79039880202
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 1413373
+    [changedFields] => null
+    [ctCallerId] => 4d38870e16f683db2ee3ef4bb5b97228
+    [callerphone] => 79039880202
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 106
+    [waiting_time] => 4
+    [calltime] => 2025-07-14 07:38:08
+    [timestamp] => 1752467888
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 2e59921f-db0f-123e-5487-00505694e0e9
+    [callReferenceNumber] => 56ed868a-606c-11f0-b327-5de00aebc053
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1MjQ2ODA2MywiZXhwIjoyMDY3ODI4MDYzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjE0MTMzNzN9.1VlrcEE0nSxeBBl1EhRSl1zpZuS_xD0-MtJFe8aSpoSVxQlCg_EVkcdvEIHRy5AeCundw990m-7j7_DqQa1v0g
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1752468063
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-09 09:22:03 ====
+File: ct_20251009_092202_68e7548aa9a60.json
+EntityType=lead, EntityId=371615
+dialedNumber=73919457184
+callerPhone=79632591414
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2283164
+    [changedFields] => null
+    [ctCallerId] => e02995cb54fa10a1520832c73f9caa3e
+    [callerphone] => 79632591414
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => sip:norilsk@vats260852.megapbx.ru
+    [duration] => 0
+    [waiting_time] => 0
+    [calltime] => 2025-10-09 09:20:09
+    [timestamp] => 1759990809
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1759917633951551025
+    [sessionId] => 168998396
+    [ctClientId] => 3000000000117432835
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/?ysclid=mghtinxy0785130824
+    [attrs] => {}
+    [callback_request_id] => 229161431
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 171.33.253.231
+    [sip_call_id] => d9143f12-1f7a-123f-fbb2-005056be61fd
+    [callReferenceNumber] => 01b5963e-a4d8-11f0-b0f2-39c7f200e5af
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc1OTk5MDkyMiwiZXhwIjoyMDc1MzUwOTIyLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIyODMxNjR9.hRR4Q3r7fCj5_uQGbPvb_eAw5tDtfezP0uVkBwGGF66wc52EJL_hpRVEbAa5cl9cirRenw0ypMod6A6IfpQ0xg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 15; SM-A566E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1759990922
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Юлия
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79632591414
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-10-13 13:47:00 ====
+File: ct_20251013_112421_68ecb735d0e34.json
+EntityType=lead, EntityId=378604
+dialedNumber=73919886542
+callerPhone=79132499691
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2322246
+    [changedFields] => null
+    [ctCallerId] => d328a6cecd0667e7bdb3fb4a1f13d4ac
+    [callerphone] => 79132499691
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 12
+    [waiting_time] => 4
+    [calltime] => 2025-10-13 11:22:33
+    [timestamp] => 1760343753
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 9c01b0f7-22b0-123f-bd82-00505694e0e9
+    [callReferenceNumber] => c4969a26-a80d-11f0-9256-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDM0Mzg2MSwiZXhwIjoyMDc1NzAzODYxLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIzMjIyNDZ9.SFcQNYTfpyASshhy0aYl35nd3ieyngP__HwyUUgV0dH3SyU4-nrdcvxe8obIQ0s0KrgwBWUxRVo6gdyTuZ9GpA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760343861
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-15 11:51:09 ====
+File: ct_20251015_115108_68ef607c47efb.json
+EntityType=lead, EntityId=385895
+dialedNumber=73919886542
+callerPhone=73833357590
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2345180
+    [changedFields] => null
+    [ctCallerId] => 62f1b49586e1e217cc810237e9cee112
+    [callerphone] => 73833357590
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 139
+    [waiting_time] => 4
+    [calltime] => 2025-10-15 11:41:48
+    [timestamp] => 1760517708
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => a134fd97-2445-123f-bd82-00505694e0e9
+    [callReferenceNumber] => c9ab4caa-a9a2-11f0-b990-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDUxODI2OCwiZXhwIjoyMDc1ODc4MjY4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIzNDUxODB9.wVBoymeNz03aSJ54FIiHhxJ5Q0LMeN2EBIpq-keIHASHy12p3C4akkP2vAoH5vQRb8-smPRVjpW1n8IXlr1M9w
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760518268
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-15 17:14:45 ====
+File: ct_20251015_171444_68efac54e5d60.json
+EntityType=lead, EntityId=386827
+dialedNumber=73919886542
+callerPhone=79831568043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2233374
+    [changedFields] => null
+    [ctCallerId] => 6efd2b32cf0daddd40c078785d190c4a
+    [callerphone] => 79831568043
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 223
+    [waiting_time] => 4
+    [calltime] => 2025-10-04 10:03:09
+    [timestamp] => 1759561389
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 06de12d7-1b93-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 2f64be5c-a0f0-11f0-abed-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDUzNzY4NCwiZXhwIjoyMDc1ODk3Njg0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIyMzMzNzR9.14P8E4lIJ5rdOx4Gk0aFyEI0JXE3SlDQvhv30gRIvKmAW9fT-VthW3HeEdnrs5T9EexZtHkxRKpwpT55m_DEhA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760537684
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-15 17:14:45 ====
+File: ct_20251015_171445_68efac551a54c.json
+EntityType=lead, EntityId=386828
+dialedNumber=73919886542
+callerPhone=79831568043
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2233361
+    [changedFields] => null
+    [ctCallerId] => 6efd2b32cf0daddd40c078785d190c4a
+    [callerphone] => 79831568043
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 61
+    [waiting_time] => 4
+    [calltime] => 2025-10-04 10:01:50
+    [timestamp] => 1759561310
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d7e14682-1b92-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 00773642-a0f0-11f0-9c84-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDUzNzY4NSwiZXhwIjoyMDc1ODk3Njg1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIyMzMzNjF9.tZvqzMN1s3j7sNCJhwioLCxymSLCNuBzBhYIjhmxk7qYX07tPze1W1dGvk9X7rr1zYeL7lHdM6LgsQIO6GpErg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760537685
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-15 17:14:46 ====
+File: ct_20251015_171445_68efac55bc9ee.json
+EntityType=lead, EntityId=386829
+dialedNumber=73919886542
+callerPhone=79641869807
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2232571
+    [changedFields] => null
+    [ctCallerId] => 6afb7f827690f2b645447006af548747
+    [callerphone] => 79641869807
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 121
+    [waiting_time] => 4
+    [calltime] => 2025-10-04 08:32:00
+    [timestamp] => 1759555920
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 4b115284-1b86-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 7392f4ac-a0e3-11f0-a2db-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDUzNzY4NSwiZXhwIjoyMDc1ODk3Njg1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIyMzI1NzF9.z7_0HiCT04T3XtpC3BvKFEQLbZpjnmgjPqBuNqbUb6TMU2OMB-W7SMcDeBgRB7UDKsalLq3cOuBoSgHvx6wIYg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760537685
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-20 08:26:07 ====
+File: ct_20251020_082606_68f5c7ee4e137.json
+EntityType=lead, EntityId=394511
+dialedNumber=73919886542
+callerPhone=73912194717
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2388641
+    [changedFields] => null
+    [ctCallerId] => 5da8d2f43767b5333a7d2e53cefe434a
+    [callerphone] => 73912194717
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 195
+    [waiting_time] => 4
+    [calltime] => 2025-10-20 08:21:33
+    [timestamp] => 1760937693
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 7b8b0d24-2817-123f-bd82-00505694e0e9
+    [callReferenceNumber] => a41bb3f0-ad74-11f0-bdda-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDkzNzk2NiwiZXhwIjoyMDc2Mjk3OTY2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIzODg2NDF9.4WWiNl-mXwS2QmN_xzkRAeODgFGUVt_xbuGDzQuFOPaR1yg--UPBr48JTwOHoaadVJPMcyB6AEZFwHjnv7NDDg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760937966
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-20 14:11:26 ====
+File: ct_20251020_141125_68f618dd5a1a0.json
+EntityType=lead, EntityId=395232
+dialedNumber=73919886542
+callerPhone=79135558102
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2394103
+    [changedFields] => null
+    [ctCallerId] => ba8f64867eefac7e88303b1c680a4ffb
+    [callerphone] => 79135558102
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 101
+    [waiting_time] => 4
+    [calltime] => 2025-10-20 12:46:34
+    [timestamp] => 1760953594
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 81b0a4fc-283c-123f-bd82-00505694e0e9
+    [callReferenceNumber] => aa25c34c-ad99-11f0-a0c9-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDk1NzgzNiwiZXhwIjoyMDc2MzE3ODM2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIzOTQxMDN9.gZknjp8HHwFxvEzb26IfgC-A69M6wd8VdJS1e1Mcy6ZgzhBMDUq1Dbr6mZr-J6N4BWu4-9dfW_VaqboT0HERYg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760957836
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-20 15:06:28 ====
+File: ct_20251020_150627_68f625c3ce964.json
+EntityType=lead, EntityId=395357
+dialedNumber=73919886542
+callerPhone=73912750100
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2395262
+    [changedFields] => null
+    [ctCallerId] => 60cf4b80e0a6af749204b2d0c31b37d1
+    [callerphone] => 73912750100
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 99
+    [waiting_time] => 4
+    [calltime] => 2025-10-20 13:42:31
+    [timestamp] => 1760956951
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 529ec7d0-2844-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 7b0e0df0-ada1-11f0-8797-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDk2MTk4NywiZXhwIjoyMDc2MzIxOTg3LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIzOTUyNjJ9.dMzXa5tRb10aguU8S-KEx7Zp_OoYJ7CmABxyZEbNhvV1MOAMCVsih4Oi_cUcFuYdQ6Fv6yIBmCHcsQqiZdX0kw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760961987
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-20 17:21:09 ====
+File: ct_20251020_172108_68f64554b11dc.json
+EntityType=lead, EntityId=395642
+dialedNumber=73919886542
+callerPhone=79232932282
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2397591
+    [changedFields] => null
+    [ctCallerId] => 69ac60b6042d09388aee29832baa3a65
+    [callerphone] => 79232932282
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 68
+    [waiting_time] => 5
+    [calltime] => 2025-10-20 15:49:13
+    [timestamp] => 1760964553
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 05d70776-2856-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 2e6a094c-adb3-11f0-8c5a-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MDk3MDA2OCwiZXhwIjoyMDc2MzMwMDY4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjIzOTc1OTF9.BWYJ06cXTYqjTBlnZdB-o4HWh7mUnTudx82yq90Scw4mbMRqXtCNzWqM4ojNgON3VMicFb7knm3OCKSAIftveQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1760970068
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-21 08:52:06 ====
+File: ct_20251021_085205_68f71f85d4dfd.json
+EntityType=lead, EntityId=396336
+dialedNumber=73919886542
+callerPhone=79835084834
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2401755
+    [changedFields] => null
+    [ctCallerId] => 3e8a8ab1ca173a90be5232d9a784b129
+    [callerphone] => 79835084834
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 53
+    [waiting_time] => 5
+    [calltime] => 2025-10-21 08:49:44
+    [timestamp] => 1761025784
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 968d796a-28e4-123f-bd82-00505694e0e9
+    [callReferenceNumber] => bef2a396-ae41-11f0-aef6-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTAyNTkyNSwiZXhwIjoyMDc2Mzg1OTI1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0MDE3NTV9.mdlznMh1oi08mm0t2K63Q4Qo3WnwI2sd0GT_xpY8A0U_KS2az8qDfytELUH0401qcP51jlxjYnQcNYYn2vlSyg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761025925
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-21 09:00:21 ====
+File: ct_20251021_090020_68f72174cf20f.json
+EntityType=lead, EntityId=396336
+dialedNumber=73919886542
+callerPhone=79835084834
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2401850
+    [changedFields] => null
+    [ctCallerId] => 3e8a8ab1ca173a90be5232d9a784b129
+    [callerphone] => 79835084834
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 16
+    [waiting_time] => 4
+    [calltime] => 2025-10-21 08:58:36
+    [timestamp] => 1761026316
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d32851e5-28e5-123f-bd82-00505694e0e9
+    [callReferenceNumber] => fbbb5e98-ae42-11f0-815a-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTAyNjQxNSwiZXhwIjoyMDc2Mzg2NDE1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0MDE4NTB9.PXxSQiUnshLWnX_Zez_SUs_OPoTxDhaxW5RpFXX66hQvx0OWOQxK_VhpNoVdSlg4SpBKFyxl5TmqM5zmnh6F1w
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761026415
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-23 11:24:07 ====
+File: ct_20251023_112406_68f9e6264a8bc.json
+EntityType=lead, EntityId=400578
+dialedNumber=73919886542
+callerPhone=79339971004
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2427094
+    [changedFields] => null
+    [ctCallerId] => 612f817e1b80d902d35d50df1fde07fe
+    [callerphone] => 79339971004
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 10
+    [waiting_time] => 4
+    [calltime] => 2025-10-23 11:19:02
+    [timestamp] => 1761207542
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => c63e8365-2a8b-123f-bd82-00505694e0e9
+    [callReferenceNumber] => eed23eac-afe8-11f0-8115-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTIwNzg0NiwiZXhwIjoyMDc2NTY3ODQ2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0MjcwOTR9.5fmT2yxP1bsIZUeCtvGnFBgnie4XrJXyEcwf7Gm4lQVxHo3IPjNXAk_5L5SGhzCc4wKOoHwxH9Dbrpbmqba7Bg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761207846
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-23 11:53:10 ====
+File: ct_20251023_102040_68f9d74833f97.json
+EntityType=lead, EntityId=400656
+dialedNumber=73919457184
+callerPhone=79210966044
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2425982
+    [changedFields] => null
+    [ctCallerId] => b6bbf5162ca08c1d3c2301e418771be6
+    [callerphone] => 79210966044
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => sip:norilsk@vats260852.megapbx.ru
+    [duration] => 0
+    [waiting_time] => 0
+    [calltime] => 2025-10-23 10:18:21
+    [timestamp] => 1761203901
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761194661898858486
+    [sessionId] => 178271326
+    [ctClientId] => 3000000000123696342
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/?ysclid=mh2xtpkg0756943670
+    [attrs] => {}
+    [callback_request_id] => 229474653
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => saint petersburg
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => phablet
+    [ip] => 176.53.215.154
+    [sip_call_id] => 4c551901-2a83-123f-fbb2-005056be61fd
+    [callReferenceNumber] => 74f4a550-afe0-11f0-9f77-39c7f200e5af
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTIwNDAzOSwiZXhwIjoyMDc2NTY0MDM5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0MjU5ODJ9.3TEzaOIAhpZ8EW7LVVdYep3cdBWvYFMHhU1Bzrs_vamIszioG5OZGCHHfdXlQpea9C7yeAYUjrXRtgLTpwcg2A
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; SM-F731B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1761204039
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Анастасия 
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79210966044
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-10-24 05:02:20 ====
+File: ct_20251024_050219_68fade2bb955c.json
+EntityType=lead, EntityId=401846
+dialedNumber=73919457184
+callerPhone=79777672883
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2434213
+    [changedFields] => null
+    [ctCallerId] => a48e1a8151a7e2b1f6e4de86615599d9
+    [callerphone] => 79777672883
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => sip:norilsk@vats260852.megapbx.ru
+    [duration] => 0
+    [waiting_time] => 0
+    [calltime] => 2025-10-24 05:00:10
+    [timestamp] => 1761271210
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1747295908148831953
+    [sessionId] => 178512398
+    [ctClientId] => 3000000000117037190
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [callback_request_id] => 229481378
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => moscow
+    [browser] => YaBrowser
+    [os] => Mac
+    [device] => desktop
+    [ip] => 46.138.14.34
+    [sip_call_id] => 03971cb6-2b20-123f-fbb2-005056be61fd
+    [callReferenceNumber] => 2c3852ba-b07d-11f0-a2ea-39c7f200e5af
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTI3MTMzOSwiZXhwIjoyMDc2NjMxMzM5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0MzQyMTN9.JedKpkubNDhcWVSqGzJ_u-44Du8Fzl4RApzyZboM2zUrXZ8g6in4UhPOzDIlubUAlQExEgutT0OWKe56nbEd7Q
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36
+    [sendingTimestamp] => 1761271339
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => phone
+                    [value] => 79777672883
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-10-24 10:20:23 ====
+File: ct_20251024_102022_68fb28b6405ad.json
+EntityType=lead, EntityId=402239
+dialedNumber=73919457163
+callerPhone=74954892080
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2436282
+    [changedFields] => null
+    [ctCallerId] => 94b5864b66ce2a0257f049d4f26def43
+    [callerphone] => 74954892080
+    [phonenumber] => 73919457163
+    [subPoolName] => Остальные
+    [redirectNumber] => sip:norilsk@vats260852.megapbx.ru
+    [duration] => 25
+    [waiting_time] => 25
+    [calltime] => 2025-10-24 10:18:10
+    [timestamp] => 1761290290
+    [status] => unsuccessful
+    [statusDetails] => Вызов отклонен вызываемой стороной
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => dynamic
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761286825495269255
+    [sessionId] => 178981541
+    [ctClientId] => 3000000000124170142
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 185.210.140.35
+    [sip_call_id] => 707a168c-2b4c-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 98e37c7e-b0a9-11f0-8843-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTI5MDQyMSwiZXhwIjoyMDc2NjUwNDIxLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0MzYyODJ9.SoEJkJD9DBxXMFSehDCv7RIhsynkQXlRAWeAsAcpLJ1RBBF-Cq_VtJiEe5uc9of-JYYQY2JlmEEvAk10Jcgnow
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0.1 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1761290421
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Остальные
+)
+
+
+==== 2025-10-24 17:23:04 ====
+File: ct_20251024_172303_68fb8bc752464.json
+EntityType=lead, EntityId=403306
+dialedNumber=73919886542
+callerPhone=79130413811
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2442775
+    [changedFields] => null
+    [ctCallerId] => f0fb9a986e2dbf2dd4d826dfd1b5a07b
+    [callerphone] => 79130413811
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 22
+    [waiting_time] => 4
+    [calltime] => 2025-10-24 17:21:29
+    [timestamp] => 1761315689
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 932c66ac-2b87-123f-bd82-00505694e0e9
+    [callReferenceNumber] => bbbc8bc4-b0e4-11f0-83cc-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTMxNTc4MywiZXhwIjoyMDc2Njc1NzgzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NDI3NzV9.8sbwzDie0gdEhVr8sfHGOip-hhEscnUcXWXwsdW15ZkQQweNP9RKi0q5GgmxitiwUthlr6j2337FQolFAOW1Pg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761315783
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-27 07:13:18 ====
+File: ct_20251027_071317_68fef15da07c9.json
+EntityType=lead, EntityId=406835
+dialedNumber=73919886542
+callerPhone=79620771235
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2458126
+    [changedFields] => null
+    [ctCallerId] => fd3ce98c919b24aa8c75805faf78277d
+    [callerphone] => 79620771235
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 30
+    [waiting_time] => 4
+    [calltime] => 2025-10-27 07:11:39
+    [timestamp] => 1761538299
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => e1065f56-2d8d-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 0997d92c-b2eb-11f0-aec8-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTUzODM5NywiZXhwIjoyMDc2ODk4Mzk3LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NTgxMjZ9.ooSey7cZGt1kDqrITA4wOREAW41kpevTjrlBcmkX6QN98nR_YlWdYYIVmrwcsfrf8Oi3sQbLcOYwCH2ROG-P9g
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761538397
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-27 10:22:11 ====
+File: ct_20251027_102209_68ff1da1ddb68.json
+EntityType=lead, EntityId=407106
+dialedNumber=73919886542
+callerPhone=79673427255
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2460662
+    [changedFields] => null
+    [ctCallerId] => 713511ba6e6b8f1221c8fc1800556afb
+    [callerphone] => 79673427255
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 12
+    [waiting_time] => 3
+    [calltime] => 2025-10-27 10:20:25
+    [timestamp] => 1761549625
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 3f92accb-2da8-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 6820ec3a-b305-11f0-bffd-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTU0OTcyOSwiZXhwIjoyMDc2OTA5NzI5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NjA2NjJ9.DGDOnk1o99EagxkLq4MGKI5e65eDD9R3p7bkrJ53e_9FSkys73h-tD39n2OF5qGcZRZxAmmx7eAt0Wi049eLzQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761549729
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-28 06:47:10 ====
+File: ct_20251028_064709_69003cbd94451.json
+EntityType=lead, EntityId=408710
+dialedNumber=73919886542
+callerPhone=79232958505
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2470369
+    [changedFields] => null
+    [ctCallerId] => 12ec53a9672518197991020918938e89
+    [callerphone] => 79232958505
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 204
+    [waiting_time] => 5
+    [calltime] => 2025-10-28 06:42:07
+    [timestamp] => 1761622927
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => eb66c82c-2e52-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 13fb0cb6-b3b0-11f0-8f17-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTYyMzIyOSwiZXhwIjoyMDc2OTgzMjI5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NzAzNjl9.lsNJdpEYIowI6aClQSKdCVjqw8Pt5qHltkhJzFrzB2hJ79MJ219YRbxDUhddOyG3Ktqp_l9SOKs6sM202lHDig
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761623229
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-28 06:55:14 ====
+File: ct_20251028_065514_69003ea20c68b.json
+EntityType=lead, EntityId=408723
+dialedNumber=73919886542
+callerPhone=79620771235
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2470392
+    [changedFields] => null
+    [ctCallerId] => fd3ce98c919b24aa8c75805faf78277d
+    [callerphone] => 79620771235
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 60
+    [waiting_time] => 4
+    [calltime] => 2025-10-28 06:52:50
+    [timestamp] => 1761623570
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 6a3276eb-2e54-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 92c79202-b3b1-11f0-826f-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTYyMzcxMywiZXhwIjoyMDc2OTgzNzEzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NzAzOTJ9.w64kir32F6GFOadyQPuYCUgrEF3lTt17T7Ws8c-_suYZvgh5Vi8GcBFUCBm4LJqcEvZYz-CDqEeUu8g4k7kCMg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761623713
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-28 07:50:04 ====
+File: ct_20251028_075004_69004b7c582a3.json
+EntityType=lead, EntityId=408782
+dialedNumber=73919457184
+callerPhone=79149123860
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2470596
+    [changedFields] => null
+    [ctCallerId] => 7ab43fc3a21ae32afdff9079c04e5903
+    [callerphone] => 79149123860
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => sip:krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 224
+    [waiting_time] => 58
+    [calltime] => 2025-10-28 07:44:21
+    [timestamp] => 1761626661
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1761544866798435295
+    [sessionId] => 181337694
+    [ctClientId] => 3000000000125335590
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [callback_request_id] => 229572452
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => moscow
+    [browser] => Chrome
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 91.78.217.242
+    [sip_call_id] => 9cb3f6b9-2e5b-123f-fbb2-005056be61fd
+    [callReferenceNumber] => c554a154-b3b8-11f0-afb7-39c7f200e5af
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTYyNzAwNCwiZXhwIjoyMDc2OTg3MDA0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NzA1OTZ9.zItd5V28w3FKGBdS6s0mFYyBqP0N_bzTcq_UzBKetKaaW2eI6olgT89ZmoL_yBrwX_dVhdCJadTMqpoN14sBTA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/141.0.7390.96 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1761627004
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Варвара
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79149123860
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-10-28 10:04:18 ====
+File: ct_20251028_100417_69006af15698f.json
+EntityType=lead, EntityId=409045
+dialedNumber=73919886542
+callerPhone=79082085902
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2472202
+    [changedFields] => null
+    [ctCallerId] => 9f095a87895ee619d63fa185e2f2ecb9
+    [callerphone] => 79082085902
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 272
+    [waiting_time] => 5
+    [calltime] => 2025-10-28 09:58:23
+    [timestamp] => 1761634703
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 567b12c7-2e6e-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 7ef1443e-b3cb-11f0-bc6b-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTYzNTA1NywiZXhwIjoyMDc2OTk1MDU3LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NzIyMDJ9.BaUZGHK-P2_BDBm3Q9TkHt9FB9Njt7VTohVGUIRUjRo3zIEOl9I4NqhwKjmlD27sYbzicoTOAn25JHGoFu8nvQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761635057
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-28 14:23:10 ====
+File: ct_20251028_142309_6900a79d67d5c.json
+EntityType=lead, EntityId=409634
+dialedNumber=73919886542
+callerPhone=79095275113
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2476366
+    [changedFields] => null
+    [ctCallerId] => 2403567c66279c2160827c93e148c811
+    [callerphone] => 79095275113
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 268
+    [waiting_time] => 4
+    [calltime] => 2025-10-28 13:38:20
+    [timestamp] => 1761647900
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 105c0c13-2e8d-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 38ed7b28-b3ea-11f0-b8c9-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTY1MDU4OSwiZXhwIjoyMDc3MDEwNTg5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0NzYzNjZ9.BRbMOWXoaufCm5gsGRylJ1xjDtaFdM7FrmMF7Idd2fj2JA673sLB6cmpM06KM44QK1WS59_TDV5Sv_xK0MzWog
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761650589
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-29 05:03:03 ====
+File: ct_20251029_050303_690175d75127f.json
+EntityType=lead, EntityId=410397
+dialedNumber=73919457184
+callerPhone=79131880041
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2481354
+    [changedFields] => null
+    [ctCallerId] => 874355d089e9e2c224193555fd3b82ff
+    [callerphone] => 79131880041
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => sip:krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2025-10-29 05:00:16
+    [timestamp] => 1761703216
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 176170218191632866
+    [sessionId] => 181945505
+    [ctClientId] => 3000000000126179824
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/?ysclid=mhbbzpaj61104015368
+    [attrs] => {}
+    [callback_request_id] => 229594016
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 217.144.175.74
+    [sip_call_id] => dafbdc82-2f0d-123f-fbb2-005056be61fd
+    [callReferenceNumber] => 039d1e48-b46b-11f0-b2bb-39c7f200e5af
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTcwMzM4MywiZXhwIjoyMDc3MDYzMzgzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0ODEzNTR9.p-mfCoVuq7vQ_V_mIxGLECt4E9NNvPhckip25hNJZHr-gr6ZtIP3m6wlGFrzMxVXOeAUtA6-2m3UmFkFq77IDg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 14; SM-A546E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1761703383
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Виталий
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79131880041
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-10-29 09:20:05 ====
+File: ct_20251029_092004_6901b214bbdd2.json
+EntityType=lead, EntityId=410694
+dialedNumber=73919886542
+callerPhone=79232780476
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2482562
+    [changedFields] => null
+    [ctCallerId] => ca9d9c676a2c8c78bd337c879a2afd83
+    [callerphone] => 79232780476
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 38
+    [waiting_time] => 4
+    [calltime] => 2025-10-29 09:17:55
+    [timestamp] => 1761718675
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d9428227-2f31-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 01d2d76e-b48f-11f0-bbb9-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTcxODgwNCwiZXhwIjoyMDc3MDc4ODA0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0ODI1NjJ9.SH_TcxJCFPkKif9urhHsIWls2WFIK5vnLrLIqNaN9LGCdgI3qzklzXaQZ6gSkm1h4H6wpEJeN-B6bBZtu5X0Nw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761718804
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-30 11:11:15 ====
+File: ct_20251030_111113_69031da1bcdca.json
+EntityType=lead, EntityId=412884
+dialedNumber=73919886542
+callerPhone=73912340658
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2495315
+    [changedFields] => null
+    [ctCallerId] => ace06cdf0be773fa34fded9f98d0b211
+    [callerphone] => 73912340658
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 155
+    [waiting_time] => 3
+    [calltime] => 2025-10-30 11:06:23
+    [timestamp] => 1761811583
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 2aa46158-300a-123f-bd82-00505694e0e9
+    [callReferenceNumber] => 5338f9e8-b567-11f0-875d-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTgxMTg3MSwiZXhwIjoyMDc3MTcxODcxLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI0OTUzMTV9.qHTTUV9r5lYHMDnsTp3qQvJEV5XkZZXua6PeODOJY5Rok0jNezzfzNG-xHKw9GXQwgh_XO_rNCtdAywrKtsvXQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761811871
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-31 08:55:05 ====
+File: ct_20251031_085504_69044f38aefa2.json
+EntityType=lead, EntityId=414669
+dialedNumber=73919886542
+callerPhone=79184520342
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2503572
+    [changedFields] => null
+    [ctCallerId] => 0f08707ba2e8f5f787f6f3501178057c
+    [callerphone] => 79184520342
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 85
+    [waiting_time] => 4
+    [calltime] => 2025-10-31 08:51:57
+    [timestamp] => 1761889917
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 8d9e542c-30c0-123f-bd82-00505694e0e9
+    [callReferenceNumber] => b6323e36-b61d-11f0-9147-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTg5MDEwNCwiZXhwIjoyMDc3MjUwMTA0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MDM1NzJ9.3ZunatHM0JPCFZQ8lao--bsLhq_dYCxAMNxvnBiDsxalJ67XIR3-7KSd6qOUPpQjBWkJC2xobVz4j83QO6G_EA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761890104
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-10-31 11:29:10 ====
+File: ct_20251031_112909_690473557d447.json
+EntityType=lead, EntityId=414989
+dialedNumber=73919886542
+callerPhone=73912112333
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2505839
+    [changedFields] => null
+    [ctCallerId] => 574985d14d67a3b5b406b1a7a87d1e0d
+    [callerphone] => 73912112333
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 430
+    [waiting_time] => 3
+    [calltime] => 2025-10-31 11:17:01
+    [timestamp] => 1761898621
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d164d401-30d4-123f-bd82-00505694e0e9
+    [callReferenceNumber] => f9ed2ae6-b631-11f0-850a-f77fccf655e7
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTg5OTM0OSwiZXhwIjoyMDc3MjU5MzQ5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MDU4Mzl9.ZYI3Rsg4Bw3tEa7btZ62-tqnedaE0YDnT_R1iVMGxcK4hUm3Q7M2iMj7S3R3WI4SN0dWRNBqm9XGCvGxj7kHew
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761899349
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-01 13:29:10 ====
+File: ct_20251101_132909_6905e0f528285.json
+EntityType=lead, EntityId=417088
+dialedNumber=73919886542
+callerPhone=79233116453
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2517758
+    [changedFields] => null
+    [ctCallerId] => 35d129d078358fac02af4ae23c8d8a5b
+    [callerphone] => 79233116453
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 51
+    [waiting_time] => 4
+    [calltime] => 2025-11-01 13:26:17
+    [timestamp] => 1761992777
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 0b082a04-31b0-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 339545e0-b70d-11f0-9875-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MTk5Mjk0OCwiZXhwIjoyMDc3MzUyOTQ4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MTc3NTh9.eulxCf_AfJJiyyTDele4OnWFUYUYa2DoZCZmAWzSp0LovGlXxQELS8MLUU_xJLA-Dsk_eTvi0qNkdSGjPebSlg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1761992948
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-02 10:30:15 ====
+File: ct_20251102_103014_6907088625361.json
+EntityType=lead, EntityId=418418
+dialedNumber=73919886542
+callerPhone=73912888288
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2523503
+    [changedFields] => null
+    [ctCallerId] => 01ef6acf9f10e38e108d81e7312f1229
+    [callerphone] => 73912888288
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 446
+    [waiting_time] => 4
+    [calltime] => 2025-11-02 10:20:51
+    [timestamp] => 1762068051
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 4da8a009-325f-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 763dc5de-b7bc-11f0-b055-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjA2ODYxNCwiZXhwIjoyMDc3NDI4NjE0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MjM1MDN9.vhu7YwI2gLsKh33-FkquH86Hce0XAETavr1KUpaKRNGI3YyXVcEd9RA1DspwGF4T9dtwW8ovrSdoXm-Og-pW8w
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762068614
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-03 10:29:09 ====
+File: ct_20251103_102908_690859c4c18a9.json
+EntityType=lead, EntityId=419908
+dialedNumber=73919457184
+callerPhone=79504204444
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2530687
+    [changedFields] => null
+    [ctCallerId] => dfe0716cbc25edf0aa0831dcbf8eb50c
+    [callerphone] => 79504204444
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2025-11-03 10:26:58
+    [timestamp] => 1762154818
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [sessionId] => 185129430
+    [ctClientId] => 3000000000128340025
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [callback_request_id] => 229694885
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => novosibirsk
+    [browser] => Safari
+    [os] => iOS
+    [device] => smartphone
+    [ip] => 176.59.134.57
+    [sip_call_id] => 52bd2cbe-3329-123f-e7ab-005056be61fd
+    [callReferenceNumber] => 7b5e9604-b886-11f0-b0a6-67bf64e5467c
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjE1NDk0OCwiZXhwIjoyMDc3NTE0OTQ4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MzA2ODd9.t8ZKL9vc2Eu61s_stXNXD9h8MS9ExXdSsKozgo25Q8-YCj7i8HOhhT2DDKNiUEDM8PZH8tgfvqHeR0pXk-C-Wg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1
+    [sendingTimestamp] => 1762154948
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Инна
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79504204444
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-03 10:35:10 ====
+File: ct_20251103_103509_69085b2d7e01d.json
+EntityType=lead, EntityId=419926
+dialedNumber=73919886542
+callerPhone=79685936974
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2530710
+    [changedFields] => null
+    [ctCallerId] => c554210f73115ece469979c2a5f50673
+    [callerphone] => 79685936974
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 324
+    [waiting_time] => 3
+    [calltime] => 2025-11-03 10:28:02
+    [timestamp] => 1762154882
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 78d3830e-3329-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => a16739dc-b886-11f0-a2d2-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjE1NTMwOSwiZXhwIjoyMDc3NTE1MzA5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MzA3MTB9.mWnPkQBE5nQ-tR_3_OK4TG5gxNlasqDhfm1nops-BqzyT2GAa1erpHW1hdj4L19DqaK-1A0fRfWZwthvuLTItA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762155309
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-04 05:09:09 ====
+File: ct_20251104_050908_69096044e349f.json
+EntityType=lead, EntityId=420993
+dialedNumber=73919886542
+callerPhone=79130303005
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2536932
+    [changedFields] => null
+    [ctCallerId] => 96f5b869ad9a95994e265da32b8da817
+    [callerphone] => 79130303005
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 62
+    [waiting_time] => 4
+    [calltime] => 2025-11-04 05:06:41
+    [timestamp] => 1762222001
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => bf245a87-33c5-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => e7b7682a-b922-11f0-b142-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjIyMjE0OCwiZXhwIjoyMDc3NTgyMTQ4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1MzY5MzJ9.pRMOna5uOnSltq_5L48s2b1XhukO161et_StnoQ8bVP09zo3p0tKRCClzHZy-q5v49w7QjMVzNtrSnumiOTmIw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762222148
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-05 05:45:07 ====
+File: ct_20251105_054507_690aba330cd56.json
+EntityType=lead, EntityId=422696
+dialedNumber=73919886542
+callerPhone=79832065481
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2544214
+    [changedFields] => null
+    [ctCallerId] => 927d91d7918737040372fde947794e40
+    [callerphone] => 79832065481
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 73
+    [waiting_time] => 4
+    [calltime] => 2025-11-05 05:41:56
+    [timestamp] => 1762310516
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d62a843e-3493-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => febba47c-b9f0-11f0-9c58-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjMxMDcwNiwiZXhwIjoyMDc3NjcwNzA2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NDQyMTR9.YV2w3Q1_4IiPG4dINwR7J0Ik7tFmkRk89kw1qaaz_FxmFH8xTYEflg5CB57oNdjSPEpKJDYm667Cji2zr-YkXQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762310706
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-05 06:05:08 ====
+File: ct_20251105_060507_690abee37e0b0.json
+EntityType=lead, EntityId=422714
+dialedNumber=73919886542
+callerPhone=79964280178
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2544247
+    [changedFields] => null
+    [ctCallerId] => 2197cdae37b37431ee68c46643e3df42
+    [callerphone] => 79964280178
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 63
+    [waiting_time] => 4
+    [calltime] => 2025-11-05 06:02:38
+    [timestamp] => 1762311758
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ba42219b-3496-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => e2d6eade-b9f3-11f0-a399-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjMxMTkwNywiZXhwIjoyMDc3NjcxOTA3LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NDQyNDd9.HKYo_KbErcf9Ak55Hk9tCCpW324XN3XKELukTRTIGk4hof8k5CjUFadTVw31_298WO7n5InwOypckyA4d_VU3w
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762311907
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-05 08:48:03 ====
+File: ct_20251105_084802_690ae512bcc42.json
+EntityType=lead, EntityId=422905
+dialedNumber=73919886542
+callerPhone=79237848880
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2545032
+    [changedFields] => null
+    [ctCallerId] => 35ade1992c586bb41ac7ac451165eb74
+    [callerphone] => 79237848880
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 230
+    [waiting_time] => 4
+    [calltime] => 2025-11-05 08:42:22
+    [timestamp] => 1762321342
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 0b0efdc0-34ad-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 33a51d76-ba0a-11f0-8b3b-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjMyMTY4MiwiZXhwIjoyMDc3NjgxNjgyLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NDUwMzJ9.2A_FEp4v2m4ZZ10JM3GDAbk1lmX-3WG8JX-pSLDvDGkJP6N75HnZsMQ-eFhxjAbpoHDha7KTHISD5CYQr3MZTw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762321682
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-05 09:27:14 ====
+File: ct_20251105_092713_690aee4184e55.json
+EntityType=lead, EntityId=422951
+dialedNumber=73919886542
+callerPhone=79237848880
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2545563
+    [changedFields] => null
+    [ctCallerId] => 35ade1992c586bb41ac7ac451165eb74
+    [callerphone] => 79237848880
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 95
+    [waiting_time] => 4
+    [calltime] => 2025-11-05 09:23:40
+    [timestamp] => 1762323820
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d01c7e2e-34b2-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => f8b0aa0e-ba0f-11f0-8b97-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjMyNDAzMywiZXhwIjoyMDc3Njg0MDMzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NDU1NjN9.joIRQXBgJNcGwhXBvzriLct_boJDZzNXYu52pBH8QgHbitpkrwnbqf-lwbjF3p85oBVN5bvY35XobpbVkitwGw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762324033
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-05 11:11:15 ====
+File: ct_20251105_111114_690b06a2a9ed4.json
+EntityType=lead, EntityId=423154
+dialedNumber=73919886542
+callerPhone=79135695510
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2547412
+    [changedFields] => null
+    [ctCallerId] => 89f7a605b1c6991ed91c2b45ffc97401
+    [callerphone] => 79135695510
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 164
+    [waiting_time] => 4
+    [calltime] => 2025-11-05 10:57:03
+    [timestamp] => 1762329423
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => dbbbf5a0-34bf-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 044e409e-ba1d-11f0-90ae-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjMzMDI3NCwiZXhwIjoyMDc3NjkwMjc0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NDc0MTJ9.i427L3S10yXyOrrRrfw_MR1YlnH7Ff-eW9q-4EDGpLjFMLEufBm46JLxaGetPZ3s9sSCojKYAiMNL0vIQzd3EQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762330274
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-05 13:51:09 ====
+File: ct_20251105_135107_690b2c1bb19af.json
+EntityType=lead, EntityId=423471
+dialedNumber=73919886542
+callerPhone=79237848880
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2549764
+    [changedFields] => null
+    [ctCallerId] => 35ade1992c586bb41ac7ac451165eb74
+    [callerphone] => 79237848880
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 96
+    [waiting_time] => 4
+    [calltime] => 2025-11-05 12:50:25
+    [timestamp] => 1762336225
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => b20025c6-34cf-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => da93b7e2-ba2c-11f0-ae43-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjMzOTg2NywiZXhwIjoyMDc3Njk5ODY3LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NDk3NjR9.SN1QDEhB38oN3dM-NQootn3qqkjaLnHjXFQ8jZoAd5ii74K0vOyQBdpiWrG_8nglbUCHX3eBGjEtAoYpwoa1jw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762339867
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-06 06:55:07 ====
+File: ct_20251106_065506_690c1c1af2c85.json
+EntityType=lead, EntityId=424455
+dialedNumber=73919886542
+callerPhone=79333300103
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2556504
+    [changedFields] => null
+    [ctCallerId] => 3ba784de548cfdcb83a6aa32447d07af
+    [callerphone] => 79333300103
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 208
+    [waiting_time] => 4
+    [calltime] => 2025-11-06 06:50:29
+    [timestamp] => 1762401029
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 9439b300-3566-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => bcc5bc1e-bac3-11f0-a484-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjQwMTMwNiwiZXhwIjoyMDc3NzYxMzA2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NTY1MDR9.KUmxR0qIyO8IlbpO5CS1sNprGJOwrhvKO3Auth1JHHZvi4fLC7bbq0noAdQlLDRQ8MGlF3AAdT-PNp0isJw_Ug
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762401306
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-06 11:37:13 ====
+File: ct_20251106_113712_690c5e3891600.json
+EntityType=lead, EntityId=424889
+dialedNumber=73919886542
+callerPhone=79130320276
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2560033
+    [changedFields] => null
+    [ctCallerId] => f593a17a14d8787d570d64b356c9246e
+    [callerphone] => 79130320276
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 86
+    [waiting_time] => 4
+    [calltime] => 2025-11-06 11:27:46
+    [timestamp] => 1762417666
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 50422ed3-358d-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 78c61d3e-baea-11f0-981f-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjQxODIzMiwiZXhwIjoyMDc3Nzc4MjMyLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NjAwMzN9.kubPlpLTIlI8vm6rOl1PrS4ck1qyAFCKZ0H6FTC7mqfgTMCBkZB_ahYqnpiekgknHYEESVGPKm5hG48kubtDmA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762418232
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-06 13:07:15 ====
+File: ct_20251106_130714_690c73520cd2f.json
+EntityType=lead, EntityId=425090
+dialedNumber=73919886542
+callerPhone=79233888260
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2561250
+    [changedFields] => null
+    [ctCallerId] => 44265258771b617cca935b4815153559
+    [callerphone] => 79233888260
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 177
+    [waiting_time] => 4
+    [calltime] => 2025-11-06 12:31:06
+    [timestamp] => 1762421466
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 293e8088-3596-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 51d05650-baf3-11f0-8e76-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjQyMzYzMywiZXhwIjoyMDc3NzgzNjMzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NjEyNTB9.gc20BV_hHtsiyTunQfxhue1xxCEUqBxgHR1SBzl-oge_mil9zDVCtzN1dNuBViFtQ6s9Tb5Vrjy7-rv7GnGkVg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762423633
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-06 14:02:15 ====
+File: ct_20251106_140214_690c8036a3af7.json
+EntityType=lead, EntityId=425208
+dialedNumber=73919886542
+callerPhone=79620768141
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2562176
+    [changedFields] => null
+    [ctCallerId] => e6d0ad2b2f34994d568143ee9ba1590b
+    [callerphone] => 79620768141
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 43
+    [waiting_time] => 4
+    [calltime] => 2025-11-06 13:18:41
+    [timestamp] => 1762424321
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => cf1f2d43-359c-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => f7b0f88a-baf9-11f0-a77f-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjQyNjkzNCwiZXhwIjoyMDc3Nzg2OTM0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NjIxNzZ9.UaFaMwXKrOuY5CMVX3IYisnoAt8N2ffvFqqOuDGsuP22djvsok9CW8nXVswrO8WV_7kHqgAqvNi_wtSqmE8igA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762426934
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-07 11:42:08 ====
+File: ct_20251107_114207_690db0df204cb.json
+EntityType=lead, EntityId=426600
+dialedNumber=73919886542
+callerPhone=79994427786
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2571112
+    [changedFields] => null
+    [ctCallerId] => 59fa3a998221d6fe0756258765f7d827
+    [callerphone] => 79994427786
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 342
+    [waiting_time] => 5
+    [calltime] => 2025-11-07 11:35:13
+    [timestamp] => 1762504513
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 85a403b8-3657-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => ae2accfc-bbb4-11f0-9f23-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjUwNDkyNiwiZXhwIjoyMDc3ODY0OTI2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI1NzExMTJ9.K1XqmlZ_oKdl734M1yEwYDIma6jCFcOT9U3OEfwVXWDFXqldHr4pTHmOA6Lem03TNJVtOaMrJjSGU2zXDKxrwg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762504926
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-11 10:37:39 ====
+File: ct_20251111_103738_6912e7c284cd3.json
+EntityType=lead, EntityId=432412
+dialedNumber=73919457184
+callerPhone=79135826498
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2606375
+    [changedFields] => null
+    [ctCallerId] => 7b7e24ff1784714afc19789b28a8b63a
+    [callerphone] => 79135826498
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2025-11-11 10:33:17
+    [timestamp] => 1762846397
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => (direct)
+    [medium] => (none)
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762845897762363532
+    [sessionId] => 190261208
+    [ctClientId] => 3000000000131822712
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [callback_request_id] => 229857478
+    [callback_final_attempt] => 1
+    [ref] => 
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 171.33.251.108
+    [sip_call_id] => 88203308-3973-123f-ef89-005056bef48d
+    [callReferenceNumber] => b0c17e24-bed0-11f0-a07b-5be88eed25eb
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjg0NjY1OCwiZXhwIjoyMDc4MjA2NjU4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MDYzNzV9.MVDKyuIflb7XODQ1-EwPB0_lI2aGOE0DuDRpry3xVk3RxEyd_lXCKXQMLoUXgcFN5mqzqga4wlt-6of9tfbE1A
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762846658
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Оксана 
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79135826498
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-12 09:20:07 ====
+File: ct_20251112_092006_69142716002d0.json
+EntityType=lead, EntityId=433865
+dialedNumber=73919886542
+callerPhone=79135695510
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2615963
+    [changedFields] => null
+    [ctCallerId] => 89f7a605b1c6991ed91c2b45ffc97401
+    [callerphone] => 79135695510
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 111
+    [waiting_time] => 4
+    [calltime] => 2025-11-12 09:16:53
+    [timestamp] => 1762928213
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 06598884-3a32-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 2eeac7b0-bf8f-11f0-81aa-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkyODQwNSwiZXhwIjoyMDc4Mjg4NDA1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MTU5NjN9.5jtyaY3eAVrtSlFzfu6b7Ulkq0FHqMAyCgPAozcv619zt-LI1fI2poz5KezjLxPtuRn0Il4XGZw_PDh0b4sdHA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762928405
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-12 10:55:06 ====
+File: ct_20251112_105504_69143d58c0dca.json
+EntityType=lead, EntityId=434070
+dialedNumber=73919886542
+callerPhone=79673590993
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2617681
+    [changedFields] => null
+    [ctCallerId] => d4e653fd0636463ccb2a7cb2c18efe59
+    [callerphone] => 79673590993
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 47
+    [waiting_time] => 4
+    [calltime] => 2025-11-12 10:52:58
+    [timestamp] => 1762933978
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 728e3d09-3a3f-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 9b1cc6b0-bf9c-11f0-ba0b-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzNDEwNCwiZXhwIjoyMDc4Mjk0MTA0LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MTc2ODF9.CoMmeuR_jpo7VnmxG88ZCxZTvrwxNB1yITm-ZjbEfRBCgM5fR-6oxzlGhMNvcLWXK13bpvmpGYvHWpIMjSG8LA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762934104
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-12 11:00:28 ====
+File: ct_20251112_110028_69143e9c45aa5.json
+EntityType=lead, EntityId=434070
+dialedNumber=73919886542
+callerPhone=79673590993
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2617722
+    [changedFields] => null
+    [ctCallerId] => d4e653fd0636463ccb2a7cb2c18efe59
+    [callerphone] => 79673590993
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 259
+    [waiting_time] => 3
+    [calltime] => 2025-11-12 10:54:43
+    [timestamp] => 1762934083
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => b0c2a54c-3a3f-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => d9558ade-bf9c-11f0-9641-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzNDQyOCwiZXhwIjoyMDc4Mjk0NDI4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MTc3MjJ9.uvJyKT5zD0j31nNUXnZBZB3gN1CKqvu9YUwnFJ-ELghwqJD1IaTXQfJVzHhAzTCgDuALN9vLubNEU7sI4lmrTg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1762934428
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-12 12:26:17 ====
+File: ct_20251112_122617_691452b947b70.json
+EntityType=lead, EntityId=434320
+dialedNumber=73919457184
+callerPhone=79659000048
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2619315
+    [changedFields] => null
+    [ctCallerId] => fc054f59bd7c140ab52ecd77c0252de9
+    [callerphone] => 79659000048
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 44
+    [waiting_time] => 33
+    [calltime] => 2025-11-12 12:20:05
+    [timestamp] => 1762939205
+    [status] => successful
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => callback
+    [worktime] => worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762939132472208098
+    [sessionId] => 191034534
+    [ctClientId] => 3000000000132345332
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/?ysclid=mhvsfv2sd32352582
+    [attrs] => {}
+    [callback_request_id] => 229884975
+    [callback_final_attempt] => 1
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 171.33.253.107
+    [sip_call_id] => 9dc6c1ce-3a4b-123f-e7ab-005056be61fd
+    [callReferenceNumber] => c6680d00-bfa8-11f0-a50e-67bf64e5467c
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzOTU3NiwiZXhwIjoyMDc4Mjk5NTc2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MTkzMTV9.5kSldCBFqgGagNC-9wKA1PfXLdn24MAj2cF3CYimj9T5ikS1U2tv97SHEWuBnmyw43rxqqPTqZFvW7_UzMU6tg
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; NTH-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.130 YaBrowser/25.10.3.130.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762939576
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Вадим
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79659000048
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-12 12:27:16 ====
+File: ct_20251112_122716_691452f43fa32.json
+EntityType=lead, EntityId=434320
+dialedNumber=73919457184
+callerPhone=79659000048
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2619334
+    [changedFields] => null
+    [ctCallerId] => fc054f59bd7c140ab52ecd77c0252de9
+    [callerphone] => 79659000048
+    [phonenumber] => 73919457184
+    [subPoolName] => Callback
+    [redirectNumber] => sip:krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 5
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 12:20:54
+    [timestamp] => 1762939254
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762939132472208098
+    [sessionId] => 191034534
+    [ctClientId] => 3000000000132345332
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/?ysclid=mhvsfv2sd32352582
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 171.33.253.107
+    [sip_call_id] => bb42a5d9-3a4b-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => e3ce82ca-bfa8-11f0-991d-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzOTYzNSwiZXhwIjoyMDc4Mjk5NjM1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MTkzMzR9.LXGjtb36UfQpeBw4By_11dH8Lt5O6oNN9akRYrVEP26JNucXIY36J1lDUJct6RYwwN6hUcckWZF8FWy61343XQ
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; NTH-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.130 YaBrowser/25.10.3.130.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762939635
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Callback
+)
+
+
+==== 2025-11-12 12:31:12 ====
+File: ct_20251112_123111_691453dfcac42.json
+EntityType=lead, EntityId=434320
+dialedNumber=73919457184
+callerPhone=79659000048
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2619383
+    [changedFields] => null
+    [ctCallerId] => fc054f59bd7c140ab52ecd77c0252de9
+    [callerphone] => 79659000048
+    [phonenumber] => 73919457184
+    [subPoolName] => Callback
+    [redirectNumber] => sip:krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 194
+    [waiting_time] => 0
+    [calltime] => 2025-11-12 12:22:56
+    [timestamp] => 1762939376
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOnline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => yandex
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762939132472208098
+    [sessionId] => 191034534
+    [ctClientId] => 3000000000132345332
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/?ysclid=mhvsfv2sd32352582
+    [attrs] => {}
+    [ref] => https://yandex.ru/
+    [city] => krasnoyarsk
+    [browser] => YaBrowser
+    [os] => Android
+    [device] => smartphone
+    [ip] => 171.33.253.107
+    [sip_call_id] => 03dc1eca-3a4c-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 2c6b86b8-bfa9-11f0-b9d1-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MjkzOTg2OSwiZXhwIjoyMDc4Mjk5ODY5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MTkzODN9.opO5PQ7BR8YsKykYyaNsoKA_YKAOwC_XdeZr6NJZflkz9PVXmv35VD1YkuBnl6_8w69-7ZDMHbtJy7LhQSq4yA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; arm_64; Android 13; NTH-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.130 YaBrowser/25.10.3.130.00 SA/3 Mobile Safari/537.36
+    [sendingTimestamp] => 1762939869
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Callback
+)
+
+
+==== 2025-11-13 05:03:05 ====
+File: ct_20251113_050305_69153c593630d.json
+EntityType=lead, EntityId=435315
+dialedNumber=73919457184
+callerPhone=79029689868
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2626183
+    [changedFields] => null
+    [ctCallerId] => 6f53073c9f20ad9626842b3077ecc933
+    [callerphone] => 79029689868
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2025-11-13 05:00:16
+    [timestamp] => 1762999216
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762964780315708689
+    [sessionId] => 191325931
+    [ctClientId] => 3000000000132536229
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [callback_request_id] => 229896061
+    [callback_final_attempt] => 1
+    [ref] => https://www.google.com/
+    [city] => krasnoyarsk
+    [browser] => Chrome
+    [os] => Android
+    [device] => smartphone
+    [ip] => 176.214.104.32
+    [sip_call_id] => 572e8fdd-3ad7-123f-e7ab-005056be61fd
+    [callReferenceNumber] => 7fcfdfee-c034-11f0-b2ca-67bf64e5467c
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2Mjk5OTM4NSwiZXhwIjoyMDc4MzU5Mzg1LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MjYxODN9.HkrjVkd8wGF56TEozOunpmP6TAdD_o7TEo0nQlJU9hEtW6jYMN57ShYCgJQFDqkAsrbT4CUB2QiZpbB58W-g_g
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36
+    [sendingTimestamp] => 1762999385
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => name
+                    [value] => Любовь
+                )
+
+            [1] => Array
+                (
+                    [name] => phone
+                    [value] => 79029689868
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-13 05:28:03 ====
+File: ct_20251113_052802_69154232b91b8.json
+EntityType=lead, EntityId=435339
+dialedNumber=73919886542
+callerPhone=79509727840
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2626211
+    [changedFields] => null
+    [ctCallerId] => af5fd2af6f1a0e6763e7a2515c1ae262
+    [callerphone] => 79509727840
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 67
+    [waiting_time] => 4
+    [calltime] => 2025-11-13 05:25:23
+    [timestamp] => 1763000723
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => d9c842b7-3ada-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 025ec404-c038-11f0-82fa-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAwMDg4MiwiZXhwIjoyMDc4MzYwODgyLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MjYyMTF9.zZ4Pmn12tIwuzt7K8vzbA6gHWJSKOcaBnggCaqvMI-428H8n9bb57RkoYotB8vXACdIAkS1_4EGTx1CQ8yVsrw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763000882
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-13 07:52:11 ====
+File: ct_20251113_075210_691563fa17c50.json
+EntityType=lead, EntityId=435457
+dialedNumber=73919886542
+callerPhone=79135543562
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2626594
+    [changedFields] => null
+    [ctCallerId] => c2eee7fda647bf6eba93d271041519aa
+    [callerphone] => 79135543562
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 28
+    [waiting_time] => 4
+    [calltime] => 2025-11-13 07:50:26
+    [timestamp] => 1763009426
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 1cfb7544-3aef-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 45907312-c04c-11f0-909b-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzAwOTUzMCwiZXhwIjoyMDc4MzY5NTMwLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MjY1OTR9.J-ehL6Ql4n02vuIazUhMr642vR1Amwv5wzXMobeI2BFqefncZk5nixHhViazjFzt6E8vTfWsQVVMr6R3O1b44g
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763009530
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-13 16:24:05 ====
+File: ct_20251113_162403_6915dbf3d58a5.json
+EntityType=lead, EntityId=436513
+dialedNumber=73919886542
+callerPhone=79059745442
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2634470
+    [changedFields] => null
+    [ctCallerId] => 70e1e66c049cdd604dd01f33483fc2f0
+    [callerphone] => 79059745442
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 64
+    [waiting_time] => 4
+    [calltime] => 2025-11-13 16:21:39
+    [timestamp] => 1763040099
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 87aec486-3b36-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => b03fd4b8-c093-11f0-87e9-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA0MDI0MywiZXhwIjoyMDc4NDAwMjQzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzQ0NzB9.cS__QhW4W99DLhZgGkDoDCIWE2hVaT9Npgq13mu_OesBFlFVkQN05mfM_EvVvaPq_Rk7dnViqE8rTDpB_tvobw
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763040243
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-13 16:27:09 ====
+File: ct_20251113_162708_6915dcacc1eab.json
+EntityType=lead, EntityId=436513
+dialedNumber=73919886542
+callerPhone=79059745442
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2634521
+    [changedFields] => null
+    [ctCallerId] => 70e1e66c049cdd604dd01f33483fc2f0
+    [callerphone] => 79059745442
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 49
+    [waiting_time] => 4
+    [calltime] => 2025-11-13 16:24:45
+    [timestamp] => 1763040285
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => f686c6a4-3b36-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 1f153342-c094-11f0-ac3a-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA0MDQyOCwiZXhwIjoyMDc4NDAwNDI4LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzQ1MjF9.o-cYI9oIdgolkNzODc8AILM56ljLU2OY5Ff3F5hJvEnOn-2b52zfMC23X1dx2CYdh5xp7fAgztkHr-0jkVP4mA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763040428
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 05:00:12 ====
+File: ct_20251114_050011_69168d2b4407e.json
+EntityType=lead, EntityId=437054
+dialedNumber=73919886542
+callerPhone=79232992140
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2636913
+    [changedFields] => null
+    [ctCallerId] => 7484c7bc604bba427d6d14ad2976602c
+    [callerphone] => 79232992140
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 63
+    [waiting_time] => 4
+    [calltime] => 2025-11-14 04:57:47
+    [timestamp] => 1763085467
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 28e1b739-3ba0-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 51742d3e-c0fd-11f0-b263-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA4NTYxMSwiZXhwIjoyMDc4NDQ1NjExLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzY5MTN9.qKiRQJOwn0WmO_JdbkpCC-iVye5NOW1lnSFH6Ll-HWS5Eivrr12MvjS03ejpiu-dbjoPLrF8oVVt8nT_ueru9g
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763085611
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 05:08:04 ====
+File: ct_20251114_050803_69168f03c456f.json
+EntityType=lead, EntityId=437054
+dialedNumber=73919886542
+callerPhone=79232992140
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2636924
+    [changedFields] => null
+    [ctCallerId] => 7484c7bc604bba427d6d14ad2976602c
+    [callerphone] => 79232992140
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 63
+    [waiting_time] => 4
+    [calltime] => 2025-11-14 05:05:36
+    [timestamp] => 1763085936
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 409df783-3ba1-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 69332fa0-c0fe-11f0-8a1a-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA4NjA4MywiZXhwIjoyMDc4NDQ2MDgzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzY5MjR9.264rIn6vNWQvddlu2NcuaQMLdT1GnNzBcKllUlvQUm2b2yJcPkIxA_TxoAn2pj-dGeznF9upYoMPquHuj7rysA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763086083
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 05:35:02 ====
+File: ct_20251114_053501_69169555e3a85.json
+EntityType=lead, EntityId=437079
+dialedNumber=73919886542
+callerPhone=79059723977
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2636949
+    [changedFields] => null
+    [ctCallerId] => 6c8227b1b0718144f0609793cf10ea0e
+    [callerphone] => 79059723977
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 64
+    [waiting_time] => 3
+    [calltime] => 2025-11-14 05:32:41
+    [timestamp] => 1763087561
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => true
+    [targetcall] => target
+    [uniqtargetcall] => uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 08e68f01-3ba5-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 3178d1f6-c102-11f0-9c20-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA4NzcwMSwiZXhwIjoyMDc4NDQ3NzAxLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzY5NDl9.QbqI7W7dzqPyrmpRtTu-WXhOIZ4CSj6-RGpYnDmCfaKkWjsC6pW9-q9Kh6CnjL8dQCpD7aa7lEjtyCjgXG5pPA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763087701
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 05:39:03 ====
+File: ct_20251114_053903_691696475d13a.json
+EntityType=lead, EntityId=437079
+dialedNumber=73919457184
+callerPhone=79059723977
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2636954
+    [changedFields] => null
+    [ctCallerId] => 6c8227b1b0718144f0609793cf10ea0e
+    [callerphone] => 79059723977
+    [phonenumber] => 73919457184
+    [subPoolName] => null
+    [redirectNumber] => krasnoyarsk_per_lead@krasnoyarsk.dreamteamcompany.n3.voximplant.com:5060
+    [duration] => 60
+    [waiting_time] => 60
+    [calltime] => 2025-11-14 05:36:26
+    [timestamp] => 1763087786
+    [status] => unsuccessful
+    [statusDetails] => Колл-центр не подтвердил соединение по клавише
+    [unique] => false
+    [targetcall] => non-target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => callback
+    [worktime] => non-worktime
+    [pool] => null
+    [rating] => 0
+    [tags_all] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => Обратный звонок с виджета,Последний в цепочке
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => google
+    [medium] => organic
+    [utm_source] => <не указано>
+    [utm_medium] => <не указано>
+    [utm_campaign] => <не указано>
+    [utm_content] => <не указано>
+    [utm_term] => <не указано>
+    [yaClientId] => 1762930024728451491
+    [sessionId] => 192195100
+    [ctClientId] => 3000000000132275455
+    [ctGlobalId] => null
+    [hostname] => sibdentalclinic.ru
+    [url] => https://sibdentalclinic.ru/
+    [attrs] => {}
+    [callback_request_id] => 229923893
+    [callback_final_attempt] => 1
+    [ref] => https://www.google.com/
+    [city] => 
+    [browser] => Chrome
+    [os] => Windows
+    [device] => desktop
+    [ip] => 45.82.224.231
+    [sip_call_id] => 8efc3684-3ba5-123f-e7ab-005056be61fd
+    [callReferenceNumber] => b79da568-c102-11f0-9ac7-67bf64e5467c
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA4Nzk0MywiZXhwIjoyMDc4NDQ3OTQzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzY5NTR9.4_0L6p8pARq45RFGPJr9AQkKaQSYctgTEf2HsRVNK0EHsWe7Zn0OYZobhIzDk7ILr7fuZiXAX2zw_Fhr4tgB8g
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [sendingTimestamp] => 1763087943
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callback_custom_fields] => Array
+        (
+            [0] => Array
+                (
+                    [name] => phone
+                    [value] => 79059723977
+                )
+
+        )
+
+    [callUrl] => null
+)
+
+
+==== 2025-11-14 06:03:05 ====
+File: ct_20251114_060304_69169be81902e.json
+EntityType=lead, EntityId=437092
+dialedNumber=73919886542
+callerPhone=79232992140
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2636998
+    [changedFields] => null
+    [ctCallerId] => 7484c7bc604bba427d6d14ad2976602c
+    [callerphone] => 79232992140
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 59
+    [waiting_time] => 4
+    [calltime] => 2025-11-14 06:00:29
+    [timestamp] => 1763089229
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => eb123660-3ba8-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 13a7041e-c106-11f0-b7fe-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA4OTM4MywiZXhwIjoyMDc4NDQ5MzgzLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzY5OTh9.iPqV8ftshxaJTUXtVyZkrqyfPIJ12W7jvga6JVtaH2SIp9r4jXddMuyApIuSN-hpP4kKH2dfZh2iXaF08tws5A
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763089383
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 06:28:07 ====
+File: ct_20251114_062806_6916a1c6f3b80.json
+EntityType=lead, EntityId=437092
+dialedNumber=73919886542
+callerPhone=79232992140
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2637050
+    [changedFields] => null
+    [ctCallerId] => 7484c7bc604bba427d6d14ad2976602c
+    [callerphone] => 79232992140
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 168
+    [waiting_time] => 4
+    [calltime] => 2025-11-14 06:24:08
+    [timestamp] => 1763090648
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => 3934b00e-3bac-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => 61c7220c-c109-11f0-8b58-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA5MDg4NiwiZXhwIjoyMDc4NDUwODg2LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzcwNTB9.jgkqHVa-bWKR6NkgKI7yx8B4W7Gk7SqiwtjlqawLSHcqPNLIu4AmThKeqlE15W81khat2qM1dxjvuwmtiTqLOA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763090886
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 06:49:02 ====
+File: ct_20251114_064901_6916a6adafe41.json
+EntityType=lead, EntityId=437133
+dialedNumber=73919886542
+callerPhone=79059745442
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2637079
+    [changedFields] => null
+    [ctCallerId] => 70e1e66c049cdd604dd01f33483fc2f0
+    [callerphone] => 79059745442
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 321
+    [waiting_time] => 3
+    [calltime] => 2025-11-14 06:42:31
+    [timestamp] => 1763091751
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызываемого абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => ca44fed6-3bae-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => f2d57756-c10b-11f0-8ff7-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA5MjE0MSwiZXhwIjoyMDc4NDUyMTQxLCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzcwNzl9.0Ojdooi2vR9LjTcwVzBwZuO3BXhkwZ0cVaNuPz4RoNLPRa-l7UQbfcsVKS8MegdwAgD_AovaYWIG-crPa3prog
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763092141
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+
+==== 2025-11-14 07:04:10 ====
+File: ct_20251114_070409_6916aa3924510.json
+EntityType=lead, EntityId=437148
+dialedNumber=73919886542
+callerPhone=79059723977
+callphase=calldisconnected
+leadtype=call
+POST:
+Array
+(
+    [leadtype] => call
+    [callphase] => calldisconnected
+    [id] => 2637102
+    [changedFields] => null
+    [ctCallerId] => 6c8227b1b0718144f0609793cf10ea0e
+    [callerphone] => 79059723977
+    [phonenumber] => 73919886542
+    [subPoolName] => Сайт sibdentalclinic.ru
+    [redirectNumber] => 73912514050
+    [duration] => 382
+    [waiting_time] => 3
+    [calltime] => 2025-11-14 06:56:30
+    [timestamp] => 1763092590
+    [status] => successful
+    [statusDetails] => Соединение состоялось. Разъединение пришло со стороны вызывающего абонента
+    [unique] => false
+    [targetcall] => target
+    [uniqtargetcall] => non-uniqtarget
+    [callback] => non-callback
+    [worktime] => non-worktime
+    [pool] => staticOffline
+    [rating] => 0
+    [tags_all] => null
+    [tags_auto_pr] => null
+    [tags_auto_af] => null
+    [tags_auto_gr] => null
+    [tags_auto_ct] => null
+    [tags_auto_pn] => null
+    [tags_auto_text] => null
+    [tags_manual] => null
+    [tags_api] => null
+    [tags_triggers] => null
+    [tags_xls] => null
+    [attribution] => 1
+    [source] => Сайт sibdentalclinic.ru
+    [medium] => Сайт sibdentalclinic.ru
+    [utm_source] => Сайт sibdentalclinic.ru
+    [utm_medium] => Сайт sibdentalclinic.ru
+    [utm_campaign] => Сайт sibdentalclinic.ru
+    [utm_content] => <не заполнено>
+    [utm_term] => <не заполнено>
+    [sessionId] => 0
+    [ctClientId] => null
+    [ctGlobalId] => null
+    [hostname] => 
+    [attrs] => {}
+    [sip_call_id] => be69a58c-3bb0-123f-b4aa-00505694e0e9
+    [callReferenceNumber] => e6fd733c-c10d-11f0-85ec-2b9e47d0c082
+    [reclink] => https://api-node30.calltouch.ru/calls-service/RestAPI/download-call?jwtkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3N1ZXIiOiJDYWxsdG91Y2gtV0VCLUFQSSIsImlzc3VlZCI6MTc2MzA5MzA0OSwiZXhwIjoyMDc4NDUzMDQ5LCJzaXRlSWQiOjcxNTQ2LCJjYWxsSWQiOjI2MzcxMDJ9.GqwQ8acSODSWtMc_Y-feC7VRHj5VtbUotT-Bc9IbwvfUjmpp9PsbcmJDL66WpgPItiG9qC2r9EjtlsS5b_J9CA
+    [orderId] => null
+    [siteId] => 71546
+    [siteName] => sibdental-norilsk.ru
+    [sendingTimestamp] => 1763093049
+    [text] => null
+    [manager] => null
+    [spam] => false
+    [callUrl] => Сайт sibdentalclinic.ru
+    [url] => Сайт sibdentalclinic.ru
+)
+
+

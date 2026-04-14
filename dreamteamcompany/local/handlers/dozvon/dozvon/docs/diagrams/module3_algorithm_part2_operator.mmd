@@ -1,0 +1,19 @@
+flowchart TD
+  in128([После списка 22])
+  refresh128["Обновить 128 по городу"]
+  in128 --> refresh128
+  op1["ТЗ4.1: операторы города, иначе все 128"]
+  refresh128 --> op1
+  op2["ТЗ4.2: TimeMan, WORKDAY_STARTED"]
+  op1 --> op2
+  workdayFork{Нет рабочего дня и city?}
+  op2 --> workdayFork
+  workdayFork -->|да| fb["Fallback все 128, повтор этапа 2"]
+  workdayFork -->|нет| op3["ТЗ4.3: Vox BUSY, LINE_FREE"]
+  fb --> op3
+  op4["ТЗ4.4: round-robin LAST_ASSIGNED_AT"]
+  op3 --> op4
+  opGate{Оператор?}
+  op4 --> opGate
+  opGate -->|нет| errOp[["no_free_operator"]]
+  opGate -->|да| nextVox[["далее: часть 3"]]

@@ -1,0 +1,11 @@
+# Запрет прямого HTTP-доступа к конфигу и служебным каталогам (Apache 2.4+)
+<IfModule mod_authz_core.c>
+    <Files "config.php">
+        Require all denied
+    </Files>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(data|logs)/ - [F,L]
+</IfModule>

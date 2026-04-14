@@ -1,0 +1,58 @@
+/**
+ * BP блок: Проверка занятости оператора в телефонии.
+ * CVoxImplantIncoming::getUserInfo — BUSY check.
+ *
+ * Читает: CB_OPERATOR_USER (строка "user_<ID>" из блока "Выбор сотрудника")
+ * Записывает: CB_OPERATOR_ID, CB_OPERATOR_BUSY (Y/N)
+ */
+
+use Bitrix\Main\Loader;
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+try {
+    $raw = trim((string)$getVar('CB_OPERATOR_USER'));
+    $userId = (int)preg_replace('/\D+/', '', $raw);
+    $log('CB BUSY [1/2] userId=' . $userId);
+
+    if ($userId <= 0) {
+        $setVar('CB_OPERATOR_BUSY', 'N');
+        $setVar('CB_OPERATOR_ID', '0');
+        return;
+    }
+
+    $setVar('CB_OPERATOR_ID', (string)$userId);
+    $isBusy = false;
+
+    if (Loader::includeModule('voximplant') && class_exists('CVoxImplantIncoming')
+        && method_exists('CVoxImplantIncoming', 'getUserInfo')) {
+        try {
+            $userInfo = \CVoxImplantIncoming::getUserInfo($userId, false);
+            $busy = is_array($userInfo) ? ($userInfo['BUSY'] ?? null) : null;
+            $isBusy = in_array($busy, [true, 1, '1', 'Y', 'y'], true);
+        } catch (\Throwable $e) {
+            $log('CB BUSY getUserInfo error: ' . $e->getMessage());
+        }
+    }
+
+    $setVar('CB_OPERATOR_BUSY', $isBusy ? 'Y' : 'N');
+    $log('CB BUSY [2/2] busy=' . ($isBusy ? 'Y' : 'N'));
+
+} catch (\Throwable $e) {
+    $setVar('CB_OPERATOR_BUSY', 'N');
+    $log('CB BUSY EXCEPTION: ' . $e->getMessage());
+}

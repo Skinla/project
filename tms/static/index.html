@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRM метаданные</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --panel: #ffffff;
+        --text: #182033;
+        --muted: #667085;
+        --border: #d9e0ec;
+        --accent: #2667ff;
+        --accent-soft: #eef4ff;
+        --badge: #edf2ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+      }
+
+      .subtitle {
+        margin: 8px 0 0;
+        color: var(--muted);
+        max-width: 760px;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05);
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .danger-text {
+        color: #b42318;
+        font-weight: 700;
+      }
+
+      .unmatched-row td {
+        background: #fff1f1;
+      }
+
+      .tab-button {
+        border: 1px solid var(--border);
+        background: #fff;
+        color: #344054;
+        border-radius: 12px;
+        padding: 10px 14px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .tab-button.active {
+        color: var(--accent);
+        border-color: #bfd1ff;
+        background: var(--accent-soft);
+      }
+
+      .nav-section-title {
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #344054;
+        padding: 10px 14px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: #fff;
+        font-weight: 600;
+      }
+
+      .nav-link.active {
+        color: var(--accent);
+        border-color: #bfd1ff;
+        background: var(--accent-soft);
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .stat-value {
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 6px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .stage-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+
+      .stage-groups {
+        display: grid;
+        gap: 20px;
+      }
+
+      .stage-group {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px;
+        background: #fcfdff;
+      }
+
+      .stage-group-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+
+      .stage-card {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px;
+        background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
+      }
+
+      .stage-color {
+        width: 100%;
+        height: 8px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--badge);
+        color: #344054;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      input,
+      select {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 11px 14px;
+        font: inherit;
+        background: #fff;
+        min-width: 220px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 14px 12px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      tbody tr:hover {
+        background: #fafcff;
+      }
+
+      .code {
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        font-size: 13px;
+      }
+
+      .option-list {
+        display: grid;
+        gap: 8px;
+        min-width: 260px;
+      }
+
+      .option-item {
+        padding: 8px 10px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: #fbfcfe;
+      }
+
+      .option-name {
+        font-size: 13px;
+        color: var(--text);
+      }
+
+      .option-code {
+        margin-top: 4px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .cell-stack {
+        display: grid;
+        gap: 6px;
+      }
+
+      .error,
+      .loading,
+      .empty {
+        padding: 18px;
+        border-radius: 14px;
+        margin-bottom: 20px;
+      }
+
+      .loading {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+
+      .error {
+        background: #fff0f0;
+        color: #b42318;
+        border: 1px solid #f4c7c7;
+      }
+
+      .empty {
+        background: #f8fafc;
+        color: var(--muted);
+        border: 1px dashed var(--border);
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .section-header {
+          flex-direction: column;
+        }
+
+        table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          border-bottom: 1px solid var(--border);
+          padding: 8px 0;
+        }
+
+        td {
+          border: 0;
+          padding: 8px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="tabs" id="viewTabs">
+        <button id="dataViewTab" class="tab-button" type="button">Данные</button>
+        <button id="mappingViewTab" class="tab-button" type="button">Сопоставление</button>
+      </div>
+
+      <div class="tabs" id="portalTabs">
+        <button id="cloudSourceTab" class="tab-button" type="button">Портал tms24.bitrix24.ru</button>
+        <button id="boxSourceTab" class="tab-button" type="button">Портал bitrix.tms.net.ru</button>
+      </div>
+
+      <div class="tabs" id="categoryTabs">
+        <button id="crmTab" class="tab-button" type="button">CRM</button>
+        <button id="smartTab" class="tab-button" type="button">Смарт-процессы</button>
+        <button id="bpTab" class="tab-button" type="button">Бизнес-процессы</button>
+      </div>
+
+      <section id="baseNavSection">
+        <h2 class="nav-section-title">CRM</h2>
+        <nav id="entityNav" class="nav"></nav>
+      </section>
+      <section id="smartNavSection">
+        <h2 class="nav-section-title">Смарт-процессы</h2>
+        <nav id="smartEntityNav" class="nav"></nav>
+      </section>
+      <section id="bpNavSection">
+        <h2 class="nav-section-title">Бизнес-процессы</h2>
+        <nav id="bpNav" class="nav"></nav>
+      </section>
+
+      <section class="hero">
+        <div>
+          <h1 id="pageTitle">CRM метаданные</h1>
+          <p id="pageSubtitle" class="subtitle"></p>
+        </div>
+        <div class="panel">
+          <div class="muted">Источник</div>
+          <div id="sourceName" style="font-weight: 700; margin-top: 6px">...</div>
+          <div class="muted" style="margin-top: 12px">Портал</div>
+          <div id="portalName" class="stat-value" style="font-size: 22px">...</div>
+        </div>
+      </section>
+
+      <div id="loading" class="loading">Загружаю CRM-метаданные...</div>
+      <div id="error" class="error hidden"></div>
+
+      <section class="stats" id="stats"></section>
+
+      <section id="mappingSections" class="hidden">
+        <section class="panel" style="margin-bottom: 24px">
+          <div class="section-header">
+            <div>
+              <h2>Сопоставление сущностей</h2>
+              <p class="subtitle">Название и коды сущностей в облаке и коробке.</p>
+            </div>
+          </div>
+          <div class="muted" id="entityMappingCountLabel" style="margin-bottom: 12px"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>Название</th>
+                <th>Код в облаке</th>
+                <th>Код в коробке</th>
+              </tr>
+            </thead>
+            <tbody id="entityMappingRows"></tbody>
+          </table>
+        </section>
+
+        <section class="panel" style="margin-bottom: 24px">
+          <div class="section-header">
+            <div>
+              <h2>Сопоставление полей</h2>
+              <p class="subtitle">Поля внутри сопоставленных по названию сущностей.</p>
+            </div>
+          </div>
+          <div class="muted" id="fieldMappingCountLabel" style="margin-bottom: 12px"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>Сущность</th>
+                <th>Название</th>
+                <th>Код в облаке</th>
+                <th>Код в коробке</th>
+              </tr>
+            </thead>
+            <tbody id="fieldMappingRows"></tbody>
+          </table>
+        </section>
+
+        <section class="panel">
+          <div class="section-header">
+            <div>
+              <h2>Сопоставление списочных значений</h2>
+              <p class="subtitle">Элементы списков по совпадающему названию внутри сопоставленных полей.</p>
+            </div>
+          </div>
+          <div class="muted" id="optionMappingCountLabel" style="margin-bottom: 12px"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>Сущность / поле</th>
+                <th>Название</th>
+                <th>Код в облаке</th>
+                <th>Код в коробке</th>
+              </tr>
+            </thead>
+            <tbody id="optionMappingRows"></tbody>
+          </table>
+        </section>
+      </section>
+
+      <section id="bpSection" class="panel hidden" style="margin-bottom: 24px">
+        <div class="section-header">
+          <div>
+            <h2>Реестр шаблонов БП</h2>
+            <p class="subtitle">Список шаблонов бизнес-процессов и сущностей, на которых они запускаются.</p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input
+            id="bpSearchInput"
+            type="search"
+            placeholder="Поиск по шаблону, сущности, модулю или коду"
+          />
+        </div>
+
+        <div class="muted" id="bpCountLabel" style="margin-bottom: 12px"></div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Шаблон</th>
+              <th>Где запускается</th>
+              <th>Автозапуск</th>
+              <th>Служебные поля</th>
+            </tr>
+          </thead>
+          <tbody id="bpRows"></tbody>
+        </table>
+      </section>
+
+      <section id="stagesSection" class="panel" style="margin-bottom: 24px">
+        <div class="section-header">
+          <div>
+            <h2 id="stagesTitle"></h2>
+            <p id="stagesSubtitle" class="subtitle"></p>
+          </div>
+        </div>
+        <div id="stagesEmpty" class="empty hidden">Для этой сущности стадии не найдены.</div>
+        <div id="stages" class="stage-grid"></div>
+      </section>
+
+      <section id="fieldsSection" class="panel">
+        <div class="section-header">
+          <div>
+            <h2 id="fieldsTitle"></h2>
+            <p id="fieldsSubtitle" class="subtitle"></p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Поиск по названию, коду или типу поля"
+          />
+          <select id="fieldFilter">
+            <option value="all">Все поля</option>
+            <option value="custom">Только пользовательские</option>
+            <option value="standard">Только стандартные</option>
+          </select>
+        </div>
+
+        <div class="muted" id="fieldCountLabel" style="margin-bottom: 12px"></div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Код</th>
+              <th>Тип</th>
+              <th>Свойства</th>
+              <th>Элементы списка</th>
+            </tr>
+          </thead>
+          <tbody id="fieldRows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script>
+      const DEFAULT_ENTITIES = [
+        { slug: "leads", title: "Лиды", kind: "base" },
+        { slug: "deals", title: "Сделки", kind: "base" },
+        { slug: "invoices", title: "Счета", kind: "base" },
+        { slug: "contacts", title: "Контакты", kind: "base" },
+        { slug: "companies", title: "Компании", kind: "base" },
+        { slug: "quotes", title: "Предложения", kind: "base" },
+        { slug: "bp-templates", title: "Шаблоны БП", kind: "bizproc_registry" },
+      ];
+      const DEFAULT_PORTALS = {
+        cloud: "tms24.bitrix24.ru",
+        box: "bitrix.tms.net.ru",
+      };
+
+      const state = {
+        fields: [],
+        templates: [],
+        activeTab: "crm",
+        activeSource: "cloud",
+        activeView: "data",
+        currentKind: "base",
+        currentSlug: "leads",
+        catalog: null,
+        catalogs: {},
+        mapping: {
+          entities: [],
+          fields: [],
+          options: [],
+        },
+      };
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+
+      function getCurrentEntitySlug() {
+        const slug = window.location.pathname.replace(/^\/+|\/+$/g, "");
+        return slug || "leads";
+      }
+
+      function getCurrentSource() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("source") === "box" ? "box" : "cloud";
+      }
+
+      function getCurrentView() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("view") === "mapping" ? "mapping" : "data";
+      }
+
+      function buildEntityHref(slug, source, view = "data") {
+        const path = `/${slug}`;
+        const params = new URLSearchParams();
+        if (source === "box") {
+          params.set("source", "box");
+        }
+        if (view === "mapping") {
+          params.set("view", "mapping");
+        }
+        const query = params.toString();
+        return query ? `${path}?${query}` : path;
+      }
+
+      function getFallbackEntities() {
+        return DEFAULT_ENTITIES;
+      }
+
+      function getCatalogPortal(source) {
+        return state.catalogs[source]?.portal || DEFAULT_PORTALS[source];
+      }
+
+      function updatePortalButtons() {
+        document.getElementById("cloudSourceTab").textContent =
+          `Портал ${getCatalogPortal("cloud")}`;
+        document.getElementById("boxSourceTab").textContent =
+          `Портал ${getCatalogPortal("box")}`;
+      }
+
+      function setActiveView(view) {
+        state.activeView = view;
+        const isMapping = view === "mapping";
+        document.getElementById("dataViewTab").classList.toggle("active", !isMapping);
+        document.getElementById("mappingViewTab").classList.toggle("active", isMapping);
+        document.getElementById("portalTabs").classList.toggle("hidden", isMapping);
+        document.getElementById("mappingSections").classList.toggle("hidden", !isMapping);
+        document.getElementById("bpSection").classList.toggle("hidden", isMapping || state.currentKind !== "bizproc_registry");
+        document.getElementById("stagesSection").classList.toggle("hidden", isMapping || state.currentKind === "bizproc_registry");
+        document.getElementById("fieldsSection").classList.toggle("hidden", isMapping || state.currentKind === "bizproc_registry");
+      }
+
+      function renderNav(entities, activeSlug, source) {
+        const baseEntities = entities.filter((entity) => entity.kind !== "smart_process");
+        const smartEntities = entities.filter((entity) => entity.kind === "smart_process");
+        const bpEntities = entities.filter((entity) => entity.kind === "bizproc_registry");
+
+        const crmEntities = baseEntities.filter((entity) => entity.kind !== "bizproc_registry");
+
+        const renderLinks = (items, targetId) => {
+          document.getElementById(targetId).innerHTML = items
+          .map((entity) => {
+            const href = buildEntityHref(entity.slug, source, state.activeView);
+            const activeClass = entity.slug === activeSlug ? "active" : "";
+            return `<a class="nav-link ${activeClass}" href="${href}">${escapeHtml(entity.title)}</a>`;
+          })
+          .join("");
+        };
+
+        renderLinks(crmEntities, "entityNav");
+        renderLinks(smartEntities, "smartEntityNav");
+        renderLinks(bpEntities, "bpNav");
+        document.getElementById("smartNavSection").classList.toggle("hidden", smartEntities.length === 0);
+        document.getElementById("bpNavSection").classList.toggle("hidden", bpEntities.length === 0);
+      }
+
+      function setActiveSource(source) {
+        state.activeSource = source;
+        document.getElementById("cloudSourceTab").classList.toggle("active", source === "cloud");
+        document.getElementById("boxSourceTab").classList.toggle("active", source === "box");
+      }
+
+      function getTargetSlugForSource(source) {
+        const catalog = state.catalogs[source];
+        const entities = catalog?.entities || getFallbackEntities();
+        if (entities.some((entity) => entity.slug === state.currentSlug)) {
+          return state.currentSlug;
+        }
+        return catalog?.defaultSlug || getFallbackEntities()[0].slug;
+      }
+
+      async function fetchCatalog(source, failSilently = false) {
+        try {
+          const response = await fetch(`/api/entity-catalog?source=${encodeURIComponent(source)}`);
+          const payload = await response.json();
+          if (!response.ok) {
+            throw new Error(payload.error || "Не удалось загрузить каталог сущностей.");
+          }
+          state.catalogs[source] = payload;
+          updatePortalButtons();
+          return payload;
+        } catch (error) {
+          if (failSilently) {
+            return null;
+          }
+          throw error;
+        }
+      }
+
+      function setActiveTab(tab) {
+        state.activeTab = tab;
+        const isSmart = tab === "smart";
+        const isBp = tab === "bp";
+        const isCrm = tab === "crm";
+        document.getElementById("crmTab").classList.toggle("active", isCrm);
+        document.getElementById("smartTab").classList.toggle("active", isSmart);
+        document.getElementById("bpTab").classList.toggle("active", isBp);
+        document.getElementById("baseNavSection").classList.toggle("hidden", !isCrm);
+        document.getElementById("smartNavSection").classList.toggle("hidden", !isSmart);
+        document.getElementById("bpNavSection").classList.toggle("hidden", !isBp);
+      }
+
+      function renderStats(summary) {
+        const stats =
+          state.currentKind === "bizproc_registry"
+            ? [
+                ["Шаблонов БП", summary.templateCount],
+                ["Сущностей запуска", summary.targetCount],
+                ["С автозапуском", summary.autoStartCount],
+                ["Только ручной запуск", summary.manualOnlyCount],
+              ]
+            : [
+                ["Стадий", summary.stageCount],
+                ["Воронок", summary.pipelineCount],
+                ["Всего полей", summary.fieldCount],
+                ["Пользовательских полей", summary.customFieldCount],
+                ["Полей со списком", summary.optionFieldCount],
+              ];
+
+        document.getElementById("stats").innerHTML = stats
+          .map(
+            ([label, value]) => `
+              <div class="panel">
+                <div class="muted">${escapeHtml(label)}</div>
+                <div class="stat-value">${escapeHtml(value)}</div>
+              </div>
+            `
+          )
+          .join("");
+      }
+
+      function renderMappingStats(summary) {
+        const stats = [
+          ["Строк сущностей", summary.entityCount],
+          ["Не сопоставлено сущностей", summary.unmatchedEntityCount],
+          ["Строк полей", summary.fieldCount],
+          ["Не сопоставлено полей", summary.unmatchedFieldCount],
+          ["Строк списков", summary.optionCount],
+          ["Не сопоставлено списков", summary.unmatchedOptionCount],
+        ];
+
+        document.getElementById("stats").innerHTML = stats
+          .map(
+            ([label, value]) => `
+              <div class="panel">
+                <div class="muted">${escapeHtml(label)}</div>
+                <div class="stat-value">${escapeHtml(value)}</div>
+              </div>
+            `
+          )
+          .join("");
+      }
+
+      function renderStageCards(stages) {
+        return stages
+          .map((stage) => {
+            const tags = [
+              `<span class="pill code">${escapeHtml(stage.code)}</span>`,
+            ];
+
+            if (stage.entityId) {
+              tags.push(`<span class="pill code">${escapeHtml(stage.entityId)}</span>`);
+            }
+
+            if (stage.semantic) {
+              tags.push(`<span class="pill">${escapeHtml(stage.semantic)}</span>`);
+            }
+
+            if (stage.isSystem) {
+              tags.push('<span class="pill">Системная</span>');
+            }
+
+            return `
+              <article class="stage-card">
+                <div class="stage-color" style="background:${escapeHtml(stage.color || "#cbd5e1")}"></div>
+                <div class="muted">Сортировка: ${escapeHtml(stage.sort)}</div>
+                <h3 style="margin: 8px 0 0">${escapeHtml(stage.name)}</h3>
+                <div class="pill-row">${tags.join("")}</div>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function renderStages(stageGroups) {
+        const stagesEmpty = document.getElementById("stagesEmpty");
+        const stagesContainer = document.getElementById("stages");
+
+        if (!stageGroups.length) {
+          stagesContainer.innerHTML = "";
+          stagesEmpty.classList.remove("hidden");
+          return;
+        }
+
+        stagesEmpty.classList.add("hidden");
+        if (stageGroups.length === 1) {
+          stagesContainer.className = "stage-grid";
+          stagesContainer.innerHTML = renderStageCards(stageGroups[0].stages);
+          return;
+        }
+
+        stagesContainer.className = "stage-groups";
+        stagesContainer.innerHTML = stageGroups
+          .map(
+            (group) => `
+              <section class="stage-group">
+                <div class="stage-group-header">
+                  <div>
+                    <h3 style="margin: 0">${escapeHtml(group.title)}</h3>
+                    <div class="muted">
+                      Код воронки: ${escapeHtml(group.code || "-")}
+                      ${group.entityId ? ` · ${escapeHtml(group.entityId)}` : ""}
+                    </div>
+                  </div>
+                  <div class="pill-row">
+                    <span class="pill">${escapeHtml(group.stageCount)} стадий</span>
+                    ${group.code ? `<span class="pill code">${escapeHtml(group.code)}</span>` : ""}
+                  </div>
+                </div>
+                <div class="stage-grid">${renderStageCards(group.stages)}</div>
+              </section>
+            `
+          )
+          .join("");
+      }
+
+      function buildFieldProps(field) {
+        const props = [];
+        props.push(field.isCustom ? "Пользовательское" : "Стандартное");
+        if (field.isMultiple) props.push("Множественное");
+        if (field.isRequired) props.push("Обязательное");
+        if (field.isReadOnly) props.push("Только чтение");
+        if (field.statusType) props.push(`status: ${field.statusType}`);
+        if (field.hasOptions) props.push("Есть список значений");
+        return props;
+      }
+
+      function renderFieldOptions(field) {
+        if (!field.options || !field.options.length) {
+          return '<span class="muted">-</span>';
+        }
+
+        return `
+          <div class="option-list">
+            ${field.options
+              .map(
+                (option) => `
+                  <div class="option-item">
+                    <div class="option-name">${escapeHtml(option.name)}</div>
+                    <div class="option-code code">Код: ${escapeHtml(option.code)}</div>
+                  </div>
+                `
+              )
+              .join("")}
+          </div>
+        `;
+      }
+
+      function renderFields() {
+        const query = document.getElementById("searchInput").value.trim().toLowerCase();
+        const filter = document.getElementById("fieldFilter").value;
+
+        const fields = state.fields.filter((field) => {
+          const haystack = [field.title, field.code, field.type].join(" ").toLowerCase();
+          const matchesQuery = !query || haystack.includes(query);
+          const matchesFilter =
+            filter === "all" ||
+            (filter === "custom" && field.isCustom) ||
+            (filter === "standard" && !field.isCustom);
+          return matchesQuery && matchesFilter;
+        });
+
+        document.getElementById("fieldCountLabel").textContent =
+          `Показано полей: ${fields.length}`;
+
+        document.getElementById("fieldRows").innerHTML = fields
+          .map((field) => {
+            const props = buildFieldProps(field)
+              .map((value) => `<span class="pill">${escapeHtml(value)}</span>`)
+              .join(" ");
+
+            return `
+              <tr>
+                <td>${escapeHtml(field.title)}</td>
+                <td class="code">${escapeHtml(field.code)}</td>
+                <td>${escapeHtml(field.type)}</td>
+                <td><div class="pill-row">${props}</div></td>
+                <td>${renderFieldOptions(field)}</td>
+              </tr>
+            `;
+          })
+          .join("");
+      }
+
+      function renderBizprocTemplates() {
+        const query = document.getElementById("bpSearchInput").value.trim().toLowerCase();
+        const templates = state.templates.filter((template) => {
+          const haystack = [
+            template.name,
+            template.id,
+            template.target?.name,
+            template.target?.documentCode,
+            template.moduleId,
+            template.entity,
+            template.systemCode,
+          ]
+            .join(" ")
+            .toLowerCase();
+          return !query || haystack.includes(query);
+        });
+
+        document.getElementById("bpCountLabel").textContent = `Показано шаблонов: ${templates.length}`;
+
+        document.getElementById("bpRows").innerHTML =
+          templates
+            .map((template) => {
+              const autoExecute = (template.autoExecute?.labels || []).join(", ");
+              const active =
+                template.active == null
+                  ? "-"
+                  : ["Y", "1", 1, true].includes(template.active)
+                    ? "Да"
+                    : "Нет";
+
+              return `
+                <tr>
+                  <td>
+                    <div class="cell-stack">
+                      <strong>${escapeHtml(template.name)}</strong>
+                      <span class="muted">ID: ${escapeHtml(template.id || "-")}</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-stack">
+                      <strong>${escapeHtml(template.target?.name || "-")}</strong>
+                      <span class="code">${escapeHtml(template.target?.documentCode || "-")}</span>
+                      <span class="muted">${escapeHtml(template.moduleId || "-")} / ${escapeHtml(template.entity || "-")}</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-stack">
+                      <span>${escapeHtml(autoExecute)}</span>
+                      <span class="muted">Код: ${escapeHtml(template.autoExecute?.value ?? "-")}</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-stack">
+                      <span>Активен: ${escapeHtml(active)}</span>
+                      <span class="code">systemCode: ${escapeHtml(template.systemCode || "-")}</span>
+                    </div>
+                  </td>
+                </tr>
+              `;
+            })
+            .join("") || '<tr><td colspan="4" class="muted">Ничего не найдено.</td></tr>';
+      }
+
+      function setLayout(kind) {
+        if (state.activeView === "mapping") {
+          return;
+        }
+        const isBp = kind === "bizproc_registry";
+        document.getElementById("bpSection").classList.toggle("hidden", !isBp);
+        document.getElementById("stagesSection").classList.toggle("hidden", isBp);
+        document.getElementById("fieldsSection").classList.toggle("hidden", isBp);
+      }
+
+      function applyPageMeta(payload) {
+        document.title = `${payload.title} - CRM метаданные`;
+        document.getElementById("pageTitle").textContent = payload.title;
+        document.getElementById("pageSubtitle").textContent = payload.subtitle;
+        document.getElementById("sourceName").textContent = payload.sourceTitle || "...";
+        if (payload.kind === "bizproc_registry") {
+          return;
+        }
+        document.getElementById("stagesTitle").textContent = payload.stageTitle;
+        document.getElementById("stagesSubtitle").textContent = payload.stageSubtitle;
+        document.getElementById("fieldsTitle").textContent = `Поля: ${payload.title.toLowerCase()}`;
+        document.getElementById("fieldsSubtitle").textContent =
+          `Полный реестр полей сущности "${payload.title}".`;
+      }
+
+      function renderMappingRows(rows, targetId, columnsBuilder, emptyMessage, colspan = 4) {
+        document.getElementById(targetId).innerHTML =
+          rows
+            .map((row) => {
+              const rowClass = row.isMatched ? "" : "unmatched-row";
+              return `
+                <tr class="${rowClass}">
+                  ${columnsBuilder(row).join("")}
+                </tr>
+              `;
+            })
+            .join("") || `<tr><td colspan="${colspan}" class="muted">${escapeHtml(emptyMessage)}</td></tr>`;
+      }
+
+      function renderMapping(payload) {
+        state.currentKind = payload.kind || "base";
+        state.currentSlug = payload.slug || state.currentSlug;
+        state.mapping.entities = payload.entityRows || [];
+        state.mapping.fields = payload.fields || [];
+        state.mapping.options = payload.options || [];
+
+        document.title = `${payload.title} - CRM метаданные`;
+        document.getElementById("pageTitle").textContent = payload.title;
+        document.getElementById("pageSubtitle").textContent = payload.subtitle;
+        document.getElementById("sourceName").textContent = "Сопоставление";
+        document.getElementById("portalName").textContent =
+          `${payload.cloudPortal || "-"} / ${payload.boxPortal || "-"}`;
+
+        renderNav(payload.entities || getFallbackEntities(), payload.slug, state.activeSource);
+        setActiveTab(
+          payload.kind === "smart_process"
+            ? "smart"
+            : payload.kind === "bizproc_registry"
+              ? "bp"
+              : "crm"
+        );
+        renderMappingStats(payload.summary);
+
+        document.getElementById("entityMappingCountLabel").textContent =
+          `Строк: ${state.mapping.entities.length}`;
+        document.getElementById("fieldMappingCountLabel").textContent =
+          `Строк: ${state.mapping.fields.length}`;
+        document.getElementById("optionMappingCountLabel").textContent =
+          `Строк: ${state.mapping.options.length}`;
+
+        renderMappingRows(
+          state.mapping.entities,
+          "entityMappingRows",
+          (row) => [
+            `<td>${escapeHtml(row.name)}</td>`,
+            `<td class="${row.cloudCode ? "code" : "danger-text"}">${escapeHtml(row.cloudCode || "Не сопоставлено")}</td>`,
+            `<td class="${row.boxCode ? "code" : "danger-text"}">${escapeHtml(row.boxCode || "Не сопоставлено")}</td>`,
+          ],
+          "Данные сопоставления сущностей не найдены.",
+          3
+        );
+
+        renderMappingRows(
+          state.mapping.fields,
+          "fieldMappingRows",
+          (row) => [
+            `<td><div class="cell-stack"><strong>${escapeHtml(row.entityName)}</strong><span class="muted code">${escapeHtml(row.entityCloudCode || "-")} / ${escapeHtml(row.entityBoxCode || "-")}</span></div></td>`,
+            `<td>${escapeHtml(row.name)}</td>`,
+            `<td class="${row.cloudCode ? "code" : "danger-text"}">${escapeHtml(row.cloudCode || "Не сопоставлено")}</td>`,
+            `<td class="${row.boxCode ? "code" : "danger-text"}">${escapeHtml(row.boxCode || "Не сопоставлено")}</td>`,
+          ],
+          "Данные сопоставления полей не найдены."
+        );
+
+        renderMappingRows(
+          state.mapping.options,
+          "optionMappingRows",
+          (row) => [
+            `<td><div class="cell-stack"><strong>${escapeHtml(row.entityName)}</strong><span class="muted">${escapeHtml(row.fieldName)}</span><span class="muted code">${escapeHtml(row.fieldCloudCode || "-")} / ${escapeHtml(row.fieldBoxCode || "-")}</span></div></td>`,
+            `<td>${escapeHtml(row.name)}</td>`,
+            `<td class="${row.cloudCode ? "code" : "danger-text"}">${escapeHtml(row.cloudCode || "Не сопоставлено")}</td>`,
+            `<td class="${row.boxCode ? "code" : "danger-text"}">${escapeHtml(row.boxCode || "Не сопоставлено")}</td>`,
+          ],
+          "Данные сопоставления списочных значений не найдены."
+        );
+
+        setActiveView("mapping");
+      }
+
+      async function load() {
+        const loading = document.getElementById("loading");
+        const error = document.getElementById("error");
+        let slug = getCurrentEntitySlug();
+        const source = getCurrentSource();
+        const view = getCurrentView();
+        const secondarySource = source === "cloud" ? "box" : "cloud";
+
+        state.currentSlug = slug;
+        state.activeSource = source;
+        state.activeView = view;
+        setActiveSource(source);
+        setActiveView(view);
+        updatePortalButtons();
+
+        try {
+          if (view === "mapping") {
+            const response = await fetch(`/api/entity-mapping?entity=${encodeURIComponent(slug)}`);
+            const payload = await response.json();
+            if (!response.ok) {
+              throw new Error(payload.error || "Не удалось загрузить сопоставление.");
+            }
+            state.catalogs.cloud = { portal: payload.cloudPortal };
+            state.catalogs.box = { portal: payload.boxPortal };
+            updatePortalButtons();
+            renderMapping(payload);
+            loading.classList.add("hidden");
+            return;
+          }
+
+          const [catalog] = await Promise.all([
+            fetchCatalog(source),
+            fetchCatalog(secondarySource, true),
+          ]);
+
+          state.catalog = catalog;
+          const entities = catalog.entities || [];
+          const knownSlugs = new Set(entities.map((entity) => entity.slug));
+          if (entities.length && !knownSlugs.has(slug)) {
+            slug = catalog.defaultSlug || entities[0].slug;
+            window.history.replaceState({}, "", buildEntityHref(slug, source));
+          }
+
+          const response = await fetch(
+            `/api/entity-meta?source=${encodeURIComponent(source)}&entity=${encodeURIComponent(slug)}`
+          );
+          const payload = await response.json();
+
+          if (!response.ok) {
+            throw new Error(payload.error || "Не удалось загрузить данные.");
+          }
+
+          state.currentSlug = payload.slug;
+          document.getElementById("portalName").textContent = payload.portal;
+          state.currentKind = payload.kind;
+
+          applyPageMeta(payload);
+          renderNav(catalog.entities || payload.entities || getFallbackEntities(), payload.slug, source);
+          setActiveSource(payload.source || source);
+          setActiveTab(
+            payload.kind === "smart_process"
+              ? "smart"
+              : payload.kind === "bizproc_registry"
+                ? "bp"
+                : "crm"
+          );
+          setLayout(payload.kind);
+          renderStats(payload.summary);
+          if (payload.kind === "bizproc_registry") {
+            state.templates = payload.templates || [];
+            renderBizprocTemplates();
+          } else {
+            state.fields = payload.fields;
+            renderStages(payload.stageGroups || []);
+            renderFields();
+          }
+
+          loading.classList.add("hidden");
+        } catch (err) {
+          renderNav(getFallbackEntities(), slug, source);
+          setActiveSource(source);
+          setActiveView(view);
+          setActiveTab(slug === "bp-templates" ? "bp" : slug.startsWith("sp-") ? "smart" : "crm");
+          setLayout(slug === "bp-templates" ? "bizproc_registry" : "base");
+          loading.classList.add("hidden");
+          error.textContent = err.message;
+          error.classList.remove("hidden");
+        }
+      }
+
+      document.getElementById("searchInput").addEventListener("input", renderFields);
+      document.getElementById("fieldFilter").addEventListener("change", renderFields);
+      document.getElementById("dataViewTab").addEventListener("click", () => {
+        window.location.href = buildEntityHref(state.currentSlug, state.activeSource, "data");
+      });
+      document.getElementById("mappingViewTab").addEventListener("click", () => {
+        window.location.href = buildEntityHref(state.currentSlug, state.activeSource, "mapping");
+      });
+      document.getElementById("cloudSourceTab").addEventListener("click", () => {
+        window.location.href = buildEntityHref(getTargetSlugForSource("cloud"), "cloud", "data");
+      });
+      document.getElementById("boxSourceTab").addEventListener("click", () => {
+        window.location.href = buildEntityHref(getTargetSlugForSource("box"), "box", "data");
+      });
+      document.getElementById("crmTab").addEventListener("click", () => setActiveTab("crm"));
+      document.getElementById("smartTab").addEventListener("click", () => setActiveTab("smart"));
+      document.getElementById("bpSearchInput").addEventListener("input", renderBizprocTemplates);
+      document.getElementById("bpTab").addEventListener("click", () => setActiveTab("bp"));
+
+      load();
+    </script>
+  </body>
+</html>

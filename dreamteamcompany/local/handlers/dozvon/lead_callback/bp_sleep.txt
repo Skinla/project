@@ -1,0 +1,35 @@
+/**
+ * BP блок: Надёжный таймер через sleep().
+ * Полностью inline — без внешних файлов.
+ *
+ * Читает: CB_SLEEP_SEC (кол-во секунд)
+ * Записывает: CB_SLEEP_DONE
+ */
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+try {
+    $raw = $getVar('CB_SLEEP_SEC');
+    $sec = max(1, min(300, (int)$raw));
+    $log('CB SLEEP start ' . $sec . 's');
+    sleep($sec);
+    $setVar('CB_SLEEP_DONE', 'Y');
+    $log('CB SLEEP done after ' . $sec . 's');
+} catch (\Throwable $e) {
+    $setVar('CB_SLEEP_DONE', 'N');
+    $log('CB SLEEP error: ' . $e->getMessage());
+}

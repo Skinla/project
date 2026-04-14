@@ -1,0 +1,23 @@
+TZ/экран	Поле (как в ТЗ/макете)	Источник Bitrix (метод)	Ключ в ответе	Тип данных	Заполненность (из 2004)	Нормализация/правила	Где используем в модуле	Где используем в UI	Статус/комментарий
+Список/поиск/деталка	ID товара	catalog.product.list / catalog.product.get	id	int	2004/2004 (100%)	как число	/product?id=…	детальная карточка	OK
+Список/поиск/деталка	Название услуги	catalog.product.list / catalog.product.get	name	string	2004/2004 (100%)	trim	/product	детальная карточка	OK
+Список/деталка	Код (для URL/slug)	catalog.product.list / catalog.product.get	code	string	2004/2004 (100%)	trim, lower (если нужно)	/product	опционально (если надо показывать/логировать)	OK
+Список/фильтр	Раздел (категория)	catalog.product.list	iblockSectionId	int|null	2003/2004 (99.95%)	fallback: null → “без раздела”	/product (опционально)	не используем на текущем этапе	1 товар без раздела (id=7896)
+Деталка	Вид услуги (enum)	catalog.product.list / catalog.product.get	property106.valueEnum	string	2004/2004 (100%)	берём valueEnum; valueId игнор	/product	детальная карточка	OK
+Список/деталка	Учебные часы / объём курса (уч.ч.)	catalog.product.list / catalog.product.get	property112.value	int|string	1965/2004 (98.1%)	parseInt; если пусто/“-” → null	/product	детальная карточка	39 товаров без значения
+Список/деталка	Периодичность (мес.)	catalog.product.list / catalog.product.get	property114.value	string	2002/2004 (99.9%)	parseInt если число; “-” → null	/product	детальная карточка	2 товара без значения
+Список/деталка	Срок оказания (раб. дней)	catalog.product.list / catalog.product.get	property116.value	int|string	2003/2004 (99.95%)	parseInt; “-” → null	/product	детальная карточка	1 товар без значения
+Деталка	Реестр / ФИС ФРДО	catalog.product.list / catalog.product.get	property122.value	string	1982/2004 (98.9%)	“-”/пусто → null. Значение может быть \"ФИС ФРДО\" (пример: product id=18).	/product	детальная карточка	OK: ФРДО — это значение реестра
+Деталка	Формат обучения	catalog.product.list / catalog.product.get	property124.value	string	1972/2004 (98.4%)	“-”/пусто → null	/product	детальная карточка	32 товара без значения
+Деталка	Требования к клиенту (список)	catalog.product.list / catalog.product.get	property126.value	string	1998/2004 (99.7%)	если “-”/пусто → []; иначе split по \\n/;/, и trim	/product	детальная карточка	6 товаров без значения + часто “-”
+Деталка	Требуемый уровень образования	catalog.product.list / catalog.product.get	property128.value	string	1989/2004 (99.3%)	“-”/пусто → null	/product	детальная карточка	15 товаров без значения
+Список/деталка	Цена (от…) розничная	catalog.product.list / catalog.product.get	property152.value	string (Money)	2004/2004 (100%)	парсить \"N|RUB\" → {amount:int,currency} + priceDisplay \"от N ₽\"	/product	детальная карточка	OK (основная цена)
+Опционально	Партнёрская цена	catalog.product.list / catalog.product.get	property154.value	string (Money)	2004/2004 (100%)	парсить как Money; не показывать на UI	внутренняя логика (если потребуется)	не отображать	OK (но не в ТЗ)
+Опционально	“Старая цена”	—	—	—	—	НЕ ИСПОЛЬЗУЕМ	—	—	Удалено по решению
+Деталка	Описание услуги	—	—	—	—	НЕ ИСПОЛЬЗУЕМ	—	—	Удалено по решению (в каталоге почти всегда пусто)
+Список/деталка	Изображения товара	—	—	—	—	НЕ ИСПОЛЬЗУЕМ	—	—	Удалено по решению
+Навигация	Ссылка на детальную страницу	— (деталка — встраиваемый блок)	—	—	—	не нужна	—	—	OUT OF SCOPE
+Поиск	Поиск по подстроке	catalog.product.list	filter: %name	string	—	не нужен	—	—	OUT OF SCOPE
+Пагинация	Пагинация каталога	catalog.product.list	start + верхний уровень total/next	int	—	не нужна	—	—	OUT OF SCOPE
+CTA	Кнопка “Оставить заявку”	— (это действие UI на странице)	ctaAnchor	string	—	якорь на форму на странице (по умолчанию `#request`)	/product	детальная карточка	OK: без бекенд-логики заявки
+

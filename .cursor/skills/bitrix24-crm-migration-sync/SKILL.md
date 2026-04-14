@@ -99,4 +99,3 @@ If migrating duplicates/status info, add a comment entry to lead timeline:
   - cURL availability
   - file permissions
   - settings correctness
-

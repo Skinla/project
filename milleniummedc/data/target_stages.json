@@ -1,0 +1,360 @@
+{
+    "target_url": "https:\/\/bitrix.milleniummedc.ru",
+    "scanned_at": "2026-03-19T22:00:00+00:00",
+    "lead_stages": [
+        {
+            "status_id": "NEW",
+            "name": "Не обработан"
+        },
+        {
+            "status_id": "CONVERTED",
+            "name": "Качественный лид"
+        },
+        {
+            "status_id": "JUNK",
+            "name": "ЧС"
+        },
+        {
+            "status_id": "1",
+            "name": "OLD"
+        },
+        {
+            "status_id": "2",
+            "name": "Дубль"
+        },
+        {
+            "status_id": "3",
+            "name": "Неправильный номер"
+        }
+    ],
+    "lead_sources": [
+        {
+            "status_id": "CALL",
+            "name": "Звонок"
+        },
+        {
+            "status_id": "EMAIL",
+            "name": "Электронная почта"
+        },
+        {
+            "status_id": "WEB",
+            "name": "Веб-сайт"
+        },
+        {
+            "status_id": "ADVERTISING",
+            "name": "Реклама"
+        },
+        {
+            "status_id": "PARTNER",
+            "name": "Существующий клиент"
+        },
+        {
+            "status_id": "RECOMMENDATION",
+            "name": "По рекомендации"
+        },
+        {
+            "status_id": "TRADE_SHOW",
+            "name": "Выставка"
+        },
+        {
+            "status_id": "WEBFORM",
+            "name": "CRM-форма"
+        },
+        {
+            "status_id": "CALLBACK",
+            "name": "Обратный звонок"
+        },
+        {
+            "status_id": "RC_GENERATOR",
+            "name": "Генератор продаж"
+        },
+        {
+            "status_id": "STORE",
+            "name": "Интернет-магазин"
+        },
+        {
+            "status_id": "OTHER",
+            "name": "Другое"
+        },
+        {
+            "status_id": "BOOKING",
+            "name": "Онлайн-запись"
+        },
+        {
+            "status_id": "REPEAT_SALE",
+            "name": ""
+        }
+    ],
+    "lead_honorific": [
+        {
+            "status_id": "HNR_RU_1",
+            "name": "г-н"
+        },
+        {
+            "status_id": "HNR_RU_2",
+            "name": "г-жа"
+        }
+    ],
+    "deal_categories": [
+        {
+            "id": 0,
+            "name": "Первичная продажа",
+            "stages": [
+                {
+                    "status_id": "NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "PREPARATION",
+                    "name": "Подготовка документов"
+                },
+                {
+                    "status_id": "PREPAYMENT_INVOICE",
+                    "name": "Cчёт на предоплату"
+                },
+                {
+                    "status_id": "EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "FINAL_INVOICE",
+                    "name": "Финальный счёт"
+                },
+                {
+                    "status_id": "UC_2XC3O7",
+                    "name": "Не может говорить"
+                },
+                {
+                    "status_id": "WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Повторная продажа",
+            "stages": [
+                {
+                    "status_id": "C1:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C1:PREPARATION",
+                    "name": "Подготовка документов"
+                },
+                {
+                    "status_id": "C1:PREPAYMENT_INVOICE",
+                    "name": "Cчёт на предоплату"
+                },
+                {
+                    "status_id": "C1:UC_VX647E",
+                    "name": "созвон"
+                },
+                {
+                    "status_id": "C1:EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C1:FINAL_INVOICE",
+                    "name": "Финальный счёт"
+                },
+                {
+                    "status_id": "C1:UC_VP177E",
+                    "name": "Клиент записан"
+                },
+                {
+                    "status_id": "C1:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C1:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C1:APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Клиника",
+            "stages": [
+                {
+                    "status_id": "C2:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C2:PREPARATION",
+                    "name": "Подготовка документов"
+                },
+                {
+                    "status_id": "C2:UC_601DA0",
+                    "name": "РОП2 (вторичка)"
+                },
+                {
+                    "status_id": "C2:PREPAYMENT_INVOICE",
+                    "name": "Cчёт на предоплату"
+                },
+                {
+                    "status_id": "C2:EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C2:FINAL_INVOICE",
+                    "name": "Финальный счёт"
+                },
+                {
+                    "status_id": "C2:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C2:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C2:APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Воронка отменившихся",
+            "stages": [
+                {
+                    "status_id": "C3:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C3:PREPARATION",
+                    "name": "Подготовка документов"
+                },
+                {
+                    "status_id": "C3:PREPAYMENT_INVOICE",
+                    "name": "Cчёт на предоплату"
+                },
+                {
+                    "status_id": "C3:EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C3:FINAL_INVOICE",
+                    "name": "Финальный счёт"
+                },
+                {
+                    "status_id": "C3:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C3:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C3:APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Абонементы",
+            "stages": [
+                {
+                    "status_id": "C4:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C4:PREPARATION",
+                    "name": "Подготовка документов"
+                },
+                {
+                    "status_id": "C4:PREPAYMENT_INVOICE",
+                    "name": "Cчёт на предоплату"
+                },
+                {
+                    "status_id": "C4:UC_T47Z7F",
+                    "name": "Клиент записан"
+                },
+                {
+                    "status_id": "C4:EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C4:UC_B4GK43",
+                    "name": "Запись подтверждена"
+                },
+                {
+                    "status_id": "C4:FINAL_INVOICE",
+                    "name": "Финальный счёт"
+                },
+                {
+                    "status_id": "C4:UC_489VAO",
+                    "name": "Пришел"
+                },
+                {
+                    "status_id": "C4:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C4:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C4:APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "тестовая запись к врачу",
+            "stages": [
+                {
+                    "status_id": "C5:NEW",
+                    "name": "Новая"
+                },
+                {
+                    "status_id": "C5:PREPARATION",
+                    "name": "Подготовка документов"
+                },
+                {
+                    "status_id": "C5:PREPAYMENT_INVOICE",
+                    "name": "Cчёт на предоплату"
+                },
+                {
+                    "status_id": "C5:PREPAYMENT_INVOIC",
+                    "name": "Имя невролога"
+                },
+                {
+                    "status_id": "C5:EXECUTING",
+                    "name": "В работе"
+                },
+                {
+                    "status_id": "C5:FINAL_INVOICE",
+                    "name": "Финальный счёт"
+                },
+                {
+                    "status_id": "C5:WON",
+                    "name": "Сделка успешна"
+                },
+                {
+                    "status_id": "C5:LOSE",
+                    "name": "Сделка провалена"
+                },
+                {
+                    "status_id": "C5:APOLOGY",
+                    "name": "Анализ причины провала"
+                }
+            ]
+        }
+    ]
+}

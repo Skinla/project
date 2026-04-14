@@ -41,4 +41,3 @@ description: Integrate Bitrix (widgets/portal UI) with external services for ana
 - Для “одной таблицы/визуализации”:
   - проще выделить отдельную страницу отчёта в Power BI
   - либо использовать JS SDK + access token (если требуется интерактив/точный visual)
-

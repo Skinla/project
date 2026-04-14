@@ -1,0 +1,132 @@
+/**
+ * BP блок: Запуск Vox-сценария (StartScenarios).
+ * PHP: curl POST к Voximplant API + JSON parse.
+ *
+ * Читает: CB_SIP_LINE, CB_SIP_PASSWORD, CB_RULE_ID, CB_OPERATOR_ID,
+ *         CB_OPERATOR_EXTENSION, CB_OPERATOR_NAME, CB_PHONE, CB_LEAD_ID, CB_ATTEMPT
+ * Записывает: CB_CALL_ID, CB_VOX_SESSION_ID, CB_STARTED_AT,
+ *             CB_CALL_RESULT (started/error), CB_CALL_MESSAGE
+ */
+
+$rootActivity = $this->GetRootActivity();
+$setVar = function ($name, $value) use ($rootActivity) {
+    if (method_exists($rootActivity, 'SetVariable')) {
+        $rootActivity->SetVariable($name, (string)$value);
+    }
+};
+$getVar = function ($name) use ($rootActivity) {
+    if (method_exists($rootActivity, 'GetVariable')) {
+        return $rootActivity->GetVariable($name);
+    }
+    return null;
+};
+$log = function ($msg) {
+    $this->WriteToTrackingService((string)$msg);
+};
+
+$voxApiUrl    = 'https://api.voximplant.com/platform_api/StartScenarios/';
+$voxAccountId = '9935862';
+$voxApiKey    = 'f9a8a2d0-4f60-4007-abff-2d39e8ed636c';
+$envAccId = getenv('LEAD_CALLBACK_VOX_ACCOUNT_ID');
+if (is_string($envAccId) && $envAccId !== '') $voxAccountId = $envAccId;
+$envApiKey = getenv('LEAD_CALLBACK_VOX_API_KEY');
+if (is_string($envApiKey) && $envApiKey !== '') $voxApiKey = $envApiKey;
+
+try {
+    $sipLine     = trim((string)$getVar('CB_SIP_LINE'));
+    $sipPassword = trim((string)$getVar('CB_SIP_PASSWORD'));
+    $ruleId      = trim((string)$getVar('CB_RULE_ID'));
+    $operatorId  = (int)preg_replace('/\D+/', '', (string)$getVar('CB_OPERATOR_ID'));
+    $operatorExt = trim((string)$getVar('CB_OPERATOR_EXTENSION'));
+    $operatorName= trim((string)$getVar('CB_OPERATOR_NAME'));
+    $phone       = trim((string)$getVar('CB_PHONE'));
+    $leadId      = (int)preg_replace('/\D+/', '', (string)$getVar('CB_LEAD_ID'));
+    $attemptNum  = (int)preg_replace('/\D+/', '', (string)$getVar('CB_ATTEMPT'));
+
+    $log('CB CALL [1/4] start leadId=' . $leadId . ' phone=' . $phone . ' ruleId=' . $ruleId . ' op=' . $operatorId);
+
+    $customData = [
+        'lead_id'            => $leadId,
+        'attempt_number'     => $attemptNum,
+        'client_number'      => $phone,
+        'sip_line'           => $sipLine,
+        'sip_password'       => $sipPassword,
+        'operator_user_id'   => $operatorId,
+        'operator_extension' => $operatorExt,
+        'operator_name'      => $operatorName,
+        'portal_host'        => (string)($_SERVER['HTTP_HOST'] ?? ''),
+    ];
+
+    $payload = http_build_query([
+        'account_id'         => $voxAccountId,
+        'api_key'            => $voxApiKey,
+        'rule_id'            => $ruleId,
+        'script_custom_data' => json_encode($customData, JSON_UNESCAPED_UNICODE),
+    ]);
+
+    $ch = curl_init($voxApiUrl);
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => $payload,
+        CURLOPT_HTTPHEADER     => ['Content-Type: application/x-www-form-urlencoded', 'Accept: application/json'],
+        CURLOPT_TIMEOUT        => 30,
+        CURLOPT_CONNECTTIMEOUT => 10,
+        CURLOPT_SSL_VERIFYPEER => false,
+    ]);
+    $response  = curl_exec($ch);
+    $httpCode  = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);
+    curl_close($ch);
+
+    if ($response === false) {
+        $setVar('CB_CALL_RESULT', 'error');
+        $setVar('CB_CALL_MESSAGE', 'Vox curl error: ' . $curlError);
+        $log('CB CALL [2/4] ABORT: curl error');
+        return;
+    }
+
+    $decoded = json_decode($response, true);
+    if (!is_array($decoded)) {
+        $setVar('CB_CALL_RESULT', 'error');
+        $setVar('CB_CALL_MESSAGE', 'Vox invalid JSON, HTTP ' . $httpCode);
+        $log('CB CALL [2/4] ABORT: invalid JSON');
+        return;
+    }
+
+    $errorMsg = isset($decoded['error_description'])
+        ? (string)$decoded['error_description']
+        : (isset($decoded['error']) ? (string)(is_scalar($decoded['error']) ? $decoded['error'] : json_encode($decoded['error'])) : '');
+    if ($errorMsg !== '' || $httpCode >= 400) {
+        $setVar('CB_CALL_RESULT', 'error');
+        $setVar('CB_CALL_MESSAGE', 'Vox API: ' . ($errorMsg !== '' ? $errorMsg : 'HTTP ' . $httpCode));
+        $log('CB CALL [2/4] ABORT: Vox error');
+        return;
+    }
+
+    $callId = '';
+    $voxSessionId = '';
+    if (!empty($decoded['call_session_history_id'])) {
+        $voxSessionId = (string)$decoded['call_session_history_id'];
+        $callId = 'vox_' . $voxSessionId;
+    } elseif (is_array($decoded['result'] ?? null) && !empty($decoded['result']['scenario_id'])) {
+        $callId = (string)$decoded['result']['scenario_id'];
+    } elseif (is_array($decoded['result'] ?? null) && !empty($decoded['result']['CALL_ID'])) {
+        $callId = (string)$decoded['result']['CALL_ID'];
+    } elseif (is_array($decoded['result'] ?? null) && !empty($decoded['result']['SESSION_ID'])) {
+        $callId = (string)$decoded['result']['SESSION_ID'];
+    }
+
+    $startedAt = date('d.m.Y H:i:s');
+    $setVar('CB_CALL_ID',        $callId);
+    $setVar('CB_VOX_SESSION_ID', $voxSessionId);
+    $setVar('CB_STARTED_AT',     $startedAt);
+    $setVar('CB_CALL_RESULT',    'started');
+    $setVar('CB_CALL_MESSAGE',   'Callback запущен, callId=' . $callId);
+    $log('CB CALL [4/4] DONE started callId=' . $callId);
+
+} catch (\Throwable $e) {
+    $setVar('CB_CALL_RESULT', 'error');
+    $setVar('CB_CALL_MESSAGE', 'Exception: ' . $e->getMessage());
+    $log('CB CALL EXCEPTION: ' . $e->getMessage());
+}

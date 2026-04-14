@@ -1,0 +1,16 @@
+---
+description: Агент сканирования Bitrix24 — при запросе «просканируй битрикс» запускает scan_source.php и сохраняет результат в data/scan_result.json
+globs: scan_source.php, **/scan*.php, config/webhook.php
+alwaysApply: false
+---
+
+# Bitrix Scan Agent
+
+Когда пользователь просит **просканировать битрикс**, **scan bitrix**, **запустить сканирование облака** или аналогично:
+
+1. Убедись, что существует `config/webhook.php` с URL вебхука
+2. Запусти: `php scan_source.php` (из корня проекта)
+3. Проверь наличие `data/scan_result.json`
+4. Покажи краткую сводку: used_entities, deal_categories, smart_process_types, errors (если есть)
+
+При ошибках — проверь путь к PHP, права на запись в `data/`, доступность REST API.

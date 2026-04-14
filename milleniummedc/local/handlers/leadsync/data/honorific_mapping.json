@@ -1,0 +1,10 @@
+{
+    "_comment": "cloud HONORIFIC -> box HONORIFIC. Match by name.",
+    "source_url": "https:\/\/milleniummed.bitrix24.ru",
+    "target_url": "https:\/\/bitrix.milleniummedc.ru",
+    "created_at": "2026-03-18T13:01:15+00:00",
+    "honorific": {
+        "HNR_RU_1": "HNR_RU_1",
+        "HNR_RU_2": "HNR_RU_2"
+    }
+}

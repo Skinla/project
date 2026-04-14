@@ -1,0 +1,2205 @@
+{
+  "slug": "sp-1050",
+  "kind": "smart_process",
+  "entity": "items",
+  "title": "+Заявки в IT-службу",
+  "subtitle": "Смарт-процесс \"+Заявки в IT-службу\": воронки, стадии, поля и значения списочных полей.",
+  "stageTitle": "Воронки и стадии",
+  "stageSubtitle": "Стадии смарт-процесса без разделения по воронкам.",
+  "portal": "bitrix.tms.net.ru",
+  "source": "box",
+  "sourceTitle": "Коробка",
+  "entities": [
+    {
+      "slug": "leads",
+      "title": "Лиды",
+      "kind": "base"
+    },
+    {
+      "slug": "deals",
+      "title": "Сделки",
+      "kind": "base"
+    },
+    {
+      "slug": "invoices",
+      "title": "Счета",
+      "kind": "base"
+    },
+    {
+      "slug": "contacts",
+      "title": "Контакты",
+      "kind": "base"
+    },
+    {
+      "slug": "companies",
+      "title": "Компании",
+      "kind": "base"
+    },
+    {
+      "slug": "quotes",
+      "title": "Предложения",
+      "kind": "base"
+    },
+    {
+      "slug": "sp-1058",
+      "title": "+Входящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1090",
+      "title": "+Договора от партнеров",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1082",
+      "title": "+Договоры с заказчиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1042",
+      "title": "+Договоры с поставщиками",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1070",
+      "title": "+Документы по договорам",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1102",
+      "title": "+Заявка на закупку",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1110",
+      "title": "+Заявка на ресурс",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1078",
+      "title": "+Заявка на транспорт",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1050",
+      "title": "+Заявки в IT-службу",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1066",
+      "title": "+Исходящие (бухгалтерия)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1062",
+      "title": "+Исходящие документы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1054",
+      "title": "+Материалы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1046",
+      "title": "+Наименование работ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1114",
+      "title": "+Объекты",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1074",
+      "title": "+Реестр приказов",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1086",
+      "title": "+Реестр чертежей",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1098",
+      "title": "+Склады",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1106",
+      "title": "+Собственные ресурсы",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1094",
+      "title": "+Сотрудники (с/п)",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1038",
+      "title": "+Счета от поставщиков",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-1118",
+      "title": "+Участки",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-36",
+      "title": "Документ",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "sp-39",
+      "title": "Документ компании",
+      "kind": "smart_process"
+    },
+    {
+      "slug": "bp-templates",
+      "title": "Шаблоны БП",
+      "kind": "bizproc_registry"
+    }
+  ],
+  "stageGroups": [
+    {
+      "id": "sp-1050",
+      "title": "Стадии",
+      "code": "DYNAMIC_1050_STAGE_11",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "stageCount": 7,
+      "stages": [
+        {
+          "id": "250",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:NEW",
+          "name": "Новая заявка",
+          "sort": 10,
+          "color": "#22B9FF",
+          "semantic": null,
+          "isSystem": true,
+          "raw": {
+            "id": "250",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:NEW",
+            "name": "Новая заявка",
+            "nameInit": "Начало",
+            "sort": 10,
+            "color": "#22B9FF",
+            "semantics": null,
+            "SYSTEM": "Y",
+            "CATEGORY_ID": "11"
+          }
+        },
+        {
+          "id": "251",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:PREPARATION",
+          "name": "В работе",
+          "sort": 20,
+          "color": "#88B9FF",
+          "semantic": null,
+          "isSystem": false,
+          "raw": {
+            "id": "251",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:PREPARATION",
+            "name": "В работе",
+            "nameInit": "Подготовка",
+            "sort": 20,
+            "color": "#88B9FF",
+            "semantics": null,
+            "SYSTEM": "N",
+            "CATEGORY_ID": "11"
+          }
+        },
+        {
+          "id": "252",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:CLIENT",
+          "name": "Уточнение информации",
+          "sort": 30,
+          "color": "#10e5fc",
+          "semantic": null,
+          "isSystem": false,
+          "raw": {
+            "id": "252",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:CLIENT",
+            "name": "Уточнение информации",
+            "nameInit": "Согласование",
+            "sort": 30,
+            "color": "#10e5fc",
+            "semantics": null,
+            "SYSTEM": "N",
+            "CATEGORY_ID": "11"
+          }
+        },
+        {
+          "id": "340",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:1",
+          "name": "Передача во внешнюю поддержку",
+          "sort": 40,
+          "color": "#39A8EF",
+          "semantic": null,
+          "isSystem": false,
+          "raw": {
+            "id": "340",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:1",
+            "name": "Передача во внешнюю поддержку",
+            "nameInit": "",
+            "sort": 40,
+            "color": "#39A8EF",
+            "semantics": null,
+            "SYSTEM": "N",
+            "CATEGORY_ID": "11"
+          }
+        },
+        {
+          "id": "341",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:2",
+          "name": "Контроль",
+          "sort": 50,
+          "color": "#2FC6F6",
+          "semantic": null,
+          "isSystem": false,
+          "raw": {
+            "id": "341",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:2",
+            "name": "Контроль",
+            "nameInit": "",
+            "sort": 50,
+            "color": "#2FC6F6",
+            "semantics": null,
+            "SYSTEM": "N",
+            "CATEGORY_ID": "11"
+          }
+        },
+        {
+          "id": "253",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:SUCCESS",
+          "name": "Исполнена",
+          "sort": 60,
+          "color": "#00ff00",
+          "semantic": "S",
+          "isSystem": true,
+          "raw": {
+            "id": "253",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:SUCCESS",
+            "name": "Исполнена",
+            "nameInit": "Успех",
+            "sort": 60,
+            "color": "#00ff00",
+            "semantics": "S",
+            "SYSTEM": "Y",
+            "CATEGORY_ID": "11"
+          }
+        },
+        {
+          "id": "254",
+          "entityId": "DYNAMIC_1050_STAGE_11",
+          "code": "DT1050_11:FAIL",
+          "name": "Невозможно выполнить",
+          "sort": 70,
+          "color": "#ff0000",
+          "semantic": "F",
+          "isSystem": true,
+          "raw": {
+            "id": "254",
+            "entityId": "DYNAMIC_1050_STAGE_11",
+            "statusId": "DT1050_11:FAIL",
+            "name": "Невозможно выполнить",
+            "nameInit": "Провал",
+            "sort": 70,
+            "color": "#ff0000",
+            "semantics": "F",
+            "SYSTEM": "Y",
+            "CATEGORY_ID": "11"
+          }
+        }
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "250",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:NEW",
+      "name": "Новая заявка",
+      "sort": 10,
+      "color": "#22B9FF",
+      "semantic": null,
+      "isSystem": true,
+      "raw": {
+        "id": "250",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:NEW",
+        "name": "Новая заявка",
+        "nameInit": "Начало",
+        "sort": 10,
+        "color": "#22B9FF",
+        "semantics": null,
+        "SYSTEM": "Y",
+        "CATEGORY_ID": "11"
+      }
+    },
+    {
+      "id": "251",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:PREPARATION",
+      "name": "В работе",
+      "sort": 20,
+      "color": "#88B9FF",
+      "semantic": null,
+      "isSystem": false,
+      "raw": {
+        "id": "251",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:PREPARATION",
+        "name": "В работе",
+        "nameInit": "Подготовка",
+        "sort": 20,
+        "color": "#88B9FF",
+        "semantics": null,
+        "SYSTEM": "N",
+        "CATEGORY_ID": "11"
+      }
+    },
+    {
+      "id": "252",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:CLIENT",
+      "name": "Уточнение информации",
+      "sort": 30,
+      "color": "#10e5fc",
+      "semantic": null,
+      "isSystem": false,
+      "raw": {
+        "id": "252",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:CLIENT",
+        "name": "Уточнение информации",
+        "nameInit": "Согласование",
+        "sort": 30,
+        "color": "#10e5fc",
+        "semantics": null,
+        "SYSTEM": "N",
+        "CATEGORY_ID": "11"
+      }
+    },
+    {
+      "id": "340",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:1",
+      "name": "Передача во внешнюю поддержку",
+      "sort": 40,
+      "color": "#39A8EF",
+      "semantic": null,
+      "isSystem": false,
+      "raw": {
+        "id": "340",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:1",
+        "name": "Передача во внешнюю поддержку",
+        "nameInit": "",
+        "sort": 40,
+        "color": "#39A8EF",
+        "semantics": null,
+        "SYSTEM": "N",
+        "CATEGORY_ID": "11"
+      }
+    },
+    {
+      "id": "341",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:2",
+      "name": "Контроль",
+      "sort": 50,
+      "color": "#2FC6F6",
+      "semantic": null,
+      "isSystem": false,
+      "raw": {
+        "id": "341",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:2",
+        "name": "Контроль",
+        "nameInit": "",
+        "sort": 50,
+        "color": "#2FC6F6",
+        "semantics": null,
+        "SYSTEM": "N",
+        "CATEGORY_ID": "11"
+      }
+    },
+    {
+      "id": "253",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:SUCCESS",
+      "name": "Исполнена",
+      "sort": 60,
+      "color": "#00ff00",
+      "semantic": "S",
+      "isSystem": true,
+      "raw": {
+        "id": "253",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:SUCCESS",
+        "name": "Исполнена",
+        "nameInit": "Успех",
+        "sort": 60,
+        "color": "#00ff00",
+        "semantics": "S",
+        "SYSTEM": "Y",
+        "CATEGORY_ID": "11"
+      }
+    },
+    {
+      "id": "254",
+      "entityId": "DYNAMIC_1050_STAGE_11",
+      "code": "DT1050_11:FAIL",
+      "name": "Невозможно выполнить",
+      "sort": 70,
+      "color": "#ff0000",
+      "semantic": "F",
+      "isSystem": true,
+      "raw": {
+        "id": "254",
+        "entityId": "DYNAMIC_1050_STAGE_11",
+        "statusId": "DT1050_11:FAIL",
+        "name": "Невозможно выполнить",
+        "nameInit": "Провал",
+        "sort": 70,
+        "color": "#ff0000",
+        "semantics": "F",
+        "SYSTEM": "Y",
+        "CATEGORY_ID": "11"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "code": "ID",
+      "title": "ID",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "ID",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "ID"
+        }
+      }
+    },
+    {
+      "code": "LAST_ACTIVITY_BY",
+      "title": "Автор последней активности в таймлайне",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Автор последней активности в таймлайне",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "Автор последней активности в таймлайне"
+        }
+      }
+    },
+    {
+      "code": "XML_ID",
+      "title": "Внешний код",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Внешний код",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "TITLE": "Внешний код"
+        }
+      }
+    },
+    {
+      "code": "CATEGORY_ID",
+      "title": "Воронка",
+      "type": "crm_category",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [
+        {
+          "code": "DYNAMIC_1050_STAGE_11",
+          "name": "Стадии"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Воронка",
+        "type": "crm_category",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "crm_category",
+          "ATTRIBUTES": [
+            "N-D",
+            "HAS_DEFAULT_VALUE"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Category",
+          "TITLE": "Воронка"
+        }
+      }
+    },
+    {
+      "code": "MOVED_TIME",
+      "title": "Дата изменения стадии",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата изменения стадии",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\MovedTime",
+          "TITLE": "Дата изменения стадии"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_EMAIL_TIME",
+      "title": "Дата последнего e-mail",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего e-mail",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего e-mail"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_IMOL_TIME",
+      "title": "Дата последнего диалога в открытой линии",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего диалога в открытой линии",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего диалога в открытой линии"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_WEBFORM_TIME",
+      "title": "Дата последнего заполнения CRM-формы",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего заполнения CRM-формы",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего заполнения CRM-формы"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_CALL_TIME",
+      "title": "Дата последнего звонка",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последнего звонка",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "N-D",
+            "AUTO_GENERATED"
+          ],
+          "TITLE": "Дата последнего звонка"
+        }
+      }
+    },
+    {
+      "code": "LAST_COMMUNICATION_TIME",
+      "title": "Дата последней коммуникации",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата последней коммуникации",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "R-O"
+          ],
+          "TITLE": "Дата последней коммуникации"
+        }
+      }
+    },
+    {
+      "code": "OPENED",
+      "title": "Доступно для всех",
+      "type": "boolean",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Доступно для всех",
+        "type": "boolean",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "boolean",
+          "ATTRIBUTES": [
+            "REQ"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Opened",
+          "TITLE": "Доступно для всех"
+        }
+      }
+    },
+    {
+      "code": "UPDATED_BY",
+      "title": "Кем обновлён",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кем обновлён",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\UpdatedBy",
+          "TITLE": "Кем обновлён"
+        }
+      }
+    },
+    {
+      "code": "CREATED_BY",
+      "title": "Кем создан",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кем создан",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\CreatedBy",
+          "TITLE": "Кем создан"
+        }
+      }
+    },
+    {
+      "code": "UPDATED_TIME",
+      "title": "Когда обновлён",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Когда обновлён",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\UpdatedTime",
+          "TITLE": "Когда обновлён"
+        }
+      }
+    },
+    {
+      "code": "CREATED_TIME",
+      "title": "Когда создан",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Когда создан",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\CreatedTime",
+          "TITLE": "Когда создан"
+        }
+      }
+    },
+    {
+      "code": "MOVED_BY",
+      "title": "Кто изменил стадию",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Кто изменил стадию",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "R-O",
+            "AUTO_GENERATED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\MovedBy",
+          "TITLE": "Кто изменил стадию"
+        }
+      }
+    },
+    {
+      "code": "OBSERVERS",
+      "title": "Наблюдатели",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Наблюдатели",
+        "type": "user",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "MUL"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Observers",
+          "TITLE": "Наблюдатели"
+        }
+      }
+    },
+    {
+      "code": "TITLE",
+      "title": "Название",
+      "type": "string",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Название",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "string",
+          "ATTRIBUTES": [
+            "HAS_DEFAULT_VALUE",
+            "CAN_NOT_BE_EMPTIED"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Title",
+          "TITLE": "Название"
+        }
+      }
+    },
+    {
+      "code": "ASSIGNED_BY_ID",
+      "title": "Ответственный",
+      "type": "user",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Ответственный",
+        "type": "user",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "user",
+          "ATTRIBUTES": [
+            "CAN_NOT_BE_EMPTIED",
+            "HAS_DEFAULT_VALUE"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Assigned",
+          "TITLE": "Ответственный"
+        }
+      }
+    },
+    {
+      "code": "LAST_ACTIVITY_TIME",
+      "title": "Последняя активность",
+      "type": "datetime",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Последняя активность",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "datetime",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\LastActivityTime",
+          "TITLE": "Последняя активность"
+        }
+      }
+    },
+    {
+      "code": "PREVIOUS_STAGE_ID",
+      "title": "Предыдущая стадия",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": true,
+      "statusType": "DYNAMIC_1050_STAGE_11",
+      "options": [
+        {
+          "code": "DT1050_11:PREPARATION",
+          "name": "В работе"
+        },
+        {
+          "code": "DT1050_11:SUCCESS",
+          "name": "Исполнена"
+        },
+        {
+          "code": "DT1050_11:2",
+          "name": "Контроль"
+        },
+        {
+          "code": "DT1050_11:FAIL",
+          "name": "Невозможно выполнить"
+        },
+        {
+          "code": "DT1050_11:NEW",
+          "name": "Новая заявка"
+        },
+        {
+          "code": "DT1050_11:1",
+          "name": "Передача во внешнюю поддержку"
+        },
+        {
+          "code": "DT1050_11:CLIENT",
+          "name": "Уточнение информации"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Предыдущая стадия",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": true,
+        "statusType": "DYNAMIC_1050_STAGE_11",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "DYNAMIC_1050_STAGE_11",
+          "ATTRIBUTES": [
+            "PROG",
+            "R-O"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\PreviousStageId",
+          "TITLE": "Предыдущая стадия"
+        }
+      }
+    },
+    {
+      "code": "WEBFORM_ID",
+      "title": "Создано CRM-формой",
+      "type": "integer",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Создано CRM-формой",
+        "type": "integer",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": null,
+        "items": [],
+        "raw": {
+          "TYPE": "integer",
+          "ATTRIBUTES": [
+            "N-D"
+          ],
+          "TITLE": "Создано CRM-формой"
+        }
+      }
+    },
+    {
+      "code": "STAGE_ID",
+      "title": "Стадия",
+      "type": "crm_status",
+      "isCustom": false,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": "DYNAMIC_1050_STAGE_11",
+      "options": [
+        {
+          "code": "DT1050_11:PREPARATION",
+          "name": "В работе"
+        },
+        {
+          "code": "DT1050_11:SUCCESS",
+          "name": "Исполнена"
+        },
+        {
+          "code": "DT1050_11:2",
+          "name": "Контроль"
+        },
+        {
+          "code": "DT1050_11:FAIL",
+          "name": "Невозможно выполнить"
+        },
+        {
+          "code": "DT1050_11:NEW",
+          "name": "Новая заявка"
+        },
+        {
+          "code": "DT1050_11:1",
+          "name": "Передача во внешнюю поддержку"
+        },
+        {
+          "code": "DT1050_11:CLIENT",
+          "name": "Уточнение информации"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Стадия",
+        "type": "crm_status",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "statusType": "DYNAMIC_1050_STAGE_11",
+        "items": [],
+        "raw": {
+          "TYPE": "crm_status",
+          "CRM_STATUS_TYPE": "DYNAMIC_1050_STAGE_11",
+          "ATTRIBUTES": [
+            "PROG"
+          ],
+          "CLASS": "Bitrix\\Crm\\Field\\Stage",
+          "TITLE": "Стадия"
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568061",
+      "title": "URL страниц с ошибками",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "URL страниц с ошибками",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "318",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568061",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "50",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "URL страниц с ошибками",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "URL страниц с ошибками",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768567992",
+      "title": "Важность",
+      "type": "enumeration",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [
+        {
+          "code": "82",
+          "name": "Высокая"
+        },
+        {
+          "code": "83",
+          "name": "Средняя"
+        },
+        {
+          "code": "84",
+          "name": "Низкая"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Важность",
+        "type": "enumeration",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [
+          {
+            "ID": "82",
+            "VALUE": "Высокая",
+            "SORT": "100",
+            "DEF": "N"
+          },
+          {
+            "ID": "83",
+            "VALUE": "Средняя",
+            "SORT": "200",
+            "DEF": "N"
+          },
+          {
+            "ID": "84",
+            "VALUE": "Низкая",
+            "SORT": "300",
+            "DEF": "N"
+          }
+        ],
+        "raw": {
+          "ID": "316",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768567992",
+          "USER_TYPE_ID": "enumeration",
+          "XML_ID": null,
+          "SORT": "30",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DISPLAY": "LIST",
+            "LIST_HEIGHT": 1,
+            "CAPTION_NO_VALUE": "",
+            "SHOW_NO_VALUE": "Y"
+          },
+          "TITLE": "Важность",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Важность",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "enumeration",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\EnumType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Список",
+            "BASE_TYPE": "enum"
+          },
+          "TYPE": "enumeration",
+          "ENUM_ITEMS": [
+            {
+              "ID": "82",
+              "VALUE": "Высокая",
+              "SORT": "100",
+              "DEF": "N"
+            },
+            {
+              "ID": "83",
+              "VALUE": "Средняя",
+              "SORT": "200",
+              "DEF": "N"
+            },
+            {
+              "ID": "84",
+              "VALUE": "Низкая",
+              "SORT": "300",
+              "DEF": "N"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568171",
+      "title": "Дата/Время проведения работ",
+      "type": "datetime",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Дата/Время проведения работ",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "322",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568171",
+          "USER_TYPE_ID": "datetime",
+          "XML_ID": null,
+          "SORT": "90",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DEFAULT_VALUE": {
+              "TYPE": "NONE",
+              "VALUE": ""
+            },
+            "USE_SECOND": "Y",
+            "USE_TIMEZONE": "N"
+          },
+          "TITLE": "Дата/Время проведения работ",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Дата/Время проведения работ",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "datetime",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\DateTimeType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateTimeType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateTimeType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Дата со временем",
+            "BASE_TYPE": "datetime"
+          },
+          "TYPE": "datetime",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568285",
+      "title": "Задача",
+      "type": "url",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Задача",
+        "type": "url",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "323",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568285",
+          "USER_TYPE_ID": "url",
+          "XML_ID": null,
+          "SORT": "100",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "POPUP": "Y",
+            "SIZE": 20,
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": "",
+            "ROWS": 1
+          },
+          "TITLE": "Задача",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Задача",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "url",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\UrlType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\UrlType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\UrlType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Ссылка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "url",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568139",
+      "title": "Контакт в/п",
+      "type": "crm",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Контакт в/п",
+        "type": "crm",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "321",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568139",
+          "USER_TYPE_ID": "crm",
+          "XML_ID": null,
+          "SORT": "80",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "CONTACT": "Y",
+            "COMPANY": "Y",
+            "LEAD": null
+          },
+          "TITLE": "Контакт в/п",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Контакт в/п",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "crm",
+            "CLASS_NAME": "Bitrix\\Crm\\UserField\\Types\\ElementType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Crm\\UserField\\Types\\ElementType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Привязка к элементам CRM",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "crm",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568114",
+      "title": "Крайний срок",
+      "type": "datetime",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Крайний срок",
+        "type": "datetime",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "320",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568114",
+          "USER_TYPE_ID": "datetime",
+          "XML_ID": null,
+          "SORT": "70",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DEFAULT_VALUE": {
+              "TYPE": "NONE",
+              "VALUE": ""
+            },
+            "USE_SECOND": "Y",
+            "USE_TIMEZONE": "N"
+          },
+          "TITLE": "Крайний срок",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Крайний срок",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "datetime",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\DateTimeType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateTimeType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\DateTimeType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Дата со временем",
+            "BASE_TYPE": "datetime"
+          },
+          "TYPE": "datetime",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768567868",
+      "title": "Область",
+      "type": "enumeration",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [
+        {
+          "code": "65",
+          "name": "Битрикс"
+        },
+        {
+          "code": "66",
+          "name": "Компьютер"
+        },
+        {
+          "code": "67",
+          "name": "1С"
+        },
+        {
+          "code": "68",
+          "name": "Оргтехника"
+        },
+        {
+          "code": "69",
+          "name": "Телефония"
+        },
+        {
+          "code": "70",
+          "name": "Интернет"
+        },
+        {
+          "code": "71",
+          "name": "Электронная почта"
+        },
+        {
+          "code": "72",
+          "name": "ЭЦП"
+        },
+        {
+          "code": "73",
+          "name": "Сайт, мессенджеры, соцсети"
+        },
+        {
+          "code": "74",
+          "name": "Прочее"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Область",
+        "type": "enumeration",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [
+          {
+            "ID": "65",
+            "VALUE": "Битрикс",
+            "SORT": "100",
+            "DEF": "N"
+          },
+          {
+            "ID": "66",
+            "VALUE": "Компьютер",
+            "SORT": "200",
+            "DEF": "N"
+          },
+          {
+            "ID": "67",
+            "VALUE": "1С",
+            "SORT": "300",
+            "DEF": "N"
+          },
+          {
+            "ID": "68",
+            "VALUE": "Оргтехника",
+            "SORT": "400",
+            "DEF": "N"
+          },
+          {
+            "ID": "69",
+            "VALUE": "Телефония",
+            "SORT": "500",
+            "DEF": "N"
+          },
+          {
+            "ID": "70",
+            "VALUE": "Интернет",
+            "SORT": "600",
+            "DEF": "N"
+          },
+          {
+            "ID": "71",
+            "VALUE": "Электронная почта",
+            "SORT": "700",
+            "DEF": "N"
+          },
+          {
+            "ID": "72",
+            "VALUE": "ЭЦП",
+            "SORT": "800",
+            "DEF": "N"
+          },
+          {
+            "ID": "73",
+            "VALUE": "Сайт, мессенджеры, соцсети",
+            "SORT": "900",
+            "DEF": "N"
+          },
+          {
+            "ID": "74",
+            "VALUE": "Прочее",
+            "SORT": "1000",
+            "DEF": "N"
+          }
+        ],
+        "raw": {
+          "ID": "314",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768567868",
+          "USER_TYPE_ID": "enumeration",
+          "XML_ID": null,
+          "SORT": "10",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DISPLAY": "LIST",
+            "LIST_HEIGHT": 1,
+            "CAPTION_NO_VALUE": "",
+            "SHOW_NO_VALUE": "Y"
+          },
+          "TITLE": "Область",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Область",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "enumeration",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\EnumType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Список",
+            "BASE_TYPE": "enum"
+          },
+          "TYPE": "enumeration",
+          "ENUM_ITEMS": [
+            {
+              "ID": "65",
+              "VALUE": "Битрикс",
+              "SORT": "100",
+              "DEF": "N"
+            },
+            {
+              "ID": "66",
+              "VALUE": "Компьютер",
+              "SORT": "200",
+              "DEF": "N"
+            },
+            {
+              "ID": "67",
+              "VALUE": "1С",
+              "SORT": "300",
+              "DEF": "N"
+            },
+            {
+              "ID": "68",
+              "VALUE": "Оргтехника",
+              "SORT": "400",
+              "DEF": "N"
+            },
+            {
+              "ID": "69",
+              "VALUE": "Телефония",
+              "SORT": "500",
+              "DEF": "N"
+            },
+            {
+              "ID": "70",
+              "VALUE": "Интернет",
+              "SORT": "600",
+              "DEF": "N"
+            },
+            {
+              "ID": "71",
+              "VALUE": "Электронная почта",
+              "SORT": "700",
+              "DEF": "N"
+            },
+            {
+              "ID": "72",
+              "VALUE": "ЭЦП",
+              "SORT": "800",
+              "DEF": "N"
+            },
+            {
+              "ID": "73",
+              "VALUE": "Сайт, мессенджеры, соцсети",
+              "SORT": "900",
+              "DEF": "N"
+            },
+            {
+              "ID": "74",
+              "VALUE": "Прочее",
+              "SORT": "1000",
+              "DEF": "N"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568033",
+      "title": "Описание проблемы",
+      "type": "string",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Описание проблемы",
+        "type": "string",
+        "isMultiple": false,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "317",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568033",
+          "USER_TYPE_ID": "string",
+          "XML_ID": null,
+          "SORT": "40",
+          "MULTIPLE": "N",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "ROWS": 1,
+            "REGEXP": "",
+            "MIN_LENGTH": 0,
+            "MAX_LENGTH": 0,
+            "DEFAULT_VALUE": ""
+          },
+          "TITLE": "Описание проблемы",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Описание проблемы",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "string",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\StringType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\StringType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Строка",
+            "BASE_TYPE": "string"
+          },
+          "TYPE": "string",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768568080",
+      "title": "Скрин или дополнительные файлы",
+      "type": "file",
+      "isCustom": true,
+      "isMultiple": true,
+      "isRequired": false,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [],
+      "hasOptions": false,
+      "raw": {
+        "title": "Скрин или дополнительные файлы",
+        "type": "file",
+        "isMultiple": true,
+        "isRequired": false,
+        "isReadOnly": false,
+        "items": [],
+        "raw": {
+          "ID": "319",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768568080",
+          "USER_TYPE_ID": "file",
+          "XML_ID": null,
+          "SORT": "60",
+          "MULTIPLE": "Y",
+          "MANDATORY": "N",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "SIZE": 20,
+            "LIST_WIDTH": 0,
+            "LIST_HEIGHT": 0,
+            "MAX_SHOW_SIZE": 0,
+            "MAX_ALLOWED_SIZE": 0,
+            "EXTENSIONS": [],
+            "TARGET_BLANK": "Y",
+            "DEFAULT_VIEW": null
+          },
+          "TITLE": "Скрин или дополнительные файлы",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Скрин или дополнительные файлы",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "file",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\FileType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\FileType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\FileType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Файл",
+            "BASE_TYPE": "file"
+          },
+          "TYPE": "file",
+          "ENUM_ITEMS": []
+        }
+      }
+    },
+    {
+      "code": "UF_CRM_7_1768567943",
+      "title": "Тип проблемы",
+      "type": "enumeration",
+      "isCustom": true,
+      "isMultiple": false,
+      "isRequired": true,
+      "isReadOnly": false,
+      "statusType": null,
+      "options": [
+        {
+          "code": "75",
+          "name": "Ошибка в работе"
+        },
+        {
+          "code": "76",
+          "name": "Изменение функционала"
+        },
+        {
+          "code": "77",
+          "name": "Добавление функционала"
+        },
+        {
+          "code": "78",
+          "name": "Консультация"
+        },
+        {
+          "code": "79",
+          "name": "Доступ"
+        },
+        {
+          "code": "80",
+          "name": "Гарантийное обслуживание"
+        },
+        {
+          "code": "81",
+          "name": "Прочее"
+        }
+      ],
+      "hasOptions": true,
+      "raw": {
+        "title": "Тип проблемы",
+        "type": "enumeration",
+        "isMultiple": false,
+        "isRequired": true,
+        "isReadOnly": false,
+        "items": [
+          {
+            "ID": "75",
+            "VALUE": "Ошибка в работе",
+            "SORT": "100",
+            "DEF": "N"
+          },
+          {
+            "ID": "76",
+            "VALUE": "Изменение функционала",
+            "SORT": "200",
+            "DEF": "N"
+          },
+          {
+            "ID": "77",
+            "VALUE": "Добавление функционала",
+            "SORT": "300",
+            "DEF": "N"
+          },
+          {
+            "ID": "78",
+            "VALUE": "Консультация",
+            "SORT": "400",
+            "DEF": "N"
+          },
+          {
+            "ID": "79",
+            "VALUE": "Доступ",
+            "SORT": "500",
+            "DEF": "N"
+          },
+          {
+            "ID": "80",
+            "VALUE": "Гарантийное обслуживание",
+            "SORT": "600",
+            "DEF": "N"
+          },
+          {
+            "ID": "81",
+            "VALUE": "Прочее",
+            "SORT": "700",
+            "DEF": "N"
+          }
+        ],
+        "raw": {
+          "ID": "315",
+          "ENTITY_ID": "CRM_7",
+          "FIELD_NAME": "UF_CRM_7_1768567943",
+          "USER_TYPE_ID": "enumeration",
+          "XML_ID": null,
+          "SORT": "20",
+          "MULTIPLE": "N",
+          "MANDATORY": "Y",
+          "SHOW_FILTER": "E",
+          "SHOW_IN_LIST": "Y",
+          "EDIT_IN_LIST": "Y",
+          "IS_SEARCHABLE": "Y",
+          "SETTINGS": {
+            "DISPLAY": "UI",
+            "LIST_HEIGHT": 1,
+            "CAPTION_NO_VALUE": "",
+            "SHOW_NO_VALUE": "Y"
+          },
+          "TITLE": "Тип проблемы",
+          "LABELS": {
+            "LIST": "",
+            "FORM": "Тип проблемы",
+            "FILTER": ""
+          },
+          "USER_TYPE": {
+            "USER_TYPE_ID": "enumeration",
+            "CLASS_NAME": "Bitrix\\Main\\UserField\\Types\\EnumType",
+            "EDIT_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderEdit"
+            ],
+            "VIEW_CALLBACK": [
+              "Bitrix\\Main\\UserField\\Types\\EnumType",
+              "renderView"
+            ],
+            "USE_FIELD_COMPONENT": true,
+            "DESCRIPTION": "Список",
+            "BASE_TYPE": "enum"
+          },
+          "TYPE": "enumeration",
+          "ENUM_ITEMS": [
+            {
+              "ID": "75",
+              "VALUE": "Ошибка в работе",
+              "SORT": "100",
+              "DEF": "N"
+            },
+            {
+              "ID": "76",
+              "VALUE": "Изменение функционала",
+              "SORT": "200",
+              "DEF": "N"
+            },
+            {
+              "ID": "77",
+              "VALUE": "Добавление функционала",
+              "SORT": "300",
+              "DEF": "N"
+            },
+            {
+              "ID": "78",
+              "VALUE": "Консультация",
+              "SORT": "400",
+              "DEF": "N"
+            },
+            {
+              "ID": "79",
+              "VALUE": "Доступ",
+              "SORT": "500",
+              "DEF": "N"
+            },
+            {
+              "ID": "80",
+              "VALUE": "Гарантийное обслуживание",
+              "SORT": "600",
+              "DEF": "N"
+            },
+            {
+              "ID": "81",
+              "VALUE": "Прочее",
+              "SORT": "700",
+              "DEF": "N"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "stageCount": 7,
+    "pipelineCount": 1,
+    "fieldCount": 33,
+    "customFieldCount": 10,
+    "optionFieldCount": 6
+  }
+}
