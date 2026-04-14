@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "b24-dev-mcp": {
+      "type": "sse",
+      "url": "https://mcp-dev.bitrix24.tech/mcp"
+    },
+    "bitrix24-portal": {
+      "url": "https://mcp.bitrix24.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer <BITRIX24_MCP_JWT>"
+      }
+    },
+    "vibecode": {
+      "type": "sse",
+      "url": "http://<VIBECODE_HOST>:8765/sse",
+      "headers": {
+        "X-API-Key": "<VIBECODE_API_KEY>"
+      }
+    },
+    "bitrix24-docs": {
+      "type": "sse",
+      "url": "https://mcp-dev.bitrix24.tech/mcp"
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server:latest"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<GITHUB_PERSONAL_ACCESS_TOKEN>"
+      }
+    }
+  }
+}
