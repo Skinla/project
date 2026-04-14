@@ -62,13 +62,14 @@ return [
 	'LIST_IBLOCK_ID' => 142,
 	'LIST_SOCNET_GROUP_ID' => 1,
 	'LIST_CREATED_BY_USER_ID' => 1,
+	'LIST_USE_SERVICE_USER_AUTHORIZATION' => 'Y',
 	'LIST_PROPERTY_SOTRUDNIK' => 'SOTRUDNIK',
 	'LIST_PROPERTY_OTSENKA' => 'OTSENKA',
 	'LIST_PROPERTY_SOOBSHCHENIE' => 'SOOBSHCHENIE',
 	'LIST_ELEMENT_NAME_TEMPLATE' => 'Уровень счастья — #DATE#, #USER#',
 	'MESSAGE_MAX_LENGTH' => 4000,
 
-	'API_ERROR_REASON_REQUIRED' => 'Для оценки 1–3 укажите причину в поле сообщения.',
+	'API_ERROR_REASON_REQUIRED' => 'Для низкой оценки укажите причину в поле сообщения.',
 	'API_ERROR_LIST_SAVE' => 'Не удалось сохранить обращение в список. Попробуйте позже или обратитесь к администратору.',
 
 	'UI_MSG_REASON_REQUIRED' => 'Опишите, что вас не устраивает (обязательно для низких оценок).',

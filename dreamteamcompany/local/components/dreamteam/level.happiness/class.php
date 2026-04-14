@@ -105,7 +105,8 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 			$rawMessage = Context::getCurrent()->getRequest()->getPost('message');
 			$message = is_scalar($rawMessage) ? (string)$rawMessage : '';
 		}
-		$messageText = trim((string)$message);
+		$messageText = $this->sanitizeAppealMessage((string)$message);
+		$createdAppealId = 0;
 		if ($this->isLowScoreLevel($level))
 		{
 			if ($messageText === '')
@@ -115,7 +116,7 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 					$this->buildNotifyMessage($this->getConfigString('NOTIFY_MESSAGE_REASON_REQUIRED', 'Укажите причину низкой оценки в форме обращения.'))
 				);
 
-				return AjaxJson::createError(new Error($this->getConfigString('API_ERROR_REASON_REQUIRED', 'Для оценки 1–3 укажите причину в поле сообщения.')));
+				return AjaxJson::createError(new Error($this->getConfigString('API_ERROR_REASON_REQUIRED', 'Для низкой оценки укажите причину в поле сообщения.')));
 			}
 
 			$listResult = $this->addLowScoreAppealToList($currentUserId, $level, $messageText);
@@ -128,6 +129,8 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 
 				return AjaxJson::createError(new Error($listResult['error']));
 			}
+
+			$createdAppealId = (int)($listResult['elementId'] ?? 0);
 		}
 
 		$data = $this->readData();
@@ -136,6 +139,11 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 
 		if (!$this->writeData($data))
 		{
+			if ($createdAppealId > 0 && !$this->deleteLowScoreAppealFromList($createdAppealId))
+			{
+				AddMessage2Log('[level.happiness] Failed to rollback list element after JSON write error: '.$createdAppealId, 'level.happiness');
+			}
+
 			return AjaxJson::createError(new Error($this->getConfigString('API_ERROR_SAVE', 'Не удалось сохранить оценку.')));
 		}
 
@@ -380,6 +388,18 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 		return $clean;
 	}
 
+	private function getListCreatedByUserId(): int
+	{
+		$listCreatedByUserId = $this->getConfigInt('LIST_CREATED_BY_USER_ID', 1);
+
+		return $listCreatedByUserId > 0 ? $listCreatedByUserId : 1;
+	}
+
+	private function shouldUseServiceUserAuthorization(): bool
+	{
+		return $this->getConfigBool('LIST_USE_SERVICE_USER_AUTHORIZATION', true);
+	}
+
 	private function buildListElementName(int $userId): string
 	{
 		$template = $this->getConfigString('LIST_ELEMENT_NAME_TEMPLATE', 'Уровень счастья — #DATE#, #USER#');
@@ -415,16 +435,18 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 	}
 
 	/**
-	 * @return array{success: bool, error: string}
+	 * @return array{success: bool, error: string, elementId: int}
 	 */
 	private function addLowScoreAppealToList(int $userId, int $level, string $message): array
 	{
 		$iblockId = $this->getConfigInt('LIST_IBLOCK_ID', 0);
+		$iblockTypeId = $this->getConfigString('LIST_IBLOCK_TYPE_ID', 'lists_socnet');
 		if ($iblockId <= 0)
 		{
 			return [
 				'success' => false,
 				'error' => $this->getConfigString('API_ERROR_LIST_SAVE', 'Не удалось сохранить обращение в список. Попробуйте позже или обратитесь к администратору.'),
+				'elementId' => 0,
 			];
 		}
 
@@ -433,67 +455,206 @@ class LevelHappinessComponent extends CBitrixComponent implements Controllerable
 			return [
 				'success' => false,
 				'error' => $this->getConfigString('API_ERROR_LIST_SAVE', 'Не удалось сохранить обращение в список. Попробуйте позже или обратитесь к администратору.'),
+				'elementId' => 0,
 			];
 		}
 
 		Loader::includeModule('lists');
 
-		$messageClean = $this->sanitizeAppealMessage($message);
-		if ($messageClean === '')
+		if ($iblockTypeId !== '')
 		{
-			return [
-				'success' => false,
-				'error' => $this->getConfigString('API_ERROR_REASON_REQUIRED', 'Для оценки 1–3 укажите причину в поле сообщения.'),
-			];
+			$actualType = (string)\CIBlock::GetArrayByID($iblockId, 'IBLOCK_TYPE_ID');
+			if ($actualType === '' || $actualType !== $iblockTypeId)
+			{
+				AddMessage2Log('[level.happiness] Unexpected list iblock type: '.$actualType.' for iblock '.$iblockId, 'level.happiness');
+
+				return [
+					'success' => false,
+					'error' => $this->getConfigString('API_ERROR_LIST_SAVE', 'Не удалось сохранить обращение в список. Попробуйте позже или обратитесь к администратору.'),
+					'elementId' => 0,
+				];
+			}
 		}
 
-		// Поле «привязка к сотруднику»: обычно достаточно user id. Если CIBlockElement::Add вернёт ошибку
-		// формата свойства — на портале проверьте тип поля и при необходимости задайте значение как ['VALUE' => $userId].
 		$propEmployee = $this->getConfigString('LIST_PROPERTY_SOTRUDNIK', 'SOTRUDNIK');
 		$propScore = $this->getConfigString('LIST_PROPERTY_OTSENKA', 'OTSENKA');
 		$propText = $this->getConfigString('LIST_PROPERTY_SOOBSHCHENIE', 'SOOBSHCHENIE');
-		$listCreatedByUserId = $this->getConfigInt('LIST_CREATED_BY_USER_ID', 1);
-		if ($listCreatedByUserId <= 0)
-		{
-			$listCreatedByUserId = 1;
-		}
+		$listCreatedByUserId = $this->getListCreatedByUserId();
+		$employeePropertyValues = $this->buildEmployeePropertyValueCandidates($iblockId, $propEmployee, $userId);
+		$lastError = '';
 
-		$arFields = [
-			'IBLOCK_ID' => $iblockId,
-			'NAME' => $this->buildListElementName($userId),
-			'ACTIVE' => 'Y',
-			'CREATED_BY' => $listCreatedByUserId,
-			'MODIFIED_BY' => $listCreatedByUserId,
-			'PROPERTY_VALUES' => [
-				$propEmployee => $userId,
-				$propScore => $level,
-				$propText => $messageClean,
-			],
-		];
-
-		$groupId = $this->getConfigInt('LIST_SOCNET_GROUP_ID', 0);
-		if ($groupId > 0)
+		foreach ($employeePropertyValues as $employeePropertyValue)
 		{
-			$arFields['SOCNET_GROUP_ID'] = $groupId;
-		}
+			$arFields = [
+				'IBLOCK_ID' => $iblockId,
+				'NAME' => $this->buildListElementName($userId),
+				'ACTIVE' => 'Y',
+				'CREATED_BY' => $listCreatedByUserId,
+				'MODIFIED_BY' => $listCreatedByUserId,
+				'PROPERTY_VALUES' => [
+					$propEmployee => $employeePropertyValue,
+					$propScore => $level,
+					$propText => $message,
+				],
+			];
 
-		$el = new \CIBlockElement();
-		$newId = (int)$el->Add($arFields);
-		if ($newId <= 0)
-		{
-			$lastError = (string)$el->LAST_ERROR;
-			if ($lastError !== '')
+			$groupId = $this->getConfigInt('LIST_SOCNET_GROUP_ID', 0);
+			if ($groupId > 0)
 			{
-				AddMessage2Log('[level.happiness] List element add failed: '.$lastError, 'level.happiness');
+				$arFields['SOCNET_GROUP_ID'] = $groupId;
 			}
 
+			$saveResult = $this->executeListMutation(function () use ($arFields) {
+				$el = new \CIBlockElement();
+				$newId = (int)$el->Add($arFields);
+
+				return [
+					'success' => $newId > 0,
+					'elementId' => $newId,
+					'error' => (string)$el->LAST_ERROR,
+				];
+			});
+
+			if ($saveResult['success'])
+			{
+				return [
+					'success' => true,
+					'error' => '',
+					'elementId' => (int)$saveResult['elementId'],
+				];
+			}
+
+			$lastError = (string)($saveResult['error'] ?? '');
+		}
+
+		if ($lastError !== '')
+		{
+			AddMessage2Log('[level.happiness] List element add failed: '.$lastError, 'level.happiness');
+		}
+
+		return [
+			'success' => false,
+			'error' => $this->getConfigString('API_ERROR_LIST_SAVE', 'Не удалось сохранить обращение в список. Попробуйте позже или обратитесь к администратору.'),
+			'elementId' => 0,
+		];
+	}
+
+	private function deleteLowScoreAppealFromList(int $elementId): bool
+	{
+		if ($elementId <= 0 || !Loader::includeModule('iblock'))
+		{
+			return false;
+		}
+
+		$deleteResult = $this->executeListMutation(function () use ($elementId) {
+			$success = \CIBlockElement::Delete($elementId);
+
 			return [
+				'success' => (bool)$success,
+				'elementId' => $elementId,
+				'error' => $success ? '' : 'delete_failed',
+			];
+		});
+
+		return $deleteResult['success'];
+	}
+
+	/**
+	 * @return array<int, mixed>
+	 */
+	private function buildEmployeePropertyValueCandidates(int $iblockId, string $propertyCode, int $userId): array
+	{
+		$candidates = [$userId, ['VALUE' => $userId]];
+		$property = \CIBlockProperty::GetList([], ['IBLOCK_ID' => $iblockId, 'CODE' => $propertyCode])->Fetch();
+		if (is_array($property) && (string)($property['USER_TYPE'] ?? '') === 'employee')
+		{
+			$candidates[] = 'user_'.$userId;
+			$candidates[] = ['VALUE' => 'user_'.$userId];
+		}
+
+		$unique = [];
+		foreach ($candidates as $candidate)
+		{
+			$key = is_array($candidate) ? serialize($candidate) : (string)$candidate;
+			$unique[$key] = $candidate;
+		}
+
+		return array_values($unique);
+	}
+
+	/**
+	 * @param callable(): array{success: bool, elementId: int, error: string} $callback
+	 * @return array{success: bool, elementId: int, error: string}
+	 */
+	private function executeListMutation(callable $callback, bool $preferServiceUser = false): array
+	{
+		if ($preferServiceUser)
+		{
+			return $this->runListMutationAsConfiguredUser($callback);
+		}
+
+		$result = $callback();
+		if ($result['success'] || !$this->shouldUseServiceUserAuthorization())
+		{
+			return $result;
+		}
+
+		return $this->runListMutationAsConfiguredUser($callback, $result);
+	}
+
+	/**
+	 * @param callable(): array{success: bool, elementId: int, error: string} $callback
+	 * @param array{success: bool, elementId: int, error: string}|null $fallbackResult
+	 * @return array{success: bool, elementId: int, error: string}
+	 */
+	private function runListMutationAsConfiguredUser(callable $callback, ?array $fallbackResult = null): array
+	{
+		global $USER;
+
+		if (!$USER instanceof \CUser)
+		{
+			return $fallbackResult ?? [
 				'success' => false,
-				'error' => $this->getConfigString('API_ERROR_LIST_SAVE', 'Не удалось сохранить обращение в список. Попробуйте позже или обратитесь к администратору.'),
+				'elementId' => 0,
+				'error' => 'current_user_unavailable',
 			];
 		}
 
-		return ['success' => true, 'error' => ''];
+		$targetUserId = $this->getListCreatedByUserId();
+		$currentUserId = (int)$USER->GetID();
+		if ($targetUserId <= 0 || $targetUserId === $currentUserId || !$this->shouldUseServiceUserAuthorization())
+		{
+			return $fallbackResult ?? $callback();
+		}
+
+		$originalUser = $USER;
+		$serviceUser = new \CUser();
+		$authResult = $serviceUser->Authorize($targetUserId);
+		if (!$authResult || (int)$serviceUser->GetID() !== $targetUserId)
+		{
+			AddMessage2Log('[level.happiness] Failed to authorize service user: '.$targetUserId, 'level.happiness');
+
+			return $fallbackResult ?? [
+				'success' => false,
+				'elementId' => 0,
+				'error' => 'service_user_authorize_failed',
+			];
+		}
+
+		$USER = $serviceUser;
+
+		try
+		{
+			return $callback();
+		}
+		finally
+		{
+			$USER = $originalUser;
+			if ((int)$USER->GetID() !== $currentUserId && (!$USER->Authorize($currentUserId) || (int)$USER->GetID() !== $currentUserId))
+			{
+				AddMessage2Log('[level.happiness] Failed to restore original user after service mutation: '.$currentUserId, 'level.happiness');
+			}
+		}
 	}
 
 	private function getMinLevel(): int

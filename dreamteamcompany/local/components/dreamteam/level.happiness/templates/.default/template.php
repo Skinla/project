@@ -65,7 +65,7 @@ $frontendConfigJs = \CUtil::PhpToJSObject($arResult['FRONTEND_CONFIG']);
 				<input name="userID" type="hidden" value="<?= (int)$arResult['CURRENT_USER_ID'] ?>"/>
 				<div class="lh-select-wrap">
 					<select name="myLevel" class="lh-select">
-						<option selected="true" disabled="disabled"><?= htmlspecialcharsbx((string)$arResult['SELECT_PLACEHOLDER']) ?></option>
+						<option value="" disabled="disabled" <?= (int)$arResult['STARS']['USER'] === 0 ? 'selected="selected"' : '' ?>><?= htmlspecialcharsbx((string)$arResult['SELECT_PLACEHOLDER']) ?></option>
 						<?php foreach ($levelOptions as $level): ?>
 							<option value="<?= (int)$level ?>" <?= (int)$arResult['STARS']['USER'] === (int)$level ? 'selected="selected"' : '' ?>><?= htmlspecialcharsbx(str_repeat($starSymbol, (int)$level)) ?></option>
 						<?php endforeach; ?>
@@ -88,13 +88,15 @@ $frontendConfigJs = \CUtil::PhpToJSObject($arResult['FRONTEND_CONFIG']);
 
 	<div class="lh-modal" id="lhLowScoreModal" data-open="N" aria-hidden="true">
 		<div class="lh-modal__backdrop" id="lhLowScoreBackdrop" tabindex="-1"></div>
-		<div class="lh-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="lhLowScoreModalTitle">
+		<div class="lh-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="lhLowScoreModalTitle" aria-describedby="lhLowScoreModalHint" tabindex="-1">
 			<h2 class="lh-modal__title" id="lhLowScoreModalTitle"></h2>
 			<p class="lh-modal__hint" id="lhLowScoreModalHint"></p>
+			<div class="lh-modal__error" id="lhLowScoreError" hidden></div>
 			<label class="lh-modal__label" for="lhLowScoreReason">
 				<textarea
 					id="lhLowScoreReason"
 					class="lh-modal__textarea"
+					aria-describedby="lhLowScoreModalHint"
 					rows="4"
 					maxlength="4000"
 				></textarea>

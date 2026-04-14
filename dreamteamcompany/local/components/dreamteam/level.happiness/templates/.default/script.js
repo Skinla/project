@@ -168,6 +168,11 @@
 				userBlock.style.display = 'none';
 			}
 		}
+
+		var levelField = document.querySelector('#editLevel select[name="myLevel"]');
+		if (levelField) {
+			levelField.value = userLevel > 0 ? String(userLevel) : '';
+		}
 	}
 
 	function moveWidgetNearPulse() {
@@ -216,9 +221,11 @@
 			return;
 		}
 
+		var levelField = form.querySelector('select[name="myLevel"]');
 		var submitButton = form.querySelector('button[type="submit"]');
 		var isSubmitting = false;
 		var pendingLowScoreLevel = null;
+		var lastFocusedElement = null;
 
 		if (form.getAttribute('data-level-happiness-bound') === 'Y') {
 			return;
@@ -228,10 +235,12 @@
 		var modal = document.getElementById('lhLowScoreModal');
 		var modalTitle = document.getElementById('lhLowScoreModalTitle');
 		var modalHint = document.getElementById('lhLowScoreModalHint');
+		var modalError = document.getElementById('lhLowScoreError');
 		var modalReason = document.getElementById('lhLowScoreReason');
 		var modalConfirm = document.getElementById('lhLowScoreConfirm');
 		var modalCancel = document.getElementById('lhLowScoreCancel');
 		var modalBackdrop = document.getElementById('lhLowScoreBackdrop');
+		var modalDialog = modal ? modal.querySelector('.lh-modal__dialog') : null;
 
 		function setLowScoreModalOpen(open) {
 			if (!modal) {
@@ -239,17 +248,83 @@
 			}
 			modal.setAttribute('data-open', open ? 'Y' : 'N');
 			modal.setAttribute('aria-hidden', open ? 'false' : 'true');
+			if (document.body) {
+				document.body.classList.toggle('lh-modal-open', open);
+			}
+			if (levelField) {
+				levelField.disabled = open;
+			}
 		}
 
-		function closeLowScoreModal() {
+		function resetLowScoreModalState(restoreFocus) {
+			clearLowScoreModalError();
+			if (modalReason) {
+				modalReason.value = '';
+			}
 			document.removeEventListener('keydown', onLowScoreModalEscape);
+			document.removeEventListener('keydown', trapLowScoreModalFocus);
 			pendingLowScoreLevel = null;
 			setLowScoreModalOpen(false);
+			if (restoreFocus && lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+				lastFocusedElement.focus();
+			}
+			lastFocusedElement = null;
+		}
+
+		function setLowScoreModalError(message) {
+			if (!modalError) {
+				showMessage(message);
+				return;
+			}
+
+			modalError.textContent = String(message);
+			modalError.hidden = false;
+		}
+
+		function clearLowScoreModalError() {
+			if (!modalError) {
+				return;
+			}
+
+			modalError.textContent = '';
+			modalError.hidden = true;
 		}
 
 		function onLowScoreModalEscape(ev) {
-			if (ev.key === 'Escape' || ev.keyCode === 27) {
-				closeLowScoreModal();
+			if ((ev.key === 'Escape' || ev.keyCode === 27) && !isSubmitting) {
+				resetLowScoreModalState(true);
+			}
+		}
+
+		function trapLowScoreModalFocus(ev) {
+			if (!modal || modal.getAttribute('data-open') !== 'Y' || ev.key !== 'Tab') {
+				return;
+			}
+
+			var focusableNodes = modal.querySelectorAll('button, [href], textarea, input, select, [tabindex]:not([tabindex="-1"])');
+			if (!focusableNodes.length) {
+				return;
+			}
+
+			var focusable = Array.prototype.filter.call(focusableNodes, function (node) {
+				return !node.disabled && node.offsetParent !== null;
+			});
+			if (!focusable.length) {
+				return;
+			}
+
+			var first = focusable[0];
+			var last = focusable[focusable.length - 1];
+
+			if (ev.shiftKey && document.activeElement === first) {
+				ev.preventDefault();
+				last.focus();
+				return;
+			}
+
+			if (!ev.shiftKey && document.activeElement === last) {
+				ev.preventDefault();
+				first.focus();
 			}
 		}
 
@@ -289,6 +364,11 @@
 				releaseSubmit();
 				return;
 			}
+			if (!window.BX || !BX.ajax || typeof BX.ajax.runComponentAction !== 'function') {
+				showMessage(getText('saveError', 'Не удалось сохранить оценку.'));
+				releaseSubmit();
+				return;
+			}
 
 			var data = {
 				level: level,
@@ -309,10 +389,7 @@
 				var widget = response && response.data ? response.data.widget : null;
 				applyWidgetData(widget);
 				showMessage(getText('saveSuccess', 'Оценка сохранена.'));
-				closeLowScoreModal();
-				if (modalReason) {
-					modalReason.value = '';
-				}
+				resetLowScoreModalState(false);
 				releaseSubmit();
 			}, function (response) {
 				var errorMessage = getText('saveError', 'Не удалось сохранить оценку.');
@@ -320,8 +397,15 @@
 					errorMessage = response.errors[0].message;
 				}
 
-				showMessage(errorMessage);
+				if (modal && modal.getAttribute('data-open') === 'Y') {
+					setLowScoreModalError(errorMessage);
+				} else {
+					showMessage(errorMessage);
+				}
 				releaseSubmit();
+				if (modal && modal.getAttribute('data-open') === 'Y' && modalReason) {
+					modalReason.focus();
+				}
 			});
 		}
 
@@ -330,26 +414,38 @@
 				showMessage(getText('reasonRequired', 'Опишите причину (обязательно для низкой оценки).'));
 				return;
 			}
+			lastFocusedElement = document.activeElement;
 			pendingLowScoreLevel = level;
+			clearLowScoreModalError();
+			document.removeEventListener('keydown', trapLowScoreModalFocus);
 			document.removeEventListener('keydown', onLowScoreModalEscape);
+			document.addEventListener('keydown', trapLowScoreModalFocus);
 			document.addEventListener('keydown', onLowScoreModalEscape);
 			setLowScoreModalOpen(true);
 			if (modalReason) {
 				window.setTimeout(function () {
 					modalReason.focus();
 				}, 0);
+			} else if (modalDialog) {
+				window.setTimeout(function () {
+					modalDialog.focus();
+				}, 0);
 			}
 		}
 
 		if (modalCancel) {
 			modalCancel.addEventListener('click', function () {
-				closeLowScoreModal();
+				if (!isSubmitting) {
+					resetLowScoreModalState(true);
+				}
 			});
 		}
 
 		if (modalBackdrop) {
 			modalBackdrop.addEventListener('click', function () {
-				closeLowScoreModal();
+				if (!isSubmitting) {
+					resetLowScoreModalState(true);
+				}
 			});
 		}
 
@@ -358,11 +454,38 @@
 				if (pendingLowScoreLevel === null) {
 					return;
 				}
-				var msg = modalReason ? modalReason.value.trim() : '';
-				if (msg === '') {
-					showMessage(getText('reasonRequired', 'Опишите причину (обязательно для низкой оценки).'));
+
+				var currentLevel = levelField ? Number(levelField.value) : pendingLowScoreLevel;
+				var minLevel = getMinLevel();
+				var maxLevel = getMaxLevel();
+				if (!Number.isInteger(currentLevel) || currentLevel < minLevel || currentLevel > maxLevel) {
+					showMessage(getText('selectLevel', 'Выбери уровень от ' + minLevel + ' до ' + maxLevel + ' звезд.'));
 					return;
 				}
+
+				if (!isLowScoreLevel(currentLevel)) {
+					if (isSubmitting) {
+						return;
+					}
+					isSubmitting = true;
+					if (submitButton) {
+						submitButton.disabled = true;
+					}
+					resetLowScoreModalState(false);
+					runComponentSave(currentLevel, '');
+					return;
+				}
+
+				pendingLowScoreLevel = currentLevel;
+				var msg = modalReason ? modalReason.value.trim() : '';
+				if (msg === '') {
+					setLowScoreModalError(getText('reasonRequired', 'Опишите причину (обязательно для низкой оценки).'));
+					if (modalReason) {
+						modalReason.focus();
+					}
+					return;
+				}
+				clearLowScoreModalError();
 				if (isSubmitting) {
 					return;
 				}
@@ -382,7 +505,6 @@
 		form.addEventListener('submit', function (event) {
 			event.preventDefault();
 
-			var levelField = form.querySelector('select[name="myLevel"]');
 			var level = levelField ? Number(levelField.value) : NaN;
 			var minLevel = getMinLevel();
 			var maxLevel = getMaxLevel();
