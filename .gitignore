@@ -1,6 +1,9 @@
 # Слишком большой для GitHub (>100MB) — положить вручную при необходимости
 milleniummedc/DEAL_20260324_f6b1cb87_69c2c578b49c6.xls
 
+# Python bytecode
+__pycache__/
+
 # Runtime (исключены из синка из /project)
 **/local/handlers/universal/universal-system/queue/
 **/local/handlers/universal/universal-system/logs/
